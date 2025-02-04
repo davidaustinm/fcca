@@ -1,0 +1,16 @@
+INFO    : Staging deployment according to strategy default_target
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Staging latest build located in `/home/david/complex/ptx/fcca/output/web` at `/home/david/complex/ptx/fcca/output/stage`.
+INFO    : 
+INFO    : Preparing to deploy from active `main` git branch.
+INFO    : 
+INFO    : Changes to project source since last commit detected.
+ERROR   : Either add and commit these changes with Git, or run
+ERROR   : `pretext deploy -u` to have these changes updated automatically.
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
