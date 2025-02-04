@@ -1,12 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="complexnumberchapter">
   <title>Complex Numbers</title>
   <introduction>
     <blockquote>
+      <p>
       <em>Die ganzen Zahlen hat der liebe Gott geschaffen, alles andere ist
       Menschenwerk.
       (God created the integers, everything else is
       made by humans.)</em>
+      </p>
+      <p>
       Leopold Kronecker (1823<ndash/>1891)
+      </p>
     </blockquote>
     <p>
       The real numbers have many useful properties.

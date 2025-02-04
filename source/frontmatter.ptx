@@ -49,6 +49,125 @@
   
   </bibinfo>
 
+  <preface>
+    <title>About this book</title>
+    <blockquote>
+      <p><em>And what is the use of a book,'' thought Alice, ``without
+      pictures or conversations? </em>
+      </p>
+      <p>
+        Lewis Carroll in <em>Alice in Wonderland</em>
+      </p>
+    </blockquote>
+    
+    
+    <p>
+      <em>A First Course in Complex Analysis</em> was written for a
+      one-semester undergraduate course developed at Binghamton
+      University (SUNY) and San Francisco State University, and has been
+      adopted at several other institutions. For many of our students,
+      Complex Analysis is their first rigorous analysis (if not
+      mathematics) class they take, and this book reflects this very
+      much. We tried to rely on as few concepts from real analysis as
+      possible. In particular, series and sequences are treated from
+      scratch, which has the consequence that power series are
+      introduced late in the course. The goal our book works toward is
+      the Residue Theorem, including some nontraditional applications
+      from both continuous and discrete mathematics.
+    </p>
+    
+    <p>A printed paperback version of this open textbook is available
+    from <url href="http://www.orthogonalpublishing.com">
+    Orthogonal Publishing</url> or your favorite online bookseller.
+    </p>
+    
+  </preface>
+  
+  <preface>
+    <title>About the authors</title>
+    
+    <p><em>Matthias Beck</em> is a professor in the Mathematics
+    Department at San Francisco State University. His research interests
+    are in geometric combinatorics and analytic number theory. He is the
+    author of three other books,   
+    <em>Computing the Continuous Discretely: Integer-point Enumeration
+    in Polyhedra</em>  (with Sinai Robins, Springer 2007), 
+    <em>The Art of Proof: Basic Training for Deeper Mathematics</em>
+    (with Ross Geoghegan, Springer 2010), and 
+    <em>Combinatorial Reciprocity Theorems: An Invitation to Enumerative
+    Geometric Combinatorics</em> (with Raman Sanyal, AMS 2018).
+    </p>
+    
+    <p> <em>Gerald Marchesi</em> is a lecturer in the Department of
+    Mathematical Sciences at Binghamton University (SUNY).
+    </p>
+    
+    <p><em>Dennis Pixton</em> is a professor emeritus in the Department
+    of Mathematical Sciences at Binghamton University (SUNY). His
+    research interests are in dynamical systems and formal languages.
+    </p>
+    
+    <p><em>Lucas Sabalka</em> is an applied mathematician at a
+    technology company in Lincoln, Nebraska.  He works on 3-dimensional
+    computer vision applications.  He was formerly a professor of
+    mathematics at St. Louis University, after postdoctoral positions
+    at UC Davis and Binghamton University (SUNY). His mathematical
+    research interests are in geometric group theory, low dimensional
+    topology, and computational algebra.
+    </p>
+    
+    <p><em>Robert Chaffer</em> (cover art) is a professor emeritus at
+    Central Michigan University. His academic interests are in abstract
+    algebra, combinatorics, geometry, and computer applications. Since
+    retirement from teaching, he has devoted much of his time to
+    applying those interests to creation of art images.
+    </p>
+  </preface>
+  
+  <preface>
+    <title>A Note to Instructors</title>
+    
+    <p>
+      The material in this book should be more than enough for a
+      typical semester-long undergraduate course in complex analysis; our
+      experience taught us that there is more content in this book than
+      fits into one semester. Depending on the nature of your course and
+      its place in your department's overall curriculum, some sections can
+      be either partially omitted or their definitions and theorems can be
+      assumed true without delving into
+      proofs. <xref ref="discreteresidues"/> contains optional longer
+      homework problems that could also be used as group projects at the
+      end of a course. 
+    </p>
+    
+    <p>We would be happy to hear from anyone who has adopted our book
+    for their course, as well as suggestions, corrections, or other
+    comments.
+    </p>
+  </preface>
+  
+  <preface>
+    <title>Acknowledgements</title>
+    
+    <p>We thank our students who made many suggestions for and found
+    errors in the text.  Special thanks go to Sheldon Axler, Collin
+    Bleak, Pierre-Alexandre Bliman, Matthew Brin, Andrew Hwang, John
+    McCleary, Sharma Pallekonda, Joshua Palmatier, and Dmytro Savchuk
+    for comments, suggestions, and additions after teaching from this
+    book.
+    </p>
+
+    <p>We thank Lon Mitchell for his initiative and support for the print
+    version of our book with Orthogonal Publishing, and Bob Chaffer for
+    allowing us to feature his art on the book's cover.
+    </p>
+    
+    <p>We are grateful to the American Institute of Mathematics for
+    including our book in their <url href="http://textbooks.aimath.org">
+    Open Textbook Initiative</url>.
+    </p>
+  </preface>
+
   <titlepage>
     <titlepage-items/>
   </titlepage>
