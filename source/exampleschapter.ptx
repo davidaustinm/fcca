@@ -1,0 +1,23 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="exampleschapter">
+  <title>Examples of Functions</title>
+  <introduction>
+    <blockquote>
+      <em>To many, mathematics is a collection of theorems. For me, mathematics is a collection of examples; a theorem is a statement
+      about a collection of examples and the purpose of proving theorems is to classify and explain the examples...</em>
+      John B.<nbsp/>Conway
+    </blockquote>
+    <p>
+      In this chapter we develop a toolkit of complex functions.
+      Our ingredients are familiar from calculus:
+      linear functions, exponentials and logarithms,
+      and trigonometric functions.
+      Yet, when we move these functions into the complex world,
+      they take on<mdash/>at times drastically different<mdash/>new features.
+    </p>
+  </introduction>
+  <xi:include  href="sec_mobius.ptx"/>
+  <xi:include  href="sec_riemannspere.ptx"/>
+  <xi:include  href="sec_stereoproj.ptx"/>
+  <xi:include  href="sec_exptrigfcts.ptx"/>
+  <xi:include  href="sec_logexp.ptx"/>
+</chapter>

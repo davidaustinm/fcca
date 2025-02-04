@@ -1,0 +1,230 @@
+<section xml:id="sec_residues">
+  <title>Residues</title>
+  <p>
+    We now pick up the thread from <xref ref="cor_firstresidue">Corollary</xref>
+    and apply it to the Laurent series
+    <me>
+      f(z) \= \sz c_k \left( z - z_0 \right)^k
+    </me>
+    at an isolated singularity <m>z_0</m> of <m>f</m>.
+    It says that if <m>\gg</m> is any positively oriented,
+    simple, closed,
+    piecewise smooth path in the punctured disk of convergence of this Laurent series,
+    and <m>z_0</m> is inside<nbsp/><m>\gg</m>, then
+    <me>
+      \int_\gg f(z) \, \diff{z} \= 2 \pi i \, c_{ -1 } \,
+    </me>.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>z_0</m> is an isolated singularity of <m>f</m> with Laurent series <m>\sz c_k (z - z_0)^k</m>.
+        Then <m>c_{-1}</m> is the <em>residue
+            <idx><h>residue</h></idx>
+        of <m>f</m> at <m>z_0</m></em>,
+        denoted by <m>\Res_{z=z_0} (f(z))</m> or <m>\Res (f(z) , \, z=z_0)</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    <xref ref="cor_firstresidue">Corollary</xref>
+    suggests that we can compute integrals over closed curves by finding the residues at isolated singularities,
+    and our next theorem makes this precise.
+  </p>
+  <theorem xml:id="residuethm">
+    <title>Residue Theorem</title>
+    <statement>
+      <p>
+            <idx><h>residue theorem</h></idx>
+        Suppose <m>f</m> is holomorphic in the region <m>G</m>, except for isolated singularities, and <m>\gg</m> is a positively oriented, simple, closed, piecewise smooth path that avoids the singularities of <m>f</m>, and <m>\gg \sim_G 0</m>.
+        Then there are only finitely many singularities inside <m>\gg</m>, and
+        <me>
+          \int_\gg f \= 2 \pi i \, \sum_k \Res_{z=z_k} (f(z))
+        </me>
+        where the sum is taken over all singularities <m>z_k</m> inside <m>\gg</m>.
+      </p>
+    </statement>
+  </theorem>
+  <figure xml:id="residuethmpic">
+    <caption>Proof of <xref ref="residuethm">Theorem</xref>.</caption>
+    <image source="images/picturec1a8d91a6a_rev.png"/>
+  </figure>
+  <proof>
+    <p>
+      First, let <m>S</m> be the set of singularities inside <m>\gg</m>.
+      The set <m>S</m> is closed
+      (since the points in <m>G</m> where <m>f</m> is holomorphic form an open set)
+      and bounded
+      (since the inside of <m>\gg</m> is bounded),
+      and the points of <m>S</m> are isolated in <m>S</m>
+      (by <xref ref="classificationzeros">Theorem</xref>
+      <xref ref="classificationzeros_isolated"></xref>).
+      An application of <xref ref="ex_compactAndIsolated">Exercise</xref>
+      shows that <m>S</m> is finite.
+    </p>
+    <p>
+      Now we follow the approach started in <xref ref="fig_laurentmotivation">Figure</xref>:
+      as with that integration path, we
+      <q>subdivide</q>
+      <m>\gg</m> so that we can replace it by closed curves around the singularities inside <m>\gg</m>.
+      These curves, in turn,
+      can then be transformed to circles around the singularities,
+      as suggested by <xref ref="residuethmpic">Figure</xref>.
+      By Cauchy's <xref ref="cauchythm">Theorem</xref>,
+      <m>\int_\gg f</m> equals the sum of the integrals of <m>f</m> over these circles.
+      Now use <xref ref="cor_firstresidue">Corollary</xref>.
+    </p>
+  </proof>
+  <p>
+    Computing integrals is as easy
+    (or hard!)
+    as computing residues.
+    The following two propositions start the range of tricks you may use when computing residues.
+  </p>
+  <proposition xml:id="prop_residueAsLimit">
+    <statement>
+      <p>
+        \hangindent\leftmargini \mbox{(a)} If <m>z_0</m> is a removable singularity of <m>f</m> then <m>\ds \Res_{z=z_0}(f(z)) = 0</m>.
+        <ol marker="a">
+          <li>
+            <p>
+              If <m>z_0</m> is a pole of <m>f</m> of order <m>n</m> then
+              <me>
+                \Res_{z=z_0} (f(z)) \= \frac 1 {(n-1)!} \lim_{z \to z_0} \frac{ d^{n-1} }{ \diff{z}^{n-1} } \bigl( (z - z_0)^n f(z) \bigr) \,
+              </me>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      (a) follows from <xref ref="singlaurent">Proposition</xref>(a).
+    </p>
+    <p>
+      (b) We know by <xref ref="singlaurent">Proposition</xref>(b) that the Laurent series at <m>z_0</m> looks like
+      <me>
+        f(z) = \sum_{k \geq -n} c_k (z-z_0)^k
+      </me>.
+    </p>
+    <p>
+      But then
+      <me>
+        (z - z_0)^n f(z) = \sum_{k \geq -n} c_k (z-z_0)^{k+n}
+      </me>
+      is a power series, and we can use Taylor's formula
+      (<xref ref="taylor">Corollary</xref>)
+      to compute <m>c_{-1}</m>.
+    </p>
+  </proof>
+  <p>
+    It is worth noting that we are really coming full circle here:
+    compare this proposition to Cauchy's Integral Formulas
+    (<xref ref="cauchyformula">Theorems</xref> &amp;
+    <xref ref="cauchyformula2"></xref>
+    and <xref ref="cauchyformula3">Corollary</xref>).
+  </p>
+  <example xml:id="ex_expoversinrev">
+    <statement>
+      <p>
+        The integrand <m>\frac{ \exp(z) }{ \sin(z) }</m> in <xref ref="ex_expoversin">Example</xref>
+        has poles of order 1 at 0 and <m>\pi</m>.
+        We thus compute
+        <me>
+          \Res_{ z=0 } \left( \frac{ \exp(z) }{ \sin(z) } \right) \= \lim_{ z \to 0 } \left( z \, \frac{ \exp(z) }{ \sin(z) } \right) \= \exp(0) \lim_{ z \to 0 } \frac{ z }{ \sin(z) } \= 1
+        </me>
+        and
+        <me>
+          \Res_{ z=\pi } \left( \frac{ \exp(z) }{ \sin(z) } \right) \= \lim_{ z \to \pi } \left( (z-\pi) \, \frac{ \exp(z) }{ \sin(z) } \right) \= \exp(\pi) \lim_{ z \to \pi } \frac{ z-\pi }{ \sin(z) } \= - e^\pi
+        </me>,
+        confirming our computations in <xref ref="ex_expoversin">Example</xref>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Revisiting <xref ref="ex_sinoverz3">Example</xref>,
+        the function <m>f(z) = \frac{ \sin(z) }{ z^3 }</m> has a double pole at 0 with
+        <me>
+          \Res_{ z=0 } \left( \frac{ \sin(z) }{ z^3 } \right) \= \lim_{ z \to 0 } \frac{ d }{ \diff{z} } \left( z^2 \, \frac{ \sin(z) }{ z^3 } \right) \= \lim_{ z \to 0 } \left( \frac{ z \cos(z) -  \sin(z) }{ z^2 } \right) \= 0 \,
+        </me>,
+        after a few iterations of L'H&#xf4;pital's Rule.
+        (In this case,
+        it is simpler to read the residue off the Laurent series in <xref ref="ex_sinoverz3">Example</xref>.)
+        \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <proposition xml:id="lem_computing_residues2">
+    <statement>
+      <p>
+        Suppose <m>f</m> and <m>g</m> are holomorphic at <m>z_0</m>,
+        which is a simple zero of <m>g</m> (i.e., a zero of multiplicity 1).
+        Then
+        <me>
+          \Res_{z=z_0} \left( \frac{ f(z) }{ g(z) } \right) \= \frac{ f(z_0) }{ g'(z_0) } \,
+        </me>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      The functions <m>f</m> and <m>g</m> have power series centered at <m>z_0</m>;
+      the one for <m>g</m> has by assumption no constant term:
+      <md>
+        <mrow>f(z) \amp \= \sum_{k \ge 0} a_k (z-z_0)^k</mrow>
+        <mrow>g(z) \amp \= \sum_{k \ge 1} b_k (z-z_0)^k \= (z-z_0) \sum_{k \geq 1} b_k (z-z_0)^{k-1} </mrow>
+      </md>.
+    </p>
+    <p>
+      Let <m>\ds h(z) := \sum_{k \geq 1} b_k (z-z_0)^{k-1}</m> and note that <m>h(z_0) = b_1 \ne 0</m>.
+      Hence
+      <me>
+        \frac{ f(z) }{ g(z) } \= \frac{ f(z) }{ (z-z_0) \, h(z) } \,
+      </me>,
+      and the function <m>\frac f h</m> is holomorphic at <m>z_0</m>.
+      By <xref ref="prop_residueAsLimit">Prop</xref>
+      and Taylor's formula (<xref ref="taylor">Corollary</xref>),
+      <me>
+        \Res_{z=z_0} \left( \frac{ f(z) }{ g(z) } \right) \= \lim_{z\to z_0}\left( (z-z_0) \frac{f(z)}{(z-z_0)h(z)}\right) \= \frac{ f(z_0) }{ h(z_0) } \= \frac{ a_0 }{ b_1 } \= \frac{ f(z_0) }{ g'(z_0) } \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <example>
+    <statement>
+      <p>
+        Revisiting once more <xref ref="ex_expoversin">Example</xref>,
+        we note that <m>f(z) = \exp(z)</m> and <m>g(z) = \sin(z)</m> fit the bill.
+        Thus
+        <me>
+          \Res_{ z=0 } \left( \frac{ \exp(z) }{ \sin(z) } \right) \= \frac{ \exp(0) }{ \cos(0) } \= 1
+        </me>
+        and
+        <me>
+          \Res_{ z=\pi } \left( \frac{ \exp(z) }{ \sin(z) } \right) \= \frac{ \exp(\pi) }{ \cos(\pi) } \= - e^\pi
+        </me>,
+        confirming once more our computations in <xref ref="ex_expoversin">Examples</xref>
+        and <xref ref="ex_expoversinrev"></xref>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        We compute the residue of <m>\frac{ z^2 + 2 }{ (\exp(z) - 1) \cos(z) }</m> at <m>z_0 = 2 \pi i</m>,
+        by applying <xref ref="lem_computing_residues2">Proposition</xref>
+        with <m>f(z) = \frac{ z^2 + 2 }{ \cos(z) }</m> and <m>g(z) = \exp(z) - 1</m>.
+        Thus
+        <me>
+          \Res_{ z = 2 \pi i } \left( \frac{ z^2 + 2 }{ (\exp(z) - 1) \cos(z) } \right) \= \frac{ \frac{ (2 \pi i)^2 + 2 }{ \cos(2 \pi i) } }{ \exp(2 \pi i) } \= \frac{ -4 \pi^2 + 2 }{ \cosh(2 \pi) } \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    An extension of <xref ref="lem_computing_residues2">Proposition</xref>
+    of sorts is given in <xref ref="ex_computing_residues2">Exercise</xref>.
+  </p>
+</section>

@@ -1,0 +1,26 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="functionchapter">
+  <title>Differentiation</title>
+  <introduction>
+    <blockquote>
+      <em>Mathematical study and research are very suggestive of
+      mountaineering. Whymper made several efforts before he climbed
+      the Matterhorn in the 1860's and even then it cost the life of
+      four of his party. Now, however, any tourist can be hauled up
+      for a small cost, and perhaps does not appreciate the difficulty
+      of the original ascent. So in mathematics, it may be found hard
+      to realise the great initial difficulty of making a little step
+      which now seems so natural and \ix{obvious}, and it may not be
+      surprising if such a step has been found and lost again.</em>
+      Louis Joel Mordell (1888<ndash/>1972)
+    </blockquote>
+    <p>
+      We will now start our study of complex functions.
+      <em>The</em> fundamental concept on which all of calculus is based is that of a limit<mdash/>it allows us to develop the central properties of continuity and differentiability of functions.
+      Our goal in this chapter is to do the same for complex functions.
+    </p>
+  </introduction>
+  <xi:include  href="sec_limitsandcontinuity.ptx"/>
+  <xi:include  href="sec_diffholom.ptx"/>
+  <xi:include  href="sec_Cauchy-Riemann.ptx"/>
+  <xi:include  href="sec_constantfcts.ptx"/>
+</chapter>

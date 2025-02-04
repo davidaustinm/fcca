@@ -1,0 +1,217 @@
+<section xml:id="sec_mobius">
+  <title>M&#xf6;bius Transformations</title>
+  <p>
+        <idx><h>Mobius transformation@M&#xf6;bius transformation</h></idx>
+  </p>
+  <p>
+    The first class of functions that we will discuss in some detail are built from linear polynomials.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A <em>linear fractional transformation<idx><h>linear fractional transformation</h></idx>
+        </em> is a function of the form
+        <me>
+          f(z) \= \frac{ az+b }{ cz+d }
+        </me>
+        where <m>a,b,c,d \in \C</m>.
+        If <m>ad-bc \not= 0</m> then <m>f</m> is called a <em>M&#xf6;bius<fn>
+        Named after August Ferdinand M&#xf6;bius (1790<ndash/>1868). \histremarktwo{M&#xf6;bius}{Mobius}
+        </fn> transformation</em>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    <xref ref="polynomialsholomorphic">Exercise</xref>
+    said that any polynomial in <m>z</m> is an entire function,
+    and so the linear fractional transformation
+    <m>f(z) = \frac{ az+b }{ cz+d }</m> is holomorphic in <m>\C \setminus \{ - \frac d c \}</m>,
+    unless <m>c=0</m>
+    (in which case <m>f</m> is entire).
+    If <m>c \ne 0</m> then <m>\frac{ az+b }{ cz+d } = \frac a c</m> implies <m>ad-bc = 0</m>,
+    which means that a M&#xf6;bius transformation
+    <m>f(z) = \frac{ az+b }{ cz+d }</m> will never take on the value <m>\frac a c</m>.
+    Our first proposition in this chapter says that with these small observations about the domain and image of a M&#xf6;bius transformation,
+    we obtain a class of bijection
+        <idx><h>bijection</h></idx>
+    s, which are quite special among complex functions.
+  </p>
+  <p>
+        <idx><h>inverse function</h><h>of a M&#xf6;bius transformation</h></idx>
+  </p>
+  <proposition xml:id="inversemobius">
+    <statement>
+      <p>
+        Let <m>a,b,c,d \in \C</m> with <m>c \ne 0</m>.
+        Then <m>f: \C \setminus \{ - \frac d c \} \to \C \setminus \{ \frac a c \}</m> given by
+        <m>f(z) = \frac{ az+b }{ cz+d }</m> has the inverse function <m>f^{-1}: \C \setminus \{ \frac a c \} \to \C \setminus \{ - \frac d c \}</m> given by
+        <me>
+          f^{-1} (z) \= \frac{ dz-b }{ -cz+a } \,
+        </me>.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    We remark that the same formula for
+    <m>f^{-1} (z)</m> works when <m>c = 0</m>,
+    except that in this case both domain and image of <m>f</m> are <m>\C</m>;
+    see <xref ref="ex_inversemobisc_0">Exercise</xref>.
+    In either case,
+    we note that the inverse of a M&#xf6;bius transformation is another M&#xf6;bius transformation.
+  </p>
+  <example xml:id="ex_mobiusinverse">
+    <statement>
+      <p>
+        Consider the linear fractional transformation <m>f(z) = \frac{ z-1 }{ iz+i }</m>.
+        This is a M&#xf6;bius transformation
+        (check the condition!)
+        with domain <m>\C \setminus \{ -1 \}</m> whose inverse can be computed via
+        <me>
+          \frac{ z-1 }{ iz+i } \= w \qquad \Longleftrightarrow \qquad z \= \frac{ iw + 1 }{ -iw + 1 } \,
+        </me>,
+        so that <m>f^{-1} (z) = \frac{ iz + 1 }{ -iz + 1 }</m>,
+        with domain <m>\C \setminus \{ -i \}</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <proof>
+    <p>
+      We first prove that <m>f</m> is one-to-one.
+      If <m>f(z_1) = f(z_2)</m>, that is,
+      <me>
+        \frac{ az_1+b }{ cz_1+d } \= \frac{ az_2+b }{ cz_2+d } \,
+      </me>,
+      then <m>(az_1+b)(cz_2+d) = (az_2+b)(cz_1+d)</m>,
+      which can be rearranged to
+      <me>
+        (ad-bc)(z_1-z_2) \= 0 \,
+      </me>.
+    </p>
+    <p>
+      Since <m>ad-bc \not= 0</m> this implies that <m>z_1 = z_2</m>.
+      This shows that <m>f</m> is one-to-one.
+    </p>
+    <p>
+      <xref ref="prob_mobiusinverse">Exercise</xref>
+      verifies that the M&#xf6;bius transformation
+      <m>g(z) = \frac{ dz-b }{ -cz+a }</m> is the inverse of <m>f</m>,
+      and by what we have just proved,
+      <m>g</m> is also one-to-one.
+      But this implies that <m>f: \C \setminus \{ - \frac d c \} \to \C \setminus \{ \frac a c \}</m> is onto.
+    </p>
+  </proof>
+  <p>
+    We remark that M&#xf6;bius transformations provide an immediate application of <xref ref="dernonzeroconformal">Proposition</xref>,
+    as the derivative of <m>f(z) = \frac{ az+b }{ cz+d }</m> is
+    <me>
+      f'(z) \= \frac{ a(cz+d) - c(az+b) }{ (cz+d)^2 } \= \frac{ ad - bc }{ (cz+d)^2 }
+    </me>
+    and thus never zero.
+    <xref ref="dernonzeroconformal">Proposition</xref>
+    implies that M&#xf6;bius transformations are conformal,
+        <idx><h>conformal</h></idx>
+    that is, they preserve angles.
+        <idx><h>function</h><h>conformal</h></idx>
+  </p>
+  <p>
+    M&#xf6;bius transformations have even more fascinating geometric properties.
+    En route to an example of such,
+    we introduce some terminology.
+    Special cases of M&#xf6;bius transformations are <em>translation
+        <idx><h>translation</h></idx>
+    s</em> <m>f(z) = z + b</m>, <em>dilation
+        <idx><h>dilation</h></idx>
+    s</em> <m>f(z) = az</m>, and <em>inversion
+        <idx><h>inversion</h></idx>
+    </em> <m>f(z) = \frac 1 z</m>.
+    The next result says that if we understand those three special M&#xf6;bius transformations,
+    we understand them all.
+  </p>
+  <proposition xml:id="transdilinv">
+    <statement>
+      <p>
+        Suppose <m>f(z) = \frac{ az+b }{ cz+d }</m> is a linear fractional transformation.
+        If <m>c=0</m> then
+        <me>
+          f(z) \= \frac a d \, z + \frac b d \,
+        </me>,
+        and if <m>c \not= 0</m> then
+        <me>
+          f(z) \= \frac{ bc-ad }{ c^2 } \frac 1 {z + \frac d c} + \frac a c \,
+        </me>.
+      </p>
+      <p>
+        In particular,
+        every linear fractional transformation is a composition of translations,
+        dilations, and inversions.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      Simplify.
+    </p>
+  </proof>
+  <theorem xml:id="circlestocircles">
+    <statement>
+      <p>
+        M&#xf6;bius transformations map circles and lines into circles and lines.
+      </p>
+    </statement>
+  </theorem>
+  <example xml:id="ex_mobiusinverse2">
+    <statement>
+      <p>
+        Continuing <xref ref="ex_mobiusinverse">Example</xref>,
+        consider again <m>f(z) = \frac{ z-1 }{ iz+i }</m>.
+        For <m>\phi \in \R</m>,
+        <me>
+          f(e^{ i \phi }) \= \frac{ e^{ i \phi } - 1 }{ i \, e^{ i \phi } + i } \= \frac{ \left( e^{ i \phi } - 1 \right) \left( e^{ -i \phi } + 1 \right) }{ i \left| e^{ i \phi } + 1 \right|^2 } \= \frac{ e^{ i \phi } - e^{ -i \phi } }{ i \left| e^{ i \phi } + 1 \right|^2 } \= \frac{ 2 \Im \left( e^{ i \phi } \right) }{ \left| e^{ i \phi } + 1 \right|^2 } \= \frac{ 2 \sin \phi }{ \left| e^{ i \phi } + 1 \right|^2 } \,
+        </me>,
+        which is a real number.
+        Thus <xref ref="circlestocircles">Theorem</xref>
+        implies that <m>f</m> maps the unit circle to the real line. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <proof>
+    <p>
+      Translations and dilations certainly map circles and lines into circles and lines,
+      so by <xref ref="transdilinv">Proposition</xref>,
+      we only have to prove the statement of the theorem for the inversion <m>f(z) = \frac 1 z</m>.
+    </p>
+    <p>
+      The equation for a circle centered at
+      <m>x_0 + iy_0</m> with radius <m>r</m> is
+      <m>(x-x_0)^2 + (y-y_0)^2 = r^2</m>, which we can transform to
+      <men xml:id="eq_circle">
+        \alpha (x^2 + y^2) + \beta x + \gamma y + \delta \= 0
+      </men>
+      for some real numbers <m>\alpha</m>,
+      <m>\beta</m>, <m>\gamma</m>,
+      and <m>\delta</m> that satisfy <m>\beta^2 + \gamma^2 > 4 \, \alpha \delta</m>
+      (<xref ref="ex_circlegenau">Exercise</xref>).
+      The form <xref ref="eq_circle"/> is more convenient for us,
+      because it includes the possibility that the equation describes a line
+      (precisely when <m>\alpha = 0</m>).
+    </p>
+    <p>
+      Suppose <m>z = x+iy</m> satisfies <xref ref="eq_circle"/>;
+      we need to prove that <m>u+iv := \frac 1 z</m> satisfies a similar equation.
+      Since
+      <me>
+        u + iv \= \frac{ x - iy }{ x^2 + y^2 } \,
+      </me>,
+      we can rewrite <xref ref="eq_circle"/> as
+      <md>
+        <mrow>0 \amp \= \alpha + \beta \frac{ x }{ x^2 + y^2 } + \gamma \frac{ y }{ x^2 + y^2 } + \frac \delta { x^2 + y^2 } \nonumber</mrow>
+        <mrow xml:id="eq_circleimage" number="yes">\amp \= \alpha + \beta u - \gamma v + \delta (u^2 + v^2) \, </mrow>
+      </md>.
+    </p>
+    <p>
+      But this equation,
+      in conjunction with <xref ref="ex_circlegenau">Exercise</xref>,
+      says that <m>u+iv</m> lies on a circle or line.
+    </p>
+  </proof>
+</section>

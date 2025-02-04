@@ -1,0 +1,299 @@
+<section xml:id="sec_classifzeros">
+  <title>Classification of Zeros and the Identity Principle</title>
+  <p>
+    When we proved the Fundamental Theorem of Algebra
+    (<xref ref="fundthmalg">Theorem</xref>;
+    see also <xref ref="fta">Exercise</xref>),
+    we remarked that,
+    if a polynomial <m>p(z)</m> of degree <m>d>0</m> has a zero at <m>a</m> (that is,
+    <m>p(a) = 0</m>), then <m>p(z)</m> has <m>z-a</m> as a factor.
+    That is, we can write <m>p(z)=(z-a) \, q(z)</m> where <m>q(z)</m> is a polynomial of degree <m>d-1</m>.
+    We can then ask whether <m>q(z)</m> itself has a zero at <m>a</m> and, if so,
+    we can factor out another <m>(z-a)</m>.
+    Continuing in this way, we see that we can factor <m>p(z)</m> as
+    <me>
+      p(z) \ = \ (z-a)^m \, g(z)
+    </me>
+    where <m>m</m> is a positive integer <m>\le d</m> and <m>g(z)</m> is a polynomial that does not have a zero at <m>a</m>.
+    The integer <m>m</m> is called the <em>multiplicity</em>
+    of the zero <m>a</m> of <m>p(z)</m>.
+    Almost exactly the same thing happens for holomorphic functions.
+  </p>
+  <theorem xml:id="classificationzeros">
+    <title>Classification of Zeros</title>
+    <statement>
+      <p>
+        Suppose <m>f: G \to \C</m> is holomorphic and <m>f</m> has a zero at <m>a \in G</m>.
+        Then either
+        <ol marker="a">
+          <li>
+            <p>
+              <m>f</m> is identically zero on some open disk <m>D</m> centered at <m>a</m> (that is,
+              <m>f(z)=0</m> for all <m>z \in D</m>); or
+            </p>
+          </li>
+          <li xml:id="classificationzeros_isolated">
+            <p>
+              there exist a positive integer <m>m</m> and a holomorphic function <m>g: G \to \C</m>,
+              such that <m>g(a)\ne0</m> and
+              <me>
+                f(z) \= (z-a)^m \, g(z) \qquad \text{ for all }  z \in G \,
+              </me>.
+              In this case the zero <m>a</m> is isolated:
+              there is a disk <m>D[a,r]</m> which contains no other zero of <m>f</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        The integer <m>m</m> in the second case is uniquely determined by <m>f</m> and <m>a</m> and is called the <em>multiplicity</em>
+        of the zero at<nbsp/><m>a</m>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      By <xref ref="thm_holomorphicpower">Theorem</xref>,
+      there exists <m>R>0</m> such that we can expand
+      <me>
+        f(z) \= \sum_{k\ge0}c_k (z-a)^k \qquad \text{ for }  z \in D[a,R] \,
+      </me>,
+      and <m>c_0 = f(a) = 0</m>.
+      There are now exactly two possibilities: either
+      <ol marker="a">
+        <li>
+          <p>
+            <m>c_k=0</m> for all <m>k \ge 0</m>; or
+          </p>
+        </li>
+        <li>
+          <p>
+            there is some positive integer <m>m</m> so that <m>c_k=0</m> for all <m>k\lt m</m> but <m>c_m\ne0</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      The first case gives <m>f(z) =0</m> for all <m>z \in D[a,R]</m>.
+      So now consider the second case.
+      We note that for <m>z \in D[a,R]</m>,
+      <md>
+        <mrow>f(z) \amp \= c_m(z-a)^m + c_{m+1}(z-a)^{m+1} + \cdots \= (z-a)^m\left( c_m+c_{m+1}(z-a) + \cdots\right)</mrow>
+        <mrow>\amp \= (z-a)^m\sum_{k\ge0}c_{k+m} \, (z-a)^k</mrow>
+      </md>.
+    </p>
+    <p>
+      Thus we can define a function <m>g: G \to \C</m> through
+      <me>
+        g(z) := \begin{cases}\ds \sum_{k\ge0}c_{k+m}(z-a)^k \amp \text{ if }  z \in D[a,R] \, , \\ \dfrac{f(z)}{(z-a)^m} \amp \text{ if } z\in G\setminus \listset a . \end{cases}
+      </me>
+    </p>
+    <p>
+      (According to our calculations above,
+      the two definitions give the same value when
+      <m>z \in D[a,R] \setminus \listset a</m>.) The function <m>g</m> is holomorphic in <m>D[a,R]</m> by the first definition,
+      and <m>g</m> is holomorphic in
+      <m>G \setminus \listset a</m> by the second definition.
+      Note that <m>g(a)=c_m\ne0</m> and, by construction,
+      <me>
+        f(z) \= (z-a)^m \, g(z) \qquad \text{ for all }  z \in G \,
+      </me>.
+    </p>
+    <p>
+      Since <m>g(a)\ne0</m> there is, by continuity,
+      <m>r>0</m> so that <m>g(z)\ne0</m> for all <m>z\in D[a,r]</m>,
+      so <m>D[a,r]</m> contains no other zero of <m>f</m>.
+      The integer <m>m</m> is unique,
+      since it is defined in terms of the power series expansion of <m>f</m> at <m>a</m>,
+      which is unique by <xref ref="uniqueness">Corollary</xref>.
+    </p>
+  </proof>
+  <p>
+    <xref ref="classificationzeros">Theorem</xref>
+    gives rise to the following result,
+    which is sometimes called the <em>identity principle
+        <idx><h>identity principle</h></idx>
+    </em> or the <em>uniqueness theorem
+        <idx><h>uniqueness theorem</h></idx>
+    </em>.
+  </p>
+  <theorem xml:id="uniquenessfunction">
+    <statement>
+      <p>
+        Suppose <m>G</m> is a region,
+        <m>f: G \to \C</m> is holomorphic,
+        and <m>f(a_n) = 0</m> where <m>(a_n)</m> is a sequence of distinct numbers that converges in <m>G</m>.
+        Then <m>f</m> is the zero function on<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    Applying this theorem to the difference of two functions immediately gives the following variant.
+  </p>
+  <corollary xml:id="cor_uniquenessfunction">
+    <statement>
+      <p>
+        Suppose <m>f</m> and <m>g</m> are holomorphic in a region <m>G</m> and
+        <m>f(a_k)=g(a_k)</m> at a sequence that converges to <m>w \in G</m> with <m>a_k\ne w</m> for all <m>k</m>.
+        Then <m>f(z)=g(z)</m> for all <m>z</m> in <m>G</m>.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      Consider the following two subsets of <m>G</m>:
+      <md>
+        <mrow>X \amp := \left\{ a \in G : \text{ there exists }  r \text{ such that }  f(z) = 0 \text{ for all }  z \in D[a,r] \right\}</mrow>
+        <mrow>Y \amp := \left\{ a \in G : \text{ there exists }  r \text{ such that }  f(z) \ne 0 \text{ for all }  z \in D[a,r] \setminus \{ a \} \right\} </mrow>
+      </md>.
+    </p>
+    <p>
+      If <m>f(a) \ne 0</m> then, by continuity of <m>f</m>,
+      there exists a disk centered at <m>a</m> in which <m>f</m> is nonzero,
+      and so <m>a \in Y</m>.
+    </p>
+    <p>
+      If <m>f(a) = 0</m>,
+      then <xref ref="classificationzeros">Theorem</xref>
+      says that either <m>a \in X</m> or <m>a</m> is an isolated zero of <m>f</m>,
+      so <m>a\in Y</m>.
+    </p>
+    <p>
+      We have thus proved that <m>G</m> is the disjoint union of <m>X</m> and <m>Y</m>.
+      <xref ref="prob_uniquenessfunctionopensets">Exercise</xref>
+      proves that <m>X</m> and <m>Y</m> are open, and so
+      (because <m>G</m> is a region)
+      either <m>X</m> or <m>Y</m> has to be empty.
+      The conditions of <xref ref="uniquenessfunction">Theorem</xref>
+      say that <m>\lim_{ n \to \infty } a_n</m> is not in <m>Y</m>,
+      and thus it has to be in <m>X</m>.
+      Thus <m>G = X</m> and the statement of <xref ref="uniquenessfunction">Theorem</xref> follows.
+    </p>
+  </proof>
+  <p>
+    The identity principle yields the strengthenings of <xref ref="harmonicmaxmin">Theorem</xref>
+    and <xref ref="cor_holomorphicweakmaxmin">Corollary</xref>
+    promised in <xref ref="harmonicChapter">Chapter</xref>.
+    We recall that that we say the function <m>u: G \to \R</m> has a
+    <em>weak relative maximum</em>
+    <m>w</m> if there exists a disk <m>D[w,r] \subseteq G</m> such that all
+    <m>z \in D[w,r]</m> satisfy <m>u(z) \leq u(w)</m>.
+        <idx><h>maximum</h><h>weak relative</h></idx>
+  </p>
+  <theorem xml:id="maxmodthm">
+    <title>Maximum-Modulus Theorem</title>
+    <statement>
+      <p>
+            <idx><h>maximum-modulus theorem</h></idx>
+        Suppose <m>f</m> is holomorphic and nonconstant in a region <m>G</m>.
+        Then <m>|f|</m> does not attain a weak relative maximum in<nbsp/><m>G</m>.
+            <idx><h>maximum</h><h>weak relative</h></idx>
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    There are many reformulations of this theorem, such as:
+  </p>
+  <corollary xml:id="maxOnBoundary">
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic in a bounded region <m>G</m> and continuous on its closure.
+        Then
+        <me>
+          \sup_{ z \in G } |f(z)| \= \max_{ z \in \partial G } |f(z)| \,
+        </me>.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      This is trivial if <m>f</m> is constant,
+      so we assume <m>f</m> is non-constant.
+      By the Extreme Value <xref ref="realEVT">Theorem</xref>
+      there is a point <m>z_0\in\overline G</m> so that <m>\max_{z\in\overline G}|f(z)| = |f(z_0)|</m>.
+      Clearly <m>\sup_{ z \in G } |f(z)| \le \max_{ z \in\overline G } |f(z)|</m>,
+      and this is easily seen to be an equality using continuity at <m>z_0</m>,
+      since there are points of <m>G</m> arbitrarily close to <m>z_0</m>.
+      Finally, <xref ref="maxmodthm">Theorem</xref> implies <m>z_0\not\in G</m>,
+      so <m>z_0</m> must be in <m>\partial G</m>.
+    </p>
+  </proof>
+  <p>
+    <xref ref="maxmodthm">Theorem</xref>
+    has other important consequences;
+    we give two here,
+    whose proofs we leave for <xref ref="prob_minmodthm">Exercises</xref>
+    and <xref ref="prob_maxminharmcor"></xref>.
+  </p>
+  <corollary xml:id="minmodthm">
+    <title>Minimum-Modulus Theorem</title>
+    <statement>
+      <p>
+            <idx><h>minimum-modulus theorem</h></idx>
+        Suppose <m>f</m> is holomorphic and nonconstant in a region <m>G</m>.
+        Then <m>|f|</m> does not attain a weak relative minimum at a point <m>a</m> in <m>G</m> unless <m>f(a)=0</m>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+        <idx><h>minimum</h><h>weak relative</h></idx>
+  </p>
+  <corollary xml:id="maxminharmcor">
+    <statement>
+      <p>
+            <idx><h>max/min property for harmonic functions</h></idx>
+        If <m>u</m> is harmonic and nonconstant in a region <m>G</m>, then it does not have a weak relative maximum or minimum in<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    Note that Equation<nbsp/><xref ref="eq_minmaxhar"/> in <xref ref="harmonicChapter">Chapter</xref>
+    follows from <xref ref="maxminharmcor">Corollary</xref>
+    using essentially the same argument as in the proof of <xref ref="maxOnBoundary">Corollary</xref>.
+  </p>
+  <proof>
+    <p>
+      Suppose there exist <m>a \in G</m> and <m>R > 0</m> such that
+      <m>|f(a)| \ge |f(z)|</m> for all <m>z \in D[a,R]</m>.
+      We will show that then <m>f</m> is constant.
+    </p>
+    <p>
+      If <m>f(a)=0</m> then <m>f(z)=0</m> for all <m>z \in D[a,R]</m>,
+      so <m>f</m> is identically zero by <xref ref="uniquenessfunction">Theorem</xref>.
+    </p>
+    <p>
+      Now assume <m>f(a)\ne0</m>,
+      which allows us to define the holomorphic function
+      <m>g: G \to \C</m> via <m>g(z) := \frac{ f(z) }{ f(a) }</m>.
+      This function satisfies
+      <me>
+        \abs{g(z)} \ \le  \ \abs{g(a)} \ = \ 1 \qquad \text{ for all }  z \in D[a,R] \,
+      </me>,
+    </p>
+    <p>
+      Also <m>g(a)=1</m>, so, by continuity of <m>g</m>,
+      we can find <m>r \le R</m> such that
+      <m>\Re(g(z)) > 0</m> for <m>z \in D[a,r]</m>.
+      This allows us, in turn,
+      to define the holomorphic function
+      <m>h: D[a,r] \to \C</m> through <m>h(z) := \Log(g(z))</m>,
+      which satisfies
+      <me>
+        h(a) \= \Log(g(a)) \= \Log(1) \= 0
+      </me>
+      and
+      <me>
+        \Re(h(z)) \= \Re(\Log(g(z))) \= \ln(\abs{g(z)}) \ \le \ \ln(1) \= 0 \,
+      </me>.
+    </p>
+    <p>
+      <xref ref="ex_realmax0">Exercise</xref>
+      now implies that <m>h</m> must be identically zero in <m>D[a,r]</m>.
+      Hence <m>g(z)=\exp(h(z))</m> must be equal to
+      <m>\exp(0)=1</m> for all <m>z \in D[a,r]</m>,
+      and so <m>f(z)=f(a) \, g(z)</m> must have the constant value <m>f(a)</m> for all <m>z \in D[a,r]</m>.
+      <xref ref="cor_uniquenessfunction">Corollary</xref>
+      then implies that <m>f</m> is constant in<nbsp/><m>G</m>.
+    </p>
+  </proof>
+</section>

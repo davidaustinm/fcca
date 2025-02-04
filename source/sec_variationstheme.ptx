@@ -1,0 +1,166 @@
+<section xml:id="sec_variationstheme">
+  <title>Variations of a Theme</title>
+  <p>
+        <idx><h>Cauchy's integral formula</h><h>extensions of</h></idx>
+  </p>
+  <p>
+    We now derive formulas for <m>f'</m> and <m>f''</m> which resemble Cauchy's Integral Formula
+    (<xref ref="cauchyformula">Theorem</xref>).
+  </p>
+  <theorem xml:id="cauchyformula2">
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic in the region <m>G</m> and <m>\gg</m> is a positively oriented, simple,
+        closed, piecewise smooth, <m>G</m>-contractible path.
+        If <m>w</m> is inside <m>\gg</m> then
+        <me>
+          f'(w) \= \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ (z-w)^2 } \, \diff{z}\,
+        </me>.
+      </p>
+      <p>
+        Moreover, <m>f''(w)</m> exists, and
+        <me>
+          f''(w) \= \frac 1 {\pi i} \int_\gg \frac{ f(z) }{ (z-w)^3 } \ \diff{z} \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      The idea of our proof is very similar to that of Cauchy's Integral Formula
+      (<xref ref="cauchyformulacircle">Theorems</xref>
+      and <xref ref="cauchyformula"></xref>).
+      We will study the following difference quotient,
+      which we rewrite using <xref ref="cauchyformula">Theorem</xref>.
+      <md>
+        <mrow>\frac{ f(w+\D w) - f(w) }{ \D w } \amp \= \frac{1}{\D w} \left( \frac{1}{2 \pi i} \int_\gg \frac{f(z)}{z - (w+\D w)} \, \diff{z} - \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \, \diff{z} \right)</mrow>
+        <mrow>\amp \= \frac{1}{2 \pi i} \int_\gg \frac{f(z)}{(z-w-\D w) (z-w)} \, \diff{z} \, </mrow>
+      </md>.
+    </p>
+    <p>
+      <xref ref="cauchyformula2">Theorem</xref>
+      will follow if we can show that the following expression gets arbitrarily small as <m>\D w \to 0</m>:
+      <md>
+        <mrow>\frac{ f(w+\D w) - f(w) }{ \D w } - \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ (z-w)^2 } \, \diff{z} \amp \= \frac 1 {2 \pi i} \int_\gg \left( \frac{ f(z) }{ (z-w-\D w) (z-w) } - \frac{ f(z) }{ (z-w)^2 } \right) \diff{z} \nonumber</mrow>
+        <mrow xml:id="eq_needstostaybounded" number="yes">\amp \= \frac{ \D w }{2 \pi i} \int_\gg \frac{ f(z) }{ (z-w-\D w) (z-w)^2 } \, \diff{z} \, </mrow>
+      </md>.
+    </p>
+    <p>
+      This can be made arbitrarily small if we can show that the integral on the right-hand side stays bounded as <m>\D w \to 0</m>.
+      In fact, by <xref ref="intprop">Proposition</xref> <xref ref="int4"></xref>,
+      it suffices to show that the <em>integrand</em>
+      stays bounded as <m>\D w \to 0</m> (because <m>\gg</m> and hence <m>\length (\gg)</m> are fixed).
+    </p>
+    <p>
+      Let <m>M := \max_{ z \in \gg } \left| f(z) \right|</m>
+      (whose existence is guaranteed by <xref ref="realEVT">Theorem</xref>).
+      Choose <m>\delta > 0</m> such that <m>D[w,\delta] \cap \gg = \emptyset</m>;
+      that is, <m>\abs{z-w}\ge \delta</m> for all <m>z</m> on <m>\gamma</m>.
+      By the reverse triangle inequality
+      (<xref ref="cor_triangleineq">Corollary</xref>
+      <xref ref="revtrianineq"></xref>),
+      for all <m>z \in \gg</m>,
+      <me>
+        \left| \frac{ f(z) }{ (z-w-\D w) (z-w)^2 } \right| \ \leq \ \frac{ \left| f(z) \right| }{ (|z-w|-|\D w|) |z-w|^2 } \ \leq \ \frac M { (\delta - |\D w|) \delta^2 } \,
+      </me>,
+      which certainly stays bounded as <m>\D w \to 0</m>.
+      This proves <xref ref="eq_needstostaybounded"/> and thus the Cauchy Integral Formula for<nbsp/><m>f'</m>.
+    </p>
+    <p>
+      The proof of the formula for <m>f''</m> is very similar and will be left to <xref ref="cauchyformula2ex">Exercise</xref>.
+    </p>
+  </proof>
+  <p>
+    <xref ref="cauchyformula2">Theorem</xref>
+    suggests that there are similar formulas for the higher derivatives of <m>f</m>.
+    This is in fact true,
+    and theoretically we could obtain them one by one with the methods of the proof of <xref ref="cauchyformula2">Theorem</xref>.
+    However, once we start studying power series for holomorphic functions,
+    we will obtain such a result much more easily;
+    so we save the derivation of integral formulas for higher derivatives of <m>f</m> for later
+    (<xref ref="cauchyformula3">Corollary</xref>).
+  </p>
+  <p>
+    <xref ref="cauchyformula2">Theorem</xref>
+    has several important consequences.
+    For starters, it can be used to compute certain integrals.
+  </p>
+  <example>
+    <statement>
+      <me>
+        \int_{C[0,1]} \frac{\sin(z)}{z^2} \, \diff{z}
+        \= 2 \pi i \left. \frac{d}{\diff{z}} \sin(z) \right|_{z=0}
+        \= 2 \pi i \cos(0)
+        \= 2 \pi i \,
+      </me>.
+    </statement>
+  </example>
+  <figure xml:id="ex52fig">
+    <caption>The integration paths in <xref ref="ex52">Example</xref>.</caption>
+    <image source="images/picture071ee06b44_rev.png"/>
+  </figure>
+  <example xml:id="ex52">
+    <statement>
+      <p>
+        To compute the integral
+        <me>
+          \int_{C[0,2]} \frac{\diff{z}}{z^2 (z-1)} \,
+        </me>,
+        we could employ a partial fractions expansion similar to the one in <xref ref="exam_partialfr">Example</xref>,
+        or moving the integration path similar to the one in <xref ref="ex_pathtoinfty">Exercise</xref>.
+        To exhibit an alternative,
+        we split up the integration path as illustrated in <xref ref="ex52fig">Figure</xref>:
+        we introduce an additional path that separates 0 and 1.
+        If we integrate on these two new closed paths (<m>\gamma_1</m> and <m>\gamma_2</m>) counterclockwise,
+        the two contributions along the new path will cancel each other.
+        The effect is that we transformed an integral for which two singularities were inside the integration path into a sum of two integrals,
+        each of which has only one singularity inside the integration path;
+        these new integrals we know how to deal with,
+        using <xref ref="cauchyformulacircle">Theorems</xref>
+        and <xref ref="cauchyformula2"></xref>:
+        <md>
+          <mrow>\int_{C[0,2]} \frac{\diff{z}}{z^2 (z-1)} \amp \= \int_{\gamma_1} \frac{\diff{z}}{z^2 (z-1)} + \int_{\gamma_2} \frac{\diff{z}}{z^2 (z-1)} \= \int_{\gamma_1} \frac{\frac{1}{z-1}}{z^2} \, \diff{z} + \int_{\gamma_2} \frac{\frac{1}{z^2}}{z-1} \, \diff{z}</mrow>
+          <mrow>\amp \= 2 \pi i \left. \frac{ d }{ \diff{z} } \frac{ 1 }{ z-1 } \right|_{ z=0 } + \ 2 \pi i \, \frac{ 1 }{ 1^2 } \= 2 \pi i \left( - \frac{ 1 }{ (-1)^2 }  \right) + 2 \pi i</mrow>
+          <mrow>\amp \= 0 \, </mrow>
+        </md>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <me>
+        \int_{C[0,1]} \frac{\cos(z)}{z^3} \, \diff{z}
+        \= \pi i \left. \frac{d^2}{\diff{z}^2} \cos(z) \right|_{z=0}
+        \= \pi i \left( - \cos(0) \right)
+        \= - \pi i \,
+      </me>.
+    </statement>
+  </example>
+  <p>
+    <xref ref="cauchyformula2">Theorem</xref>
+    has another powerful consequence:
+    just from knowing that <m>f</m> is holomorphic in <m>G</m>,
+    we know of the existence of <m>f''</m>, that is,
+    <em><m>f'</m> is also holomorphic in <m>G</m></em>.
+    Repeating this argument for <m>f'</m>,
+    then for <m>f''</m>, <m>f'''</m>,
+    etc., shows that all derivatives <m>f^{(n)}</m> exist and are holomorphic.
+    We can translate this into the language of partial derivatives,
+    since the Cauchy<ndash/>Riemann equations
+    (<xref ref="cre">Theorem</xref>)
+    show that any sequence of <m>n</m> partial differentiations of <m>f</m> results in a constant times <m>f^{(n)}</m>.
+  </p>
+  <p>
+    So we have the following statement,
+    which has no analogue whatsoever in the reals
+    (see, e.g., <xref ref="ex_diffbutnottwicediff">Exercise</xref>).
+  </p>
+  <corollary xml:id="infdiff">
+    <statement>
+      <p>
+        If <m>f</m> is differentiable in a region <m>G</m> then <m>f</m> is infinitely differentiable in<nbsp/><m>G</m>,
+        and all partials of <m>f</m> with respect to <m>x</m> and <m>y</m> exist and are continuous.
+      </p>
+    </statement>
+  </corollary>
+</section>

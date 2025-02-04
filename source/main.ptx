@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+
+  <book xml:id="fcca">
+    <title>A First Course in Complex Analysis</title>
+
+    <!-- Include frontmatter -->
+    <xi:include href="./frontmatter.ptx" />
+
+    <!-- Include chapters -->
+    <xi:include href="./complexnumberchapter.ptx"/>
+    <!--
+    <xi:include href="./functionchapter.ptx"/>
+    <xi:include href="./exampleschapter.ptx"/>
+    <xi:include href="./intchapter.ptx"/>
+    <xi:include href="./cachyconschapter.ptx"/>
+    <xi:include href="./harmonicChapter.ptx"/>
+    <xi:include href="./powerchapter.ptx"/>
+    <xi:include href="./taylorchapter.ptx"/>
+    <xi:include href="./residuechapter.ptx"/>
+    <xi:include href="./ch_discreteresidues.ptx"/>
+    <xi:include href="./ch_solutions.ptx"/>
+    -->
+    <!-- Include backmatter -->
+    <xi:include href="./backmatter.ptx" />
+
+  </book>
+</pretext>

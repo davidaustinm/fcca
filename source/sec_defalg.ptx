@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_defalg">
+  <title>Definitions and Algebraic Properties</title>
+  <p>
+    There are many equivalent ways to think about a complex number,
+    each of which is useful in its own right.
+    In this section,
+    we begin with a formal definition of a complex number.
+    We then interpret this formal definition in more useful and
+    easier-to-work-with algebraic language. 
+    Later we will see several more ways of thinking about complex numbers.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        The <em>complex numbers</em>
+        are pairs of real numbers,
+        <me>
+          \C \ := \ \left\{ (x,y) : \, x,y \in \R \right\}
+        </me>,
+        equipped with the <em>addition
+        </em>
+        <men xml:id="eq_additiondef">
+          (x,y) + (a,b) \ := \ (x+a, \, y+b)
+        </men>
+        and the <em>multiplication</em>
+        <men xml:id="eq_multiplicationdef">
+          (x,y) \cdot (a,b) \ := \ (xa-yb, \, xb+ya) \,
+        </men>.
+        <idx><h>complex number</h></idx>
+        <idx><h>real number</h></idx>
+        <idx><h>addition</h></idx>
+        <idx><h>multiplication</h></idx>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    One reason to believe that the definitions of these binary operations
+    are acceptable is that <m>\C</m> is an extension of <m>\R</m>,
+    in the sense that the complex numbers of the form <m>(x,0)</m>
+    behave just like real numbers:  
+    <me>
+      (x,0)+(y,0) \= (x+y,0) \qquad \text{ and }  \qquad (x,0) \cdot
+      (y,0) \= (xy,0) \, 
+    </me>.
+      <idx><h>binary operation</h></idx>
+
+  </p>
+  <p>
+    So we can think of the real numbers being embedded in <m>\C</m> as
+    those complex numbers whose second coordinate is zero. 
+    <idx><h>embedding of <m>\R</m> into <m>\C</m></h></idx>
+  </p>
+  <p>
+    The following result states the algebraic structure that we
+    established with our definitions. 
+  </p>
+  <proposition xml:id="alg">
+    <statement>
+      <p>
+        The set of complex numbers endowed with the operations of
+        addition and  
+        multiplication <m>(\C,+,\cdot)</m> is a field.  More
+        specifically, this means that for all complex numbers <m>(x,y)</m>,
+        <m>(a,b)</m>, and <m>(c,d)</m>, we have
+        <idx><h>field</h></idx>
+      </p>
+      
+      <mdn>
+        <mrow xml:id="eq-firstadd">
+          \amp (x+y)+(a,b)\in \C
+        </mrow>
+        <mrow>
+          \amp \bigl( (x,y)+(a,b) \bigr) + (c,d) = (x,y) +
+          \bigl( (a,b)+(c,d) \bigr)
+        </mrow>
+        <mrow>
+          \amp (x,y) + (a,b) = (a,b) + (x,y)
+        </mrow>
+        <mrow>
+          \amp (x,y)+(0,0) = (x,y)
+        </mrow>
+        <mrow xml:id="eq-lastadd">
+          \amp (x,y)+(-x,-y) = (0,0)
+        </mrow>
+        <mrow xml:id="eq-firstmult">
+          \amp (x,y) \cdot \bigl( (a,b) + (c,d) \bigr) = (x,y)
+          \cdot (a,b) + (x,y) \cdot (c,d)
+        </mrow>
+        <mrow>
+          \amp (x,y) \cdot (a,b) \in \C
+        </mrow>
+        <mrow>
+          \amp \bigl( (x,y) \cdot (a,b) \bigr) \cdot (c,d) = (x,y)
+          \cdot \bigl( (a,b) \cdot (c,d) \bigr)
+        </mrow>
+        <mrow>
+          \amp (x,y)\cdot (a,b) = (a,b) \cdot (x,y)
+        </mrow>
+        <mrow>
+          \amp (x,y) \cdot (1,0) = (x,y)
+        </mrow>
+        <mrow xml:id="eq-lastmult">
+          \amp 
+          (x,y) \cdot \left(
+          \tfrac{ x }{ x^2 + y^2 } , \tfrac{ -y }{ x^2 + y^2 } \right)
+          = (1,0) \,\text{if}\,
+          (x,y)\in\C\setminus\{(0,0)\},
+        </mrow>
+      </mdn>
+    </statement>
+  </proposition>
+
+  <p>
+    What we are stating here can be compressed in the language of
+    algebra: 
+    equations <xref ref="eq-firstadd"/><ndash/><xref
+    ref="eq-lastadd"/> say 
+    that <m>(\C,+)</m> is an <em>Abelian group </em>
+    with <em>identity</em>
+    <m>(0,0)</m>;
+    equations <xref ref="eq-firstmult"/><ndash/><xref
+    ref="eq-lastmult"/> say that 
+    <m>\left( \C \setminus \{(0,0)\},\cdot \right)</m> is an Abelian
+    group with identity <m>(1,0)</m>.
+    <idx><h>group</h></idx>
+    <idx><h>identity</h></idx>
+
+  </p>
+  <p>
+    The proof of <xref ref="alg">Proposition</xref>
+    is straightforward but nevertheless makes for good practice
+    (see <xref ref="ex_alg"/>).
+    We give one sample:
+  </p>
+  <proof>
+    <p>
+      By our definition for complex addition and properties of
+      additive inverses in<nbsp/><m>\R</m>, 
+      <me>
+        (x,y) + (-x, -y) \= (x+(-x), \, y+(-y)) \= (0,0) \, 
+      </me>.
+    </p>
+  </proof>
+  <p>
+    The definition of complex multiplication implies the innocent
+    looking statement 
+    <men xml:id="i_2_-1">
+      (0,1) \cdot (0,1) \= (-1,0) \,
+    </men>.
+  </p>
+  <p>
+    This identity together with the fact that
+    <me>
+      (a,0) \cdot (x,y) \= (ax,ay)
+    </me>
+    allows an alternative notation for complex numbers.
+    The latter implies that we can write
+    <me>
+      (x,y) \= (x,0) + (0,y) \= (x,0) \cdot (1,0) + (y,0) \cdot (0,1) \,
+    </me>.
+  </p>
+  <p>
+    If we think<mdash/>in the spirit of our remark about embedding
+    <m>\R</m> into <m>\C</m><mdash/>of <m>(x,0)</m> and <m>(y,0)</m>
+    as the real numbers <m>x</m> and <m>y</m>, 
+    then this means that we can write any complex number <m>(x,y)</m>
+    as a linear combination of <m>(1,0)</m> and <m>(0,1)</m>, 
+    with the real coefficients <m>x</m> and <m>y</m>.
+    Now <m>(1,0)</m>, in turn, can be thought of as the real number 1.
+    So if we give <m>(0,1)</m> a special name, say <m>i</m>,
+    then the complex number that we used to call <m>(x,y)</m> can be
+    written as <m>x \cdot 1 + y \cdot i</m> or 
+    <idx><h>i@<m>i</m></h></idx>
+    <me>
+      x+iy
+    </me>.
+  </p>
+  <p>
+    We invite you to check that the definitions of our binary
+    operations and <xref ref="alg">Proposition</xref> 
+    are coherent with the usual real arithmetic rules if we think of
+    complex numbers as given in the form <m>x+iy</m>. 
+  </p>
+  <definition>
+    <statement>
+      <p>
+        The number <m>x</m> is called the <em>real part</em>
+        and <m>y</m> the <em>imaginary part</em>
+        <fn>
+        These names have historical reasons:
+        people thought of complex numbers as unreal, imagined.
+        </fn> of the complex number <m>x+iy</m> and are
+        often denoted as <m>\Re(x+iy)=x</m> and <m>\Im(x+iy)=y</m>.
+        <idx><h>real part</h></idx>
+        <idx><h>imaginary part</h></idx>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    The identity <xref ref="i_2_-1"/> then reads
+    <me>
+      i^2 = -1 \,
+    </me>.
+  </p>
+  <p>
+    In fact, much more can now be said with the introduction of the
+    square root of <m>-1</m>. 
+    It is not just that <xref ref="MotivEq"/> has a root,
+    but <em>every</em> nonconstant polynomial
+    has a root
+    in <m>\C</m>:
+    <idx><h>root</h></idx>
+    <idx><h>polynomial</h></idx>
+  </p>
+  <theorem>
+    <title>Fundamental Theorem of Algebra</title>
+    <idx><h>fundamental theorem</h><h>of algebra</h></idx>
+    <statement>
+      <p>
+        Every nonconstant polynomial of degree <m>d</m> has <m>d</m> roots
+        (counting multiplicity)
+        in <m>\C</m>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    The proof of this theorem requires some (important) machinery,
+    so we defer its proof and an extended discussion of it to <xref
+    ref="cachyconschapter"/> (see <xref ref="fundthmalg"/>).
+  </p>
+</section>

@@ -1,0 +1,238 @@
+<section xml:id="sec_exptrigfcts">
+  <title>Exponential and Trigonometric Functions</title>
+  <p>
+    To define the complex exponential function,
+    we once more borrow concepts from calculus,
+    namely the real exponential function<fn>
+    How to define the real exponential function is a nontrivial question.
+    Our preferred way to do this is through a power series:
+    <m>e^x = \sum_{k \geq 0} \frac 1 {k!} x^k</m>.
+    In light of this definition,
+    you might think we should have simply defined the complex exponential function through a complex power series.
+    In fact, this is possible (and an elegant definition);
+    however, one of the promises of this book is to introduce complex power series as late as possible.
+    We agree with those readers who think that we are cheating at this point,
+    as we borrow the concept of a (real) power series to define the real exponential function.
+    </fn> and the real sine and cosine,
+    and we finally make sense of the notation <m>e^{it} = \cos t + i \sin t</m>.
+        <idx><h>function</h><h>exponential</h></idx>
+  </p>
+  <definition>
+    <statement>
+      <p>
+        The <em>(complex) exponential function
+            <idx><h>exponential function</h></idx>
+        </em> is <m>\exp: \C \to \C</m>,
+        defined for <m>z=x+iy</m> as
+        <me>
+          \exp(z) \ := \ e^x \left( \cos y + i \sin y \right) \= e^x e^{iy}
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    This definition seems a bit arbitrary.
+    Our first justification is that all exponential rules
+        <idx><h>exponential rules</h></idx>
+    that we are used to from real numbers carry over to the complex case.
+    They mainly follow from <xref ref="easyexp">Proposition</xref>
+    and are collected in the following.
+  </p>
+  <proposition xml:id="expproperties">
+    <statement>
+      <p>
+        For all <m>z, z_1, z_2 \in \C</m>,
+        <ol marker="a">
+          <li>
+            <p>
+              <m>\exp \left( z_1 \right) \exp \left( z_2 \right) = \exp \left( z_1 + z_2 \right)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac 1 {\exp \left( z \right)} = \exp \left( -z \right)</m>
+            </p>
+          </li>
+          <li xml:id="expperiodic">
+            <p>
+              <m>\exp \left( z + 2 \pi i \right) = \exp \left( z \right)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\left| \exp \left( z \right) \right| = \exp \left( \Re z \right)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\exp(z) \ne 0</m>
+            </p>
+          </li>
+          <li xml:id="expder">
+            <p>
+              <m>\frac{ d }{ d z } \exp \left( z \right) = \exp \left( z \right)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    <xref ref="expperiodic">Identity</xref>
+    is very special and has no counterpart for the real exponential function.
+    It says that the complex exponential function is <em>periodic
+        <idx><h>periodic</h></idx>
+    </em> with period <m>2 \pi i</m>.
+    This has many interesting consequences;
+    one that may not seem too pleasant at first sight is the fact that the complex exponential function is not one-to-one.
+  </p>
+  <p>
+    <xref ref="expder">Identity</xref> is not only remarkable,
+    but we invite you to meditate on its proof below;
+    it gives a strong indication that our definition of <m>\exp</m> is reasonable.
+    We also note that <xref ref="expder"></xref>
+    implies that <m>\exp</m> is entire.
+  </p>
+  <p>
+    We leave the proof of <xref ref="expproperties">Proposition</xref>
+    as <xref ref="ex_expproperties">Exercise</xref> but give one sample.
+  </p>
+  <proof>
+    <p>
+      The partial derivatives of <m>f(z) = \exp(z)</m> are
+      <me>
+        \fderiv fx \= e^x \left( \cos y + i \sin y \right) \qquad \text{ and }  \qquad \fderiv fy \= e^x \left( -\sin y + i \cos y \right)
+      </me>.
+    </p>
+    <p>
+      They are continuous in <m>\C</m> and satisfy the Cauchy<ndash/>Riemann equation<nbsp/><xref ref="complexcr"/>:
+      <me>
+        \fderiv fx(z) \= -i \, \fderiv fy(z)
+      </me>
+      for all <m>z \in \C</m>.
+      Thus <xref ref="cre">Theorem</xref>
+      says that <m>f(z) = \exp(z)</m> is entire with derivative
+      <me>
+        f'(z) \= \fderiv fx(z) \= \exp(z) \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <p>
+    We should make sure that the complex exponential function specializes to the real exponential function for real arguments:
+    indeed, if <m>z = x \in \R</m> then
+    <me>
+      \exp(x) \= e^x \left( \cos 0 + i \sin 0 \right) \= e^x
+    </me>.
+  </p>
+  <figure>
+    <caption>Image properties of the exponential function.</caption>
+    <me>
+      \figureinput Rtex/expimage
+    </me>
+  </figure>
+  <p>
+    The trigonometric functions
+        <idx><h>trigonometric functions</h></idx>
+    <mdash/>sine,
+        <idx><h>sine</h></idx>
+    cosine,
+        <idx><h>cosine</h></idx>
+    tangent,
+        <idx><h>tangent</h></idx>
+    cotangent,
+        <idx><h>cotangent</h></idx>
+    etc.<mdash/>also have complex analogues;
+    however, they do not play the same prominent role as in the real case.
+    In fact, we can define them as merely being special combinations of the exponential function.
+        <idx><h>function</h><h>trigonometric</h></idx>
+  </p>
+  <definition>
+    <statement>
+      <p>
+        The <em>(complex) sine</em> and
+        <em>cosine</em> are defined as
+        <me>
+          \sin z \ := \ \tfrac{1}{2i} \left( \exp (iz) - \exp (-iz) \right) \qquad \text{ and }  \qquad \cos z \ := \ \tfrac 1 2 \left( \exp (iz) + \exp (-iz) \right)\,
+        </me>,
+        respectively.
+        The <em>tangent</em> and <em>cotangent</em> are defined as
+        <me>
+          \tan z \ := \ \frac{ \sin z }{ \cos z } \= -i \, \frac{ \exp (2iz) - 1 }{ \exp (2iz) + 1 } \qquad \text{ and }  \qquad \cot z \ := \ \frac{ \cos z }{ \sin z } \= i \, \frac{ \exp (2iz) + 1 }{ \exp (2iz) - 1 } \,
+        </me>,
+        respectively.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Note that to write tangent and cotangent in terms of the exponential function,
+    we used the fact that <m>\exp(z) \exp(-z) = \exp(0) = 1</m>.
+    Because <m>\exp</m> is entire,
+    so are <m>\sin</m> and <m>\cos</m>.
+  </p>
+  <p>
+    As with the exponential function,
+    we should make sure that we're not redefining the real sine and cosine:
+    if <m>z = x \in \R</m> then
+    <me>
+      \sin z \= \tfrac{1}{2i} \left( \exp (ix) - \exp (-ix) \right) \= \tfrac{1}{2i} \left( \cos x + i \sin x - \cos(-x) - i \sin(-x) \right) \= \sin x \,
+    </me>.
+  </p>
+  <p>
+    A similar calculation holds for the cosine.
+    Not too surprisingly,
+    the following properties follow mostly from <xref ref="expproperties">Proposition</xref>.
+  </p>
+  <proposition xml:id="trigproperties">
+    <statement>
+      <p>
+        For all <m>z, z_1, z_2 \in \C</m>,
+        <md>
+          <mrow>\sin (-z) \amp = - \sin z \amp \cos (-z) \amp = \cos z</mrow>
+          <mrow>\sin (z + 2 \pi) \amp = \sin z \amp \cos (z + 2 \pi) \amp = \cos z</mrow>
+          <mrow>\tan (z + \pi) \amp = \tan z \amp \cot (z + \pi) \amp = \cot z</mrow>
+          <mrow>\sin (z + \tfrac \pi 2) \amp = \cos z \amp \cos (z + \tfrac \pi 2) \amp = -\sin z</mrow>
+          <mrow>\sin \left( z_1 + z_2 \right) \amp = \sin z_1 \cos z_2 + \cos z_1 \sin z_2 \qquad \amp \cos \left( z_1 + z_2 \right) \amp = \cos z_1 \cos z_2 - \sin z_1 \sin z_2</mrow>
+          <mrow>\cos^2 z + \sin^2 z \amp = 1 \amp  \cos^2 z-\sin^2 z \amp = \cos(2z)</mrow>
+          <mrow>\frac{ d }{ \diff{z} } \sin z \amp = \cos z \amp \frac{ d }{ \diff{z} } \cos z \amp = - \sin z \, </mrow>
+        </md>.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    Finally, one word of caution:
+    unlike in the real case,
+    the complex sine and cosine are
+    <em>not</em> bounded<mdash/>consider,
+    for example, <m>\sin (iy)</m> as <m>y \to \pm \infty</m>.
+  </p>
+  <p>
+    We end this section with a remark on hyperbolic trig functions.
+        <idx><h>hyperbolic trig functions</h></idx>
+    The <em>hyperbolic sine</em>,
+    <em>cosine</em>, <em>tangent</em>,
+    and <em>cotangent</em> are defined as in the real case:
+  </p>
+  <definition>
+    <statement>
+      <md>
+        <mrow>\sinh z \= \tfrac 1 {2} \left( \exp (z) - \exp (-z) \right) \qquad
+        \amp \qquad \cosh z \= \tfrac 1 2 \left( \exp (z) + \exp (-z) \right)</mrow>
+        <mrow>\tanh z \= \frac{ \sinh z }{ \cosh z } \= \frac{ \exp (2z) - 1 }{ \exp (2z) + 1 } \qquad
+        \amp \qquad \coth z \= \frac{ \cosh z }{ \sinh z } \= \frac{ \exp (2z) + 1 }{ \exp (2z) - 1 } \, </mrow>
+      </md>.
+    </statement>
+  </definition>
+  <p>
+    As such, they are yet more special combinations of the exponential function.
+    They still satisfy the identities you already know, e.g.,
+    <me>
+      \frac{d}{\diff{z}} \sinh z \= \cosh z \qquad \text{ and }  \qquad \frac{d}{\diff{z}} \cosh z \= \sinh z \,
+    </me>.
+  </p>
+  <p>
+    Moreover, they are related to the trigonometric functions via
+    <me>
+      \sinh (iz) \= i \sin z \qquad \text{ and }  \qquad \cosh (iz) \= \cos z \,
+    </me>.
+  </p>
+</section>

@@ -1,0 +1,305 @@
+<section xml:id="sec_diffholom">
+  <title>Differentiability and Holomorphicity</title>
+  <p>
+    The fact that simple functions such as
+    <m>\frac{\, \overline z \, } z</m> do not have limits at certain points illustrates something special about complex numbers that has no parallel in the reals<mdash/>we can express a function in a very compact way in one variable,
+    yet it shows some peculiar behavior in the limit.
+    We will repeatedly notice this kind of behavior;
+    one reason is that when trying to compute a limit of a function <m>f(z)</m> as, say,
+    <m>z \to 0</m>,
+    we have to allow <m>z</m> to approach the point <m>0</m> in any way.
+    On the real line there are only two directions to approach <m>0</m><mdash/>from the left or from the right
+    (or some combination of those two).
+    In the complex plane, we have an additional dimension to play with.
+    This means that the statement <em>A complex function has a limit <ellipsis/></em>
+    is in many senses stronger than the statement
+    <em>A real function has a limit <ellipsis/></em>
+    This difference becomes apparent most baldly when studying derivatives.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>f: G \to \C</m> is a complex function and <m>z_0</m> is an interior point of <m>G</m>.
+        The <em>derivative
+            <idx><h>derivative</h></idx>
+        of <m>f</m> at <m>z_0</m></em> is defined as
+        <men xml:id="eq_f_def">
+          f'(z_0) \ := \ \lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0} \,
+        </men>,
+        provided this limit exists.
+        In this case, <m>f</m> is called <em>differentiable
+            <idx><h>differentiable</h></idx>
+        </em> at <m>z_0</m>.
+        If <m>f</m> is differentiable for all points in an open disk centered at <m>z_0</m> then <m>f</m> is called <em>holomorphic
+            <idx><h>holomorphic</h></idx>
+        </em><fn>
+        Some sources use the term <em>analytic</em>
+        instead of <em>holomorphic</em>.
+        As we will see in Chapter 8, in our context,
+        these two terms are synonymous.
+        Technically,
+        though, these two terms have different definitions.
+        Since we will be using the above definition,
+        we will stick with using the term <em>holomorphic</em>
+        instead of the term <em>analytic</em>.
+        </fn> at <m>z_0</m>.
+        The function <m>f</m> is <em>holomorphic</em>
+        on the open set <m>E \subseteq G</m> if it is differentiable
+        (and hence holomorphic)
+        at every point in <m>E</m>.
+        Functions that are differentiable
+        (and hence holomorphic)
+        in the whole complex plane <m>\C</m> are called <em>entire
+            <idx><h>entire</h></idx>
+        </em>.
+      </p>
+    </statement>
+  </definition>
+  <example xml:id="exam_zcubedentire">
+    <statement>
+      <p>
+        The function <m>f: \C \to \C</m> given by <m>f(z) = z^3</m> is entire, that is,
+        holomorphic in <m>\C</m>: For any <m>z_0 \in \C</m>,
+        <me>
+          \lim_{ z \to z_0 } \frac{ f(z) - f(z_0) }{ z - z_0 } \= \lim_{ z \to z_0 } \frac{ z^3 - z_0^3 }{ z - z_0 } \= \lim_{ z \to z_0 } \frac{ ( z^2 + z z_0 + z_0^2 ) ( z - z_0 ) }{ z - z_0 } \= 3 z_0^2 \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    The difference quotient
+        <idx><h>difference quotient</h></idx>
+    limit <xref ref="eq_f_def"/> can be rewritten as
+    <me>
+      f'(z_0) \= \lim_{ h \to 0 } \frac{ f(z_0+h) - f(z_0) }{ h } \,
+    </me>.
+  </p>
+  <p>
+    This equivalent definition is sometimes easier to handle.
+    Note that <m>h</m> need not be a real number but can rather approach zero from anywhere in the complex plane.
+  </p>
+  <p>
+    The notions of differentiability and holomorphicity are not interchangeable:
+  </p>
+  <example xml:id="exam_zbarsquareddiff">
+    <statement>
+      <p>
+        The function <m>f: \C \to \C</m> given by
+        <m>f(z) = (\conj z)^2</m> is differentiable at <m>0</m> and nowhere else;
+        in particular, <m>f</m> is <em>not</em>
+        holomorphic at <m>0</m>: Let's write <m>z = z_0 + r \, e^{ i \phi }</m>.
+        Then
+        <md>
+          <mrow>\frac{ \conj{z}^2 - \conj{z_0}^2 }{ z - z_0 } \amp \= \frac{ \left( \conj{ z_0 + r \, e^{ i \phi } } \right)^2 - \conj{z_0}^2 }{ z_0 + r \, e^{ i \phi } - z_0 } \= \frac{\left(\conj{ z_0 }+re^{-i\phi}\right)^2 - \conj{z_0}^2}{re^{i\phi}}</mrow>
+          <mrow>\amp \= \frac{ \conj{ z_0 }^2 + 2 \, \conj{z_0} \, r \, e^{- i \phi } + r^2 e^{- 2 i \phi } - \conj{z_0}^2 }{ r \, e^{ i \phi } } \= \frac{ 2 \, \conj{z_0} \, r \, e^{ -i \phi } + r^2 e^{ - 2 i \phi } }{ r \, e^{ i \phi } }</mrow>
+          <mrow>\amp \= 2 \, \conj{z_0} \, e^{ -2i \phi } + r \, e^{ -3i \phi } </mrow>
+        </md>.
+      </p>
+      <p>
+        If <m>z_0 \ne 0</m> then taking the limit of <m>f(z)</m> as
+        <m>z \to z_0</m> thus means taking the limit of <m>2 \, \conj{z_0} \, e^{ -2i \phi } + r \, e^{ -3i \phi }</m> as <m>r \to 0</m>,
+        which gives <m>2 \, \conj{z_0} \, e^{ -2i \phi }</m>,
+        a number that depends on <m>\phi</m>,
+        i.e., on the direction that <m>z</m> approaches <m>z_0</m>.
+        Hence this limit does not exist.
+      </p>
+      <p>
+        On the other hand,
+        if <m>z_0 = 0</m> then the right-hand side above equals <m>r \, e^{ -3i \phi } = |z| \, e^{ -3i \phi }</m>.
+        Hence
+        <me>
+          \lim_{ z \to 0 } \left| \frac{ \conj{z}^2 }{ z } \right| \= \lim_{ z \to 0 } \left| |z| \, e^{ -3i \phi } \right| \= \lim_{ z \to 0 } |z| \= 0 \,
+        </me>,
+        which implies, by <xref ref="ex_limiteq0">Exercise</xref>, that
+        <me>
+          \lim_{ z \to z_0 } \frac{ \conj{z}^2 - \conj{z_0}^2 }{ z - z_0 } \= \lim_{ z \to 0 } \frac{ \conj{z}^2 }{ z } \= 0 \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        The function <m>f: \C \to \C</m> given by
+        <m>f(z) = \overline z</m> is nowhere differentiable:
+        <me>
+          \lim_{ z \to z_0 } \frac{ \o z - \o{ z_0 } }{ z - z_0 } \= \lim_{ z \to z_0 } \frac{ \ \o { z - z_0 } \ }{ z - z_0 } \= \lim_{ z \to 0 } \frac{\, \overline z \, } z \,
+        </me>,
+        which does not exist,
+        as discussed in <xref ref="exam_limitdoesnotexist">Example</xref>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    The basic properties for derivatives are similar to those we know from real calculus.
+    In fact, the following rules follow mostly from properties of the limit.
+  </p>
+  <proposition xml:id="derivativerules">
+    <statement>
+      <p>
+        Suppose <m>f</m> and <m>g</m> are differentiable at
+        <m>z \in \C</m> and <m>h</m> is differentiable at <m>g(z)</m>.
+        Then
+        <ol marker="a">
+          <li>
+            <p>
+              <m>\bigl( f(z) + c \, g(z) \bigr)' \= f'(z) + c \, g'(z)</m> for any <m>c \in \C</m>
+            </p>
+          </li>
+          <li xml:id="diffproductrule">
+            <p>
+              <m>\bigl( f(z) \, g(z) \bigr)' \= f'(z) \, g(z) + f(z) \, g'(z)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \left( \frac{ f(z) }{ g(z) } \right)' \= \frac{ f'(z) \, g(z) - f(z) \, g'(z) }{ g(z)^2 }</m> provided that <m>g(z)^2 \ne 0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\bigl( z^n \bigr)' \= n \, z^{n-1}</m> for any nonzero integer <m>n</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>g</m> is continuous at <m>z</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\bigl( h(g(z)) \bigr)' \= h'(g(z)) \, g'(z) </m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <md>
+      <mrow>\bigl( f(z) g(z) \bigr)'
+      \amp \= \lim_{ h \to 0 } \frac{ f(z+h) \, g(z+h) - f(z) \, g(z) }{ h }</mrow>
+      <mrow>\amp \= \lim_{ h \to 0 } \frac{ f(z+h) \left( g(z+h) - g(z) \right) + \left( f(z+h) - f(z) \right) g(z) }{ h }</mrow>
+      <mrow>\amp \= \lim_{ h \to 0 } f(z+h) \frac{ g(z+h) - g(z) } h + \lim_{ h \to 0 } \frac{ f(z+h) - f(z) } h g(z)</mrow>
+      <mrow>\amp \= f(z) \, g'(z) + f'(z) \, g(z) \, </mrow>
+    </md>.
+    <p>
+      Note that we have used the definition of the derivative and <xref ref="limits">Proposition</xref><xref ref="limitsadd"/> &amp;
+      <xref ref="limitsmultiply"/>
+      (the addition and multiplication rules for limits).
+    </p>
+  </proof>
+  <p>
+    A prominent application of the differentiation rules is the composition of a complex function <m>f(z)</m> with a path <m>\gamma(t)</m>.
+    The proof of the following result gives a preview.
+  </p>
+  <proposition xml:id="dernonzeroconformal">
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic at <m>a \in \C</m> with
+        <m>f'(a)\ne0</m> and suppose <m>\gamma_1</m> and
+        <m>\gamma_2</m> are two smooth paths that pass through <m>a</m>,
+        making an angle of <m>\phi</m> with each other.
+        Then <m>f</m> transforms <m>\gamma_1</m> and
+        <m>\gamma_2</m> into smooth paths which meet at <m>f(a)</m>,
+        and the transformed paths make an angle of <m>\phi</m> with each other.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    In words, a holomorphic function with nonzero derivative preserves angles.
+    Functions that preserve angles in this way are called <em>conformal
+        <idx><h>conformal</h></idx>
+    </em>.
+        <idx><h>function</h><h>conformal</h></idx>
+  </p>
+  <proof>
+    <p>
+      Let <m>\gamma_1(t)</m> and
+      <m>\gamma_2(t)</m> be parametrizations of the two paths such that <m>\gamma_1(0) = \gamma_2(0) = a</m>.
+      Then <m>\gamma_1'(0)</m>
+      (considered as a vector)
+      is the tangent vector of <m>\gamma_1</m> at the point <m>a</m>,
+      and <m>\gamma_2'(0)</m> is the tangent vector of <m>\gamma_2</m> at <m>a</m>.
+      Moving to the image of <m>\gamma_1</m> and <m>\gamma_2</m> under <m>f</m>,
+      the tangent vector of <m>f(\gamma_1)</m> at the point <m>f(a)</m> is
+      <me>
+        \left. \frac{ d }{\diff{t} } f(\gamma_1(t)) \right|_{t = 0} = \ f'(\gamma_1(0)) \, \gamma_1'(0) \= f'(a) \, \gamma_1'(0) \,
+      </me>,
+      and similarly, the tangent vector of
+      <m>f(\gamma_2)</m> at the point <m>f(a)</m> is <m>f'(a) \, \gamma_2'(0)</m>.
+      This means that the action of <m>f</m> multiplies the two tangent vectors <m>\gamma_1'(0)</m> and
+      <m>\gamma_2'(0)</m> by the same nonzero complex number <m>f'(a)</m>,
+      and so the two tangent vectors got dilated by <m>|f'(a)|</m>
+      (which does not affect their direction)
+      and rotated by the same angle (an argument of <m>f'(a)</m>).
+    </p>
+  </proof>
+  <p>
+    We end this section with yet another differentiation rule,
+    that for inverse functions.
+    As in the real case,
+    this rule is only defined for functions that are bijections.
+        <idx><h>bijection</h></idx>
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A function <m>f: G \to H</m> is <em>one-to-one
+            <idx><h>one-to-one</h></idx>
+        </em> if for every image <m>w \in H</m> there is a unique <m>z \in G</m> such that <m>f(z)=w</m>.
+        The function is <em>onto
+            <idx><h>onto</h></idx>
+        </em> if every <m>w \in H</m> has a preimage <m>z \in G</m> (that is,
+        there exists <m>z \in G</m> such that <m>f(z) = w</m>).
+        A <em>bijection</em> is a function that is both one-to-one and onto.
+        If <m>f: G \to H</m> is a bijection then <m>g: H \to G</m> is the
+        <em>inverse of <m>f</m></em>
+        if <m>f(g(w)) = w</m> for all <m>w \in H</m> and
+        <m>g(f(z)) = z</m> for all <m>z \in G</m>;
+        in other words, the composition
+        <m>f \circ g</m> is the identity function on<nbsp/><m>H</m>,
+        and <m>g \circ f</m> is the identity function on<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </definition>
+  <proposition xml:id="inversederivative">
+    <statement>
+      <p>
+        Suppose <m>G, H \subseteq \C</m> are open sets,
+        <m>f: G \to H</m> is a bijection,
+        <m>g: H \to G</m> is the inverse function
+            <idx><h>inverse function</h></idx>
+        of <m>f</m>, and <m>w_0 \in H</m>.
+        If <m>f</m> is differentiable at <m>g(w_0)</m> with
+        <m>f'(g(w_0)) \ne 0</m> and <m>g</m> is continuous at <m>w_0</m>,
+        then <m>g</m> is differentiable at <m>w_0</m> with
+        <me>
+          g'(w_0) \= \frac 1 { f' \left( g(w_0) \right) } \,
+        </me>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      Since <m>f(g(w)) = w</m> for all <m>w \in H</m>,
+      <me>
+        g'(w_0) \= \lim_{w\to w_0}\frac{ g(w) - g(w_0) }{ w - w_0 } \= \lim_{w\to w_0}\frac{ g(w) - g(w_0) }{ f(g(w)) - f(g(w_0)) } \= \lim_{w\to w_0}\frac 1 { \dfrac{ f(g(w)) - f(g(w_0)) }{g(w) - g(w_0) } } \,
+      </me>.
+    </p>
+    <p>
+      Now define <m>z_0:=g(w_0)</m> and set
+      <me>
+        \phi(z) \, := \, \begin{cases}\dfrac{f(z)-f(z_0)}{z-z_0} \amp \text{ if }  z\ne z_0\\ f'(z_0)                    \amp \text{ if }  z=z_0\,. \end{cases}
+      </me>
+    </p>
+    <p>
+      This is continuous at <m>z_0</m> and
+      <m>\lim_{w\to w_0}g(w) = z_0</m> by continuity of <m>g</m>,
+      so we can apply <xref ref="funoflimit">Proposition</xref>:
+      <me>
+        g'(w_0) \= \lim_{w\to w_0} \frac {1}{\phi\left(g(w)\right) } \= \frac {1} { \displaystyle\phi\left(\lim_{w\to w_0}g(w)\right) } \= \frac {1} {f'(z_0)} \= \frac {1} {f'(g(w_0))} \, . \qedhere
+      </me>
+    </p>
+  </proof>
+</section>

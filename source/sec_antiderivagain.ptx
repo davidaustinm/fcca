@@ -1,0 +1,136 @@
+<section xml:id="sec_antiderivagain">
+  <title>Antiderivatives Again</title>
+  <p>
+        <idx><h>fundamental theorem</h><h>of calculus</h></idx>
+        <idx><h>antiderivative</h></idx>
+  </p>
+  <p>
+    <xref ref="thm_FTC1">Theorem</xref>
+    gave us an antiderivative for a function that has zero integrals over closed paths in a given region.
+    Now that we have <xref ref="infdiff">Corollary</xref>,
+    meditating just a bit more over <xref ref="thm_FTC1">Theorem</xref>
+    gives a converse of sorts to <xref ref="cauchycor">Corollary</xref>.
+  </p>
+  <corollary xml:id="morera">
+    <title>Morera's<footnote>Named after Giancinto Morera (1856<ndash/>1907).</footnote> Theorem</title>
+    <statement>
+      <p>
+            <idx><h>Morera's theorem</h></idx>
+        Suppose <m>f</m> is continuous in the region <m>G</m> and
+        <me>
+          \int_\gg f \= 0
+        </me>
+        for all piecewise smooth closed paths <m>\gg \subset G</m>.
+        Then <m>f</m> is holomorphic in<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      <xref ref="thm_FTC1">Theorem</xref>
+      yields an antiderivative <m>F</m> for <m>f</m> in <m>G</m>.
+      Because <m>F</m> is holomorphic in <m>G</m>,
+      <xref ref="infdiff">Corollary</xref>
+      implies that <m>f</m> is also holomorphic in<nbsp/><m>G</m>.
+    </p>
+  </proof>
+  <p>
+    Just like there are several variations of <xref ref="thm_FTC1">Theorem</xref>,
+    we have variations of <xref ref="morera">Corollary</xref>.
+    For example, by <xref ref="thm_FTC1polygonal">Corollary</xref>,
+    we can replace the condition <em>for all piecewise smooth closed paths <m>\gg \subset G</m></em>
+    in the statement of <xref ref="morera">Corollary</xref>
+    by the condition <em>for all closed polygonal paths <m>\gg \subset G</m></em>
+    (which, in fact, gives a stronger version of this result).
+  </p>
+  <p>
+    A special case of <xref ref="thm_FTC1">Theorem</xref>
+    applies to regions in which every closed path is contractible.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A region <m>G \subseteq \C</m> is <em>simply connected
+            <idx><h>simply connected</h></idx>
+        </em> if <m>\gg \sim_G 0</m> for every closed path <m>\gg</m> in<nbsp/><m>G</m>.
+            <idx><h>region</h><h>simply-connected</h></idx>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Loosely speaking, a region is simply connected if it has no holes.
+  </p>
+  <example xml:id="ex_simplyconn">
+    <statement>
+      <p>
+        Any disk <m>D[a,r]</m> is simply connected,
+        as is <m>\C \setminus \R_{ \le 0 }</m>.
+        (You should draw a few closed paths in
+        <m>\C \setminus \R_{ \le 0 }</m> to convince yourself that they are all contractible.)
+        The region <m>\C \setminus \{ 0 \}</m> is not simply connected as,
+        e.g., the unit circle is not
+        <m>(\C \setminus \{ 0 \})</m>-contractible. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    If <m>f</m> is holomorphic in a simply-connected region then <xref ref="cauchycor">Corollary</xref>
+    implies that <m>f</m> satisfies the conditions of <xref ref="thm_FTC1">Theorem</xref>,
+    whence we conclude:
+  </p>
+  <corollary xml:id="cor_simplyconnectedprimitive">
+    <statement>
+      <p>
+        Every holomorphic function on a simply-connected region
+        <m>G \subseteq \C</m> has an antiderivative on<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    Note that this corollary gives no indication of how to compute an antiderivative.
+    For example,
+    it says that the (entire) function <m>f: \C \to \C</m> given by
+    <m>f(z) = \exp(z^2)</m> has an antiderivative <m>F</m> in <m>\C</m>;
+    it is an entirely different matter to derive a formula for<nbsp/><m>F</m>.
+  </p>
+  <p>
+    <xref ref="cor_simplyconnectedprimitive">Corollary</xref>
+    also illustrates the role played by two of the regions in <xref ref="ex_simplyconn">Example</xref>,
+    in connection with the function <m>f(z) = \frac 1 z</m>.
+    This function has no antiderivative on <m>\C \setminus \{ 0 \}</m>,
+    as we proved in <xref ref="ex_antiderivnotexist">Example</xref>.
+    Consequently
+    (as one can see much more easily),
+    <m>\C \setminus \{ 0 \}</m> is not simply connected.
+    However, the function <m>f(z) = \frac 1 z</m> does have an antiderivative on the simply-connected region
+    <m>\C \setminus \R_{ \le 0 }</m> (namely, <m>\Log(z)</m>),
+    illustrating one instance implied by <xref ref="cor_simplyconnectedprimitive">Corollary</xref>.
+  </p>
+  <p>
+    Finally, <xref ref="cor_simplyconnectedprimitive">Corollary</xref> implies that,
+    if we have two paths in a simply-connected region with the same endpoints,
+    we can concatenate them<mdash/>changing direction on one<mdash/>to form a closed path,
+    which proves:
+  </p>
+  <corollary xml:id="antidercor2">
+    <statement>
+      <p>
+        If <m>f</m> is holomorphic in a simply-connected region <m>G</m> then
+        <m>\int_\gg f</m> is independent of the piecewise smooth path
+        <m>\gg \subset G</m> between <m>\gg(a)</m> and <m>\gg(b)</m>.
+            <idx><h>path independent</h></idx>
+            <idx><h>integral</h><h>path independent</h></idx>
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    When an integral depends only on the endpoints of the path,
+    the integral is called <em>path independent</em>.
+    <xref ref="firstintexample">Example</xref>
+    shows that this situation is quite special;
+    it also says that the function
+    <m>{\overline z}^2</m> does not have an antiderivative in,
+    for example, the region <m>\{ z \in \C : \, |z|\lt 2 \}</m>.
+    (Actually, the function <m>{\overline z}^2</m> does not have an antiderivative in any nonempty region<mdash/>see <xref ref="ex_zoverline2antider">Exercise</xref>.)
+  </p>
+</section>

@@ -1,0 +1,611 @@
+<section xml:id="sec_argprinc">
+  <title>Argument Principle and Rouch&#xe9;'s Theorem</title>
+  <p>
+    In the previous section we saw how to compute integrals via residues,
+    but in many applications we actually do not have an explicit expression for a function that we need to integrate
+    (or this expression is very complicated).
+    However, it may still be possible to compute the value of a function at any given point.
+    In this situation we cannot immediately apply the Residue Theorem because we don't know where the singularities are.
+    Of course, we could use numerical integration to compute integrals over any path,
+    but computationally this task could be very resource intensive.
+    But if we do know the singularities,
+    we can compute the residues numerically by computing a finite number of the integrals over small circles around these singularities.
+    And after that we can apply the residue theorem to compute the integral over any closed path very effectively:
+    we just sum up the residues inside this path.
+    The argument principle that we study below,
+    in particular, addresses this question.
+    We start by introducing the logarithmic derivative.
+  </p>
+  <p>
+    Suppose we have a differentiable function <m>f</m>.
+    Differentiating <m>\fLog f</m>
+    (where <m>\fLog</m> is some branch of the logarithm)
+    gives <m>\frac{f'}{f}</m>,
+    which is one good reason to call this quotient the
+    <em>logarithmic derivative
+        <idx><h>logarithmic derivative</h></idx>
+    </em> of <m>f</m>.
+    It has some remarkable properties,
+    one of which we would like to discuss here.
+  </p>
+  <p>
+    Now let's say we have two functions <m>f</m> and <m>g</m> holomorphic in some region.
+    Then the logarithmic derivative of their product behaves very nicely:
+    <me>
+      \frac{ (fg)' }{ fg } \= \frac{ f' g + f g' }{ fg } \= \frac{ f' }{ f } + \frac{ g' }{ g } \,
+    </me>.
+  </p>
+  <p>
+    We can apply this fact to the following situation: Suppose that <m>f</m> is holomorphic in a region <m>G</m> and <m>f</m> has
+    (finitely many)
+    zeros <m>z_1, \dots,
+    z_j</m> of multiplicities <m>n_1, \dots, n_j</m>, respectively.
+    By <xref ref="classificationzeros">Theorem</xref>,
+    we can express <m>f</m> as
+    <me>
+      f(z) \= ( z - z_1 )^{n_1} \cdots ( z - z_j )^{n_j} g(z) \,
+    </me>,
+    where <m>g</m> is also holomorphic in <m>G</m> and never zero.
+    Let's compute the logarithmic derivative of <m>f</m> and play the same remarkable cancellation game as above:
+    <md>
+      <mrow>\frac{ f'(z) }{ f(z) } \amp \= \frac{n_1 (z - z_1)^{n_1-1} (z - z_2)^{n_2} \cdots (z - z_j)^{n_j} g(z) + \dots + ( z - z_1 )^{n_1} \cdots ( z - z_j )^{n_j} g'(z) }{ ( z - z_1 )^{n_1} \cdots ( z - z_j )^{n_j} g(z) } \nonumber</mrow>
+      <mrow xml:id="logderzeros" number="yes">\amp \= \frac{ n_1 }{ z - z_1 } + \frac{ n_2 }{ z - z_2 } + \cdots + \frac{ n_j }{ z - z_j } + \frac{ g'(z) }{ g(z) } \, </mrow>
+    </md>.
+  </p>
+  <p>
+    Something similar happens if <m>f</m> has finitely many poles in <m>G</m>.
+    In <xref ref="ex_logderpoles">Exercise</xref>,
+    we invite you to prove that, if
+    <m>p_1, \dots,
+    p_k</m> are all the poles of <m>f</m> in <m>G</m> with order <m>m_1, \dots, m_k</m>,
+    respectively,
+    then the logarithmic derivative of <m>f</m> can be expressed as
+    <men xml:id="logderpoles">
+      \frac{f'(z)}{f(z)} \ = \ - \frac{ m_1 }{ z - p_1 } - \frac{m_2}{z - p_2} - \dots - \frac{ m_k }{ z - p_k } + \frac{ g'(z) }{ g(z) } \,
+    </men>,
+    where <m>g</m> is a function without poles in <m>G</m>.
+    Naturally, we can combine the expressions for zeros and poles,
+    as we will do in a moment.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A function <m>f</m> is <em>meromorphic
+            <idx><h>meromorphic</h></idx>
+        </em> in the region <m>G</m> if <m>f</m> is holomorphic in <m>G</m> except for poles.
+      </p>
+    </statement>
+  </definition>
+  <theorem xml:id="argprinc">
+    <title>Argument Principle<footnote>
+    The name <em>Argument Principle</em> stems from interpreting the integral $&#305; \frac{f'}{f}$ as the change in the argument of $f(z)$ as $z$ traverses $\gg$, since $\fLog(f(z))' =
+    \frac{ f'(z) }{ f(z) }$.
+    </footnote></title>
+    <statement>
+      <p>
+        Suppose <m>f</m> is meromorphic in a region <m>G</m> and <m>\gg</m> is a positively oriented,
+        simple, closed,
+        piecewise smooth path that does not pass through any zero or pole of <m>f</m>,
+        and <m>\gg \sim_G 0</m>.
+        Denote by <m>Z(f,\gg)</m> the number of zeros of <m>f</m> inside <m>\gg</m> counted according to multiplicity and by
+        <m>P(f,\gg)</m> the number of poles of <m>f</m> inside <m>\gg</m> counted according to order.
+        Then
+        <me>
+          \frac{1}{2 \pi i} \i \frac{f'}{f} \= Z(f,\gg) - P(f,\gg) \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      Suppose the zeros of <m>f</m> inside <m>\gg</m> are
+      <m>z_1, \dots,
+      z_j</m> of multiplicities <m>n_1, \dots, n_j</m>,
+      respectively, and the poles inside <m>\gg</m> are
+      <m>p_1, \dots,
+      p_k</m> with order <m>m_1, \dots, m_k</m>, respectively.
+      (You may meditate about the fact why there can be only finitely many zeros and poles inside <m>\gg</m>.)
+      In fact, we may shrink <m>G</m>, if necessary,
+      so that these are the only zeros and poles in <m>G</m>.
+      By <xref ref="logderzeros"/> and<nbsp/><xref ref="logderpoles"/>,
+      <me>
+        \frac{ f'(z) }{ f(z) } \= \frac{ n_1 }{ z - z_1 } + \dots + \frac{ n_j }{ z - z_j } - \frac{ m_1 }{ z - p_1 } - \dots - \frac{ m_k }{ z - p_k } + \frac{ g'(z) }{ g(z) } \,
+      </me>,
+      where <m>g</m> is a function that is holomorphic in <m>G</m>
+      (in particular, without poles)
+      and never zero.
+      Thanks to Cauchy's <xref ref="cauchythm">Theorem</xref>
+      and <xref ref="ex_circleint">Exercise</xref>, the integral is easy:
+      <md>
+        <mrow>\i \frac{ f' }{ f } \amp \= n_1 \i \frac{ \diff{z} }{ z - z_1 } \, + \, \cdots \, + \, n_j \i \frac{ \diff{z} }{ z - z_j } \, - \, m_1 \i \frac{ \diff{z} }{ z - p_1 } \, - \, \cdots \, - \, m_k \i \frac{ \diff{z} }{ z - p_k } + \i \frac{ g' }{ g }</mrow>
+        <mrow>\amp \= 2 \pi i \left( n_1 + \dots + n_j - m_1 - \dots - m_k \right) + \i \frac{ g' }{ g } \, </mrow>
+      </md>.
+    </p>
+    <p>
+      Finally, <m>\frac{g'}{g}</m> is holomorphic in <m>G</m>
+      (because <m>g</m> is never zero in <m>G</m>),
+      so that <xref ref="cauchycor">Corollary</xref> gives
+      <me>
+        \i \frac{g'} g \= 0 \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <p>
+    As mentioned above,
+    this beautiful theorem helps to locate poles and zeroes of a function <m>f</m>.
+    The idea is simple: we can first numerically integrate
+    <m>\frac{f'}{f}</m> over a big circle <m>\gamma</m> that includes all possible paths over which we potentially will be integrating <m>f</m>.
+    Then the numerical value of
+    <m>\frac{ 1 }{ 2 \pi i } \int_{\gamma} \frac{ f' }{ f }</m> will be close to an integer that,
+    according to the Argument Principle,
+    equals <m>Z(f,\gamma)-P(f,\gamma)</m>.
+    Then we can integrate <m>\frac{f'}{f}</m> over a smaller closed path
+    <m>\gamma_1</m> that encompasses half of the interior of <m>\gamma</m> and find <m>Z(f,\gamma_1)-P(f,\gamma_1)</m>.
+    Continuing this process for smaller and smaller regions will
+    (after certain verification)
+    produce small regions where <m>f</m> has exactly one zero or exactly one pole.
+    Integrating <m>f</m> over the boundaries of those small regions that contain poles and dividing by <m>2\pi i</m> gives all residues of<nbsp/><m>f</m>.
+  </p>
+  <p>
+    Another nice related application of the Argument Principle is a famous theorem due to Eugene Rouch&#xe9; (1832<ndash/>1910).
+        <idx><h>Rouch&#xe9;'s theorem</h></idx>
+  </p>
+  <theorem xml:id="rouche">
+    <title>Rouch&#xe9;'s Theorem</title>
+    <statement>
+      <p>
+        Suppose <m>f</m> and <m>g</m> are holomorphic in a region <m>G</m> and <m>\gg</m> is a positively oriented,
+        simple, closed, piecewise smooth path,
+        such that <m>\gg \sim_G 0</m> and
+        <m>|f(z)|>|g(z)|</m> for all <m>z \in \gg</m>.
+        Then
+        <me>
+          Z(f+g,\gg) \= Z(f,\gg) \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    This theorem is of surprising practicality.
+    It allows us to locate the zeros of a function fairly precisely.
+    Here is an illustration.
+  </p>
+  <example xml:id="roucheexample">
+    <statement>
+      <p>
+        All the roots of the polynomial
+        <m>p(z) = z^5 + z^4 + z^3 + z^2 + z + 1</m> have modulus less than two.<fn>
+        The Fundamental Theorem of Algebra <idx><h>fundamental theorem</h><h>of algebra</h></idx>
+        (<xref ref="fundthmalg">Theorem</xref>)
+        asserts that <m>p</m> has five roots in <m>\C</m>.
+        What's special about the statement of <xref ref="roucheexample">Example</xref>
+        is that they all have modulus <m>\lt 2</m>.
+        Note also that there is no general formula for computing roots of a polynomial of degree 5. (Although for this <m>p</m> it's not hard to find one root<mdash/>and therefore all of them.)
+        </fn> To see this,
+        let <m>f(z) = z^5</m> and <m>g(z) = z^4 + z^3 + z^2 + z + 1</m>.
+        Then for <m>z \in C[0,2]</m>
+        <me>
+          |g(z)| \ \le \ |z|^4 + |z|^3 + |z|^2 + |z| + 1 \= 16 + 8 + 4 + 2 + 1 \= 31 \ \lt  \ 32 \= |z|^5 \= |f(z)| \,
+        </me>.
+      </p>
+      <p>
+        So <m>g</m> and <m>f</m> satisfy the condition of the <xref ref="rouche">Theorem</xref>.
+        But <m>f</m> has just one root,
+        of multiplicity 5 at the origin, whence
+        <me>
+          Z(p, \, C[0,2]) \= Z(f+g, \, C[0,2]) \= Z(f, \, C[0,2]) \= 5 \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <proof>
+    <p>
+      By <xref ref="logderzeros"/> and the Argument Principle (<xref ref="argprinc">Theorem</xref>)
+      <md>
+        <mrow>Z(f+g,\gg) \amp \= \frac 1 {2 \pi i} \i \frac{ (f+g)' }{ f+g } \= \frac 1 {2 \pi i} \i \frac{ \left( f \left( 1 + \frac g f \right) \right)' }{ f \left( 1 + \frac g f \right) } \= \frac 1 {2 \pi i} \i \left( \frac{ f' }{ f } + \frac{ \left( 1 + \frac g f \right)'}{ 1 + \frac g f } \right)</mrow>
+        <mrow>\amp \= Z(f,\gg) + \frac 1 {2 \pi i} \i \frac{\left( 1 + \frac g f \right)' }{ 1 + \frac g f } \, </mrow>
+      </md>.
+    </p>
+    <p>
+      We are assuming that <m>| \frac g f | \lt  1</m> on<nbsp/><m>\gg</m>,
+      which means that the function
+      <m>1 + \frac g f</m> evaluated on <m>\gg</m> stays away from <m>\R_{ \le 0 }</m>.
+      But then <m>\Log ( 1 + \frac g f)</m> is a well-defined holomorphic function on<nbsp/><m>\gg</m>.
+      Its derivative is
+      <me>
+        \dfrac{ \left( 1 + \frac g f \right)' }{ 1 + \frac g f }
+      </me>
+      which implies by <xref ref="antidercor">Corollary</xref> that
+      <me>
+        \frac 1 {2 \pi i} \int_\gamma \frac{ \left( 1 + \frac g f \right)' }{ 1 + \frac g f } \= 0 \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <p>
+    \begin{Exercises}
+  </p>
+  <exercise>
+    <statement>
+      <p>
+        Suppose that <m>f</m> has a zero of multiplicity <m>m</m> at <m>a</m>.
+        Explain why <m>\frac 1 f</m> has a pole of order <m>m</m> at<nbsp/><m>a</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the poles or removable singularities of the following functions and determine their orders:
+        <ol>
+          <li>
+            <p>
+              \disp{(z^2+1)^{-3}(z-1)^{-4}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{z\cot(z)}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{z^{-5}\sin(z)}
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac1{1-\exp(z)}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac z{1-\exp(z)}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is a nonconstant entire function.
+        Prove that any complex number is arbitrarily close to a number in <m>f(\C)</m>. (<em>Hint</em>: If <m>f</m> is not a polynomial,
+        use <xref ref="casoratiweierstrass">Theorem</xref> for <m>f (\frac 1 z)</m>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_9_2">
+    <statement>
+      <p>
+        Evaluate the following integrals for <m>\gg = C[0,3]</m>.
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \i \cot (z) \, \diff{z}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \i z^3 \cos ( \tfrac 3 z )\, \diff{z}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \i \frac{ \diff{z} }{ (z+4) ( z^2 + 1 ) }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \i z^2 \exp ( \tfrac 1 z )\, \diff{z}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \i \frac{ \exp (z) }{ \sinh (z) } \, \diff{z}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \i \frac{ i^{z+4} }{ (z^2 + 16)^2 } \, \diff{z}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> has a simple pole (i.e., a pole of order 1) at <m>z_0</m> and <m>g</m> is holomorphic at <m>z_0</m>.
+        Prove that
+        <me>
+          \Res_{z=z_0} \bigl( f(z) \, g(z) \bigr) \= g(z_0) \, \Res_{z=z_0} \bigl( f(z) \bigr) \,
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the residue of each function at <m>0</m>:
+        <ol>
+          <li>
+            <p>
+              \disp{z^{-3}\cos(z)}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\csc(z)}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\frac{z^2+4z+5}{z^2+z}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\exp(1-\tfrac1z)}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\frac{\exp(4z)-1}{\sin^2(z)}}
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Use residues to evaluate the following integrals:
+        <ol>
+          <li>
+            <p>
+              \disp{\int_{ C[i-1,1] }\frac{\diff{z}}{z^4+4}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\int_{ C[i,2] }\frac{\diff{z}}{z(z^2+z-2)}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\int_{ C[0,2] }\frac{\exp(z)}{z^3+z}<nbsp/>\diff{z}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\int_{ C[0,1] }\frac{\diff{z}}{z^2\sin z}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\int_{ C[0,3] }\frac{\exp(z)}{(z+2)^2 \sin z} <nbsp/> \diff{z}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) \cos(z) } <nbsp/> \diff{z}}
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Use the Residue <xref ref="residuethm">Theorem</xref>
+        to re-prove Cauchy's Integral Formulas
+        (<xref ref="cauchyformula">Theorems</xref> &amp;
+        <xref ref="cauchyformula2"></xref>
+        and <xref ref="cauchyformula3">Corollary</xref>).
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Revisiting <xref ref="ex_evenoddfunctions">Exercise</xref>,
+        show that if <m>f</m> is even then <m>\Res_{ z=0 } (f(z)) = 0</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> has an isolated singularity at <m>z_0</m>.
+        <ol>
+          <li>
+            <p>
+              Show that <m>f'</m> also has an isolated singularity at <m>z_0</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find <m>\Res_{z=z_0} (f')</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_computing_residues2">
+    <statement>
+      <p>
+        Extend <xref ref="lem_computing_residues2">Proposition</xref> by proving,
+        if <m>f</m> and <m>g</m> are holomorphic at <m>z_0</m>,
+        which is a double zero of <m>g</m>, then
+        <me>
+          \Res_{z=z_0} \left( \frac{ f(z) }{ g(z) } \right) \= \frac{ 6 \, f'(z_0) \, g''(z_0) - 2 \, f(z_0) \, g'''(z_0) }{ 3 \, g''(z_0)^2 } \,
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Compute <m>\ds \int_{ C[2,3] } \frac{ \cos(z) }{ \sin^2(z) } \,\diff{z} </m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_improperintrationalfct">
+    <statement>
+      <p>
+        Generalize <xref ref="ex_eximpropint">Example</xref>
+        and <xref ref="ex_1__1_x_4_">Exercise</xref>
+        as follows: Let <m>p(x)</m> and <m>q(x)</m> be polynomials such that <m>q(x) \ne 0</m> for
+        <m>x \in \R</m> and the degree of <m>q(x)</m> is at least two larger than the degree of <m>p(x)</m>.
+        Prove that
+            <idx><h>improper integral</h></idx>
+        <m>\int_{ -\infty }^\infty \frac{ p(x) }{ q(x) } \, \diff{x}</m> equals <m>2 \pi i</m> times the sum of the residues of
+        <m>\frac{ p(z) }{ q(z) }</m> at all poles in the upper half plane.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_9_4">
+    <statement>
+      <p>
+        Compute <m>\ds \int_{-\infty}^\infty \frac{ \diff{x} }{ (1+x^2)^2 } </m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Generalize <xref ref="ex_cos_x___1_x_2_">Exercise</xref>
+        by deriving conditions under which we can compute
+        <m>\int_{ -\infty }^\infty \frac{ p(x) \cos(x) }{ q(x) } \, \diff{x}</m> for polynomials <m>p(x)</m> and <m>q(x)</m>,
+        and give a formula for this integral along the lines of <xref ref="ex_improperintrationalfct">Exercise</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Compute <m>\ds \int_{-\infty}^\infty \frac{ \cos(x) }{ 1+x^4 } \, \diff{x} </m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is entire and
+        <m>a,
+        b \in \C</m> with <m>a \ne b</m> and <m>|a|, |b| \lt  R</m>.
+        Evaluate
+        <me>
+          \int_{ C[0,R] } \frac{ f(z) }{ (z-a)(z-b) } \, \diff{z}
+        </me>
+        and use this to give an alternate proof of Liouville's <xref ref="liouville">Theorem</xref>.
+        (<em>Hint</em>: Show that if <m>f</m> is bounded then the above integral goes to zero as <m>R</m> increases.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_logderpoles">
+    <statement>
+      <p>
+        Prove <xref ref="logderpoles"/>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is meromorphic in the region <m>G</m>,
+        <m>g</m> is holomorphic in <m>G</m>,
+        and <m>\gg</m> is a positively oriented, simple, closed,
+        piecewise smooth path that does not pass through any zero or pole of <m>f</m>,
+        and <m>\gg \sim_G 0</m>.
+        Denote the zeros and poles of <m>f</m> inside <m>\gg</m> by <m>z_1, \dots,
+        z_j</m> and <m>p_1, \dots,
+        p_k</m>, respectively, counted according to multiplicity.
+        Prove that
+        <me>
+          \frac{1}{2 \pi i} \i g \, \frac{f'}{f} \= \sum_{m=1}^j g(z_m) - \sum_{n=1}^k g(p_n) \,
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_9_1">
+    <statement>
+      <p>
+        Find the number of zeros of
+        <ol>
+          <li>
+            <p>
+              <m>3 \exp (z) - z</m> in <m>\overline D[0,1]</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac 1 3 \exp (z) - z</m> in <m>\overline D[0,1]</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>z^4 - 5 z + 1</m> in <m>\{ z \in \C : \, 1 \leq |z| \leq 2 \}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Give another proof of the Fundamental Theorem of Algebra <idx><h>fundamental theorem</h><h>of algebra</h></idx>
+        (<xref ref="fundthmalg">Theorem</xref>),
+        using Rouch&#xe9;'s <xref ref="rouche">Theorem</xref>. (<em>Hint</em>: If <m>p(z) = a_n z^n + a_{n-1} z^{n-1} + \dots + a_1 z + 1</m>,
+        let <m>f(z) = a_n z^n</m> and <m>g(z) = a_{n-1} z^{n-1} + a_{n-2} z^{n-2} + \dots + a_1 z + 1</m>,
+        and choose as <m>\gg</m> a circle that is large enough to make the condition of Rouch&#xe9;'s theorem work.
+        You might want to first apply <xref ref="polynomialestimate">Proposition</xref> to<nbsp/><m>g(z)</m>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_compactAndIsolated">
+    <statement>
+      <p>
+        Suppose <m>S\subset\C</m> is closed and bounded and all points of <m>S</m> are isolated points of <m>S</m>.
+        Show that <m>S</m> is finite, as follows:
+        <ol>
+          <li>
+            <p>
+              For each <m>z\in S</m> we can choose <m>\phi(z)>0</m> so that
+              <m>D[z,\phi(z)]</m> contains no points of <m>S</m> except <m>z</m>.
+              Show that <m>\phi</m> is continuous.
+              (<em>Hint</em>: This is really easy if you use the <em>first</em>
+              definition of continuity in <xref ref="sec_limitsandcontinuity">Section</xref>.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Assume <m>S</m> is non-empty.
+              By the Extreme Value <xref ref="realEVT">Theorem</xref>,
+              <m>\phi</m> has a minimum value, <m>r_0>0</m>.
+              Let <m>r=r_0/2</m>.
+              Since <m>S</m> is bounded, it lies in a disk <m>D[0,M]</m> for some <m>M</m>.
+              Show that the small disks <m>D[z,r]</m>,
+              for <m>z\in S</m>, are disjoint and lie in <m>D[0,M+r]</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a bound on the number of such small disks.
+              (<em>Hint</em>: Compare the areas of <m>D[z,r]</m> and <m>D[0,M+r]</m>.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    \end{Exercises}
+  </p>
+</section>

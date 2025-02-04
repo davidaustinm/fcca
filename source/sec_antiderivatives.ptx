@@ -1,0 +1,254 @@
+<section xml:id="sec_antiderivatives">
+  <title>Antiderivatives</title>
+  <p>
+        <idx><h>fundamental theorem</h><h>of calculus</h></idx>
+        <idx><h>antiderivative</h></idx>
+  </p>
+  <p>
+    The central result about integration of a real function is the Fundamental Theorem of Calculus
+    (<xref ref="fundthmcalc">Theorem</xref>),
+    and our next goal is to discuss complex versions of this theorem.
+    The Fundamental Theorem of Calculus makes a number of important claims:
+    that continuous functions are integrable,
+    their antiderivatives are continuous and differentiable,
+    and that antiderivatives provide easy ways to compute values of definite integrals.
+    The difference between the real case and the complex case is that in the latter,
+    we need to think about integrals over arbitrary paths in<nbsp/><m>\C</m>.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        If <m>F</m> is holomorphic in the region <m>G \subseteq \C</m> and
+        <m>F'(z) = f(z)</m> for all <m>z \in G</m>,
+        then <m>F</m> is <em>an antiderivative
+            <idx><h>antiderivative</h></idx>
+        of <m>f</m> on <m>G</m></em>,
+        also known as a <em>primitive
+            <idx><h>primitive</h></idx>
+        of <m>f</m> on<nbsp/><m>G</m></em>.
+      </p>
+    </statement>
+  </definition>
+  <example>
+    <statement>
+      <p>
+        We have already seen that <m>F(z) = z^2</m> is entire and has derivative <m>f(z) = 2z</m>.
+        Thus, <m>F</m> is an antiderivative of <m>f</m> on any region <m>G \subseteq \C</m>.
+        The same goes for <m>F(z) = z^2 + c</m>,
+        where <m>c \in \C</m> is any constant. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Since
+        <me>
+          \frac{ d }{ \diff{z} } \left( \frac 1 {2i} (\exp(iz) - \exp(-iz)) \right) \= \frac 1 2 (\exp(iz) + \exp(-iz)) \,
+        </me>,
+      </p>
+      <p>
+        <m>F(z) = \sin z</m> is an antiderivative of
+        <m>f(z) = \cos z</m> on<nbsp/><m>\C</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        The function <m>F(z) = \Log(z)</m> is an antiderivative of
+        <m>f(z) = \frac 1 z</m> on <m>\C \setminus \R_{ \le 0 }</m>.
+        Note that <m>f</m> is holomorphic in the larger region <m>\C \setminus \{ 0 \}</m>;
+        however, we will see in <xref ref="ex_antiderivnotexist">Example</xref> that <m>f</m> <em>cannot</em>
+        have an antiderivative on that region. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Here is the complex analogue of <xref ref="fundthmcalc">Theorem</xref>
+    <xref ref="fundthmcalc2"></xref>.
+  </p>
+  <theorem xml:id="antiderthm">
+    <statement>
+      <p>
+        Suppose <m>G \subseteq \C</m> is a region and
+        <m>\gg \subset G</m> is a piecewise smooth path with parametrization <m>\gg(t)</m>,
+        <m>a \leq t \leq b</m>.
+        If <m>f</m> is continuous on <m>G</m> and <m>F</m> is any antiderivative of <m>f</m> on <m>G</m> then
+        <me>
+          \int_\gg f \= F \left( \gg(b) \right) - F \left( \gg(a) \right)
+        </me>
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      This follows immediately from the definition of a complex integral and <xref ref="fundthmcalc">Theorem</xref>
+      <xref ref="fundthmcalc2"></xref>,
+      since <m>\frac{ d }{ \diff{t} } F(\gg(t)) = f(\gg(t)) \, \gg'(t)</m>:
+      <me>
+        \int_\gg f \= \int_a^b f(\gg(t)) \, \gg'(t) \, \diff{t} \= F \left( \gg(b) \right) - F \left( \gg(a) \right) . \qedhere
+      </me>
+    </p>
+  </proof>
+  <example>
+    <statement>
+      <p>
+        Since <m>F(z) = \frac 1 2 \, z^2</m> is an antiderivative of <m>f(z) = z</m> in <m>\C</m>,
+        <me>
+          \int_\gg f \= \frac 1 2 (1+i)^2 - \frac 1 2 \, 0^2 \= i
+        </me>
+        for each of the three paths in <xref ref="firstintexample">Example</xref>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    There are several interesting consequences of <xref ref="antiderthm">Theorem</xref>.
+    For starters, if <m>\gg</m> is closed (that is,
+    <m>\gg(a)=\gg(b)</m>) we effortlessly obtain the following.
+  </p>
+  <corollary xml:id="antidercor">
+    <statement>
+      <p>
+        Suppose <m>G \subseteq \C</m> is open,
+        <m>\gg \subset G</m> is a piecewise smooth closed path,
+        and <m>f</m> is continuous on <m>G</m> and has an antiderivative on <m>G</m>.
+        Then
+        <me>
+          \int_\gg f \= 0 \,
+        </me>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    This corollary is immediately useful as a test for existence of antiderivatives:
+  </p>
+  <example xml:id="ex_antiderivnotexist">
+    <statement>
+      <p>
+        The function <m>f: \C \setminus \{0\} \to \C</m> given by <m>f(z) = \frac 1 z</m> satisfies
+        <m>\int_{\gg} f = 2\pi i</m> for the unit circle <m>\gg \subset \C \setminus \{0\}</m>,
+        by <xref ref="ex_circleint">Exercise</xref>.
+        Since this integral is nonzero,
+        <m>f</m> cannot have an antiderivative in <m>\C \setminus \{0\}</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    We now turn to the complex analogue of <xref ref="fundthmcalc">Theorem</xref>
+    <xref ref="fundthmcalc1"></xref>.
+  </p>
+  <theorem xml:id="thm_FTC1">
+    <statement>
+      <p>
+        Suppose <m>G \subseteq \C</m> is a region and <m>z_0 \in G</m>.
+        Let <m>f: G \to \C</m> be a continuous function such that
+        <m>\int_\gg f = 0</m> for any closed piecewise smooth path <m>\gg \subset G</m>.
+        Then the function <m>F: G \to \C</m> defined by
+        <me>
+          F(z) \ := \ \int_{\gg_z} f \
+        </me>,,
+        where <m>\gg_z</m> is any piecewise smooth path in <m>G</m> from <m>z_0</m> to <m>z</m>,
+        is an antiderivative for <m>f</m> on <m>G</m>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      There are two statements that we have to prove:
+      first, that our definition of <m>F</m> is sound<mdash/>that is,
+      the integral defining <m>F</m> does not depend on <em>which</em>
+      path we take from <m>z_0</m> to <m>z</m><mdash/>and second,
+      that <m>F'(z) = f(z)</m> for all <m>z \in G</m>.
+    </p>
+    <p>
+      Suppose <m>G \subseteq \C</m> is a region, <m>z_0 \in G</m>,
+      and <m>f: G \to \C</m> is a continuous function such that
+      <m>\int_\gg f = 0</m> for any closed piecewise smooth path <m>\gg \subset G</m>.
+      Then <m>\int_\sigma f</m> evaluates to the same number for any piecewise smooth path
+      <m>\sigma \subset G</m> from <m>z_0</m> to <m>z \in G</m>,
+      because any two such paths <m>\sigma_1</m> and
+      <m>\sigma_2</m> can be concatenated to a closed path first tracing through
+      <m>\sigma_1</m> and then through <m>\sigma_2</m> backwards,
+      which by assumption yields a zero integral:
+      <me>
+        \int_{ \sigma_1 } f \ - \ \int_{ \sigma_2 } f \= \int_{ \sigma_1 - \sigma_2 } f \= 0 \,
+      </me>.
+    </p>
+    <p>
+      This means that
+      <me>
+        F(z) \ := \ \int_{\gg_z} f
+      </me>
+      is well defined.
+      By the same argument,
+      <me>
+        F(z+h) - F(z) \= \int_{\gg_{z+h}} f \ - \ \int_{\gg_z} f \= \int_\gg f
+      </me>
+      for any path <m>\gg \subset G</m> from <m>z</m> to <m>z+h</m>.
+      The constant function <m>1</m> has the antiderivative <m>z</m> on <m>\C</m>,
+      and so <m>\int_\gg 1 = h</m>,
+      by <xref ref="antiderthm">Theorem</xref>.
+      Thus
+      <me>
+        \frac{ F(z+h) - F(z) }{ h } - f(z) \= \frac 1 h \int_\gg f(w) \, \diff{w} \ - \ \frac{ f(z) }{ h } \int_\gg \diff{w} \= \frac 1 h \int_\gg (f(w)-f(z)) \, \diff{w} \,
+      </me>.
+    </p>
+    <p>
+      If <m>|h|</m> is sufficiently small then the line segment <m>\lambda</m> from <m>z</m> to <m>z+h</m> will be contained in <m>G</m>, and so,
+      by applying the assumptions of our theorem for the third time,
+      <men xml:id="eq_makepathstraight">
+        \frac{ F(z+h) - F(z) }{ h } - f(z) \= \frac 1 h \int_\gg (f(w)-f(z)) \, \diff{w} \= \frac 1 h \int_\lambda (f(w)-f(z)) \, \diff{w} \,
+      </men>.
+    </p>
+    <p>
+      We will show that the right-hand side goes to zero as <m>h \to 0</m>,
+      which will conclude the theorem.
+      Given <m>\epsilon > 0</m>, we can choose <m>\delta > 0</m> such that
+      <me>
+        \abs{ w-z } \lt  \delta \qquad \Longrightarrow \qquad \abs{ f(w) - f(z) } \lt  \epsilon
+      </me>
+      because <m>f</m> is continuous at <m>z</m>.
+      (We also choose <m>\delta</m> small enough so that <xref ref="eq_makepathstraight"/> holds.)
+      Thus if <m>|h| \lt  \delta</m>,
+      we can estimate with <xref ref="intprop">Proposition</xref> <xref ref="int4"></xref>
+      <me>
+        \abs{ \frac 1 h \int_\lambda (f(w)-f(z)) \, \diff{w} } \ \le \ \frac 1 {|h|} \max_{ w \in \lambda } \abs{ f(w) - f(z) } \length(\lambda) \= \max_{ w \in \lambda } |f(w) - f(z)| \lt  \epsilon \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <p>
+    There are several variations of <xref ref="thm_FTC1">Theorem</xref>,
+    as we can play with the assumptions about paths in the statement of the theorem.
+    We give one such variation, namely,
+    for <em>polygonal paths</em>,
+    i.e., paths that are composed as unions of line segments.
+    You should convince yourself that the proof of the following result is identical to that of <xref ref="thm_FTC1">Theorem</xref>.
+        <idx><h>path</h><h>polygonal</h></idx>
+        <idx><h>path</h><h>polygonal</h></idx>
+  </p>
+  <corollary xml:id="thm_FTC1polygonal">
+    <statement>
+      <p>
+        Suppose <m>G \subseteq \C</m> is a region and <m>z_0 \in G</m>.
+        Let <m>f: G \to \C</m> be a continuous function such that
+        <m>\int_\gg f = 0</m> for any closed polygonal path <m>\gg \subset G</m>.
+        Then the function <m>F: G \to \C</m> defined by
+        <me>
+          F(z) \ := \ \int_{\gg_z} f \
+        </me>,,
+        where <m>\gg_z</m> is any polygonal path in <m>G</m> from <m>z_0</m> to <m>z</m>,
+        is an antiderivative for <m>f</m> on <m>G</m>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    If you compare our proof of <xref ref="thm_FTC1">Theorem</xref> to its analogue in <m>\R</m>,
+    you will see similarities,
+    as well as some complications due to the fact that we now have to operate in the plane as opposed to the real line.
+    Still, so far we have essentially been
+    <q>doing calculus</q>
+    when computing integrals.
+    We will now take a radical departure from this philosophy by studying complex integrals that stay invariant under certain transformations of the paths we are integrating over.
+  </p>
+</section>

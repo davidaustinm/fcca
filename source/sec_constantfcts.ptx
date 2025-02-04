@@ -1,0 +1,507 @@
+<section xml:id="sec_constantfcts">
+  <title>Constant Functions</title>
+  <p>
+    As a sample application of the definition of the derivative of a complex function,
+    we consider functions that have a derivative of <m>0</m>.
+    In a typical calculus course,
+    one of the first applications of the Mean-Value Theorem for real-valued functions
+    (<xref ref="realmeanvalue">Theorem</xref>)
+    is to show that if a function has zero derivative everywhere on an interval then it must be constant.
+  </p>
+  <proposition xml:id="lem_constant">
+    <statement>
+      <p>
+        If <m>I</m> is an interval and
+        <m>f: I \to \R</m> is a real-valued function with <m>f'(x)</m> defined and equal to <m>0</m> for all <m>x \in I</m>,
+        then there is a constant <m>c \in \R</m> such that
+        <m>f(x) = c</m> for all <m>x \in I</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      The Mean-Value <xref ref="realmeanvalue">Theorem</xref>
+      says that for any <m>x, y \in I</m>,
+      <me>
+        f(y)-f(x) \= f'\bigl(x + a(y-x) \bigr) (y-x)
+      </me>
+      for some <m>0 \lt  a \lt  1</m>.
+      Now <m>f'(x+a(y-x))=0</m>, so the above equation yields <m>f(y)=f(x)</m>.
+      Since this is true for any <m>x, y \in I</m>,
+      the function <m>f</m> must be constant on<nbsp/><m>I</m>.
+    </p>
+  </proof>
+  <p>
+    We do not (yet) have a complex version of the Mean-Value Theorem,
+    and so we will use a different argument to prove that a complex function whose derivative is always <m>0</m> must be constant.
+  </p>
+  <p>
+    Our proof of <xref ref="lem_constant">Proposition</xref>
+    required two key features of the function <m>f</m>,
+    both of which are somewhat obviously necessary.
+    The first is that <m>f</m> be differentiable everywhere in its domain.
+    In fact, if <m>f</m> is not differentiable everywhere,
+    we can construct functions that have zero derivative almost everywhere but that have infinitely many values in their image.
+  </p>
+  <p>
+    The second key feature is that the interval <m>I</m> is connected.
+    It is certainly important for the domain to be connected in both the real and complex cases.
+    For instance,
+    if we define the function <m>f: \{ x+iy \in \C : x \ne 0 \} \to \C</m> through
+    <me>
+      f(z) := \begin{cases}1\amp  \text{ if } \Re z > 0, \\ 2\amp \text{ if } \Re z \lt 0, \end{cases}
+    </me>
+    then <m>f'(z)=0</m> for all <m>z</m> in the domain of <m>f</m>,
+    but <m>f</m> is not constant.
+    This may seem like a silly example,
+    but it illustrates a pitfall to proving a function is constant that we must be careful of.
+    Recall that a <em>region</em> of <m>\C</m> is an open connected subset.
+  </p>
+  <theorem xml:id="derivative0">
+    <statement>
+      <p>
+        If <m>G\subseteq\C</m> is a region and
+        <m>f: G \to \C</m> is a complex-valued function with <m>f'(z)</m> defined and equal to <m>0</m> for all <m>z \in G</m>,
+        then <m>f</m> is constant.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      We will first show that <m>f</m> is constant along horizontal segments and along vertical segments in <m>G</m>.
+    </p>
+    <p>
+      Suppose that <m>H</m> is a horizontal line segment in <m>G</m>.
+      Thus there is some number <m>y_0 \in \R</m> such that the imaginary part of any <m>z \in H</m> is <m>\Im(z) = y_0</m>.
+      Now consider the real part <m>u(z)</m> of the function <m>f(z)</m>,
+      for <m>z \in H</m>.
+      Since <m>\Im(z) = y_0</m> is constant on <m>H</m>,
+      we can consider <m>u(z) = u(x,y_0)</m> to be just a function of <m>x</m>,
+      the real part of <m>z = x + iy_0</m>.
+      By assumption, <m>f'(z) = 0</m>,
+      so for <m>z \in H</m> we have <m>u_x(z) = \Re(f'(z)) = 0</m>.
+      Thus, by <xref ref="lem_constant">Proposition</xref>,
+      <m>u(z)</m> is constant on <m>H</m>.
+    </p>
+    <p>
+      We can argue the same way to see that the imaginary part <m>v(z)</m> of <m>f(z)</m> is constant on <m>H</m>,
+      since <m>v_x(z) = \Im(f'(z))=0</m> on <m>H</m>.
+      Since both the real and imaginary parts of <m>f(z)</m> are constant on <m>H</m>,
+      the function <m>f(z)</m> itself is constant on <m>H</m>.
+    </p>
+    <p>
+      This same argument works for vertical segments,
+      interchanging the roles of the real and imaginary parts.
+      We have thus proved that <m>f</m> is constant along horizontal segments and along vertical segments in <m>G</m>.
+      Now if <m>x</m> and <m>y</m> are two points in <m>G</m> that can be connected by a path composed of horizontal and vertical segments,
+      we conclude that <m>f(x) = f(y)</m>.
+      But any two points of a region may be connected by finitely many such segments by <xref ref="connbysegments">Theorem</xref>,
+      so <m>f</m> has the same value at any two points of <m>G</m>,
+      thus proving the theorem.
+    </p>
+  </proof>
+  <p>
+    There are a number of surprising applications of <xref ref="derivative0">Theorem</xref>;
+    see, e.g., <xref ref="ex_realimpliesconst">Exercises</xref>
+    and <xref ref="ex_fandconjfimpliesconst"></xref>.
+  </p>
+  <p>
+    \begin{Exercises}
+  </p>
+  <exercise>
+    <statement>
+      <p>
+        Use the definition of limit to show for any
+        <m>z_o \in \C</m> that <m>\lim_{z \to z_0} (a z + b) = a z_0 + b</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_2_1">
+    <statement>
+      <p>
+        Evaluate the following limits or explain why they don't exist.
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \lim_{z \to i} \tfrac{i z^3 - 1}{z + i}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \lim_{z \to 1 - i} \left(x + i(2x + y)\right)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_limitunique">
+    <statement>
+      <p>
+        Prove that, if a limit exists, then it is unique.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_limits">
+    <statement>
+      <p>
+        Prove <xref ref="limits">Proposition</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_limiteq0">
+    <statement>
+      <p>
+        Let <m>f: G \to \C</m> and suppose <m>z_0</m> is an accumulation point of <m>G</m>.
+        Show that <m>\lim_{ z \to z_0 } f(z) = 0</m> if and only if <m>\lim_{ z \to z_0 } |f(z)| = 0</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <xref ref="restrictedlimit">Proposition</xref>
+        is useful for showing that limits <em>do not</em> exist,
+        but it is not at all useful for showing that a limit <em>does</em> exist.
+        For example, define
+        <me>
+          f(z) = \frac{x^2y}{x^4+y^2}\text{ where }  z=x+iy\ne0\,
+        </me>.
+      </p>
+      <p>
+        Show that the limits of <m>f</m> at <m>0</m> along all straight lines through the origin exist and are equal,
+        but <m>\displaystyle\lim_{z\to0}f(z)</m> does not exist.
+        (<em>Hint</em>: Consider the limit along the parabola <m>y=x^2</m>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose that <m>f(z) = u(x,y) + i \, v(x,y)</m> and <m>z_0 = x_0 + i \, y_0</m>.
+        Prove that
+        <me>
+          \lim_{ z \to z_0 } f(z) = u_0 + i \, v_0
+        </me>
+        if and only if
+        <me>
+          \lim_{ (x,y) \to (x_0, y_0) } u(x,y) = u_0 \qquad \text{ and }  \qquad \lim_{ (x,y) \to (x_0, y_0) } u(x,y) = v_0 \,
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_zsquaredcontinuous">
+    <statement>
+      <p>
+        Show that the function <m>f: \C \to \C</m> given by
+        <m>f(z) = z^2</m> is continuous on<nbsp/><m>\C</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_zbaroverzcont">
+    <statement>
+      <p>
+        Show that the function <m>g: \C \to \C</m> given by
+        <me>
+          g(z) = \begin{cases}\frac{\, \overline z \, } z \amp  \text{ if }  z \ne 0 \, , \\ 1 \amp  \text{ if }  z = 0 \end{cases}
+        </me>
+        is continuous on <m>\C \setminus \{ 0 \}</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Determine where each of the following functions <m>f: \C \to \C</m> is continuous:
+        <ol>
+          <li>
+            <p>
+              <m>f(z) = \begin{cases}0 \amp \text{ if } z=0 \text{ or \(|z|\) is irrational, } \\ \frac 1 q \amp \text{ if } |z| = \frac p q \in \Q \setminus \{ 0 \} \text{
+              (written in lowest terms). } \end{cases}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z) = \begin{cases}0 \amp \text{ if } z=0 , \\ \sin \phi \amp \text{ if } z = r \, e^{ i \phi } \ne 0 . \end{cases}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_continuitydefs">
+    <statement>
+      <p>
+        Show that the two definitions of continuity in <xref ref="sec_limitsandcontinuity">Section</xref> are equivalent.
+        Consider separately the cases where <m>z_0</m> is an accumulation point of <m>G</m> and where <m>z_0</m> is an isolated point of<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the function <m>f: \C \setminus \{ 0 \} \to \C</m> given by <m>f(z) = \frac 1 z</m>.
+        Apply the definition of the derivative to give a direct proof that <m>f'(z) = - \frac 1 { z^2 }</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove <xref ref="funoflimit">Proposition</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_diffrules">
+    <statement>
+      <p>
+        Prove <xref ref="derivativerules">Proposition</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the derivative of the function <m>T(z) := \frac{az+b}{cz+d}</m>,
+        where <m>a,b,c,d \in \C</m> with <m>ad - bc \neq 0</m>.
+        When is <m>T'(z) = 0</m>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="polynomialsholomorphic">
+    <statement>
+      <p>
+        Prove that if <m>f(z)</m> is given by a polynomial in <m>z</m> then <m>f</m> is entire.
+        What can you say if <m>f(z)</m> is given by a polynomial
+            <idx><h>polynomial</h></idx>
+        in <m>x = \Re z</m> and <m>y = \Im z</m>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove or find a counterexample: If <m>u</m> and <m>v</m> are real valued and continuous,
+        then <m>f(z) = u(x,y) + i \, v(x,y)</m> is continuous;
+        if <m>u</m> and <m>v</m> are (real) differentiable then <m>f</m> is (complex) differentiable.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_2_2">
+    <statement>
+      <p>
+        Where are the following functions differentiable?
+        Where are they holomorphic?
+        Determine their derivatives at points where they are differentiable.
+        <ol>
+          <li>
+            <p>
+              <m>f(z) = e^{-x}e^{-iy}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z) = 2 x + i x y^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z) = x^2 + i y^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z) = e^x e^{-i y}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z) = \cos x \cosh y - i \sin x \sinh y</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=\Im z</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z) = |z|^2 = x^2 + y^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z) = z \Im z</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)= \frac{ ix+1 } y</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=4(\Re z)(\Im z)-i(\conj z)^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=2xy-i(x+y)^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=z^2-\conj z^2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Define <m>f(z) = 0</m> if <m>\Re(z)\cdot\Im(z)=0</m>,
+        and <m>f(z)=1</m> if <m>\Re(z)\cdot\Im(z)\ne0</m>.
+        Show that <m>f</m> satisfies the Cauchy<ndash/>Riemann equation <xref ref="complexcr"/> at <m>z = 0</m>,
+        yet <m>f</m> is not differentiable at <m>z = 0</m>.
+        Why doesn't this contradict <xref ref="cre">Theorem</xref>(b)?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_realimpliesconst">
+    <statement>
+      <p>
+        Prove: If <m>f</m> is holomorphic in the region
+        <m>G \subseteq \C</m> and always real valued,
+        then <m>f</m> is constant in<nbsp/><m>G</m>.
+        (<em>Hint</em>: Use the Cauchy<ndash/>Riemann equations <xref ref="crequations"/> to show that <m>f'=0</m>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_fandconjfimpliesconst">
+    <statement>
+      <p>
+        Prove: If <m>f(z)</m> and <m>\overline{ f(z) }</m> are both holomorphic in the region
+        <m>G \subseteq \C</m> then <m>f(z)</m> is constant in<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is entire and can be written as <m>f(z) = u(x) + i \, v(y)</m>, that is,
+        the real part of <m>f</m> depends only on
+        <m>x = \Re(z)</m> and the imaginary part of <m>f</m> depends only on <m>y = \Im(z)</m>.
+        Prove that <m>f(z) = az + b</m> for some <m>a \in \R</m> and <m>b \in \C</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is entire,
+        with real and imaginary parts <m>u</m> and <m>v</m> satisfying
+        <m>u(x,y) \, v(x,y)=3</m> for all <m>z=x+iy</m>.
+        Show that <m>f</m> is constant.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_crepolar">
+    <statement>
+      <p>
+        Prove that the Cauchy<ndash/>Riemann equations take on the following form in polar coordinates:
+        <me>
+          \frac{ \partial u }{ \partial r } \= \frac 1 r \, \frac{ \partial v }{ \partial \phi } \qquad \text{ and }  \qquad \frac 1 r \, \frac{ \partial u }{ \partial \phi } \= - \frac{ \partial v }{ \partial r } \,
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_harmconj">
+    <statement>
+      <p>
+        For each of the following functions <m>u</m>,
+        find a function <m>v</m> such that <m>u+iv</m> is holomorphic in some region.
+        Maximize that region.
+        <ol>
+          <li>
+            <p>
+              <m>u(x,y) = x^2 - y^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>u(x,y) = \cosh (y) \sin (x)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>u(x,y) = 2x^2 + x + 1 - 2y^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>u(x,y) = \frac{x}{x^2 + y^2}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_225">
+    <statement>
+      <p>
+        Is <m>u(x,y) = \frac x {x^2+y^2}</m> harmonic on <m>\C</m>?
+        What about <m>u(x,y) = \frac{ x^2 }{ x^2+y^2 }</m>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the general real homogeneous quadratic function <m>u(x,y) = ax^2+bxy+cy^2\,</m>,
+        where <m>a</m>, <m>b</m> and <m>c</m> are real constants.
+        <ol>
+          <li>
+            <p>
+              Show that <m>u</m> is harmonic if and only if <m>a=-c</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>u</m> is harmonic then show that it is the real part of a function of the form
+              <m>f(z) = Az^2</m> for some <m>A \in \C</m>.
+              Give a formula for <m>A</m> in terms of <m>a</m>,
+              <m>b</m> and<nbsp/><m>c</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_diffrulesViaCR">
+    <statement>
+      <p>
+        Re-prove <xref ref="derivativerules">Proposition</xref>
+        by using the formula for <m>f'</m> given in <xref ref="cre">Theorem</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_2ndderivative0">
+    <statement>
+      <p>
+        Prove that, If <m>G\subseteq\C</m> is a region and
+        <m>f: G \to \C</m> is a complex-valued function with <m>f''(z)</m> defined and equal to <m>0</m> for all <m>z \in G</m>,
+        then <m>f(z) = a z + b</m> for some
+        <m>a,
+        b \in \C</m>. (<em>Hint</em>: Use <xref ref="derivative0">Theorem</xref>
+        to show that <m>f'(z) = a</m>,
+        and then use <xref ref="derivative0">Theorem</xref>
+        again for the function <m>f(z) - a z</m>.)
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    \end{Exercises}
+  </p>
+</section>

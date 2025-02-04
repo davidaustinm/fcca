@@ -1,0 +1,380 @@
+<section xml:id="sec_series">
+  <title>Series</title>
+  <definition>
+    <statement>
+      <p>
+        A <em>series
+            <idx><h>series</h></idx>
+        </em> is a sequence <m>\left( a_n \right)</m> whose members are of the form
+        <m>a_n = \sum_{k=1}^n b_k</m> (or <m>a_n = \sum_{k=0}^n b_k</m>);
+        we call <m>\left( b_k \right)</m> the
+        <em>sequence of terms</em> of the series.
+        The <m>a_n = \sum_{k=1}^n b_k</m>
+        (or <m>a_n = \sum_{k=0}^n b_k</m>)
+        are the <em>partial sums</em> of the series.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    If we wanted to be lazy we would define convergence of a series simply by referring to convergence of the partial sums of the series<mdash/>after all,
+    we just defined series through sequences.
+    However, there are some convergence features that take on special appearances for series,
+    so we mention them here explicitly.
+    For starters, a series <em>converges</em>
+        <idx><h>convergent</h><h>series</h></idx>
+    to the <em>limit</em>
+    (or <em>sum</em>)
+    <m>L</m> by definition if
+        <idx><h>limit</h><h>of a series</h></idx>
+    <me>
+      \lim_{n \to \infty} a_n \= \lim_{n \to \infty} \sum_{k=1}^n b_k \= L \,
+    </me>.
+  </p>
+  <p>
+    To prove that a series converges we use the definition of limit of a sequence:
+    for any <m>\epsilon > 0</m> we have to find an <m>N</m> such that for all <m>n \geq N</m>,
+    <me>
+      \left| \sum_{k=1}^n b_k - L \right| \ \lt  \ \epsilon \,
+    </me>.
+  </p>
+  <p>
+    In the case of a convergent series,
+    we usually write its limit as
+    <m>\ds L = \sum_{k=1}^\infty b_k</m> or <m>\ds L = \sum_{k \geq 1} b_k</m>.
+  </p>
+  <example xml:id="ex_geomseries">
+    <statement>
+      <p>
+        Fix <m>z \in \C</m> with <m>|z| \lt  1</m>.
+        We claim that the <em>geometric series
+            <idx><h>geometric series</h></idx>
+        </em> <m>\sum_{ k \ge 1 } z^k</m> converges with limit
+        <me>
+          \sum_{ k \ge 1 } z^k \= \frac z {1-z} \,
+        </me>.
+      </p>
+      <p>
+        In this case, we can compute the partial sums explicitly:
+        <me>
+          \sum_{k=1}^n z^k \= z + z^2 + \dots + z^n \= \frac{ z - z^{n+1} }{ 1 - z } \,
+        </me>,
+        whose limit as <m>n \to \infty</m> exists by <xref ref="r_n-_0">Example</xref>,
+        because <m>|z|\lt 1</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example xml:id="ex_telescope">
+    <statement>
+      <p>
+        Another series whose limit we can compute by manipulating the partial sums is
+        <md>
+          <mrow>\sum_{k\ge1} \frac1{k^2 + k} \amp \= \lim_{n\to\infty}\sum_{k=1}^n \left(\frac1k-\frac1{k+1}\right) \= \lim_{n\to\infty}\left(1-\frac12+\frac12 -\frac13 +\frac13 -\frac14 + \dots + \frac1n-\frac1{n+1}\right)</mrow>
+          <mrow>\amp \= \lim_{n\to\infty}\left(1-\frac1{n+1}\right) \= 1 \, </mrow>
+        </md>.
+      </p>
+      <p>
+        A series where most of the terms cancel like this is called
+        <em>telescoping</em>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Most of the time we can use the completeness property to check convergence of a series,
+    and it is fortunate that the Monotone Sequence Property has a convenient translation into the language of series of real numbers.
+    The partial sums of a series form a nondecreasing sequence if the terms of the series are nonnegative,
+    and this observation immediately yields the following:
+  </p>
+  <corollary xml:id="positiveseries">
+    <statement>
+      <p>
+        If <m>b_k \in \R_{ \ge 0 }</m> then
+        <m>\ds \sum_{k \ge 1} b_k</m> converges if and only if the partial sums are bounded.
+      </p>
+    </statement>
+  </corollary>
+  <example>
+    <statement>
+      <p>
+        With this new terminology,
+        we can revisit <xref ref="ex_e-1series">Example</xref>: Let <m>b_k = \frac 1 {k!}</m>.
+        In <xref ref="ex_e-1series">Example</xref>
+        we showed that the partial sums
+        <me>
+          \sum_{ k=1 }^{ n } b_k \= \sum_{ k=1 }^{ n } \frac 1 {k!}
+        </me>
+        are bounded,
+        and <m>\ds \sum_{ k \ge 1 } \frac 1 {k!} = e-1</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Although <xref ref="positiveseries">Corollary</xref>
+    is a mere direct consequence of the completeness property of <m>\R</m>,
+    it is surprisingly useful.
+    Here is one application, sometimes called the
+    <em>Comparison Test</em>:
+        <idx><h>comparison test</h></idx>
+  </p>
+  <corollary xml:id="cor_comparisonseries">
+    <statement>
+      <p>
+        If <m>b_k \ge c_k \ge 0</m> for all <m>k \ge 1</m> and
+        <m>\ds \sum_{k \ge 1} b_k</m> converges then so does <m>\ds \sum_{k \ge 1} c_k </m>.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      By <xref ref="positiveseries">Corollary</xref>,
+      the partial sums <m>\sum_{k=1}^n b_k</m> are bounded, and thus so are
+      <me>
+        \sum_{k=1}^n c_k \ \le \ \sum_{k=1}^n b_k \,
+      </me>.
+    </p>
+    <p>
+      But this means,
+      again by <xref ref="positiveseries">Corollary</xref>,
+      that <m>\sum_{k \ge 1} c_k</m> converges.
+    </p>
+  </proof>
+  <proposition xml:id="generaltermto0">
+    <statement>
+      <p>
+        If <m>\ds \sum_{k \geq 1} b_k</m> converges then <m>\ds \lim_{ n \to \infty } b_n = 0 </m>.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    The contrapositive of this proposition is often used,
+    sometimes called the <em>Test for Divergence</em>:
+  </p>
+  <corollary xml:id="cor_divtest">
+    <statement>
+      <p>
+        If <m>\ds \lim_{n \to \infty} b_n \neq 0</m> or <m>\ds \lim_{n \to \infty} b_n</m> does not exist,
+        then <m>\ds \sum_{k \geq 1} b_k</m> diverges.
+      </p>
+    </statement>
+  </corollary>
+  <example xml:id="ex_geomseriesdiv">
+    <statement>
+      <p>
+        Continuing <xref ref="ex_geomseries">Example</xref>,
+        for <m>|z| \ge 1</m> the geometric series
+        <m>\sum_{ k \ge 1 } z^k</m> diverges since in this case
+        <m>\lim_{ n \to \infty } z^n</m> either does not exist or is not<nbsp/>0. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <proof>
+    <p>
+      Suppose <m>\ds \sum_{k \geq 1} b_k</m> converges.
+      Then, using <xref ref="limitrules">Proposition</xref>(a) &amp; (d),
+      <me>
+        0 \= \lim_{n \to \infty} \sum_{ k=1 }^n b_k - \lim_{n \to \infty} \sum_{ k=1 }^{ n-1 } b_k \= \lim_{n \to \infty} \left( \sum_{ k=1 }^n b_k - \sum_{ k=1 }^{ n-1 } b_k \right) \= \lim_{n \to \infty} b_n \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <p>
+    A common mistake is to try to use the converse of <xref ref="generaltermto0">Proposition</xref>,
+    but the converse is false:
+  </p>
+  <example xml:id="ex_harmonic">
+    <statement>
+      <p>
+        The <em>harmonic series</em> <m>\sum_{k\ge1} \frac 1 k</m> diverges
+        (even though the terms go to <m>0</m>):
+        If we assume the series converges to <m>L</m>, then
+        <md>
+          <mrow>L \ \amp = \ 1+\frac12 + \frac13 + \frac 14 + \frac 15 + \frac 16 + \cdots</mrow>
+          <mrow>\amp > \ \frac 1 2 + \frac 1 2 + \frac 1 4 + \frac 1 4 + \frac 1 6 + \frac 1 6 + \cdots</mrow>
+          <mrow>\amp = \ 1 + \frac 1 2 + \frac 1 3 + \cdots</mrow>
+          <mrow>\amp = \ L \, </mrow>
+        </md>,
+        a contradiction. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <figure xml:id="fig_integraltest">
+    <caption>The integral test.</caption>
+    <image source="images/picturedc8d7d0b8a_rev.png"/>
+  </figure>
+  <proposition xml:id="prop_integraltest">
+    <title>Integral Test</title>
+    <statement>
+      <p>
+        If <m>f: [1,\infty) \to \R_{ \ge 0 }</m> is continuous and nonincreasing, then
+            <idx><h>integral test</h></idx>
+        <me>
+          \int_1^\infty f(t)\,\diff{t} \ \le \ \sum_{k \ge 1} f(k) \ \le \ f(1) + \int_1^\infty f(t)\,\diff{t} \,
+        </me>.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    The Integral Test literally comes with a proof by picture<mdash/>see <xref ref="fig_integraltest">Figure</xref>:
+    the integral of <m>f</m> on the interval <m>[k,k+1]</m> is bounded between <m>f(k)</m> and <m>f(k+1)</m>.
+    Adding the pieces gives the inequalities above for the <m>n</m>th partial sum versus the integrals from <m>1</m> to <m>n</m> and from <m>1</m> to <m>n+1</m>,
+    and the inequality persists in the limit.
+  </p>
+  <corollary xml:id="cor_integraltest">
+    <statement>
+      <p>
+        If <m>f: [1,\infty) \to \R_{ \ge 0 }</m> is continuous and nonincreasing,
+        then <m>\sum_{k \ge 1} f(k)</m> converges if and only if <m>\int_1^\infty f(t)\,\diff{t}</m> is finite.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      Suppose <m>\int_1^\infty f(t)\,\diff{t} = \infty</m>.
+      Then the first inequality in <xref ref="prop_integraltest">Proposition</xref>
+      implies that the partial sums <m>\sum_{k=1}^n f(k)</m> are unbounded,
+      and so <xref ref="positiveseries">Corollary</xref>
+      says that <m>\sum_{k \ge 1} f(k)</m> cannot converge.
+    </p>
+    <p>
+      Conversely, if <m>\int_1^\infty f(t)\,\diff{t}</m> is finite then the second inequality in <xref ref="prop_integraltest">Proposition</xref>
+      says that the partial sums <m>\sum_{k=1}^n f(k)</m> are bounded;
+      thus, again with <xref ref="positiveseries">Corollary</xref>,
+      we conclude that <m>\sum_{k \ge 1} f(k)</m> converges.
+    </p>
+  </proof>
+  <example xml:id="exam_riemannzetaprep">
+    <statement>
+      <p>
+        The series <m>\sum_{k\ge1} \frac 1 {k^p}</m> converges for <m>p > 1</m> and diverges for <m>p \lt  1</m>
+        (and the case <m>p=1</m> was the subject of <xref ref="ex_harmonic">Example</xref>)
+        because
+        <me>
+          \int_1^\infty \frac{ \diff{x} }{ x^p } \= \lim_{ a \to \infty } \frac{ a^{ -p+1 } }{ -p+1 } + \frac 1 { p-1 }
+        </me>
+        is finite if and only if <m>p > 1</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    By now you might be amused that we have collected several results on series whose terms are nonnegative real numbers.
+    One reason is that such series are a bit easier to handle,
+    another one is that there is a notion of convergence special to series that relates any series to one with only nonnegative terms:
+  </p>
+  <definition>
+    <statement>
+      <p>
+        The series <m>\ds \sum_{k \geq 1} b_k</m>
+        <em>converges absolutely</em>
+            <idx><h>absolute convergence</h></idx>
+        if <m>\ds \sum_{k \geq 1} \left| b_k \right|</m> converges.
+      </p>
+    </statement>
+  </definition>
+  <theorem xml:id="absconvthm">
+    <statement>
+      <p>
+        If a series converges absolutely then it converges.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    This seems like an obvious statement,
+    but its proof is, nevertheless, nontrivial.
+  </p>
+  <proof>
+    <p>
+      Suppose <m>\sum_{k \geq 1} \left| b_k \right|</m> converges.
+      We first consider the case that each <m>b_k</m> is real.
+      Let
+      <me>
+        b_k^+ := \begin{cases}b_k \amp  \text{ if }  b_k \ge 0, \\ 0   \amp  \text{ otherwise } \end{cases} \qquad \text{ and }  \qquad b_k^- := \begin{cases}b_k \amp  \text{ if }  b_k \lt  0, \\ 0   \amp  \text{ otherwise. } \end{cases}
+      </me>
+    </p>
+    <p>
+      Then <m>0 \le b_k^+ \le |b_k|</m> and
+      <m>0 \le - b_k^- \le |b_k|</m> for all <m>k \ge 1</m>,
+      and so by <xref ref="cor_comparisonseries">Corollary</xref>, both
+      <me>
+        \sum_{ k \ge 1 } b_k^+ \qquad \text{ and }  \qquad - \sum_{ k \ge 1 } b_k^-
+      </me>
+      converge.
+      But then so does
+      <me>
+        \sum_{ k \ge 1 } b_k \= \sum_{ k \ge 1 } b_k^+ + \sum_{ k \ge 1 } b_k^-
+      </me>.
+    </p>
+    <p>
+      For the general case <m>b_k \in \C</m>,
+      we write each term as <m>b_k = c_k + i \, d_k</m>.
+      Since <m>0 \le |c_k| \le |b_k|</m> for all <m>k \ge 1</m>,
+      <xref ref="cor_comparisonseries">Corollary</xref>
+      implies that <m>\sum_{ k \ge 1 } c_k</m> converges absolutely,
+      and by an analogous argument,
+      so does <m>\sum_{ k \ge 1 } d_k</m>.
+      But now we can use the first case to deduce that both <m>\sum_{ k \ge 1 } c_k</m> and
+      <m>\sum_{ k \ge 1 } d_k</m> converge, and thus so does
+      <me>
+        \sum_{ k \ge 1 } b_k \= \sum_{ k \ge 1 } c_k + i \sum_{ k \ge 1 } d_k \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <example xml:id="exam_riemannzet">
+    <statement>
+      <p>
+        Continuing <xref ref="exam_riemannzetaprep">Example</xref>,
+        <me>
+          \zeta(z) \ := \ \sum_{k\ge1} \frac 1 {k^z}
+        </me>
+        converges for <m>\Re(z)>1</m>,
+        because then (using <xref ref="ex_absolutepowers">Exercise</xref>)
+        <me>
+          \sum_{k\ge1} \left| k^{ -z } \right| \= \sum_{k\ge1} k^{ - \Re(z) }
+        </me>
+        converges.
+        Viewed as a function in <m>z</m>,
+        the series <m>\zeta(z)</m> is the
+        <em>Riemann zeta function
+            <idx><h>Riemann zeta function</h></idx>
+        </em>, an indispensable tool in number theory and many other areas in mathematics and physics.<fn>
+        The Riemann zeta function is the subject of the arguably most famous open problem in mathematics,
+        the <em>\ix{Riemann hypothesis}</em>.
+        It turns out that <m>\zeta(z)</m> can be extended to a function that is holomorphic on <m>\C \setminus \{ 1 \}</m>,
+        and the Riemann hypothesis asserts that the roots of this extended function in the strip
+        <m>0 \lt  \Re(z) \lt  1</m> are all on the <em>critical line</em>
+        <m>\Re(z) = \frac 1 2</m>.
+        </fn> \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Another common mistake is to try to use the converse of <xref ref="absconvthm">Theorem</xref>,
+    which is also false:
+  </p>
+  <example xml:id="ex_altharmonic">
+    <statement>
+      <p>
+        The <em>alternating harmonic series<idx><h>alternating harmonic series</h></idx>
+        </em> <m>\sum_{k\ge1}\frac{(-1)^{k+1}}k</m> converges:
+        <md>
+          <mrow>\sum_{k\ge1}\frac{(-1)^{k+1}}k \amp \= 1-\frac12 + \frac13 - \frac 14 + \frac15 - \frac16 +  \cdots</mrow>
+          <mrow>\amp \= \left(1-\frac12\right) + \left(\frac13-\frac14\right) + \left(\frac15-\frac16\right) + \cdots</mrow>
+        </md>
+      </p>
+      <p>
+        (There is a small technical detail to be checked here,
+        since we are effectively ignoring half the partial sums of the original series;
+        see <xref ref="ex_groupingterms">Exercise</xref>.) Since
+        <me>
+          \frac1{2k-1}-\frac1{2k} \= \frac1{2k(2k-1)} \ \le \ \frac 1 { (2k-1)^2 } \ \le \ \frac 1 { k^2 } \,
+        </me>,
+      </p>
+      <p>
+        <m>\sum_{k\ge1}\frac{(-1)^{k+1}}k</m> converges by <xref ref="cor_comparisonseries">Corollary</xref>
+        and <xref ref="exam_riemannzetaprep">Example</xref>.
+      </p>
+      <p>
+        However, according to <xref ref="ex_harmonic">Example</xref>,
+        <m>\sum_{k\ge1}\frac{(-1)^{k+1}}k</m> does <em>not</em>
+        converge absolutely. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+</section>

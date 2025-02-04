@@ -1,0 +1,927 @@
+<section xml:id="sec_LaurentSeries">
+  <title>Laurent Series</title>
+  <p>
+    <xref ref="thm_holomorphicpower">Theorem</xref>
+    gives a powerful way of describing holomorphic functions.
+    It is, however, not as general as it could be.
+    It is natural, for example,
+    to think about representing <m>\exp ( \frac 1 z )</m> as
+    <me>
+      \exp \left( \frac 1 z \right) \= \s \frac 1 {k!} \left( \frac 1 z \right)^k \= \s \frac 1 {k!} \, z^{-k}
+    </me>,
+    a
+    <q>power series</q>
+    with negative exponents.
+    To make sense of expressions like the above,
+    we introduce the concept of a <em>double series
+        <idx><h>double series</h></idx>
+    </em>
+    <me>
+      \sz a_k \ := \ \s a_k + \sum_{k \geq 1} a_{-k} \,
+    </me>.
+  </p>
+  <p>
+    Here <m>a_k \in \C</m> are terms indexed by the integers.
+    The double series above <em>converges</em>
+    if and only if the two series on the right-hand side do.
+    Absolute and uniform convergence are defined analogously.
+    Equipped with this,
+    we can now introduce the following central concept.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A <em>Laurent<fn>
+        After Pierre Alphonse Laurent (1813<ndash/>1854).
+        </fn> series centered at <m>z_0</m></em>
+        is a double series of the form
+            <idx><h>Laurent series</h></idx>
+        <me>
+          \ds \sz c_k ( z - z_0 )^k
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <example>
+    <statement>
+      <p>
+        The series that started this section is the Laurent series of
+        <m>\exp ( \frac 1 z )</m> centered at <m>0</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Any power series is a Laurent series
+        (with <m>c_k = 0</m> for <m>k \lt 0</m>). \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    We should pause for a minute and ask for which <m>z</m> a general Laurent series can possibly converge.
+    By definition
+    <me>
+      \sz c_k \left( z - z_0 \right)^k \= \s c_k \left( z - z_0 \right)^k + \sum_{k \geq 1} c_{-k} \left( z - z_0 \right)^{-k}
+    </me>.
+  </p>
+  <p>
+    The first series on the right-hand side is a power series with some radius of convergence <m>R_2</m>,
+    that is, with <xref ref="convergenceradius">Theorem</xref>,
+    it converges in <m>\left\{ z \in \C : \, | z-z_0 | \lt  R_2 \right\}</m>,
+    and the convergence is uniform in <m>\left\{ z \in \C : \, | z-z_0 | \le r_2 \right\}</m>,
+    for any fixed <m>r_2 \lt  R_2</m>.
+    For the second series, we invite you
+    (in <xref ref="ex_laurentconvergenceradius">Exercise</xref>)
+    to revise our proof of <xref ref="convergenceradius">Theorem</xref>
+    to show that this series converges for
+    <me>
+      \frac{ 1 }{ |z-z_0|} \ \lt  \ \frac 1 {R_1}
+    </me>
+    for some <m>R_1</m>,
+    and that the convergence is uniform in <m>\left\{ z \in \C : \, | z-z_0 | \ge r_1 \right\}</m>,
+    for any fixed <m>r_1 > R_1</m>.
+    Thus the Laurent series converges in the annulus
+    <me>
+      A \ := \ \left\{ z \in \C : \, R_1 \lt  | z-z_0 | \lt  R_2 \right\}
+    </me>
+  </p>
+  <p>
+    (assuming this set is not empty,
+    i.e., <m>R_1 \lt  R_2</m>),
+    and the convergence is uniform on any set of the form
+    <me>
+      \left\{ z \in \C : \, r_1 \leq | z-z_0 | \leq r_2 \right\} \qquad \text{ for }  \ R_1 \lt  r_1 \lt  r_2 \lt  R_2 \,
+    </me>.
+  </p>
+  <example xml:id="ex_1_sinlaurent">
+    <statement>
+      <p>
+        We'd like to compute the start of a Laurent series for
+        <m>\frac 1 {\sin(z)}</m> centered at <m>z_0 = 0</m>.
+        We start by considering the function <m>g: D[0,\pi] \to \C</m> defined by
+        <me>
+          g(z) := \begin{cases}\frac 1 { \sin(z) } - \frac 1 z \amp  \text{ if }  z \ne 0 \, , \\ 0                               \amp  \text{ if }  z=0 \, . \end{cases}
+        </me>
+      </p>
+      <p>
+        A quick application of L'H&#xf4;pital's Rule (lhospital) shows that <m>g</m> is continuous
+        (see <xref ref="ex_lhospitalfor1oversin">Exercise</xref>).
+        Even better, another round of L'H&#xf4;pital's Rule proves that
+        <me>
+          \lim_{ z \to 0 } \frac{ \frac 1 { \sin(z) } - \frac 1 z }{ z } \= \frac 1 6 \,
+        </me>.
+      </p>
+      <p>
+        But this means that
+        <me>
+          g'(z) = \begin{cases}- \frac{ \cos(z) }{ \sin^2(z) } + \frac 1 {z^2} \amp  \text{ if }  z \ne 0 \, , \\ \frac 1 6                                       \amp  \text{ if }  z=0 \, , \end{cases}
+        </me>
+        in particular, <m>g</m> is holomorphic in <m>D[0,\pi]</m>.<fn>
+        This is a (simple) example of \Def{\ix{analytic continuation}}: the function <m>g</m> is holomorphic in <m>D[0,\pi]</m> and agrees with
+        <m>\frac 1 { \sin(z) } - \frac 1 z</m> in <m>D[0,\pi] \setminus \{ 0 \}</m>,
+        the domain in which the latter function is holomorphic.
+        When we said, in the footnote on p.
+        <xref ref="riemannzeta"></xref>,
+        that the Riemann zeta function
+        <m>\zeta(z) = \sum_{ k \ge 1 } \frac 1 {k^z}</m> can be extended to a function that is holomorphic on <m>\C \setminus \{ 1 \}</m>,
+        we were also talking about analytic continuation.
+        </fn> By <xref ref="thm_holomorphicpower">Theorem</xref>,
+        <m>g</m> has a power series expansion at 0, which we may compute using <xref ref="taylor">Corollary</xref>.
+        It starts with
+        <me>
+          g(z) \= \frac 1 6 \, z + \frac{ 7 }{ 360 } \, z^3 + \frac{ 31 }{ 15120 } \, z^5 + \cdots
+        </me>
+        and it converges,
+        by <xref ref="cor_powerseriesboundary">Corollary</xref>,
+        for <m>|z| \lt  \pi</m>.
+        But this gives our sought-after Laurent series
+        <me>
+          \frac 1 { \sin(z) } \= z^{ -1 } + \frac 1 6 \, z + \frac{ 7 }{ 360 } \, z^3 + \frac{ 31 }{ 15120 } \, z^5 + \cdots
+        </me>
+        which converges for <m>0 \lt  |z| \lt  \pi</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    <xref ref="thm_powerholomorphic">Theorem</xref>
+    implies that a Laurent series represents a function that is holomorphic in its annulus of convergence.
+    The fact that we can conversely represent any function holomorphic in such an annulus by a Laurent series is the substance of the next result.
+  </p>
+  <theorem xml:id="holomorphiclaurent">
+    <statement>
+      <p>
+        Suppose <m>f</m> is a function that is holomorphic in <m>A := \left\{ z \in \C : \, R_1 \lt  |z-z_0| \lt  R_2 \right\}</m>.
+        Then <m>f</m> can be represented in <m>A</m> as a Laurent series centered at <m>z_0</m>,
+        <me>
+          f(z) \= \sz c_k \left( z - z_0 \right)^k \qquad \text{ with }  \qquad c_k \= \frac 1 {2 \pi i} \int_{ C[z_0,r] } \frac{ f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \,
+        </me>,
+        where <m>R_1 \lt  r \lt  R_2</m>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    By Cauchy's <xref ref="cauchythm">Theorem</xref>
+    we can replace the circle <m>C[z_0,r]</m> in the formula for the Laurent coefficients by any path <m>\gg \sim_A C[z_0,r]</m>.
+  </p>
+  <figure xml:id="laurentfig">
+    <caption>The path <m>\gg</m> in our proof of <xref ref="holomorphiclaurent">Theorem</xref>.</caption>
+    <image source="images/picture4c42491543_rev.png"/>
+  </figure>
+  <proof>
+    <p>
+      Let <m>g(z) = f(z+z_0)</m>;
+      so <m>g</m> is a function holomorphic in <m>\left\{ z \in \C : \, R_1 \lt  |z| \lt  R_2 \right\}</m>.
+      Fix <m>R_1 \lt  r_1 \lt  |z| \lt  r_2 \lt  R_2</m>,
+      and let <m>\gg</m> be the path in <xref ref="laurentfig">Figure</xref>,
+      where <m>\gg_1 := C[0,r_1]</m> and <m>\gg_2 := C[0,r_2]</m>.
+      By Cauchy's Integral Formula (<xref ref="cauchyformula">Theorem</xref>),
+      <men xml:id="laurentsum">
+        g(z) \= \frac 1 {2 \pi i} \int_\gg \frac{ g(w) }{ w-z } \, \diff{w} \= \frac 1 {2 \pi i} \int_{ \gg_2 } \frac{ g(w) }{ w-z } \, \diff{w} - \frac 1 {2 \pi i} \int_{ \gg_1 } \frac{ g(w) }{ w-z } \, \diff{w} \,
+      </men>.
+    </p>
+    <p>
+      For the integral over <m>\gg_2</m> we play exactly the same game as in our proof of <xref ref="thm_holomorphicpower">Theorem</xref>.
+      The factor <m>\frac 1 {w-z}</m> in this integral can be expanded into a geometric series (note that
+      <m>w \in \gg_2</m> and so <m>| \frac z w | \lt  1</m>)
+      <me>
+        \frac 1 {w-z} \= \frac 1 w \, \frac 1 { 1 - \frac z w } \= \frac 1 w \s \left( \frac z w \right)^k
+      </me>,
+      which converges uniformly in the variable
+      <m>w \in \gg_2</m> by <xref ref="prob_geomseriesfunky">Exercise</xref>.
+      Hence <xref ref="seriesintegral">Proposition</xref> applies:
+      <me>
+        \int_{\gg_2} \frac{ g(w) }{ w-z } \, \diff{w} \= \int_{\gg_2} g(w) \, \frac 1 w \s \left( \frac z w \right)^k \diff{w} \= \s \left( \int_{\gg_2} \frac{ g(w) }{ w^{k+1} } \, \diff{w} \right) z^k
+      </me>.
+    </p>
+    <p>
+      The integral over <m>\gg_1</m> is computed in a similar fashion;
+      now we expand the factor <m>\frac 1 {w-z}</m> into the following geometric series (note that
+      <m>w \in \gg_1</m> and so <m>| \frac w z | \lt  1</m>)
+      <me>
+        \frac 1 {w-z} \= - \frac 1 z \, \frac 1 { 1 - \frac w z } \= - \frac 1 z \s \left( \frac w z \right)^k
+      </me>,
+      which converges uniformly in the variable <m>w \in \gg_1</m>.
+      Again <xref ref="seriesintegral">Proposition</xref> applies:
+      <md>
+        <mrow>\int_{\gg_1} \frac{ g(w) }{ w-z } \, \diff{w} \amp \= - \int_{\gg_1} g(w) \, \frac 1 z \s \left( \frac w z \right)^k \diff{w} \= - \s \left( \int_{\gg_1} g(w) w^k \, \diff{w} \right) z^{-k-1}</mrow>
+        <mrow>\amp \= - \sum_{k \leq -1} \left( \int_{\gg_1} \frac{ g(w) }{ w^{k+1} } \, \diff{w} \right) z^k </mrow>
+      </md>.
+    </p>
+    <p>
+      Putting everything back into <xref ref="laurentsum"/> gives
+      <me>
+        g(z) \= \frac 1 {2 \pi i} \left( \s \left( \int_{\gg_2} \frac{ g(w) }{ w^{k+1} } \, \diff{w} \right) z^k + \sum_{k \leq -1} \left( \int_{\gg_1} \frac{ g(w) }{ w^{k+1} } \, \diff{w} \right) z^k \right)
+      </me>.
+    </p>
+    <p>
+      By Cauchy's <xref ref="cauchythm">Theorem</xref>,
+      we can now change both <m>\gg_1</m> and <m>\gg_2</m> to <m>C[0,r]</m>,
+      as long as <m>R_1 \lt  r \lt  R_2</m>, which finally gives
+      <me>
+        g(z) \= \frac 1 {2 \pi i} \sz \left( \int_{C[0,r]} \frac{ g(w) }{ w^{k+1} } \, \diff{w} \right) z^k
+      </me>.
+    </p>
+    <p>
+      The statement follows now with
+      <m>f(z) = g(z-z_0)</m> and a change of variables in the integral.
+    </p>
+  </proof>
+  <p>
+    This theorem, naturally,
+    has several corollaries that have analogues in the world of Taylor series.
+    Here are two samples:
+  </p>
+  <corollary xml:id="laurentunique">
+    <statement>
+      <p>
+        If <m>\sz c_k (z-z_0)^k</m> and
+        <m>\sz d_k (z-z_0)^k</m> are two Laurent series that both converge,
+        for <m>R_1 \lt |z-z_0| \lt R_2</m>,
+        to the same function, then <m>c_k=d_k</m> for all<nbsp/><m>k \in \Z</m>.
+      </p>
+    </statement>
+  </corollary>
+  <corollary>
+    <statement>
+      <p>
+        If <m>G</m> is a region,
+        <m>z_0 \in G</m>,
+        and <m>f</m> is holomorphic in <m>G \setminus \{ z_0 \}</m>,
+        then <m>f</m> can be expanded into a Laurent series centered at <m>z_0</m> that converges for
+        <m>0 \lt |z - z_0 | \lt R</m> where <m>R</m> is at least the distance of <m>z_0</m> to<nbsp/><m>\partial G</m>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    Finally, we come to the analogue of <xref ref="powseriesintegral">Corollary</xref> for Laurent series.
+    We could revisit its proof,
+    but the statement that would follow is actually the special case <m>k = -1</m> of <xref ref="holomorphiclaurent">Theorem</xref>,
+    read from right to left:
+  </p>
+  <corollary xml:id="cor_firstresidue">
+    <statement>
+      <p>
+        Suppose <m>f</m> is a function that is holomorphic in <m>A := \left\{ z \in \C : \, R_1 \lt  |z-z_0| \lt  R_2 \right\}</m>,
+        with Laurent series
+        <me>
+          f(z) \= \sz c_k \left( z - z_0 \right)^k
+        </me>.
+      </p>
+      <p>
+        If <m>\gg</m> is any simple, closed,
+        piecewise smooth path in <m>A</m>,
+        such that <m>z_0</m> is inside <m>\gg</m>, then
+        <me>
+          \int_\gg f(z) \, \diff{z} \= 2 \pi i \, c_{ -1 } \,
+        </me>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    This result is profound: it says that we can integrate
+    (at least over closed curves)
+    by computing Laurent series<mdash/>in fact, we
+    <q>only</q>
+    need to compute <em>one coefficient</em> of a Laurent series.
+    We will have more to say about this in the next chapter;
+    for now, we give just one application,
+    which might have been bugging you since the beginning of <xref ref="powerchapter">Chapter</xref>.
+  </p>
+  <example xml:id="ex_expoversin">
+    <statement>
+      <p>
+        We will (finally!) compute <xref ref="eq_laurentmotivation"/>,
+        the integral <m>\int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z}</m>.
+        Our plan is to split up the integration path <m>C[2,3]</m> as in <xref ref="fig_laurentmotivation">Figure</xref>,
+        which gives, say,
+        <me>
+          \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \= \int_{ C[0,1] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} + \int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \,
+        </me>.
+      </p>
+      <p>
+        To compute the two integrals on the right-hand side,
+        we can use <xref ref="cor_firstresidue">Corollary</xref>,
+        for which we need the Laurent expansions of
+        <m>\frac{ \exp(z) }{ \sin(z) }</m> centered at 0 and <m>\pi</m>.
+      </p>
+      <p>
+        By <xref ref="ex_exptaylor">Examples</xref>
+        and <xref ref="ex_1_sinlaurent"></xref>,
+        <md>
+          <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \= \left( 1 + z + \frac 1 2 \, z^2 + \frac 1 6 \, z^3 + \cdots \right) \left( z^{ -1 } + \frac 1 6 \, z + \frac{ 7 }{ 360 } \, z^3 + \frac{ 31 }{ 15120 } \, z^5 + \cdots \right)</mrow>
+          <mrow>\amp \= z^{ -1 } + 1 + \frac 2 3 \, z + \cdots</mrow>
+        </md>
+        and <xref ref="cor_firstresidue">Corollary</xref>
+        gives <m>\int_{ C[0,1] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} = 2 \pi i</m>.
+      </p>
+      <p>
+        For the integral around <m>\pi</m>,
+        we use the fact that <m>\sin(z) = \sin(\pi - z)</m>,
+        and so we can compute the Laurent expansion of
+        <m>\frac 1 { \sin(z) }</m> at <m>\pi</m> also via <xref ref="ex_1_sinlaurent">Example</xref>:
+        <me>
+          \frac 1 { \sin(z) } \= - \frac 1 { \sin(z-\pi) } \= -(z-\pi)^{ -1 } - \frac 1 6 \, (z-\pi) - \frac{ 7 }{ 360 } \, (z-\pi)^3 - \cdots
+        </me>
+      </p>
+      <p>
+        Adding <xref ref="ex_expatpi">Example</xref> to the mix yields
+        <md>
+          <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \= \left( e^\pi + e^\pi (z-\pi) + \frac { e^\pi } 2 \, (z-\pi)^2 + \cdots \right) \left( -(z-\pi)^{ -1 } - \frac 1 6 \, (z-\pi) - \cdots \right)</mrow>
+          <mrow>\amp \= {} -e^\pi (z-\pi)^{ -1 } - e^\pi - \frac 2 3 \, e^\pi  (z-\pi) + \cdots</mrow>
+        </md>
+        and now <xref ref="cor_firstresidue">Corollary</xref>
+        gives <m>\int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} = -2 \pi i \, e^\pi</m>.
+        Putting it all together yields the integral we've been after for two chapters:
+        <me>
+          \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \= 2 \pi i \left( 1 - e^\pi \right)
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    \begin{Exercises}
+  </p>
+  <exercise xml:id="ex_8_1">
+    <statement>
+      <p>
+        For each of the following series,
+        determine where the series converges absolutely and where it converges uniformly:
+        <ol>
+          <li xml:id="sine">
+            <p>
+              <m>\displaystyle \sum_{k \geq 0} \frac{1}{(2k+1)!} \, z^{2k+1}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 0} \left( \frac{1}{z-3} \right)^k</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_82">
+    <statement>
+      <p>
+        What functions are represented by the series in the previous exercise?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the power series centered at <m>\pi</m> for <m>\sin(z)</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Re-prove <xref ref="expproperties">Proposition</xref>
+        using the power series of <m>\exp(z)</m> centered at 0.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the terms through third order and the radius of convergence of the power series for each of the following functions,
+        centered at <m>z_0</m>.
+        (Do not find the general form for the coefficients.)
+        <ol>
+          <li>
+            <p>
+              <m>\ds f(z)=\frac1{1+z^2},\ z_0=1</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds f(z)=\frac1{\exp(z)+1},\ z_0=0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=(1+z)^{ \frac 1 2 } ,\ z_0=0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=\exp(z^2),\ z_0=i</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_powerseriesboundaryreal">
+    <statement>
+      <p>
+        Consider <m>f: \R \to \R</m> given by <m>f(x) := \frac 1 { x^2 + 1 }</m>,
+        the real version of our function in <xref ref="ex_powerseriesboundary">Example</xref>,
+        to show that <xref ref="cor_powerseriesboundary">Corollary</xref>
+        has no analogue in<nbsp/><m>\R</m>.<fn>
+        Incidentally, the same example shows,
+        once more, that Liouville's theorem
+        (<xref ref="liouville">Corollary</xref>)
+        has no analogue in<nbsp/><m>\R</m>.
+        </fn>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove the following generalization of <xref ref="thm_powerholomorphic">Theorem</xref>: Suppose <m>(f_n)</m> is a sequence of functions that are holomorphic in a region <m>G</m>,
+        and <m>(f_n)</m> converges uniformly to <m>f</m> on <m>G</m>.
+        Then <m>f</m> is holomorphic in <m>G</m>.
+        (This result is called the <em>Weierstra&#223;
+        convergence theorem<idx><h>Weierstra&#223;
+        convergence theorem</h></idx>
+        </em>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Use the previous exercise and <xref ref="cauchyestimate">Corollary</xref>
+        to prove the following: Suppose <m>(f_n)</m> is a sequence of functions that are holomorphic in a region <m>G</m> and that <m>(f_n)</m> converges uniformly to <m>f</m> on <m>G</m>.
+        Then for any <m>k \in \N</m>,
+        the sequence of <m>k</m>th derivatives
+        <m>\left(f_n^{(k)}\right)</m> converges (pointwise) to <m>f^{(k)}</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>\abs{c_k}\ge 2^k</m> for all <m>k</m>.
+        What can you say about the radius of convergence of <m>\sum_{k\ge0}c_k \, z^k</m>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose the radius of convergence of <m>\sum_{k\ge0}c_k \, z^k</m> is <m>R</m>.
+        What is the radius of convergence of each of the following?
+        <ol>
+          <li>
+            <p>
+              \disp{\sum_{k\ge0}c_k <nbsp/> z^{2k}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\sum_{k\ge0}3^kc_k <nbsp/> z^k}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\sum_{k\ge0}c_k <nbsp/> z^{k+5}}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\sum_{k\ge0}k^2c_k <nbsp/> z^k}
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_uniquenessfunctionopensets">
+    <statement>
+      <p>
+        Suppose <m>G</m> is a region and <m>f: G \to \C</m> is holomorphic.
+        Prove that the sets
+        <md>
+          <mrow>X \amp \= \left\{ a \in G : \text{ there exists }  r \text{ such that }  f(z) = 0 \text{ for all }  z \in D[a,r] \right\}</mrow>
+          <mrow>Y \amp \= \left\{ a \in G : \text{ there exists }  r \text{ such that }  f(z) \ne 0 \text{ for all }  z \in D[a,r] \setminus \{ a \} \right\} </mrow>
+        </md>.
+        in our proof of <xref ref="uniquenessfunction">Theorem</xref> are open.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_minmodthm">
+    <statement>
+      <p>
+        Prove the Minimum-Modulus Theorem
+        (<xref ref="minmodthm">Corollary</xref>):
+        Suppose <m>f</m> is holomorphic and nonconstant in a region <m>G</m>.
+        Then <m>|f|</m> does not attain a weak relative minimum at a point <m>a</m> in <m>G</m> unless <m>f(a)=0</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_maxminharmcor">
+    <statement>
+      <p>
+        Prove <xref ref="maxminharmcor">Corollary</xref>: Assume that <m>u</m> is harmonic in a region <m>G</m> and has a weak local maximum at <m>a\in G</m>.
+        <ol>
+          <li>
+            <p>
+              If <m>G</m> is simply connected then apply <xref ref="maxmodthm">Theorem</xref> to <m>\exp(u(z)+iv(z)))</m>,
+              where <m>v</m> is a harmonic conjugate of <m>u</m>.
+              Conclude that <m>u</m> is constant on <m>G</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>G</m> is not simply connected,
+              then the above argument applies to <m>u</m> on <em>any</em>
+              disk <m>D[a,R] \subset G</m>.
+              Conclude that the partials <m>u_x</m> and <m>u_y</m> are zero on <m>G</m>,
+              and adapt the argument of <xref ref="derivative0">Theorem</xref>
+              to show that <m>u</m> is constant.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_3">
+    <statement>
+      <p>
+        Let <m>f: \C \to \C</m> be given by <m>f(z) = z^2 - 2</m>.
+        Find the maximum and minimum of
+        <m>| f(z) |</m> on the closed unit disk.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Give another proof of the Fundamental Theorem of Algebra <idx><h>fundamental theorem</h><h>of algebra</h></idx>
+        (<xref ref="fundthmalg">Theorem</xref>),
+        using the Minimum-Modulus Theorem
+        (<xref ref="minmodthm">Corollary</xref>). (<em>Hint</em>: Use <xref ref="polynomialestimate">Proposition</xref>
+        to show that a polynomial does not achieve its minimum modulus on a large circle;
+        then use the Minimum-Modulus Theorem to deduce that the polynomial has a zero.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Give another proof of (a variant of) the Maximum-Modulus <xref ref="maxmodthm">Theorem</xref>
+        via <xref ref="cauchyformula3">Corollary</xref>,
+        as follows: Suppose <m>f</m> is holomorphic in a region containing <m>\overline D[a,r]</m>,
+        and <m>|f(z)| \le M</m> for <m>z \in C[a,r]</m>.
+        Given a point <m>z_0 \in D[a,r]</m>,
+        show (e.g., by <xref ref="cauchyformula3">Corollary</xref>) that there is a constant <m>c \in \C</m> such that
+        <me>
+          \left| f(z_0)^k \right| \ \le \ c \, M^k
+        </me>.
+      </p>
+      <p>
+        Conclude that <m>| f(z_0) | \le M</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_4">
+    <statement>
+      <p>
+        Find a Laurent series for
+        <me>
+          \frac{ 1 }{ (z-1)(z+1) }
+        </me>
+        centered at <m>z=1</m> and specify the region in which it converges.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_5">
+    <statement>
+      <p>
+        Find a Laurent series for
+        <me>
+          \frac{ 1 }{ z(z-2)^2 }
+        </me>
+        centered at <m>z=2</m> and specify the region in which it converges.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_7">
+    <statement>
+      <p>
+        Find a Laurent series for <m>\ds \frac{z-2 }{ z+1 }</m> centered at <m>z=-1</m> and the region in which it converges.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the terms <m>c_nz^n</m> in the Laurent series for
+        <m>\ds \frac{ 1 }{ \sin^2(z) }</m> centered at <m>z=0</m>,
+        for <m>-4\le n\le 4</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the first four nonzero terms in the power series expansion of <m>\tan(z)</m> centered at the origin.
+        What is the radius of convergence?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Find the power series representation for
+            <m>\exp(az)</m> centered at <m>0</m>,
+            where <m>a \in \C</m> is any constant.
+          </p>
+        </li>
+        <li>
+          <p>
+            Show that
+            <me>
+              \exp(z)\cos(z) \= \frac12\left(\exp((1+i)z)+\exp((1-i)z)\right)
+            </me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the power series expansion for
+            <m>\exp(z)\cos(z)</m> centered at<nbsp/><m>0</m>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Show that
+        <me>
+          \frac{z-1}{z-2} \= \sum_{k\ge0}\frac1{(z-1)^k}
+        </me>
+        for <m>\abs{z-1}>1</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove: If <m>f</m> is entire and <m>\Im (f)</m> is constant on the closed unit disk then <m>f</m> is constant.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_6">
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Find the Laurent series for
+            <m>\frac{ \cos z }{ z^2 }</m> centered at <m>z=0</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Prove that <m>f: \C \to \C</m> is entire, where
+            <me>
+              f(z) = \left\{ \begin{array}{cl} \tfrac{ \cos z - 1 }{ z^2 } \amp  \mbox{ if }  z \not= 0 \, , \\ - \tfrac{1}{2} \amp  \mbox{ if }  z = 0 \end{array} \right.
+            </me>
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the Laurent series for <m>\sec(z)</m> centered at the origin.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose that <m>f</m> is holomorphic at <m>z_0</m>,
+        <m>f(z_0)=0</m>, and <m>f'(z_0)\ne0</m>.
+        Show that <m>f</m> has a zero of multiplicity <m>1</m> at <m>z_0</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the multiplicities of the zeros of each of the following functions:
+        <ol>
+          <li>
+            <p>
+              <m>f(z)=\exp(z)-1,\ z_0=2k\pi i</m>,
+              where <m>k</m> is any integer.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=\sin(z)-\tan(z),\ z_0=0</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=\cos(z)-1+\frac12\sin^2(z),\ z_0=0</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the zeros of the following functions and determine their multiplicities:
+        <ol>
+          <li>
+            <p>
+              \disp{(1+z^2)^4}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{\sin^2(z)}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{1+\exp(z)}
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{z^3\cos(z)}
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_laurentconvergenceradius">
+    <statement>
+      <p>
+        Prove that the series of the negative-index terms of a Laurent series
+        <me>
+          \sum_{k \geq 1} c_{-k} \left( z - z_0 \right)^{-k}
+        </me>
+        converges for
+        <me>
+          \frac{ 1 }{ |z-z_0|} \ \lt  \ \frac 1 {R_1}
+        </me>
+        for some <m>R_1</m>,
+        and that the convergence is uniform in <m>\left\{ z \in \C : \, | z-z_0 | \ge r_1 \right\}</m>,
+        for any fixed <m>r_1 > R_1</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_lhospitalfor1oversin">
+    <statement>
+      <p>
+        Show that
+        <me>
+          \lim_{ z \to 0 } \left( \frac 1 { \sin(z) } - \frac 1 z \right) \= 0
+        </me>
+        and
+        <me>
+          \lim_{ z \to 0 } \frac{ \frac 1 { \sin(z) } - \frac 1 z }{ z } \= \frac 1 6 \,
+        </me>.
+      </p>
+      <p>
+        (These are the limits we referred to in <xref ref="ex_1_sinlaurent">Example</xref>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the three Laurent series of
+        <me>
+          f(z) \= \frac{3}{(1-z)(z+2)}\,
+        </me>,
+        centered at <m>0</m>, defined on the three regions <m>|z| \lt  1</m>,
+        <m>1 \lt  |z| \lt  2</m>, and <m>2 \lt  |z|</m>, respectively.
+        (<em>Hint</em>: Use a partial fraction decomposition.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose that <m>f(z)</m> has exactly one zero, at <m>a</m>,
+        inside the circle <m>\gamma</m>,
+        and that it has multiplicity<nbsp/><m>1</m>.
+        Show that
+        <me>
+          a\=\frac1{2\pi i}\int_\gamma\frac{z \, f'(z)}{f(z)}\,\diff{z}\,
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_evenoddfunctions">
+    <statement>
+      <p>
+        Recall that a function <m>f: G \to \C</m> is <em>even
+            <idx><h>even</h></idx>
+        </em> if <m>f(-z) = f(z)</m> for all <m>z \in G</m>, and <m>f</m> is <em>odd
+            <idx><h>odd</h></idx>
+        </em> if <m>f(-z) = -f(z)</m> for all <m>z \in G</m>.
+        Prove that, if <m>f</m> is even (resp., odd),
+        then the Laurent series of <m>f</m> at 0 has only even (resp., odd) powers.
+            <idx><h>function</h><h>even</h></idx>
+            <idx><h>function</h><h>odd</h></idx>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_realmax0">
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic and not identically zero on an open disk <m>D</m> centered at <m>a</m>,
+        and suppose <m>f(a)=0</m>.
+        Use the following outline to show that
+        <m>\Re f(z)>0</m> for some <m>z</m> in <m>D</m>.
+        <ol>
+          <li>
+            <p>
+              Why can you write <m>f(z)=(z-a)^mg(z)</m> where <m>m>0</m>,
+              <m>g</m> is holomorphic, and <m>g(a)\ne0</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Write <m>g(a)</m> in polar coordinates as
+              <m>c \, e^{i\alpha}</m> and define <m>G(z)=e^{-i\alpha}g(z)</m>.
+              Why is <m>\Re G(a)>0</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Why is there a positive constant <m>\delta</m> so that
+              <m>\Re G(z)>0</m> for all <m>z \in D[a,\delta]</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Write <m>z=a+re^{i\theta}</m> for <m>0\lt r\lt \delta</m>.
+              Show that <m>f(z)=r^me^{im\theta}e^{i\alpha}G(z)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a value of <m>\theta</m> so that <m>f(z)</m> has positive real part.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_9_5">
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Find a Laurent series for
+            <me>
+              \frac{ 1 }{ (z^2 - 4)(z-2) }
+            </me>
+            centered at <m>z=2</m> and specify the region in which it converges.
+          </p>
+        </li>
+        <li>
+          <p>
+            Compute <m>\ds \int_{ C[2,1] } \frac{ \diff{z} }{ (z^2 - 4)(z-2) }</m>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_9_3">
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Find the power series of <m>\exp (z)</m> centered at <m>z=-1</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Compute <m>\ds \int_{ C[-2,2] } \frac{ \exp (z) }{ (z+1)^{34} } \, \diff{z} </m>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Compute <m>\ds \int_\gg \frac{ \exp(z) }{ \sin(z) } \, \diff{z}</m> where <m>\gg</m> is a closed curve not passing through integer multiples of<nbsp/><m>\pi</m>.
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    \end{Exercises}
+  </p>
+</section>

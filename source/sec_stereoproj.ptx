@@ -1,0 +1,246 @@
+<section xml:id="sec_stereoproj">
+  <title>Stereographic Projection</title>
+  <p>
+    The addition of <m>\infty</m> to the complex plane <m>\C</m> gives the plane a useful structure.
+    This structure is revealed by a famous function called
+    <em>stereographic projection</em>,
+    which gives us a way of visualizing the extended complex plane<mdash/>that is,
+    with the point at infinity<mdash/>in <m>\R^3</m>, as the unit sphere.
+    It also provides a way of seeing that a line in the extended complex plane really is a circle,
+    and of visualizing M&#xf6;bius functions.
+  </p>
+  <p>
+    To begin, we think of <m>\C</m> as the <m>(x,y)</m>-plane in <m>\R^3</m>, that is,
+    <m>\C = \{(x,y,0) \in \R^3\}</m>.
+    To describe stereographic projection,
+    we will be less concerned with actual complex numbers <m>x + iy</m> and more concerned with their coordinates.
+    Consider the <em>unit sphere
+        <idx><h>unit sphere</h></idx>
+    </em>
+    <me>
+      \mathbb{S}^2 \ := \ \left\{(x,y,z) \in \R^3 : \, x^2+y^2+z^2=1 \right\}
+    </me>.
+  </p>
+  <p>
+    The sphere and the complex plane intersect in the set <m>\{(x,y,0) : \, x^2 + y^2 = 1\}</m>,
+    which corresponds to the equator on the sphere and the unit circle on the complex plane,
+    as depicted in <xref ref="fig_sphereandplane">Figure</xref>.
+    Let <m>N:= (0,0,1)</m>, the <em>north pole
+        <idx><h>north pole</h></idx>
+    </em> of <m>\mathbb{S}^2</m>,
+    and let <m>S:= (0,0,-1)</m>, the <em>south pole
+        <idx><h>south pole</h></idx>
+    </em>.
+  </p>
+  <figure xml:id="fig_sphereandplane">
+    <caption>Setting up stereographic projection.</caption>
+    <me>
+      \figureinput Rtex/stereo
+    </me>
+  </figure>
+  <definition>
+    <statement>
+      <p>
+        The <em>stereographic projection<idx><h>stereographic projection</h></idx> of
+        <m>\mathbb{S}^2</m> to <m>\Chat</m> from <m>N</m></em>
+        is the map <m>\phi \colon \mathbb{S}^2 \to \Chat</m> defined as follows.
+        For any point <m>P \in \mathbb{S}^2 \setminus \{N\}</m>,
+        as the <m>z</m>-coordinate of <m>P</m> is strictly less than 1, the line through <m>N</m> and <m>P</m> intersects <m>\C</m> in exactly one point <m>Q</m>.
+        Define <m>\phi(P) := Q</m>.
+        We also declare that <m>\phi(N) := \infty</m>.
+      </p>
+    </statement>
+  </definition>
+  <proposition xml:id="prop_coordmaps">
+    <statement>
+      <p>
+        The map <m>\phi</m> is given by
+        <me>
+          \phi(x,y,z) = \begin{cases}\left(\frac{x}{1-z}, \, \frac{y}{1-z},\, 0\right) \amp  \text{ if }  z \ne 1 \, , \\ \infty                                            \amp  \text{ if }  z=1 \, . \end{cases}
+        </me>
+      </p>
+      <p>
+        It is bijective, with inverse map
+        <me>
+          \phi^{-1}(p,q,0) \= \left(\frac{2p}{p^2+q^2+1},\, \frac{2q}{p^2+q^2+1}, \, \frac{p^2+q^2-1}{p^2+q^2+1}\right)
+        </me>
+        and <m>\phi^{-1}(\infty) = (0,0,1)</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      Given <m>P = (x,y,z) \in \mathbb{S}^2 \setminus \{N\}</m>,
+      the straight line through <m>N</m> and <m>P</m> is parametrized by
+      <me>
+        r(t) \= N + t(P-N) \= (0,0,1) + t[(x,y,z) - (0,0,1)] \= (tx,\, ty,\, 1+t(z-1))
+      </me>
+      where <m>t \in \R</m>.
+      When <m>r(t)</m> hits <m>\C</m>,
+      the third coordinate is <m>0</m>,
+      so it must be that <m>t = \frac{1}{1-z}</m>.
+      Plugging this value of <m>t</m> into the formula for <m>r</m> yields <m>\phi</m> as stated.
+    </p>
+    <p>
+      To see the formula for the inverse map <m>\phi^{-1}</m>,
+      we begin with a point <m>Q = (p,q,0) \in \C</m> and solve for a point
+      <m>P = (x,y,z) \in \mathbb{S}^2</m> so that <m>\phi(P) = Q</m>.
+      The point <m>P</m> satisfies the equation <m>x^2+y^2+z^2 = 1</m>.
+      The equation <m>\phi(P) = Q</m> tells us that
+      <m>\frac{x}{1-z} = p</m> and <m>\frac{y}{1-z} = q</m>.
+      Thus, we solve three equations for three unknowns.
+      The latter two equations yield
+      <me>
+        p^2 + q^2 \= \frac{x^2+y^2}{(1-z)^2} \= \frac{1-z^2}{(1-z)^2} \= \frac{1+z}{1-z}\,
+      </me>.
+    </p>
+    <p>
+      Solving <m>p^2 + q^2 = \frac{1+z}{1-z}</m> for <m>z</m> and then plugging this into the identities <m>x = p(1-z)</m> and
+      <m>y = q(1-z)</m> proves the desired formula.
+      It is easy to check that <m>\phi \circ \phi^{-1}</m> and
+      <m>\phi^{-1} \circ \phi</m> are both the identity map;
+      see <xref ref="ex_stereoinverseformula">Exercise</xref>.
+    </p>
+  </proof>
+  <theorem xml:id="StereoCircle">
+    <statement>
+      <p>
+        The stereographic projection <m>\phi</m> takes the set of circles in
+        <m>\mathbb{S}^2</m> bijectively to the set of circles in <m>\Chat</m>,
+        where for a circle <m>\gamma \subset \mathbb{S}^2</m> we have <m>\infty \in \phi(\gamma)</m> (that is,
+        <m>\phi(\gamma)</m> is a line in <m>\C</m>) if and only if <m>N \in \gamma</m>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      A circle in <m>\mathbb{S}^2</m> is the intersection of
+      <m>\mathbb{S}^2</m> with some plane <m>H</m>.
+      If <m>(x_0,y_0,z_0)</m> is a normal vector to <m>H</m>,
+      then there is a unique real number <m>k</m> so that <m>H</m> is given by
+      <me>
+        H \= \left\{(x,y,z) \in \R^3 : \, (x,y,z)\cdot (x_0,y_0,z_0) = k \right\} \= \left\{ (x,y,z) \in \R^3 : \, xx_0 + yy_0 + zz_0 = k \right\}
+      </me>.
+      By possibly changing <m>k</m>,
+      we may assume that <m>(x_0,y_0,z_0) \in \mathbb{S}^2</m>.
+      We may also assume that <m>0 \leq k \leq 1</m>,
+      since if <m>k \lt  0</m> we can replace
+      <m>(x_0,y_0,z_0)</m> with <m>(-x_0,-y_0,-z_0)</m>,
+      and if <m>k > 1</m> then <m>H \cap \mathbb{S}^2 = \emptyset</m>.
+    </p>
+    <p>
+      Consider the circle of intersection <m>H \cap \mathbb{S}^2</m>.
+      A point <m>(p,q,0)</m> in the complex plane lies on the image of this circle under <m>\phi</m> if and only if
+      <m>\phi^{-1}(p,q,0)</m> satisfies the defining equation for <m>H</m>.
+      Using the equations from <xref ref="prop_coordmaps">Proposition</xref>
+      for <m>\phi^{-1}(p,q,0)</m>, we see that
+      <me>
+        (z_0-k)p^2 + (2x_0)p + (z_0-k)q^2 + (2y_0)q \= z_0+k\,
+      </me>.
+    </p>
+    <p>
+      If <m>z_0-k = 0</m>, this is a straight line in the <m>(p,q)</m>-plane.
+      Moreover, every line in the <m>(p,q)</m>-plane can be obtained in this way.
+      Note that <m>z_0 = k</m> if and only if <m>N \in H</m>,
+      which is if and only if the image under <m>\phi</m> is a straight line.
+    </p>
+    <p>
+      If <m>z_0-k \neq 0</m>, then completing the square yields
+      <me>
+        \left(p+ \frac{x_0}{z_0-k}\right)^2 + \left(q+\frac{y_0}{z_0-k} \right)^2 = \ \frac{1-k^2}{(z_0-k)^2}\,
+      </me>.
+    </p>
+    <p>
+      Depending on whether the right hand side of this equation is positive, 0, or negative,
+      this is the equation of a circle, point,
+      or the empty set in the <m>(p,q)</m>-plane, respectively.
+      These three cases happen when <m>k \lt 1</m>, <m>k = 1</m>,
+      and <m>k > 1</m>, respectively.
+      Only the first case corresponds to a circle in <m>\mathbb{S}^2</m>.
+      <xref ref="ex_everycircleins2">Exercise</xref>
+      verifies that every circle in the <m>(p,q)</m>-plane arises in this manner.
+    </p>
+  </proof>
+  <p>
+    We can now think of the extended complex plane as a sphere in <m>\R^3</m>,
+    the afore-mentioned <em>Riemann sphere</em>.
+  </p>
+  <p>
+    It is particularly nice to think about the basic M&#xf6;bius transformations via their effect on the Riemann sphere.
+    We will describe inversion.
+    It is worth thinking about,
+    though beyond the scope of this book,
+    how other M&#xf6;bius functions behave.
+    For instance, a rotation <m>f(z) = e^{i\theta}z</m>,
+    composed with <m>\phi^{-1}</m>,
+    can be seen to be a rotation of <m>\mathbb{S}^2</m>.
+    We encourage you to verify this and consider the harder problems of visualizing a real dilation,
+    <m>f(z) = rz</m>, or a translation, <m>f(z) = z+b</m>.
+    We give the hint that a real dilation is in some sense dual to a rotation,
+    in that each moves points along perpendicular sets of circles.
+    Translations can also be visualized via how they move points along sets of circles.
+  </p>
+  <p>
+    We now use stereographic projection to take another look at <m>f(z)= \frac 1 z</m>.
+    We want to know what this function does to the sphere <m>\mathbb{S}^2</m>.
+    We will take a point <m>(x,y,z)\in \mathbb{S}^2</m>,
+    project it to the plane by the stereographic projection <m>\phi</m>,
+    apply <m>f</m> to the point that results,
+    and then pull this point back to
+    <m>\mathbb{S}^2</m> by<nbsp/><m>\phi^{-1}</m>.
+  </p>
+  <p>
+    We know <m>\phi(x,y,z)=(\frac x {1-z}, \, \frac y {1-z}, \, 0)</m> which we now regard as the complex number
+    <me>
+      p+iq \ = \ \frac{x}{1-z} + i \, \frac{y}{1-z}\,
+    </me>.
+  </p>
+  <p>
+    We know from a previous calculation that <m>p^2+q^2= \frac{1+z}{1-z}</m>,
+    which gives <m>x^2 + y^2 = (1+z)(1-z)</m>.
+    Thus
+    <me>
+      f\left( \frac{x}{1-z} + i\frac{y}{1-z}\right) \= \frac{ 1-z }{ x+iy } \= \frac{ (1-z)(x-iy) }{ x^2 + y^2 } \= \frac{x}{1+z} - i\frac{y}{1+z}\,
+    </me>.
+  </p>
+  <p>
+    Rather than plug this result into the formulas for <m>\phi^{-1}</m>,
+    we can just ask what triple of numbers will be mapped to this particular pair using the formulas <m>\phi(x,y,z)=(\frac x {1-z}, \, \frac y {1-z}, \, 0)</m>.
+    The answer is <m>(x,-y, -z)</m>.
+  </p>
+  <p>
+    Thus we have shown that the effect of <m>f(z)= \frac 1 z</m> on
+    <m>\mathbb{S}^2</m> is to take <m>(x,y,z)</m> to <m>(x,-y,-z)</m>.
+    This is a rotation around the <m>x</m>-axis by 180 degrees.
+  </p>
+  <p>
+    We now have a second argument that
+    <m>f(z)= \frac 1 z</m> takes circles and lines to circles and lines.
+    A circle or line in <m>\C</m> is taken to a circle on <m>\mathbb{S}^2</m> by <m>\phi^{-1}</m>.
+    Then <m>f(z)= \frac 1 z</m> rotates the sphere which certainly takes circles to circles.
+    Now <m>\phi</m> takes circles back to circles and lines.
+    We can also say that the circles that go to lines under
+    <m>f(z)= \frac 1 z</m> are the circles through 0, because 0 is mapped to
+    <m>(0,0,-1)</m> under <m>\phi^{-1}</m>,
+    and so a circle through 0 in <m>\C</m> goes to a circle through the south pole in <m>\mathbb{S}^2</m>.
+    Now 180-degree rotation about the <m>x</m>-axis takes the south pole to the north pole,
+    and our circle is now passing through <m>N</m>.
+    But we know that <m>\phi</m> will take this circle to a line in <m>\C</m>.
+  </p>
+  <p>
+    We end by mentioning that there is, in fact,
+    a way of putting the complex metric on <m>\mathbb{S}^2</m>.
+    It is certainly not the (finite) distance function induced by <m>\R^3</m>.
+    Indeed, the origin in the complex plane corresponds to the south pole of <m>\mathbb{S}^2</m>.
+    We have to be able to get arbitrarily far away from the origin in <m>\C</m>,
+    so the complex distance function has to increase greatly with the <m>z</m> coordinate.
+    The closer points are to the north pole <m>N</m>
+    (corresponding to <m>\infty</m> in <m>\Chat</m>),
+    the <em>larger</em> their distance to the origin, and to each other!
+    In this light, a <sq>line</sq> in the Riemann sphere
+    <m>\mathbb{S}^2</m> corresponds to a circle in <m>\mathbb{S}^2</m> through <m>N</m>.
+    In the regular sphere, the circle has finite length,
+    but as a line on the Riemann sphere with the complex metric,
+    it has infinite length.
+  </p>
+</section>

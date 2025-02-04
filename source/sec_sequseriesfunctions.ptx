@@ -1,0 +1,313 @@
+<section xml:id="sec_sequseriesfunctions">
+  <title>Sequences and Series of Functions</title>
+  <p>
+    The fun starts when we study sequences of functions.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>G \subseteq \C</m> and <m>f_n : G \to \C</m> for <m>n \ge 1</m>.
+        We say that <m>(f_n)</m> <em>converges pointwise</em>
+        to <m>f: G \to \C</m> if for each <m>z \in G</m>,
+        <idx><h>convergence</h><h>pointwise</h></idx>
+            <idx><h>pointwise convergence</h></idx>
+        <me>
+          \lim_{ n \to \infty } f_n(z) \= f(z) \,
+        </me>.
+      </p>
+      <p>
+        We say that <m>(f_n)</m> <em>converges uniformly</em>
+        to <m>f: G \to \C</m> if for all
+        <m>\epsilon>0</m> there is an <m>N</m> such that for all <m>z \in G</m> and for all
+        <m>n \geq N</m> <idx><h>convergence</h><h>uniform</h></idx>
+            <idx><h>uniform convergence</h></idx>
+        <me>
+          \left| f_n(z) - f(z) \right| \ \lt  \ \epsilon\,
+        </me>.
+      </p>
+      <p>
+        Sometimes we want to express that either notion of convergence holds only on a subset <m>H</m> of <m>G</m>,
+        in which case we say that <m>(f_n)</m> converges pointwise/uniformly on<nbsp/><m>H</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    It should be clear that uniform convergence on a set implies pointwise convergence on that set;
+    but the converse is not generally true.
+  </p>
+  <p>
+    Let's digest these two notions of convergence of a function sequence by describing them using quantifiers;
+    as usual, <m>\forall</m> denotes <em>for all</em>
+    and <m>\exists</m> means <em>there exists</em>.
+    Pointwise convergence on <m>G</m> says
+    <me>
+      \forall \, \epsilon > 0 \ \ \forall \, z \in G \ \ \exists \, N \ \ \forall \, n \geq N \ \ \left| f_n(z) - f(z) \right| \ \lt  \ \epsilon \,
+    </me>,
+    whereas uniform convergence on <m>G</m> translates into
+    <me>
+      \forall \, \epsilon > 0 \ \ \exists \, N \ \ \forall \, z \in G \ \ \forall \, n \geq N \ \ \left| f_n(z) - f(z) \right| \ \lt  \ \epsilon \,
+    </me>.
+  </p>
+  <p>
+    No big deal <mdash/> we only exchanged two of the quantifiers.
+    In the first case, <m>N</m> may well depend on <m>z</m>,
+    in the second case we need to find an <m>N</m> that works for all <m>z \in G</m>.
+    And this can make all the difference <ellipsis/>
+  </p>
+  <example xml:id="ex_nonuniformconv">
+    <statement>
+      <p>
+        Let <m>f_n : D[0,1] \to \C</m> be defined by <m>f_n(z) = z^n</m>.
+        We claim that this sequence of functions converges pointwise to
+        <m>f: D[0,1] \to \C</m> given by <m>f(z) = 0</m>.
+        This is immediate for the point <m>z =0</m>.
+        Now given any <m>\epsilon > 0</m> and <m>0 \lt  |z| \lt  1</m>,
+        choose <m>N > \frac{ \ln(\epsilon) }{ \ln|z| }</m>.
+        Then for all <m>n \ge N</m>,
+        <me>
+          \left| f_n(z) - f(z) \right| \= \left| z^n - 0 \right| \= |z|^n \ \le \ |z|^N \ \lt  \ \epsilon \,
+        </me>.
+      </p>
+      <p>
+        (You ought to check carefully that all of our inequalities work the way we claim they do.) \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example xml:id="ex_uniformconv">
+    <statement>
+      <p>
+        Let <m>f_n : D[0, \frac 1 2] \to \C</m> be defined by <m>f_n(z) = z^n</m>.
+        We claim that this sequence of functions converges uniformly to
+        <m>f: D[0, \frac 1 2] \to \C</m> given by <m>f(z) = 0</m>.
+        Given any <m>\epsilon > 0</m> and <m>|z| \lt  \frac 1 2</m>,
+        choose <m>N > - \frac{ \ln(\epsilon) }{ \ln(2) }</m>.
+        Then for all <m>n \ge N</m>,
+        <me>
+          \left| f_n(z) - f(z) \right| \= |z|^n \ \le \ |z|^N \ \lt  \ \left( \tfrac 1 2 \right)^N \ \lt  \ \epsilon \,
+        </me>.
+      </p>
+      <p>
+        (Again, you should carefully check our inequalities.) \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    The differences between <xref ref="ex_nonuniformconv">Example</xref>
+    and <xref ref="ex_uniformconv">Example</xref> are subtle,
+    and we suggest you meditate over them for a while with a good cup of coffee.
+        <idx><h>coffee</h></idx>
+    You might already suspect that the function sequence in <xref ref="ex_nonuniformconv">Example</xref>
+    does <em>not</em> converge uniformly,
+    as we will see in a moment.
+  </p>
+  <p>
+    The first application illustrating the difference between pointwise and uniform convergence says,
+    in essence,
+    that if we have a sequence of functions
+    <m>\left( f_n \right)</m> that converges uniformly on <m>G</m> then for all <m>z_0 \in G</m>
+    <me>
+      \lim_{n \to \infty} \ \lim_{z \to z_0} f_n(z) \= \lim_{z \to z_0} \ \lim_{n \to \infty} f_n(z) \,
+    </me>.
+  </p>
+  <p>
+    We will need similar interchanges of limits frequently.
+  </p>
+  <proposition xml:id="sequencecontionuos">
+    <statement>
+      <p>
+        Suppose <m>G\subset\C</m> and
+        <m>f_n: G \to \C</m> is continuous, for each <m>n \ge 1</m>.
+        If <m>(f_n)</m> converges uniformly to
+        <m>f: G \to \C</m> then <m>f</m> is continuous.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      Let <m>z_0 \in G</m>;
+      we will prove that <m>f</m> is continuous at <m>z_0</m>.
+      By uniform convergence, given <m>\epsilon>0</m>,
+      there is an <m>N</m> such that for all <m>z \in G</m> and all <m>n \geq N</m>
+      <me>
+        \left| f_n(z) - f(z) \right| \ \lt  \ \frac \epsilon 3 \,
+      </me>.
+    </p>
+    <p>
+      Now we make use of the continuity of the <m>f_n</m>'s.
+      This means that given
+      (the same)
+      <m>\epsilon>0</m>, there is a
+      <m>\delta>0</m> such that whenever <m>|z-z_0| \lt  \delta</m>,
+      <me>
+        \left| f_n(z) - f_n(z_0) \right| \ \lt  \ \frac \epsilon 3 \,
+      </me>.
+    </p>
+    <p>
+      All that's left is putting those two inequalities together:
+      by the triangle inequality (<xref ref="cor_triangleineq">Corollary</xref>(c)),
+      <md>
+        <mrow>\left| f(z) - f(z_0) \right| \ \amp = \ \left| f(z) - f_n(z) + f_n(z) - f_n(z_0) + f_n(z_0) - f(z_0) \right|</mrow>
+        <mrow>\amp \leq \ \left| f(z) - f_n(z) \right| + \left| f_n(z) - f_n(z_0) \right| + \left| f_n(z_0) - f(z_0) \right|</mrow>
+        <mrow>\amp \lt  \ \epsilon \, </mrow>
+      </md>.
+    </p>
+    <p>
+      This proves that <m>f</m> is continuous at<nbsp/><m>z_0</m>.
+    </p>
+  </proof>
+  <p>
+    <xref ref="sequencecontionuos">Proposition</xref>
+    can sometimes give a hint that a function sequence does not converge uniformly.
+  </p>
+  <example>
+    <statement>
+      <p>
+        We modify <xref ref="ex_nonuniformconv">Example</xref>
+        and consider the real function sequence
+        <m>f_n: [0,1] \to \R</m> given by <m>f_n(x) = x^n</m>.
+        It converges pointwise to <m>f: [0,1] \to \R</m> given by
+        <me>
+          f(x) = \begin{cases}0 \amp  \text{ if }  0 \le x \lt  1 \, , \\ 1 \amp  \text{ if }  x = 1 \, . \end{cases}
+        </me>
+      </p>
+      <p>
+        As this limiting function is not continuous,
+        the above convergence cannot be uniform.
+        This gives a strong indication that the convergence in <xref ref="ex_nonuniformconv">Example</xref> is not uniform either,
+        though this needs a separate proof,
+        as the domain of the functions in <xref ref="ex_nonuniformconv">Example</xref>
+        is the unit disk (<xref ref="fn_zn___0">Exercise</xref>(b)). \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Now that we have established <xref ref="sequencecontionuos">Proposition</xref> about continuity,
+    we can ask about integration of sequences or series of functions.
+    The next theorem should come as no surprise;
+    however, its consequences
+    (which we will see shortly)
+    are wide ranging.
+  </p>
+  <proposition xml:id="seriesintegral">
+    <statement>
+      <p>
+        Suppose <m>f_n: G \to \C</m> is continuous,
+        for <m>n \ge 1</m>,
+        <m>(f_n)</m> converges uniformly to <m>f: G \to \C</m>,
+        and <m>\gg \subseteq G</m> is a piecewise smooth path.
+        Then
+        <me>
+          \lim_{n \to \infty} \int_\gamma f_n \= \int_\gamma f \,
+        </me>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      We may assume that <m>\gg</m> is not just a point,
+      in which case the proposition holds trivially.
+      Given <m>\epsilon > 0</m>,
+      there exists <m>N</m> such that for all <m>z \in G</m> and all <m>n \ge N</m>,
+      <me>
+        \left| f_n(z) - f(z) \right| \ \lt  \ \frac{ \epsilon }{ \length(\gg) } \,
+      </me>.
+    </p>
+    <p>
+      With <xref ref="intprop">Proposition</xref>
+      <xref ref="int4"></xref> we can thus estimate
+      <me>
+        \left| \int_\gamma f_n - \int_\gamma f \right| \= \left| \int_\gamma f_n - f \right| \ \leq \ \max_{z \in \gamma} \left| f_n(z) - f(z) \right| \cdot \length (\gamma) \ \lt  \ \epsilon \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <p>
+    All of these notions for sequences of functions hold verbatim for series of functions.
+    For example,
+    if <m>\sum_{ k \ge 1 } f_k(z)</m> converges uniformly on <m>G</m> and
+    <m>\gg \subseteq G</m> is a piecewise smooth path, then
+    <me>
+      \int_\gg \sum_{ k \ge 1 } f_k(z) \, \diff{z} \= \sum_{ k \ge 1 } \int_\gg f_k(z) \, \diff{z} \,
+    </me>.
+  </p>
+  <p>
+    In some sense, the above identity is <em>the</em>
+    reason we care about uniform convergence.
+  </p>
+  <p>
+    There are several criteria for uniform convergence;
+    see, e.g., <xref ref="sup-_0">Exercises</xref>
+    and <xref ref="fn_zn___0"></xref>,
+    and the following result, sometimes called the <em>Weierstra&#223;
+    <m>M</m>-test<idx><h>Weierstra&#223;
+    <m>M</m>-test</h></idx>
+    </em>.
+  </p>
+  <proposition xml:id="mtest">
+    <statement>
+      <p>
+        Suppose <m>f_k : G \to \C</m> for <m>k \ge 1</m>,
+        and <m>|f_k(z)| \le M_k</m> for all <m>z \in G</m>,
+        where <m>\sum_{ k \ge 1 } M_k</m> converges.
+        Then <m>\sum_{k \geq 1} \left|f_k\right|</m> and
+        <m>\sum_{k \geq 1} f_k</m> converge uniformly in<nbsp/><m>G</m>.
+        (We say the series <m>\sum_{k \geq 1} f_k</m>
+        <em>converges absolutely and uniformly</em>.)
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      For each fixed <m>z</m>,
+      the series <m>\sum_{k \geq 1} f_k(z)</m> converges absolutely by <xref ref="cor_comparisonseries">Corollary</xref>.
+      To show that the convergence is uniform, let <m>\epsilon > 0</m>.
+      Then there exists <m>N</m> such that for all <m>n \ge N</m>,
+      <me>
+        \sum_{k \ge 1} M_k - \sum_{k=1}^nM_k \= \sum_{k >n}M_k \ \lt  \ \epsilon \,
+      </me>.
+    </p>
+    <p>
+      Thus for all <m>z \in G</m> and <m>n \ge N</m>,
+      <me>
+        \abs{\sum_{k \geq 1} f_k(z)-\sum_{k=1}^nf_k(z)} \= \abs{\sum_{k >n}f_k(z)} \ \le \ \sum_{k >n}\abs{f_k(z)} \ \le \ \sum_{k >n}M_k \ \lt  \ \epsilon \,
+      </me>,
+      which proves uniform convergence.
+      Replace <m>f_k</m> with <m>\left|f_k\right|</m> in this argument to see that
+      <m>\sum_{k \geq 1} \left|f_k\right|</m> also converges uniformly.
+    </p>
+  </proof>
+  <example xml:id="ex_geomseriesasfunction">
+    <statement>
+      <p>
+        We revisit <xref ref="ex_geomseries">Example</xref>
+        and consider the geometric series
+        <m>\sum_{ k \ge 1 } z^k</m> as a series of functions in <m>z</m>.
+        We know from <xref ref="ex_geomseries">Example</xref>
+        that this function series converges pointwise for <m>|z| \lt  1</m>:
+        <me>
+          \sum_{ k \ge 1 } z^k \= \frac z {1-z} \,
+        </me>.
+      </p>
+      <p>
+        To study uniform convergence,
+        we apply <xref ref="mtest">Proposition</xref> with <m>f_k(z) = z^k</m>.
+        We need a series of upper bounds that converges,
+        so fix a real number <m>0 \lt  r \lt  1</m> and let <m>M_k = r^k</m>.
+        Then
+        <me>
+          |f_k(z)| \= |z|^k \ \le \ r^k \qquad \text{ for }  \ |z| \le r \,
+        </me>,
+        and <m>\sum_{ k \ge 1 } r^k</m> converges by <xref ref="ex_geomseries">Example</xref>.
+        Thus, <xref ref="mtest">Proposition</xref>
+        says that <m>\sum_{ k \ge 1 } z^k</m> converges uniformly for <m>|z| \le r</m>.
+      </p>
+      <p>
+        We note the subtle distinction of domains for pointwise/uniform convergence:
+        <m>\sum_{ k \ge 1 } z^k</m> converges (absolutely) for <m>|z|\lt 1</m>,
+        but to force <em>uniform</em> convergence,
+        we need to shrink the domain to <m>|z| \le r</m> for some
+        (arbitrary but fixed)
+        <m>r\lt 1</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+</section>

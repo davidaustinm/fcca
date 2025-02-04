@@ -1,0 +1,80 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="complexnumberchapter">
+  <title>Complex Numbers</title>
+  <introduction>
+    <blockquote>
+      <em>Die ganzen Zahlen hat der liebe Gott geschaffen, alles andere ist
+      Menschenwerk.
+      (God created the integers, everything else is
+      made by humans.)</em>
+      Leopold Kronecker (1823<ndash/>1891)
+    </blockquote>
+    <p>
+      The real numbers have many useful properties.
+      There are operations such as addition, subtraction,
+      and multiplication, as well as division by any nonzero number.
+      There are useful laws that govern these operations,
+      such as the commutative and distributive laws.
+      We can take limits and do calculus,
+      differentiating and integrating functions.
+      But you cannot take a square root of <m>-1</m>;
+      that is, you cannot find a real root of the equation
+      <men xml:id="MotivEq">
+        x^2+1=0 \,
+      </men>.
+    </p>
+    <p>
+      Most of you have heard that there is a
+      <q>new</q>
+      number <m>i</m> that is a root of <xref ref="MotivEq"/>;
+      that is, <m>i^2+1=0</m> or <m>i^2=-1</m>.
+      We will show that when the real numbers are enlarged to a new system called the
+      <em>complex numbers</em>,
+      which includes <m>i</m>,
+      not only do we gain numbers with interesting properties,
+      but we do not lose many of the nice properties that we had before.
+    </p>
+    <p>
+      The complex numbers, like the real numbers,
+      will have the operations of addition,
+      subtraction, multiplication,
+      as well as division by any complex number except zero.
+      These operations will follow all the laws that we are used to,
+      such as the commutative and distributive laws.
+      We will also be able to take limits and do calculus.
+          <idx><h>calculus</h></idx>
+      And, there will be a root of<nbsp/><xref ref="MotivEq"/>.
+    </p>
+    <p>
+      As a brief historical aside,
+      complex numbers did not originate with the search for a square root of <m>-1</m>;
+      rather, they were introduced in the context of cubic equations.
+      Scipione del Ferro (1465<ndash/>1526) and Niccol&#xf2; Tartaglia (1500<ndash/>1557) discovered a way to find a root of any cubic polynomial,
+      which was publicized by Gerolamo Cardano (1501<ndash/>1576) and is often referred to as
+      <em>Cardano's formula</em>.
+      For the cubic polynomial <m>x^3 + px + q</m>, Cardano's formula involves the quantity <m>\sqrt{ \frac{ q^2 }{ 4 } + \frac{ p^3 }{ 27 } }</m>.
+      It is not hard to come up with examples for <m>p</m> and <m>q</m> for which the argument of this square root becomes negative and thus not computable within the real numbers.
+      On the other hand (e.g., by arguing through the graph of a cubic polynomial),
+      every cubic polynomial has at least one real root.
+      This seeming contradiction can be solved using complex numbers,
+      as was probably first exemplified by Rafael Bombelli (1526<ndash/>1572).
+    </p>
+    <p>
+      In the next section we show exactly how the complex numbers are set up,
+      and in the rest of this chapter we will explore the properties of the complex numbers.
+      These properties will be of both algebraic
+      (such as the commutative and distributive properties mentioned already)
+      and geometric nature.
+      You will see, for example,
+      that multiplication can be described geometrically.
+      In the rest of the book,
+      the calculus of complex numbers will be built on the properties that we develop in this chapter.
+    </p>
+  </introduction>
+  <xi:include  href="sec_defalg.ptx"/>
+  <!--
+  <xi:include  href="geomprop.ptx"/>
+  <xi:include  href="sec_geometricprops.ptx"/>
+  <xi:include  href="sec_topologyintro.ptx"/>
+  <xi:include  href="sec_optionallab.ptx"/>
+  -->
+</chapter>

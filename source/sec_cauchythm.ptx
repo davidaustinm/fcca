@@ -1,0 +1,298 @@
+<section xml:id="sec_cauchythm">
+  <title>Cauchy's Theorem</title>
+  <p>
+    <em>The</em> central theorem of complex analysis is based on the following concept.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>\gg_0</m> and <m>\gg_1</m> are closed paths in the region <m>G \subseteq \C</m>,
+        parametrized by <m>\gg_0(t), \ 0 \leq t \leq 1</m>,
+        and <m>\gg_1(t), \ 0 \leq t \leq 1</m>, respectively.
+        Then <m>\gg_0</m> is <em><m>G</m>-homotopic</em>
+            <idx><h>homotopic</h></idx>
+        to <m>\gg_1</m> if there exists a continuous function <m>h : [0,1]^2 \to G</m> such that,
+        for all <m>s,\,t\in[0,1]</m>,
+        <md>
+          <mrow>h(t,0) \amp = \gg_0(t) \, , \nonumber</mrow>
+          <mrow xml:id="eq_homotopydef" number="yes">h(t,1) \amp = \gg_1(t) \, ,</mrow>
+          <mrow>h(0,s) \amp = h(1,s) \, . \nonumber</mrow>
+        </md>
+      </p>
+      <p>
+        We use the notation <m>\gg_1\sim_G\gg_2</m> to mean <m>\gg_1</m> is <m>G</m>-homotopic to <m>\gg_2</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    The function <m>h(t,s)</m> is called a <em>homotopy
+        <idx><h>homotopy</h></idx>
+    </em>.
+    For each fixed <m>s</m>,
+    a homotopy <m>h(t,s)</m> is a path parametrized by <m>t</m>,
+    and as <m>s</m> goes from <m>0</m> to <m>1</m>,
+    these paths continuously transform from <m>\gg_0</m> to <m>\gg_1</m>.
+    The last condition in <xref ref="eq_homotopydef"/> simply says that each of these paths is also closed.
+  </p>
+  <example xml:id="exam_homotopy">
+    <statement>
+      <p>
+        <xref ref="homotopicfig">Figure</xref>
+        attempts to illustrate that the unit circle is
+        <m>(\C \setminus \{ 0 \})</m>-homotopic to the square with vertices <m>\pm 3 \pm 3i</m>.
+        Indeed, you should check
+        (<xref ref="ex_checkhomotopyexample">Exercise</xref>)
+        that
+        <men xml:id="eq_checkhomotopyexample">
+          h(t,s) \ := \ (1-s) e^{ 2 \pi i t } + 3s \times \begin{cases} 1 + 8it \amp  \text{ if }  0 \le t \le \frac 1 8 \, , \\ 2-8t + i \amp  \text{ if }  \frac 1 8 \le t \le \frac 3 8 \, , \\ -1 + 4i(1-2t) \amp  \text{ if }  \frac 3 8 \le t \le \frac 5 8 \, , \\ 8t-6 - i \amp  \text{ if }  \frac 5 8 \le t \le \frac 7 8 \, , \\ 1 + 8i(t-1) \amp  \text{ if }  \frac 7 8 \le t \le 1 \end{cases}
+        </men>
+        gives a homotopy.
+        Note that <m>h(t,s) \ne 0</m> for any <m>0 \le t, s \le 1</m> (hence
+        <q><m>(\C \setminus \{ 0 \})</m>-homotopic</q>).
+        \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <figure xml:id="homotopicfig">
+    <caption>This square and circle are <m>(\C \setminus \{ 0 \})</m>-homotopic.</caption>
+    <image width="73%" source="images/homotopic.png"/>
+    \vspace{-12pt}
+  </figure>
+  <p>
+    <xref ref="ex_homotopyEquivalence">Exercise</xref>
+    shows that <m>\sim_G</m> is an equivalence relation on the set of closed paths in <m>G</m>.
+    The definition of homotopy applies to
+    <em>parametrizations</em> of curves;
+    but <xref ref="ex_homotopyReparametrization">Exercise</xref>,
+    together with transitivity of <m>\sim_G</m>,
+    shows that homotopy is invariant under reparametrizations.
+  </p>
+  <theorem xml:id="cauchythm">
+    <title>Cauchy's Theorem</title>
+    <statement>
+      <p>
+        Suppose <m>G \subseteq \C</m> is a region,
+        <m>f</m> is holomorphic in <m>G</m>,
+        <m>\gg_0</m> and <m>\gg_1</m> are piecewise smooth paths in <m>G</m>,
+        and <m>\gg_0 \sim_G \gg_1</m>.
+        Then
+            <idx><h>Cauchy's theorem</h></idx>
+        <me>
+          \int_{\gg_0} f \ = \ \int_{\gg_1} f \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    As a historical aside,
+    it is assumed that Johann Carl Friedrich Gau&#223; (1777<ndash/>1855) knew a version of this theorem in 1811 but published it only in 1831.
+    Cauchy (of Cauchy<ndash/>Riemann equations fame) published his version in 1825, Karl Theodor Wilhelm Weierstra&#223; (1815<ndash/>1897) his in 1842.
+    <xref ref="cauchythm">Theorem</xref>
+    is often called the <em>Cauchy<ndash/>Goursat Theorem</em>,
+    since Cauchy assumed that the derivative of <m>f</m> was continuous,
+    a condition that was first removed by Edouard Jean-Baptiste Goursat (1858<ndash/>1936).
+        <idx><h>Cauchy<ndash/>Goursat theorem</h></idx>
+  </p>
+  <p>
+    Before discussing the proof of <xref ref="cauchythm">Theorem</xref>,
+    we give a basic, yet prototypical application of it:
+  </p>
+  <example>
+    <statement>
+      <p>
+        We claim that
+        <men xml:id="eq_cauchyexample">
+          \int_\gg \frac {\diff{z}} z \= 2 \pi i
+        </men>
+        where <m>\gg</m> is the square in <xref ref="homotopicfig">Figure</xref>,
+        oriented counter-clockwise.
+        We could, of course, compute this integral by hand,
+        but it is easier to apply Cauchy's <xref ref="cauchythm">Theorem</xref>
+        to the function <m>f(z) = \frac 1 z</m>,
+        which is holomorphic in <m>G = \C \setminus \{ 0 \}</m>.
+        We showed in<nbsp/><xref ref="eq_checkhomotopyexample"/> that <m>\gg</m> is <m>G</m>-homotopic to the unit circle.
+        <xref ref="ex_circleint">Exercise</xref>
+        says that integrating <m>f</m> over the unit circle gives <m>2 \pi i</m> and so Cauchy's <xref ref="cauchythm">Theorem</xref>
+        implies<nbsp/><xref ref="eq_cauchyexample"/>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <proof>
+    <p>
+      The full proof of Cauchy's Theorem is beyond the scope of this book.
+      However, there are several proofs under more restrictive hypotheses than <xref ref="cauchythm">Theorem</xref>.
+      We shall present a proof under the following extra assumptions:
+      <ul>
+        <li>
+          <p>
+            The derivative <m>f'</m> is continuous in <m>G</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The homotopy <m>h</m> from <m>\gg_0</m> to <m>\gg_1</m> has piecewise,
+            continuous second derivatives.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Technically, this is the assumption on <m>h</m>:
+      <me>
+        h(t,s) = \begin{cases}h_1(t,s) \amp  \text{ if }  0 \le t \le t_1 \, , \\ h_2(t,s) \amp  \text{ if }  t_1 \le t \le t_2 \, , \\ \vdots \\ h_n(t,s) \amp  \text{ if }  t_{ n-1 } \le t \le 1 \, , \end{cases}
+      </me>
+      where each <m>h_j(t,s)</m> has continuous second partials<fn>
+      As we have seen with other
+      <q>piecewise</q>
+      definitions,
+      the behavior of <m>h</m> at the subdivision lines <m>t=t_i</m> needs to be understood in terms of limits.
+      </fn>.
+      (<xref ref="exam_homotopy">Example</xref> gives one instance.)
+      Now we turn to the proof under these extra assumptions.
+    </p>
+    <p>
+      For <m>0 \leq s \leq 1</m>,
+      let <m>\gg_s</m> be the path parametrized by <m>h(t,s), \ 0 \leq  t \leq 1</m>.
+      Consider the function <m>I: [0,1] \to \C</m> given by
+      <me>
+        I(s) \ := \ \int_{ \gg_s } f \,
+      </me>,
+      so that <m>I(0) = \int_{\gg_0} f</m> and <m>I(1) = \int_{\gg_1} f</m>.
+      We will show that <m>I</m> is constant;
+      in particular, <m>I(0) = I(1)</m>, which proves the theorem.
+      By Leibniz's rule
+          <idx><h>Leibniz's rule</h></idx>
+      (<xref ref="leibnizrule">Theorem</xref>),
+      <md>
+        <mrow>\frac{d}{\diff{s}} I(s) \ \amp = \ \frac{d}{\diff{s}} \int_0^1 f \left(h(t,s) \right) \frac{ \partial h }{\partial t } \, \diff{t} \  = \ \int_0^1 \frac{\partial}{\partial s} \left( f \left( h(t,s) \right) \frac{\partial h }{\partial t } \right) \diff{t}</mrow>
+        <mrow>\amp = \ \int_0^1 \left( f' \left( h(t,s) \right) \frac{ \partial h }{ \partial s } \frac{ \partial h }{ \partial t } + f \left( h(t,s) \right) \frac{ \partial^2 h }{ \partial s \, \partial t } \right) \diff{t}</mrow>
+        <mrow>\amp = \ \int_0^1 \left( f' \left( h(t,s) \right) \frac{ \partial h }{ \partial t } \frac{ \partial h }{ \partial s } + f \left( h(t,s) \right) \frac{ \partial^2 h }{ \partial t \, \partial s } \right) \diff{t} \  = \ \int_0^1 \frac{\partial}{\partial t} \left( f \left( h(t,s) \right) \frac{\partial h}{\partial s} \right) \diff{t} \, </mrow>
+      </md>.
+    </p>
+    <p>
+      Note that we used <xref ref="thm_mixedpartialscommute">Theorem</xref>
+      to switch the order of the second partials in the penultimate step<mdash/>here is where we need our assumption that <m>h</m> has continuous second partials.
+      Also, we needed continuity of <m>f'</m> in order to apply Leibniz's rule.
+      If <m>h</m> is piecewise defined,
+      we split up the integral accordingly.
+    </p>
+    <p>
+      Finally, by the Fundamental Theorem of Calculus
+      (<xref ref="fundthmcalc">Theorem</xref>),
+      applied separately to the real and imaginary parts of the above integrand,
+      <me>
+        \frac{d}{\diff{s}} I(s) \ = \ \int_0^1 \frac{\partial}{\partial t} \left( f \left( h(t,s) \right) \frac{\partial h}{\partial s} \right) \diff{t} \ = \ f(h(1,s)) \, \frac{\partial h}{\partial s} (1,s) - f(h(0,s)) \, \frac{\partial h}{\partial s} (0,s) \ = \ 0 \,
+      </me>,
+      where the last step follows from
+      <m>h(0,s) = h(1,s)</m> for all<nbsp/><m>s</m>.
+    </p>
+  </proof>
+  <definition>
+    <statement>
+      <p>
+        Let <m>G \subseteq \C</m> be a region.
+        If the closed path <m>\gg</m> is <m>G</m>-homotopic to a point
+        (that is, a constant path)
+        then <m>\gg</m> is <em><m>G</m>-contractible
+            <idx><h>contractible</h></idx>
+        </em>, and we write <m>\gg\sim_G0</m>.
+        (See <xref ref="contractiblefig">Figure</xref> for an example.)
+      </p>
+    </statement>
+  </definition>
+  <figure xml:id="contractiblefig">
+    <caption>This ellipse is <m>(\C \setminus \R)</m>-contractible.</caption>
+    <image width="73%" source="images/contractible.png"/>
+  </figure>
+  <p>
+    The fact that an integral over a point is zero has the following immediate consequence.
+  </p>
+  <corollary xml:id="cauchycor">
+    <statement>
+      <p>
+        Suppose <m>G \subseteq \C</m> is a region,
+        <m>f</m> is holomorphic in <m>G</m>,
+        <m>\gg</m> is piecewise smooth, and <m>\gg \sim_G 0</m>.
+        Then
+        <me>
+          \int_{\gg} f \= 0 \,
+        </me>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    This corollary is worth meditating over.
+    For example,
+    you should compare it with <xref ref="antidercor">Corollary</xref>:
+    both results give a zero integral,
+    yet they make truly opposite assumptions
+    (one about the existence of an antiderivative,
+    the other about the existence of a derivative).
+  </p>
+  <p>
+    Naturally, <xref ref="cauchycor">Corollary</xref>
+    gives many evaluations of integrals, such as this:
+  </p>
+  <example>
+    <statement>
+      <p>
+        Since <m>\Log</m> is holomorphic in
+        <m>G = \C \setminus \R_{ \le 0 }</m> and the ellipse <m>\gg</m> in <xref ref="contractiblefig">Figure</xref> is <m>G</m>-contractible,
+        <xref ref="cauchycor">Corollary</xref> gives
+        <me>
+          \int_\gg \Log(z) \, \diff{z} \= 0 \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    <xref ref="C-contractible">Exercise</xref>(a) says that any closed path is <m>\C</m>-contractible,
+    which yields the following special case of <xref ref="cauchycor">Corollary</xref>.
+  </p>
+  <corollary>
+    <statement>
+      <p>
+        If <m>f</m> is entire and <m>\gg</m> is any piecewise smooth closed path, then
+        <me>
+          \int_{\gg} f \= 0 \,
+        </me>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    The theorems and corollaries in this section are useful not just for showing that certain integrals are zero:
+  </p>
+  <example xml:id="exam_partialfr">
+    <statement>
+      <p>
+        We'd like to compute
+        <me>
+          \int_\gg \frac{ \diff{z} }{ z^2 - 2z }
+        </me>
+        where <m>\gg</m> is the unit circle,
+        oriented counter-clockwise.
+        (Try computing it from first principles.)
+        We use a partial fractions expansion to write
+        <me>
+          \int_\gg \frac{ \diff{z} }{ z^2 - 2z } \= \frac 1 2 \int_\gg \frac{ \diff{z} }{ z-2 } \ - \ \frac 1 2 \int_\gg \frac{ \diff{z} }{ z } \,
+        </me>.
+      </p>
+      <p>
+        The first integral on the right-hand side is zero by <xref ref="cauchycor">Corollary</xref>
+        applied to the function <m>f(z) = \frac{ 1 }{ z-2 }</m> (note that <m>f</m> is holomorphic in
+        <m>\C \setminus \{ 2 \}</m> and <m>\gg</m> is <m>(\C \setminus \{ 2 \})</m>-contractible).
+        The second integral is <m>2 \pi i</m> by <xref ref="ex_circleint">Exercise</xref>, and so
+        <me>
+          \int_\gg \frac{ \diff{z} }{ z^2 - 2z } \= - \pi i \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    Sometimes <xref ref="cauchycor">Corollary</xref>
+    itself is known as Cauchy's Theorem.
+    See <xref ref="ex_cauchyfromgreen">Exercise</xref>
+    for a related formulation of <xref ref="cauchycor">Corollary</xref>,
+    with a proof based on Green's Theorem.
+  </p>
+</section>

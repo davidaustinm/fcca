@@ -1,0 +1,302 @@
+<section xml:id="sec_defharmonic">
+  <title>Definition and Basic Properties</title>
+  <p>
+    Recall from <xref ref="sec_Cauchy-Riemann">Section</xref>
+    the definition of a harmonic function:
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>G \subseteq \C</m> be a region.
+        A function <m>u: G \to \R</m> is <em>harmonic
+            <idx><h>harmonic</h></idx>
+        </em> in <m>G</m> if it has continuous second partials in <m>G</m> and satisfies the <em>Laplace<fn>
+        Named after Pierre-Simon Laplace (1749<ndash/>1827).
+        </fn> equation</em>
+            <idx><h>Laplace equation</h></idx>
+        <me>
+          u_{xx} + u_{yy} \= 0 \,
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <example xml:id="exam_xyharmonic">
+    <statement>
+      <p>
+        The function <m>u(x,y) = xy</m> is harmonic in <m>\C</m> since <m>u_{xx} + u_{yy} = 0 + 0 = 0</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example xml:id="exam_excosyharmonic">
+    <statement>
+      <p>
+        The function <m>u(x,y) = e^x \cos(y)</m> is harmonic in <m>\C</m> because
+        <me>
+          u_{xx} + u_{yy} \= e^x \cos(y) - e^x \cos(y) \= 0 \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    There are (at least) two reasons why harmonic functions are part of the study of complex analysis,
+    and they can be found in the next two theorems.
+  </p>
+  <proposition xml:id="reimharmonic">
+    <statement>
+      <p>
+        Suppose <m>f=u+iv</m> is holomorphic in the region <m>G</m>.
+        Then <m>u</m> and <m>v</m> are harmonic in<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      First, by <xref ref="infdiff">Corollary</xref>,
+      <m>u</m> and <m>v</m> have continuous second partials.
+      By <xref ref="cre">Theorem</xref>,
+      <m>u</m> and <m>v</m> satisfy the Cauchy<ndash/>Riemann equations<nbsp/><xref ref="crequations"/>
+      <me>
+        u_x = v_y \qquad \text{ and }  \qquad u_y = - v_x
+      </me>
+      in <m>G</m>.
+      Hence we can repeat our argumentation in<nbsp/><xref ref="eq_firstharmonicinstance"/>,
+      <me>
+        u_{xx} + u_{yy} \= \left( u_x \right)_x + \left( u_y \right)_y \= \left( v_y \right)_x + \left( -v_x \right)_y \= v_{yx} - v_{xy} \= 0 \,
+      </me>.
+    </p>
+    <p>
+      Note that in the last step we used the fact that <m>v</m> has continuous second partials.
+      The proof that <m>v</m> satisfies the Laplace equation is practically identical.
+    </p>
+  </proof>
+  <p>
+    <xref ref="reimharmonic">Proposition</xref>
+    gives us an effective way to show that certain functions are harmonic in <m>G</m> by way of constructing an accompanying holomorphic function on<nbsp/><m>G</m>.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Revisiting <xref ref="exam_xyharmonic">Example</xref>,
+        we can see that <m>u(x,y) = xy</m> is harmonic in <m>\C</m> also by noticing that
+        <me>
+          f(z) \= \tfrac 1 2 \, z^2 \= \tfrac 1 2 \left( x^2 - y^2 \right) + i xy
+        </me>
+        is entire and <m>\Im(f) = u</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        A second reason that the function
+        <m>u(x,y) = e^x \cos(y)</m> from <xref ref="exam_excosyharmonic">Example</xref>
+        is harmonic in <m>\C</m> is that
+        <me>
+          f(z) \= \exp(z) \= e^x \cos(y) + i \, e^x \sin(y)
+        </me>
+        is entire and <m>\Re(f) = u</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    <xref ref="reimharmonic">Proposition</xref>
+    practically shouts for a converse.
+    There are, however,
+    functions that are harmonic in a region <m>G</m> but not the real part (say) of a holomorphic function in <m>G</m>
+    (<xref ref="logharmonic">Exercise</xref>).
+    We do obtain a converse of <xref ref="reimharmonic">Proposition</xref>
+    if we restrict ourselves to <em>simply-connected</em> regions.
+        <idx><h>region</h><h>simply-connected</h></idx>
+  </p>
+  <theorem xml:id="harmonictoholomorphic">
+    <statement>
+      <p>
+        Suppose <m>u</m> is harmonic on a simply-connected region <m>G</m>.
+        Then there exists a harmonic function <m>v</m> in <m>G</m> such that <m>f=u+iv</m> is holomorphic in<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    The function <m>v</m> is called a <em>harmonic conjugate
+        <idx><h>harmonic conjugate</h></idx>
+    </em> of<nbsp/><m>u</m>.
+  </p>
+  <proof>
+    <p>
+      We will explicitly construct a holomorphic function <m>f</m>
+      (and thus <m>v = \Im f</m>).
+      First, let
+      <me>
+        g \ := \ u_x - i \, u_y \,
+      </me>.
+    </p>
+    <p>
+      The plan is to prove that <m>g</m> is holomorphic,
+      and then to construct an antiderivative of <m>g</m>,
+      which will be almost the function <m>f</m> that we're after.
+      To prove that <m>g</m> is holomorphic,
+      we use <xref ref="cre">Theorem</xref>:
+      first because <m>u</m> is harmonic,
+      <m>\Re g = u_x</m> and <m>\Im g = - u_y</m> have continuous partials.
+      Moreover, again because <m>u</m> is harmonic,
+      <m>\Re g</m> and <m>\Im g</m> satisfy the Cauchy<ndash/>Riemann equations<nbsp/><xref ref="crequations"/>:
+      <me>
+        \left( \Re g \right)_x \= u_{xx} \= - u_{yy} \= \left( \Im g \right)_y
+      </me>
+      and
+      <me>
+        \left( \Re g \right)_y \= u_{xy} \= u_{yx} \= - \left( \Im g \right)_x \,
+      </me>.
+    </p>
+    <p>
+      <xref ref="cre">Theorem</xref> implies that <m>g</m> is holomorphic in <m>G</m>,
+      and so we can use <xref ref="cor_simplyconnectedprimitive">Corollary</xref>
+      to obtain an antiderivative <m>h</m> of <m>g</m> on <m>G</m>
+      (here is where we use the fact that <m>G</m> is simply connected).
+      Now we decompose <m>h</m> into its real and imaginary parts as <m>h=a+ib</m>.
+      Then, again using <xref ref="cre">Theorem</xref>,
+      <me>
+        g \= h' \= a_x + i \, b_x \= a_x - i \, a_y \,
+      </me>.
+    </p>
+    <p>
+      (The second equation follows from the Cauchy<ndash/>Riemann equations <xref ref="crequations"/>.) But the real part of <m>g</m> is <m>u_x</m>,
+      so we obtain <m>u_x = a_x</m> and thus
+      <m>u(x,y) = a(x,y) + c(y)</m> for some function <m>c</m> that depends only on <m>y</m>.
+      On the other hand,
+      comparing the imaginary parts of <m>g</m> and <m>h'</m> yields <m>-u_y = -a_y</m> and so
+      <m>u(x,y) = a(x,y) + c(x)</m> where <m>c</m> depends only on <m>x</m>.
+      Hence <m>c</m> has to be constant,
+      and <m>u(x,y)=a(x,y)+c</m>.
+      But then
+      <me>
+        f(z) \ := \ h(z) + c
+      </me>
+      is a function holomorphic in <m>G</m> whose real part is <m>u</m>,
+      as promised.
+    </p>
+  </proof>
+  <p>
+    As a side remark,
+    with hindsight it should not be surprising that the function <m>g</m> that we first constructed in our proof is the derivative of the sought-after function <m>f</m>.
+    Namely, by <xref ref="cre">Theorem</xref>
+    such a function <m>f=u+iv</m> must satisfy
+    <me>
+      f' \= u_x + i \, v_x \= u_x - i \, u_y \,
+    </me>.
+  </p>
+  <p>
+    (The second equation follows from the Cauchy<ndash/>Riemann equations <xref ref="crequations"/>.) It is also worth mentioning that our proof of <xref ref="harmonictoholomorphic">Theorem</xref>
+    shows that if <m>u</m> is harmonic in <m>G</m>,
+    then <m>u_x</m> is the real part of the function <m>g=u_x-iu_y</m>,
+    which is holomorphic in <m>G</m>
+    <em>regardless of whether <m>G</m> is simply connected or not</em>.
+  </p>
+  <p>
+    As our proof of <xref ref="harmonictoholomorphic">Theorem</xref> is constructive,
+    we can use it to produce harmonic conjugates.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Revisiting <xref ref="exam_xyharmonic">Example</xref> for the second time,
+        we can construct a harmonic conjugate of
+        <m>u(x,y) = xy</m> along the lines of our proof of <xref ref="harmonictoholomorphic">Theorem</xref>:
+        first let
+        <me>
+          g \ := \ u_x - i \, u_y \=   y - i \, x \=  -i \, z
+        </me>
+        which has antiderivative
+        <me>
+          h(z) \= - \tfrac i 2 \, z^2 \= xy - \tfrac i 2 \left( x^2 - y^2 \right)
+        </me>
+        whose real part is <m>u</m> and whose imaginary part
+        <me>
+          v(x,y) \ := \ - \tfrac 1 2 \left( x^2 - y^2 \right)
+        </me>
+        gives a harmonic conjugate for<nbsp/><m>u</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    We can give a more practical machinery for computing harmonic conjugates,
+    which only depends on computing certain (calculus) integrals;
+    thus this can be easily applied, e.g., to polynomials.
+    We state it for functions that are harmonic in the whole complex plane,
+    but you can easily adjust it to functions that are harmonic on certain subsets of<nbsp/><m>\C</m>.<fn>
+    <xref ref="thm_axler">Theorem</xref>
+    is due to Sheldon Axler and the basis for his <c>Mathematica</c> package Harmonic Function Theory.
+    </fn>
+  </p>
+  <theorem xml:id="thm_axler">
+    <statement>
+      <p>
+        Suppose <m>u</m> is harmonic on <m>\C</m>.
+        Then
+        <me>
+          v(x,y) := \int_0^y \frac{ \partial u }{ \partial x } (x,t) \, \diff{t} - \int_0^x \frac{ \partial u }{ \partial y } (t,0) \, \diff{t}
+        </me>
+        is a harmonic conjugate for<nbsp/><m>u</m>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      We will prove that <m>u+iv</m> satisfies the Cauchy<ndash/>Riemann equations<nbsp/><xref ref="crequations"/>.
+      The first follows from
+      <me>
+        \frac{ \partial v }{ \partial y } (x,y) = \frac{ \partial u }{ \partial x } (x,y) \,
+      </me>,
+      by the Fundamental Theorem of Calculus
+      (<xref ref="fundthmcalc">Theorem</xref>).
+    </p>
+    <p>
+      Second, by Leibniz's Rule
+      (<xref ref="leibnizrule">Theorem</xref>),
+      the Fundamental Theorem of Calculus
+      (<xref ref="fundthmcalc">Theorem</xref>),
+      and the fact that <m>u</m> is harmonic,
+      <md>
+        <mrow>\frac{ \partial v }{ \partial x } (x,y) \amp = \int_0^y \frac{ \partial^2 u }{ \partial x^2 } (x,t) \, \diff{t} - \frac{ \partial u }{ \partial y } (x,0) = - \int_0^y \frac{ \partial^2 u }{ \partial t^2 } (x,t) \, \diff{t} - \frac{ \partial u }{ \partial y } (x,0)</mrow>
+        <mrow>\amp = - \left( \frac{ \partial u }{ \partial y } (x,y) - \frac{ \partial u }{ \partial y } (x,0) \right) - \frac{ \partial u }{ \partial y } (x,0) = - \frac{ \partial u }{ \partial y } (x,y) \, . \qedhere</mrow>
+      </md>
+    </p>
+  </proof>
+  <p>
+    As you might imagine, <xref ref="reimharmonic">Proposition</xref>
+    and <xref ref="harmonictoholomorphic">Theorem</xref>
+    allow for a powerful interplay between harmonic and holomorphic functions.
+    In that spirit, the following theorem appears not too surprising.
+    You might appreciate its depth better when looking back at the simple definition of a harmonic function.
+  </p>
+  <corollary xml:id="cor_harmonicinfdiff">
+    <statement>
+      <p>
+        A harmonic function is infinitely differentiable.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      Suppose <m>u</m> is harmonic in <m>G</m> and <m>z_0 \in G</m>.
+      We will show that <m>u^{ (n) } (z_0)</m> exists for all positive integers <m>n</m>.
+      Let <m>r>0</m> such that the disk
+      <m>D[z_0,r]</m> is contained in <m>G</m>.
+      Since <m>D[z_0,r]</m> is simply connected,
+      <xref ref="harmonictoholomorphic">Theorem</xref>
+      asserts the existence of a holomorphic function <m>f</m> in
+      <m>D[z_0,r]</m> such that <m>u = \Re f</m> on <m>D[z_0,r]</m>.
+      By <xref ref="infdiff">Corollary</xref>,
+      <m>f</m> is infinitely differentiable on <m>D[z_0,r]</m>,
+      and hence so is its real part<nbsp/><m>u</m>.
+    </p>
+  </proof>
+  <p>
+    This proof is the first in a series of proofs that uses the fact that the property of being harmonic is
+    <em>local</em><mdash/>it is a property at each point of a certain region.
+    Note that in our proof of <xref ref="cor_harmonicinfdiff">Corollary</xref>
+    we did not construct a function <m>f</m> that is holomorphic in <m>G</m>;
+    we only constructed such a function on the disk <m>D[z_0,r]</m>.
+    This <m>f</m> might very well differ from one disk to the next.
+  </p>
+</section>

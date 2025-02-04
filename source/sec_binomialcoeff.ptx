@@ -1,0 +1,57 @@
+<section xml:id="sec_binomialcoeff">
+  <title>Binomial Coefficients</title>
+  <p>
+    The binomial coefficient
+        <idx><h>binomial coefficient</h></idx>
+    <m>\binom n k</m> is a natural candidate for being explored analytically,
+    as the <em>binomial theorem</em>
+    <me>
+      (x+y)^n \= \sum_{k=0}^n \binom n k x^k \, y^{n-k}
+    </me>
+  </p>
+  <p>
+    (for <m>x,y \in \C</m> and <m>n \in \Z_{ \ge 0 }</m>) tells us that
+    <m>\binom n k</m> is the coefficient of <m>z^k</m> in <m>(z+1)^n</m>.
+    You will derive two sample identities in the course of the exercises below.
+    <ol marker="1">
+      <li>
+        <p>
+          Convince yourself that
+          <me>
+            \binom{n}{k} \= \frac 1 {2 \pi i} \int_\gamma \frac{ (z+1)^{n} }{ z^{k+1} } \, \diff{z}
+          </me>
+          where <m>\gamma</m> is any simple closed piecewise smooth path such that 0 is inside <m>\gamma</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Derive a recurrence relation for binomial coefficients from the fact that
+          <m>\frac 1 z + 1 = \frac{ z+1 }{ z }</m>. (<em>Hint</em>: Multiply both sides by <m>\frac{ (z+1)^n }{ z^k }</m>.)
+        </p>
+      </li>
+      <li xml:id="unifc">
+        <p>
+          Now suppose <m>x \in \R</m> with <m>|x|\lt 1/4</m>.
+          Find a simple closed path <m>\gamma</m> surrounding the origin such that
+          <me>
+            \s \left( \frac{ (z+1)^2 }{ z } \, x \right)^k
+          </me>
+          converges uniformly on <m>\gamma</m> as a function of <m>z</m>.
+          Evaluate this sum.
+        </p>
+      </li>
+      <li>
+        <p>
+          Keeping <m>x</m> and <m>\gg</m> from <xref ref="unifc"></xref>,
+          convince yourself that
+          <me>
+            \s \binom{2k}{k} x^k \= \frac 1 {2 \pi i} \s \int_\gamma \frac{ (z+1)^{2k} }{ z^{k+1} } \, x^k \, \diff{z} \,
+          </me>,
+          <xref ref="unifc">use</xref> to interchange summation and integral,
+          and use the Residue <xref ref="residuethm">Theorem</xref> to evaluate the integral,
+          giving an identity for <m>\s \binom{2k}{k} x^k</m>.
+        </p>
+      </li>
+    </ol>
+  </p>
+</section>

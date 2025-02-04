@@ -1,0 +1,395 @@
+<section xml:id="sec_powerseriesholom">
+  <title>Power Series and Holomorphic Functions</title>
+  <p>
+    Here is the first
+    (and easier)
+    half of the first goal we just announced.
+  </p>
+  <theorem xml:id="thm_powerholomorphic">
+    <statement>
+      <p>
+        Suppose <m>f(z) = \s c_k \left( z - z_0 \right)^k</m> has radius of convergence <m>R>0</m>.
+        Then <m>f</m> is holomorphic in <m>D[z_0, R]</m>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      <xref ref="powseriescontinuous">Corollary</xref>
+      says that <m>f</m> is continuous in <m>D[z_0, R]</m>.
+      Given any closed piecewise smooth path <m>\gamma \subset D[z_0, R]</m>,
+      <xref ref="powseriesintegral">Corollary</xref> gives <m>\int_\gg f = 0</m>.
+      Now apply Morera's theorem
+      (<xref ref="morera">Corollary</xref>).
+    </p>
+  </proof>
+  <p>
+    A special case of this result concerns power series with infinite radius of convergence:
+    those represent entire functions.
+  </p>
+  <p>
+    Now that we know that power series are differentiable in their regions of convergence,
+    we can ask how to find their derivatives.
+    The next result says that we can simply differentiate the series term by term.
+  </p>
+  <theorem xml:id="powerderivative">
+    <statement>
+      <p>
+        Suppose <m>f(z) = \s c_k ( z - z_0 )^k</m> has radius of convergence <m>R>0</m>.
+        Then <idx><h>power series</h><h>differentiation of</h></idx>
+        <me>
+          f'(z) \ = \ \sum_{ k \geq 1 } k \, c_k ( z - z_0 )^{k-1} \;\text{ for any } \;z\in D[z_0, R] \,
+        </me>,
+        and the radius of convergence of this power series is also<nbsp/><m>R</m>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      If <m>z\in D[z_0,R]</m> then <m>|z-z_0|\lt R</m>,
+      so we can choose <m>R_1</m> so that <m>|z-z_0|\lt R_1\lt R</m>.
+      Then the circle <m>\gg:=C[z_0,R_1]</m> lies in
+      <m>D[z_0,R]</m> and <m>z</m> is inside <m>\gg</m>.
+      Since <m>f</m> is holomorphic in
+      <m>D[z_0,R]</m> we can use Cauchy's Integral Formula for <m>f'</m>
+      (<xref ref="cauchyformula2">Theorem</xref>),
+      as well as <xref ref="powseriesintegral">Corollary</xref>:
+      <md>
+        <mrow>f'(z) \amp \= \frac{1}{2 \pi i} \int_\gg \frac{f(w)}{(w-z)^2} \, \diff{w} \= \frac{1}{2 \pi i} \int_\gg \frac{1}{(w-z)^2} \s c_k (w-z_0)^k \, \diff{w}</mrow>
+        <mrow>\amp \= \s c_k \, \frac{1}{2 \pi i} \int_\gg \frac{(w-z_0)^k}{(w-z)^2} \, \diff{w} \= \s c_k \left.\frac{d}{\diff{w}} (w-z_0)^k\right|_{w=z}</mrow>
+        <mrow>\amp \= \sum_{ k \ge 1 }  k \, c_k (z-z_0)^{k-1} </mrow>
+      </md>.
+    </p>
+    <p>
+      Note that we used <xref ref="cauchyformula2">Theorem</xref>
+      <em>again</em> in the penultimate step,
+      but now applied to the function <m>(z-z_0)^k</m>.
+    </p>
+    <p>
+      The last statement of the theorem is easy to show:
+      the radius of convergence of <m>f'(z)</m> is at least <m>R</m>
+      (since we have shown that the series for <m>f'</m> converges whenever <m>\abs{z-z_0}\lt R</m>),
+      and it cannot be larger than <m>R</m> by comparison to the series for <m>f(z)</m>,
+      since the coefficients for
+      <m>(z-z_0) \, f'(z)</m> are larger than the corresponding ones for<nbsp/><m>f(z)</m>.
+    </p>
+  </proof>
+  <example xml:id="ex_exptaylor">
+    <statement>
+      <p>
+        Let
+        <me>
+          f(z) \= \s \frac{ z^k }{ k! } \,
+        </me>.
+      </p>
+      <p>
+        In <xref ref="exponentialfunctionradius">Example</xref>,
+        we showed that <m>f</m> converges in <m>\C</m>.
+        We claim that <m>f(z) = \exp(z)</m>,
+        in analogy with the real exponential function.
+        First, by <xref ref="powerderivative">Theorem</xref>,
+        <me>
+          f'(z) \= \frac{d}{\diff{z}} \sum_{k \geq 0} \frac{z^k}{k!} \= \sum_{k \geq 1} \frac{z^{k-1}}{(k-1)!} \= \sum_{k \geq 0} \frac{z^k}{k!} \= f(z)\,
+        </me>.
+      </p>
+      <p>
+        Thus
+        <me>
+          \frac{ d }{ \diff{z} } \frac{ f(z) }{ \exp(z) } \= \frac{ d }{ \diff{z} } \left( f(z) \exp(-z) \right) \= f'(z) \exp(-z) - f(z) \exp(-z) \= 0 \,
+        </me>,
+        and so, by <xref ref="derivative0">Theorem</xref>,
+        <m>\frac{ f(z) }{ \exp(z) }</m> is constant.
+        Evaluating at <m>z=0</m> gives that this constant is 1, and so <m>f(z) = \exp(z)</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example xml:id="ex_sinpowerser">
+    <statement>
+      <p>
+        We can use the power series expansion for <m>\exp(z)</m> to find power series for the trigonometric functions.
+        For instance,
+        <md>
+          <mrow>\sin z \amp \= \frac{1}{2i}\left( \exp(iz) - \exp(-iz) \right) \= \frac{1}{2i}\left( \sum_{k\geq 0}\frac{(iz)^k}{k!} - \sum_{k\geq 0}\frac{(-iz)^k}{k!} \right)</mrow>
+          <mrow>\amp \= \frac{1}{2i} \sum_{k\geq 0}\frac{1}{k!}\left( (iz)^k - (-1)^k(iz)^k \right) \= \frac{1}{2i} \sum_{k\geq 0 \text{ odd } }\frac{2(iz)^k}{k!}</mrow>
+          <mrow>\amp \= \frac{1}{i} \sum_{j\geq 0}\frac{(iz)^{2j+1}}{(2j+1)!} \= \sum_{j\geq 0}\frac{i^{2j} \, z^{2j+1}}{(2j+1)!} \= \sum_{j\geq 0}\frac{(-1)^j}{(2j+1)!} \, z^{2j+1}</mrow>
+          <mrow>\amp \= z - \frac{z^3}{3!} + \frac{z^5}{5!} - \frac{z^7}{7!} + \cdots \,</mrow>
+        </md>.
+      </p>
+      <p>
+        Note that we are allowed to rearrange the terms of the two added sums because the corresponding series have infinite radii of convergence. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Naturally, <xref ref="powerderivative">Theorem</xref>
+    can be repeatedly applied to <m>f'</m>,
+    then to <m>f''</m>, and so on.
+    The various derivatives of a power series can also be seen as ingredients of the series itself<mdash/>this is the statement of the following
+    <em>Taylor series expansion
+        <idx><h>Taylor series expansion</h></idx>
+    </em>.<fn>
+    Named after Brook Taylor (1685<ndash/>1731).
+    </fn>
+  </p>
+  <corollary xml:id="taylor">
+    <statement>
+      <p>
+        Suppose <m>f(z) = \s c_k ( z - z_0 )^k</m> has a positive radius of convergence.
+        Then
+        <me>
+          c_k \= \frac{ f^{(k)} (z_0) }{ k! } \,
+        </me>.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      For starters, <m>f(z_0)=c_0</m>.
+      <xref ref="powerderivative">Theorem</xref> gives <m>f'(z_0)=c_1</m>.
+      Applying the same theorem to <m>f'</m> gives
+      <me>
+        f''(z) \= \sum_{ k \geq 2 } k (k-1) \, c_k \left( z - z_0 \right)^{k-2}
+      </me>
+      and so <m>f''(z_0) = 2 \, c_2</m>.
+      A quick induction game establishes <m>f'''(z_0) = 6 \, c_3</m>,
+      <m>f''''(z_0) = 24 \, c_4</m>, etc.
+    </p>
+  </proof>
+  <p>
+    Taylor's formula shows that the coefficients of any power series converging to <m>f</m> on some open disk <m>D</m> can be determined from the function <m>f</m> restricted to <m>D</m>.
+    It follows immediately that the coefficients of a power series are unique:
+  </p>
+  <corollary xml:id="uniqueness">
+    <statement>
+      <p>
+        If <m>\sum_{k\ge0}c_k \, (z-z_0)^k</m> and
+        <m>\sum_{k\ge0}d_k \, (z-z_0)^k</m> are two power series that both converge to the same function on an open disk centered at <m>z_0</m>,
+        then <m>c_k=d_k</m> for all<nbsp/><m>k \ge 0</m>.
+      </p>
+    </statement>
+  </corollary>
+  <example xml:id="ex_expatpi">
+    <statement>
+      <p>
+        We'd like to compute a power series expansion for
+        <m>f(z) = \exp(z)</m> centered at <m>z_0 = \pi</m>.
+        Since
+        <me>
+          f^{ (k) } (z_0) \= \biggl. \exp(z) \biggr|_{ z=\pi } \= e^\pi
+        </me>,
+      </p>
+      <p>
+        <xref ref="taylor">Corollary</xref>
+        suggests that this power series is
+        <me>
+          \s \frac{ e^\pi }{ k! } \, (z-\pi)^k
+        </me>,
+        which converges for all <m>z \in \C</m>
+        (essentially by <xref ref="exponentialfunctionradius">Example</xref>). \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    We now turn to the second cornerstone result of this section,
+    that a holomorphic function can be locally represented by a power series.
+  </p>
+  <theorem xml:id="thm_holomorphicpower">
+    <statement>
+      <p>
+        Suppose <m>f</m> is a function holomorphic in <m>D[z_0, R]</m>.
+        Then <m>f</m> can be represented as a power series centered at <m>z_0</m>,
+        with a radius of convergence <m>\ge R</m>:
+        <me>
+          f(z) \= \s c_k ( z - z_0 )^k \qquad \text{ with }  \qquad c_k \= \frac 1 {2 \pi i} \int_\gg \frac{ f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \,
+        </me>,
+        where <m>\gg</m> is any positively oriented, simple, closed,
+        piecewise smooth path in <m>D[z_0, R]</m> for which <m>z_0</m> is inside<nbsp/><m>\gg</m>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      Let <m>g(z) := f(z+z_0)</m>;
+      so <m>g</m> is a function holomorphic in <m>D[0,R]</m>.
+      Given <m>z \in D[0,R]</m>, let <m>r := \frac{ |z|+R }{ 2 }</m>.
+      By Cauchy's Integral Formula (<xref ref="cauchyformula">Theorem</xref>),
+      <me>
+        g (z) \= \frac 1 {2 \pi i} \int_{C[0,r]} \frac{ g(w) }{ w-z } \, \diff{w} \,
+      </me>.
+    </p>
+    <p>
+      The factor <m>\frac 1 {w-z}</m> in this integral can be expanded into a geometric series (note that
+      <m>w \in C[0,r]</m> and so <m>| \frac z w | \lt  1</m>):
+      <me>
+        \frac 1 {w-z} \= \frac 1 w \, \frac 1 { 1 - \frac z w } \= \frac 1 w \s \left( \frac z w \right)^k
+      </me>
+      which converges uniformly in the variable
+      <m>w \in C[0,r]</m> by <xref ref="prob_geomseriesfunky">Exercise</xref>.
+      Hence <xref ref="seriesintegral">Proposition</xref> applies:
+      <md>
+        <mrow>g (z) \amp \= \frac{1}{2 \pi i} \int_{C[0,r]} \frac{ g(w) }{ w-z } \, \diff{w} \= \frac{1}{2 \pi i} \int_{C[0,r]} g(w) \, \frac{1}{w} \s \left( \frac z w \right)^k \diff{w} \= \s \left( \frac{1}{2 \pi i} \int_{C[0,r]} \frac{g(w)}{w^{k+1}} \, \diff{w} \right) z^k </mrow>
+      </md>.
+    </p>
+    <p>
+      Now, since <m>f(z) = g(z-z_0)</m>,
+      we apply a change of variables to obtain
+      <me>
+        f(z) \= \s \left( \frac 1 {2 \pi i} \int_{C[z_0, r]} \frac{ f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \right) (z-z_0)^k
+      </me>.
+    </p>
+    <p>
+      The only differences of this right-hand side to the statement of the theorem are the paths we're integrating over.
+      However, by Cauchy's <xref ref="cauchythm">Theorem</xref>,
+      <me>
+        \int_{C[z_0, r]} \frac{ f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \= \int_\gg \frac{ f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <p>
+    We note a remarkable feature of our proof:
+    namely, if we are given a holomorphic function
+    <m>f: G \to \C</m> and are interested in expanding <m>f</m> into a power series centered at <m>z_0 \in G</m>,
+    then we may maximize the radius of convergence <m>R</m> of this power series,
+    in the sense that its region of convergence reaches to the boundary of <m>G</m>.
+    Let's make this precise.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        For a region <m>G \subseteq \C</m> and a point <m>z_0 \in G</m>,
+        we define the <em>distance of <m>z_0</m> to
+        <m>\partial G</m></em>, the boundary of <m>G</m>,
+        as the greatest lower bound of <m>\{ |z-z_0| : \, z \in \partial G \}</m>;
+        if this set is empty, we define the distance of <m>z_0</m> to
+        <m>\partial G</m> to be<nbsp/><m>\infty</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    What we have proved above, on the side, is the following.
+  </p>
+  <corollary xml:id="cor_powerseriesboundary">
+    <statement>
+      <p>
+        If <m>f: G \to \C</m> is holomorphic and <m>z_0 \in G</m>,
+        then <m>f</m> can be expanded into a power series centered at <m>z_0</m> whose radius of convergence is at least the distance of <m>z_0</m> to<nbsp/><m>\partial G</m>.
+      </p>
+    </statement>
+  </corollary>
+  <example xml:id="ex_powerseriesboundary">
+    <statement>
+      <p>
+        Consider <m>f: \C \setminus \{ \pm i \} \to \C</m> given by <m>f(z) := \frac 1 { z^2 + 1 }</m> and <m>z_0 = 0</m>.
+        <xref ref="cor_powerseriesboundary">Corollary</xref>
+        says that the power series expansion of <m>f</m> at 0 will have radius of convergence 1. (Actually,
+        it says this radius is <em>at least</em>
+        1, but it cannot be larger since <m>\pm i</m> are singularities of <m>f</m>.) In fact,
+        we can use a geometric series to compute this power series:
+        <me>
+          f(z) \= \frac 1 { z^2 + 1 } \= \s \left( -z^2 \right)^k \= \s (-1)^k \, z^{ 2k }
+        </me>,
+        with radius of convergence 1. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    <xref ref="cor_powerseriesboundary">Corollary</xref>
+    is yet another example of a result that is plainly false when translated into <m>\R</m>;
+    see <xref ref="prob_powerseriesboundaryreal">Exercise</xref>.
+  </p>
+  <p>
+    Comparing the coefficients of the power series obtained in <xref ref="thm_holomorphicpower">Theorem</xref>
+    with those in <xref ref="taylor">Corollary</xref>,
+    we arrive at the long-promised extension of <xref ref="cauchyformula">Theorems</xref>
+    and <xref ref="cauchyformula2"></xref>.
+  </p>
+  <corollary xml:id="cauchyformula3">
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic in the region <m>G</m> and <m>\gg</m> is a positively oriented,
+        simple, closed, piecewise smooth path,
+        such that <m>w</m> is inside <m>\gg</m> and <m>\gg \sim_G 0</m>.
+        Then <idx><h>Cauchy's integral formula</h><h>extensions of</h></idx>
+        <me>
+          f^{(k)} (w) \= \frac{k!}{2 \pi i} \int_\gg \frac{ f(z) }{ (z-w)^{k+1} } \, \diff{z} \,
+        </me>.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    <xref ref="cauchyformula3">Corollary</xref>
+    combined with our often-used <xref ref="intprop">Proposition</xref> <xref ref="int4"></xref>
+    gives an inequality which is often called
+    <em>Cauchy's Estimate</em>:
+        <idx><h>Cauchy's estimate</h></idx>
+  </p>
+  <corollary xml:id="cauchyestimate">
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic in <m>D[w,R]</m> and
+        <m>|f(z)| \leq M</m> for all <m>z \in D[w,R]</m>.
+        Then
+        <me>
+          \left| f^{(k)} (w) \right| \ \leq \ \frac{ k! \, M }{ R^k } \,
+        </me>.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      Let <m>r\lt R</m>.
+      By <xref ref="cauchyformula3">Corollary</xref>
+      and <xref ref="intprop">Proposition</xref> <xref ref="int4"></xref>,
+      <md>
+        <mrow>\left| f^{(k)} (w) \right| \ \amp = \ \left| \frac{k!}{2 \pi i} \int_{ C[w,r] } \frac{ f(z) }{ (z-w)^{k+1} } \, \diff{z} \right| \ \leq \ \frac{k!}{2 \pi} \max_{z \in C[w,r] } \left| \frac{ f(z) }{ (z-w)^{k+1} } \right| \length ( C[w,r] )</mrow>
+        <mrow>\amp \leq \ \frac{k!}{2 \pi} \, \frac{ M }{ r^{k+1} } \, 2 \pi r \= \frac{ k! \, M }{ r^k } \, </mrow>
+      </md>.
+    </p>
+    <p>
+      The statement now follows since <m>r</m> can be chosen arbitrarily close to <m>R</m>.
+    </p>
+  </proof>
+  <p>
+    A key aspect of this section is worth emphasizing:
+    namely, we have developed an alternative characterization of what it means for a function to be holomorphic.
+    In <xref ref="functionchapter">Chapter</xref>,
+    we defined a function to be <em>holomorphic</em>
+    in a region <m>G</m> if it is differentiable at each point <m>z_0 \in G</m>.
+    We now define what it means for a function to be
+    <em>analytic</em> in<nbsp/><m>G</m>.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>f: G \to \C</m> and <m>z_0 \in G</m>.
+        If there exist <m>R>0</m> and
+        <m>c_0, c_1, c_2, \ldots \in \C</m> such that the power series
+        <me>
+          \s c_k (z-z_0)^k
+        </me>
+        converges in <m>D[z_0, R]</m> and agrees with <m>f(z)</m> in <m>D[z_0, R]</m>,
+        then <m>f</m> is <em>analytic
+            <idx><h>analytic</h></idx>
+        at</em> <m>z_0</m>.
+        We call <m>f</m> <em>analytic in</em>
+        <m>G</m> if <m>f</m> is analytic at each point in<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    What we have proved in this section can be summed up as follows:
+  </p>
+  <theorem>
+    <statement>
+      <p>
+        For any region <m>G</m>,
+        the class of all analytic functions in <m>G</m> coincides with the class of all holomorphic functions in <m>G</m>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    While the terms <em>holomorphic</em> and <em>analytic</em>
+    do not always mean the same thing,
+    in the study of complex analysis they do and are frequently used interchangeably.
+  </p>
+</section>

@@ -1,0 +1,54 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="powerchapter">
+  <title>Power Series</title>
+  <introduction>
+    <blockquote>
+      <em>It is a pain to think about convergence but sometimes you really
+      have to.</em>
+      Sinai Robins
+    </blockquote>
+    <p>
+      Looking back to what machinery we have established so far for integrating complex functions,
+      there are several useful theorems we developed in <xref ref="intchapter">Chapters</xref>
+      and <xref ref="cachyconschapter"></xref>.
+      But there are some simple-looking integrals, such as
+      <men xml:id="eq_laurentmotivation">
+        \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \,
+      </men>,
+      that we cannot compute with this machinery.
+    </p>
+    <figure xml:id="fig_laurentmotivation">
+      <caption>Modifying the integration path for<nbsp/><xref ref="eq_laurentmotivation"/>.</caption>
+      <image source="images/pictured8da15c985_rev.png"/>
+    </figure>
+    <p>
+      The problems, naturally,
+      comes from the singularities at 0 and <m>\pi</m> inside the integration path,
+      which in turn stem from the roots of the sine function.
+      We might try to simplify this problem a bit by writing the integral as the sum of integrals over the two
+      <q>D</q>
+      shaped paths shown in <xref ref="ex52fig">Figure</xref>
+      (the integrals along the common straight line segments cancel).
+      Furthermore, by Cauchy's <xref ref="cauchythm">Theorem</xref>,
+      we may replace these integrals with integrals over small circles around <m>0</m> and <m>\pi</m>.
+      This transforms <xref ref="eq_laurentmotivation"/> into a sum of two integrals,
+      which we are no closer to being able to compute;
+      however, we have localized the problem, in the sense that we now
+      <q>only</q>
+      have to compute integrals around <em>one</em>
+      of the singularities of our integrand.
+    </p>
+    <p>
+      This motivates developing techniques to approximate complex functions locally,
+      in analogy with the development of Taylor series in calculus.
+      It is clear that we need to go further here,
+      as we'd like to have such approximations near a singularity of a function.
+      At any rate, to get any of this started,
+      we need to talk about sequences and series of complex numbers and functions,
+      and this chapter develops them.
+    </p>
+  </introduction>
+  <xi:include  href="sec_sequencescomplete.ptx"/>
+  <xi:include  href="sec_series.ptx"/>
+  <xi:include  href="sec_sequseriesfunctions.ptx"/>
+  <xi:include  href="sec_regionsconvergence.ptx"/>
+</chapter>

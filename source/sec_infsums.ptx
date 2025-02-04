@@ -1,0 +1,73 @@
+<section xml:id="sec_infsums">
+  <title>Infinite Sums</title>
+  <p>
+    In this exercise, we evaluate the sums
+    <m>\sum_{k \geq 1} \frac 1 {k^2}</m> and <m>\sum_{k \geq 1} \frac{ (-1)^k }{k^2}</m>.
+    We hope the idea of how to compute such sums in general will become clear.
+  </p>
+  <ol marker="1">
+    <li>
+      <p>
+        Consider the function <m>f(z) = \frac{ \pi \cot (\pi z) }{ z^2 }</m>.
+        Compute the residues at all the singularities of<nbsp/><m>f</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>N</m> be a positive integer and
+        <m>\gamma_N</m> be the rectangular path from <m>N+\frac 1 2 -iN</m> to
+        <m>N+\frac 1 2 +iN</m> to <m>-N-\frac 1 2 +iN</m> to
+        <m>-N-\frac 1 2 -iN</m> back to <m>N+\frac 1 2 -iN</m>.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Show that <m>| \cot (\pi z) | \lt 2</m> for <m>z \in \gamma_N</m>.
+            (<em>Hint</em>: Use <xref ref="ex_abs_cot_">Exercise</xref>.)
+          </p>
+        </li>
+        <li>
+          <p>
+            Show that <m>\lim_{N \to \infty} \int_{\gamma_N} f = 0</m>.
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Use the Residue <xref ref="residuethm">Theorem</xref>
+        to arrive at an identity for <m>\sum_{k \in \Z \setminus \{0\}} \frac 1 {k^2}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Evaluate <m>\sum_{k \geq 1} \frac 1 {k^2}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Repeat the exercise with the function
+        <m>f(z) = \frac{ \pi }{ z^2 \sin (\pi z) }</m> to arrive at an evaluation of
+        <me>
+          \sum_{k \geq 1} \frac{ (-1)^k }{k^2} \,
+        </me>.
+        (<em>Hint</em>: To bound this function,
+        you may use the fact that <m>\frac 1 {\sin^2(z)} = 1 + \cot^2(z)</m>.)
+      </p>
+    </li>
+    <li>
+      <p>
+        Evaluate <m>\sum_{k \geq 1} \frac 1 {k^4}</m> and <m>\sum_{k \geq 1} \frac{ (-1)^k }{k^4}</m>.
+      </p>
+    </li>
+  </ol>
+  <p>
+    We remark that,
+    in the language of <xref ref="exam_riemannzet">Example</xref>,
+    you have computed the evaluations <m>\zeta(2)</m> and
+    <m>\zeta(4)</m> of the Riemann zeta function.
+    The function <m>\zeta^*(z) := \sum_{k \geq 1} \frac{ (-1)^k }{k^z}</m> is called the
+    <em>alternating zeta function<idx><h>alternating zeta function</h></idx>
+    </em>.
+  </p>
+</section>

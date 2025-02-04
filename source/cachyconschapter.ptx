@@ -1,0 +1,23 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="cachyconschapter">
+  <title>Consequences of Cauchy's Theorem</title>
+  <introduction>
+    <blockquote>
+      <em>Everybody knows that mathematics is about miracles, only
+      mathematicians have a name for them: theorems.</em>
+      Roger Howe
+    </blockquote>
+    <p>
+      Cauchy's Theorem and Integral Formula
+      (<xref ref="cauchythm">Theorems</xref>
+      and <xref ref="cauchyformula"></xref>),
+      which we now have at our fingertips,
+      are not just beautiful results but also incredibly practical.
+      In a quite concrete sense,
+      the rest of this book will reap the fruits that these two theorems provide us with.
+      This chapter starts with a few highlights.
+    </p>
+  </introduction>
+  <xi:include  href="sec_variationstheme.ptx"/>
+  <xi:include  href="sec_antiderivagain.ptx"/>
+  <xi:include  href="sec_cauchytothelimit.ptx"/>
+</chapter>

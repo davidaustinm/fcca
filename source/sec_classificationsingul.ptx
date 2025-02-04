@@ -1,0 +1,450 @@
+<section xml:id="sec_classificationsingul">
+  <title>Classification of Singularities</title>
+  <p>
+    What are the differences among the functions <m>\frac{ \exp(z) - 1 }{ z }</m>,
+    <m>\frac{ 1 }{ z^4 }</m>, and <m>\exp ( \frac 1 z )</m> at <m>z=0</m>?
+    None of them are defined at <m>0</m>,
+    but each singularity is of a different nature.
+    We will frequently consider functions in this chapter that are holomorphic in a disk except at its center
+    (usually because that's where a singularity lies),
+    and it will be handy to define the <em>punctured disk
+        <idx><h>punctured disk</h></idx>
+    </em> with center <m>z_0</m> and radius <m>R</m>,
+        <idx><h>disk</h><h>punctured</h></idx>
+    <me>
+      \Dp[z_0, R] \ := \ \left\{ z \in \C : \, 0 \lt  |z-z_0| \lt  R \right\} \= D[z_0, R] \setminus \{ z_0 \} \,
+    </me>.
+  </p>
+  <p>
+    We extend this definition naturally with <m>\Dp[z_0, \infty] := \C \setminus \{ z_0 \}</m>.
+    For complex functions there are three types of singularities,
+    which are classified as follows.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        If <m>f</m> is holomorphic in the punctured disk
+        <m>\Dp[z_0, R]</m> for some <m>R>0</m> but not at <m>z=z_0</m>,
+        then <m>z_0</m> is an <em>isolated singularity
+            <idx><h>isolated singularity</h></idx>
+        </em> of <m>f</m>.
+        The singularity <m>z_0</m> is called
+        <ol>
+          <li>
+            <title>{ (a)}</title>
+            <p>
+              <em>removable</em> if there exists a function <m>g</m> holomorphic in
+              <m>D[z_0,R]</m> such that <m>f=g</m> in <m>\Dp[z_0, R]</m>,
+                <idx><h>removable singularity</h></idx>
+            </p>
+          </li>
+          <li>
+            <title>{ (b)}</title>
+            <p>
+              a <em>pole
+                <idx><h>pole</h></idx>
+              </em> if <m>\ds \lim_{z \to z_0} |f(z)| = \infty</m>,
+            </p>
+          </li>
+          <li>
+            <title>{ (c)}</title>
+            <p>
+              <em>essential</em> if <m>z_0</m> is neither removable nor a pole.
+                <idx><h>essential singularity</h></idx>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </definition>
+  <example>
+    <statement>
+      <p>
+        Let <m>f: \C \setminus \{ 0 \} \to \C</m> be given by <m>f(z) = \frac{ \exp(z) - 1 }{ z }</m>.
+        Since
+        <me>
+          \exp(z) - 1 \= \sum_{ k \ge 1 } \frac 1 {k!} \, z^k
+        </me>,
+        the function <m>g: \C \to \C</m> defined by
+        <me>
+          g(z) \ := \ \sum_{ k \ge 0 } \frac 1 {(k+1)!} \, z^k
+        </me>,
+        which is entire
+        (because this power series converges in <m>\C</m>),
+        agrees with <m>f</m> in <m>\C \setminus \{ 0 \}</m>.
+        Thus <m>f</m> has a removable singularity at<nbsp/>0. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        In <xref ref="ex_1_sinlaurent">Example</xref>,
+        we showed that <m>f: \C \setminus \{ j \pi : \, j \in \Z \} \to \C</m> given by
+        <m>f(z) = \frac 1 { \sin(z) } - \frac 1 z</m> has a removable singularity at 0, because we proved that <m>g: D[0,\pi] \to \C</m> defined by
+        <me>
+          g(z) = \begin{cases}\frac 1 { \sin(z) } - \frac 1 z \amp  \text{ if }  z \ne 0 \, , \\ 0                               \amp  \text{ if }  z=0 \, . \end{cases}
+        </me>
+        is holomorphic in <m>D[0,\pi]</m> and agrees with <m>f</m> on <m>\Dp[0,\pi]</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        The function <m>f: \C \setminus \{ 0 \} \to \C</m> given by
+        <m>f(z) = \frac{ 1 }{ z^4 }</m> has a pole at <m>0</m>, as
+        <me>
+          \lim_{z \to 0} \left| \frac 1 {z^4} \right| \= \infty \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        The function <m>f: \C \setminus \{ 0 \} \to \C</m> given by
+        <m>f(z) = \exp ( \frac 1 z )</m> has an essential singularity at <m>0</m>:
+        the two limits
+        <me>
+          \lim_{ x \to 0^+ } \exp \left( \frac 1 x \right) \= \infty \qquad \text{ and }  \qquad \lim_{ x \to 0^- } \exp \left( \frac 1 x \right) \= 0
+        </me>
+        show that <m>f</m> has neither a removable singularity nor a pole. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    To get a feel for the different types of singularities,
+    we start with the following criteria.
+  </p>
+  <proposition xml:id="singbasics">
+    <statement>
+      <p>
+        Suppose <m>z_0</m> is an isolated singularity of <m>f</m>.
+        Then
+        <ol>
+          <li>
+            <title>{ (a)}</title>
+            <p>
+              <m>z_0</m> is removable if and only if <m>\lim_{z \to z_0} \left( z - z_0 \right) f(z) = 0</m>;
+            </p>
+          </li>
+          <li>
+            <title>{ (b)}</title>
+            <p>
+              <m>z_0</m> is a pole if and only if it is not removable and
+              <m>\lim_{z \to z_0} \left( z - z_0 \right)^{n+1} f(z) = 0</m> for some positive integer <m>n</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      (a) Suppose that <m>z_0</m> is a removable singularity of <m>f</m>,
+      so there exists a holomorphic function <m>h</m> on <m>D[z_0,R]</m> such that
+      <m>f(z) = h(z)</m> for all <m>z \in \Dp[z_0,R]</m>.
+      But then <m>h</m> is continuous at <m>z_0</m>, and so
+      <me>
+        \lim_{z \to z_0} \left( z - z_0 \right) f(z) \= \lim_{z \to z_0} \left( z - z_0 \right) h(z) \= h(z_0) \lim_{z \to z_0} \left( z - z_0 \right) \= 0 \,
+      </me>.
+    </p>
+    <p>
+      Conversely, suppose that <m>\lim_{z \to z_0} \left( z - z_0 \right) f(z) = 0</m> and <m>f</m> is holomorphic in <m>\Dp[z_0,R]</m>.
+      We define the function <m>g: D[z_0,R] \to \C</m> by
+      <me>
+        g(z) := \begin{cases}(z-z_0)^2 \, f(z) \amp \text{ if } z\ne z_0 \, , \\ 0             \amp \text{ if } z=z_0 \, . \end{cases}
+      </me>
+    </p>
+    <p>
+      Then <m>g</m> is holomorphic in <m>\Dp[z_0,R]</m> and
+      <me>
+        g'(z_0) \= \lim_{z\to z_0}\frac{g(z)-g(z_0)}{z-z_0} \= \lim_{z\to z_0}\frac{(z-z_0)^2 \, f(z)}{z-z_0} \= \lim_{z \to z_0} (z - z_0) \, f(z) \= 0\,
+      </me>,
+      so <m>g</m> is holomorphic in <m>D[z_0,R]</m>.
+      We can thus expand <m>g</m> into a power series
+      <me>
+        g(z) \= \s c_k \, (z-z_0)^k
+      </me>
+      whose first two terms are zero:
+      <m>c_0 = g(z_0) = 0</m> and <m>c_1 = g'(z_0) = 0</m>.
+      But then we can write
+      <me>
+        g(z) \= (z-z_0)^2 \sum_{k\ge0}c_{k+2} \, (z-z_0)^k
+      </me>
+      and so
+      <me>
+        f(z) \= \sum_{k\ge0}c_{k+2} \, (z-z_0)^k \qquad \text{ for all }  z \in \Dp[z_0,R] \,
+      </me>.
+    </p>
+    <p>
+      But this power series is holomorphic in <m>D[z_0,R]</m>,
+      so <m>z_0</m> is a removable singularity.
+    </p>
+    <p>
+      (b) Suppose that <m>z_0</m> is a pole of <m>f</m>.
+      Since <m>f(z)\to\infty</m> as
+      <m>z\to z_0</m> we may assume that <m>R</m> is small enough that
+      <m>f(z)\ne 0</m> for <m>z\in \Dp[z_0,R]</m>.
+      Then <m>\frac1f</m> is holomorphic in <m>\Dp[z_0,R]</m> and
+      <me>
+        \lim_{z \to z_0} \frac 1 {f(z)} \= 0 \,
+      </me>,
+      so part (a) implies that <m>\frac 1 f</m> has a removable singularity at <m>z_0</m>.
+      More precisely, the function <m>g: D[z_0,R] \to \C</m> defined by
+      <me>
+        g(z) := \begin{cases}\frac{ 1 }{ f(z) } \amp \text{ if } z\in \Dp[z_0,R] \, ,\\ 0            \amp \text{ if } z=z_0 \, , \end{cases}
+      </me>
+      is holomorphic.
+      By <xref ref="classificationzeros">Theorem</xref>,
+      there exist a positive integer <m>n</m> and a holomorphic function <m>h</m> on <m>D[z_0,R]</m> such that
+      <m>h(z_0) \ne 0</m> and <m>g(z) = (z-z_0)^n \, h(z) </m>.
+      Actually, <m>h(z) \ne 0</m> for all <m>z \in D[z_0,R]</m> since
+      <m>g(z) \ne 0</m> for all <m>z \in \Dp[z_0,R]</m>.
+      Thus
+      <md>
+        <mrow>\lim_{z \to z_0} (z-z_0)^{n+1} f(z) \= \lim_{z \to z_0} \frac{ (z-z_0)^{n+1} }{ g(z) } \= \lim_{z \to z_0} \frac{ z-z_0 }{ h(z) } \= \frac{ 1 }{ h(z_0) } \lim_{z \to z_0}(z-z_0) \= 0 \, </mrow>
+      </md>.
+    </p>
+    <p>
+      Note that <m>\frac1h</m> is holomorphic and non-zero on <m>D[z_0,R]</m>,
+      <m>n>0</m>, and
+      <me>
+        f(z) = \frac1{g(z)} = \frac1{(z-z_0)^n} \cdot \frac1{h(z)}  \text{ for all } \ z\in\Dp[z_0,R]\,
+      </me>.
+    </p>
+    <p>
+      Conversely, suppose <m>z_0</m> is not a removable singularity and
+      <m>\lim_{z \to z_0} (z-z_0)^{n+1} f(z) = 0</m> for some non-negative integer <m>n</m>.
+      We choose the <em>smallest</em> such <m>n</m>.
+      By part (a),
+      <m>h(z) := (z-z_0)^n f(z)</m> has a removable singularity at <m>z_0</m>,
+      so there is a holomorphic function <m>g</m> on
+      <m>D[z_0,R]</m> that agrees with <m>h</m> on <m>\Dp[z_0,R]</m>.
+      Now if <m>n=0</m> this just says that <m>f</m> has a removable singularity at <m>z_0</m>,
+      which we have excluded.
+      Hence <m>n>0</m>.
+      Since <m>n</m> was chosen as small as possible and <m>n-1</m> is a non-negative integer less than <m>n</m>,
+      we must have <m>g(z_0) = \lim_{z \to z_0} (z-z_0)^n f(z) \ne 0</m>.
+      Summarizing, <m>g</m> is holomorphic on
+      <m>D[z_0,R]</m> and non-zero at <m>z_0</m>, <m>n>0</m>, and
+      <me>
+        f(z) = \frac{g(z)}{(z-z_0)^n} \text{ for all } \ z\in\Dp[z_0,R]\,
+      </me>.
+    </p>
+    <p>
+      But then <m>z_0</m> is a pole of <m>f</m>, since
+      <me>
+        \lim_{ z \to z_0 } |f(z)| \= \lim_{ z \to z_0 } \left| \frac{ h(z) }{ (z-z_0)^n } \right| \= \lim_{ z \to z_0 } \left| \frac{ g(z) }{ (z-z_0)^n } \right| \= |g(z_0)| \lim_{ z \to z_0 } \frac{ 1 }{ |z-z_0|^n } \= \infty \, . \qedhere
+      </me>
+    </p>
+  </proof>
+  <p>
+    We underline one feature of the last part of our proof:
+  </p>
+  <corollary xml:id="cor_orderofpole">
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic in <m>\Dp[z_0,R]</m>.
+        Then <m>f</m> has a pole at <m>z_0</m> if and only if there exist a positive integer <m>m</m> and a holomorphic function <m>g: D[z_0,R] \to \C</m>,
+        such that <m>g(z_0) \ne 0</m> and
+        <me>
+          f(z) \= \frac{ g(z) }{ (z-z_0)^m } \qquad \text{ for all }  z \in \Dp[z_0,R] \,
+        </me>.
+      </p>
+      <p>
+        If <m>z_0</m> is a pole then <m>m</m> is unique.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      The only part not covered in the proof of <xref ref="singbasics">Theorem</xref> is uniqueness of <m>m</m>.
+      Suppose <m>f(z)=(z-z_0)^{-m_1}g_1(z)</m> and
+      <m>f(z)=(z-z_0)^{-m_2}g_2(z)</m> both work, with <m>m_2>m_1</m>.
+      Then <m>g_2(z)=(z-z_0)^{m_2-m_1}g_1(z)</m>,
+      and plugging in <m>z=z_0</m> yields <m>g_2(z_0)=0</m>,
+      violating <m>g_2(z_0)\ne0</m>.
+    </p>
+  </proof>
+  <definition>
+    <statement>
+      <p>
+        The integer <m>m</m> in <xref ref="cor_orderofpole">Corollary</xref>
+        is the <em>order</em> of the pole <m>z_0</m>.
+            <idx><h>order of a pole</h></idx>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    This definition,
+    naturally coming out of <xref ref="cor_orderofpole">Corollary</xref>,
+    parallels that of the multiplicity of a zero,
+    which naturally came out of <xref ref="classificationzeros">Theorem</xref>.
+    The two results also show that <m>f</m> has a zero at <m>z_0</m> of multiplicity <m>m</m> if and only if
+    <m>\frac 1 f</m> has a pole of order<nbsp/><m>m</m>.
+    We will make use of the notions of zeros and poles quite extensively in this chapter.
+  </p>
+  <p>
+    You might have noticed that the <xref ref="singbasics">Proposition</xref>
+    did not include any result on essential singularities.
+    Not only does the next theorem make up for this but it also nicely illustrates the strangeness of essential singularities.
+    To appreciate the following result,
+    we suggest meditating about its statement over a good cup of coffee.
+        <idx><h>coffee</h></idx>
+  </p>
+  <theorem xml:id="casoratiweierstrass">
+    <title>Casorati<footnote>Felice Casorati (1835<ndash/>1890).</footnote><ndash/>Weierstra&#223;</title>
+    <statement>
+      <p>
+            <idx><h>Casorati<ndash/>Weierstra&#223; theorem</h></idx>
+        If <m>z_0</m> is an essential singularity of <m>f</m> and <m>r</m> is any positive real number, then every <m>w \in \C</m> is arbitrarily close to a point in <m>f(\Dp[z_0,r])</m>.
+        That is, for any <m>w \in \C</m> and any <m>\epsilon > 0</m> there exists
+        <m>z \in \Dp[z_0,r]</m> such that <m>|w-f(z)| \lt \epsilon</m>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    In the language of topology,
+    <xref ref="casoratiweierstrass">Theorem</xref>
+    says that the image of any punctured disk centered at an essential singularity is <em>dense
+        <idx><h>dense</h></idx>
+    </em> in <m>\C</m>.
+  </p>
+  <p>
+    There is a stronger theorem,
+    beyond the scope of this book,
+    which implies the Casorati<ndash/>Weierstra&#223;
+    <xref ref="casoratiweierstrass">Theorem</xref>.
+    It is due to Charles Emile Picard (1856<ndash/>1941)
+        <idx><h>Picard's theorem</h></idx>
+    and says that the image of any punctured disk centered at an essential singularity misses at most one point of <m>\C</m>. (It is worth coming up with examples of functions that do not miss any point in <m>\C</m> and functions that miss exactly one point.
+    Try it!)
+  </p>
+  <proof>
+    <p>
+      Suppose (by way of contradiction) that there exist <m>w \in \C</m> and
+      <m>\epsilon > 0</m> such that for all <m>z \in \Dp[z_0,r]</m>
+      <me>
+        |w-f(z)| \ \ge \ \epsilon \,
+      </me>.
+    </p>
+    <p>
+      Then the function <m>g(z) := \frac{ 1 }{ f(z) - w }</m> stays bounded as <m>z \to z_0</m>, and so
+      <me>
+        \lim_{z \to z_0} \frac{ z - z_0}{ f(z) - w } \= \lim_{z \to z_0} (z - z_0) \, g(z) \= 0 \,
+      </me>.
+    </p>
+    <p>
+      (<xref ref="singbasics">Proposition</xref>(a) tells us that <m>g</m> has a removable singularity at <m>z_0</m>.) Hence
+      <me>
+        \lim_{z \to z_0} \left| \frac{ f(z) - w }{ z - z_0} \right| \= \infty
+      </me>
+      and so the function <m>\frac{ f(z) - w }{ z - z_0}</m> has a pole at <m>z_0</m>.
+      By <xref ref="singbasics">Proposition</xref>(b),
+      there is a positive integer <m>n</m> so that
+      <me>
+        \lim_{ z \to z_0 } (z-z_0)^{ n+1 } \frac{ f(z) - w }{ z - z_0} \= \lim_{ z \to z_0 } (z-z_0)^{ n } \left( f(z) - w \right) \= 0 \,
+      </me>.
+    </p>
+    <p>
+      Invoking <xref ref="singbasics">Proposition</xref> again,
+      we conclude that the function
+      <m>f(z) - w</m> has a pole or removable singularity at <m>z_0</m>,
+      which implies the same holds for <m>f(z)</m>, a contradiction.
+    </p>
+  </proof>
+  <p>
+    The following classifies singularities according to their Laurent series,
+    and is very often useful in calculations.
+  </p>
+  <proposition xml:id="singlaurent">
+    <statement>
+      <p>
+        Suppose <m>z_0</m> is an isolated singularity of <m>f</m> with Laurent series
+        <me>
+          f(z) \= \sz c_k ( z - z_0 )^k
+        </me>,
+        valid in some punctured disk centered at <m>z_0</m>.
+        Then
+        <ol marker="a">
+          <li>
+            <p>
+              <m>z_0</m> is removable if and only if there are no negative exponents (that is,
+              the Laurent series is a power series);
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>z_0</m> is a pole if and only if there are finitely many negative exponents,
+              and the order of the pole is the largest <m>k</m> such that <m>c_{-k} \ne 0</m>;
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>z_0</m> is essential if and only if there are infinitely many negative exponents.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      (a) Suppose <m>z_0</m> is removable.
+      Then there exists a holomorphic function
+      <m>g: D[z_0,R] \to \C</m> that agrees with <m>f</m> on
+      <m>\Dp[z_0,R]</m>, for some <m>R > 0</m>.
+      By <xref ref="thm_holomorphicpower">Theorem</xref>,
+      <m>g</m> has a power series expansion centered at <m>z_0</m>,
+      which coincides with the Laurent series of <m>f</m> at <m>z_0</m>,
+      by <xref ref="laurentunique">Corollary</xref>.
+    </p>
+    <p>
+      Conversely, if the Laurent series of <m>f</m> at <m>z_0</m> has only nonnegative powers,
+      we can use it to define a function that is holomorphic at <m>z_0</m>.
+    </p>
+    <p>
+      (b) Suppose <m>z_0</m> is a pole of order <m>n</m>.
+      Then, by <xref ref="cor_orderofpole">Corollary</xref>,
+      <m>f(z)=(z-z_0)^{-n}g(z)</m> on some punctured disk <m>\Dp[z_0,R]</m>,
+      where <m>g</m> is holomorphic on
+      <m>D[z_0,R]</m> and <m>g(z_0)\ne0</m>.
+      Thus <m>g(z)=\sum_{k\ge0}c_k(z-z_0)^k</m> in
+      <m>D[z_0,R]</m> with <m>c_0\ne0</m>, so
+      <me>
+        f(z)=(z-z_0)^{-n}\sum_{k\ge0}c_k(z-z_0)^k = \sum_{k\ge-n}c_{k+n}(z-z_0)^k\,
+      </me>,
+      and this is the Laurent series of <m>f</m>,
+      by <xref ref="laurentunique">Corollary</xref>.
+    </p>
+    <p>
+      Conversely, suppose that
+      <me>
+        f(z) \= \sum_{k \geq -n} c_k ( z - z_0 )^k \= (z-z_0)^{-n} \sum_{k \geq -n} c_k ( z - z_0 )^{k+n} \= (z-z_0)^{-n} \s c_{k-n} (z-z_0)^k
+      </me>,
+      where <m>c_{-n} \not= 0</m>.
+      Define <m>g(z) \ := \ \s c_{k-n} (z-z_0)^k</m>.
+      Then <m>g</m> is holomorphic at <m>z_0</m> and <m>g(z_0) = c_{-n}\ne0</m> so,
+      by <xref ref="cor_orderofpole">Corollary</xref>,
+      <m>f</m> has a pole of order <m>n</m> at <m>z_0</m>.
+    </p>
+    <p>
+      (c) follows by definition:
+      an essential singularity is neither removable nor a pole.
+    </p>
+  </proof>
+  <example xml:id="ex_sinoverz3">
+    <statement>
+      <p>
+        The order of the pole at <m>0</m> of
+        <m>f(z)=\frac{\sin(z)}{z^3}</m> is 2 because (by <xref ref="ex_sinpowerser">Example</xref>)
+        <me>
+          f(z)\=\frac{\sin(z)}{z^3}\=\frac{z-\frac{z^3}{3!}+\frac{z^5}{5!}-\cdots}{z^3}\=\frac{1}{z^2}-\frac{1}{3!}+\frac{z^2}{5!}-\cdots
+        </me>
+        and the smallest power of <m>z</m> with nonzero coefficient in this series is <m>-2</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+</section>

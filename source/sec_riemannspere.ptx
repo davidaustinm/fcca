@@ -1,0 +1,357 @@
+<section xml:id="sec_riemannspere">
+  <title>Infinity and the Cross Ratio</title>
+  <p>
+    In the context of M&#xf6;bius transformations,
+    it is useful to introduce a formal way of saying that a function <m>f</m>
+    <q>blows up</q>
+    in absolute value, and this gives rise to a notion of infinity.
+        <idx><h>infinity</h></idx>
+        <idx><h>limit</h><h>infinity</h></idx>
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>f: G \to \C</m>.
+        <ol marker="a">
+          <li>
+            <p>
+              <m>\lim_{z\to z_0}f(z)=\infty</m> means that for every <m>M>0</m> we can find <m>\delta>0</m> so that,
+              for all <m>z\in G</m> satisfying <m>0\lt \abs{z-z_0}\lt \delta</m>,
+              we have <m>\abs{f(z)}>M</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\lim_{z\to \infty}f(z)=L</m> means that for every
+              <m>\epsilon>0</m> we can find <m>N>0</m> so that,
+              for all <m>z\in G</m> satisfying <m>\abs{z}>N</m>,
+              we have <m>\abs{f(z)-L}\lt \epsilon</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\lim_{z\to \infty}f(z)=\infty</m> means that for every <m>M>0</m> we can find <m>N>0</m> so that,
+              for all <m>z\in G</m> satisfying <m>\abs{z}>N</m>,
+              we have <m>\abs{f(z)}>M</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        In the first definition we require that <m>z_0</m> be an accumulation point of <m>G</m> while in the second and third we require that <m>\infty</m> be an
+        <q>extended accumulation point</q>
+        of <m>G</m>,
+        in the sense that for every <m>B>0</m> there is some <m>z\in G</m> with <m>\abs z>B</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    As in <xref ref="sec_limitsandcontinuity">Section</xref>,
+    the limit, in any of these senses, is unique if it exists.
+  </p>
+  <example>
+    <statement>
+      <p>
+        We claim that <m>\lim_{ z \to 0 } \frac 1 { z^2 } = \infty</m>: Given <m>M > 0</m>,
+        let <m>\delta := \frac 1 { \sqrt M }</m>.
+        Then <m>0 \lt  |z| \lt  \delta</m> implies
+        <me>
+          |f(z)| \= \left| \frac 1 { z^2 } \right| \ > \ \frac 1 { \delta^2 } \= M \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Let <m>f(z) = \frac{ az+b }{ cz+d }</m> be a M&#xf6;bius transformation with <m>c \ne 0</m>.
+        Then <m>\lim_{ z \to \infty } f(z) = \frac a c</m>.
+      </p>
+      <p>
+        To simplify the notation, introduce the constant <m>L := |ad -bc|</m>.
+        Given <m>\epsilon > 0</m>,
+        let <m>N := \frac L { |c|^2 \epsilon } + \left| \frac d c \right|</m>.
+        Then <m>|z| > N</m> implies, with the reverse triangle inequality
+        (<xref ref="cor_triangleineq">Corollary</xref><xref ref="revtrianineq"/>),
+        that
+        <me>
+          |cz+d| \ \ge \ \bigl| |c||z| - |d| \bigr| \ \ge \ |c||z| - |d| \ > \ \frac L { |c| \epsilon }
+        </me>
+        and so
+        <me>
+          \left| f(z) - \frac a c \right| \= \left| \frac{ c(az+b) - a(cz+d) }{ c(cz+d) } \right| \= \frac L { |c| \, |cz+d| } \ \lt  \ \epsilon \,
+        </me>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    We stress that <m>\infty</m> is not a number in <m>\C</m>,
+    just as <m>\pm \infty</m> are not numbers in <m>\R</m>.
+    However, we can <em>extend</em>
+    <m>\C</m> by adding on <m>\infty</m>, if we are careful.
+    We do so by realizing that we are always talking about a limit when handling <m>\infty</m>.
+    It turns out
+    (<xref ref="ex_limitrulesinfty">Exercise</xref>)
+    that the usual limit rules behave well when we mix complex numbers and <m>\infty</m>.
+    For example, if <m>\lim_{z\to z_0}f(z)=\infty</m> and
+    <m>\lim_{z\to z_0}g(z)=a</m> is finite then the usual
+    <em>limit of sum = sum of limits</em>
+    rule still holds and gives <m>\lim_{z\to z_0}(f(z)+g(z))=\infty</m>.
+    The following definition captures the philosophy of this paragraph.
+  </p>
+  <p>
+        <idx><h>complex plane</h><h>extended</h></idx>
+  </p>
+  <definition>
+    <statement>
+      <p>
+        The <em>extended complex plane
+            <idx><h>extended complex plane</h></idx>
+        </em> is the set <m>\Chat := \C\cup\listset\infty</m>,
+        together with the following algebraic properties: For any <m>a \in \C</m>,
+        <ol marker="a">
+          <li>
+            <p>
+              <m>\infty+a = a+\infty=\infty</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              if <m>a \neq 0</m> then <m>\infty\cdot a = a\cdot\infty = \infty</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\infty\cdot\infty =\infty</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac a \infty = 0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              if <m>a \neq 0</m> then <m>\frac a 0 = \infty </m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        The extended complex plane is also called the <em>Riemann sphere
+            <idx><h>Riemann sphere</h></idx>
+        </em> or the <em>complex projective line
+            <idx><h>complex projective line</h></idx>
+        </em>, denoted <m>\mathbb{CP}^1</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    If a calculation involving <m>\infty</m> is not covered by the rules above then we must investigate the limit more carefully.
+    For example,
+    it may seem strange that <m>\infty+\infty</m> is not defined,
+    but if we take the limit of <m>z+(-z)=0</m> as
+    <m>z\to\infty</m> we will get <m>0</m>,
+    even though the individual limits of <m>z</m> and <m>-z</m> are both<nbsp/><m>\infty</m>.
+  </p>
+  <p>
+    Now we reconsider M&#xf6;bius transformations with <m>\infty</m> in mind.
+    For example,
+    <m>f(z)= \frac 1 z</m> is now defined for <m>z=0</m> and <m>z=\infty</m>,
+    with <m>f(0)=\infty</m> and <m>f(\infty)=0</m>,
+    and so we might argue the proper domain for <m>f(z)</m> is actually <m>\Chat</m>.
+    Let's consider the other basic types of M&#xf6;bius transformations.
+    A translation <m>f(z) = z+b</m> is now defined for <m>z=\infty</m>,
+    with <m>f(\infty) = \infty+b = \infty</m>,
+    and a dilation <m>f(z) = az</m>
+    (with <m>a\ne0</m>)
+    is also defined for <m>z=\infty</m>,
+    with <m>f(\infty) = a\cdot\infty=\infty</m>.
+    Since every M&#xf6;bius transformation can be expressed as a composition of translations,
+    dilations and inversions
+    (<xref ref="transdilinv">Proposition</xref>),
+    we see that every M&#xf6;bius transformation may be interpreted as a transformation of <m>\Chat</m> onto <m>\Chat</m>.
+    This general case is summarized in the following extension of <xref ref="inversemobius">Proposition</xref>.
+  </p>
+  <corollary xml:id="cor_inversemobius">
+    <statement>
+      <p>
+        Suppose <m>ad-bc \ne 0</m> and <m>c \ne 0</m>,
+        and consider <m>f: \Chat \to \Chat</m> defined through
+        <me>
+          f(z) := \begin{cases}\frac{az+b}{cz+d} \amp  \text{ if }  z \in \C \setminus \left\{ - \frac d c \right\} , \\ \infty \amp  \text{ if }  z = - \frac d c \, , \\ \frac a c \amp  \text{ if }  z = \infty \, . \end{cases}
+        </me>
+      </p>
+      <p>
+        Then <m>f</m> is a bijection.
+      </p>
+    </statement>
+  </corollary>
+  <p>
+    This corollary also holds for <m>c = 0</m> if we then define <m>f(\infty) = \infty</m>.
+  </p>
+  <example xml:id="ex_mobiusinverse3">
+    <statement>
+      <p>
+        Continuing <xref ref="ex_mobiusinverse">Examples</xref>
+        and <xref ref="ex_mobiusinverse2"></xref>,
+        consider once more the M&#xf6;bius transformation <m>f(z) = \frac{ z-1 }{ iz+i }</m>.
+        With the definitions <m>f(-1) = \infty</m> and <m>f(\infty) = -i</m>,
+        we can extend <m>f</m> to a function <m>\Chat \to \Chat</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    With <m>\infty</m> on our mind we can also add some insight to <xref ref="circlestocircles">Theorem</xref>.
+    We recall that in <xref ref="ex_mobiusinverse2">Example</xref>,
+    we proved that <m>f(z) = \frac{ z-1 }{ iz+i }</m> maps the unit circle to the real line.
+    Essentially the same proof shows that,
+    more generally,
+    any circle passing through <m>-1</m> gets mapped to a line
+    (see <xref ref="exercise_mobiusinverse2">Exercise</xref>).
+    The original domain of <m>f</m> was <m>\C \setminus \{ -1 \}</m>,
+    so the point <m>z = -1</m> must be excluded from these circles.
+    However, by thinking of <m>f</m> as function from <m>\Chat</m> to <m>\Chat</m>,
+    we can put <m>z = -1</m> back into the picture,
+    and so <m>f</m> transforms circles that pass through <m>-1</m> to straight lines
+    <em>plus</em> <m>\infty</m>.
+    If we remember that <m>\infty</m> corresponds to being arbitrarily far away from any point in <m>\C</m>,
+    we can visualize a line plus <m>\infty</m> as a circle passing through <m>\infty</m>.
+    If we make this a definition,
+    then <xref ref="circlestocircles">Theorem</xref> can be expressed as:
+    <em>any M&#xf6;bius transformation of <m>\Chat</m> transforms circles to circles</em>.
+  </p>
+  <p>
+    We can take this remark a step further,
+    based on the idea that three distinct points in <m>\Chat</m> determine a unique circle passing through them: If the three points are in <m>\C</m> and nonlinear,
+    this fact comes straight from Euclidean geometry;
+    if the three points are on a straight line or if one of the points is <m>\infty</m>,
+    then the circle is a straight line plus <m>\infty</m>.
+  </p>
+  <example>
+    <statement>
+      <p>
+        The M&#xf6;bius transformation
+        <m>f: \Chat \to \Chat</m> given by <m>f(z) = \frac{ z-1 }{ iz+i }</m> maps
+        <me>
+          1 \mapsto 0 \, , \qquad \qquad i \mapsto 1 \, , \qquad \text{ and }  \qquad -1 \mapsto \infty \,
+        </me>.
+      </p>
+      <p>
+        The points <m>1</m>, <m>i</m>,
+        and <m>-1</m> uniquely determine the unit circle and the points 0, 1, and <m>\infty</m> uniquely determine the real line,
+        viewed as a circle in <m>\Chat</m>.
+        Thus <xref ref="cor_inversemobius">Corollary</xref>
+        implies that <m>f</m> maps the unit circle to <m>\R</m>,
+        which we already concluded in <xref ref="ex_mobiusinverse2">Example</xref>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Conversely, if we know where three distinct points in <m>\Chat</m> are transformed by a M&#xf6;bius transformation then we should be able to figure out everything about the transformation.
+    There is a computational device that makes this easier to see.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        If <m>z</m>, <m>z_1</m>, <m>z_2</m>,
+        and <m>z_3</m> are any four points in <m>\Chat</m> with <m>z_1</m>,
+        <m>z_2</m>,
+        and <m>z_3</m> distinct, then their <em>cross ratio
+            <idx><h>cross ratio</h></idx>
+        </em> is defined as
+        <me>
+          [z,z_1,z_2,z_3] \ := \ \frac{(z-z_1)(z_2-z_3)}{(z-z_3)(z_2-z_1)} \,
+        </me>.
+      </p>
+      <p>
+        This includes the implicit definitions <m>[z_3,z_1,z_2,z_3] = \infty</m> and,
+        if one of <m>z</m>, <m>z_1</m>, <m>z_2</m>,
+        or <m>z_3</m> is <m>\infty</m>,
+        then the two terms containing <m>\infty</m> are canceled;
+        e.g., <m>[z,\infty, z_2, z_3] = \frac{ z_2 - z_3 }{ z - z_3 }</m>.
+      </p>
+    </statement>
+  </definition>
+  <example>
+    <statement>
+      <p>
+        Our running example <m>f(z) = \frac{ z-1 }{ iz+i }</m> can be written as <m>f(z) = [z,1,i,-1]</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <proposition xml:id="crossratio">
+    <statement>
+      <p>
+        The function <m>f: \Chat \to \Chat</m> defined by
+        <m>f(z)=[z,z_1,z_2,z_3]</m> is a M&#xf6;bius transformation that satisfies
+        <me>
+          f(z_1) = 0 \, ,\qquad f(z_2) = 1 \, ,\qquad f(z_3)= \infty \,
+        </me>.
+      </p>
+      <p>
+        Moreover, if <m>g</m> is any M&#xf6;bius transformation with <m>g(z_1) = 0</m>,
+        <m>g(z_2) = 1</m>,
+        and <m>g(z_3)= \infty</m>, then <m>f</m> and <m>g</m> are identical.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      Most of this follows from our definition of <m>\infty</m>,
+      but we need to prove the uniqueness statement.
+      By <xref ref="inversemobius">Proposition</xref>,
+      the inverse <m>f^{-1}</m> is a M&#xf6;bius transformation and,
+      by <xref ref="ex_mobiusgroup">Exercise</xref>,
+      the composition <m>h := g\circ f^{-1}</m> is again a M&#xf6;bius transformation.
+      Note that <m>h(0) = g(f^{-1}(0)) = g(z_1) = 0</m> and,
+      similarly, <m>h(1) = 1</m> and <m>h(\infty) = \infty</m>.
+      If we write <m>h(z)=\frac{az+b}{cz+d}</m> then
+      <md>
+        <mrow>0 \= h(0) \= \frac bd \amp  \implies  b=0</mrow>
+        <mrow>\infty \= h(\infty) \= \frac ac \amp  \implies  c=0</mrow>
+        <mrow>1 \= h(1) \= \frac{a+b}{c+d} \= \frac {a+0}{0+d} \= \frac ad \amp  \implies  a=d</mrow>
+      </md>
+      and so
+      <me>
+        h(z)\=\frac{az+b}{cz+d} \= \frac{az+0}{0+d} \= \frac ad \, z \= z \,
+      </me>,
+      the identity function.
+      But since <m>h = g\circ f^{-1}</m>,
+      this means that <m>f</m> and <m>g</m> are identical.
+    </p>
+  </proof>
+  <p>
+    So if we want to map three given points of <m>\Chat</m> to <m>0</m>,
+    <m>1</m> and <m>\infty</m> by a M&#xf6;bius transformation,
+    then the cross ratio gives us the only way to do it.
+    What if we have three points <m>z_1</m>,
+    <m>z_2</m> and <m>z_3</m> and we want to map them to three other points <m>w_1</m>,
+    <m>w_2</m> and <m>w_3</m>?
+  </p>
+  <corollary>
+    <statement>
+      <p>
+        Suppose <m>z_1</m>,
+        <m>z_2</m> and <m>z_3</m> are distinct points in <m>\Chat</m> and <m>w_1</m>,
+        <m>w_2</m> and <m>w_3</m> are distinct points in <m>\Chat</m>.
+        Then there is a unique M&#xf6;bius transformation <m>h</m> satisfying <m>h(z_1)=w_1</m>,
+        <m>h(z_2)=w_2</m>, and <m>h(z_3)=w_3</m>.
+      </p>
+    </statement>
+  </corollary>
+  <proof>
+    <p>
+      Let <m>h=g^{-1}\circ f</m> where
+      <m>f(z)=[z,z_1,z_2,z_3]</m> and <m>g(w)=[w,w_1,w_2,w_3]</m>.
+      Uniqueness follows as in the proof of <xref ref="crossratio">Proposition</xref>.
+    </p>
+  </proof>
+  <p>
+    This theorem gives an explicit way to determine <m>h</m> from the points <m>z_j</m> and <m>w_j</m> but,
+    in practice,
+    it is often easier to determine <m>h</m> directly from the conditions <m>f(z_j)=w_j</m>
+    (by solving for <m>a</m>, <m>b</m>,
+    <m>c</m> and<nbsp/><m>d</m>).
+  </p>
+</section>

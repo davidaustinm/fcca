@@ -1,0 +1,63 @@
+<section xml:id="sec_fibonacci">
+  <title>Fibonacci Numbers</title>
+  <p>
+    The <em>Fibonacci<fn>
+    Named after Leonardo Pisano Fibonacci (1170<ndash/>1250).
+    </fn> numbers</em> are a sequence of integers defined recursively through
+        <idx><h>Fibonacci numbers</h></idx>
+    <md>
+      <mrow>f_0 \amp = 0</mrow>
+      <mrow>f_1 \amp = 1</mrow>
+      <mrow>f_n \amp = f_{n-1} + f_{n-2} \qquad \text{ for \(n \geq 2\). }</mrow>
+    </md>
+  </p>
+  <p>
+    Let <m>F(z) = \s f_k \, z^k</m>.
+    <ol marker="1">
+      <li>
+        <p>
+          Show that <m>F</m> has a positive radius of convergence.
+        </p>
+      </li>
+      <li>
+        <p>
+          Show that the recurrence relation among the <m>f_n</m> implies that
+          <m>F(z) = \frac{z}{1 - z - z^2}</m>. (<em>Hint</em>: Write down the power series of <m>z \, F(z)</m> and
+          <m>z^2 \, F(z)</m> and rearrange both so that you can easily add.)
+        </p>
+      </li>
+      <li>
+        <p>
+          Verify that
+          <me>
+            \Res_{z=0} \left( \frac{1}{z^n (1 - z - z^2)} \right) \= f_n\,
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use the Residue <xref ref="residuethm">Theorem</xref>
+          to derive an identity for <m>f_n</m>. (<em>Hint</em>: Integrate
+          <me>
+            \frac{1}{z^n (1 - z - z^2)}
+          </me>
+          around <m>C[0,R]</m> and show that this integral vanishes as <m>R \to \infty</m>.)
+        </p>
+      </li>
+      <li>
+        <p>
+          Generalize to other sequences defined by recurrence relations,
+          e.g., the <em>Tribonacci numbers
+            <idx><h>Tribonacci numbers</h></idx>
+          </em>
+          <md>
+            <mrow>t_0 \amp = 0</mrow>
+            <mrow>t_1 \amp = 0</mrow>
+            <mrow>t_2 \amp = 1</mrow>
+            <mrow>t_n \amp = t_{n-1} + t_{n-2} + t_{n-3} \qquad \text{ for \(n \geq 3\). }</mrow>
+          </md>
+        </p>
+      </li>
+    </ol>
+  </p>
+</section>

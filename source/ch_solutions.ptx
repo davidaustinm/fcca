@@ -1,0 +1,15 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="ch_solutions">
+  <title>Solutions to Selected Exercises</title>
+  <blockquote>
+    <em>Well here's another clue for you all.</em>
+    John Lennon &amp; Paul McCartney (
+    <q>Glass Onion,</q>
+    <em>The White Album</em>)
+  </blockquote>
+  <p>
+    IN PreTeXt, THE ANSWERS/SOLUTINS HAVE TO BE PUT NEXT TO THE PROBLEM STATEMENT.
+  </p>
+  <p>
+    COPY FROM THE ORIGINAL LaTeX SOURCE.
+  </p>
+</chapter>

@@ -1,0 +1,355 @@
+<section xml:id="sec_limitsandcontinuity">
+  <title>Limits and Continuity</title>
+  <definition>
+    <statement>
+      <p>
+        A <em>(complex) function
+            <idx><h>function</h></idx>
+        </em> <m>f</m> is a map from a subset <m>G \subseteq \C</m> to <m>\C</m>;
+        in this situation we will write
+        <m>f : G \to \C</m> and call <m>G</m> the <em>domain
+            <idx><h>domain</h></idx>
+        </em> of <m>f</m>.
+        This means that each element <m>z \in G</m> gets mapped to exactly one complex number,
+        called the <em>image</em> of <m>z</m> and usually denoted by <m>f(z)</m>.
+            <idx><h>image</h><h>of a point</h></idx>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    So far there is nothing that makes complex functions any more special than, say,
+    functions from <m>\R^m</m> to <m>\R^n</m>.
+    In fact, we can construct many familiar looking functions from the standard calculus repertoire,
+    such as <m>f(z)=z</m>
+    (the <em>identity map
+        <idx><h>identity map</h></idx>
+    </em>),
+    <m>f(z)=2z+i</m>, <m>f(z)=z^3</m>,
+    or <m>f(z) = \frac 1 z</m>.
+    The former three could be defined on all of <m>\C</m>,
+    whereas for the latter we have to exclude the origin <m>z=0</m> from the domain.
+    On the other hand,
+    we could construct some functions that make use of a certain representation of <m>z</m>,
+    for example, <m>f(x,y) = x-2iy</m>,
+    <m>f(x,y) = y^2-ix</m>, or <m>f(r,\phi) = 2r \, e^{ i (\phi + \pi) }</m>.
+  </p>
+  <p>
+    Next we define limits of a function.
+    The philosophy of the following definition is not restricted to complex functions,
+    but for sake of simplicity we state it only for those functions.
+        <idx><h>limit</h><h>of a function</h></idx>
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>f: G \to \C</m> and <m>z_0</m> is an accumulation point
+            <idx><h>accumulation point</h></idx>
+        of <m>G</m>.
+        If <m>w_0</m> is a complex number such that for every
+        <m>\epsilon>0</m> we can find <m>\gd>0</m> so that,
+        for all <m>z\in G</m> satisfying <m>0 \lt  \left| z - z_0 \right| \lt  \gd</m>,
+        we have <m>\left| f(z) - w_0 \right| \lt  \epsilon</m>,
+        then <m>w_0</m> is the <em>limit</em>
+        of <m>f</m> as <m>z</m> approaches <m>z_0</m>; in short,
+        <me>
+          \lim_{ z \to z_0 } f(z) \= w_0 \,
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    This definition is the same as is found in most calculus texts.
+    The reason we require that <m>z_0</m> is an accumulation point of the domain is just that we need to be sure that there are points <m>z</m> of the domain that are arbitrarily close to <m>z_0</m>.
+    Just as in the real case,
+    our definition (i.e., the part that says
+    <m>0\lt \abs{z-z_0}</m>) does not require that <m>z_0</m> is in the domain of <m>f</m> and,
+    if <m>z_0</m> is in the domain of <m>f</m>,
+    the definition explicitly ignores the value of <m>f(z_0)</m>.
+  </p>
+  <example xml:id="exam_limitexists">
+    <statement>
+      <p>
+        Let's prove that <m>\ds \lim_{ z \to i } z^2 = -1</m>.
+      </p>
+      <p>
+        Given <m>\epsilon > 0</m>,
+        we need to determine <m>\gd > 0</m> such that
+        <m>0 \lt  |z-i| \lt  \gd</m> implies <m>|z^2 + 1| \lt  \epsilon</m>.
+        We rewrite
+        <me>
+          \left| z^2 + 1 \right| \= \left| z-i \right| \left| z+i \right| \ \lt  \ \gd \left| z+i \right|
+        </me>.
+      </p>
+      <p>
+        If we choose <m>\gd</m>, say,
+        smaller than 1 then the factor <m>|z+i|</m> on the right can be bounded by 3
+        (draw a picture!).
+        This means that any <m>\gd \lt  \min \{ \frac \epsilon 3, 1 \}</m> should do the trick:
+        in this case, <m>0 \lt  |z-i| \lt  \gd</m> implies
+        <me>
+          \left| z^2 + 1 \right| \ \lt  \ 3 \gd \ \lt  \ \epsilon \,
+        </me>.
+      </p>
+      <p>
+        This was a proof written out in a way one might come up with it.
+        Here's a short, neat version:
+      </p>
+      <p>
+        Given <m>\epsilon > 0</m>,
+        choose <m>0 \lt  \gd \lt  \min \{ \frac \epsilon 3, 1 \}</m>.
+        Then <m>0 \lt  |z-i| \lt  \gd</m> implies
+        <md>
+          <mrow>\left|z+i\right| \ = \ \left|z-i + 2i\right| \ \le \ \left| z-i \right| + \left| 2i \right| \ \lt  \ 3 \, , \ \text {so}</mrow>
+          <mrow>\left| z^2 - (-1) \right| \ = \ \left| z^2 + 1 \right| \= \left| z-i \right| \left| z+i \right| \ \lt  \ 3 \gd \ \lt  \ \epsilon \, </mrow>
+        </md>.
+      </p>
+      <p>
+        This proves <m>\lim_{ z \to i } z^2 = -1</m>. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Just as in the real case, the limit <m>w_0</m> is unique if it exists
+    (<xref ref="ex_limitunique">Exercise</xref>).
+    It is often useful to investigate limits by restricting the way the point <m>z</m> approaches <m>z_0</m>.
+    The following result is a direct consequence of the definition.
+  </p>
+  <proposition xml:id="restrictedlimit">
+    <statement>
+      <p>
+        Suppose <m>f: G \to \C</m> and <m>\lim_{z\to z_0}f(z) = w_0</m>.
+        Suppose <m>\widetilde G \subseteq G</m> and <m>z_0</m> is an accumulation point of <m>\widetilde G</m>.
+        If <m>\widetilde f</m> is the restriction of <m>f</m> to <m>\widetilde G</m> then
+        <m>\lim_{z\to z_0} \widetilde f(z)</m> exists and has the value<nbsp/><m>w_0</m>.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    The definition of <em>limit</em>
+    in the complex domain has to be treated with a little more care than its real companion;
+    this is illustrated by the following example.
+  </p>
+  <example xml:id="exam_limitdoesnotexist">
+    <statement>
+      <p>
+        The limit of <m>\frac{\, \overline z \, } z</m> as <m>z \to 0</m> does not exist.
+      </p>
+      <p>
+        To see this,
+        we try to compute this limit as <m>z \to 0</m> on the real and on the imaginary axis.
+        In the first case, we can write <m>z = x \in \R</m>, and hence
+        <me>
+          \lim_{ z \to 0 } \frac{ \, \overline z \, }{ z } \= \lim_{ x \to 0 } \frac{ \, \overline x \, }{ x } \= \lim_{ x \to 0 } \frac{ x }{ x } \= 1 \,
+        </me>.
+      </p>
+      <p>
+        In the second case,
+        we write <m>z = iy</m> where <m>y \in \R</m>, and then
+        <me>
+          \lim_{ z \to 0 } \frac{ \, \overline z \, }{ z } \= \lim_{ y \to 0 } \frac{ \, \overline{iy} \, }{ iy } \= \lim_{ y \to 0 } \frac{ -iy }{ iy } \= -1 \,
+        </me>.
+      </p>
+      <p>
+        So we get a different
+        <q>limit</q>
+        depending on the direction from which we approach 0.
+        <xref ref="restrictedlimit">Proposition</xref>
+        then implies that the limit of
+        <m>\frac{\, \overline z \, } z</m> as <m>z \to 0</m> does not exist. \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    On the other hand,
+    the following usual limit rules are valid for complex functions;
+    the proofs of these rules are everything but trivial and make for nice practice (<xref ref="ex_limits">Exercise</xref>);
+    as usual, we give a sample proof.
+  </p>
+  <proposition xml:id="limits">
+    <statement>
+      <p>
+        Let <m>f</m> and <m>g</m> be complex functions with domain <m>G</m>,
+        let <m>z_0</m> be an accumulation point of <m>G</m>, and let <m>c \in \C</m>.
+        If <m>\lim_{ z \to z_0 } f(z)</m> and <m>\lim_{ z \to z_0 } g(z)</m> exist, then
+        <ol marker="a">
+          <li xml:id="limitsadd">
+            <p>
+              \disp{ \lim_{ z \to z_0 } \left( f(z) + c <nbsp/> g(z) \right) \= \lim_{ z \to z_0 } f(z) + c \lim_{ z \to z_0 } g(z) }
+            </p>
+          </li>
+          <li xml:id="limitsmultiply">
+            <p>
+              \disp{ \lim_{ z \to z_0 } \left( f(z) \cdot g(z) \right) \= \lim_{ z \to z_0 } f(z) \cdot \lim_{ z \to z_0 } g(z) }
+            </p>
+          </li>
+          <li>
+            <p>
+              \disp{ \lim_{ z \to z_0 } \frac{ f(z) }{ g(z) } \= \frac{ \lim_{ z \to z_0 } f(z) }{ \lim_{ z \to z_0 } g(z) } }
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        where in the last identity we also require that <m>\lim_{ z \to z_0 } g(z) \neq 0</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      Assume that <m>c \ne 0</m>
+      (otherwise there is nothing to prove),
+      and let <m>L = \lim_{ z \to z_0 } f(z)</m> and <m>M = \lim_{ z \to z_0 } g(z)</m>.
+      Then we know that, given <m>\epsilon > 0</m>,
+      we can find <m>\delta_1, \delta_2 > 0</m> such that
+      <me>
+        0 \lt  |z-z_0| \lt  \delta_1 \text{ implies } \left| f(z) - L \right| \lt  \frac \epsilon 2
+      </me>
+      and
+      <me>
+        0 \lt  |z-z_0| \lt  \delta_2 \text{ implies } \left| g(z) - M \right| \lt  \frac \epsilon {2|c|} \,
+      </me>.
+    </p>
+    <p>
+      Thus, choosing <m>\delta = \min \{ \delta_1, \delta_2 \}</m>,
+      we infer that <m>0 \lt  |z-z_0| \lt  \delta</m> implies
+      <me>
+        \left| (f(z) + c \, g(z)) - (L+c \, M) \right| \ \le \ \left| f(z) - L \right| + |c| \left| g(z) - M \right| \ \lt  \ \epsilon \,
+      </me>.
+    </p>
+    <p>
+      Here we used the triangle inequality
+      (<xref ref="lem_triangleineq">Proposition</xref>).
+      This proves that <m>\lim_{ z \to z_0 } (f(z) + c \, g(z)) = L+c \, M</m>,
+      which was our claim.
+    </p>
+  </proof>
+  <p>
+    Because the definition of the limit is somewhat elaborate,
+    the following fundamental definition looks almost trivial.
+        <idx><h>trivial</h></idx>
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>f: G \to \C</m>.
+        If <m>z_0 \in G</m> and either <m>z_0</m> is an isolated point of <m>G</m> or
+        <me>
+          \lim_{ z \to z_0 } f(z) \= f(z_0)
+        </me>
+        then <m>f</m> is <em>continuous
+            <idx><h>continuous</h></idx>
+        </em> at <m>z_0</m>.
+        More generally, <m>f</m> is <em>continuous</em>
+        on <m>E \subseteq G</m> if <m>f</m> is continuous at every <m>z \in E</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    However, in almost all proofs using continuity it is necessary to interpret this in terms of
+    <m>\epsilon</m>'s and <m>\delta</m>'s.
+    So here is an alternate definition:
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>f: G \to \C</m> and <m>z_0 \in G</m>.
+        Then <m>f</m> is <em>continuous
+            <idx><h>continuous</h></idx>
+        </em> at <m>z_0</m> if, for every positive real number
+        <m>\epsilon</m> there is a positive real number <m>\delta</m> so that
+        <me>
+          |\,f(z)-f(z_0)\,| \lt  \epsilon \;\text{ for all } \; z\in G \; \text{ satisfying } \; |\,z-z_0\,| \lt  \delta\,
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    See <xref ref="ex_continuitydefs">Exercise</xref>
+    for a proof that these definitions are equivalent.
+  </p>
+  <example>
+    <statement>
+      <p>
+        We already proved
+        (in <xref ref="exam_limitexists">Example</xref>)
+        that the function <m>f: \C \to \C</m> given by
+        <m>f(z) = z^2</m> is continuous at <m>z = i</m>.
+        You're invited
+        (<xref ref="ex_zsquaredcontinuous">Exercise</xref>)
+        to extend our proof to show that,
+        in fact, this function is continuous on<nbsp/><m>\C</m>.
+      </p>
+      <p>
+        On the other hand, let <m>g: \C \to \C</m> be given by
+        <me>
+          g(z) := \begin{cases}\frac{\, \overline z \, } z \amp  \text{ if }  z \ne 0 \, , \\ 1 \amp  \text{ if }  z = 0 \, . \end{cases}
+        </me>
+      </p>
+      <p>
+        In <xref ref="exam_limitdoesnotexist">Example</xref>
+        we proved that <m>g</m> is not continuous at <m>z = 0</m>.
+        However, this is its only point of discontinuity
+        (<xref ref="ex_zbaroverzcont">Exercise</xref>). \pushQED{}\popQED
+      </p>
+    </statement>
+  </example>
+  <p>
+    Just as in the real case, we can
+    <q>take the limit inside</q>
+    a continuous function, by considering composition of functions.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        The <em>image</em> of the function
+        <m>g: G \to \C</m> is the set <idx><h>image</h><h>of a function</h></idx> <m>\left\{ g(z) : \, z \in G \right\} </m>.
+        If the image of <m>g</m> is contained in the domain of another function <m>f : H \to \C</m>,
+        we define the <em>composition
+            <idx><h>composition</h></idx>
+        </em> <m>f \circ g : G \to \C</m> through
+        <me>
+          (f \circ g) (z) \ := \ f(g(z)) \,
+        </me>.
+      </p>
+    </statement>
+  </definition>
+  <proposition xml:id="funoflimit">
+    <statement>
+      <p>
+        Let <m>g : G \to \C</m> with image contained in <m>H</m>,
+        and let <m>f : H \to \C</m>.
+        Suppose <m>z_0</m> is an accumulation point of <m>G</m>,
+        <m>\lim_{z\to z_0}g(z)=w_0\in H</m>,
+        and <m>f</m> is continuous at <m>w_0</m>.
+        Then <m>\lim_{z\to z_0}f(g(z))=f(w_0)</m>; in short,
+        <me>
+          \lim_{z\to z_0} f(g(z)) \= f\left(\lim_{z\to z_0}g(z)\right)
+        </me>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      Given <m>\epsilon > 0</m>, we know there is an <m>\eta > 0</m> such that
+      <me>
+        |w-w_0| \lt  \eta \text{ implies } \left| f(w) - f(w_0) \right| \lt  \epsilon \,
+      </me>.
+    </p>
+    <p>
+      For this <m>\eta</m>,
+      we also know there is a <m>\delta > 0</m> such that
+      <me>
+        0 \lt  |z-z_0| \lt  \delta \text{ implies } \left| g(z) - w_0 \right| \lt  \eta \,
+      </me>.
+    </p>
+    <p>
+      Stringing these two implications together gives that
+      <me>
+        0 \lt  |z-z_0| \lt  \delta \text{ implies } \left| f(g(z)) - f(w_0) \right| \lt  \epsilon \,
+      </me>.
+    </p>
+    <p>
+      We have thus proved that <m>\lim_{z\to z_0}f(g(z))=f(w_0)</m>.
+    </p>
+  </proof>
+</section>
