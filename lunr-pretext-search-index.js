@@ -1,6 +1,42 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
+  "id": "frontmatter-2",
+  "level": "1",
+  "url": "frontmatter-2.html",
+  "type": "Preface",
+  "number": "",
+  "title": "About this book",
+  "body": " About this book   And what is the use of a book,'' thought Alice, ``without pictures or conversations?   Lewis Carroll in Alice in Wonderland     A First Course in Complex Analysis was written for a one-semester undergraduate course developed at Binghamton University (SUNY) and San Francisco State University, and has been adopted at several other institutions. For many of our students, Complex Analysis is their first rigorous analysis (if not mathematics) class they take, and this book reflects this very much. We tried to rely on as few concepts from real analysis as possible. In particular, series and sequences are treated from scratch, which has the consequence that power series are introduced late in the course. The goal our book works toward is the Residue Theorem, including some nontraditional applications from both continuous and discrete mathematics.  A printed paperback version of this open textbook is available from Orthogonal Publishing or your favorite online bookseller.  "
+},
+{
+  "id": "frontmatter-3",
+  "level": "1",
+  "url": "frontmatter-3.html",
+  "type": "Preface",
+  "number": "",
+  "title": "About the authors",
+  "body": " About the authors  Matthias Beck is a professor in the Mathematics Department at San Francisco State University. His research interests are in geometric combinatorics and analytic number theory. He is the author of three other books, Computing the Continuous Discretely: Integer-point Enumeration in Polyhedra (with Sinai Robins, Springer 2007), The Art of Proof: Basic Training for Deeper Mathematics (with Ross Geoghegan, Springer 2010), and Combinatorial Reciprocity Theorems: An Invitation to Enumerative Geometric Combinatorics (with Raman Sanyal, AMS 2018).   Gerald Marchesi is a lecturer in the Department of Mathematical Sciences at Binghamton University (SUNY).  Dennis Pixton is a professor emeritus in the Department of Mathematical Sciences at Binghamton University (SUNY). His research interests are in dynamical systems and formal languages.  Lucas Sabalka is an applied mathematician at a technology company in Lincoln, Nebraska. He works on 3-dimensional computer vision applications. He was formerly a professor of mathematics at St. Louis University, after postdoctoral positions at UC Davis and Binghamton University (SUNY). His mathematical research interests are in geometric group theory, low dimensional topology, and computational algebra.  Robert Chaffer (cover art) is a professor emeritus at Central Michigan University. His academic interests are in abstract algebra, combinatorics, geometry, and computer applications. Since retirement from teaching, he has devoted much of his time to applying those interests to creation of art images.  "
+},
+{
+  "id": "frontmatter-4",
+  "level": "1",
+  "url": "frontmatter-4.html",
+  "type": "Preface",
+  "number": "",
+  "title": "A Note to Instructors",
+  "body": " A Note to Instructors  The material in this book should be more than enough for a typical semester-long undergraduate course in complex analysis; our experience taught us that there is more content in this book than fits into one semester. Depending on the nature of your course and its place in your department's overall curriculum, some sections can be either partially omitted or their definitions and theorems can be assumed true without delving into proofs. contains optional longer homework problems that could also be used as group projects at the end of a course.  We would be happy to hear from anyone who has adopted our book for their course, as well as suggestions, corrections, or other comments.  "
+},
+{
+  "id": "frontmatter-5",
+  "level": "1",
+  "url": "frontmatter-5.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Acknowledgements",
+  "body": " Acknowledgements  We thank our students who made many suggestions for and found errors in the text. Special thanks go to Sheldon Axler, Collin Bleak, Pierre-Alexandre Bliman, Matthew Brin, Andrew Hwang, John McCleary, Sharma Pallekonda, Joshua Palmatier, and Dmytro Savchuk for comments, suggestions, and additions after teaching from this book.  We thank Lon Mitchell for his initiative and support for the print version of our book with Orthogonal Publishing, and Bob Chaffer for allowing us to feature his art on the book's cover.  We are grateful to the American Institute of Mathematics for including our book in their Open Textbook Initiative .  "
+},
+{
   "id": "front-colophon",
   "level": "1",
   "url": "front-colophon.html",
