@@ -100,6 +100,123 @@ var ptx_lunr_docs = [
   "body": " Fundamental Theorem of Algebra  fundamental theorem of algebra   Every nonconstant polynomial of degree has roots (counting multiplicity) in .   "
 },
 {
+  "id": "geomprop",
+  "level": "1",
+  "url": "geomprop.html",
+  "type": "Section",
+  "number": "1.2",
+  "title": "From Algebra to Geometry and Back",
+  "body": " From Algebra to Geometry and Back  Although we just introduced a new way of writing complex numbers, let's for a moment return to the -notation. complex plane It suggests that we can think of a complex number as a two-dimensional real vector. vector When plotting these vectors in the plane , we will call the -axis the real axis and the -axis the imaginary axis . imaginary axis  real axis  axis real  axis imaginary The addition that we defined for complex numbers resembles vector addition; see Figure . The analogy stops at multiplication: there is no usual multiplication of two vectors in that gives another vector, and certainly not one that agrees with our definition of the product of two complex numbers.   Addition of complex numbers.      z1=(3,5)  z2=(-4.5,2)  s = z1+z2           z_1       z_2       z_1+z_2         Any vector in is defined by its two coordinates. On the other hand, it is also determined by its length and the angle it encloses with, say, the positive real axis; let's define these concepts thoroughly.    The absolute value (also called the modulus ) of is , and an argument of is a number such that . modulus  absolute value  argument     A given complex number has infinitely many possible arguments. For instance, the number lies on the positive real axis, and so has argument , but we could just as well say it has argument , , , or for any integer . The number has modulus , and every real number is an argument. Aside from the exceptional case of , for any complex number , the arguments of all differ by a multiple of , just as we saw for the example .  The absolute value of the difference of two vectors has a nice geometric interpretation:    Let be two complex numbers, thought of as vectors in , and let denote the distance between (the endpoints of) the two vectors in (see Figure ). Then . distance of complex numbers      Let and . From geometry we know that .  This is the definition of . Since and , this is also equal to .    Geometry behind the distance between two complex numbers.      z1=(3,5)  z2=(-4.5,2)  d = z1-z2      z_1       z_2       z_1-z_2        geometric interpretation of multiplication   That simply says that the vector from to has the same length as the vector from to .  It is very useful to keep this geometric interpretation in mind when thinking about the absolute value of the difference of two complex numbers.  One reason to introduce the absolute value and argument of a complex number is that they allow us to give a geometric interpretation for the multiplication of two complex numbers. Let's say we have two complex numbers: , with absolute value and argument , and , with absolute value and argument . This means we can write and . To compute the product, we make use of some classic trigonometric identities: trigonometric identities  .  So the absolute value of the product is and one of its arguments is . Geometrically, we are multiplying the lengths of the two vectors representing our two complex numbers and adding their angles measured with respect to the positive real axis. You should convince yourself that there is no problem with the fact that there are many possible arguments for complex numbers, as both cosine and sine are periodic functions with period .    Multiplication of complex numbers.      polar(r,t)=(r*cos(t), r*sin(t))  r1=2  r2=4  t1=0.9  t2=2.7  z1=polar(r1,t1)  z2=polar(r2,t2)  z3=polar(6,t1+t2)     \\phi_1     z_1      \\phi_2     z_2      \\phi_1+\\phi_2     z_1z_2         In view of the above calculation, it should come as no surprise that we will have to deal with quantities of the form (where is some real number) quite a bit. To save space, bytes, ink, etc., (and because Mathematics is for lazy people Peter Hilton (Invited address, Hudson River Undergraduate Mathematics Conference 2000). ) we introduce a shortcut notation and define .   Three sample complex numbers of the form .      polar(r,t)=(r*cos(t), r*sin(t))  z1=polar(1,pi\/4)  z2=polar(1,7*pi\/8)  z3=polar(1,3*pi\/2)     e^{\\frac{\\pi i}{4}} = \\frac1{\\sqrt{2}}+i\\frac{1}{\\sqrt{2}}    e^{\\frac{7\\pi i}{8}}    e^{-\\frac{\\pi i}{2}}=-i         Figure shows three examples. At this point, this exponential notation is indeed purely a notation. In particular, while our notation proves  \\ix{Euler's formula}  , this simply follows from the facts and . The connection between the numbers , , , and the complex exponential function (and thus the number ) is somewhat deeper. We'll explore this in Section . We will later see in Chapter that it has an intimate connection to the complex exponential function. For now, we motivate this maybe strange seeming definition by collecting some of its properties:    For any ,                             .       You are encouraged to prove them (see Exercise ); again we give a sample.   By definition of ,     Proposition implies that for any integers and . Thus numbers of the form with play a pivotal role in solving equations of the form , which is reason to give them a special name.    A root of unity is a number of the form for some integers and . root of unity Equivalently (by Exercise ), a root of unity is a complex number such that for some positive integer . In this case, we call an root of unity . If is the smallest positive integer with the property , then is a primitive  root of unity. root of unity primitive  primitive root of unity       The roots of unity are and . The latter two are primitive roots of unity.    With our new notation, the sentence the complex number has absolute value and argument now becomes the identity .  The left-hand side is often called the rectangular form , and the right-hand side the polar form of this complex number. polar form  rectangular form   We now have five different ways of thinking about a complex number: the formal definition, in rectangular form, in polar form, and geometrically, using Cartesian coordinates or polar coordinates. Each of these five ways is useful in different situations, and translating between them is an essential ingredient in complex analysis. The five ways and their corresponding notation are listed in . This list is not exhaustive; see, e.g., Exercise .   Five ways of thinking about a complex number.    Formal     Algebraic  Geometric    Rectangular:   Cartesian      z=(3,4)    x    y    z          Exponential:   Polar      z=(3,4)   \\theta     r    z           "
+},
+{
+  "id": "fig_addition",
+  "level": "2",
+  "url": "geomprop.html#fig_addition",
+  "type": "Figure",
+  "number": "1.2.1",
+  "title": "",
+  "body": " Addition of complex numbers.      z1=(3,5)  z2=(-4.5,2)  s = z1+z2           z_1       z_2       z_1+z_2        "
+},
+{
+  "id": "geomprop-5",
+  "level": "2",
+  "url": "geomprop.html#geomprop-5",
+  "type": "Definition",
+  "number": "1.2.2",
+  "title": "",
+  "body": "  The absolute value (also called the modulus ) of is , and an argument of is a number such that . modulus  absolute value  argument    "
+},
+{
+  "id": "prop_distance",
+  "level": "2",
+  "url": "geomprop.html#prop_distance",
+  "type": "Proposition",
+  "number": "1.2.3",
+  "title": "",
+  "body": "  Let be two complex numbers, thought of as vectors in , and let denote the distance between (the endpoints of) the two vectors in (see Figure ). Then . distance of complex numbers    "
+},
+{
+  "id": "geomprop-9",
+  "level": "2",
+  "url": "geomprop.html#geomprop-9",
+  "type": "Proof",
+  "number": "1.2.1",
+  "title": "",
+  "body": " Let and . From geometry we know that .  This is the definition of . Since and , this is also equal to .  "
+},
+{
+  "id": "distfig",
+  "level": "2",
+  "url": "geomprop.html#distfig",
+  "type": "Figure",
+  "number": "1.2.4",
+  "title": "",
+  "body": " Geometry behind the distance between two complex numbers.      z1=(3,5)  z2=(-4.5,2)  d = z1-z2      z_1       z_2       z_1-z_2        geometric interpretation of multiplication  "
+},
+{
+  "id": "geomprop-15",
+  "level": "2",
+  "url": "geomprop.html#geomprop-15",
+  "type": "Figure",
+  "number": "1.2.5",
+  "title": "",
+  "body": " Multiplication of complex numbers.      polar(r,t)=(r*cos(t), r*sin(t))  r1=2  r2=4  t1=0.9  t2=2.7  z1=polar(r1,t1)  z2=polar(r2,t2)  z3=polar(6,t1+t2)     \\phi_1     z_1      \\phi_2     z_2      \\phi_1+\\phi_2     z_1z_2        "
+},
+{
+  "id": "fig_rootsof1",
+  "level": "2",
+  "url": "geomprop.html#fig_rootsof1",
+  "type": "Figure",
+  "number": "1.2.6",
+  "title": "",
+  "body": " Three sample complex numbers of the form .      polar(r,t)=(r*cos(t), r*sin(t))  z1=polar(1,pi\/4)  z2=polar(1,7*pi\/8)  z3=polar(1,3*pi\/2)     e^{\\frac{\\pi i}{4}} = \\frac1{\\sqrt{2}}+i\\frac{1}{\\sqrt{2}}    e^{\\frac{7\\pi i}{8}}    e^{-\\frac{\\pi i}{2}}=-i       "
+},
+{
+  "id": "easyexp",
+  "level": "2",
+  "url": "geomprop.html#easyexp",
+  "type": "Proposition",
+  "number": "1.2.7",
+  "title": "",
+  "body": "  For any ,                             .      "
+},
+{
+  "id": "geomprop-21",
+  "level": "2",
+  "url": "geomprop.html#geomprop-21",
+  "type": "Proof",
+  "number": "1.2.2",
+  "title": "",
+  "body": " By definition of ,   "
+},
+{
+  "id": "geomprop-23",
+  "level": "2",
+  "url": "geomprop.html#geomprop-23",
+  "type": "Definition",
+  "number": "1.2.8",
+  "title": "",
+  "body": "  A root of unity is a number of the form for some integers and . root of unity Equivalently (by Exercise ), a root of unity is a complex number such that for some positive integer . In this case, we call an root of unity . If is the smallest positive integer with the property , then is a primitive  root of unity. root of unity primitive  primitive root of unity    "
+},
+{
+  "id": "geomprop-24",
+  "level": "2",
+  "url": "geomprop.html#geomprop-24",
+  "type": "Example",
+  "number": "1.2.9",
+  "title": "",
+  "body": "  The roots of unity are and . The latter two are primitive roots of unity.   "
+},
+{
+  "id": "fig_5ways",
+  "level": "2",
+  "url": "geomprop.html#fig_5ways",
+  "type": "Table",
+  "number": "1.2.10",
+  "title": "Five ways of thinking about a complex number.",
+  "body": " Five ways of thinking about a complex number.    Formal     Algebraic  Geometric    Rectangular:   Cartesian      z=(3,4)    x    y    z          Exponential:   Polar      z=(3,4)   \\theta     r    z          "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
