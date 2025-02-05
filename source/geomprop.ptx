@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="geomprop">
+<section xml:id="geomprop"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>From Algebra to Geometry and Back</title>
   <p>
     Although we just introduced a new way of writing complex numbers,
@@ -28,43 +29,7 @@
   <figure xml:id="fig_addition">
     <caption>Addition of complex numbers.</caption>
     <image width="50%">
-      <prefigure xmlns="https://prefigure.org"
-                 label="complex-add">
-        <diagram dimensions="(250,250)" margins="5">
-          <coordinates bbox="(-6,-3,6,9)">
-            <definition>z1=(3,5)</definition>
-            <definition>z2=(-4.5,2)</definition>
-            <definition>s = z1+z2 </definition>
-            <axes decorations="no"/>
-            <path start="z1" stroke="#999" dash="6 6">
-              <lineto point="z1"/>
-              <rlineto point="z2"/>
-              <rlineto point="-z1"/>
-            </path>
-            <group at="z1">
-              <vector v="z1" thickness="2"/>
-              <label anchor="z1" alignment="ne">
-                <m>z_1</m>
-              </label>
-            </group>
-            
-            <group at="z2">
-              <vector v="z2" thickness="2"/>
-              <label anchor="z2" alignment="sw">
-                <m>z_2</m>
-              </label>
-            </group>
-            
-            <group at="sum">
-              <vector v="s" thickness="2"/>
-              <label anchor="s" alignment="nw">
-                <m>z_1+z_2</m>
-              </label>
-            </group>
-             
-          </coordinates>
-        </diagram>
-      </prefigure>
+      <xi:include href="prefigure/fig1-1-complex-add.xml"/>
     </image>
   </figure>
 
@@ -154,38 +119,7 @@
     <caption>Geometry behind the distance between two complex
     numbers.</caption>
     <image width="50%">
-      <prefigure xmlns="https://prefigure.org"
-                 label="complex-sub">
-        <diagram dimensions="(250,250)" margins="5">
-          <coordinates bbox="(-6,-3,6,9)">
-            <definition>z1=(3,5)</definition>
-            <definition>z2=(-4.5,2)</definition>
-            <definition>d = z1-z2 </definition>
-            <axes decorations="no"/>
-            <group at="z1">
-              <vector v="z1" thickness="2"/>
-              <label anchor="z1" alignment="ne">
-                <m>z_1</m>
-              </label>
-            </group>
-            
-            <group at="z2">
-              <vector v="z2" thickness="2"/>
-              <label anchor="z2" alignment="sw">
-                <m>z_2</m>
-              </label>
-            </group>
-            
-            <group at="sum">
-              <vector v="d" tail="z2" thickness="2"/>
-              <label anchor="midpoint(z1,z2)" alignment="nw">
-                <m>z_1-z_2</m>
-              </label>
-            </group>
-            
-          </coordinates>
-        </diagram>
-      </prefigure>
+      <xi:include href="prefigure/fig1-2-complex-sub.xml"/>
     </image>
     <idx><h>geometric interpretation of multiplication</h></idx>
   </figure>
@@ -242,55 +176,7 @@
   <figure>
     <caption>Multiplication of complex numbers.</caption>
     <image width="50%">
-      <prefigure xmlns="https://prefigure.org"
-                 label="complex-mult">
-        <diagram dimensions="(250,250)" margins="5">
-          <coordinates bbox="(-6,-4,6,8)">
-            <definition>polar(r,t)=(r*cos(t), r*sin(t))</definition>
-            <definition>r1=2</definition>
-            <definition>r2=4</definition>
-            <definition>t1=0.9</definition>
-            <definition>t2=2.7 </definition>
-            <definition>z1=polar(r1,t1)</definition>
-            <definition>z2=polar(r2,t2)</definition>
-            <definition>z3=polar(6,t1+t2)</definition>
-            <axes decorations="no"/>
-            <group at="z1">
-              <angle-marker points="((10,0),(0,0),z1)" radius="20"
-                            stroke="#aaa" offset="(3,-5)">
-                <m>\phi_1</m>
-              </angle-marker>
-              <vector v="z1" thickness="2"/>
-              <label anchor="z1" alignment="nw">
-                <m>z_1</m>
-              </label>
-            </group>
-            
-            <group at="z2">
-              <angle-marker points="((10,0),(0,0),z2)" radius="65"
-                            stroke="#aaa">
-                <m>\phi_2</m>
-              </angle-marker>
-              <vector v="z2" thickness="2"/>
-              <label anchor="z2" alignment="ne">
-                <m>z_2</m>
-              </label>
-            </group>
-            
-            <group at="product">
-              <angle-marker points="((10,0),(0,0),z3)" radius="100"
-                            stroke="#aaa" offset="(-20,3)">
-                <m>\phi_1+\phi_2</m>
-              </angle-marker>
-              <vector v="z3" thickness="2"/>
-              <label anchor="z3" alignment="se">
-                <m>z_1z_2</m>
-              </label>
-            </group>
-            
-          </coordinates>
-        </diagram>
-      </prefigure>
+      <xi:include href="prefigure/fig1-3-complex-mult.xml"/>
     </image>
   </figure>
   <p>
@@ -311,32 +197,7 @@
   <figure xml:id="fig_rootsof1">
     <caption>Three sample complex numbers of the form <m>e^{ i \phi }</m>.</caption>
     <image width="50%">
-      <prefigure xmlns="https://prefigure.org"
-                 label="polar-rep">
-        <diagram dimensions="(300,300)" margins="(5,5,15,5)">
-          <coordinates bbox="(-2,-2,2,2)">
-            <definition>polar(r,t)=(r*cos(t), r*sin(t))</definition>
-            <definition>z1=polar(1,pi/4)</definition>
-            <definition>z2=polar(1,7*pi/8)</definition>
-            <definition>z3=polar(1,3*pi/2)</definition>
-            <axes decorations="no"/>
-            <circle at="circle" center="(0,0)" radius="1" stroke="black"/>
-            
-            <point at="z1" p="z1" fill="black" stroke="none" alignment="ne"
-                   offset="(-10,0)">
-              <m>e^{\frac{\pi i}{4}} = \frac1{\sqrt{2}}+i\frac{1}{\sqrt{2}}</m>
-            </point>
-            
-            <point at="z2" p="z2" fill="black" stroke="none" alignment="nw">
-              <m>e^{\frac{7\pi i}{8}}</m>
-            </point>
-            
-            <point at="z3" p="z3" fill="black" stroke="none" alignment="se">
-              <m>e^{-\frac{\pi i}{2}}=-i</m>
-            </point>
-          </coordinates>
-        </diagram>
-      </prefigure>
+      <xi:include href="prefigure/fig1-4-polar.xml"/>
     </image>
   </figure>
   <p>
@@ -514,25 +375,7 @@
         <cell>
           Cartesian
           <image width="80%">
-            <prefigure xmlns="https://prefigure.org"
-                       label="table-cartesian">
-              <diagram dimensions="(150,150)" margins="5">
-                <coordinates bbox="(-1,-1,5,5)">
-                  <axes decorations="no"/>
-                  <definition>z=(3,4)</definition>
-                  <triangle vertices="((0,0),(z[0],0),z)" stroke="black"/>
-                  <label anchor="(z[0]/2,0)" alignment="south">
-                    <m>x</m>
-                  </label>
-                  <label anchor="(z[0],z[1]/2)" alignment="east">
-                    <m>y</m>
-                  </label>
-                  <label anchor="z" alignment="ne">
-                    <m>z</m>
-                  </label>
-                </coordinates>
-              </diagram>
-            </prefigure>
+            <xi:include href="prefigure/table-cartesian.xml"/>
           </image>
         </cell>
       </row>
@@ -544,26 +387,7 @@
         <cell>
           Polar
           <image width="80%">
-            <prefigure xmlns="https://prefigure.org"
-                       label="table-polar">
-              <diagram dimensions="(150,150)" margins="5">
-                <coordinates bbox="(-1,-1,5,5)">
-                  <axes decorations="no"/>
-                  <definition>z=(3,4)</definition>
-                  <angle-marker points="((10,0),(0,0),z)" radius="20"
-                                offset="(3,-3)">
-                    <m>\theta</m>
-                  </angle-marker>
-                  <line endpoints="((0,0),z)" stroke="black"/>
-                  <label anchor="1/2*z" alignment="nw">
-                    <m>r</m>
-                  </label>
-                  <label anchor="z" alignment="ne">
-                    <m>z</m>
-                  </label>
-                </coordinates>
-              </diagram>
-            </prefigure>
+            <xi:include href="prefigure/table-polar.xml"/>
           </image>
         </cell>
       </row>

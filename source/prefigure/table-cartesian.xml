@@ -1,0 +1,19 @@
+<prefigure xmlns="https://prefigure.org"
+           label="table-cartesian">
+  <diagram dimensions="(150,150)" margins="5">
+    <coordinates bbox="(-1,-1,5,5)">
+      <axes decorations="no"/>
+      <definition>z=(3,4)</definition>
+      <triangle vertices="((0,0),(z[0],0),z)" stroke="black"/>
+      <label anchor="(z[0]/2,0)" alignment="south">
+        <m>x</m>
+      </label>
+      <label anchor="(z[0],z[1]/2)" alignment="east">
+        <m>y</m>
+      </label>
+      <label anchor="z" alignment="ne">
+        <m>z</m>
+      </label>
+    </coordinates>
+  </diagram>
+</prefigure>

@@ -1,0 +1,26 @@
+<prefigure xmlns="https://prefigure.org"
+           label="polar-rep">
+  <diagram dimensions="(300,300)" margins="(5,5,15,5)">
+    <coordinates bbox="(-2,-2,2,2)">
+      <definition>polar(r,t)=(r*cos(t), r*sin(t))</definition>
+      <definition>z1=polar(1,pi/4)</definition>
+      <definition>z2=polar(1,7*pi/8)</definition>
+      <definition>z3=polar(1,3*pi/2)</definition>
+      <axes decorations="no"/>
+      <circle at="circle" center="(0,0)" radius="1" stroke="black"/>
+      
+      <point at="z1" p="z1" fill="black" stroke="none" alignment="ne"
+             offset="(-10,0)">
+        <m>e^{\frac{\pi i}{4}} = \frac1{\sqrt{2}}+i\frac{1}{\sqrt{2}}</m>
+      </point>
+      
+      <point at="z2" p="z2" fill="black" stroke="none" alignment="nw">
+        <m>e^{\frac{7\pi i}{8}}</m>
+      </point>
+      
+      <point at="z3" p="z3" fill="black" stroke="none" alignment="se">
+        <m>e^{-\frac{\pi i}{2}}=-i</m>
+      </point>
+    </coordinates>
+  </diagram>
+</prefigure>

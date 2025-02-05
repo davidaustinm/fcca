@@ -1,6 +1,6 @@
 generated-assets
 output
 logs
-source/prefigure
+source/prefigure/output
 .error_schema.log
 *~

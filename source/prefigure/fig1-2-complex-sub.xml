@@ -1,0 +1,32 @@
+<prefigure xmlns="https://prefigure.org"
+           label="complex-sub">
+  <diagram dimensions="(250,250)" margins="5">
+    <coordinates bbox="(-6,-3,6,9)">
+      <definition>z1=(3,5)</definition>
+      <definition>z2=(-4.5,2)</definition>
+      <definition>d = z1-z2 </definition>
+      <axes decorations="no"/>
+      <group at="z1">
+        <vector v="z1" thickness="2"/>
+        <label anchor="z1" alignment="ne">
+          <m>z_1</m>
+        </label>
+      </group>
+      
+      <group at="z2">
+        <vector v="z2" thickness="2"/>
+        <label anchor="z2" alignment="sw">
+          <m>z_2</m>
+        </label>
+      </group>
+      
+      <group at="sum">
+        <vector v="d" tail="z2" thickness="2"/>
+        <label anchor="midpoint(z1,z2)" alignment="nw">
+          <m>z_1-z_2</m>
+        </label>
+      </group>
+      
+    </coordinates>
+  </diagram>
+</prefigure>

@@ -1,0 +1,20 @@
+<prefigure xmlns="https://prefigure.org"
+           label="table-polar">
+  <diagram dimensions="(150,150)" margins="5">
+    <coordinates bbox="(-1,-1,5,5)">
+      <axes decorations="no"/>
+      <definition>z=(3,4)</definition>
+      <angle-marker points="((10,0),(0,0),z)" radius="20"
+                    offset="(3,-3)">
+        <m>\theta</m>
+      </angle-marker>
+      <line endpoints="((0,0),z)" stroke="black"/>
+      <label anchor="1/2*z" alignment="nw">
+        <m>r</m>
+      </label>
+      <label anchor="z" alignment="ne">
+        <m>z</m>
+      </label>
+    </coordinates>
+  </diagram>
+</prefigure>
