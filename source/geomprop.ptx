@@ -1,60 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="geomprop">
   <title>From Algebra to Geometry and Back</title>
   <p>
-        <idx><h>complex plane</h></idx>
-    Although we just introduced a new way of writing complex numbers, let's for a moment return to the <m>(x,y)</m>-notation.
-    It suggests that we can think of a complex number as a two-dimensional real vector.
-        <idx><h>vector</h></idx>
+    Although we just introduced a new way of writing complex numbers,
+    let's for a moment return to the <m>(x,y)</m>-notation. 
+    <idx><h>complex plane</h></idx>
+    It suggests that we can think of a complex number as a
+    two-dimensional real vector. 
+    <idx><h>vector</h></idx>
     When plotting these vectors in the plane <m>\R^2</m>,
-    we will call the <m>x</m>-axis the <em>real axis
-        <idx><h>real axis</h></idx>
-    </em> and the <m>y</m>-axis the <em>imaginary axis
-        <idx><h>imaginary axis</h></idx>
-    </em>.
-    The addition that we defined for complex numbers resembles vector addition;
+    we will call the <m>x</m>-axis the <em>real axis</em>
+    and the <m>y</m>-axis the <em>imaginary axis</em>.
+    <idx><h>imaginary axis</h></idx>
+    <idx><h>real axis</h></idx>
+    <idx><h>axis</h><h>real</h></idx>
+    <idx><h>axis</h><h>imaginary</h></idx>
+    The addition that we defined for complex numbers resembles vector
+    addition; 
     see <xref ref="fig_addition">Figure</xref>.
     The analogy stops at multiplication: there is no
     <q>usual</q>
     multiplication of two vectors in <m>\R^2</m> that gives another vector,
-    and certainly not one that agrees with our definition of the product of two complex numbers.
-        <idx><h>axis</h><h>real</h></idx>
-        <idx><h>axis</h><h>imaginary</h></idx>
+    and certainly not one that agrees with our definition of the
+    product of two complex numbers. 
   </p>
+
   <figure xml:id="fig_addition">
     <caption>Addition of complex numbers.</caption>
-    <me>
-      \figureinput Rtex/addition
-    </me>
+    <image width="50%">
+      <prefigure xmlns="https://prefigure.org"
+                 label="complex-add">
+        <diagram dimensions="(250,250)" margins="5">
+          <coordinates bbox="(-6,-3,6,9)">
+            <definition>z1=(3,5)</definition>
+            <definition>z2=(-4.5,2)</definition>
+            <definition>s = z1+z2 </definition>
+            <axes decorations="no"/>
+            <path start="z1" stroke="#999" dash="6 6">
+              <lineto point="z1"/>
+              <rlineto point="z2"/>
+              <rlineto point="-z1"/>
+            </path>
+            <group at="z1">
+              <vector v="z1" thickness="2"/>
+              <label anchor="z1" alignment="ne">
+                <m>z_1</m>
+              </label>
+            </group>
+            
+            <group at="z2">
+              <vector v="z2" thickness="2"/>
+              <label anchor="z2" alignment="sw">
+                <m>z_2</m>
+              </label>
+            </group>
+            
+            <group at="sum">
+              <vector v="s" thickness="2"/>
+              <label anchor="s" alignment="nw">
+                <m>z_1+z_2</m>
+              </label>
+            </group>
+             
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
   </figure>
+
   <p>
-    Any vector in <m>\R^2</m> is defined by its two coordinates.
-    On the other hand,
-    it is also determined by its length and the angle it encloses with,
-    say, the positive real axis;
-    let's define these concepts thoroughly.
+    Any vector in <m>\R^2</m> is defined by its two coordinates.  On
+    the other hand, it is also determined by its length and the angle
+    it encloses with, say, the positive real axis; let's define these
+    concepts thoroughly.
   </p>
+  
   <definition>
     <statement>
       <p>
-        The <em>absolute value
-            <idx><h>absolute value</h></idx>
-        </em> (also called the <em>modulus
-            <idx><h>modulus</h></idx>
-        </em>) of <m>z = x+iy</m> is
+        The <em>absolute value</em>
+        (also called the <em>modulus</em>)
+        of <m>z = x+iy</m> is
         <me>
-          r \= \left| z \right| \ := \ \sqrt{ x^2 + y^2 } \,
+          r \= \left| z \right| \ := \ \sqrt{ x^2 + y^2 } 
         </me>,
-        and an <em>argument
-            <idx><h>argument</h></idx>
-        </em> of <m>z = x+iy</m> is a number <m>\phi \in \R</m> such that
+        and an <em>argument</em>
+        of <m>z = x+iy</m> is a number <m>\phi \in \R</m> such that
         <me>
           x = r \cos \phi \qquad \text{ and }  \qquad y = r \sin \phi \,
         </me>.
+        <idx><h>modulus</h></idx>
+        <idx><h>absolute value</h></idx>
+        <idx><h>argument</h></idx>
       </p>
     </statement>
   </definition>
   <p>
-    A given complex number <m>z = x+iy</m> has infinitely many possible arguments.
+    A given complex number <m>z = x+iy</m> has infinitely many
+    possible arguments. 
     For instance,
     the number <m>1 = 1 + 0i</m> lies on the positive real axis,
     and so has argument <m>0</m>,
@@ -69,8 +112,10 @@
     just as we saw for the example <m>z = 1</m>.
   </p>
   <p>
-    The absolute value of the difference of two vectors has a nice geometric interpretation:
+    The absolute value of the difference of two vectors has a nice
+    geometric interpretation: 
   </p>
+
   <proposition xml:id="prop_distance">
     <statement>
       <p>
@@ -85,57 +130,105 @@
         <me>
           d(z_1,z_2) \= |z_1 - z_2| \= |z_2 - z_1|\,
         </me>.
+        <idx><h>distance of complex numbers</h></idx>
       </p>
     </statement>
   </proposition>
-  <p>
-        <idx><h>distance of complex numbers</h></idx>
-  </p>
+
   <proof>
     <p>
       Let <m>z_1 = x_1 + iy_1</m> and <m>z_2 = x_2 + iy_2</m>.
       From geometry we know that
       <me>
-        d(z_1, z_2) \= \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}\,
+        d(z_1, z_2) \= \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}\, 
       </me>.
     </p>
     <p>
       This is the definition of <m>|z_1 - z_2|</m>.
-      Since <m>(x_1 - x_2)^2 = (x_2 - x_1)^2</m> and <m>(y_1 - y_2)^2 = (y_2 - y_1)^2</m>,
+      Since <m>(x_1 - x_2)^2 = (x_2 - x_1)^2</m> and <m>(y_1 - y_2)^2
+      = (y_2 - y_1)^2</m>, 
       this is also equal to <m>|z_2 - z_1|</m>.
     </p>
   </proof>
   <figure xml:id="distfig">
-    <caption>Geometry behind the distance between two complex numbers.</caption>
-    <me>
-      \figureinput Rtex/distance
-    </me>
+    <caption>Geometry behind the distance between two complex
+    numbers.</caption>
+    <image width="50%">
+      <prefigure xmlns="https://prefigure.org"
+                 label="complex-sub">
+        <diagram dimensions="(250,250)" margins="5">
+          <coordinates bbox="(-6,-3,6,9)">
+            <definition>z1=(3,5)</definition>
+            <definition>z2=(-4.5,2)</definition>
+            <definition>d = z1-z2 </definition>
+            <axes decorations="no"/>
+            <group at="z1">
+              <vector v="z1" thickness="2"/>
+              <label anchor="z1" alignment="ne">
+                <m>z_1</m>
+              </label>
+            </group>
+            
+            <group at="z2">
+              <vector v="z2" thickness="2"/>
+              <label anchor="z2" alignment="sw">
+                <m>z_2</m>
+              </label>
+            </group>
+            
+            <group at="sum">
+              <vector v="d" tail="z2" thickness="2"/>
+              <label anchor="midpoint(z1,z2)" alignment="nw">
+                <m>z_1-z_2</m>
+              </label>
+            </group>
+            
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <idx><h>geometric interpretation of multiplication</h></idx>
   </figure>
+
   <p>
-        <idx><h>geometric interpretation of multiplication</h></idx>
+    That <m>|z_1 - z_2| = |z_2 - z_1|</m> simply says that the vector
+    from <m>z_1</m> to <m>z_2</m> has the same length as the vector
+    from <m>z_2</m> to<nbsp/><m>z_1</m>. 
   </p>
   <p>
-    That <m>|z_1 - z_2| = |z_2 - z_1|</m> simply says that the vector from <m>z_1</m> to <m>z_2</m> has the same length as the vector from <m>z_2</m> to<nbsp/><m>z_1</m>.
+    It is very useful to keep this geometric interpretation in mind
+    when thinking about the absolute value of the difference of two
+    complex numbers. 
   </p>
   <p>
-    It is very useful to keep this geometric interpretation in mind when thinking about the absolute value of the difference of two complex numbers.
-  </p>
-  <p>
-    One reason to introduce the absolute value and argument of a complex number is that they allow us to give a geometric interpretation for the multiplication of two complex numbers.
+    One reason to introduce the absolute value and argument of a
+    complex number is that they allow us to give a geometric
+    interpretation for the multiplication of two complex numbers. 
     Let's say we have two complex numbers:
     <m>x_1 + i y_1</m>,
     with absolute value <m>r_1</m> and argument <m>\phi_1</m>,
     and <m>x_2 + i y_2</m>,
     with absolute value <m>r_2</m> and argument <m>\phi_2</m>.
-    This means we can write <m>x_1 + i y_1 = ( r_1 \cos \phi_1 ) + i ( r_1 \sin \phi_1 )</m> and <m>x_2 + i y_2 = ( r_2 \cos \phi_2 ) + i ( r_2 \sin \phi_2 )</m>.
+    This means we can write <m>x_1 + i y_1 = ( r_1 \cos \phi_1 ) + i (
+    r_1 \sin \phi_1 )</m> and <m>x_2 + i y_2 = ( r_2 \cos \phi_2 ) + i
+    ( r_2 \sin \phi_2 )</m>. 
     To compute the product,
-    we make use of some classic trigonometric identities:
-        <idx><h>trigonometric identities</h></idx>
+    we make use of some classic trigonometric identities: 
+    <idx><h>trigonometric identities</h></idx> 
     <md>
-      <mrow>\amp ( x_1 + i y_1 ) ( x_2 + i y_2 ) \= \left( r_1 \cos \phi_1 + i \, r_1 \sin \phi_1 \right) \left( r_2 \cos \phi_2 + i \, r_2 \sin \phi_2 \right)</mrow>
-      <mrow>\amp \qquad \= ( r_1 r_2 \cos \phi_1 \cos \phi_2 - r_1 r_2 \sin \phi_1 \sin \phi_2 ) + i ( r_1 r_2 \cos \phi_1 \sin \phi_2 + r_1 r_2 \sin \phi_1 \cos \phi_2 )</mrow>
-      <mrow>\amp \qquad \= r_1 r_2 \bigl( ( \cos \phi_1 \cos \phi_2 - \sin \phi_1 \sin \phi_2 ) + i ( \cos \phi_1 \sin \phi_2 + \sin \phi_1 \cos \phi_2 ) \bigr)</mrow>
-      <mrow>\amp \qquad \= r_1 r_2 \bigl( \cos ( \phi_1 + \phi_2 ) + i \sin ( \phi_1 + \phi_2 ) \bigr) \, </mrow>
+      <mrow>\amp ( x_1 + i y_1 ) ( x_2 + i y_2 ) \= \left( r_1 \cos
+      \phi_1 + i \, r_1 \sin \phi_1 \right) \left( r_2 \cos \phi_2 + i
+      \, r_2 \sin \phi_2 \right)</mrow> 
+      <mrow>\amp \qquad \= ( r_1 r_2 \cos \phi_1 \cos \phi_2 - r_1 r_2
+      \sin \phi_1 \sin \phi_2 ) </mrow>
+      <mrow> \amp \qquad\qquad + i ( r_1 r_2 \cos \phi_1 \sin \phi_2
+      + r_1 r_2 \sin \phi_1 \cos \phi_2 )</mrow> 
+      <mrow>\amp \qquad \= r_1 r_2 \bigl( ( \cos \phi_1 \cos \phi_2 -
+      \sin \phi_1 \sin \phi_2 )</mrow>
+      <mrow> \amp \qquad \qquad + i ( \cos \phi_1 \sin \phi_2 + \sin
+      \phi_1 \cos \phi_2 ) \bigr)</mrow> 
+      <mrow>\amp \qquad \= r_1 r_2 \bigl( \cos ( \phi_1 + \phi_2 ) + i
+      \sin ( \phi_1 + \phi_2 ) \bigr) \, </mrow> 
     </md>.
   </p>
   <p>
@@ -148,18 +241,68 @@
   </p>
   <figure>
     <caption>Multiplication of complex numbers.</caption>
-    <me>
-      \figureinput Rtex/multiplication
-    </me>
+    <image width="50%">
+      <prefigure xmlns="https://prefigure.org"
+                 label="complex-mult">
+        <diagram dimensions="(250,250)" margins="5">
+          <coordinates bbox="(-6,-4,6,8)">
+            <definition>polar(r,t)=(r*cos(t), r*sin(t))</definition>
+            <definition>r1=2</definition>
+            <definition>r2=4</definition>
+            <definition>t1=0.9</definition>
+            <definition>t2=2.7 </definition>
+            <definition>z1=polar(r1,t1)</definition>
+            <definition>z2=polar(r2,t2)</definition>
+            <definition>z3=polar(6,t1+t2)</definition>
+            <axes decorations="no"/>
+            <group at="z1">
+              <angle-marker points="((10,0),(0,0),z1)" radius="20"
+                            stroke="#aaa" offset="(3,-5)">
+                <m>\phi_1</m>
+              </angle-marker>
+              <vector v="z1" thickness="2"/>
+              <label anchor="z1" alignment="nw">
+                <m>z_1</m>
+              </label>
+            </group>
+            
+            <group at="z2">
+              <angle-marker points="((10,0),(0,0),z2)" radius="65"
+                            stroke="#aaa">
+                <m>\phi_2</m>
+              </angle-marker>
+              <vector v="z2" thickness="2"/>
+              <label anchor="z2" alignment="ne">
+                <m>z_2</m>
+              </label>
+            </group>
+            
+            <group at="product">
+              <angle-marker points="((10,0),(0,0),z3)" radius="100"
+                            stroke="#aaa" offset="(-20,3)">
+                <m>\phi_1+\phi_2</m>
+              </angle-marker>
+              <vector v="z3" thickness="2"/>
+              <label anchor="z3" alignment="se">
+                <m>z_1z_2</m>
+              </label>
+            </group>
+            
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
   </figure>
   <p>
     In view of the above calculation,
-    it should come as no surprise that we will have to deal with quantities of the form <m>\cos \phi + i \sin \phi</m>
+    it should come as no surprise that we will have to deal with
+    quantities of the form <m>\cos \phi + i \sin \phi</m> 
     (where <m>\phi</m> is some real number)
     quite a bit.
     To save space, bytes, ink, etc., (and because
     <q>Mathematics is for lazy people</q><fn>
-    Peter Hilton (Invited address, Hudson River Undergraduate Mathematics Conference 2000).
+    Peter Hilton (Invited address, Hudson River Undergraduate
+    Mathematics Conference 2000). 
     </fn>) we introduce a shortcut notation and define
     <me>
       e^{ i \phi } \ := \ \cos \phi + i \sin \phi \,
@@ -167,7 +310,34 @@
   </p>
   <figure xml:id="fig_rootsof1">
     <caption>Three sample complex numbers of the form <m>e^{ i \phi }</m>.</caption>
-    <image source="images/picture2a9b4446a5_rev.png"/>
+    <image width="50%">
+      <prefigure xmlns="https://prefigure.org"
+                 label="polar-rep">
+        <diagram dimensions="(300,300)" margins="(5,5,15,5)">
+          <coordinates bbox="(-2,-2,2,2)">
+            <definition>polar(r,t)=(r*cos(t), r*sin(t))</definition>
+            <definition>z1=polar(1,pi/4)</definition>
+            <definition>z2=polar(1,7*pi/8)</definition>
+            <definition>z3=polar(1,3*pi/2)</definition>
+            <axes decorations="no"/>
+            <circle at="circle" center="(0,0)" radius="1" stroke="black"/>
+            
+            <point at="z1" p="z1" fill="black" stroke="none" alignment="ne"
+                   offset="(-10,0)">
+              <m>e^{\frac{\pi i}{4}} = \frac1{\sqrt{2}}+i\frac{1}{\sqrt{2}}</m>
+            </point>
+            
+            <point at="z2" p="z2" fill="black" stroke="none" alignment="nw">
+              <m>e^{\frac{7\pi i}{8}}</m>
+            </point>
+            
+            <point at="z3" p="z3" fill="black" stroke="none" alignment="se">
+              <m>e^{-\frac{\pi i}{2}}=-i</m>
+            </point>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
   </figure>
   <p>
     <xref ref="fig_rootsof1">Figure</xref> shows three examples.
@@ -184,14 +354,16 @@
     is somewhat deeper.
     We'll explore this in <xref ref="sec_logexp">Section</xref>.
     </fn> We will later see in <xref ref="exampleschapter">Chapter</xref>
-    that it has an intimate connection to the complex exponential function.
-    For now, we motivate this maybe strange seeming definition by collecting some of its properties:
+    that it has an intimate connection to the complex exponential
+    function. 
+    For now, we motivate this maybe strange seeming definition by
+    collecting some of its properties: 
   </p>
   <proposition xml:id="easyexp">
     <statement>
       <p>
         For any <m>\phi, \phi_1, \phi_2 \in \R</m>,
-        <ol marker="a">
+        <ul>
           <li>
             <p>
               <m>e^{ i \phi_1 } \, e^{ i \phi_2 } = e^{ i ( \phi_1 + \phi_2 ) }</m>
@@ -222,35 +394,51 @@
               <m>\frac{ d }{ \diff{\phi} } \, e^{ i \phi } = i \, e^{ i \phi }</m>.
             </p>
           </li>
-        </ol>
+        </ul>
       </p>
     </statement>
   </proposition>
   <p>
-    You are encouraged to prove them (<xref ref="ex_easyexp">Exercise</xref>);
+    You are encouraged to prove them (see <xref
+    ref="ex_easyexp">Exercise</xref>); 
     again we give a sample.
   </p>
   <proof>
     <p>
       By definition of <m>e^{ i \phi }</m>,
-      <me>
-        \frac{ d }{ \diff{\phi} } \, e^{ i \phi } \= \frac{ d }{ \diff{\phi} } \left( \cos \phi + i \sin \phi \right) \= - \sin \phi + i \cos \phi \= i \left( \cos \phi + i \sin \phi \right) \= i \, e^{ i \phi } . \qedhere
-      </me>
+      <md>
+        <mrow>
+        \frac{ d }{ \diff{\phi} } \, e^{ i \phi } \amp \= \frac{ d }{
+        \diff{\phi} } \left( \cos \phi + i \sin \phi \right)
+        </mrow>
+        <mrow>\amp \= - \sin
+        \phi + i \cos \phi
+        </mrow>
+        <mrow>
+          \amp\= i \left( \cos \phi + i \sin \phi \right)
+        </mrow>
+        <mrow>
+          \amp \= i \, e^{ i \phi } .
+        </mrow>
+      </md>
     </p>
   </proof>
   <p>
     <xref ref="easyexp">Proposition</xref>
     implies that <m>( e^{ 2 \pi i \frac m n } )^n = 1</m> for any integers <m>m</m> and <m>n > 0</m>.
     Thus numbers of the form <m>e^{ 2 \pi i q }</m> with
-    <m>q \in \Q</m> play a pivotal role in solving equations of the form <m>z^n = 1</m><mdash/>plenty of reason to give them a special name.
+    <m>q \in \Q</m> play a pivotal role in solving equations of the
+    form <m>z^n = 1</m>, which is reason to give them a special
+    name. 
   </p>
   <definition>
     <statement>
       <p>
-        A <em>root of unity
-            <idx><h>root of unity</h></idx>
-        </em> is a number of the form
-        <m>e^{ 2 \pi i \frac m n }</m> for some integers <m>m</m> and <m>n > 0</m>.
+        A <em>root of unity</em>
+        is a number of the form
+        <m>e^{ 2 \pi i \frac m n }</m> for some integers <m>m</m> and
+        <m>n > 0</m>. 
+        <idx><h>root of unity</h></idx>
         Equivalently
         (by <xref ref="ex_rootofunity">Exercise</xref>),
         a root of unity is a complex number <m>\zeta</m> such that
@@ -258,47 +446,127 @@
         In this case, we call <m>\zeta</m> an
         <em><m>n\th</m> root of unity</em>.
         If <m>n</m> is the smallest positive integer with the property
-        <m>\zeta^n = 1</m> then <m>\zeta</m> is a <em>primitive</em>
+        <m>\zeta^n = 1</m>, then <m>\zeta</m> is a <em>primitive</em>
         <m>n\th</m> root of unity.
-            <idx><h>root of unity</h><h>primitive</h></idx>
-            <idx><h>primitive root of unity</h></idx>
+        <idx><h>root of unity</h><h>primitive</h></idx>
+        <idx><h>primitive root of unity</h></idx>
       </p>
     </statement>
   </definition>
+  
   <example>
     <statement>
       <p>
-        The <m>4\th</m> roots of unity are <m>\pm 1</m> and <m>\pm i = e^{ \pm \frac{ \pi i }{ 2 } }</m>.
-        The latter two are primitive <m>4\th</m> roots of unity. \pushQED{}\popQED
+        The <m>4\th</m> roots of unity are <m>\pm 1</m> and <m>\pm i =
+        e^{ \pm \frac{ \pi i }{ 2 } }</m>. 
+        The latter two are primitive <m>4\th</m> roots of
+        unity. 
       </p>
     </statement>
   </example>
   <p>
     With our new notation, the sentence
-    <em>the complex number <m>x+iy</m> has absolute value <m>r</m> and argument <m>\phi</m></em> now becomes the identity
+    <q>the complex number <m>x+iy</m> has absolute value <m>r</m> and
+    argument <m>\phi</m></q> now becomes the identity 
     <me>
       x+iy \= r \, e^{ i \phi }
     </me>.
   </p>
   <p>
-    The left-hand side is often called the <em>rectangular form
-        <idx><h>rectangular form</h></idx>
-    </em>, the right-hand side the <em>polar form
-        <idx><h>polar form</h></idx>
-    </em> of this complex number.
+    The left-hand side is often called the <em>rectangular form</em>,
+    and the right-hand side the <em>polar form</em>
+    of this complex number.
+    <idx><h>polar form</h></idx>
+    <idx><h>rectangular form</h></idx> 
   </p>
   <p>
     We now have five different ways of thinking about a complex number:
     the formal definition, in rectangular form, in polar form,
     and geometrically, using Cartesian coordinates or polar coordinates.
     Each of these five ways is useful in different situations,
-    and translating between them is an essential ingredient in complex analysis.
-    The five ways and their corresponding notation are listed in <xref ref="fig_5ways">Figure</xref>.
+    and translating between them is an essential ingredient in complex
+    analysis. 
+    The five ways and their corresponding notation are listed in <xref
+    ref="fig_5ways"/>.
     This list is not exhaustive;
     see, e.g., <xref ref="ex_Casmatrices">Exercise</xref>.
   </p>
-  <figure xml:id="fig_5ways">
-    <caption>Five ways of thinking about a complex number.</caption>
-    <image source=""/>
-  </figure>
+  <table xml:id="fig_5ways">
+    <title>Five ways of thinking about a complex number.</title>
+    <tabular halign="center">
+      <row bottom="minor">
+        <cell colspan="2">
+          Formal <m>(x,y)</m>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell>
+          Algebraic
+        </cell>
+        <cell>
+          Geometric
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell>
+          Rectangular: <m>x+iy</m>
+        </cell>
+        <cell>
+          Cartesian
+          <image width="80%">
+            <prefigure xmlns="https://prefigure.org"
+                       label="table-cartesian">
+              <diagram dimensions="(150,150)" margins="5">
+                <coordinates bbox="(-1,-1,5,5)">
+                  <axes decorations="no"/>
+                  <definition>z=(3,4)</definition>
+                  <triangle vertices="((0,0),(z[0],0),z)" stroke="black"/>
+                  <label anchor="(z[0]/2,0)" alignment="south">
+                    <m>x</m>
+                  </label>
+                  <label anchor="(z[0],z[1]/2)" alignment="east">
+                    <m>y</m>
+                  </label>
+                  <label anchor="z" alignment="ne">
+                    <m>z</m>
+                  </label>
+                </coordinates>
+              </diagram>
+            </prefigure>
+          </image>
+        </cell>
+      </row>
+        
+      <row>
+        <cell>
+          Exponential: <m>re^{i\theta}</m>
+        </cell>
+        <cell>
+          Polar
+          <image width="80%">
+            <prefigure xmlns="https://prefigure.org"
+                       label="table-polar">
+              <diagram dimensions="(150,150)" margins="5">
+                <coordinates bbox="(-1,-1,5,5)">
+                  <axes decorations="no"/>
+                  <definition>z=(3,4)</definition>
+                  <angle-marker points="((10,0),(0,0),z)" radius="20"
+                                offset="(3,-3)">
+                    <m>\theta</m>
+                  </angle-marker>
+                  <line endpoints="((0,0),z)" stroke="black"/>
+                  <label anchor="1/2*z" alignment="nw">
+                    <m>r</m>
+                  </label>
+                  <label anchor="z" alignment="ne">
+                    <m>z</m>
+                  </label>
+                </coordinates>
+              </diagram>
+            </prefigure>
+          </image>
+        </cell>
+      </row>
+    </tabular>
+  </table>
 </section>

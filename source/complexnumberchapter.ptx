@@ -76,8 +76,8 @@
     </p>
   </introduction>
   <xi:include  href="sec_defalg.ptx"/>
-  <!--
   <xi:include  href="geomprop.ptx"/>
+  <!--
   <xi:include  href="sec_geometricprops.ptx"/>
   <xi:include  href="sec_topologyintro.ptx"/>
   <xi:include  href="sec_optionallab.ptx"/>

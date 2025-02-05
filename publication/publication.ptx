@@ -125,7 +125,7 @@
         theorem="no"
         proof="no"
         definition="no"
-        example="yes"
+        example="no"
         example-solution="yes"
         project="no"
         task="no"
