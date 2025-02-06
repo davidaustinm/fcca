@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="complexnumberchapter">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:id="complexnumberchapter">
   <title>Complex Numbers</title>
   <introduction>
     <blockquote>
@@ -77,8 +78,8 @@
   </introduction>
   <xi:include  href="sec_defalg.ptx"/>
   <xi:include  href="geomprop.ptx"/>
-  <!--
   <xi:include  href="sec_geometricprops.ptx"/>
+  <!--
   <xi:include  href="sec_topologyintro.ptx"/>
   <xi:include  href="sec_optionallab.ptx"/>
   -->

@@ -1,12 +1,18 @@
-<section xml:id="sec_geometricprops">
+<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:id="sec_geometricprops">
   <title>Geometric Properties</title>
   <p>
-    From the chain of basic inequalities <m>- \sqrt{ x^2 + y^2 } \le - \sqrt{ x^2 } \le x \le \sqrt{ x^2 } \le \sqrt{ x^2 + y^2 }</m> (or,
+    From the chain of basic inequalities
+    <me>- \sqrt{ x^2 + y^2 } \le - \sqrt{ x^2 } \le x \le \sqrt{ x^2 }
+    \le \sqrt{ x^2 + y^2 }
+    </me> (or,
     alternatively,
     by arguing with basic geometric properties of triangles),
     we obtain the inequalities
     <men xml:id="trianglegeom">
-      -|z| \ \leq \ \Re(z) \ \leq \ |z| \qquad \text{ and }  \qquad -|z| \ \leq \ \Im(z) \ \leq \ |z| \,
+      -|z| \ \leq \ \Re(z) \ \leq \ |z| \qquad \text{ and }  \qquad
+      -|z| \ \leq \ \Im(z) \ \leq \ |z| \, 
     </men>.
   </p>
   <p>
@@ -16,14 +22,15 @@
     </me>.
   </p>
   <p>
-    This is one of many reasons to give the process of passing from <m>x+iy</m> to <m>x-iy</m> a special name.
+    This is one of many reasons to give the process of passing from
+    <m>x+iy</m> to <m>x-iy</m> a special name. 
   </p>
   <definition>
     <statement>
       <p>
-        The number <m>x-iy</m> is the <em>(complex) conjugate
-            <idx><h>conjugate</h></idx>
-        </em> of <m>x+iy</m>.
+        The number <m>x-iy</m> is the <em>(complex) conjugate</em>
+        of <m>x+iy</m>.
+        <idx><h>conjugate</h></idx>
         We denote the conjugate by
         <me>
           \overline{x+iy} \ := \ x-iy \,
@@ -33,14 +40,30 @@
   </definition>
   <p>
     Geometrically,
-    conjugating <m>z</m> means reflecting the vector corresponding to <m>z</m> with respect to the real axis.
-    The following collects some basic properties of the conjugate.
+    conjugating <m>z</m> means reflecting the vector corresponding to
+    <m>z</m> with respect to the real axis, as shown in <xref
+    ref="fig-conjugate"/>.
+  </p>
+
+  <figure xml:id="fig-conjugate">
+    <image width="50%">
+      <xi:include href="prefigure/conjugate.xml"/>
+    </image>
+    <caption>
+      The complex conjugate <m>\conj{z}</m> is
+      obtained by reflecting <m>z</m> across the real axis.
+    </caption>
+  </figure>
+
+  <p>
+    The following proposition collects some basic properties of the
+    conjugate. 
   </p>
   <proposition xml:id="conjugation">
     <statement>
       <p>
-        For any <m>z, z_1, z_2 \in \C</m>, {<nbsp/>}
-        <ol marker="a">
+        For any <m>z, z_1, z_2 \in \C</m>, 
+        <ol marker="a) ">
           <li>
             <p>
               <m>\conj{z_1 \pm z_2} = \conj{z_1}\pm\conj{z_2}</m>
@@ -53,7 +76,8 @@
           </li>
           <li>
             <p>
-              <m>\conj{ \left( \frac{ z_1 }{ z_2 } \right) } = \frac{ \ \conj{z_1} \ }{ \conj{z_2} }</m>
+              <m>\conj{ \left( \frac{ z_1 }{ z_2 } \right) } = \frac{
+              \ \conj{z_1} \ }{ \conj{z_2} }</m> 
             </p>
           </li>
           <li>
@@ -91,7 +115,8 @@
     </statement>
   </proposition>
   <p>
-    The proofs of these properties are easy (<xref ref="ex_conjugation">Exercise</xref>);
+    The proofs of these properties are straightforward (see <xref
+    ref="ex_conjugation">Exercise</xref>); 
     once more we give a sample.
   </p>
   <proof>
@@ -99,15 +124,26 @@
       Let <m>z_1 = x_1 + i y_1</m> and <m>z_2 = x_2 + i y_2</m>.
       Then
       <md>
-        <mrow>\conj{z_1 \cdot z_2} \amp \= \conj{ (x_1 x_2 - y_1 y_2) + i ( x_1 y_2 + x_2 y_1 ) } \= (x_1 x_2 - y_1 y_2) - i ( x_1 y_2 + x_2 y_1 )</mrow>
-        <mrow>\amp \= (x_1 - i y_1) (x_2 - i y_2) \= \conj{z_1}\cdot\conj{z_2} \, . \qedhere</mrow>
+        <mrow>\conj{z_1 \cdot z_2} \amp \= \conj{ (x_1 x_2 - y_1 y_2)
+        + i ( x_1 y_2 + x_2 y_1 ) }
+        </mrow>
+        <mrow>
+          \amp \= (x_1 x_2 - y_1 y_2) - i ( x_1 y_2 + x_2 y_1 )
+        </mrow>
+        <mrow>
+          \amp \= (x_1 - i y_1) (x_2 - i y_2)
+        </mrow>
+        <mrow>
+          \amp \= \conj{z_1}\cdot\conj{z_2} \, .
+        </mrow>
       </md>
     </p>
   </proof>
   <p>
-    We note that <xref ref="i_zzbar"></xref>
+    We note that the property
+    <m>\abs{z}^2=z\conj z</m>
     yields a neat formula for the inverse of a nonzero complex number,
-    which is implicit already in<nbsp/><xref ref="lastmult"/>:
+    which is implicit already in <xref ref="lastmult"/>:
     <me>
       z^{-1} \= \frac1z \= \frac{\conj z}{\abs{z}^2} \,
     </me>.
@@ -129,48 +165,92 @@
   </proposition>
   <p>
     By drawing a picture in the complex plane,
-    you should be able to come up with a geometric proof of the triangle inequality.
+    you should be able to come up with a geometric proof of the
+    triangle inequality. 
     Here we proceed algebraically:
   </p>
   <proof>
     <p>
-      We make extensive use of <xref ref="conjugation">Proposition</xref>:
+      We make extensive use of <xref ref="conjugation"/>
       <md>
-        <mrow>\left| z_1 + z_2 \right|^2 \amp = \ \left( z_1 + z_2 \right) \o{ \left( z_1 + z_2 \right) } \= \left( z_1 + z_2 \right) \left( \o{z_1} + \o{z_2} \right) \= z_1 \o{z_1} + z_1 \o{z_2} + z_2 \o{z_1} + z_2 \o{z_2}</mrow>
-        <mrow>\amp = \ \left| z_1 \right|^2 + z_1 \o{z_2} + \o{ z_1 \o{z_2} } + \left| z_2 \right|^2 \= \left| z_1 \right|^2 + 2 \Re \left( z_1 \o{z_2} \right) + \left| z_2 \right|^2</mrow>
-        <mrow>\amp \leq \ \left| z_1 \right|^2 + 2 \left| z_1 \o{z_2} \right| + \left| z_2 \right|^2 \= \left| z_1 \right|^2 + 2 \left| z_1 \right| \left| \o{z_2} \right| + \left| z_2 \right|^2 \= \left| z_1 \right|^2 + 2 \left| z_1 \right| \left| z_2 \right| + \left| z_2 \right|^2</mrow>
-        <mrow>\amp = \ \left( \left| z_1 \right| + \left| z_2 \right| \right)^2 </mrow>
+        <mrow>
+          \left| z_1 + z_2 \right|^2 \amp = \ \left( z_1 + z_2
+          \right) \o{ \left( z_1 + z_2 \right) }
+        </mrow>
+        <mrow>
+          \amp \= \left( z_1 + z_2
+          \right) \left( \o{z_1} + \o{z_2} \right)
+        </mrow>
+        <mrow>
+          \amp \= z_1 \o{z_1} + z_1
+          \o{z_2} + z_2 \o{z_1} + z_2 \o{z_2}
+        </mrow> 
+        <mrow>
+          \amp = \ \left| z_1 \right|^2 + z_1 \o{z_2} + \o{ z_1 \o{z_2}
+          } + \left| z_2 \right|^2
+        </mrow>
+        <mrow>
+          \amp \= \left| z_1 \right|^2 + 2 \Re
+          \left( z_1 \o{z_2} \right) + \left| z_2 \right|^2
+        </mrow>
+        <mrow>
+          \amp \leq \ \left| z_1 \right|^2 + 2 \left| z_1 \o{z_2}
+          \right| + \left| z_2 \right|^2
+        </mrow>
+        <mrow>
+          \amp \= \left| z_1 \right|^2 + 2
+          \left| z_1 \right| \left| \o{z_2} \right| + \left| z_2
+          \right|^2
+        </mrow>
+        <mrow>
+          \amp \= \left| z_1 \right|^2 + 2 \left| z_1 \right|
+          \left| z_2 \right| + \left| z_2 \right|^2
+        </mrow>
+        <mrow>
+          \amp = \ \left( \left| z_1 \right| + \left| z_2 \right|
+          \right)^2
+        </mrow>
       </md>,
       where the inequality follows from <xref ref="trianglegeom"/>.
-      Taking square roots on the left- and right-hand side proves our claim.
+      Taking square roots on the left- and right-hand sides proves our
+      claim. 
     </p>
   </proof>
   <p>
-    For future reference we list several useful variants of the triangle inequality:
+    For future reference we list several useful variants of the
+    triangle inequality: 
   </p>
   <corollary xml:id="cor_triangleineq">
     <statement>
       <p>
         For <m>z_1, z_2, \dots, z_n \in \C</m>,
-        we have the following relations: {<nbsp/>}
-        <ol marker="a">
+        we have the following relations:
+        <ol marker="a) ">
           <li xml:id="trianineqcor">
             <p>
-              The triangle inequality: \disp{\abs{\pm z_1\pm z_2} \le \abs{z_1}+\abs{z_2}.}
+              The triangle inequality:
+              <me>
+                \abs{\pm z_1\pm z_2} \le
+                \abs{z_1}+\abs{z_2}
+              </me>.
             </p>
           </li>
           <li xml:id="revtrianineq">
             <p>
               The reverse triangle inequality:
-    <idx><h>reverse triangle inequality</h></idx>
-              \disp{\abs{\pm z_1\pm z_2} \ge \bigl| \abs{z_1}-\abs{z_2} \bigr| <nbsp/> .} <idx><h>triangle inequality</h><h>reverse</h></idx>
+              <me>
+                \abs{\pm z_1\pm z_2} \ge \bigl|
+                \abs{z_1}-\abs{z_2} \bigr| <nbsp/>
+              </me>.
+              <idx><h>reverse triangle inequality</h></idx>
+              <idx><h>triangle inequality</h><h>reverse</h></idx> 
             </p>
           </li>
           <li xml:id="trianineqsum">
             <p>
               The triangle inequality for sums:
               <me>
-                \abs{\sum_{k=1}^n z_k} \ \le \ \sum_{k=1}^n \abs{z_k}
+                \abs{\sum_{k=1}^n z_k} \ \le \ \sum_{k=1}^n \abs{z_k} 
               </me>.
             </p>
           </li>
@@ -179,11 +259,12 @@
     </statement>
   </corollary>
   <p>
-    <xref ref="trianineqcor">Inequality</xref>
+    <xref ref="trianineqcor"/>
     is just a rewrite of the original triangle inequality,
     using the fact that <m>\abs{\pm z}=\abs{z}</m>,
     and <xref ref="trianineqsum"></xref> follows by induction.
-    The proof of the reverse triangle <xref ref="revtrianineq">inequality</xref>
-    is left as <xref ref="ex_reversetriangle">Exercise</xref>.
+    The proof of the reverse triangle <xref
+    ref="revtrianineq">inequality</xref> 
+    is left as <xref ref="ex_reversetriangle"/>.
   </p>
 </section>

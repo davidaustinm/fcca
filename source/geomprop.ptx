@@ -224,7 +224,7 @@
     <statement>
       <p>
         For any <m>\phi, \phi_1, \phi_2 \in \R</m>,
-        <ul>
+        <ol marker="a) ">
           <li>
             <p>
               <m>e^{ i \phi_1 } \, e^{ i \phi_2 } = e^{ i ( \phi_1 + \phi_2 ) }</m>
@@ -255,7 +255,7 @@
               <m>\frac{ d }{ \diff{\phi} } \, e^{ i \phi } = i \, e^{ i \phi }</m>.
             </p>
           </li>
-        </ul>
+        </ol>
       </p>
     </statement>
   </proposition>
