@@ -352,7 +352,7 @@
     This list is not exhaustive;
     see, e.g., <xref ref="ex_Casmatrices">Exercise</xref>.
   </p>
-  <table xml:id="fig_5ways">
+  <!-- <table xml:id="fig_5ways">
     <title>Five ways of thinking about a complex number.</title>
     <tabular halign="center">
       <row bottom="minor">
@@ -392,5 +392,116 @@
         </cell>
       </row>
     </tabular>
-  </table>
+  </table> -->
+
+<figure xml:id="fig_5ways-alt">
+  <caption>Five ways of thinking about a complex number</caption>
+  <sidebyside valign="middle" widths="10% 70%" margins="10% 10%">
+    <p>
+      <line>Formal</line> 
+        <line><m>(x,y)</m> </line>
+    </p>
+    <!-- <table xml:id="fig_5ways">
+    <title>Five ways of thinking about a complex number.</title> -->
+    <tabular halign="center">
+      <row bottom="minor">
+        <cell>
+          Algebraic:
+        </cell>
+        <cell>
+          <line>Rectangular</line>
+          <line> <m>x+iy</m> </line>
+        </cell>
+        <cell>
+          <line> Exponential </line>
+          <line> <m>re^{i\theta}</m> </line>
+        </cell>
+        
+        
+      </row>
+      <row bottom="minor">
+        <cell>
+          Geometric:
+        </cell>
+        <cell>
+          <line>Cartesian</line>
+          <line><image width="80%">
+            <xi:include href="prefigure/table-cartesian.xml"/>
+          </image> </line>
+        </cell>
+        <cell>
+          <line>Polar</line>
+          <line><image width="80%">
+            <xi:include href="prefigure/table-polar.xml"/>
+          </image>
+          </line>
+        </cell>
+      </row>
+    </tabular>
+  <!-- </table> -->
+  </sidebyside>
+    </figure>
+
+    <figure xml:id="fig_5ways-alt2">
+  <caption>Five ways of thinking about a complex number</caption>
+  <sidebyside valign="middle" widths="10% 40% 30%" margins="10% 10%">
+    <p>
+      <line>Formal</line> 
+        <line><m>(x,y)</m> </line>
+    </p>
+    <!-- <table xml:id="fig_5ways">
+    <title>Five ways of thinking about a complex number.</title> -->
+    <tabular halign="center">
+      <row header="yes" bottom="medium">
+        <cell> Algebraic: </cell>
+      </row>
+      <row>
+        <cell/>
+      </row>
+      <row>
+        <cell>
+          <line>Rectangular</line>
+          <line> <m>x+iy</m> </line>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell />
+      </row>
+
+      <row>
+        <cell>
+          <line> Exponential </line>
+          <line> <m>re^{i\theta}</m> </line>
+        </cell>
+      </row>
+    </tabular>
+        
+    
+    <tabular halign="center">
+      <row header="yes" bottom="medium">
+        <cell>
+          Geometric:
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell>
+          <line>Cartesian</line>
+          <line><image width="80%">
+            <xi:include href="prefigure/table-cartesian.xml"/>
+          </image> </line>
+        </cell>
+        </row>
+        <row>
+        <cell>
+          <line>Polar</line>
+          <line><image width="80%">
+            <xi:include href="prefigure/table-polar.xml"/>
+          </image>
+          </line>
+        </cell>
+      </row>
+    </tabular>
+  <!-- </table> -->
+  </sidebyside>
+    </figure>
 </section>
