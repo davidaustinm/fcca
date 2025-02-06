@@ -352,7 +352,7 @@
     This list is not exhaustive;
     see, e.g., <xref ref="ex_Casmatrices">Exercise</xref>.
   </p>
-  <!-- <table xml:id="fig_5ways">
+  <table xml:id="fig_5ways">
     <title>Five ways of thinking about a complex number.</title>
     <tabular halign="center">
       <row bottom="minor">
@@ -392,10 +392,14 @@
         </cell>
       </row>
     </tabular>
-  </table> -->
+  </table>
+
+  <p>
+    A second attempt at the table/figure.
+  </p>
 
 <figure xml:id="fig_5ways-alt">
-  <caption>Five ways of thinking about a complex number</caption>
+  <caption>Five ways of thinking about a complex number, take 2</caption>
   <sidebyside valign="middle" widths="10% 70%" margins="10% 10%">
     <p>
       <line>Formal</line> 
@@ -442,8 +446,12 @@
   </sidebyside>
     </figure>
 
+    <p>
+      A third attempt at the table/figure.
+    </p>
+
     <figure xml:id="fig_5ways-alt2">
-  <caption>Five ways of thinking about a complex number</caption>
+  <caption>Five ways of thinking about a complex number, take 3</caption>
   <sidebyside valign="middle" widths="10% 40% 30%" margins="10% 10%">
     <p>
       <line>Formal</line> 
@@ -503,5 +511,111 @@
     </tabular>
   <!-- </table> -->
   </sidebyside>
+    </figure>
+
+    <p>
+      Still another attempt at formatting the 5 ways.
+    </p>
+
+    
+
+
+    <figure xml:id="fig_5ways-alt3">
+  <caption>Five ways of thinking about a complex number, take 4</caption>
+  <!-- <sidebyside valign="middle" widths="20% 60%" margins="10% 10%"> -->
+    
+
+    <sbsgroup>
+    <sidebyside valigns="bottom middle middle">
+      <p>
+        <line>Formal</line> 
+        <line><m>(x,y)</m> </line>
+      </p>
+      <p>
+        <line>Rectangular</line>
+        <line> <m>x+iy</m> </line>
+      </p>
+      <figure xml:id="fig-cartesian-a">
+        <caption>Cartesian</caption>
+        <image width="80%">
+            <xi:include href="prefigure/table-cartesian.xml"/>
+          </image>
+      </figure>
+      
+      
+    </sidebyside>
+    <sidebyside valign="middle">
+    <p>
+      
+    </p>
+    <p>
+      <line> Exponential </line>
+      <line> <m>re^{i\theta}</m> </line>
+    </p>
+    
+    
+    <figure xml:id="fig_polar-a">
+        <caption>Polar</caption>
+        <image width="80%">
+            <xi:include href="prefigure/table-polar.xml"/>
+          </image> 
+      </figure>
+      
+    </sidebyside>
+
+    
+    </sbsgroup>
+    </figure>
+
+    <p>
+      Yet another attempt at formatting the 5 ways.
+    </p>
+
+    
+
+
+    <figure xml:id="fig_5ways-alt4">
+  <caption>Five ways of thinking about a complex number, take 5</caption>
+  <!-- <sidebyside valign="middle" widths="20% 60%" margins="10% 10%"> -->
+    
+
+    <sbsgroup>
+    <sidebyside valigns="bottom top top">
+      <p>
+        
+      </p>
+      <p>
+        <line>Rectangular</line>
+        <line> <m>x+iy</m> </line>
+      </p>
+      <p>
+      <line> Exponential </line>
+      <line> <m>re^{i\theta}</m> </line>
+    </p>
+      
+    </sidebyside>
+    <sidebyside valign="top bottom bottom">
+    <p>
+      <line>Formal</line> 
+      <line><m>(x,y)</m> </line>
+    </p>
+    <figure xml:id="fig-cartesian-a">
+        <caption>Cartesian</caption>
+        <image width="80%">
+            <xi:include href="prefigure/table-cartesian.xml"/>
+          </image>
+      </figure>
+    
+    <figure xml:id="fig_polar-a">
+        <caption>Polar</caption>
+        <image width="80%">
+            <xi:include href="prefigure/table-polar.xml"/>
+          </image> 
+      </figure>
+      
+    </sidebyside>
+
+    
+    </sbsgroup>
     </figure>
 </section>
