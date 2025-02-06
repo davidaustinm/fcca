@@ -109,6 +109,15 @@ eBookConfig.enable_chatcodes =  false;
 <script src="_static/prefix-runtime.82032a8574f6ce75.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6a985cbf816db5c7.css">
 <style>
+#easyexp-1-1-2 { counter-set: easyexp-1-1-2 0; }
+#easyexp-1-1-2 > li::marker { content: ""counter(easyexp-1-1-2,lower-alpha)") "; }
+#easyexp-1-1-2 > li { counter-increment: easyexp-1-1-2; }
+#conjugation-1-1-2 { counter-set: conjugation-1-1-2 0; }
+#conjugation-1-1-2 > li::marker { content: ""counter(conjugation-1-1-2,lower-alpha)") "; }
+#conjugation-1-1-2 > li { counter-increment: conjugation-1-1-2; }
+#cor_triangleineq-1-1-2 { counter-set: cor_triangleineq-1-1-2 0; }
+#cor_triangleineq-1-1-2 > li::marker { content: ""counter(cor_triangleineq-1-1-2,lower-alpha)") "; }
+#cor_triangleineq-1-1-2 > li { counter-increment: cor_triangleineq-1-1-2; }
 </style>
 </head>
 <body id="fcca" class="pretext book ignore-math">
@@ -227,6 +236,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_defalg.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Definitions and Algebraic Properties</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="geomprop.html" class="internal"><span class="codenumber">1.2</span> <span class="title">From Algebra to Geometry and Back</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_geometricprops.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Geometric Properties</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter contains-active">
@@ -262,6 +272,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="indexitem">complex number<span class="indexknowl">, <a href="sec_defalg.html#sec_defalg-3" class="xref" data-knowl="./knowl/index/sec_defalg-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.1">Definition</a></span>
 </div>
 <div class="indexitem">complex plane<span class="indexknowl">, <a href="geomprop.html#geomprop-2" class="xref" data-knowl="./knowl/index/geomprop-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">Paragraph</a></span>
+</div>
+<div class="indexitem">conjugate<span class="indexknowl">, <a href="sec_geometricprops.html#sec_geometricprops-5" class="xref" data-knowl="./knowl/index/sec_geometricprops-5.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.3.1">Definition</a></span>
 </div>
 </div>
 <div class="indexletter" id="indexletter-d"><div class="indexitem">distance of complex numbers<span class="indexknowl">, <a href="geomprop.html#prop_distance" class="xref" data-knowl="./knowl/index/prop_distance.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.2.3">Proposition</a></span>
@@ -314,6 +326,8 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="indexitem">rectangular form<span class="indexknowl">, <a href="geomprop.html#geomprop-26" class="xref" data-knowl="./knowl/index/geomprop-26.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">Paragraph</a></span>
 </div>
+<div class="indexitem">reverse triangle inequality<span class="indexknowl">, <a href="sec_geometricprops.html#revtrianineq" class="xref" data-knowl="./knowl/index/revtrianineq.html" data-reveal-label="Reveal" data-close-label="Close" title="Item b">Item</a></span>
+</div>
 <div class="indexitem">root<span class="indexknowl">, <a href="sec_defalg.html#sec_defalg-17" class="xref" data-knowl="./knowl/index/sec_defalg-17.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">Paragraph</a></span>
 </div>
 <div class="indexitem">root of unity<span class="indexknowl">, <a href="geomprop.html#geomprop-23" class="xref" data-knowl="./knowl/index/geomprop-23.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.2.8">Definition</a></span>
@@ -321,8 +335,14 @@ eBookConfig.enable_chatcodes =  false;
 <div class="subindexitem">primitive<span class="indexknowl">, <a href="geomprop.html#geomprop-23" class="xref" data-knowl="./knowl/index/geomprop-23.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.2.8">Definition</a></span>
 </div>
 </div>
-<div class="indexletter" id="indexletter-t"><div class="indexitem">trigonometric identities<span class="indexknowl">, <a href="geomprop.html#geomprop-13" class="xref" data-knowl="./knowl/index/geomprop-13.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">Paragraph</a></span>
-</div></div>
+<div class="indexletter" id="indexletter-t">
+<div class="indexitem">triangle inequality<span class="indexknowl">, <a href="sec_geometricprops.html#lem_triangleineq" class="xref" data-knowl="./knowl/index/lem_triangleineq.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 1.3.4: Triangle inequality">Proposition</a></span>
+</div>
+<div class="subindexitem">reverse<span class="indexknowl">, <a href="sec_geometricprops.html#revtrianineq" class="xref" data-knowl="./knowl/index/revtrianineq.html" data-reveal-label="Reveal" data-close-label="Close" title="Item b">Item</a></span>
+</div>
+<div class="indexitem">trigonometric identities<span class="indexknowl">, <a href="geomprop.html#geomprop-13" class="xref" data-knowl="./knowl/index/geomprop-13.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">Paragraph</a></span>
+</div>
+</div>
 <div class="indexletter" id="indexletter-v"><div class="indexitem">vector<span class="indexknowl">, <a href="geomprop.html#geomprop-2" class="xref" data-knowl="./knowl/index/geomprop-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">Paragraph</a></span>
 </div></div></section></div>
 <div class="ptx-content-footer">

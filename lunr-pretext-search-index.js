@@ -217,6 +217,78 @@ var ptx_lunr_docs = [
   "body": " Five ways of thinking about a complex number.    Formal     Algebraic  Geometric    Rectangular:   Cartesian      z=(3,4)    x    y    z          Exponential:   Polar      z=(3,4)   \\theta     r    z          "
 },
 {
+  "id": "sec_geometricprops",
+  "level": "1",
+  "url": "sec_geometricprops.html",
+  "type": "Section",
+  "number": "1.3",
+  "title": "Geometric Properties",
+  "body": " Geometric Properties  From the chain of basic inequalities (or, alternatively, by arguing with basic geometric properties of triangles), we obtain the inequalities .  The square of the absolute value has the nice property .  This is one of many reasons to give the process of passing from to a special name.    The number is the (complex) conjugate of . conjugate We denote the conjugate by .    Geometrically, conjugating means reflecting the vector corresponding to with respect to the real axis, as shown in .        z=(3.5,2)  zbar=(3.5,-2)     z    \\overline{z}       The complex conjugate is obtained by reflecting across the real axis.   The following proposition collects some basic properties of the conjugate.    For any ,                                            .       The proofs of these properties are straightforward (see Exercise ); once more we give a sample.   Let and . Then    We note that the property yields a neat formula for the inverse of a nonzero complex number, which is implicit already in : .  A famous geometric inequality (which holds, more generally, for vectors in ) goes as follows.   Triangle inequality    triangle inequality For any we have .    By drawing a picture in the complex plane, you should be able to come up with a geometric proof of the triangle inequality. Here we proceed algebraically:   We make extensive use of  , where the inequality follows from . Taking square roots on the left- and right-hand sides proves our claim.   For future reference we list several useful variants of the triangle inequality:    For , we have the following relations:   The triangle inequality: .    The reverse triangle inequality: . reverse triangle inequality  triangle inequality reverse     The triangle inequality for sums: .        is just a rewrite of the original triangle inequality, using the fact that , and follows by induction. The proof of the reverse triangle inequality is left as .  "
+},
+{
+  "id": "sec_geometricprops-5",
+  "level": "2",
+  "url": "sec_geometricprops.html#sec_geometricprops-5",
+  "type": "Definition",
+  "number": "1.3.1",
+  "title": "",
+  "body": "  The number is the (complex) conjugate of . conjugate We denote the conjugate by .   "
+},
+{
+  "id": "fig-conjugate",
+  "level": "2",
+  "url": "sec_geometricprops.html#fig-conjugate",
+  "type": "Figure",
+  "number": "1.3.2",
+  "title": "",
+  "body": "      z=(3.5,2)  zbar=(3.5,-2)     z    \\overline{z}       The complex conjugate is obtained by reflecting across the real axis.  "
+},
+{
+  "id": "conjugation",
+  "level": "2",
+  "url": "sec_geometricprops.html#conjugation",
+  "type": "Proposition",
+  "number": "1.3.3",
+  "title": "",
+  "body": "  For any ,                                            .      "
+},
+{
+  "id": "sec_geometricprops-11",
+  "level": "2",
+  "url": "sec_geometricprops.html#sec_geometricprops-11",
+  "type": "Proof",
+  "number": "1.3.1",
+  "title": "",
+  "body": " Let and . Then   "
+},
+{
+  "id": "lem_triangleineq",
+  "level": "2",
+  "url": "sec_geometricprops.html#lem_triangleineq",
+  "type": "Proposition",
+  "number": "1.3.4",
+  "title": "Triangle inequality.",
+  "body": " Triangle inequality    triangle inequality For any we have .   "
+},
+{
+  "id": "sec_geometricprops-16",
+  "level": "2",
+  "url": "sec_geometricprops.html#sec_geometricprops-16",
+  "type": "Proof",
+  "number": "1.3.2",
+  "title": "",
+  "body": " We make extensive use of  , where the inequality follows from . Taking square roots on the left- and right-hand sides proves our claim.  "
+},
+{
+  "id": "cor_triangleineq",
+  "level": "2",
+  "url": "sec_geometricprops.html#cor_triangleineq",
+  "type": "Corollary",
+  "number": "1.3.5",
+  "title": "",
+  "body": "  For , we have the following relations:   The triangle inequality: .    The reverse triangle inequality: . reverse triangle inequality  triangle inequality reverse     The triangle inequality for sums: .      "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",

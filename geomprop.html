@@ -109,6 +109,15 @@ eBookConfig.enable_chatcodes =  false;
 <script src="_static/prefix-runtime.82032a8574f6ce75.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6a985cbf816db5c7.css">
 <style>
+#easyexp-1-1-2 { counter-set: easyexp-1-1-2 0; }
+#easyexp-1-1-2 > li::marker { content: ""counter(easyexp-1-1-2,lower-alpha)") "; }
+#easyexp-1-1-2 > li { counter-increment: easyexp-1-1-2; }
+#conjugation-1-1-2 { counter-set: conjugation-1-1-2 0; }
+#conjugation-1-1-2 > li::marker { content: ""counter(conjugation-1-1-2,lower-alpha)") "; }
+#conjugation-1-1-2 > li { counter-increment: conjugation-1-1-2; }
+#cor_triangleineq-1-1-2 { counter-set: cor_triangleineq-1-1-2 0; }
+#cor_triangleineq-1-1-2 > li::marker { content: ""counter(cor_triangleineq-1-1-2,lower-alpha)") "; }
+#cor_triangleineq-1-1-2 > li { counter-increment: cor_triangleineq-1-1-2; }
 </style>
 </head>
 <body id="fcca" class="pretext book ignore-math">
@@ -129,7 +138,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_defalg.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="complexnumberchapter.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_defalg.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="complexnumberchapter.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_geometricprops.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\versionnumber{1.54}
 \def\JPicScale{0.7}
 \def\versionyear{2018}
@@ -224,6 +233,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_defalg.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Definitions and Algebraic Properties</span></a></div></li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="geomprop.html" class="internal"><span class="codenumber">1.2</span> <span class="title">From Algebra to Geometry and Back</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_geometricprops.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Geometric Properties</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -328,14 +338,14 @@ e^{ i \phi } \ := \ \cos \phi + i \sin \phi \,\text{.}
 <div class="para logical" id="easyexp-1-1">
 <div class="para">For any <span class="process-math">\(\phi, \phi_1, \phi_2 \in \R\text{,}\)</span>
 </div>
-<ul class="disc" id="easyexp-1-1-2">
+<ol class="lower-alpha" id="easyexp-1-1-2">
 <li id="easyexp-1-1-2-1"><div class="para" id="easyexp-1-1-2-1-1"><span class="process-math">\(\displaystyle e^{ i \phi_1 } \, e^{ i \phi_2 } = e^{ i ( \phi_1 + \phi_2 ) }\)</span></div></li>
 <li id="easyexp-1-1-2-2"><div class="para" id="easyexp-1-1-2-2-1"><span class="process-math">\(\displaystyle e^{ i 0 } = 1\)</span></div></li>
 <li id="easyexp-1-1-2-3"><div class="para" id="easyexp-1-1-2-3-1"><span class="process-math">\(\displaystyle \frac 1 {e^{ i \phi }} = e^{ - i \phi }\)</span></div></li>
 <li id="easyexp-1-1-2-4"><div class="para" id="easyexp-1-1-2-4-1"><span class="process-math">\(\displaystyle e^{ i ( \phi + 2 \pi ) } = e^{ i \phi }\)</span></div></li>
 <li id="easyexp-1-1-2-5"><div class="para" id="easyexp-1-1-2-5-1"><span class="process-math">\(\displaystyle \left| e^{ i \phi } \right| = 1\)</span></div></li>
 <li id="easyexpder"><div class="para" id="easyexpder-1"><span class="process-math">\(\frac{ d }{ \diff{\phi} } \, e^{ i \phi } = i \, e^{ i \phi }\text{.}\)</span></div></li>
-</ul>
+</ol>
 </div></article><div class="para" id="geomprop-20">You are encouraged to prove them (see <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex_easyexp" missing or not unique]</code>); again we give a sample.</div>
 <article class="proof" id="geomprop-21"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
 <div class="para logical" id="geomprop-21-1">
@@ -391,7 +401,7 @@ x+iy \= r \, e^{ i \phi }\text{.}
 </tr>
 </table></div></figure></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec_defalg.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec_defalg.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_geometricprops.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
