@@ -11,7 +11,7 @@
     easier-to-work-with algebraic language. 
     Later we will see several more ways of thinking about complex numbers.
   </p>
-  <definition>
+  <definition xml:id="def-complex-number">
     <statement>
       <p>
         The <em>complex numbers</em>
