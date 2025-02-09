@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_optionallab">
   <title>Optional Lab</title>
   <p>
-    Open your favorite web browser and search for the
-    <em>complex function grapher</em>
-    for the open-source software <em>geogebra
-        <idx><h>geogebra</h></idx>
-    </em>.
+    Open the open-source software platform
+    <url href="https://www.geogebra.org/calculator">
+      Geogebra.
+    </url>
+    <idx><h>geogebra</h></idx>
     <ol>
       <li>
         <p>
@@ -30,18 +31,20 @@
       </li>
       <li>
         <p>
-          Pick your favorite five numbers from the ones that you've played around with and put them in the tables below,
+          Pick your favorite five numbers <m>z_1</m>, <m>z_2</m>,
+          <m>z_3</m>, <m>z_4</m>, and <m>z_5</m> from the ones that you've
+          played around with and put them in the tables below, 
           in both rectangular and polar form.
           Apply the functions listed to your numbers.
           Think about which representation is more helpful in each instance.
           <tabular>
-            <row bottom="minor">
+            <row header="yes" bottom="minor">
               <cell></cell>
-              <cell></cell>
-              <cell></cell>
-              <cell></cell>
-              <cell></cell>
-              <cell></cell>
+              <cell><m>z_1</m></cell>
+              <cell><m>z_2</m></cell>
+              <cell><m>z_3</m></cell>
+              <cell><m>z_4</m></cell>
+              <cell><m>z_5</m></cell>
             </row>
             <row>
               <cell>rectangular</cell>
@@ -108,7 +111,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><m>2z \</m></cell>
+              <cell><m>2z</m></cell>
               <cell></cell>
               <cell></cell>
               <cell></cell>
@@ -124,7 +127,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><m>-z \</m></cell>
+              <cell><m>-z</m></cell>
               <cell></cell>
               <cell></cell>
               <cell></cell>
@@ -140,7 +143,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><m>\frac z 2 \</m></cell>
+              <cell><m>\frac z 2</m></cell>
               <cell></cell>
               <cell></cell>
               <cell></cell>
@@ -156,7 +159,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><m>iz \</m></cell>
+              <cell><m>iz</m></cell>
               <cell></cell>
               <cell></cell>
               <cell></cell>
@@ -172,7 +175,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><m>\overline z \</m></cell>
+              <cell><m>\overline z</m></cell>
               <cell></cell>
               <cell></cell>
               <cell></cell>
@@ -188,7 +191,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><m>z^2 \</m></cell>
+              <cell><m>z^2</m></cell>
               <cell></cell>
               <cell></cell>
               <cell></cell>
@@ -252,7 +255,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><m>|z| \</m></cell>
+              <cell><m>|z|</m></cell>
               <cell></cell>
               <cell></cell>
               <cell></cell>

@@ -18,7 +18,7 @@
     <idx><h>axis</h><h>imaginary</h></idx>
     The addition that we defined for complex numbers resembles vector
     addition; 
-    see <xref ref="fig_addition">Figure</xref>.
+    see <xref ref="fig_addition"/>.
     The analogy stops at multiplication: there is no
     <q>usual</q>
     multiplication of two vectors in <m>\R^2</m> that gives another vector,
@@ -29,7 +29,10 @@
   <figure xml:id="fig_addition">
     <caption>Addition of complex numbers.</caption>
     <image width="50%">
-      <xi:include href="prefigure/fig1-1-complex-add.xml"/>
+      <prefigure xmlns="https://prefigure.org"
+                 label="complex-add">
+        <xi:include href="prefigure/fig1-1-complex-add.xml"/>
+      </prefigure>
     </image>
   </figure>
 
@@ -90,7 +93,7 @@
         <em>distance</em> between
         (the endpoints of)
         the two vectors in <m>\R^2</m>
-        (see <xref ref="distfig">Figure</xref>).
+        (see <xref ref="distfig"/>).
         Then
         <me>
           d(z_1,z_2) \= |z_1 - z_2| \= |z_2 - z_1|\,
@@ -119,7 +122,10 @@
     <caption>Geometry behind the distance between two complex
     numbers.</caption>
     <image width="50%">
-      <xi:include href="prefigure/fig1-2-complex-sub.xml"/>
+      <prefigure xmlns="https://prefigure.org"
+                 label="complex-sub">
+        <xi:include href="prefigure/fig1-2-complex-sub.xml"/>
+      </prefigure>
     </image>
     <idx><h>geometric interpretation of multiplication</h></idx>
   </figure>
@@ -176,7 +182,10 @@
   <figure>
     <caption>Multiplication of complex numbers.</caption>
     <image width="50%">
-      <xi:include href="prefigure/fig1-3-complex-mult.xml"/>
+      <prefigure xmlns="https://prefigure.org"
+                 label="complex-mult">
+        <xi:include href="prefigure/fig1-3-complex-mult.xml"/>
+      </prefigure>
     </image>
   </figure>
   <p>
@@ -197,11 +206,14 @@
   <figure xml:id="fig_rootsof1">
     <caption>Three sample complex numbers of the form <m>e^{ i \phi }</m>.</caption>
     <image width="50%">
-      <xi:include href="prefigure/fig1-4-polar.xml"/>
+      <prefigure xmlns="https://prefigure.org"
+                 label="polar-rep">
+        <xi:include href="prefigure/fig1-4-polar.xml"/>
+      </prefigure>
     </image>
   </figure>
   <p>
-    <xref ref="fig_rootsof1">Figure</xref> shows three examples.
+    <xref ref="fig_rootsof1"/> shows three examples.
     At this point,
     this exponential notation is indeed purely a notation.<fn>
     In particular, while our notation
@@ -213,8 +225,8 @@
     <m>i</m>, <m>1</m>, and the complex exponential function
     (and thus the number <m>e</m>)
     is somewhat deeper.
-    We'll explore this in <xref ref="sec_logexp">Section</xref>.
-    </fn> We will later see in <xref ref="exampleschapter">Chapter</xref>
+    We'll explore this in <xref ref="sec_logexp"/>.
+    </fn> We will later see in <xref ref="exampleschapter"/>
     that it has an intimate connection to the complex exponential
     function. 
     For now, we motivate this maybe strange seeming definition by
@@ -261,7 +273,7 @@
   </proposition>
   <p>
     You are encouraged to prove them (see <xref
-    ref="ex_easyexp">Exercise</xref>); 
+    ref="ex_easyexp"/>);
     again we give a sample.
   </p>
   <proof>
@@ -285,7 +297,7 @@
     </p>
   </proof>
   <p>
-    <xref ref="easyexp">Proposition</xref>
+    <xref ref="easyexp"/>
     implies that <m>( e^{ 2 \pi i \frac m n } )^n = 1</m> for any integers <m>m</m> and <m>n > 0</m>.
     Thus numbers of the form <m>e^{ 2 \pi i q }</m> with
     <m>q \in \Q</m> play a pivotal role in solving equations of the
@@ -301,7 +313,7 @@
         <m>n > 0</m>. 
         <idx><h>root of unity</h></idx>
         Equivalently
-        (by <xref ref="ex_rootofunity">Exercise</xref>),
+        (by <xref ref="ex_rootofunity"/>),
         a root of unity is a complex number <m>\zeta</m> such that
         <m>\zeta^n = 1</m> for some positive integer <m>n</m>.
         In this case, we call <m>\zeta</m> an
@@ -350,7 +362,7 @@
     The five ways and their corresponding notation are listed in <xref
     ref="fig_5ways"/>.
     This list is not exhaustive;
-    see, e.g., <xref ref="ex_Casmatrices">Exercise</xref>.
+    see, e.g., <xref ref="ex_Casmatrices"/>.
   </p>
   <table xml:id="fig_5ways">
     <title>Five ways of thinking about a complex number.</title>
@@ -375,7 +387,10 @@
         <cell>
           Cartesian
           <image width="80%">
-            <xi:include href="prefigure/table-cartesian.xml"/>
+            <prefigure xmlns="https://prefigure.org"
+                       label="table-cartesian">
+              <xi:include href="prefigure/table-cartesian.xml"/>
+            </prefigure>
           </image>
         </cell>
       </row>
@@ -387,7 +402,10 @@
         <cell>
           Polar
           <image width="80%">
-            <xi:include href="prefigure/table-polar.xml"/>
+            <prefigure xmlns="https://prefigure.org"
+                       label="table-polar">
+              <xi:include href="prefigure/table-polar.xml"/>
+            </prefigure>
           </image>
         </cell>
       </row>

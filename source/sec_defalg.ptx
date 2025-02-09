@@ -179,7 +179,7 @@
   </p>
   <p>
     We invite you to check that the definitions of our binary
-    operations and <xref ref="alg">Proposition</xref> 
+    operations and <xref ref="alg"/>
     are coherent with the usual real arithmetic rules if we think of
     complex numbers as given in the form <m>x+iy</m>. 
   </p>

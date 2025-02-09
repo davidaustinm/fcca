@@ -1,0 +1,17 @@
+<diagram dimensions="(400,240)" margins="5"
+         xmlns="https://prefigure.org">
+  <coordinates bbox="(-1.5,-1.5,3.5,1.5)">
+    <axes decorations="no">
+      <xlabel alignment="sw"><m>x</m></xlabel>
+      <ylabel alignment="sw"><m>y</m></ylabel>
+    </axes>
+    <line endpoints="((0,0),(1,0))" endpoint-offsets="(0,-5)"
+          stroke="black" thickness="6"/>
+    <line endpoints="((2,0),(1,0))" endpoint-offsets="(0,-5)"
+          stroke="black" thickness="6"/>
+    <circle center="(0,0)" radius="1" stroke="black"/>
+    <circle center="(2,0)" radius="1" stroke="black"/>
+  </coordinates>
+</diagram>
+
+      

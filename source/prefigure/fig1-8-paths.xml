@@ -1,0 +1,27 @@
+<diagram dimensions="(350,280)" margins="5"
+         xmlns="https://prefigure.org">
+  <coordinates bbox="(-5,-4,5,4)" aspect-ratio="1">
+    <axes decorations="no" vlabels="(1,1,1)" hlabels="(1,1,1)">
+      <xlabel alignment="sw"><m>x</m></xlabel>
+      <ylabel alignment="sw"><m>y</m></ylabel>
+    </axes>
+    <definition>f(t)=(-2+2*cos(t), 2*sin(t))</definition>
+    <definition>g1(t)=(3,t-2)</definition>
+    <definition>g2(t)=(6-t,1/2*(t-1))</definition>
+    <definition>g(t)=chi_co(0,3,t)*g1(t) + chi_cc(3,5,t)*g2(t)</definition>
+    <parametric-curve function="f" domain="(pi/2,5*pi/4)" arrows="1"
+                      arrow-width="5"/>
+    <parametric-curve function="g" domain="(0,2.5)" arrows="1"
+                      arrow-width="5"/>
+    <parametric-curve function="f" domain="(pi/2,2*pi)" />
+    <parametric-curve function="g" domain="(0,5)"/>
+    <label anchor="f(5*pi/4)" alignment="sw">
+      <m>\gamma_1(t)</m>
+    </label>
+    <label anchor="g(3)" alignment="ne">
+      <m>\gamma_2(t)</m>
+    </label>
+  </coordinates>
+</diagram>
+
+      

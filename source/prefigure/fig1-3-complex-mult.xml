@@ -1,49 +1,48 @@
-<prefigure xmlns="https://prefigure.org"
-           label="complex-mult">
-  <diagram dimensions="(250,250)" margins="5">
-    <coordinates bbox="(-6,-4,6,8)">
-      <definition>polar(r,t)=(r*cos(t), r*sin(t))</definition>
-      <definition>r1=2</definition>
-      <definition>r2=4</definition>
-      <definition>t1=0.9</definition>
-      <definition>t2=2.7 </definition>
-      <definition>z1=polar(r1,t1)</definition>
-      <definition>z2=polar(r2,t2)</definition>
-      <definition>z3=polar(6,t1+t2)</definition>
-      <axes decorations="no"/>
-      <group at="z1">
-        <angle-marker points="((10,0),(0,0),z1)" radius="20"
-                      stroke="#aaa" offset="(3,-5)">
-          <m>\phi_1</m>
-        </angle-marker>
-        <vector v="z1" thickness="2"/>
-        <label anchor="z1" alignment="nw">
-          <m>z_1</m>
-        </label>
-      </group>
-      
-      <group at="z2">
-        <angle-marker points="((10,0),(0,0),z2)" radius="65"
-                      stroke="#aaa">
-          <m>\phi_2</m>
-        </angle-marker>
-        <vector v="z2" thickness="2"/>
-        <label anchor="z2" alignment="ne">
-          <m>z_2</m>
-        </label>
-      </group>
-      
-      <group at="product">
-        <angle-marker points="((10,0),(0,0),z3)" radius="100"
-                      stroke="#aaa" offset="(-20,3)">
-          <m>\phi_1+\phi_2</m>
-        </angle-marker>
-        <vector v="z3" thickness="2"/>
-        <label anchor="z3" alignment="se">
-          <m>z_1z_2</m>
-        </label>
-      </group>
-      
-    </coordinates>
-  </diagram>
-</prefigure>
+<diagram dimensions="(250,250)" margins="5"
+         xmlns="https://prefigure.org">
+  <coordinates bbox="(-6,-4,6,8)">
+    <definition>polar(r,t)=(r*cos(t), r*sin(t))</definition>
+    <definition>r1=2</definition>
+    <definition>r2=4</definition>
+    <definition>t1=0.9</definition>
+    <definition>t2=2.7 </definition>
+    <definition>z1=polar(r1,t1)</definition>
+    <definition>z2=polar(r2,t2)</definition>
+    <definition>z3=polar(6,t1+t2)</definition>
+    <axes decorations="no"/>
+    <group at="z1">
+      <angle-marker points="((10,0),(0,0),z1)" radius="20"
+                    stroke="#aaa" offset="(3,-5)">
+        <m>\phi_1</m>
+      </angle-marker>
+      <vector v="z1" thickness="2"/>
+      <label anchor="z1" alignment="nw">
+        <m>z_1</m>
+      </label>
+    </group>
+    
+    <group at="z2">
+      <angle-marker points="((10,0),(0,0),z2)" radius="65"
+                    stroke="#aaa">
+        <m>\phi_2</m>
+      </angle-marker>
+      <vector v="z2" thickness="2"/>
+      <label anchor="z2" alignment="ne">
+        <m>z_2</m>
+      </label>
+    </group>
+    
+    <group at="product">
+      <angle-marker points="((10,0),(0,0),z3)" radius="100"
+                    stroke="#aaa" offset="(-20,3)">
+        <m>\phi_1+\phi_2</m>
+      </angle-marker>
+      <vector v="z3" thickness="2"/>
+      <label anchor="z3" alignment="se">
+        <m>z_1z_2</m>
+      </label>
+    </group>
+    
+  </coordinates>
+</diagram>
+
