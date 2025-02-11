@@ -651,7 +651,7 @@
 
     <p>
       We now have various ways of thinking about a complex number.
-      <ul>
+      <dl>
         <li>
           <title>Formal definition</title>
           <p>A complex number is formally defined to be an ordered
@@ -662,8 +662,9 @@
 
         <li>
           <title>Rectangular form</title>
-          <sidebyside valigns="middle top" widths="65% 30%">
-            <p>It is frequently helpful to represent a complex number as
+          <sidebyside valigns="top top" widths="60% 35%">
+            <p>
+            It is frequently helpful to represent a complex number as
             <m>x+iy</m>.  In this representation, we may visualize the
             number using Cartesian coordinates.
             </p>
@@ -678,8 +679,9 @@
 
         <li>
           <title>Exponential form</title>
-          <sidebyside valigns="middle top" widths="65% 30%">
-          <p>Similarly, a complex number also has an exponential form
+          <sidebyside valigns="top top" widths="60% 35%">
+            <p>
+            Similarly, a complex number also has an exponential form
           <m>re^{i\theta}</m>, which allows us to visualize the number
           in polar coordinates.
           </p>
@@ -691,7 +693,7 @@
           </image>
           </sidebyside>
         </li>
-      </ul>
+      </dl>
     </p>
 
     <p> 
