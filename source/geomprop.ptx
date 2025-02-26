@@ -46,13 +46,13 @@
   <definition>
     <statement>
       <p>
-        The <em>absolute value</em>
-        (also called the <em>modulus</em>)
+        The <term>absolute value</term>
+        (also called the <term>modulus</term>)
         of <m>z = x+iy</m> is
         <me>
           r \= \left| z \right| \ := \ \sqrt{ x^2 + y^2 } 
         </me>,
-        and an <em>argument</em>
+        and an <term>argument</term>
         of <m>z = x+iy</m> is a number <m>\phi \in \R</m> such that
         <me>
           x = r \cos \phi \qquad \text{ and }  \qquad y = r \sin \phi \,
@@ -307,7 +307,7 @@
   <definition>
     <statement>
       <p>
-        A <em>root of unity</em>
+        A <term>root of unity</term>
         is a number of the form
         <m>e^{ 2 \pi i \frac m n }</m> for some integers <m>m</m> and
         <m>n > 0</m>. 
@@ -317,10 +317,10 @@
         a root of unity is a complex number <m>\zeta</m> such that
         <m>\zeta^n = 1</m> for some positive integer <m>n</m>.
         In this case, we call <m>\zeta</m> an
-        <em><m>n\th</m> root of unity</em>.
+        <term><m>n\th</m> root of unity</term>.
         If <m>n</m> is the smallest positive integer with the property
-        <m>\zeta^n = 1</m>, then <m>\zeta</m> is a <em>primitive</em>
-        <m>n\th</m> root of unity.
+        <m>\zeta^n = 1</m>, then <m>\zeta</m> is a <term>primitive
+        <m>n\th</m> root of unity</term>.
         <idx><h>root of unity</h><h>primitive</h></idx>
         <idx><h>primitive root of unity</h></idx>
       </p>
@@ -356,59 +356,58 @@
     We now have five different ways of thinking about a complex number:
     the formal definition, in rectangular form, in polar form,
     and geometrically, using Cartesian coordinates or polar coordinates.
-    Each of these five ways is useful in different situations,
+    Each of these ways is useful in different situations,
     and translating between them is an essential ingredient in complex
     analysis. 
-    The five ways and their corresponding notation are listed in <xref
-    ref="fig_5ways"/>.
     This list is not exhaustive;
     see, e.g., <xref ref="ex_Casmatrices"/>.
   </p>
-  <table xml:id="fig_5ways">
-    <title>Five ways of thinking about a complex number.</title>
-    <tabular halign="center">
-      <row bottom="minor">
-        <cell colspan="2">
-          Formal <m>(x,y)</m>
-        </cell>
-      </row>
-      <row bottom="minor">
-        <cell>
-          Algebraic
-        </cell>
-        <cell>
-          Geometric
-        </cell>
-      </row>
-      <row bottom="minor">
-        <cell>
-          Rectangular: <m>x+iy</m>
-        </cell>
-        <cell>
-          Cartesian
-          <image width="80%">
+  
+    <assemblage xml:id="assemblage_5ways"><title>Various ways of thinking about a complex number</title>
+    <p>
+      We collect the various ways we've seen of describing a complex number.
+      <dl>
+        <li>
+          <title>Formal definition</title>
+          <p>A complex number is formally defined to be an ordered
+          pair of real numbers <m>(x,y)</m>, as given in <xref
+          ref="def-complex-number"/>.  
+          </p>
+        </li>
+
+        <li>
+          <title>Rectangular form</title>
+          <sidebyside valigns="top top" widths="60% 35%">
+            <p>
+            We frequently represent a complex number as
+            <me>z=x+iy</me>, and we may visualize the
+            number using Cartesian coordinates.
+            </p>
+            <image width="50%">
+              <prefigure xmlns="https://prefigure.org"
+                         label="cartesian-yet-again">
+                <xi:include href="prefigure/table-cartesian.xml"/>
+              </prefigure>
+            </image>
+          </sidebyside>
+        </li>
+
+        <li>
+          <title>Exponential form</title>
+          <sidebyside valigns="top top" widths="60% 35%">
+            <p>
+            Similarly, a complex number also has an exponential form
+          <me>z=re^{i\theta}</me> and can be visualized using polar coordinates.
+          </p>
+          <image width="50%">
             <prefigure xmlns="https://prefigure.org"
-                       label="table-cartesian">
-              <xi:include href="prefigure/table-cartesian.xml"/>
-            </prefigure>
-          </image>
-        </cell>
-      </row>
-        
-      <row>
-        <cell>
-          Exponential: <m>re^{i\theta}</m>
-        </cell>
-        <cell>
-          Polar
-          <image width="80%">
-            <prefigure xmlns="https://prefigure.org"
-                       label="table-polar">
+                       label="polar-yet-again">
               <xi:include href="prefigure/table-polar.xml"/>
             </prefigure>
           </image>
-        </cell>
-      </row>
-    </tabular>
-  </table>
+          </sidebyside>
+        </li>
+      </dl>
+    </p>
+    </assemblage>
 </section>

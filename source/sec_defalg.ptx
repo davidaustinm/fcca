@@ -11,10 +11,10 @@
     easier-to-work-with algebraic language. 
     Later we will see several more ways of thinking about complex numbers.
   </p>
-  <definition>
+  <definition xml:id="def-complex-number">
     <statement>
       <p>
-        The <em>complex numbers</em>
+        The <term>complex numbers</term>
         are pairs of real numbers,
         <me>
           \C \ := \ \left\{ (x,y) : \, x,y \in \R \right\}
@@ -186,8 +186,8 @@
   <definition>
     <statement>
       <p>
-        The number <m>x</m> is called the <em>real part</em>
-        and <m>y</m> the <em>imaginary part</em>
+        The number <m>x</m> is called the <term>real part</term>
+        and <m>y</m> the <term>imaginary part</term>
         <fn>
         These names have historical reasons:
         people thought of complex numbers as unreal, imagined.
