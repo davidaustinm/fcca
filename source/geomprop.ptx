@@ -649,8 +649,9 @@
     </sbsgroup>
     </figure>
 
+  <assemblage><title>Various ways of thinking about a complex number</title>
     <p>
-      We now have various ways of thinking about a complex number.
+      We now collect various ways of thinking about a complex number.
       <dl>
         <li>
           <title>Formal definition</title>
@@ -664,8 +665,8 @@
           <title>Rectangular form</title>
           <sidebyside valigns="top top" widths="60% 35%">
             <p>
-            It is frequently helpful to represent a complex number as
-            <m>x+iy</m>.  In this representation, we may visualize the
+            We frequently represent a complex number as
+            <me>z=x+iy</me>, and we may visualize the
             number using Cartesian coordinates.
             </p>
             <image width="50%">
@@ -682,8 +683,7 @@
           <sidebyside valigns="top top" widths="60% 35%">
             <p>
             Similarly, a complex number also has an exponential form
-          <m>re^{i\theta}</m>, which allows us to visualize the number
-          in polar coordinates.
+          <me>z=re^{i\theta}</me> and can be visualized using polar coordinates.
           </p>
           <image width="50%">
             <prefigure xmlns="https://prefigure.org"
@@ -695,6 +695,7 @@
         </li>
       </dl>
     </p>
+    </assemblage>
 
     <p> 
       Each of these ways is useful in different situations,
