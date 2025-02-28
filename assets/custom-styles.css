@@ -1,0 +1,7 @@
+.proof:after {
+    content: "\220E";
+    font-size: unset; 
+    font-style: normal; 
+    /* font-variant: small-caps; */
+    float: right;
+}
