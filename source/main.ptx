@@ -12,8 +12,8 @@
 
     <!-- Include chapters -->
     <xi:include href="./complexnumberchapter.ptx"/>
-    <!--
     <xi:include href="./functionchapter.ptx"/>
+    <!--
     <xi:include href="./exampleschapter.ptx"/>
     <xi:include href="./intchapter.ptx"/>
     <xi:include href="./cachyconschapter.ptx"/>
