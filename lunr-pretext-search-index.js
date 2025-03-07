@@ -757,6 +757,204 @@ var ptx_lunr_docs = [
   "body": " Optional Lab  Open the open-source software platform Geogebra.  geogebra    Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the program.    Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with the program.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the tables below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.           rectangular                 polar                                                                                                                                                                                                                                    Play with other examples until you get a feel for these functions.     "
 },
 {
+  "id": "sec_limitsandcontinuity",
+  "level": "1",
+  "url": "sec_limitsandcontinuity.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Limits and Continuity",
+  "body": " Limits and Continuity    A (complex) function  is a map from a subset to ; in this situation we will write and call the domain of . domain  function This means that each element gets mapped to exactly one complex number, called the image of and usually denoted by . image of a point     So far there is nothing that makes complex functions any more special than, say, functions from to . In fact, we can construct many familiar looking functions from the standard calculus repertoire, such as (the identity map identity map  ), , , or . The former three could be defined on all of , whereas for the latter we have to exclude the origin from the domain. On the other hand, we could construct some functions that make use of a certain representation of , for example, , , or .  Next we define limits of a function. The philosophy of the following definition is not restricted to complex functions, but for sake of simplicity we state it only for those functions. limit of a function     Suppose and is an accumulation point of . accumulation point If is a complex number such that for every we can find so that, for all satisfying , we have , then is the limit of as approaches ; in short, .    This definition is the same as is found in most calculus texts. The reason we require that is an accumulation point of the domain is just that we need to be sure that there are points of the domain that are arbitrarily close to . Just as in the real case, our definition (i.e., the part that says ) does not require that is in the domain of and, if is in the domain of , the definition explicitly ignores the value of .    Let's prove that .  Given , we need to determine such that implies . We rewrite .  If we choose , say, smaller than 1 then the factor on the right can be bounded by 3 (draw a picture!). This means that any should do the trick: in this case, implies .  This was a proof written out in a way one might come up with it. Here's a short, neat version:  Given , choose . Then implies from which we conclude that .  This proves .    Just as in the real case, the limit is unique if it exists (see ). It is often useful to investigate limits by restricting the way the point approaches . The following result is a direct consequence of the definition.    Suppose and . Suppose and is an accumulation point of . If is the restriction of to , then exists and has the value .    The definition of limit in the complex domain has to be treated with a little more care than its real companion; this is illustrated by the following example.    The limit of as does not exist.  To see this, we try to compute this limit as on the real and on the imaginary axis. In the first case, we can write , and hence .  In the second case, we write where , and then .  So we get a different limit depending on the direction from which we approach 0. Proposition then implies that the limit of as does not exist.    On the other hand, the following usual limit rules are valid for complex functions; the proofs of these rules are everything but trivial and make for nice practice (see ); as usual, we give a sample proof.    Let and be complex functions with domain , let be an accumulation point of , and let . If and exist, then    .     .     .     where in the last identity we also require that .    We will prove of the proposition. Assume that (otherwise there is nothing to prove), and let and . Then we know that, given , we can find such that and .  Thus, choosing , we infer that implies .  Here we used the triangle inequality ( Proposition ). This proves that , which was our claim.    Because the definition of the limit is somewhat elaborate, the following fundamental definition looks almost trivial. trivial     Suppose . If and either is an isolated point of or then is continuous at . continuous More generally, is continuous on if is continuous at every .    However, in almost all proofs using continuity it is necessary to interpret this in terms of 's and 's. So here is an alternate definition:    Suppose and . Then is continuous at if, for every positive real number , there is a positive real number so that . continuous     See for a proof that these definitions are equivalent.    We already proved (in ) that the function given by is continuous at . You're invited (see ) to extend our proof to show that, in fact, this function is continuous on .  On the other hand, let be given by   In we proved that is not continuous at . However, this is its only point of discontinuity (see ).    Just as in the real case, we can take the limit inside a continuous function, by considering composition of functions.    The image of the function is the set . image of a function If the image of is contained in the domain of another function , we define the composition  through . composition       Let with image contained in , and let . Suppose is an accumulation point of , , and is continuous at . Then ; in short, .    Given , we know there is an such that .  For this , we also know there is a such that .  Stringing these two implications together gives that .  We have thus proved that .    "
+},
+{
+  "id": "sec_limitsandcontinuity-2",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#sec_limitsandcontinuity-2",
+  "type": "Definition",
+  "number": "2.1.1",
+  "title": "",
+  "body": "  A (complex) function  is a map from a subset to ; in this situation we will write and call the domain of . domain  function This means that each element gets mapped to exactly one complex number, called the image of and usually denoted by . image of a point    "
+},
+{
+  "id": "sec_limitsandcontinuity-5",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#sec_limitsandcontinuity-5",
+  "type": "Definition",
+  "number": "2.1.2",
+  "title": "",
+  "body": "  Suppose and is an accumulation point of . accumulation point If is a complex number such that for every we can find so that, for all satisfying , we have , then is the limit of as approaches ; in short, .   "
+},
+{
+  "id": "exam_limitexists",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#exam_limitexists",
+  "type": "Example",
+  "number": "2.1.3",
+  "title": "",
+  "body": "  Let's prove that .  Given , we need to determine such that implies . We rewrite .  If we choose , say, smaller than 1 then the factor on the right can be bounded by 3 (draw a picture!). This means that any should do the trick: in this case, implies .  This was a proof written out in a way one might come up with it. Here's a short, neat version:  Given , choose . Then implies from which we conclude that .  This proves .   "
+},
+{
+  "id": "restrictedlimit",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#restrictedlimit",
+  "type": "Proposition",
+  "number": "2.1.4",
+  "title": "",
+  "body": "  Suppose and . Suppose and is an accumulation point of . If is the restriction of to , then exists and has the value .   "
+},
+{
+  "id": "exam_limitdoesnotexist",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#exam_limitdoesnotexist",
+  "type": "Example",
+  "number": "2.1.5",
+  "title": "",
+  "body": "  The limit of as does not exist.  To see this, we try to compute this limit as on the real and on the imaginary axis. In the first case, we can write , and hence .  In the second case, we write where , and then .  So we get a different limit depending on the direction from which we approach 0. Proposition then implies that the limit of as does not exist.   "
+},
+{
+  "id": "limits",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#limits",
+  "type": "Proposition",
+  "number": "2.1.6",
+  "title": "",
+  "body": "  Let and be complex functions with domain , let be an accumulation point of , and let . If and exist, then    .     .     .     where in the last identity we also require that .    We will prove of the proposition. Assume that (otherwise there is nothing to prove), and let and . Then we know that, given , we can find such that and .  Thus, choosing , we infer that implies .  Here we used the triangle inequality ( Proposition ). This proves that , which was our claim.   "
+},
+{
+  "id": "sec_limitsandcontinuity-15",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#sec_limitsandcontinuity-15",
+  "type": "Definition",
+  "number": "2.1.7",
+  "title": "",
+  "body": "  Suppose . If and either is an isolated point of or then is continuous at . continuous More generally, is continuous on if is continuous at every .   "
+},
+{
+  "id": "sec_limitsandcontinuity-17",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#sec_limitsandcontinuity-17",
+  "type": "Definition",
+  "number": "2.1.8",
+  "title": "",
+  "body": "  Suppose and . Then is continuous at if, for every positive real number , there is a positive real number so that . continuous    "
+},
+{
+  "id": "sec_limitsandcontinuity-19",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#sec_limitsandcontinuity-19",
+  "type": "Example",
+  "number": "2.1.9",
+  "title": "",
+  "body": "  We already proved (in ) that the function given by is continuous at . You're invited (see ) to extend our proof to show that, in fact, this function is continuous on .  On the other hand, let be given by   In we proved that is not continuous at . However, this is its only point of discontinuity (see ).   "
+},
+{
+  "id": "sec_limitsandcontinuity-21",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#sec_limitsandcontinuity-21",
+  "type": "Definition",
+  "number": "2.1.10",
+  "title": "",
+  "body": "  The image of the function is the set . image of a function If the image of is contained in the domain of another function , we define the composition  through . composition    "
+},
+{
+  "id": "funoflimit",
+  "level": "2",
+  "url": "sec_limitsandcontinuity.html#funoflimit",
+  "type": "Proposition",
+  "number": "2.1.11",
+  "title": "",
+  "body": "  Let with image contained in , and let . Suppose is an accumulation point of , , and is continuous at . Then ; in short, .    Given , we know there is an such that .  For this , we also know there is a such that .  Stringing these two implications together gives that .  We have thus proved that .   "
+},
+{
+  "id": "sec_diffholom",
+  "level": "1",
+  "url": "sec_diffholom.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Differentiability and Holomorphicity",
+  "body": " Differentiability and Holomorphicity  The fact that simple functions such as do not have limits at certain points illustrates something special about complex numbers that has no parallel in the reals we can express a function in a very compact way in one variable, yet it shows some peculiar behavior in the limit. We will repeatedly notice this kind of behavior; one reason is that when trying to compute a limit of a function as, say, , we have to allow to approach the point in any way. On the real line there are only two directions to approach from the left or from the right (or some combination of those two). In the complex plane, we have an additional dimension to play with. This means that the statement A complex function has a limit is in many senses stronger than the statement A real function has a limit . This difference becomes apparent most baldly when studying derivatives.    Suppose is a complex function and is an interior point of . The derivative of at is defined as , provided this limit exists. derivative In this case, is called differentiable at . differentiable   If is differentiable for all points in an open disk centered at then is called holomorphic  Some sources use the term analytic instead of holomorphic . As we will see in Chapter 8, in our context, these two terms are synonymous. Technically, though, these two terms have different definitions. Since we will be using the above definition, we will stick with using the term holomorphic instead of the term analytic . at . holomorphic The function is holomorphic on the open set if it is differentiable (and hence holomorphic) at every point in . Functions that are differentiable (and hence holomorphic) in the whole complex plane are called entire . entire       The function given by is entire, that is, holomorphic in : For any , .    The difference quotient limit can be rewritten as . difference quotient   This equivalent definition is sometimes easier to handle. Note that need not be a real number but can rather approach zero from anywhere in the complex plane.  The notions of differentiability and holomorphicity are not interchangeable:    The function given by is differentiable at and nowhere else; in particular, is not holomorphic at . To see why, let's write . Then .  If then taking the limit of as thus means taking the limit of as , which gives , a number that depends on , i.e., on the direction that approaches . Hence this limit does not exist.  On the other hand, if then the right-hand side above equals . Hence , which implies, by , that .      The function given by is nowhere differentiable: , which does not exist, as discussed in .    The basic properties for derivatives are similar to those we know from real calculus. In fact, the following rules follow mostly from properties of the limit.    Suppose and are differentiable at and is differentiable at . Then    for any           provided that      for any nonzero integer      is continuous at      .       . Note that we have used the definition of the derivative and Proposition  & (the addition and multiplication rules for limits).    A prominent application of the differentiation rules is the composition of a complex function with a path . The proof of the following result gives a preview.    Suppose is holomorphic at with and suppose and are two smooth paths that pass through , making an angle of with each other. Then transforms and into smooth paths which meet at , and the transformed paths make an angle of with each other.    In words, a holomorphic function with nonzero derivative preserves angles. Functions that preserve angles in this way are called conformal . conformal  function conformal    Let and be parametrizations of the two paths such that . Then (considered as a vector) is the tangent vector of at the point , and is the tangent vector of at . Moving to the image of and under , the tangent vector of at the point is , and similarly, the tangent vector of at the point is . This means that the action of multiplies the two tangent vectors and by the same nonzero complex number , and so the two tangent vectors got dilated by (which does not affect their direction) and rotated by the same angle (an argument of ).   We end this section with yet another differentiation rule, that for inverse functions. As in the real case, this rule is only defined for functions that are bijections. bijection     A function is one-to-one if, for every image , there is a unique such that . one-to-one The function is onto  onto if every has a preimage (that is, there exists such that ). A bijection is a function that is both one-to-one and onto. If is a bijection, then is the inverse of if for all and for all ; in other words, the composition is the identity function on , and is the identity function on .      Suppose are open sets, is a bijection, is the inverse function inverse function of , and . If is differentiable at with and is continuous at , then is differentiable at with .    Since for all , .  Now define and set   This is continuous at and by continuity of , so we can apply Proposition :     "
+},
+{
+  "id": "sec_diffholom-3",
+  "level": "2",
+  "url": "sec_diffholom.html#sec_diffholom-3",
+  "type": "Definition",
+  "number": "2.2.1",
+  "title": "",
+  "body": "  Suppose is a complex function and is an interior point of . The derivative of at is defined as , provided this limit exists. derivative In this case, is called differentiable at . differentiable   If is differentiable for all points in an open disk centered at then is called holomorphic  Some sources use the term analytic instead of holomorphic . As we will see in Chapter 8, in our context, these two terms are synonymous. Technically, though, these two terms have different definitions. Since we will be using the above definition, we will stick with using the term holomorphic instead of the term analytic . at . holomorphic The function is holomorphic on the open set if it is differentiable (and hence holomorphic) at every point in . Functions that are differentiable (and hence holomorphic) in the whole complex plane are called entire . entire    "
+},
+{
+  "id": "exam_zcubedentire",
+  "level": "2",
+  "url": "sec_diffholom.html#exam_zcubedentire",
+  "type": "Example",
+  "number": "2.2.2",
+  "title": "",
+  "body": "  The function given by is entire, that is, holomorphic in : For any , .   "
+},
+{
+  "id": "exam_zbarsquareddiff",
+  "level": "2",
+  "url": "sec_diffholom.html#exam_zbarsquareddiff",
+  "type": "Example",
+  "number": "2.2.3",
+  "title": "",
+  "body": "  The function given by is differentiable at and nowhere else; in particular, is not holomorphic at . To see why, let's write . Then .  If then taking the limit of as thus means taking the limit of as , which gives , a number that depends on , i.e., on the direction that approaches . Hence this limit does not exist.  On the other hand, if then the right-hand side above equals . Hence , which implies, by , that .   "
+},
+{
+  "id": "sec_diffholom-9",
+  "level": "2",
+  "url": "sec_diffholom.html#sec_diffholom-9",
+  "type": "Example",
+  "number": "2.2.4",
+  "title": "",
+  "body": "  The function given by is nowhere differentiable: , which does not exist, as discussed in .   "
+},
+{
+  "id": "derivativerules",
+  "level": "2",
+  "url": "sec_diffholom.html#derivativerules",
+  "type": "Proposition",
+  "number": "2.2.5",
+  "title": "",
+  "body": "  Suppose and are differentiable at and is differentiable at . Then    for any           provided that      for any nonzero integer      is continuous at      .       . Note that we have used the definition of the derivative and Proposition  & (the addition and multiplication rules for limits).   "
+},
+{
+  "id": "dernonzeroconformal",
+  "level": "2",
+  "url": "sec_diffholom.html#dernonzeroconformal",
+  "type": "Proposition",
+  "number": "2.2.6",
+  "title": "",
+  "body": "  Suppose is holomorphic at with and suppose and are two smooth paths that pass through , making an angle of with each other. Then transforms and into smooth paths which meet at , and the transformed paths make an angle of with each other.   "
+},
+{
+  "id": "sec_diffholom-15",
+  "level": "2",
+  "url": "sec_diffholom.html#sec_diffholom-15",
+  "type": "Proof",
+  "number": "2.2.1",
+  "title": "",
+  "body": " Let and be parametrizations of the two paths such that . Then (considered as a vector) is the tangent vector of at the point , and is the tangent vector of at . Moving to the image of and under , the tangent vector of at the point is , and similarly, the tangent vector of at the point is . This means that the action of multiplies the two tangent vectors and by the same nonzero complex number , and so the two tangent vectors got dilated by (which does not affect their direction) and rotated by the same angle (an argument of ).  "
+},
+{
+  "id": "sec_diffholom-17",
+  "level": "2",
+  "url": "sec_diffholom.html#sec_diffholom-17",
+  "type": "Definition",
+  "number": "2.2.7",
+  "title": "",
+  "body": "  A function is one-to-one if, for every image , there is a unique such that . one-to-one The function is onto  onto if every has a preimage (that is, there exists such that ). A bijection is a function that is both one-to-one and onto. If is a bijection, then is the inverse of if for all and for all ; in other words, the composition is the identity function on , and is the identity function on .   "
+},
+{
+  "id": "inversederivative",
+  "level": "2",
+  "url": "sec_diffholom.html#inversederivative",
+  "type": "Proposition",
+  "number": "2.2.8",
+  "title": "",
+  "body": "  Suppose are open sets, is a bijection, is the inverse function inverse function of , and . If is differentiable at with and is continuous at , then is differentiable at with .    Since for all , .  Now define and set   This is continuous at and by continuity of , so we can apply Proposition :    "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
