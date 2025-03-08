@@ -194,7 +194,7 @@
         Suppose <m>f</m> and <m>g</m> are differentiable at
         <m>z \in \C</m> and <m>h</m> is differentiable at <m>g(z)</m>.
         Then
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               <m>\bigl( f(z) + c \, g(z) \bigr)' \= f'(z) + c \,

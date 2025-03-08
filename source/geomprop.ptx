@@ -236,7 +236,7 @@
     <statement>
       <p>
         For any <m>\phi, \phi_1, \phi_2 \in \R</m>,
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               <m>e^{ i \phi_1 } \, e^{ i \phi_2 } = e^{ i ( \phi_1 + \phi_2 ) }</m>

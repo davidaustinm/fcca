@@ -30,8 +30,7 @@
   </introduction>
   <xi:include  href="sec_limitsandcontinuity.ptx"/>
   <xi:include  href="sec_diffholom.ptx"/>
-  <!--
   <xi:include  href="sec_Cauchy-Riemann.ptx"/>
   <xi:include  href="sec_constantfcts.ptx"/>
-  -->
+  <xi:include  href="exercises-chap2.ptx"/>
 </chapter>

@@ -212,7 +212,7 @@
         <m>G</m>, let <m>z_0</m> be an accumulation point of <m>G</m>,
         and let <m>c \in \C</m>.  If <m>\lim_{ z \to z_0 } f(z)</m>
         and <m>\lim_{ z \to z_0 } g(z)</m> exist, then
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li xml:id="limitsadd">
             <p>
               <m>\displaystyle

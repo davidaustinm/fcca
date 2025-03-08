@@ -60,7 +60,7 @@
     <statement>
       <p>
         Suppose <m>G</m> is a subset of <m>\C</m>.
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               A point <m>a \in G</m> is an <em>interior point</em>
