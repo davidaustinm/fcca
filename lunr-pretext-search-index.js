@@ -955,6 +955,366 @@ var ptx_lunr_docs = [
   "body": "  Suppose are open sets, is a bijection, is the inverse function inverse function of , and . If is differentiable at with and is continuous at , then is differentiable at with .    Since for all , .  Now define and set   This is continuous at and by continuity of , so we can apply Proposition :    "
 },
 {
+  "id": "sec_Cauchy-Riemann",
+  "level": "1",
+  "url": "sec_Cauchy-Riemann.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "The Cauchy–Riemann Equations",
+  "body": " The Cauchy Riemann Equations  When considering a real-valued function of two variables, there is no notion of the derivative of a function. For such a function, we instead only have partial derivatives and (and also directional derivatives) which depend on the way in which we approach a point .  For a complex-valued function , we now have a new concept of the derivative , which by definition cannot depend on the way in which we approach a point . It is logical, then, that there should be a relationship between the complex derivative and the partial derivatives  . partial derivative  derivative partial (so this definition is exactly as in the real-valued case).  This relationship between the complex derivative and partial derivatives is very strong, and it is a powerful computational tool. It is described by the Cauchy-Riemann equations , named after Augustin Louis Cauchy (1789 1857) and Georg Friedrich Bernhard Riemann (1826 1866), even though the equations appeared already in the works of Jean le Rond d'Alembert (1717 1783) and Leonhard Euler (1707 1783). Cauchy Riemann equations        Suppose is differentiable at . Then the partial derivatives of exist and satisfy and the derivative is given by .    Suppose is a complex function such that the partial derivatives and exist in an open disk centered at and are continuous at . If these partial derivatives satisfy { } then is differentiable at .       Before proving , we note several comments and give two applications. It is traditional, and often convenient, to write the function in terms of its real and imaginary parts. That is, we write where is the real part of and is the imaginary part. Then, using the usual shorthand and , we have both .  With this terminology we can rewrite as the pair of equations   As stated, parts (a) and (b) in are not quite converse statements. However, we will show in that if is holomorphic at then and have continuous partials (of any order) at . That is, in we will see that is holomorphic in an open set if and only if and have continuous partials that satisfy in .  If and satisfy and their second partials are also continuous, then , that is,   (and an analogous identity for ). Functions with continuous second partials satisfying this partial differential equation on a region (though not necessarily ) are called harmonic on ; we will study such functions in . harmonic Again, as we will see later, if is holomorphic in an open set then the partials of any order of and exist; hence we will show that the real and imaginary parts of a function that is holomorphic in an open set are harmonic on that set.    We revisit Example and again consider given by .  Thus are continuous on and satisfy . Thus by Theorem (b), is entire.      Revisiting Example (you saw that coming, didn't you?), we consider given by .  Now , which satisfy only when . (The contrapositive of) (a) thus implies that is not differentiable on .     (a) If is differentiable at then .  As we know by now, we must get the same result if we restrict to be on the real axis and if we restrict it to be on the imaginary axis. In the first case, and .  In the second case, and .  Thus we have shown that .  (b) Suppose the Cauchy-Riemann equation holds and the partial derivatives and are continuous in an open disk centered at . Our goal is to prove that . By , .  On the other hand, we can rewrite the difference quotient for as .  Thus .  We claim that both limits on the right-hand side are , so we have achieved our set goal. The fractions and are bounded in absolute value by , so we just need to see that the limits of the expressions in parentheses are . The second term on the right-hand side of has a limit of since, by definition, and taking the limit here as is the same as taking the limit as .  We cannot do something equivalent for the first term in , since now both and are involved, and both change as . Instead we apply the Mean-Value for real functions, We collect several theorems from calculus, such as the Mean-Value Theorem for real-valued functions, in the Appendix. to the real and imaginary parts and of . gives real numbers such that .  Thus .  Because and are continuous at , , and so goes to 0 as , which we set out to prove.   "
+},
+{
+  "id": "cre",
+  "level": "2",
+  "url": "sec_Cauchy-Riemann.html#cre",
+  "type": "Theorem",
+  "number": "2.3.1",
+  "title": "",
+  "body": "     Suppose is differentiable at . Then the partial derivatives of exist and satisfy and the derivative is given by .    Suppose is a complex function such that the partial derivatives and exist in an open disk centered at and are continuous at . If these partial derivatives satisfy { } then is differentiable at .      "
+},
+{
+  "id": "sec_Cauchy-Riemann-11",
+  "level": "2",
+  "url": "sec_Cauchy-Riemann.html#sec_Cauchy-Riemann-11",
+  "type": "Example",
+  "number": "2.3.2",
+  "title": "",
+  "body": "  We revisit Example and again consider given by .  Thus are continuous on and satisfy . Thus by Theorem (b), is entire.   "
+},
+{
+  "id": "sec_Cauchy-Riemann-12",
+  "level": "2",
+  "url": "sec_Cauchy-Riemann.html#sec_Cauchy-Riemann-12",
+  "type": "Example",
+  "number": "2.3.3",
+  "title": "",
+  "body": "  Revisiting Example (you saw that coming, didn't you?), we consider given by .  Now , which satisfy only when . (The contrapositive of) (a) thus implies that is not differentiable on .   "
+},
+{
+  "id": "sec_Cauchy-Riemann-13",
+  "level": "2",
+  "url": "sec_Cauchy-Riemann.html#sec_Cauchy-Riemann-13",
+  "type": "Proof",
+  "number": "2.3.1",
+  "title": "",
+  "body": " (a) If is differentiable at then .  As we know by now, we must get the same result if we restrict to be on the real axis and if we restrict it to be on the imaginary axis. In the first case, and .  In the second case, and .  Thus we have shown that .  (b) Suppose the Cauchy-Riemann equation holds and the partial derivatives and are continuous in an open disk centered at . Our goal is to prove that . By , .  On the other hand, we can rewrite the difference quotient for as .  Thus .  We claim that both limits on the right-hand side are , so we have achieved our set goal. The fractions and are bounded in absolute value by , so we just need to see that the limits of the expressions in parentheses are . The second term on the right-hand side of has a limit of since, by definition, and taking the limit here as is the same as taking the limit as .  We cannot do something equivalent for the first term in , since now both and are involved, and both change as . Instead we apply the Mean-Value for real functions, We collect several theorems from calculus, such as the Mean-Value Theorem for real-valued functions, in the Appendix. to the real and imaginary parts and of . gives real numbers such that .  Thus .  Because and are continuous at , , and so goes to 0 as , which we set out to prove.  "
+},
+{
+  "id": "sec_constantfcts",
+  "level": "1",
+  "url": "sec_constantfcts.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Constant Functions",
+  "body": " Constant Functions  As a sample application of the definition of the derivative of a complex function, we consider functions that have a derivative of . In a typical calculus course, one of the first applications of the Mean-Value Theorem for real-valued functions ( ) is to show that if a function has zero derivative everywhere on an interval then it must be constant.    If is an interval and is a real-valued function with defined and equal to for all , then there is a constant such that for all .     The Mean-Value says that for any , for some . Now , so the above equation yields . Since this is true for any , the function must be constant on .   We do not (yet) have a complex version of the Mean-Value Theorem, and so we will use a different argument to prove that a complex function whose derivative is always must be constant.  Our proof of required two key features of the function , both of which are somewhat obviously necessary. The first is that be differentiable everywhere in its domain. In fact, if is not differentiable everywhere, we can construct functions that have zero derivative almost everywhere but that have infinitely many values in their image.  The second key feature is that the interval is connected. It is certainly important for the domain to be connected in both the real and complex cases. For instance, if we define the function through then for all in the domain of , but is not constant. This may seem like a silly example, but it illustrates a pitfall to proving a function is constant that we must be careful of. Recall that a region of is an open connected subset.    If is a region and is a complex-valued function with defined and equal to for all , then is constant.     We will first show that is constant along horizontal segments and along vertical segments in .  Suppose that is a horizontal line segment in . Thus there is some number such that the imaginary part of any is . Now consider the real part of the function , for . Since is constant on , we can consider to be just a function of , the real part of . By assumption, , so for we have . Thus, by Proposition , is constant on .  We can argue the same way to see that the imaginary part of is constant on , since on . Since both the real and imaginary parts of are constant on , the function itself is constant on .  This same argument works for vertical segments, interchanging the roles of the real and imaginary parts. We have thus proved that is constant along horizontal segments and along vertical segments in . Now if and are two points in that can be connected by a path composed of horizontal and vertical segments, we conclude that . But any two points of a region may be connected by finitely many such segments by Theorem , so has the same value at any two points of , thus proving the theorem.   There are a number of surprising applications of ; see, e.g., and   "
+},
+{
+  "id": "lem_constant",
+  "level": "2",
+  "url": "sec_constantfcts.html#lem_constant",
+  "type": "Proposition",
+  "number": "2.4.1",
+  "title": "",
+  "body": "  If is an interval and is a real-valued function with defined and equal to for all , then there is a constant such that for all .   "
+},
+{
+  "id": "sec_constantfcts-4",
+  "level": "2",
+  "url": "sec_constantfcts.html#sec_constantfcts-4",
+  "type": "Proof",
+  "number": "2.4.1",
+  "title": "",
+  "body": " The Mean-Value says that for any , for some . Now , so the above equation yields . Since this is true for any , the function must be constant on .  "
+},
+{
+  "id": "derivative0",
+  "level": "2",
+  "url": "sec_constantfcts.html#derivative0",
+  "type": "Theorem",
+  "number": "2.4.2",
+  "title": "",
+  "body": "  If is a region and is a complex-valued function with defined and equal to for all , then is constant.   "
+},
+{
+  "id": "sec_constantfcts-9",
+  "level": "2",
+  "url": "sec_constantfcts.html#sec_constantfcts-9",
+  "type": "Proof",
+  "number": "2.4.2",
+  "title": "",
+  "body": " We will first show that is constant along horizontal segments and along vertical segments in .  Suppose that is a horizontal line segment in . Thus there is some number such that the imaginary part of any is . Now consider the real part of the function , for . Since is constant on , we can consider to be just a function of , the real part of . By assumption, , so for we have . Thus, by Proposition , is constant on .  We can argue the same way to see that the imaginary part of is constant on , since on . Since both the real and imaginary parts of are constant on , the function itself is constant on .  This same argument works for vertical segments, interchanging the roles of the real and imaginary parts. We have thus proved that is constant along horizontal segments and along vertical segments in . Now if and are two points in that can be connected by a path composed of horizontal and vertical segments, we conclude that . But any two points of a region may be connected by finitely many such segments by Theorem , so has the same value at any two points of , thus proving the theorem.  "
+},
+{
+  "id": "chapter2-exercises",
+  "level": "1",
+  "url": "chapter2-exercises.html",
+  "type": "Exercises",
+  "number": "2.5",
+  "title": "Exercises",
+  "body": "  Use the definition of limit to show for any that .    Evaluate the following limits or explain why they don't exist.                Prove that, if a limit exists, then it is unique.    Prove .    Let and suppose is an accumulation point of . Show that if and only if .     is useful for showing that limits do not exist, but it is not at all useful for showing that a limit does exist. For example, define .  Show that the limits of at along all straight lines through the origin exist and are equal, but does not exist. ( Hint : Consider the limit along the parabola .)    Suppose that and . Prove that if and only if .    Show that the function given by is continuous on .    Show that the function given by is continuous on .    Determine where each of the following functions is continuous:                Show that the two definitions of continuity in are equivalent. Consider separately the cases where is an accumulation point of and where is an isolated point of .    Consider the function given by . Apply the definition of the derivative to give a direct proof that .    Prove .    Prove .    Find the derivative of the function , where with . When is ?    Prove that if is given by a polynomial in then is entire. What can you say if is given by a polynomial polynomial in and ?    Prove or find a counterexample: If and are real valued and continuous, then is continuous; if and are (real) differentiable then is (complex) differentiable.    Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.                                                                  Define if , and if . Show that satisfies the Cauchy-Riemann equation at , yet is not differentiable at . Why doesn't this contradict (b)?    Prove: If is holomorphic in the region and always real valued, then is constant in . ( Hint : Use the Cauchy-Riemann equations to show that .)    Prove: If and are both holomorphic in the region then is constant in .    Suppose is entire and can be written as , that is, the real part of depends only on and the imaginary part of depends only on . Prove that for some and .    Suppose is entire, with real and imaginary parts and satisfying for all . Show that is constant.    Prove that the Cauchy-Riemann equations take on the following form in polar coordinates: .    For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                          Is harmonic on ? What about ?    Consider the general real homogeneous quadratic function , where , and are real constants.   Show that is harmonic if and only if .    If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .       Re-prove by using the formula for given in .    Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)   "
+},
+{
+  "id": "chapter2-exercises-1",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-1",
+  "type": "Exercise",
+  "number": "2.5.1",
+  "title": "",
+  "body": " Use the definition of limit to show for any that .  "
+},
+{
+  "id": "ex_2_1",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_2_1",
+  "type": "Exercise",
+  "number": "2.5.2",
+  "title": "",
+  "body": " Evaluate the following limits or explain why they don't exist.              "
+},
+{
+  "id": "ex_limitunique",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_limitunique",
+  "type": "Exercise",
+  "number": "2.5.3",
+  "title": "",
+  "body": " Prove that, if a limit exists, then it is unique.  "
+},
+{
+  "id": "ex_limits",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_limits",
+  "type": "Exercise",
+  "number": "2.5.4",
+  "title": "",
+  "body": " Prove .  "
+},
+{
+  "id": "ex_limiteq0",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_limiteq0",
+  "type": "Exercise",
+  "number": "2.5.5",
+  "title": "",
+  "body": " Let and suppose is an accumulation point of . Show that if and only if .  "
+},
+{
+  "id": "chapter2-exercises-6",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-6",
+  "type": "Exercise",
+  "number": "2.5.6",
+  "title": "",
+  "body": "  is useful for showing that limits do not exist, but it is not at all useful for showing that a limit does exist. For example, define .  Show that the limits of at along all straight lines through the origin exist and are equal, but does not exist. ( Hint : Consider the limit along the parabola .)  "
+},
+{
+  "id": "chapter2-exercises-7",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-7",
+  "type": "Exercise",
+  "number": "2.5.7",
+  "title": "",
+  "body": " Suppose that and . Prove that if and only if .  "
+},
+{
+  "id": "ex_zsquaredcontinuous",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_zsquaredcontinuous",
+  "type": "Exercise",
+  "number": "2.5.8",
+  "title": "",
+  "body": " Show that the function given by is continuous on .  "
+},
+{
+  "id": "ex_zbaroverzcont",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_zbaroverzcont",
+  "type": "Exercise",
+  "number": "2.5.9",
+  "title": "",
+  "body": " Show that the function given by is continuous on .  "
+},
+{
+  "id": "chapter2-exercises-10",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-10",
+  "type": "Exercise",
+  "number": "2.5.10",
+  "title": "",
+  "body": " Determine where each of the following functions is continuous:              "
+},
+{
+  "id": "ex_continuitydefs",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_continuitydefs",
+  "type": "Exercise",
+  "number": "2.5.11",
+  "title": "",
+  "body": " Show that the two definitions of continuity in are equivalent. Consider separately the cases where is an accumulation point of and where is an isolated point of .  "
+},
+{
+  "id": "chapter2-exercises-12",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-12",
+  "type": "Exercise",
+  "number": "2.5.12",
+  "title": "",
+  "body": " Consider the function given by . Apply the definition of the derivative to give a direct proof that .  "
+},
+{
+  "id": "chapter2-exercises-13",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-13",
+  "type": "Exercise",
+  "number": "2.5.13",
+  "title": "",
+  "body": " Prove .  "
+},
+{
+  "id": "ex_diffrules",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_diffrules",
+  "type": "Exercise",
+  "number": "2.5.14",
+  "title": "",
+  "body": " Prove .  "
+},
+{
+  "id": "chapter2-exercises-15",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-15",
+  "type": "Exercise",
+  "number": "2.5.15",
+  "title": "",
+  "body": " Find the derivative of the function , where with . When is ?  "
+},
+{
+  "id": "polynomialsholomorphic",
+  "level": "2",
+  "url": "chapter2-exercises.html#polynomialsholomorphic",
+  "type": "Exercise",
+  "number": "2.5.16",
+  "title": "",
+  "body": " Prove that if is given by a polynomial in then is entire. What can you say if is given by a polynomial polynomial in and ?  "
+},
+{
+  "id": "chapter2-exercises-17",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-17",
+  "type": "Exercise",
+  "number": "2.5.17",
+  "title": "",
+  "body": " Prove or find a counterexample: If and are real valued and continuous, then is continuous; if and are (real) differentiable then is (complex) differentiable.  "
+},
+{
+  "id": "ex_2_2",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_2_2",
+  "type": "Exercise",
+  "number": "2.5.18",
+  "title": "",
+  "body": " Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.                                                                "
+},
+{
+  "id": "chapter2-exercises-19",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-19",
+  "type": "Exercise",
+  "number": "2.5.19",
+  "title": "",
+  "body": " Define if , and if . Show that satisfies the Cauchy-Riemann equation at , yet is not differentiable at . Why doesn't this contradict (b)?  "
+},
+{
+  "id": "ex_realimpliesconst",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_realimpliesconst",
+  "type": "Exercise",
+  "number": "2.5.20",
+  "title": "",
+  "body": " Prove: If is holomorphic in the region and always real valued, then is constant in . ( Hint : Use the Cauchy-Riemann equations to show that .)  "
+},
+{
+  "id": "ex_fandconjfimpliesconst",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_fandconjfimpliesconst",
+  "type": "Exercise",
+  "number": "2.5.21",
+  "title": "",
+  "body": " Prove: If and are both holomorphic in the region then is constant in .  "
+},
+{
+  "id": "chapter2-exercises-22",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-22",
+  "type": "Exercise",
+  "number": "2.5.22",
+  "title": "",
+  "body": " Suppose is entire and can be written as , that is, the real part of depends only on and the imaginary part of depends only on . Prove that for some and .  "
+},
+{
+  "id": "chapter2-exercises-23",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-23",
+  "type": "Exercise",
+  "number": "2.5.23",
+  "title": "",
+  "body": " Suppose is entire, with real and imaginary parts and satisfying for all . Show that is constant.  "
+},
+{
+  "id": "ex_crepolar",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_crepolar",
+  "type": "Exercise",
+  "number": "2.5.24",
+  "title": "",
+  "body": " Prove that the Cauchy-Riemann equations take on the following form in polar coordinates: .  "
+},
+{
+  "id": "ex_harmconj",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_harmconj",
+  "type": "Exercise",
+  "number": "2.5.25",
+  "title": "",
+  "body": " For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                        "
+},
+{
+  "id": "ex_225",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_225",
+  "type": "Exercise",
+  "number": "2.5.26",
+  "title": "",
+  "body": " Is harmonic on ? What about ?  "
+},
+{
+  "id": "chapter2-exercises-27",
+  "level": "2",
+  "url": "chapter2-exercises.html#chapter2-exercises-27",
+  "type": "Exercise",
+  "number": "2.5.27",
+  "title": "",
+  "body": " Consider the general real homogeneous quadratic function , where , and are real constants.   Show that is harmonic if and only if .    If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .     "
+},
+{
+  "id": "ex_diffrulesViaCR",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_diffrulesViaCR",
+  "type": "Exercise",
+  "number": "2.5.28",
+  "title": "",
+  "body": " Re-prove by using the formula for given in .  "
+},
+{
+  "id": "ex_2ndderivative0",
+  "level": "2",
+  "url": "chapter2-exercises.html#ex_2ndderivative0",
+  "type": "Exercise",
+  "number": "2.5.29",
+  "title": "",
+  "body": " Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
