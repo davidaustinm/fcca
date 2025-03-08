@@ -325,6 +325,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chapter2-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="exampleschapter.html" class="internal"><span class="codenumber">3</span> <span class="title">Examples of Functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_mobius.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Möbius Transformations</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural toc-item-list">
@@ -505,10 +509,11 @@ f_y(z_0) \,\text{.}
 <div class="para">On the other hand, we can rewrite the difference quotient for <span class="process-math">\(f'(z_0)\)</span> as</div>
 <div class="displaymath process-math" id="sec_Cauchy-Riemann-13-6-2">
 \begin{align*}
-\frac{f(z_0+\D z)-f(z_0)}{\D z} \amp \= \frac{f(z_0+\D
+\amp\frac{f(z_0+\D z)-f(z_0)}{\D z}\amp\\
+\amp \= \frac{f(z_0+\D
 z)-f(z_0+\D x) + f(z_0+\D x) - f(z_0)}{\D z}\\
-\amp \= \frac{f(z_0+\D x+i\D y)-f(z_0+\D x)}{\D z} +
-\frac{f(z_0+\D x) - f(z_0)}{\D z} \,\text{.}
+\amp \= \frac{f(z_0+\D x+i\D y)-f(z_0+\D x)}{\D z} 
++ \frac{f(z_0+\D x) - f(z_0)}{\D z} \,\text{.}
 \end{align*}
 </div>
 </div>
@@ -516,8 +521,8 @@ z)-f(z_0+\D x) + f(z_0+\D x) - f(z_0)}{\D z}\\
 <div class="para">Thus</div>
 <div class="displaymath process-math" id="sec_Cauchy-Riemann-13-7-1">
 \begin{align}
-\lim_{\D z\to0}\frac{f(z_0+\D z)-f(z_0)}{\D z} - f_x(z_0)
-\nonumber \amp \= \lim_{\D z\to0} \frac{\D y}{\D
+\amp\lim_{\D z\to0}\frac{f(z_0+\D z)-f(z_0)}{\D z} - f_x(z_0)\notag\\
+\amp = \lim_{\D z\to0} \frac{\D y}{\D
 z}\left(\frac{f(z_0+\D x+i\D y)-f(z_0+\D x)}{\D y} -
 f_y(z_0)\right)\notag\\
 \amp \qquad + \lim_{\D z\to0} \frac{\D x}{\D
@@ -550,27 +555,30 @@ f_x(z_0) \= \lim_{\D x\to0}\frac{f(z_0+\D x) - f(z_0)}{\D x}
 <div class="para">Thus</div>
 <div class="displaymath process-math" id="sec_Cauchy-Riemann-13-10-1">
 \begin{align}
-\amp \frac{f(z_0+\D x+ i \, \D y)-f(z_0+\D x)}{\D y} -
-f_y(z_0) \= \left( \frac{ u(x_0 + \D x, \, y_0 + \D y) - u(x_0
-+ \D x, \, y_0) }{ \D y } - u_y(z_0) \right) \nonumber\notag\\
-\amp \qquad \qquad \qquad \qquad \qquad \qquad + i \left(
-\frac{ v(x_0 + \D x, \, y_0 + \D y) - v(x_0 + \D x, \, y_0) }{
-\D y } - v_y(z_0) \right) \nonumber\notag\\
-\amp \qquad\= \left(u_y(x_0+\D x, \, y_0+a \, \D y)-u_y(x_0,
-\, y_0)\right) + i\left(v_y(x_0+\D x, \, y_0+b \, \D
-y)-v_y(x_0, \, y_0)\right)\text{.}\tag{2.6}
+\amp \frac{f(z_0+\D x+ i \D y)-f(z_0+\D x)}{\D y} -
+f_y(z_0)\notag\\
+\amp = \left( \frac{ u(x_0 + \D x, y_0 + \D y) - u(x_0
++ \D x, y_0) }{ \D y } - u_y(z_0) \right) \notag\\
+\amp \quad + i \left(
+\frac{ v(x_0 + \D x, y_0 + \D y) - v(x_0 + \D x, y_0) }{
+\D y } - v_y(z_0) \right)\notag\\
+\amp = \left(u_y(x_0+\D x, y_0+a \D y)-u_y(x_0,
+y_0)\right)\tag{2.6}\\
+\amp \quad + i\left(v_y(x_0+\D x, y_0+b \D y)-v_y(x_0,
+y_0)\right) \text{.}\notag
 \end{align}
 </div>
 </div>
 <div class="para logical" id="sec_Cauchy-Riemann-13-11">
 <div class="para">Because <span class="process-math">\(u_y\)</span> and <span class="process-math">\(v_y\)</span> are continuous at <span class="process-math">\((x_0,y_0)\text{,}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_laststepcauchyr.html">
-\begin{equation*}
-\lim_{ \D z \to 0 } u_y(x_0+\D x, \, y_0+a \, \D y) \=
-u_y(x_0, \, y_0) \text{ and } \lim_{ \D z \to 0 } v_y(x_0+\D
-x, \, y_0+b \, \D y) \= v_y(x_0, \, y_0) \, \text{,}
-\end{equation*}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_laststepcauchyr.html" id="sec_Cauchy-Riemann-13-11-4">
+\begin{align*}
+\lim_{ \D z \to 0 } u_y(x_0+\D x, \, y_0+a \, \D y) \amp \=
+u_y(x_0, \, y_0)\\
+\lim_{ \D z \to 0 } v_y(x_0+\D x, \, y_0+b \, \D y) \amp \=
+v_y(x_0, \, y_0)\text{,}
+\end{align*}
 </div>
 <div class="para">and so <a href="sec_Cauchy-Riemann.html#sec_Cauchy-Riemann-13-10-1" class="xref" data-knowl="./knowl/xref/eq_laststepcauchyr.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.6">(2.6)</a> goes to 0 as <span class="process-math">\(\D z \to 0\text{,}\)</span> which we set out to prove.</div>
 </div></article></section></div>

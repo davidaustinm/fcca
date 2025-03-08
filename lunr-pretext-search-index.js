@@ -1315,6 +1315,105 @@ var ptx_lunr_docs = [
   "body": " Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)  "
 },
 {
+  "id": "sec_mobius",
+  "level": "1",
+  "url": "sec_mobius.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "Möbius Transformations",
+  "body": " Möbius Transformations   Mobius transformation@Möbius transformation   The first class of functions that we will discuss in some detail are built from linear polynomials.    A linear fractional transformation is a function of the form where . linear fractional transformation If then is called a Möbius Named after August Ferdinand Möbius (1790 1868). transformation .     said that any polynomial in is an entire function, and so the linear fractional transformation is holomorphic in , unless (in which case is entire). If then implies , which means that a Möbius transformation will never take on the value . Our first proposition in this chapter says that with these small observations about the domain and image of a Möbius transformation, we obtain a class of bijections, which are quite special among complex functions. bijection    inverse function of a Möbius transformation     Let with . Then given by has the inverse function given by .    We remark that the same formula for works when , except that in this case both domain and image of are ; see . In either case, we note that the inverse of a Möbius transformation is another Möbius transformation.    Consider the linear fractional transformation . This is a Möbius transformation (check the condition!) with domain whose inverse can be computed via , so that , with domain .     We first prove that is one-to-one. If , that is, , then , which can be rearranged to .  Since this implies that . This shows that is one-to-one.   verifies that the Möbius transformation is the inverse of , and by what we have just proved, is also one-to-one. But this implies that is onto.   We remark that Möbius transformations provide an immediate application of Proposition , as the derivative of is and thus never zero. Proposition implies that Möbius transformations are conformal, conformal that is, they preserve angles. function conformal   Möbius transformations have even more fascinating geometric properties. En route to an example of such, we introduce some terminology. Special cases of Möbius transformations are translations  , dilations  , and inversion  . translation  dilation  inversion The next result says that if we understand those three special Möbius transformations, we understand them all.    Suppose is a linear fractional transformation. If then , and if then .  In particular, every linear fractional transformation is a composition of translations, dilations, and inversions.     Simplify.     Möbius transformations map circles and lines into circles and lines.      Continuing Example , consider again . For , , which is a real number. Thus Theorem implies that maps the unit circle to the real line.     Translations and dilations certainly map circles and lines into circles and lines, so by Proposition , we only have to prove the statement of the theorem for the inversion .  The equation for a circle centered at with radius is , which we can transform to for some real numbers , , , and that satisfy (see ). The form is more convenient for us, because it includes the possibility that the equation describes a line (precisely when ).  Suppose satisfies ; we need to prove that satisfies a similar equation. Since , we can rewrite as .  But this equation, in conjunction with , says that lies on a circle or line.    demonstrates the effect that the inversion has on horizontal and vertical lines. In particular, the vertical line defined by is mapped into the circle of radius centered at .   Inversion maps vertical lines, shown on the left, into the circles centered on the real axis. Horizontal lines are mapped into circles centered on the imaginary axis.      b=4                   b=4     x0=k\/4      y0=k\/4           "
+},
+{
+  "id": "sec_mobius-4",
+  "level": "2",
+  "url": "sec_mobius.html#sec_mobius-4",
+  "type": "Definition",
+  "number": "3.1.1",
+  "title": "",
+  "body": "  A linear fractional transformation is a function of the form where . linear fractional transformation If then is called a Möbius Named after August Ferdinand Möbius (1790 1868). transformation .   "
+},
+{
+  "id": "inversemobius",
+  "level": "2",
+  "url": "sec_mobius.html#inversemobius",
+  "type": "Proposition",
+  "number": "3.1.2",
+  "title": "",
+  "body": "  Let with . Then given by has the inverse function given by .   "
+},
+{
+  "id": "ex_mobiusinverse",
+  "level": "2",
+  "url": "sec_mobius.html#ex_mobiusinverse",
+  "type": "Example",
+  "number": "3.1.3",
+  "title": "",
+  "body": "  Consider the linear fractional transformation . This is a Möbius transformation (check the condition!) with domain whose inverse can be computed via , so that , with domain .   "
+},
+{
+  "id": "sec_mobius-10",
+  "level": "2",
+  "url": "sec_mobius.html#sec_mobius-10",
+  "type": "Proof",
+  "number": "3.1.1",
+  "title": "",
+  "body": " We first prove that is one-to-one. If , that is, , then , which can be rearranged to .  Since this implies that . This shows that is one-to-one.   verifies that the Möbius transformation is the inverse of , and by what we have just proved, is also one-to-one. But this implies that is onto.  "
+},
+{
+  "id": "transdilinv",
+  "level": "2",
+  "url": "sec_mobius.html#transdilinv",
+  "type": "Proposition",
+  "number": "3.1.4",
+  "title": "",
+  "body": "  Suppose is a linear fractional transformation. If then , and if then .  In particular, every linear fractional transformation is a composition of translations, dilations, and inversions.   "
+},
+{
+  "id": "sec_mobius-14",
+  "level": "2",
+  "url": "sec_mobius.html#sec_mobius-14",
+  "type": "Proof",
+  "number": "3.1.2",
+  "title": "",
+  "body": " Simplify.  "
+},
+{
+  "id": "circlestocircles",
+  "level": "2",
+  "url": "sec_mobius.html#circlestocircles",
+  "type": "Theorem",
+  "number": "3.1.5",
+  "title": "",
+  "body": "  Möbius transformations map circles and lines into circles and lines.   "
+},
+{
+  "id": "ex_mobiusinverse2",
+  "level": "2",
+  "url": "sec_mobius.html#ex_mobiusinverse2",
+  "type": "Example",
+  "number": "3.1.6",
+  "title": "",
+  "body": "  Continuing Example , consider again . For , , which is a real number. Thus Theorem implies that maps the unit circle to the real line.   "
+},
+{
+  "id": "sec_mobius-17",
+  "level": "2",
+  "url": "sec_mobius.html#sec_mobius-17",
+  "type": "Proof",
+  "number": "3.1.3",
+  "title": "",
+  "body": " Translations and dilations certainly map circles and lines into circles and lines, so by Proposition , we only have to prove the statement of the theorem for the inversion .  The equation for a circle centered at with radius is , which we can transform to for some real numbers , , , and that satisfy (see ). The form is more convenient for us, because it includes the possibility that the equation describes a line (precisely when ).  Suppose satisfies ; we need to prove that satisfies a similar equation. Since , we can rewrite as .  But this equation, in conjunction with , says that lies on a circle or line.  "
+},
+{
+  "id": "fig-inversion",
+  "level": "2",
+  "url": "sec_mobius.html#fig-inversion",
+  "type": "Figure",
+  "number": "3.1.7",
+  "title": "",
+  "body": " Inversion maps vertical lines, shown on the left, into the circles centered on the real axis. Horizontal lines are mapped into circles centered on the imaginary axis.      b=4                   b=4     x0=k\/4      y0=k\/4          "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
