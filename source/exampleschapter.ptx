@@ -26,8 +26,8 @@
     </p>
   </introduction>
   <xi:include  href="sec_mobius.ptx"/>
-  <!--
   <xi:include  href="sec_riemannspere.ptx"/>
+  <!--
   <xi:include  href="sec_stereoproj.ptx"/>
   <xi:include  href="sec_exptrigfcts.ptx"/>
   <xi:include  href="sec_logexp.ptx"/>
