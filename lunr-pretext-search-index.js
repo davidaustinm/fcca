@@ -1414,6 +1414,114 @@ var ptx_lunr_docs = [
   "body": " Inversion maps vertical lines, shown on the left, into the circles centered on the real axis. Horizontal lines are mapped into circles centered on the imaginary axis.      b=4                   b=4     x0=k\/4      y0=k\/4          "
 },
 {
+  "id": "sec_riemannspere",
+  "level": "1",
+  "url": "sec_riemannspere.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "Infinity and the Cross Ratio",
+  "body": " Infinity and the Cross Ratio  In the context of Möbius transformations, it is useful to introduce a formal way of saying that a function  blows up in absolute value, and this gives rise to a notion of infinity. infinity  limit infinity     Suppose .    means that for every we can find so that, for all satisfying , we have .     means that for every we can find so that, for all satisfying , we have .     means that for every we can find so that, for all satisfying , we have .     In the first definition we require that be an accumulation point of while in the second and third we require that be an extended accumulation point of , in the sense that for every there is some with .    As in , the limit, in any of these senses, is unique if it exists.    We claim that : Given , let . Then implies .      Let be a Möbius transformation with . Then .  To simplify the notation, introduce the constant . Given , let . Then implies, with the reverse triangle inequality ( ), that and so .    We stress that is not a number in , just as are not numbers in . However, we can extend  by adding on , if we are careful. We do so by realizing that we are always talking about a limit when handling . It turns out (see ) that the usual limit rules behave well when we mix complex numbers and . For example, if and is finite then the usual limit of sum = sum of limits rule still holds and gives . The following definition captures the philosophy of this paragraph.    The extended complex plane is the set , together with the following algebraic properties: For any ,        if then               if then .    complex plane extended  extended complex plane   The extended complex plane is also called the Riemann sphere or the complex projective line , denoted . complex projective line  Riemann sphere     If a calculation involving is not covered by the rules above then we must investigate the limit more carefully. For example, it may seem strange that is not defined, but if we take the limit of as we will get , even though the individual limits of and are both .  Now we reconsider Möbius transformations with in mind. For example, is now defined for and , with and , and so we might argue the proper domain for is actually . Let's consider the other basic types of Möbius transformations. A translation is now defined for , with , and a dilation (with ) is also defined for , with . Since every Möbius transformation can be expressed as a composition of translations, dilations and inversions ( ), we see that every Möbius transformation may be interpreted as a transformation of onto . This general case is summarized in the following extension of .    Suppose and , and consider defined through   Then is a bijection.    This corollary also holds for if we then define .    Continuing Examples and , consider once more the Möbius transformation . With the definitions and , we can extend to a function .    With on our mind we can also add some insight to . We recall that in , we proved that maps the unit circle to the real line. Essentially the same proof shows that, more generally, any circle passing through gets mapped to a line (see ). The original domain of was , so the point must be excluded from these circles. However, by thinking of as function from to , we can put back into the picture, and so transforms circles that pass through to straight lines plus  . If we remember that corresponds to being arbitrarily far away from any point in , we can visualize a line plus as a circle passing through . If we make this a definition, then can be expressed as: any Möbius transformation of transforms circles to circles .  We can take this remark a step further, based on the idea that three distinct points in determine a unique circle passing through them: If the three points are in and nonlinear, this fact comes straight from Euclidean geometry; if the three points are on a straight line or if one of the points is , then the circle is a straight line plus .    The Möbius transformation given by maps .  The points , , and uniquely determine the unit circle and the points 0, 1, and uniquely determine the real line, viewed as a circle in . Thus implies that maps the unit circle to , which we already concluded in .    Conversely, if we know where three distinct points in are transformed by a Möbius transformation then we should be able to figure out everything about the transformation. There is a computational device that makes this easier to see.    If , , , and are any four points in with , , and distinct, then their cross ratio is defined as . cross ratio   This includes the implicit definitions and, if one of , , , or is , then the two terms containing are canceled; e.g., .      Our running example can be written as .      The function defined by is a Möbius transformation that satisfies .  Moreover, if is any Möbius transformation with , , and , then and are identical.    Most of this follows from our definition of , but we need to prove the uniqueness statement. By Proposition , the inverse is a Möbius transformation and, by Exercise , the composition is again a Möbius transformation. Note that and, similarly, and . If we write then and so , the identity function. But since , this means that and are identical.    So if we want to map three given points of to , and by a Möbius transformation, then the cross ratio gives us the only way to do it. What if we have three points , and and we want to map them to three other points , and ?    Suppose , and are distinct points in and , and are distinct points in . Then there is a unique Möbius transformation satisfying , , and .    Let where and . Uniqueness follows as in the proof of .    This theorem gives an explicit way to determine from the points and but, in practice, it is often easier to determine directly from the conditions (by solving for , , and ).  "
+},
+{
+  "id": "sec_riemannspere-3",
+  "level": "2",
+  "url": "sec_riemannspere.html#sec_riemannspere-3",
+  "type": "Definition",
+  "number": "3.2.1",
+  "title": "",
+  "body": "  Suppose .    means that for every we can find so that, for all satisfying , we have .     means that for every we can find so that, for all satisfying , we have .     means that for every we can find so that, for all satisfying , we have .     In the first definition we require that be an accumulation point of while in the second and third we require that be an extended accumulation point of , in the sense that for every there is some with .   "
+},
+{
+  "id": "sec_riemannspere-5",
+  "level": "2",
+  "url": "sec_riemannspere.html#sec_riemannspere-5",
+  "type": "Example",
+  "number": "3.2.2",
+  "title": "",
+  "body": "  We claim that : Given , let . Then implies .   "
+},
+{
+  "id": "sec_riemannspere-6",
+  "level": "2",
+  "url": "sec_riemannspere.html#sec_riemannspere-6",
+  "type": "Example",
+  "number": "3.2.3",
+  "title": "",
+  "body": "  Let be a Möbius transformation with . Then .  To simplify the notation, introduce the constant . Given , let . Then implies, with the reverse triangle inequality ( ), that and so .   "
+},
+{
+  "id": "sec_riemannspere-8",
+  "level": "2",
+  "url": "sec_riemannspere.html#sec_riemannspere-8",
+  "type": "Definition",
+  "number": "3.2.4",
+  "title": "",
+  "body": "  The extended complex plane is the set , together with the following algebraic properties: For any ,        if then               if then .    complex plane extended  extended complex plane   The extended complex plane is also called the Riemann sphere or the complex projective line , denoted . complex projective line  Riemann sphere    "
+},
+{
+  "id": "cor_inversemobius",
+  "level": "2",
+  "url": "sec_riemannspere.html#cor_inversemobius",
+  "type": "Corollary",
+  "number": "3.2.5",
+  "title": "",
+  "body": "  Suppose and , and consider defined through   Then is a bijection.   "
+},
+{
+  "id": "ex_mobiusinverse3",
+  "level": "2",
+  "url": "sec_riemannspere.html#ex_mobiusinverse3",
+  "type": "Example",
+  "number": "3.2.6",
+  "title": "",
+  "body": "  Continuing Examples and , consider once more the Möbius transformation . With the definitions and , we can extend to a function .   "
+},
+{
+  "id": "sec_riemannspere-16",
+  "level": "2",
+  "url": "sec_riemannspere.html#sec_riemannspere-16",
+  "type": "Example",
+  "number": "3.2.7",
+  "title": "",
+  "body": "  The Möbius transformation given by maps .  The points , , and uniquely determine the unit circle and the points 0, 1, and uniquely determine the real line, viewed as a circle in . Thus implies that maps the unit circle to , which we already concluded in .   "
+},
+{
+  "id": "sec_riemannspere-18",
+  "level": "2",
+  "url": "sec_riemannspere.html#sec_riemannspere-18",
+  "type": "Definition",
+  "number": "3.2.8",
+  "title": "",
+  "body": "  If , , , and are any four points in with , , and distinct, then their cross ratio is defined as . cross ratio   This includes the implicit definitions and, if one of , , , or is , then the two terms containing are canceled; e.g., .   "
+},
+{
+  "id": "sec_riemannspere-19",
+  "level": "2",
+  "url": "sec_riemannspere.html#sec_riemannspere-19",
+  "type": "Example",
+  "number": "3.2.9",
+  "title": "",
+  "body": "  Our running example can be written as .   "
+},
+{
+  "id": "crossratio",
+  "level": "2",
+  "url": "sec_riemannspere.html#crossratio",
+  "type": "Proposition",
+  "number": "3.2.10",
+  "title": "",
+  "body": "  The function defined by is a Möbius transformation that satisfies .  Moreover, if is any Möbius transformation with , , and , then and are identical.    Most of this follows from our definition of , but we need to prove the uniqueness statement. By Proposition , the inverse is a Möbius transformation and, by Exercise , the composition is again a Möbius transformation. Note that and, similarly, and . If we write then and so , the identity function. But since , this means that and are identical.   "
+},
+{
+  "id": "sec_riemannspere-22",
+  "level": "2",
+  "url": "sec_riemannspere.html#sec_riemannspere-22",
+  "type": "Corollary",
+  "number": "3.2.11",
+  "title": "",
+  "body": "  Suppose , and are distinct points in and , and are distinct points in . Then there is a unique Möbius transformation satisfying , , and .    Let where and . Uniqueness follows as in the proof of .   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
