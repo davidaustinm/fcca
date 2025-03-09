@@ -6,16 +6,16 @@
     <repeat parameter="k=1..4">
       <definition>x0=k/4</definition>
       <circle center="(1/(2*x0),0)" radius="1/(2*x0)"
-              stroke="red"/>
+              stroke="blue" dash="9 9"/>
       <circle center="(1/(-2*x0),0)" radius="1/(2*x0)"
-              stroke="red"/>
+              stroke="blue" dash="9 9"/>
     </repeat>
     <repeat parameter="k=1..4">
       <definition>y0=k/4</definition>
       <circle center="(0,1/(2*y0))" radius="1/(2*y0)"
-              stroke="blue" dash="9 9"/>
+              stroke="red"/>
       <circle center="(0,1/(-2*y0))" radius="1/(2*y0)"
-              stroke="blue" dash="9 9"/>
+              stroke="red"/>
     </repeat>
   </coordinates>
 </diagram>
