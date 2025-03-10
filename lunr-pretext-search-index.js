@@ -1522,6 +1522,69 @@ var ptx_lunr_docs = [
   "body": "  Suppose , and are distinct points in and , and are distinct points in . Then there is a unique Möbius transformation satisfying , , and .    Let where and . Uniqueness follows as in the proof of .   "
 },
 {
+  "id": "sec_stereoproj",
+  "level": "1",
+  "url": "sec_stereoproj.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Stereographic Projection",
+  "body": " Stereographic Projection  The addition of to the complex plane gives the plane a useful structure. This structure is revealed by a famous function called stereographic projection , which gives us a way of visualizing the extended complex plane that is, with the point at infinity in , as the unit sphere. It also provides a way of seeing that a line in the extended complex plane really is a circle, and of visualizing Möbius functions.  To begin, we think of as the -plane in , that is, . To describe stereographic projection, we will be less concerned with actual complex numbers and more concerned with their coordinates. Consider the unit sphere  . unit sphere   The sphere and the complex plane intersect in the set , which corresponds to the equator on the sphere and the unit circle on the complex plane. Let , the north pole of , and let , the south pole . south pole  north pole     The stereographic projection of to from is the map defined as follows. stereographic projection For any point , as the -coordinate of is strictly less than 1, the line through and intersects in exactly one point, which define to be . We also declare that . provides an illustration of this definition.     The definition of stereographic projection.     a=0.35  sa=1\/a^2  b=0.25  sb=1\/b^2  x2=(1-sa)\/(1-sa*sb)  y2=(1-x2)\/sa  int_pt=(sqrt(x2),sqrt(y2))  north=(0,1)  angle=atan(sqrt(y2\/x2))  ell1(t)=(cos(t),a*sin(t))  ell2(t)=(b*cos(t),sin(t))  r=1.7  p1=(r*cos(angle),r*sin(angle))  p2=-p1  e=(r,0)  phiP=(-1.5,-1)  s=0.72  P=s*north+(1-s)*phiP                   N  \\phi(P)  P   {\\mathbb C}          The map is given by   It is bijective, with inverse map and .     Given , the straight line through and is parametrized by where . When hits , the third coordinate is , so it must be that . Plugging this value of into the formula for yields as stated.  To see the formula for the inverse map , we begin with a point and solve for a point so that . The point satisfies the equation . The equation tells us that and . Thus, we solve three equations for three unknowns. The latter two equations yield .  Solving for and then plugging this into the identities and proves the desired formula. It is easy to check that and are both the identity map; see .     The stereographic projection takes the set of circles in bijectively to the set of circles in , where for a circle we have (that is, is a line in ) if and only if .     A circle in is the intersection of with some plane . If is a normal vector to , then there is a unique real number so that is given by . By possibly changing , we may assume that . We may also assume that , since if we can replace with , and if then .  Consider the circle of intersection . A point in the complex plane lies on the image of this circle under if and only if satisfies the defining equation for . Using the equations from Proposition for , we see that .  If , this is a straight line in the -plane. Moreover, every line in the -plane can be obtained in this way. Note that if and only if , which is if and only if the image under is a straight line.  If , then completing the square yields .  Depending on whether the right hand side of this equation is positive, 0, or negative, this is the equation of a circle, point, or the empty set in the -plane, respectively. These three cases happen when , , and , respectively. Only the first case corresponds to a circle in . verifies that every circle in the -plane arises in this manner.   We can now think of the extended complex plane as a sphere in , the afore-mentioned Riemann sphere .  It is particularly nice to think about the basic Möbius transformations via their effect on the Riemann sphere. We will describe inversion. It is worth thinking about, though beyond the scope of this book, how other Möbius functions behave. For instance, a rotation , composed with , can be seen to be a rotation of . We encourage you to verify this and consider the harder problems of visualizing a real dilation, , or a translation, . We give the hint that a real dilation is in some sense dual to a rotation, in that each moves points along perpendicular sets of circles. Translations can also be visualized via how they move points along sets of circles.  We now use stereographic projection to take another look at . We want to know what this function does to the sphere . We will take a point , project it to the plane by the stereographic projection , apply to the point that results, and then pull this point back to by .  We know which we now regard as the complex number .  We know from a previous calculation that , which gives . Thus .  Rather than plug this result into the formulas for , we can just ask what triple of numbers will be mapped to this particular pair using the formulas . The answer is .  Thus we have shown that the effect of on is to take to . This is a rotation around the -axis by 180 degrees.  We now have a second argument that takes circles and lines to circles and lines. A circle or line in is taken to a circle on by . Then rotates the sphere which certainly takes circles to circles. Now takes circles back to circles and lines. We can also say that the circles that go to lines under are the circles through 0, because 0 is mapped to under , and so a circle through 0 in goes to a circle through the south pole in . Now 180-degree rotation about the -axis takes the south pole to the north pole, and our circle is now passing through . But we know that will take this circle to a line in .  We end by mentioning that there is, in fact, a way of putting the complex metric on . It is certainly not the (finite) distance function induced by . Indeed, the origin in the complex plane corresponds to the south pole of . We have to be able to get arbitrarily far away from the origin in , so the complex distance function has to increase greatly with the coordinate. The closer points are to the north pole (corresponding to in ), the larger their distance to the origin, and to each other! In this light, a line in the Riemann sphere corresponds to a circle in through . In the regular sphere, the circle has finite length, but as a line on the Riemann sphere with the complex metric, it has infinite length.  "
+},
+{
+  "id": "sec_stereoproj-5",
+  "level": "2",
+  "url": "sec_stereoproj.html#sec_stereoproj-5",
+  "type": "Definition",
+  "number": "3.3.1",
+  "title": "",
+  "body": "  The stereographic projection of to from is the map defined as follows. stereographic projection For any point , as the -coordinate of is strictly less than 1, the line through and intersects in exactly one point, which define to be . We also declare that . provides an illustration of this definition.   "
+},
+{
+  "id": "fig_sphereandplane",
+  "level": "2",
+  "url": "sec_stereoproj.html#fig_sphereandplane",
+  "type": "Figure",
+  "number": "3.3.2",
+  "title": "",
+  "body": " The definition of stereographic projection.     a=0.35  sa=1\/a^2  b=0.25  sb=1\/b^2  x2=(1-sa)\/(1-sa*sb)  y2=(1-x2)\/sa  int_pt=(sqrt(x2),sqrt(y2))  north=(0,1)  angle=atan(sqrt(y2\/x2))  ell1(t)=(cos(t),a*sin(t))  ell2(t)=(b*cos(t),sin(t))  r=1.7  p1=(r*cos(angle),r*sin(angle))  p2=-p1  e=(r,0)  phiP=(-1.5,-1)  s=0.72  P=s*north+(1-s)*phiP                   N  \\phi(P)  P   {\\mathbb C}       "
+},
+{
+  "id": "prop_coordmaps",
+  "level": "2",
+  "url": "sec_stereoproj.html#prop_coordmaps",
+  "type": "Proposition",
+  "number": "3.3.3",
+  "title": "",
+  "body": "  The map is given by   It is bijective, with inverse map and .   "
+},
+{
+  "id": "sec_stereoproj-8",
+  "level": "2",
+  "url": "sec_stereoproj.html#sec_stereoproj-8",
+  "type": "Proof",
+  "number": "3.3.1",
+  "title": "",
+  "body": " Given , the straight line through and is parametrized by where . When hits , the third coordinate is , so it must be that . Plugging this value of into the formula for yields as stated.  To see the formula for the inverse map , we begin with a point and solve for a point so that . The point satisfies the equation . The equation tells us that and . Thus, we solve three equations for three unknowns. The latter two equations yield .  Solving for and then plugging this into the identities and proves the desired formula. It is easy to check that and are both the identity map; see .  "
+},
+{
+  "id": "StereoCircle",
+  "level": "2",
+  "url": "sec_stereoproj.html#StereoCircle",
+  "type": "Theorem",
+  "number": "3.3.4",
+  "title": "",
+  "body": "  The stereographic projection takes the set of circles in bijectively to the set of circles in , where for a circle we have (that is, is a line in ) if and only if .   "
+},
+{
+  "id": "sec_stereoproj-10",
+  "level": "2",
+  "url": "sec_stereoproj.html#sec_stereoproj-10",
+  "type": "Proof",
+  "number": "3.3.2",
+  "title": "",
+  "body": " A circle in is the intersection of with some plane . If is a normal vector to , then there is a unique real number so that is given by . By possibly changing , we may assume that . We may also assume that , since if we can replace with , and if then .  Consider the circle of intersection . A point in the complex plane lies on the image of this circle under if and only if satisfies the defining equation for . Using the equations from Proposition for , we see that .  If , this is a straight line in the -plane. Moreover, every line in the -plane can be obtained in this way. Note that if and only if , which is if and only if the image under is a straight line.  If , then completing the square yields .  Depending on whether the right hand side of this equation is positive, 0, or negative, this is the equation of a circle, point, or the empty set in the -plane, respectively. These three cases happen when , , and , respectively. Only the first case corresponds to a circle in . verifies that every circle in the -plane arises in this manner.  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
