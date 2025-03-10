@@ -1,0 +1,50 @@
+<diagram dimensions="(420,240)" margins="5"
+         xmlns="https://prefigure.org">
+  <definition>a=0.35</definition>
+  <definition>sa=1/a^2</definition>
+  <definition>b=0.25</definition>
+  <definition>sb=1/b^2</definition>
+  <definition>x2=(1-sa)/(1-sa*sb)</definition>
+  <definition>y2=(1-x2)/sa</definition>
+  <definition>int_pt=(sqrt(x2),sqrt(y2))</definition>
+  <definition>north=(0,1)</definition>
+  <definition>angle=atan(sqrt(y2/x2))</definition>
+  <definition>ell1(t)=(cos(t),a*sin(t))</definition>
+  <definition>ell2(t)=(b*cos(t),sin(t))</definition>
+  <definition>r=1.7</definition>
+  <definition>p1=(r*cos(angle),r*sin(angle))</definition>
+  <definition>p2=-p1</definition>
+  <definition>e=(r,0)</definition>
+  <definition>phiP=(-1.5,-1)</definition>
+  <definition>s=0.72</definition>
+  <definition>P=s*north+(1-s)*phiP</definition>
+  <coordinates bbox="(-2.8,-1.6,2.8,1.6)" aspect-ratio="1">
+    <parametric-curve function="ell1" domain="(0,pi)" stroke="#bbb"
+                      dash="9 9"/>
+    <parametric-curve function="ell1" domain="(-pi,0)" stroke="gray"/>
+    <!--
+    <parametric-curve function="ell2" domain="(pi/2,3*pi/2)" stroke="gray"/>
+    <parametric-curve function="ell2" domain="(-pi/2,pi/2)" stroke="#bbb"
+                      dash="9 9"/>
+                      -->
+    <line endpoints="(p1,p2)" stroke="gray"/>
+    <line endpoints="((1,0),(-1,0))" stroke="#bbb"/>
+    <line endpoints="(-int_pt,(cos(angle),sin(angle)))" stroke="#bbb"/>
+    <line endpoints="(e,(1,0))" stroke="gray"/>
+    <line endpoints="(-e,(-1,0))" stroke="gray"/>
+    <circle center="(0,0)" radius="1" stroke="black"/>
+    <path start="e+p1" closed="yes" stroke="gray">
+      <lineto point="-e+p1"/>
+      <lineto point="-e+p2"/>
+      <lineto point="e+p2"/>
+    </path>
+    <line endpoints="(phiP,P)" stroke="black"/>
+    <line endpoints="(north,P)" stroke="#bbb"/>
+    <point p="north" alignment="nw"><m>N</m></point>
+    <point p="phiP" alignment="nw"><m>\phi(P)</m></point>
+    <point p="P" alignment="nw"><m>P</m></point>
+    <label anchor="0.9*p1+0.75*e" alignment="south">
+      <m>{\mathbb C}</m>
+    </label>
+  </coordinates>
+</diagram>
