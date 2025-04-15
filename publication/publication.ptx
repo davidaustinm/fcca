@@ -28,13 +28,13 @@
       <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
 
     <!-- Style of fill-in-the-blanks: -->
-      <!--<fillin textstyle="underline" mathstyle="shade" />-->
+      <fillin textstyle="underline" mathstyle="underline" />
 
     <!-- You can set a watermark: -->
       <!-- <watermark scale="0.5">DRAFT</watermark> -->
 
     <!-- Mermaid diagram themes -->
-      <!-- <mermaid theme="default" /> -->  
+      <!-- <mermaid theme="default" /> -->
 
     <!-- QR code image: set path to an image to put in center of QR codes -->
       <!-- <qrcode image="image.png" /> -->
@@ -92,7 +92,7 @@
           font-size="10"
           draft="no"
           latex-style="dyslexic-font"
-      > 
+      >
   -->
 
     <!-- Control text justification and bottom page behavior. Add content intended for \geometry{} inside the <geometry> element. -->
