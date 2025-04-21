@@ -1,34 +1,43 @@
-<section xml:id="sec_logexp">
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="sec_logexp"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Logarithms and Complex Exponentials</title>
   <p>
     The complex logarithm
-        <idx><h>logarithm</h></idx>
-    is the first function we'll encounter that is of a somewhat tricky nature.
-    It is motivated as an inverse to the exponential function, that is,
-    we're looking for a function <m>\fLog</m> such that <idx><h>function</h><h>logarithmic</h></idx>
+    is the first function we'll encounter that is of a somewhat tricky
+    nature.
+    <idx><h>logarithm</h></idx>
+    It is motivated as an inverse to the exponential function, that
+    is, 
+    we're looking for a function <m>\fLog</m> such that
     <men xml:id="eq_expinv">
       \exp ( \fLog(z) ) \= z \= \fLog ( \exp z ) \,
     </men>.
+    <idx><h>function</h><h>logarithmic</h></idx> 
   </p>
   <p>
     But because <m>\exp</m> is not one-to-one,
     this is too much to hope for.
-    In fact, given a function <m>\fLog</m> that satisfies the first equation in <xref ref="eq_expinv"/>,
+    In fact, given a function <m>\fLog</m> that satisfies the first
+    equation in <xref ref="eq_expinv"/>,
     the function <m>f(z) = \fLog(z) + 2 \pi i</m> does as well,
     and so there cannot be an inverse of <m>\exp</m>
     (which would have to be unique).
     On the other hand,
     <m>\exp</m> becomes one-to-one if we restrict its domain,
-    so there is hope for a logarithm if we're careful about its construction and about its domain.
+    so there is hope for a logarithm if we're careful about its
+    construction and about its domain.
   </p>
   <definition>
     <statement>
       <p>
         Given a region <m>G</m>,
-        any continuous function <m>\fLog : G \to \C</m> that satisfies <m>\exp(\fLog z) = z</m> is
+        any continuous function <m>\fLog : G \to \C</m> that satisfies
+        <m>\exp(\fLog z) = z</m> is 
         <em>a branch of the logarithm
-            <idx><h>branch of the logarithm</h></idx>
         (on <m>G</m>)</em>.
+        <idx><h>branch of the logarithm</h></idx>
       </p>
     </statement>
   </definition>
@@ -36,34 +45,41 @@
     To make sure this definition is not vacuous, let's write,
     as usual, <m>z = r \, e^{i \phi}</m>,
     and suppose that <m>\fLog z = u(z) + i \, v(z)</m>.
-    Then for the first equation in <xref ref="eq_expinv"/> to hold, we need
+    Then for the first equation in <xref ref="eq_expinv"/> to hold, we
+    need 
     <me>
       \exp ( \fLog z ) \= e^{u} e^{i v} \= r \, e^{i \phi} \= z \,
     </me>,
     that is, <m>e^{u} = r</m> and <m>e^{i v} = e^{i \phi}</m>.
     The latter equation is equivalent to
     <m>v = \phi + 2 \pi k</m> for some <m>k \in \Z</m>,
-    and denoting the natural logarithm of the positive real number <m>x</m> by <m>\ln(x)</m>,
+    and denoting the natural logarithm of the positive real number
+    <m>x</m> by <m>\ln(x)</m>, 
     the former equation is equivalent to <m>u = \ln |z|</m>.
-    A reasonable definition of a logarithm function <m>\fLog</m> would hence be
-    <m>\fLog z = \ln |z| + i \fArg z</m> where <m>\fArg z</m> gives the argument for the complex number <m>z</m> according to some convention<mdash/>here is an example:
+    A reasonable definition of a logarithm function <m>\fLog</m> would
+    hence be 
+    <m>\fLog z = \ln |z| + i \fArg z</m> where <m>\fArg z</m> gives
+    the argument for the complex number <m>z</m> according to some
+    convention<mdash/>here is an example.
   </p>
   <definition>
     <statement>
       <p>
         Let <m>\Arg z</m>
-            <idx><h>Arg</h></idx>
-        denote the unique argument of <m>z \ne 0</m> that lies in <m>(-\pi, \pi]</m>
+        denote the unique argument of <m>z \ne 0</m> that lies in
+        <m>(-\pi, \pi]</m> 
         (the <em>principal argument
-            <idx><h>principal argument</h></idx>
         of <m>z</m></em>).
+        <idx><h>Arg</h></idx>
+        <idx><h>principal argument</h></idx>
         Then the <em>principal logarithm
-            <idx><h>principal logarithm</h></idx>
-        </em> is the function <m>\Log: \C \setminus \{ 0 \} \to \C</m> defined through
-            <idx><h>Log</h></idx>
+        </em> is the function <m>\Log: \C \setminus \{ 0 \} \to \C</m>
+        defined through 
         <me>
           \Log(z) := \ln |z| + i \Arg(z) \,
         </me>.
+        <idx><h>principal logarithm</h></idx>
+        <idx><h>Log</h></idx>
       </p>
     </statement>
   </definition>
@@ -73,67 +89,95 @@
         Here are a few evaluations of <m>\Log</m> to illustrate this function:
         <md>
           <mrow>\Log(2) \amp \= \ln(2) + i \Arg(2) \= \ln(2)</mrow>
-          <mrow>\Log(i) \amp \= \ln(1) + i \Arg(i) \= \frac{ \pi i }{ 2 }</mrow>
-          <mrow>\Log(-3) \amp \= \ln(3) + i \Arg(-3) \= \ln(3) + \pi i</mrow>
-          <mrow>\Log(1-i) \amp \= \ln( \sqrt 2 ) + i \Arg(1-i) \= \frac 1 2 \ln(2) - \frac{ \pi i }{ 4 } \, </mrow>
+          <mrow>\Log(i) \amp \= \ln(1) + i \Arg(i) \= \frac{ \pi i }{
+          2 }</mrow> 
+          <mrow>\Log(-3) \amp \= \ln(3) + i \Arg(-3) \= \ln(3) + \pi
+          i</mrow> 
+          <mrow>\Log(1-i) \amp \= \ln( \sqrt 2 ) + i \Arg(1-i) \=
+          \frac 1 2 \ln(2) - \frac{ \pi i }{ 4 } \, </mrow> 
         </md>.
       </p>
     </statement>
   </example>
   <p>
-    The principal logarithm is not continuous on the negative part of the real line,
-    and so <m>\Log</m> is a branch of the logarithm on <m>\C \setminus \R_{ \le 0 }</m>.
-    Any branch of the logarithm on a region <m>G</m> can be similarly extended to a function defined on <m>\overline G \setminus \{ 0 \}</m>.
+    The principal logarithm is not continuous on the negative part of
+    the real line, 
+    and so <m>\Log</m> is a branch of the logarithm on <m>\C \setminus
+    \R_{ \le 0 }</m>. 
+    Any branch of the logarithm on a region <m>G</m> can be similarly
+    extended to a function defined on <m>\overline G \setminus \{ 0
+    \}</m>. 
     Furthermore,
-    the evaluation of any branch of the logarithm at a specific <m>z_0</m> can differ from
+    the evaluation of any branch of the logarithm at a specific
+    <m>z_0</m> can differ from 
     <m>\Log(z_0)</m> only by a multiple of <m>2 \pi i</m>;
-    the reason for this is once more the periodicity of the exponential function.
+    the reason for this is once more the periodicity of the
+    exponential function. 
   </p>
   <p>
-    So what about the second equation in <xref ref="eq_expinv"/>, namely,
+    So what about the second equation in <xref ref="eq_expinv"/>,
+    namely, 
     <m>\fLog (\exp z) = z</m>?
     Let's try the principal logarithm:
     if <m>z=x+iy</m> then
-    <me>
-      \Log ( \exp z ) \= \ln | e^x e^{iy} | + i \Arg ( e^x e^{iy} ) \= \ln e^x + i \Arg ( e^{iy} ) \= x + i \Arg ( e^{iy} ) \,
-    </me>.
+    <md>
+      <mrow>
+        \Log ( \exp z ) \amp \= \ln | e^x e^{iy} | + i \Arg ( e^x
+        e^{iy} )
+      </mrow>
+      <mrow>
+        \amp \= \ln e^x + i \Arg ( e^{iy} )
+      </mrow>
+      <mrow>
+        \amp \= x + i \Arg ( e^{iy} )
+      </mrow>
+    </md>.
   </p>
   <p>
-    The right-hand side is equal to <m>z=x+iy</m> if and only if <m>y \in (-\pi, \pi]</m>.
-    Something similar will happen with any other branch <m>\fLog</m> of the logarithm<mdash/>there will always be many <m>z</m>'s for which <m>\fLog ( \exp z ) \ne z</m>.
+    The right-hand side is equal to <m>z=x+iy</m> if and only if <m>y
+    \in (-\pi, \pi]</m>. 
+    Something similar will happen with any other branch <m>\fLog</m>
+    of the logarithm<mdash/>there will always be many <m>z</m>'s for
+    which <m>\fLog ( \exp z ) \ne z</m>. 
   </p>
   <p>
-    A warning sign pointing in a similar direction concerns the much-cherished real logarithm rule <m>\ln(xy) = \ln(x) + \ln(y)</m>;
+    A warning sign pointing in a similar direction concerns the
+    much-cherished real logarithm rule <m>\ln(xy) = \ln(x) +
+    \ln(y)</m>; 
     it has no analogue in <m>\C</m>.
     For example,
     <me>
-      \Log(i) + \Log(i-1) \= i \, \tfrac \pi 2 + \ln \sqrt 2 + \tfrac {3 \pi i} 4 \= \tfrac 1 2 \ln 2 + \tfrac {5 \pi i} 4
+      \Log(i) + \Log(i-1) \= i \, \tfrac \pi 2 + \ln \sqrt 2 + \tfrac
+      {3 \pi i} 4 \= \tfrac 1 2 \ln 2 + \tfrac {5 \pi i} 4 
     </me>
     but
     <me>
-      \Log(i(i-1)) \= \Log(-1-i) \= \tfrac 1 2 \ln 2 - \tfrac {3 \pi i} 4 \,
+      \Log(i(i-1)) \= \Log(-1-i) \= \tfrac 1 2 \ln 2 - \tfrac {3 \pi
+      i} 4 \, 
     </me>.
   </p>
   <p>
-    The problem is that we need to come up with an argument convention to define a logarithm and then stick to this convention.
+    The problem is that we need to come up with an argument convention
+    to define a logarithm and then stick to this convention. 
     There is quite a bit of subtlety here;
     e.g., the multi-valued map
-        <idx><h>arg</h></idx>
     <me>
       \arg z \ := \ \text{ all possible arguments of }  z
     </me>
     gives rise to a multi-valued logarithm via
-        <idx><h>log</h></idx>
     <me>
       \log z \ := \ \ln |z| + i \arg z \,
     </me>.
+    <idx><h>arg</h></idx>
+    <idx><h>log</h></idx>
   </p>
   <p>
     Neither <m>\arg</m> nor <m>\log</m> is a function,
     yet <m>\exp ( \log z ) = z</m>.
     We invite you to check this thoroughly;
     in particular,
-    you should note how the periodicity of the exponential function takes care of the multi-valuedness of <m>\log</m>.
+    you should note how the periodicity of the exponential function
+    takes care of the multi-valuedness of <m>\log</m>. 
   </p>
   <p>
     To end our discussion of complex logarithms on a happy note,
@@ -144,7 +188,8 @@
   <proposition>
     <statement>
       <p>
-        If <m>\fLog</m> is a branch of the logarithm on <m>G</m> then <m>\fLog</m> is differentiable on <m>G</m> with
+        If <m>\fLog</m> is a branch of the logarithm on <m>G</m>, then
+        <m>\fLog</m> is differentiable on <m>G</m> with 
         <me>
           \frac{ d }{ \diff{z} } \fLog(z) \= \frac 1 z \,
         </me>.
@@ -153,7 +198,7 @@
   </proposition>
   <proof>
     <p>
-      The idea is to apply <xref ref="inversederivative">Proposition</xref>
+      The idea is to apply <xref ref="inversederivative"/>
       to <m>\exp</m> and <m>\fLog</m>,
       but we need to be careful about the domains of these functions.
       Let <m>H := \{ \fLog(z) : \, z \in G \}</m>,
@@ -162,12 +207,13 @@
       with <m>f: H \to G</m> given by <m>f(z) = \exp(z)</m> and
       <m>g: G \to H</m> given by <m>g(z) = \fLog(z)</m>;
       note that <m>g</m> is continuous,
-      and <xref ref="ex_logexpinv">Exercise</xref>
+      and <xref ref="ex_logexpinv"/>
       checks that <m>f</m> and <m>g</m> are inverses of each other.
-      Thus <xref ref="inversederivative">Proposition</xref> gives
+      Thus <xref ref="inversederivative"/> gives
       <me>
-        \fLog'(z) \= \frac 1 { \exp' ( \fLog z ) } \= \frac 1 { \exp ( \fLog z ) } \= \frac 1 z \, . \qedhere
-      </me>
+        \fLog'(z) \= \frac 1 { \exp' ( \fLog z ) } \= \frac 1 { \exp (
+        \fLog z ) } \= \frac 1 z
+      </me>.
     </p>
   </proof>
   <p>
@@ -177,7 +223,8 @@
     <statement>
       <p>
         Given <m>a, b \in \C</m> with <m>a \ne 0</m>,
-        the <em>principal value of <m>a^b</m><idx><h>principal value of <m>a^b</m></h></idx>
+        the <em>principal value of <m>a^b</m><idx><h>principal value
+        of <m>a^b</m></h></idx> 
         </em> is defined as
         <me>
           a^b \ := \ \exp ( b \Log(a)) \,
@@ -186,898 +233,58 @@
     </statement>
   </definition>
   <p>
-    Naturally, we can just as well define <m>a^b</m> through a different branch of the logarithm;
-    our convention is that we use the principal value unless otherwise stated.
-    <xref ref="singlevaluedexp">Exercise</xref>
-    explores what happens when we use the multi-valued <m>\log</m> in the definition of <m>a^b</m>.
+    Naturally, we can just as well define <m>a^b</m> through a
+    different branch of the logarithm; 
+    our convention is that we use the principal value unless otherwise
+    stated. 
+    <xref ref="singlevaluedexp"/>
+    explores what happens when we use the multi-valued <m>\log</m> in
+    the definition of <m>a^b</m>. 
   </p>
   <p>
     One last remark:
     it now makes sense to talk about the function <m>f(z) = e^z</m>,
     where <m>e</m>
-        <idx><h>e@<m>e</m></h></idx>
-    is <em>Euler's<fn>
-    Named after Leonard Euler (1707<ndash/>1783).
-    Continuing our footnote on p.
-    <xref ref="pg_eulerformula"></xref>,
-    we have now honestly established
-    <em>\ix{Euler's formula}</em>
-    <m>e^{ 2 \pi i } = 1</m>.
-    </fn> number</em> and can be defined, for example,
+    is <em>Euler's
+    <fn>
+      Named after Leonard Euler (1707<ndash/>1783).
+      Continuing our footnote on p.
+      <xref ref="pg_eulerformula"/>
+      we have now honestly established
+      <em>\ix{Euler's formula}</em>
+      <m>e^{ 2 \pi i } = 1</m>.
+    </fn>
+    number</em> and can be defined, for example,
     as <m>e = \lim_{n \to \infty} \left( 1 + \frac 1 n \right)^n</m>.
+    <idx><h>e@<m>e</m></h></idx>
     In calculus we can prove the equivalence of the real exponential function
     (as given, for example, through a power series)
     and the function <m>f(x) = e^x</m>.
     With our definition of <m>a^z</m>,
     we can now make a similar remark about the complex exponential function.
     Because <m>e</m> is a positive real number and hence <m>\Arg e = 0</m>,
-    <me>
-      e^z \= \exp ( z \Log(e)) \= \exp \left( z \left( \ln |e| + i \Arg(e) \right) \right) \= \exp \left( z \ln(e) \right) \= \exp \left( z \right)
-    </me>.
+    <md>
+      <mrow>
+        e^z \amp \= \exp ( z \Log(e))
+      </mrow>
+      <mrow>
+        \amp \= \exp \left( z \left( \ln |e| + i
+        \Arg(e) \right) \right)
+      </mrow>
+      <mrow>
+        \amp \= \exp \left( z \ln(e) \right)
+      </mrow>
+      <mrow>
+        \amp \= \exp
+        \left( z \right)
+      </mrow>
+    </md>.
   </p>
   <p>
     A word of caution:
-    this only works out this nicely because we have carefully defined <m>a^b</m> for complex numbers.
-    Using a different branch of logarithm in the definition of <m>a^b</m> can easily lead to <m>e^z \ne \exp(z)</m>.
-  </p>
-  <p>
-    \begin{Exercises}
-  </p>
-  <exercise xml:id="prob_mobiusinverse">
-    <statement>
-      <p>
-        Show that if <m>f(z) = \frac{ az+b }{ cz+d }</m> is a M&#xf6;bius transformation then <m>f^{-1} (z) = \frac{ dz-b }{ -cz+a }</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_inversemobisc_0">
-    <statement>
-      <p>
-        Complete the picture painted by <xref ref="inversemobius">Proposition</xref>
-        by considering M&#xf6;bius transformations with <m>c=0</m>.
-        That is, show that <m>f: \C \to \C</m> given by <m>f(z) = \frac{ az+b }{ d }</m> is a bijection,
-        with <m>f^{-1} (z)</m> given by the formula in <xref ref="inversemobius">Proposition</xref>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_circlegenau">
-    <statement>
-      <p>
-        Show that <xref ref="eq_circle"/> is the equation for a circle or line if and only if <m>\beta^2 + \gamma^2 > 4 \, \alpha \delta</m>.
-        Conclude that <m>x + iy</m> is a solution to <xref ref="eq_circle"/> if and only if <m>u + iv</m> is a solution to<nbsp/><xref ref="eq_circleimage"/>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="exercise_mobiusinverse2">
-    <statement>
-      <p>
-        Extend <xref ref="ex_mobiusinverse2">Example</xref>
-        by showing that <m>f(z) = \frac{ z-1 }{ iz+i }</m> maps any circle passing through <m>-1</m> to a line.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove that any M&#xf6;bius transformation different from the identity map can have at most two fixed points. (A <em>fixed point
-            <idx><h>fixed point</h></idx>
-        </em> of a function <m>f</m> is a number <m>z</m> such that <m>f(z) = z</m>.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove <xref ref="transdilinv">Proposition</xref>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="unitcircletoimaginary">
-    <statement>
-      <p>
-        Show that the M&#xf6;bius transformation <m>f(z) = \frac{ 1+z }{ 1-z }</m> maps the unit circle
-        (minus the point <m>z=1</m>)
-        onto the imaginary axis.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="unitcircleistoothin">
-    <statement>
-      <p>
-        Suppose that <m>f</m> is holomorphic in the region <m>G</m> and <m>f(G)</m> is a subset of the unit circle.
-        Show that <m>f</m> is constant.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_mobiusunitcircletounitcircle">
-    <statement>
-      <p>
-        Fix <m>a \in \C</m> with <m>|a| \lt  1</m> and consider
-        <me>
-          f_a(z) \ := \ \frac{ z-a }{ 1 - \conj{a} z } \,
-        </me>.
-        <ol marker="a">
-          <li>
-            <p>
-              Show that <m>f_a(z)</m> is a M&#xf6;bius transformation.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>f_a^{ -1 } (z) = f_{ -a }(z)</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Prove that <m>f_a(z)</m> maps the unit disk <m>D[0,1]</m> to itself in a bijective fashion.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_mobiusgroup">
-    <statement>
-      <p>
-        Suppose
-        <me>
-          A=\displaystyle\begin{bmatrix}a\amp b\\c\amp d \end{bmatrix}
-        </me>
-        is a <m>2\times2</m> matrix of complex numbers whose determinant <m>ad-bc</m> is nonzero.
-        Then we can define a corresponding M&#xf6;bius transformation on <m>\Chat</m> by <m>T_A(z) = \frac{az+b}{cz+d}</m>.
-        Show that <m>T_A\circ T_B = T_{A\cdot B}</m>,
-        where <m>\circ</m> denotes composition and <m>\cdot</m> denotes matrix multiplication.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_limitrulesinfty">
-    <statement>
-      <p>
-        Show that our definition of <m>\Chat</m> honors the
-        <q>finite</q>
-        limit rules in <xref ref="limits">Proposition</xref>,
-        by proving the following, where <m>a \in \C</m>:
-        <ol>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=\infty</m> and
-              <m>\lim_{z\to z_0}g(z)=a</m> then <m>\lim_{z\to z_0} (f(z) + g(z)) = \infty </m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=\infty</m> and
-              <m>\lim_{z\to z_0}g(z)=a \neq 0</m> then <m>\lim_{z\to z_0} (f(z) \cdot g(z)) = \infty </m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=\lim_{z\to z_0}g(z)=\infty</m> then <m>\lim_{z\to z_0} (f(z) \cdot g(z)) =\infty </m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=\infty</m> and
-              <m>\lim_{z\to z_0}g(z)=a</m> then <m>\lim_{z\to z_0} \frac{ g(z) }{ f(z) } = 0 </m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=0</m> and
-              <m>\lim_{z\to z_0}g(z)=a \ne 0</m> then <m>\lim_{z\to z_0} \frac{ g(z) }{ f(z) } = \infty </m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_polynomiallimitaszgrows">
-    <statement>
-      <p>
-        Fix <m>c_0, c_1, \dots, c_{d-1} \in \C</m>.
-        Prove that
-        <me>
-          \lim_{ z \to \infty } 1 + \frac{ c_{d-1} }{ z } + \frac{ c_{d-2} }{ z^2 } + \dots + \frac{ c_0 }{ z^d } \= 1 \,
-        </me>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>f(z)=\frac{2z}{z+2}</m>.
-        Draw two graphs,
-        one showing the following six sets in the <m>z</m>-plane and the other showing their images in the <m>w</m>-plane.
-        Label the sets. (You should only need to calculate the images of <m>0</m>,
-        <m>\pm2</m>,
-        <m>\pm(1+i)</m>, and <m>\infty</m>;
-        remember that M&#xf6;bius transformations preserve angles.)
-        <ol>
-          <li>
-            <p>
-              the <m>x</m>-axis plus <m>\infty</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the <m>y</m>-axis plus <m>\infty</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the line <m>x=y</m> plus <m>\infty</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the circle with radius <m>2</m> centered at <m>0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the circle with radius <m>1</m> centered at <m>1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the circle with radius <m>1</m> centered at <m>-1</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex314">
-    <statement>
-      <p>
-        Find M&#xf6;bius transformations satisfying each of the following.
-        Write your answers in standard form,
-        as <m>\frac{az+b}{cz+d}</m>.
-        <ol>
-          <li>
-            <p>
-              \disp{1\to0,<nbsp/>2\to1,<nbsp/>3\to\infty}
-            </p>
-          </li>
-          <li>
-            <p>
-              \disp{1\to0,<nbsp/>1+i\to1,<nbsp/>2\to\infty}
-            </p>
-          </li>
-          <li>
-            <p>
-              \disp{0\to i,<nbsp/>1\to1,<nbsp/>\infty\to-i <nbsp/> .}
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Using the cross ratio, with different choices of <m>z_k</m>,
-        find two different M&#xf6;bius transformations that transform
-        <m>C[1+i,1]</m> onto the real axis plus <m>\infty</m>.
-        In each case, find the image of the center of the circle.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>\gamma</m> be the unit circle.
-        Find a M&#xf6;bius transformation that transforms <m>\gamma</m> onto <m>\gamma</m> and transforms <m>0</m> to<nbsp/><m>\frac 1 2</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Describe the image of the region under the transformation:
-        <ol>
-          <li>
-            <p>
-              The disk <m>\abs z \lt 1</m> under <m>w=\frac{iz-i}{z+1}</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              The quadrant <m>x>0,\,y>0</m> under <m>w=\frac{z-i}{z+i}</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              The strip <m>0\lt x\lt 1</m> under <m>w= \frac z {z-1}</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Find a M&#xf6;bius transformation that maps the unit disk to <m>\{ x+iy \in \C : \, x+y > 0 \}</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        The <em>Jacobian
-            <idx><h>Jacobian</h></idx>
-        </em> of a transformation <m>u=u(x,y)</m>,
-        <m>v=v(x,y)</m> is the determinant of the matrix
-        <me>
-          \displaystyle\begin{bmatrix}\fderiv ux\amp \fderiv uy\\ \fderiv vx \amp \fderiv vy \end{bmatrix} \,
-        </me>.
-      </p>
-      <p>
-        Show that if <m>f = u+iv</m> is holomorphic then the Jacobian equals <m>\abs{f'(z)}^2</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Find the fixed points in <m>\Chat</m> of <m>f(z)=\frac{z^2-1}{2z+1}</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Find each M&#xf6;bius transformation <m>f</m>:
-        <ol>
-          <li>
-            <p>
-              <m>f</m> maps <m>0\to1</m>, <m>1\to\infty</m>, <m>\infty\to0</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f</m> maps <m>1\to1</m>, <m>-1\to i</m>, <m>-i\to -1</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f</m> maps the <m>x</m>-axis to <m>y=x</m>,
-              the <m>y</m>-axis to <m>y=-x</m>,
-              and the unit circle to itself.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Find a M&#xf6;bius transformation that maps the unit circle to <m>\{ x+iy \in \C : \, x+y = 0 \}</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Find two M&#xf6;bius transformations that map the unit disk
-            <me>
-              \{ z \in \C : \, |z| \lt  1 \} \qquad \text{ to }  \qquad \begin{aligned}\amp \{ x+iy \in \C : \, x+y > 0 \} \ \text{ and }  \\ \amp \{ x+iy \in \C : \, x+y \lt  0 \} \, , \end{aligned}
-            </me>
-            respectively.
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Given <m>a \in \R \setminus \{ 0 \}</m>,
-        show that the image of the line <m>y = a</m> under inversion is the circle with center
-        <m>\frac{-i}{2a}</m> and radius<nbsp/><m>\frac{1}{2a}</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Suppose <m>z_1</m>,
-        <m>z_2</m> and <m>z_3</m> are distinct points in <m>\Chat</m>.
-        Show that <m>z</m> is on the circle passing through <m>z_1</m>,
-        <m>z_2</m> and <m>z_3</m> if and only if
-        <m>[z,z_1,z_2,z_3]</m> is real or <m>\infty</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_stereoinverseformula">
-    <statement>
-      <p>
-        Prove that the stereographic projection of <xref ref="prop_coordmaps">Proposition</xref>
-        is a bijection by verifying that <m>\phi \circ \phi^{-1}</m> and
-        <m>\phi^{-1} \circ \phi</m> are the identity map.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Find the image of the following points under the stereographic projection <m>\phi</m>:
-      </p>
-      <p>
-        <m>(0,0,-1), (0,0,1), (1,0,0), (0,1,0), (1,1,0)</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Consider the plane <m>H</m> determined by <m>x+y-z = 0</m>.
-        What is a unit normal vector to <m>H</m>?
-        Compute the image of <m>H \cap \mathbb{S}^2</m> under the stereographic projection<nbsp/><m>\phi</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_everycircleins2">
-    <statement>
-      <p>
-        Prove that every circle in the extended complex plane <m>\Chat</m> is the image of some circle in
-        <m>\mathbb{S}^2</m> under the stereographic projection<nbsp/><m>\phi</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Describe the effect of the basic M&#xf6;bius transformations rotation,
-        real dilation, and translation on the Riemann sphere.
-        (<em>Hint</em>: For the first two,
-        consider all circles in <m>\mathbb{S}^2</m> centered on the <m>NS</m> axis,
-        and all circles through both <m>N</m> and <m>S</m>.
-        For translation, consider two families of circles through <m>N</m>,
-        orthogonal to and perpendicular to the translation.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove that <m>\overline{\sin(z)} = \sin(\overline{z})</m> and <m>\overline{\cos(z)} = \cos(\overline{z})</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_sin_x_iy_">
-    <statement>
-      <p>
-        Let <m>z=x+iy</m> and show that
-        <ol>
-          <li>
-            <p>
-              <m>\sin z = \sin x \cosh y + i \cos x \sinh y</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\cos z = \cos x \cosh y - i \sin x \sinh y</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove that the zeros of <m>\sin z</m> are all real valued.
-        Conclude that they are precisely the integer multiples of<nbsp/><m>\pi</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Describe the images of the following sets under the exponential function <m>\exp(z)</m>:
-        <ol>
-          <li>
-            <p>
-              the line segment defined by <m>z = iy , \ 0 \leq y \leq 2 \pi</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the line segment defined by <m>z = 1 + iy , \ 0 \leq y \leq 2 \pi</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the rectangle <m>\{ z=x+iy \in \C : \, 0 \leq x \leq 1 , \, 0 \leq y \leq 2 \pi \} </m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_expproperties">
-    <statement>
-      <p>
-        Prove <xref ref="expproperties">Proposition</xref>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove <xref ref="trigproperties">Proposition</xref>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_abs_cot_">
-    <statement>
-      <p>
-        Let <m>z=x+iy</m> and show that
-        <ol>
-          <li>
-            <p>
-              <m>\abs{\sin z}^2 = \sin^2x+\sinh^2y = \cosh^2y-\cos^2x</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\abs{\cos z}^2 = \cos^2x+\sinh^2y = \cosh^2y-\sin^2x</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\cos x = 0</m> then
-              <me>
-                \abs{\cot z}^2 \= \frac{\cosh^2y-1}{\cosh^2y} \ \le \ 1\,
-              </me>.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\abs{y}\ge1</m> then
-              <me>
-                \abs{\cot z}^2 \ \le \ \frac{\sinh^2y+1}{\sinh^2y} \= 1+\frac1{\sinh^2y} \ \le \ 1+\frac1{\sinh^21} \ \le \ 2\,
-              </me>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Show that <m>\tan(iz)=i\tanh(z)</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Draw a picture of the images of vertical lines under the sine function.
-        Do the same for the tangent function.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Determine the image of the strip
-        <m>\{z \in \C : - \frac \pi 2 \lt \Re z \lt \frac \pi 2\}</m> under the sine function.
-        (<em>Hint</em>: <xref ref="ex_sin_x_iy_">Exercise</xref>
-        makes it easy to convert parametric equations for horizontal or vertical lines to parametric equations for their images.
-        Note that the equations <m>x=A\sin t</m> and
-        <m>y=B\cos t</m> represent an ellipse and the equations <m>x=A\cosh t</m> and
-        <m>y=B\sinh t</m> represent a hyperbola.
-        Start by finding the images of the boundary lines of the strip,
-        and then find the images of a few horizontal segments and vertical lines in the strip.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_princval">
-    <statement>
-      <p>
-        Find the principal values of
-        <ol>
-          <li>
-            <p>
-              <m>\Log(2i)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(-1)^i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\Log(-1+i) </m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Convert the following expressions to the form <m>x+iy</m>.
-        (Reason carefully.)
-        <ol>
-          <li>
-            <p>
-              <m>e^{i\pi}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>e^{\pi}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>i^i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>e^{\sin(i)}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\exp(\Log(3+4i))</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(1+i)^{\frac 1 2}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\sqrt{3} \, (1-i)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left( \frac{i+1}{\sqrt{2}} \right)^4</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Is <m>\arg(\conj z) = {-\arg(z)}</m> true for the multiple-valued argument?
-        What about <m>\Arg(\conj z)={-\Arg(z)}</m> for the principal branch?
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        For the multiple-valued logarithm,
-        is there a difference between the set of all values of
-        <m>\log( z^2)</m> and the set of all values of
-        <m>2 \log z</m>? (<em>Hint</em>: Try some fixed numbers for <m>z</m>.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_3_1">
-    <statement>
-      <p>
-        For each of the following functions,
-        determine all complex numbers for which the function is holomorphic.
-        If you run into a logarithm, use the principal value unless otherwise stated.
-        <ol>
-          <li>
-            <p>
-              <m>{ \overline z }^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\frac{ \sin z }{ z^3 + 1 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\fLog ( z - 2i + 1 )</m> where
-              <m>\fLog (z) = \ln |z| + i \fArg (z)</m> with <m>0 \leq \fArg (z) \lt 2 \pi</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\exp(\o z)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(z-3)^i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>i^{z-3} </m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_3_2">
-    <statement>
-      <p>
-        Find all solutions to the following equations:
-        <ol>
-          <li>
-            <p>
-              <m>\Log (z) = \frac{ \pi i } 2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\Log (z) = \frac{ 3\pi i } 2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\exp(z) = \pi i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\sin(z) = \cosh(4)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\cos(z) = 0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\sinh(z) = 0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\overline{ \exp(iz) } = \exp( i \, \overline z )</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^{\frac 1 2} = 1 + i </m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Find the image of the annulus
-        <m>1\lt \abs z\lt e</m> under the principal value of the logarithm.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Use <xref ref="ex_crepolar">Exercise</xref>
-        to give an alternative proof that <m>\Log</m> is holomorphic in <m>\C \setminus \R_{ \le 0 } </m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_logexpinv">
-    <statement>
-      <p>
-        Let <m>\fLog</m> be a branch of the logarithm on <m>G</m>,
-        and let <m>H := \{ \fLog(z) : \, z \in G \}</m>,
-        the image of <m>\fLog</m>.
-        Show that <m>\fLog : G \to H</m> is a bijection whose inverse map is <m>f(z) : H \to G</m> given by
-        <m>f(z) = \exp(z)</m> (i.e., <m>f</m> is the exponential function restricted to <m>H</m>).
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_absolutepowers">
-    <statement>
-      <p>
-        Show that <m>\abs{a^z}=a^{\Re z}</m> if <m>a</m> is a positive real constant.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_3_3">
-    <statement>
-      <p>
-        Fix <m>c \in \C \setminus \{0\}</m>.
-        Find the derivative of <m>f(z) = z^c</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="singlevaluedexp">
-    <statement>
-      <p>
-        Prove that <m>\exp(b \log a)</m> is single valued if and only if <m>b</m> is an integer.
-        (Note that this means that complex exponentials do not clash with monomials <m>z^n</m>,
-        no matter which branch of the logarithm is used.)
-        What can you say if <m>b</m> is rational?
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Describe the image under <m>\exp</m> of the line with equation <m>y=x</m>.
-        To do this you should find an equation
-        (at least parametrically)
-        for the image
-        (you can start with the parametric form <m>x=t,\,y=t</m>),
-        plot it reasonably carefully,
-        and explain what happens in the limits as
-        <m>t\to\infty</m> and <m>t\to-\infty</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_squaredimage1">
-    <statement>
-      <p>
-        For this problem, <m>f(z)=z^2</m>.
-        <ol>
-          <li>
-            <p>
-              Show that the image under <m>f</m> of a circle centered at the origin is a circle centered at the origin.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that the image under <m>f</m> of a ray starting at the origin is a ray starting at the origin.
-            </p>
-          </li>
-          <li>
-            <p>
-              Let <m>T</m> be the figure formed by the horizontal segment from <m>0</m> to <m>2</m>,
-              the circular arc from <m>2</m> to <m>2i</m>,
-              and then the vertical segment from <m>2i</m> to <m>0</m>.
-              Draw <m>T</m> and <m>f(T)</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Is the right angle at the origin in part (c) preserved?
-              Is something wrong here?
-            </p>
-          </li>
-        </ol>
-      </p>
-      <p>
-        (<em>Hint</em>: Use polar coordinates.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_squaredimage2">
-    <statement>
-      <p>
-        As in the previous problem, let <m>f(z)=z^2</m>.
-        Let <m>Q</m> be the square with vertices at <m>0</m>,
-        <m>2</m>, <m>2+2i</m> and <m>2i</m>.
-        Draw <m>f(Q)</m> and identify the types of image curves corresponding to the segments from <m>2</m> to <m>2+2i</m> and from <m>2+2i</m> to <m>2i</m>.
-        They are not parts of either straight lines or circles. (<em>Hint</em>: You can write the vertical segment parametrically as <m>z(t)=2+it</m>.
-        Eliminate the parameter in
-        <m>u+iv=f(z(t))</m> to get a <m>(u,v)</m> equation for the image curve.) <xref ref="ex_squaredimage1">Exercises</xref>
-        and <xref ref="ex_squaredimage2"></xref>
-        are related to the cover picture of this book.
-      </p>
-    </statement>
-  </exercise>
-  <p>
-    \end{Exercises}
+    this only works out this nicely because we have carefully defined
+    <m>a^b</m> for complex numbers. 
+    Using a different branch of logarithm in the definition of
+    <m>a^b</m> can easily lead to <m>e^z \ne \exp(z)</m>. 
   </p>
 </section>

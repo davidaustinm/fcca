@@ -29,7 +29,6 @@
   <xi:include  href="sec_riemannspere.ptx"/>
   <xi:include  href="sec_stereoproj.ptx"/>
   <xi:include  href="sec_exptrigfcts.ptx"/>
-  <!--
   <xi:include  href="sec_logexp.ptx"/>
-  -->
+  <xi:include  href="exercises-chap3.ptx"/>
 </chapter>
