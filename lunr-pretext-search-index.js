@@ -1657,6 +1657,564 @@ var ptx_lunr_docs = [
   "body": "  .  "
 },
 {
+  "id": "sec_logexp",
+  "level": "1",
+  "url": "sec_logexp.html",
+  "type": "Section",
+  "number": "3.5",
+  "title": "Logarithms and Complex Exponentials",
+  "body": " Logarithms and Complex Exponentials  The complex logarithm is the first function we'll encounter that is of a somewhat tricky nature. logarithm It is motivated as an inverse to the exponential function, that is, we're looking for a function such that . function logarithmic   But because is not one-to-one, this is too much to hope for. In fact, given a function that satisfies the first equation in , the function does as well, and so there cannot be an inverse of (which would have to be unique). On the other hand, becomes one-to-one if we restrict its domain, so there is hope for a logarithm if we're careful about its construction and about its domain.    Given a region , any continuous function that satisfies is a branch of the logarithm (on ) . branch of the logarithm     To make sure this definition is not vacuous, let's write, as usual, , and suppose that . Then for the first equation in to hold, we need , that is, and . The latter equation is equivalent to for some , and denoting the natural logarithm of the positive real number by , the former equation is equivalent to . A reasonable definition of a logarithm function would hence be where gives the argument for the complex number according to some convention here is an example.    Let denote the unique argument of that lies in (the principal argument of ). Arg  principal argument Then the principal logarithm is the function defined through . principal logarithm  Log       Here are a few evaluations of to illustrate this function: .    The principal logarithm is not continuous on the negative part of the real line, and so is a branch of the logarithm on . Any branch of the logarithm on a region can be similarly extended to a function defined on . Furthermore, the evaluation of any branch of the logarithm at a specific can differ from only by a multiple of ; the reason for this is once more the periodicity of the exponential function.  So what about the second equation in , namely, ? Let's try the principal logarithm: if then .  The right-hand side is equal to if and only if . Something similar will happen with any other branch of the logarithm there will always be many 's for which .  A warning sign pointing in a similar direction concerns the much-cherished real logarithm rule ; it has no analogue in . For example, but .  The problem is that we need to come up with an argument convention to define a logarithm and then stick to this convention. There is quite a bit of subtlety here; e.g., the multi-valued map gives rise to a multi-valued logarithm via . arg  log   Neither nor is a function, yet . We invite you to check this thoroughly; in particular, you should note how the periodicity of the exponential function takes care of the multi-valuedness of .  To end our discussion of complex logarithms on a happy note, we prove that any branch of the logarithm has the same derivative; one just has to be cautious with regions of holomorphicity.    If is a branch of the logarithm on , then is differentiable on with .     The idea is to apply to and , but we need to be careful about the domains of these functions. Let , the image of . We apply Proposition with given by and given by ; note that is continuous, and checks that and are inverses of each other. Thus gives .   We finish this section by defining complex exponentials.    Given with , the principal value of principal value of  is defined as .    Naturally, we can just as well define through a different branch of the logarithm; our convention is that we use the principal value unless otherwise stated. explores what happens when we use the multi-valued in the definition of .  One last remark: it now makes sense to talk about the function , where is Euler's Named after Leonard Euler (1707 1783). Continuing our footnote on p. we have now honestly established \\ix{Euler's formula}  . number and can be defined, for example, as . e@ In calculus we can prove the equivalence of the real exponential function (as given, for example, through a power series) and the function . With our definition of , we can now make a similar remark about the complex exponential function. Because is a positive real number and hence , .  A word of caution: this only works out this nicely because we have carefully defined for complex numbers. Using a different branch of logarithm in the definition of can easily lead to .  "
+},
+{
+  "id": "sec_logexp-4",
+  "level": "2",
+  "url": "sec_logexp.html#sec_logexp-4",
+  "type": "Definition",
+  "number": "3.5.1",
+  "title": "",
+  "body": "  Given a region , any continuous function that satisfies is a branch of the logarithm (on ) . branch of the logarithm    "
+},
+{
+  "id": "sec_logexp-6",
+  "level": "2",
+  "url": "sec_logexp.html#sec_logexp-6",
+  "type": "Definition",
+  "number": "3.5.2",
+  "title": "",
+  "body": "  Let denote the unique argument of that lies in (the principal argument of ). Arg  principal argument Then the principal logarithm is the function defined through . principal logarithm  Log    "
+},
+{
+  "id": "sec_logexp-7",
+  "level": "2",
+  "url": "sec_logexp.html#sec_logexp-7",
+  "type": "Example",
+  "number": "3.5.3",
+  "title": "",
+  "body": "  Here are a few evaluations of to illustrate this function: .   "
+},
+{
+  "id": "sec_logexp-15",
+  "level": "2",
+  "url": "sec_logexp.html#sec_logexp-15",
+  "type": "Proposition",
+  "number": "3.5.4",
+  "title": "",
+  "body": "  If is a branch of the logarithm on , then is differentiable on with .   "
+},
+{
+  "id": "sec_logexp-16",
+  "level": "2",
+  "url": "sec_logexp.html#sec_logexp-16",
+  "type": "Proof",
+  "number": "3.5.1",
+  "title": "",
+  "body": " The idea is to apply to and , but we need to be careful about the domains of these functions. Let , the image of . We apply Proposition with given by and given by ; note that is continuous, and checks that and are inverses of each other. Thus gives .  "
+},
+{
+  "id": "sec_logexp-18",
+  "level": "2",
+  "url": "sec_logexp.html#sec_logexp-18",
+  "type": "Definition",
+  "number": "3.5.5",
+  "title": "",
+  "body": "  Given with , the principal value of principal value of  is defined as .   "
+},
+{
+  "id": "chapter3-exercises",
+  "level": "1",
+  "url": "chapter3-exercises.html",
+  "type": "Exercises",
+  "number": "3.6",
+  "title": "Exercises",
+  "body": "   Show that if is a Möbius transformation then .      Complete the picture painted by by considering Möbius transformations with . That is, show that given by is a bijection, with given by the formula in .      Show that is the equation for a circle or line if and only if . Conclude that is a solution to if and only if is a solution to .      Extend by showing that maps any circle passing through to a line.      Prove that any Möbius transformation different from the identity map can have at most two fixed points. (A fixed point of a function is a number such that .) fixed point       Prove .      Show that the Möbius transformation maps the unit circle (minus the point ) onto the imaginary axis.      Suppose that is holomorphic in the region and is a subset of the unit circle. Show that is constant.      Fix with and consider .   Show that is a Möbius transformation.    Show that .    Prove that maps the unit disk to itself in a bijective fashion.         Suppose is a matrix of complex numbers whose determinant is nonzero. Then we can define a corresponding Möbius transformation on by . Show that , where denotes composition and denotes matrix multiplication.      Show that our definition of honors the finite limit rules in Proposition , by proving the following, where :   If and then .    If and then .    If then .    If and then .    If and then .         Fix . Prove that .      Let . Draw two graphs, one showing the following six sets in the -plane and the other showing their images in the -plane. Label the sets. (You should only need to calculate the images of , , , and ; remember that Möbius transformations preserve angles.)   the -axis plus     the -axis plus     the line plus     the circle with radius centered at     the circle with radius centered at     the circle with radius centered at          Find Möbius transformations satisfying each of the following. Write your answers in standard form, as .                       Using the cross ratio, with different choices of , find two different Möbius transformations that transform onto the real axis plus . In each case, find the image of the center of the circle.      Let be the unit circle. Find a Möbius transformation that transforms onto and transforms to .      Describe the image of the region under the transformation:   The disk under .    The quadrant under .    The strip under .         Find a Möbius transformation that maps the unit disk to .      The Jacobian Jacobian  of a transformation , is the determinant of the matrix .  Show that if is holomorphic then the Jacobian equals .      Find the fixed points in of .      Find each Möbius transformation :    maps , , .     maps , , .     maps the -axis to , the -axis to , and the unit circle to itself.           Find a Möbius transformation that maps the unit circle to .    Find two Möbius transformations that map the unit disk respectively.        Given , show that the image of the line under inversion is the circle with center and radius .      Suppose , and are distinct points in . Show that is on the circle passing through , and if and only if is real or .      Prove that the stereographic projection of is a bijection by verifying that and are the identity map.      Find the image of the following points under the stereographic projection :   .      Consider the plane determined by . What is a unit normal vector to ? Compute the image of under the stereographic projection .      Prove that every circle in the extended complex plane is the image of some circle in under the stereographic projection .      Describe the effect of the basic Möbius transformations rotation, real dilation, and translation on the Riemann sphere. ( Hint : For the first two, consider all circles in centered on the axis, and all circles through both and . For translation, consider two families of circles through , orthogonal to and perpendicular to the translation.)      Prove that and .      Let and show that    .     .         Prove that the zeros of are all real valued. Conclude that they are precisely the integer multiples of .      Describe the images of the following sets under the exponential function :   the line segment defined by     the line segment defined by     the rectangle .         Prove .      Prove .      Let and show that             If then .    If then .         Show that .      Draw a picture of the images of vertical lines under the sine function. Do the same for the tangent function.      Determine the image of the strip under the sine function. ( Hint : makes it easy to convert parametric equations for horizontal or vertical lines to parametric equations for their images. Note that the equations and represent an ellipse and the equations and represent a hyperbola. Start by finding the images of the boundary lines of the strip, and then find the images of a few horizontal segments and vertical lines in the strip.)      Find the principal values of              .         Convert the following expressions to the form . (Reason carefully.)                                       .         Is true for the multiple-valued argument? What about for the principal branch?      For the multiple-valued logarithm, is there a difference between the set of all values of and the set of all values of ? ( Hint : Try some fixed numbers for .)      For each of the following functions, determine all complex numbers for which the function is holomorphic. If you run into a logarithm, use the principal value unless otherwise stated.              where with                .         Find all solutions to the following equations:                                       .         Find the image of the annulus under the principal value of the logarithm.      Use to give an alternative proof that is holomorphic in .      Let be a branch of the logarithm on , and let , the image of . Show that is a bijection whose inverse map is given by (i.e., is the exponential function restricted to ).      Show that if is a positive real constant.      Fix . Find the derivative of .      Prove that is single valued if and only if is an integer. (Note that this means that complex exponentials do not clash with monomials , no matter which branch of the logarithm is used.) What can you say if is rational?      Describe the image under of the line with equation . To do this you should find an equation (at least parametrically) for the image (you can start with the parametric form ), plot it reasonably carefully, and explain what happens in the limits as and .      For this problem, .   Show that the image under of a circle centered at the origin is a circle centered at the origin.    Show that the image under of a ray starting at the origin is a ray starting at the origin.    Let be the figure formed by the horizontal segment from to , the circular arc from to , and then the vertical segment from to . Draw and .    Is the right angle at the origin in part (c) preserved? Is something wrong here?     ( Hint : Use polar coordinates.)      As in the previous problem, let . Let be the square with vertices at , , and . Draw and identify the types of image curves corresponding to the segments from to and from to . They are not parts of either straight lines or circles. ( Hint : You can write the vertical segment parametrically as . Eliminate the parameter in to get a equation for the image curve.) and are related to the cover picture of this book.    "
+},
+{
+  "id": "prob_mobiusinverse",
+  "level": "2",
+  "url": "chapter3-exercises.html#prob_mobiusinverse",
+  "type": "Exercise",
+  "number": "3.6.1",
+  "title": "",
+  "body": "  Show that if is a Möbius transformation then .   "
+},
+{
+  "id": "ex_inversemobisc_0",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_inversemobisc_0",
+  "type": "Exercise",
+  "number": "3.6.2",
+  "title": "",
+  "body": "  Complete the picture painted by by considering Möbius transformations with . That is, show that given by is a bijection, with given by the formula in .   "
+},
+{
+  "id": "ex_circlegenau",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_circlegenau",
+  "type": "Exercise",
+  "number": "3.6.3",
+  "title": "",
+  "body": "  Show that is the equation for a circle or line if and only if . Conclude that is a solution to if and only if is a solution to .   "
+},
+{
+  "id": "exercise_mobiusinverse2",
+  "level": "2",
+  "url": "chapter3-exercises.html#exercise_mobiusinverse2",
+  "type": "Exercise",
+  "number": "3.6.4",
+  "title": "",
+  "body": "  Extend by showing that maps any circle passing through to a line.   "
+},
+{
+  "id": "chapter3-exercises-5",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-5",
+  "type": "Exercise",
+  "number": "3.6.5",
+  "title": "",
+  "body": "  Prove that any Möbius transformation different from the identity map can have at most two fixed points. (A fixed point of a function is a number such that .) fixed point    "
+},
+{
+  "id": "chapter3-exercises-6",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-6",
+  "type": "Exercise",
+  "number": "3.6.6",
+  "title": "",
+  "body": "  Prove .   "
+},
+{
+  "id": "unitcircletoimaginary",
+  "level": "2",
+  "url": "chapter3-exercises.html#unitcircletoimaginary",
+  "type": "Exercise",
+  "number": "3.6.7",
+  "title": "",
+  "body": "  Show that the Möbius transformation maps the unit circle (minus the point ) onto the imaginary axis.   "
+},
+{
+  "id": "unitcircleistoothin",
+  "level": "2",
+  "url": "chapter3-exercises.html#unitcircleistoothin",
+  "type": "Exercise",
+  "number": "3.6.8",
+  "title": "",
+  "body": "  Suppose that is holomorphic in the region and is a subset of the unit circle. Show that is constant.   "
+},
+{
+  "id": "ex_mobiusunitcircletounitcircle",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_mobiusunitcircletounitcircle",
+  "type": "Exercise",
+  "number": "3.6.9",
+  "title": "",
+  "body": "  Fix with and consider .   Show that is a Möbius transformation.    Show that .    Prove that maps the unit disk to itself in a bijective fashion.      "
+},
+{
+  "id": "ex_mobiusgroup",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_mobiusgroup",
+  "type": "Exercise",
+  "number": "3.6.10",
+  "title": "",
+  "body": "  Suppose is a matrix of complex numbers whose determinant is nonzero. Then we can define a corresponding Möbius transformation on by . Show that , where denotes composition and denotes matrix multiplication.   "
+},
+{
+  "id": "ex_limitrulesinfty",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_limitrulesinfty",
+  "type": "Exercise",
+  "number": "3.6.11",
+  "title": "",
+  "body": "  Show that our definition of honors the finite limit rules in Proposition , by proving the following, where :   If and then .    If and then .    If then .    If and then .    If and then .      "
+},
+{
+  "id": "ex_polynomiallimitaszgrows",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_polynomiallimitaszgrows",
+  "type": "Exercise",
+  "number": "3.6.12",
+  "title": "",
+  "body": "  Fix . Prove that .   "
+},
+{
+  "id": "chapter3-exercises-13",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-13",
+  "type": "Exercise",
+  "number": "3.6.13",
+  "title": "",
+  "body": "  Let . Draw two graphs, one showing the following six sets in the -plane and the other showing their images in the -plane. Label the sets. (You should only need to calculate the images of , , , and ; remember that Möbius transformations preserve angles.)   the -axis plus     the -axis plus     the line plus     the circle with radius centered at     the circle with radius centered at     the circle with radius centered at       "
+},
+{
+  "id": "ex314",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex314",
+  "type": "Exercise",
+  "number": "3.6.14",
+  "title": "",
+  "body": "  Find Möbius transformations satisfying each of the following. Write your answers in standard form, as .                    "
+},
+{
+  "id": "chapter3-exercises-15",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-15",
+  "type": "Exercise",
+  "number": "3.6.15",
+  "title": "",
+  "body": "  Using the cross ratio, with different choices of , find two different Möbius transformations that transform onto the real axis plus . In each case, find the image of the center of the circle.   "
+},
+{
+  "id": "chapter3-exercises-16",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-16",
+  "type": "Exercise",
+  "number": "3.6.16",
+  "title": "",
+  "body": "  Let be the unit circle. Find a Möbius transformation that transforms onto and transforms to .   "
+},
+{
+  "id": "chapter3-exercises-17",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-17",
+  "type": "Exercise",
+  "number": "3.6.17",
+  "title": "",
+  "body": "  Describe the image of the region under the transformation:   The disk under .    The quadrant under .    The strip under .      "
+},
+{
+  "id": "chapter3-exercises-18",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-18",
+  "type": "Exercise",
+  "number": "3.6.18",
+  "title": "",
+  "body": "  Find a Möbius transformation that maps the unit disk to .   "
+},
+{
+  "id": "chapter3-exercises-19",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-19",
+  "type": "Exercise",
+  "number": "3.6.19",
+  "title": "",
+  "body": "  The Jacobian Jacobian  of a transformation , is the determinant of the matrix .  Show that if is holomorphic then the Jacobian equals .   "
+},
+{
+  "id": "chapter3-exercises-20",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-20",
+  "type": "Exercise",
+  "number": "3.6.20",
+  "title": "",
+  "body": "  Find the fixed points in of .   "
+},
+{
+  "id": "chapter3-exercises-21",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-21",
+  "type": "Exercise",
+  "number": "3.6.21",
+  "title": "",
+  "body": "  Find each Möbius transformation :    maps , , .     maps , , .     maps the -axis to , the -axis to , and the unit circle to itself.      "
+},
+{
+  "id": "chapter3-exercises-22",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-22",
+  "type": "Exercise",
+  "number": "3.6.22",
+  "title": "",
+  "body": "    Find a Möbius transformation that maps the unit circle to .    Find two Möbius transformations that map the unit disk respectively.     "
+},
+{
+  "id": "chapter3-exercises-23",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-23",
+  "type": "Exercise",
+  "number": "3.6.23",
+  "title": "",
+  "body": "  Given , show that the image of the line under inversion is the circle with center and radius .   "
+},
+{
+  "id": "chapter3-exercises-24",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-24",
+  "type": "Exercise",
+  "number": "3.6.24",
+  "title": "",
+  "body": "  Suppose , and are distinct points in . Show that is on the circle passing through , and if and only if is real or .   "
+},
+{
+  "id": "ex_stereoinverseformula",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_stereoinverseformula",
+  "type": "Exercise",
+  "number": "3.6.25",
+  "title": "",
+  "body": "  Prove that the stereographic projection of is a bijection by verifying that and are the identity map.   "
+},
+{
+  "id": "chapter3-exercises-26",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-26",
+  "type": "Exercise",
+  "number": "3.6.26",
+  "title": "",
+  "body": "  Find the image of the following points under the stereographic projection :   .   "
+},
+{
+  "id": "chapter3-exercises-27",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-27",
+  "type": "Exercise",
+  "number": "3.6.27",
+  "title": "",
+  "body": "  Consider the plane determined by . What is a unit normal vector to ? Compute the image of under the stereographic projection .   "
+},
+{
+  "id": "ex_everycircleins2",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_everycircleins2",
+  "type": "Exercise",
+  "number": "3.6.28",
+  "title": "",
+  "body": "  Prove that every circle in the extended complex plane is the image of some circle in under the stereographic projection .   "
+},
+{
+  "id": "chapter3-exercises-29",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-29",
+  "type": "Exercise",
+  "number": "3.6.29",
+  "title": "",
+  "body": "  Describe the effect of the basic Möbius transformations rotation, real dilation, and translation on the Riemann sphere. ( Hint : For the first two, consider all circles in centered on the axis, and all circles through both and . For translation, consider two families of circles through , orthogonal to and perpendicular to the translation.)   "
+},
+{
+  "id": "chapter3-exercises-30",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-30",
+  "type": "Exercise",
+  "number": "3.6.30",
+  "title": "",
+  "body": "  Prove that and .   "
+},
+{
+  "id": "ex_sin_x_iy_",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_sin_x_iy_",
+  "type": "Exercise",
+  "number": "3.6.31",
+  "title": "",
+  "body": "  Let and show that    .     .      "
+},
+{
+  "id": "chapter3-exercises-32",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-32",
+  "type": "Exercise",
+  "number": "3.6.32",
+  "title": "",
+  "body": "  Prove that the zeros of are all real valued. Conclude that they are precisely the integer multiples of .   "
+},
+{
+  "id": "chapter3-exercises-33",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-33",
+  "type": "Exercise",
+  "number": "3.6.33",
+  "title": "",
+  "body": "  Describe the images of the following sets under the exponential function :   the line segment defined by     the line segment defined by     the rectangle .      "
+},
+{
+  "id": "ex_expproperties",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_expproperties",
+  "type": "Exercise",
+  "number": "3.6.34",
+  "title": "",
+  "body": "  Prove .   "
+},
+{
+  "id": "chapter3-exercises-35",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-35",
+  "type": "Exercise",
+  "number": "3.6.35",
+  "title": "",
+  "body": "  Prove .   "
+},
+{
+  "id": "ex_abs_cot_",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_abs_cot_",
+  "type": "Exercise",
+  "number": "3.6.36",
+  "title": "",
+  "body": "  Let and show that             If then .    If then .      "
+},
+{
+  "id": "chapter3-exercises-37",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-37",
+  "type": "Exercise",
+  "number": "3.6.37",
+  "title": "",
+  "body": "  Show that .   "
+},
+{
+  "id": "chapter3-exercises-38",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-38",
+  "type": "Exercise",
+  "number": "3.6.38",
+  "title": "",
+  "body": "  Draw a picture of the images of vertical lines under the sine function. Do the same for the tangent function.   "
+},
+{
+  "id": "chapter3-exercises-39",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-39",
+  "type": "Exercise",
+  "number": "3.6.39",
+  "title": "",
+  "body": "  Determine the image of the strip under the sine function. ( Hint : makes it easy to convert parametric equations for horizontal or vertical lines to parametric equations for their images. Note that the equations and represent an ellipse and the equations and represent a hyperbola. Start by finding the images of the boundary lines of the strip, and then find the images of a few horizontal segments and vertical lines in the strip.)   "
+},
+{
+  "id": "ex_princval",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_princval",
+  "type": "Exercise",
+  "number": "3.6.40",
+  "title": "",
+  "body": "  Find the principal values of              .      "
+},
+{
+  "id": "chapter3-exercises-41",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-41",
+  "type": "Exercise",
+  "number": "3.6.41",
+  "title": "",
+  "body": "  Convert the following expressions to the form . (Reason carefully.)                                       .      "
+},
+{
+  "id": "chapter3-exercises-42",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-42",
+  "type": "Exercise",
+  "number": "3.6.42",
+  "title": "",
+  "body": "  Is true for the multiple-valued argument? What about for the principal branch?   "
+},
+{
+  "id": "chapter3-exercises-43",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-43",
+  "type": "Exercise",
+  "number": "3.6.43",
+  "title": "",
+  "body": "  For the multiple-valued logarithm, is there a difference between the set of all values of and the set of all values of ? ( Hint : Try some fixed numbers for .)   "
+},
+{
+  "id": "ex_3_1",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_3_1",
+  "type": "Exercise",
+  "number": "3.6.44",
+  "title": "",
+  "body": "  For each of the following functions, determine all complex numbers for which the function is holomorphic. If you run into a logarithm, use the principal value unless otherwise stated.              where with                .      "
+},
+{
+  "id": "ex_3_2",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_3_2",
+  "type": "Exercise",
+  "number": "3.6.45",
+  "title": "",
+  "body": "  Find all solutions to the following equations:                                       .      "
+},
+{
+  "id": "chapter3-exercises-46",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-46",
+  "type": "Exercise",
+  "number": "3.6.46",
+  "title": "",
+  "body": "  Find the image of the annulus under the principal value of the logarithm.   "
+},
+{
+  "id": "chapter3-exercises-47",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-47",
+  "type": "Exercise",
+  "number": "3.6.47",
+  "title": "",
+  "body": "  Use to give an alternative proof that is holomorphic in .   "
+},
+{
+  "id": "ex_logexpinv",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_logexpinv",
+  "type": "Exercise",
+  "number": "3.6.48",
+  "title": "",
+  "body": "  Let be a branch of the logarithm on , and let , the image of . Show that is a bijection whose inverse map is given by (i.e., is the exponential function restricted to ).   "
+},
+{
+  "id": "ex_absolutepowers",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_absolutepowers",
+  "type": "Exercise",
+  "number": "3.6.49",
+  "title": "",
+  "body": "  Show that if is a positive real constant.   "
+},
+{
+  "id": "ex_3_3",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_3_3",
+  "type": "Exercise",
+  "number": "3.6.50",
+  "title": "",
+  "body": "  Fix . Find the derivative of .   "
+},
+{
+  "id": "singlevaluedexp",
+  "level": "2",
+  "url": "chapter3-exercises.html#singlevaluedexp",
+  "type": "Exercise",
+  "number": "3.6.51",
+  "title": "",
+  "body": "  Prove that is single valued if and only if is an integer. (Note that this means that complex exponentials do not clash with monomials , no matter which branch of the logarithm is used.) What can you say if is rational?   "
+},
+{
+  "id": "chapter3-exercises-52",
+  "level": "2",
+  "url": "chapter3-exercises.html#chapter3-exercises-52",
+  "type": "Exercise",
+  "number": "3.6.52",
+  "title": "",
+  "body": "  Describe the image under of the line with equation . To do this you should find an equation (at least parametrically) for the image (you can start with the parametric form ), plot it reasonably carefully, and explain what happens in the limits as and .   "
+},
+{
+  "id": "ex_squaredimage1",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_squaredimage1",
+  "type": "Exercise",
+  "number": "3.6.53",
+  "title": "",
+  "body": "  For this problem, .   Show that the image under of a circle centered at the origin is a circle centered at the origin.    Show that the image under of a ray starting at the origin is a ray starting at the origin.    Let be the figure formed by the horizontal segment from to , the circular arc from to , and then the vertical segment from to . Draw and .    Is the right angle at the origin in part (c) preserved? Is something wrong here?     ( Hint : Use polar coordinates.)   "
+},
+{
+  "id": "ex_squaredimage2",
+  "level": "2",
+  "url": "chapter3-exercises.html#ex_squaredimage2",
+  "type": "Exercise",
+  "number": "3.6.54",
+  "title": "",
+  "body": "  As in the previous problem, let . Let be the square with vertices at , , and . Draw and identify the types of image curves corresponding to the segments from to and from to . They are not parts of either straight lines or circles. ( Hint : You can write the vertical segment parametrically as . Eliminate the parameter in to get a equation for the image curve.) and are related to the cover picture of this book.   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
