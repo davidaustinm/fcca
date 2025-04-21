@@ -1,0 +1,18 @@
+<diagram dimensions="(250,250)" margins="5"
+         xmlns="https://prefigure.org">
+  <coordinates bbox="(-2,-pi,2,pi)">
+    <axes decorations="no" stroke="gray"/>
+    <repeat parameter="angle in [5*pi/6, pi/3, 0, -pi/3, -5*pi/6]">
+      <line endpoints="((-2,angle),(2,angle))" stroke="red"
+            dash="9 9"
+            thickness="2"/>
+    </repeat>
+    <repeat parameter="k=-2..2">
+      <line endpoints="((k,-pi),(k,pi))" stroke="blue" 
+            thickness="2"/>
+    </repeat>
+    <axes decorations="yes" v-pi-format="yes" stroke="gray"
+          axes="no"
+          clear-background="yes"/>
+  </coordinates>
+</diagram>
