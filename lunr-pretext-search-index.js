@@ -430,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.5",
   "title": "Exercises",
-  "body": "  Let and . Compute the following:                               Find the real and imaginary parts of each of the following:    for any                for any        Find the absolute value and conjugate of each of the following:                          Write in polar form:                                              Write in rectangular form:                          Write in both polar and rectangular form:                Show that the quadratic formula works. That is, for with , prove that the roots of the equation are .  Here we define if the discriminant  is negative. discriminant     Use the quadratic formula to solve the following equations.                               Find all solutions of the equation .    Fix and . Show that the equation has a solution if and only if . When solutions exist, show the solution set is a circle.    Find all solutions to the following equations:                          Show that if and only if .    Show that    is a real number if and only if ;     is either real or purely imaginary if and only if .       Prove Proposition .    Show that if then or .    Prove Proposition .    Fix a positive integer . Prove that the solutions to the equation are precisely where . ( Hint : To show that every solution of is of this form, first prove that it must be of the form for some , then write for some integer and some real number , and then argue that has to be zero.)    Show that and deduce from this closed formulas for and .    Fix a positive integer and a complex number . Find all solutions to . ( Hint : Write in terms of polar coordinates.)    Use Proposition to derive the triple angle formulas:                Given , define the matrix . Show that .  (This means that the set , equipped with the usual addition and multiplication of matrices, behaves exactly like .)    Prove Proposition .    Sketch the following sets in the complex plane:                                              Suppose is a polynomial with real coefficients. polynomial Prove that    .     if and only if .       Prove the reverse triangle inequality ( of ) . reverse triangle inequality     Use the previous exercise to show that for every on the circle .    Sketch the sets defined by the following constraints and determine whether they are open, closed, or neither; bounded; connected.                                    What are the boundaries of the sets in the previous exercise?    Let be the set of points satisfying either is real and , or , or or .   Sketch the set , being careful to indicate exactly the points that are in .    Determine the interior points of .    Determine the boundary points of .    Determine the isolated points of .       The set in the previous exercise can be written in three different ways as the union of two disjoint nonempty separated subsets. Describe them, and in each case say briefly why the subsets are separated.    Show that the union of two regions with nonempty intersection is itself a region.    Show that if and is closed, then . Similarly, if and is open, show that is contained in the interior of .    Find a parametrization for each of the following paths:   the circle , oriented counter-clockwise    the line segment from to     the top half of the circle , oriented clockwise    the rectangle with vertices , oriented counter-clockwise    the ellipse , oriented counter-clockwise       Draw the path parametrized by .    Let be the annulus determined by the inequalities . This is a connected open set. Find the maximum number of horizontal and vertical segments in needed to connect two points of .   "
+  "body": "   Let and . Compute the following:                                 Find the real and imaginary parts of each of the following:    for any                for any          Find the absolute value and conjugate of each of the following:                            Write in polar form:                                                Write in rectangular form:                            Write in both polar and rectangular form:                  Show that the quadratic formula works. That is, for with , prove that the roots of the equation are .  Here we define if the discriminant  is negative. discriminant       Use the quadratic formula to solve the following equations.                                 Find all solutions of the equation .      Fix and . Show that the equation has a solution if and only if . When solutions exist, show the solution set is a circle.      Find all solutions to the following equations:                            Show that if and only if .      Show that    is a real number if and only if ;     is either real or purely imaginary if and only if .         Prove Proposition .      Show that if then or .      Prove Proposition .      Fix a positive integer . Prove that the solutions to the equation are precisely where . ( Hint : To show that every solution of is of this form, first prove that it must be of the form for some , then write for some integer and some real number , and then argue that has to be zero.)      Show that and deduce from this closed formulas for and .      Fix a positive integer and a complex number . Find all solutions to . ( Hint : Write in terms of polar coordinates.)      Use Proposition to derive the triple angle formulas:                  Given , define the matrix . Show that .  (This means that the set , equipped with the usual addition and multiplication of matrices, behaves exactly like .)      Prove Proposition .      Sketch the following sets in the complex plane:                                                Suppose is a polynomial with real coefficients. polynomial Prove that    .     if and only if .         Prove the reverse triangle inequality ( of ) . reverse triangle inequality       Use the previous exercise to show that for every on the circle .      Sketch the sets defined by the following constraints and determine whether they are open, closed, or neither; bounded; connected.                                      What are the boundaries of the sets in the previous exercise?      Let be the set of points satisfying either is real and , or , or or .   Sketch the set , being careful to indicate exactly the points that are in .    Determine the interior points of .    Determine the boundary points of .    Determine the isolated points of .         The set in the previous exercise can be written in three different ways as the union of two disjoint nonempty separated subsets. Describe them, and in each case say briefly why the subsets are separated.      Show that the union of two regions with nonempty intersection is itself a region.      Show that if and is closed, then . Similarly, if and is open, show that is contained in the interior of .      Find a parametrization for each of the following paths:   the circle , oriented counter-clockwise    the line segment from to     the top half of the circle , oriented clockwise    the rectangle with vertices , oriented counter-clockwise    the ellipse , oriented counter-clockwise         Draw the path parametrized by .      Let be the annulus determined by the inequalities . This is a connected open set. Find the maximum number of horizontal and vertical segments in needed to connect two points of .    "
 },
 {
   "id": "ex_1_0",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.1",
   "title": "",
-  "body": " Let and . Compute the following:                             "
+  "body": "  Let and . Compute the following:                              "
 },
 {
   "id": "ex_1_1",
@@ -448,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.2",
   "title": "",
-  "body": " Find the real and imaginary parts of each of the following:    for any                for any      "
+  "body": "  Find the real and imaginary parts of each of the following:    for any                for any       "
 },
 {
   "id": "ex_1_2",
@@ -457,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.3",
   "title": "",
-  "body": " Find the absolute value and conjugate of each of the following:                        "
+  "body": "  Find the absolute value and conjugate of each of the following:                         "
 },
 {
   "id": "ex_1_3",
@@ -466,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.4",
   "title": "",
-  "body": " Write in polar form:                                            "
+  "body": "  Write in polar form:                                             "
 },
 {
   "id": "ex_1_4",
@@ -475,7 +475,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.5",
   "title": "",
-  "body": " Write in rectangular form:                        "
+  "body": "  Write in rectangular form:                         "
 },
 {
   "id": "chapter1-exercises-6",
@@ -484,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.6",
   "title": "",
-  "body": " Write in both polar and rectangular form:              "
+  "body": "  Write in both polar and rectangular form:               "
 },
 {
   "id": "chapter1-exercises-7",
@@ -493,7 +493,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.7",
   "title": "",
-  "body": " Show that the quadratic formula works. That is, for with , prove that the roots of the equation are .  Here we define if the discriminant  is negative. discriminant   "
+  "body": "  Show that the quadratic formula works. That is, for with , prove that the roots of the equation are .  Here we define if the discriminant  is negative. discriminant    "
 },
 {
   "id": "chapter1-exercises-8",
@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.8",
   "title": "",
-  "body": " Use the quadratic formula to solve the following equations.                             "
+  "body": "  Use the quadratic formula to solve the following equations.                              "
 },
 {
   "id": "ex_1_6",
@@ -511,7 +511,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.9",
   "title": "",
-  "body": " Find all solutions of the equation .  "
+  "body": "  Find all solutions of the equation .   "
 },
 {
   "id": "chapter1-exercises-10",
@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.10",
   "title": "",
-  "body": " Fix and . Show that the equation has a solution if and only if . When solutions exist, show the solution set is a circle.  "
+  "body": "  Fix and . Show that the equation has a solution if and only if . When solutions exist, show the solution set is a circle.   "
 },
 {
   "id": "ex_1_5",
@@ -529,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.11",
   "title": "",
-  "body": " Find all solutions to the following equations:                        "
+  "body": "  Find all solutions to the following equations:                         "
 },
 {
   "id": "chapter1-exercises-12",
@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.12",
   "title": "",
-  "body": " Show that if and only if .  "
+  "body": "  Show that if and only if .   "
 },
 {
   "id": "chapter1-exercises-13",
@@ -547,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.13",
   "title": "",
-  "body": " Show that    is a real number if and only if ;     is either real or purely imaginary if and only if .     "
+  "body": "  Show that    is a real number if and only if ;     is either real or purely imaginary if and only if .      "
 },
 {
   "id": "ex_alg",
@@ -556,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.14",
   "title": "",
-  "body": " Prove Proposition .  "
+  "body": "  Prove Proposition .   "
 },
 {
   "id": "chapter1-exercises-15",
@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.15",
   "title": "",
-  "body": " Show that if then or .  "
+  "body": "  Show that if then or .   "
 },
 {
   "id": "ex_easyexp",
@@ -574,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.16",
   "title": "",
-  "body": " Prove Proposition .  "
+  "body": "  Prove Proposition .   "
 },
 {
   "id": "ex_rootofunity",
@@ -583,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.17",
   "title": "",
-  "body": " Fix a positive integer . Prove that the solutions to the equation are precisely where . ( Hint : To show that every solution of is of this form, first prove that it must be of the form for some , then write for some integer and some real number , and then argue that has to be zero.)  "
+  "body": "  Fix a positive integer . Prove that the solutions to the equation are precisely where . ( Hint : To show that every solution of is of this form, first prove that it must be of the form for some , then write for some integer and some real number , and then argue that has to be zero.)   "
 },
 {
   "id": "ex_5throotsof1",
@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.18",
   "title": "",
-  "body": " Show that and deduce from this closed formulas for and .  "
+  "body": "  Show that and deduce from this closed formulas for and .   "
 },
 {
   "id": "chapter1-exercises-19",
@@ -601,7 +601,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.19",
   "title": "",
-  "body": " Fix a positive integer and a complex number . Find all solutions to . ( Hint : Write in terms of polar coordinates.)  "
+  "body": "  Fix a positive integer and a complex number . Find all solutions to . ( Hint : Write in terms of polar coordinates.)   "
 },
 {
   "id": "chapter1-exercises-20",
@@ -610,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.20",
   "title": "",
-  "body": " Use Proposition to derive the triple angle formulas:              "
+  "body": "  Use Proposition to derive the triple angle formulas:               "
 },
 {
   "id": "ex_Casmatrices",
@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.21",
   "title": "",
-  "body": " Given , define the matrix . Show that .  (This means that the set , equipped with the usual addition and multiplication of matrices, behaves exactly like .)  "
+  "body": "  Given , define the matrix . Show that .  (This means that the set , equipped with the usual addition and multiplication of matrices, behaves exactly like .)   "
 },
 {
   "id": "ex_conjugation",
@@ -628,7 +628,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.22",
   "title": "",
-  "body": " Prove Proposition .  "
+  "body": "  Prove Proposition .   "
 },
 {
   "id": "chapter1-exercises-23",
@@ -637,7 +637,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.23",
   "title": "",
-  "body": " Sketch the following sets in the complex plane:                                            "
+  "body": "  Sketch the following sets in the complex plane:                                             "
 },
 {
   "id": "realpolynomialb",
@@ -646,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.24",
   "title": "",
-  "body": " Suppose is a polynomial with real coefficients. polynomial Prove that    .     if and only if .     "
+  "body": "  Suppose is a polynomial with real coefficients. polynomial Prove that    .     if and only if .      "
 },
 {
   "id": "ex_reversetriangle",
@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.25",
   "title": "",
-  "body": " Prove the reverse triangle inequality ( of ) . reverse triangle inequality   "
+  "body": "  Prove the reverse triangle inequality ( of ) . reverse triangle inequality    "
 },
 {
   "id": "chapter1-exercises-26",
@@ -664,7 +664,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.26",
   "title": "",
-  "body": " Use the previous exercise to show that for every on the circle .  "
+  "body": "  Use the previous exercise to show that for every on the circle .   "
 },
 {
   "id": "chapter1-exercises-27",
@@ -673,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.27",
   "title": "",
-  "body": " Sketch the sets defined by the following constraints and determine whether they are open, closed, or neither; bounded; connected.                                  "
+  "body": "  Sketch the sets defined by the following constraints and determine whether they are open, closed, or neither; bounded; connected.                                   "
 },
 {
   "id": "chapter1-exercises-28",
@@ -682,7 +682,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.28",
   "title": "",
-  "body": " What are the boundaries of the sets in the previous exercise?  "
+  "body": "  What are the boundaries of the sets in the previous exercise?   "
 },
 {
   "id": "chapter1-exercises-29",
@@ -691,7 +691,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.29",
   "title": "",
-  "body": " Let be the set of points satisfying either is real and , or , or or .   Sketch the set , being careful to indicate exactly the points that are in .    Determine the interior points of .    Determine the boundary points of .    Determine the isolated points of .     "
+  "body": "  Let be the set of points satisfying either is real and , or , or or .   Sketch the set , being careful to indicate exactly the points that are in .    Determine the interior points of .    Determine the boundary points of .    Determine the isolated points of .      "
 },
 {
   "id": "chapter1-exercises-30",
@@ -700,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.30",
   "title": "",
-  "body": " The set in the previous exercise can be written in three different ways as the union of two disjoint nonempty separated subsets. Describe them, and in each case say briefly why the subsets are separated.  "
+  "body": "  The set in the previous exercise can be written in three different ways as the union of two disjoint nonempty separated subsets. Describe them, and in each case say briefly why the subsets are separated.   "
 },
 {
   "id": "chapter1-exercises-31",
@@ -709,7 +709,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.31",
   "title": "",
-  "body": " Show that the union of two regions with nonempty intersection is itself a region.  "
+  "body": "  Show that the union of two regions with nonempty intersection is itself a region.   "
 },
 {
   "id": "chapter1-exercises-32",
@@ -718,7 +718,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.32",
   "title": "",
-  "body": " Show that if and is closed, then . Similarly, if and is open, show that is contained in the interior of .  "
+  "body": "  Show that if and is closed, then . Similarly, if and is open, show that is contained in the interior of .   "
 },
 {
   "id": "ex_parametrizations",
@@ -727,7 +727,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.33",
   "title": "",
-  "body": " Find a parametrization for each of the following paths:   the circle , oriented counter-clockwise    the line segment from to     the top half of the circle , oriented clockwise    the rectangle with vertices , oriented counter-clockwise    the ellipse , oriented counter-clockwise     "
+  "body": "  Find a parametrization for each of the following paths:   the circle , oriented counter-clockwise    the line segment from to     the top half of the circle , oriented clockwise    the rectangle with vertices , oriented counter-clockwise    the ellipse , oriented counter-clockwise      "
 },
 {
   "id": "ex_diamondpath",
@@ -736,7 +736,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.34",
   "title": "",
-  "body": " Draw the path parametrized by .  "
+  "body": "  Draw the path parametrized by .   "
 },
 {
   "id": "chapter1-exercises-35",
@@ -745,7 +745,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.35",
   "title": "",
-  "body": " Let be the annulus determined by the inequalities . This is a connected open set. Find the maximum number of horizontal and vertical segments in needed to connect two points of .  "
+  "body": "  Let be the annulus determined by the inequalities . This is a connected open set. Find the maximum number of horizontal and vertical segments in needed to connect two points of .   "
 },
 {
   "id": "sec_optionallab",
@@ -1051,7 +1051,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "2.5",
   "title": "Exercises",
-  "body": "  Use the definition of limit to show for any that .    Evaluate the following limits or explain why they don't exist.                Prove that, if a limit exists, then it is unique.    Prove .    Let and suppose is an accumulation point of . Show that if and only if .     is useful for showing that limits do not exist, but it is not at all useful for showing that a limit does exist. For example, define .  Show that the limits of at along all straight lines through the origin exist and are equal, but does not exist. ( Hint : Consider the limit along the parabola .)    Suppose that and . Prove that if and only if .    Show that the function given by is continuous on .    Show that the function given by is continuous on .    Determine where each of the following functions is continuous:                Show that the two definitions of continuity in are equivalent. Consider separately the cases where is an accumulation point of and where is an isolated point of .    Consider the function given by . Apply the definition of the derivative to give a direct proof that .    Prove .    Prove .    Find the derivative of the function , where with . When is ?    Prove that if is given by a polynomial in then is entire. What can you say if is given by a polynomial polynomial in and ?    Prove or find a counterexample: If and are real valued and continuous, then is continuous; if and are (real) differentiable then is (complex) differentiable.    Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.                                                                  Define if , and if . Show that satisfies the Cauchy-Riemann equation at , yet is not differentiable at . Why doesn't this contradict (b)?    Prove: If is holomorphic in the region and always real valued, then is constant in . ( Hint : Use the Cauchy-Riemann equations to show that .)    Prove: If and are both holomorphic in the region then is constant in .    Suppose is entire and can be written as , that is, the real part of depends only on and the imaginary part of depends only on . Prove that for some and .    Suppose is entire, with real and imaginary parts and satisfying for all . Show that is constant.    Prove that the Cauchy-Riemann equations take on the following form in polar coordinates: .    For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                          Is harmonic on ? What about ?    Consider the general real homogeneous quadratic function , where , and are real constants.   Show that is harmonic if and only if .    If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .       Re-prove by using the formula for given in .    Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)   "
+  "body": "   Use the definition of limit to show for any that .      Evaluate the following limits or explain why they don't exist.                  Prove that, if a limit exists, then it is unique.      Prove .      Let and suppose is an accumulation point of . Show that if and only if .       is useful for showing that limits do not exist, but it is not at all useful for showing that a limit does exist. For example, define .  Show that the limits of at along all straight lines through the origin exist and are equal, but does not exist. ( Hint : Consider the limit along the parabola .)      Suppose that and . Prove that if and only if .      Show that the function given by is continuous on .      Show that the function given by is continuous on .      Determine where each of the following functions is continuous:                  Show that the two definitions of continuity in are equivalent. Consider separately the cases where is an accumulation point of and where is an isolated point of .      Consider the function given by . Apply the definition of the derivative to give a direct proof that .      Prove .      Prove .      Find the derivative of the function , where with . When is ?      Prove that if is given by a polynomial in then is entire. What can you say if is given by a polynomial polynomial in and ?      Prove or find a counterexample: If and are real valued and continuous, then is continuous; if and are (real) differentiable then is (complex) differentiable.      Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.                                                                    Define if , and if . Show that satisfies the Cauchy-Riemann equation at , yet is not differentiable at . Why doesn't this contradict (b)?      Prove: If is holomorphic in the region and always real valued, then is constant in . ( Hint : Use the Cauchy-Riemann equations to show that .)      Prove: If and are both holomorphic in the region then is constant in .      Suppose is entire and can be written as , that is, the real part of depends only on and the imaginary part of depends only on . Prove that for some and .      Suppose is entire, with real and imaginary parts and satisfying for all . Show that is constant.      Prove that the Cauchy-Riemann equations take on the following form in polar coordinates: .      For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                            Is harmonic on ? What about ?      Consider the general real homogeneous quadratic function , where , and are real constants.   Show that is harmonic if and only if .    If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .         Re-prove by using the formula for given in .      Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)    "
 },
 {
   "id": "chapter2-exercises-1",
@@ -1060,7 +1060,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.1",
   "title": "",
-  "body": " Use the definition of limit to show for any that .  "
+  "body": "  Use the definition of limit to show for any that .   "
 },
 {
   "id": "ex_2_1",
@@ -1069,7 +1069,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.2",
   "title": "",
-  "body": " Evaluate the following limits or explain why they don't exist.              "
+  "body": "  Evaluate the following limits or explain why they don't exist.               "
 },
 {
   "id": "ex_limitunique",
@@ -1078,7 +1078,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.3",
   "title": "",
-  "body": " Prove that, if a limit exists, then it is unique.  "
+  "body": "  Prove that, if a limit exists, then it is unique.   "
 },
 {
   "id": "ex_limits",
@@ -1087,7 +1087,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.4",
   "title": "",
-  "body": " Prove .  "
+  "body": "  Prove .   "
 },
 {
   "id": "ex_limiteq0",
@@ -1096,7 +1096,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.5",
   "title": "",
-  "body": " Let and suppose is an accumulation point of . Show that if and only if .  "
+  "body": "  Let and suppose is an accumulation point of . Show that if and only if .   "
 },
 {
   "id": "chapter2-exercises-6",
@@ -1105,7 +1105,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.6",
   "title": "",
-  "body": "  is useful for showing that limits do not exist, but it is not at all useful for showing that a limit does exist. For example, define .  Show that the limits of at along all straight lines through the origin exist and are equal, but does not exist. ( Hint : Consider the limit along the parabola .)  "
+  "body": "   is useful for showing that limits do not exist, but it is not at all useful for showing that a limit does exist. For example, define .  Show that the limits of at along all straight lines through the origin exist and are equal, but does not exist. ( Hint : Consider the limit along the parabola .)   "
 },
 {
   "id": "chapter2-exercises-7",
@@ -1114,7 +1114,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.7",
   "title": "",
-  "body": " Suppose that and . Prove that if and only if .  "
+  "body": "  Suppose that and . Prove that if and only if .   "
 },
 {
   "id": "ex_zsquaredcontinuous",
@@ -1123,7 +1123,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.8",
   "title": "",
-  "body": " Show that the function given by is continuous on .  "
+  "body": "  Show that the function given by is continuous on .   "
 },
 {
   "id": "ex_zbaroverzcont",
@@ -1132,7 +1132,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.9",
   "title": "",
-  "body": " Show that the function given by is continuous on .  "
+  "body": "  Show that the function given by is continuous on .   "
 },
 {
   "id": "chapter2-exercises-10",
@@ -1141,7 +1141,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.10",
   "title": "",
-  "body": " Determine where each of the following functions is continuous:              "
+  "body": "  Determine where each of the following functions is continuous:               "
 },
 {
   "id": "ex_continuitydefs",
@@ -1150,7 +1150,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.11",
   "title": "",
-  "body": " Show that the two definitions of continuity in are equivalent. Consider separately the cases where is an accumulation point of and where is an isolated point of .  "
+  "body": "  Show that the two definitions of continuity in are equivalent. Consider separately the cases where is an accumulation point of and where is an isolated point of .   "
 },
 {
   "id": "chapter2-exercises-12",
@@ -1159,7 +1159,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.12",
   "title": "",
-  "body": " Consider the function given by . Apply the definition of the derivative to give a direct proof that .  "
+  "body": "  Consider the function given by . Apply the definition of the derivative to give a direct proof that .   "
 },
 {
   "id": "chapter2-exercises-13",
@@ -1168,7 +1168,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.13",
   "title": "",
-  "body": " Prove .  "
+  "body": "  Prove .   "
 },
 {
   "id": "ex_diffrules",
@@ -1177,7 +1177,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.14",
   "title": "",
-  "body": " Prove .  "
+  "body": "  Prove .   "
 },
 {
   "id": "chapter2-exercises-15",
@@ -1186,7 +1186,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.15",
   "title": "",
-  "body": " Find the derivative of the function , where with . When is ?  "
+  "body": "  Find the derivative of the function , where with . When is ?   "
 },
 {
   "id": "polynomialsholomorphic",
@@ -1195,7 +1195,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.16",
   "title": "",
-  "body": " Prove that if is given by a polynomial in then is entire. What can you say if is given by a polynomial polynomial in and ?  "
+  "body": "  Prove that if is given by a polynomial in then is entire. What can you say if is given by a polynomial polynomial in and ?   "
 },
 {
   "id": "chapter2-exercises-17",
@@ -1204,7 +1204,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.17",
   "title": "",
-  "body": " Prove or find a counterexample: If and are real valued and continuous, then is continuous; if and are (real) differentiable then is (complex) differentiable.  "
+  "body": "  Prove or find a counterexample: If and are real valued and continuous, then is continuous; if and are (real) differentiable then is (complex) differentiable.   "
 },
 {
   "id": "ex_2_2",
@@ -1213,7 +1213,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.18",
   "title": "",
-  "body": " Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.                                                                "
+  "body": "  Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.                                                                 "
 },
 {
   "id": "chapter2-exercises-19",
@@ -1222,7 +1222,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.19",
   "title": "",
-  "body": " Define if , and if . Show that satisfies the Cauchy-Riemann equation at , yet is not differentiable at . Why doesn't this contradict (b)?  "
+  "body": "  Define if , and if . Show that satisfies the Cauchy-Riemann equation at , yet is not differentiable at . Why doesn't this contradict (b)?   "
 },
 {
   "id": "ex_realimpliesconst",
@@ -1231,7 +1231,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.20",
   "title": "",
-  "body": " Prove: If is holomorphic in the region and always real valued, then is constant in . ( Hint : Use the Cauchy-Riemann equations to show that .)  "
+  "body": "  Prove: If is holomorphic in the region and always real valued, then is constant in . ( Hint : Use the Cauchy-Riemann equations to show that .)   "
 },
 {
   "id": "ex_fandconjfimpliesconst",
@@ -1240,7 +1240,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.21",
   "title": "",
-  "body": " Prove: If and are both holomorphic in the region then is constant in .  "
+  "body": "  Prove: If and are both holomorphic in the region then is constant in .   "
 },
 {
   "id": "chapter2-exercises-22",
@@ -1249,7 +1249,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.22",
   "title": "",
-  "body": " Suppose is entire and can be written as , that is, the real part of depends only on and the imaginary part of depends only on . Prove that for some and .  "
+  "body": "  Suppose is entire and can be written as , that is, the real part of depends only on and the imaginary part of depends only on . Prove that for some and .   "
 },
 {
   "id": "chapter2-exercises-23",
@@ -1258,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.23",
   "title": "",
-  "body": " Suppose is entire, with real and imaginary parts and satisfying for all . Show that is constant.  "
+  "body": "  Suppose is entire, with real and imaginary parts and satisfying for all . Show that is constant.   "
 },
 {
   "id": "ex_crepolar",
@@ -1267,7 +1267,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.24",
   "title": "",
-  "body": " Prove that the Cauchy-Riemann equations take on the following form in polar coordinates: .  "
+  "body": "  Prove that the Cauchy-Riemann equations take on the following form in polar coordinates: .   "
 },
 {
   "id": "ex_harmconj",
@@ -1276,7 +1276,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.25",
   "title": "",
-  "body": " For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                        "
+  "body": "  For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                         "
 },
 {
   "id": "ex_225",
@@ -1285,7 +1285,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.26",
   "title": "",
-  "body": " Is harmonic on ? What about ?  "
+  "body": "  Is harmonic on ? What about ?   "
 },
 {
   "id": "chapter2-exercises-27",
@@ -1294,7 +1294,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.27",
   "title": "",
-  "body": " Consider the general real homogeneous quadratic function , where , and are real constants.   Show that is harmonic if and only if .    If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .     "
+  "body": "  Consider the general real homogeneous quadratic function , where , and are real constants.   Show that is harmonic if and only if .    If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .      "
 },
 {
   "id": "ex_diffrulesViaCR",
@@ -1303,7 +1303,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.28",
   "title": "",
-  "body": " Re-prove by using the formula for given in .  "
+  "body": "  Re-prove by using the formula for given in .   "
 },
 {
   "id": "ex_2ndderivative0",
@@ -1312,7 +1312,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.29",
   "title": "",
-  "body": " Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)  "
+  "body": "  Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)   "
 },
 {
   "id": "sec_mobius",
@@ -1583,6 +1583,78 @@ var ptx_lunr_docs = [
   "number": "3.3.2",
   "title": "",
   "body": " A circle in is the intersection of with some plane . If is a normal vector to , then there is a unique real number so that is given by . By possibly changing , we may assume that . We may also assume that , since if we can replace with , and if then .  Consider the circle of intersection . A point in the complex plane lies on the image of this circle under if and only if satisfies the defining equation for . Using the equations from Proposition for , we see that .  If , this is a straight line in the -plane. Moreover, every line in the -plane can be obtained in this way. Note that if and only if , which is if and only if the image under is a straight line.  If , then completing the square yields .  Depending on whether the right hand side of this equation is positive, 0, or negative, this is the equation of a circle, point, or the empty set in the -plane, respectively. These three cases happen when , , and , respectively. Only the first case corresponds to a circle in . verifies that every circle in the -plane arises in this manner.  "
+},
+{
+  "id": "sec_exptrigfcts",
+  "level": "1",
+  "url": "sec_exptrigfcts.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Exponential and Trigonometric Functions",
+  "body": " Exponential and Trigonometric Functions  To define the complex exponential function, we once more borrow concepts from calculus, namely the real exponential function How to define the real exponential function is a nontrivial question. Our preferred way to do this is through a power series: . In light of this definition, you might think we should have simply defined the complex exponential function through a complex power series. In fact, this is possible (and an elegant definition); however, one of the promises of this book is to introduce complex power series as late as possible. We agree with those readers who think that we are cheating at this point, as we borrow the concept of a (real) power series to define the real exponential function. and the real sine and cosine, and we finally make sense of the notation . function exponential     The (complex) exponential function exponential function  is , defined for as .    This definition seems a bit arbitrary. Our first justification is that all exponential rules that we are used to from real numbers carry over to the complex case. exponential rules They mainly follow from Proposition and are collected in the following.    For all ,                             .        is very special and has no counterpart for the real exponential function. It says that the complex exponential function is periodic with period . periodic This has many interesting consequences; one that may not seem too pleasant at first sight is the fact that the complex exponential function is not one-to-one.   is not only remarkable, but we invite you to meditate on its proof below; it gives a strong indication that our definition of is reasonable. We also note that implies that is entire.  We leave the proof of as Exercise but give one sample.   The partial derivatives of are .  They are continuous in and satisfy the Cauchy Riemann equation : for all . Thus Theorem says that is entire with derivative .   We should make sure that the complex exponential function specializes to the real exponential function for real arguments: indeed, if then .                       size=8        p=(cos(angle), sin(angle))         The domain of the complex exponential function is shown on the left and the codomain on the right. The function maps the blue vertical lines on the left into circles on the right and maps the red dashed horizontal lines on the left into the rays on the right.   The trigonometric functions sine, cosine, tangent, cotangent, etc. also have complex analogues; however, they do not play the same prominent role as in the real case. trigonometric functions  sine  cosine  tangent  cotangent In fact, we can define them as merely being special combinations of the exponential function. function trigonometric     The (complex) sine and cosine are defined as , respectively. The tangent and cotangent are defined as , respectively.    Note that to write tangent and cotangent in terms of the exponential function, we used the fact that . Because is entire, so are and .  As with the exponential function, we should make sure that we're not redefining the real sine and cosine: if then .  A similar calculation holds for the cosine. Not too surprisingly, the following properties follow mostly from .    For all , .    Finally, one word of caution: unlike in the real case, the complex sine and cosine are not bounded consider, for example, as .  We end this section with a remark on hyperbolic trig functions. hyperbolic trig functions The hyperbolic sine , cosine , tangent , and cotangent are defined as in the real case:    .   As such, they are yet more special combinations of the exponential function. They still satisfy the identities you already know, e.g., .  Moreover, they are related to the trigonometric functions via .  "
+},
+{
+  "id": "sec_exptrigfcts-3",
+  "level": "2",
+  "url": "sec_exptrigfcts.html#sec_exptrigfcts-3",
+  "type": "Definition",
+  "number": "3.4.1",
+  "title": "",
+  "body": "  The (complex) exponential function exponential function  is , defined for as .   "
+},
+{
+  "id": "expproperties",
+  "level": "2",
+  "url": "sec_exptrigfcts.html#expproperties",
+  "type": "Proposition",
+  "number": "3.4.2",
+  "title": "",
+  "body": "  For all ,                             .      "
+},
+{
+  "id": "sec_exptrigfcts-9",
+  "level": "2",
+  "url": "sec_exptrigfcts.html#sec_exptrigfcts-9",
+  "type": "Proof",
+  "number": "3.4.1",
+  "title": "",
+  "body": " The partial derivatives of are .  They are continuous in and satisfy the Cauchy Riemann equation : for all . Thus Theorem says that is entire with derivative .  "
+},
+{
+  "id": "fig-complex-exponential",
+  "level": "2",
+  "url": "sec_exptrigfcts.html#fig-complex-exponential",
+  "type": "Figure",
+  "number": "3.4.3",
+  "title": "",
+  "body": "                     size=8        p=(cos(angle), sin(angle))         The domain of the complex exponential function is shown on the left and the codomain on the right. The function maps the blue vertical lines on the left into circles on the right and maps the red dashed horizontal lines on the left into the rays on the right.  "
+},
+{
+  "id": "sec_exptrigfcts-13",
+  "level": "2",
+  "url": "sec_exptrigfcts.html#sec_exptrigfcts-13",
+  "type": "Definition",
+  "number": "3.4.4",
+  "title": "",
+  "body": "  The (complex) sine and cosine are defined as , respectively. The tangent and cotangent are defined as , respectively.   "
+},
+{
+  "id": "trigproperties",
+  "level": "2",
+  "url": "sec_exptrigfcts.html#trigproperties",
+  "type": "Proposition",
+  "number": "3.4.5",
+  "title": "",
+  "body": "  For all , .   "
+},
+{
+  "id": "sec_exptrigfcts-20",
+  "level": "2",
+  "url": "sec_exptrigfcts.html#sec_exptrigfcts-20",
+  "type": "Definition",
+  "number": "3.4.6",
+  "title": "",
+  "body": "  .  "
 },
 {
   "id": "backmatter-2",
