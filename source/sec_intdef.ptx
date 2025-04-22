@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <section xml:id="sec_intdef">
   <title>Definition and Basic Properties</title>
   <p>
@@ -6,48 +8,65 @@
     Let <m>a, b \in \R</m> and let <m>g: [a,b] \to \C</m> be continuous.
     Then we define
     <men xml:id="realint">
-      \int_a^b g(t) \, \diff{t} \ := \ \int_a^b \Re g(t) \, \diff{t} \ + \ i \int_a^b \Im g(t) \, \diff{t} \,
+      \int_a^b g(t) \, \diff{t} \ := \ \int_a^b \Re g(t) \, \diff{t} \
+      + \ i \int_a^b \Im g(t) \, \diff{t} \, 
     </men>.
   </p>
   <p>
-    This definition is analogous to that of integration of a parametric curve in <m>\R^2</m>.
+    This definition is analogous to that of integration of a
+    parametric curve in <m>\R^2</m>. 
     For a function that takes complex numbers as arguments,
     we typically integrate over a path <m>\gg</m>
     (in place of a real interval).
     If you meditate about the substitution rule for real integrals
-    (<xref ref="thm_calcsubstitution">Theorem</xref>),
+    (<xref ref="thm_calcsubstitution"/>),
     the following definition,
     which is based on <xref ref="realint"/>, should come as no surprise.
   </p>
   <definition>
     <statement>
       <p>
-        Suppose <m>\gg</m> is a smooth path parametrized by <m>\gg (t) , \ a \leq t \leq b</m>,
+        Suppose <m>\gg</m> is a smooth path parametrized by <m>\gg (t)
+        , \ a \leq t \leq b</m>, 
         and <m>f</m> is a complex function which is continuous on <m>\gg</m>.
         Then we define the <em>integral
             <idx><h>integral</h></idx>
         of <m>f</m> on <m>\gg</m></em> as
         <me>
-          \int_\gg f \ = \ \int_\gg f(z) \, \diff{z} \ := \ \int_a^b f(\gg(t)) \gg'(t) \, \diff{t} \,
+          \int_\gg f \ = \ \int_\gg f(z) \, \diff{z} \ := \ \int_a^b
+          f(\gg(t)) \gg'(t) \, \diff{t} \, 
         </me>.
       </p>
       <p>
-        This definition immediately extends to paths that are <em>piecewise smooth
-            <idx><h>piecewise smooth</h></idx>
-        </em>:
-            <idx><h>smooth</h><h>piecewise</h></idx>
-        Suppose <m>\gg</m> is parametrized by <m>\gg (t) , \ a \leq t \leq b</m>,
-        which is smooth on the intervals <m>[a,c_1], [c_1,c_2], \dots, [c_{n-1},c_n], [c_n,b]</m>.<fn>
-        Our footnote on p.
-        <xref ref="def_smooth"></xref> about the subtlety of the definition of a smooth path applies also here,
-        at the subdivision points <m>c_i</m>.
-        Note that we do <em>not</em> require that the left and right derivatives match at these points.
-        </fn> Then,
+        This definition immediately extends to paths that are
+        <em>piecewise smooth </em>:
+        <idx><h>piecewise smooth</h></idx>
+        <idx><h>smooth</h><h>piecewise</h></idx>
+        Suppose <m>\gg</m> is parametrized by <m>\gg (t) , \ a \leq t
+        \leq b</m>, 
+        which is smooth on the intervals <m>[a,c_1], [c_1,c_2], \dots,
+        [c_{n-1},c_n], [c_n,b]</m>.
+        <fn>
+          Our footnote on
+          <xref ref="def_smooth"/> about the subtlety of the
+          definition of a smooth path applies also here, 
+          at the subdivision points <m>c_i</m>.
+          Note that we do <em>not</em> require that the left and right
+          derivatives match at these points. 
+        </fn>
+        Then,
         assuming again that <m>f</m> is continuous on <m>\gg</m>,
         we define
-        <me>
-          \int_\gg f \ := \ \int_a^{c_1} f(\gg(t)) \gg'(t) \, \diff{t} \ + \ \int_{c_1}^{c_2} f(\gg(t)) \gg'(t) \, \diff{t} \ + \ \cdots \ + \ \int_{c_n}^b f(\gg(t)) \gg'(t) \, \diff{t} \,
-        </me>.
+        <md>
+          <mrow>
+          \int_\gg f \ := \ \int_a^{c_1} f(\gg(t)) \gg'(t) \, \diff{t}
+          \ + \amp \ \int_{c_1}^{c_2} f(\gg(t)) \gg'(t) \, \diff{t}
+          </mrow>
+          <mrow>
+            \ + \amp \
+            \cdots \ + \ \int_{c_n}^b f(\gg(t)) \gg'(t) \, \diff{t} \,
+          </mrow>
+        </md>.
       </p>
     </statement>
   </definition>
@@ -55,42 +74,72 @@
     <statement>
       <p>
         To see this definition in action,
-        we compute the integral of the function <m>f: \C \to \C</m> given by
-        <m>f(z) = \zbar^2</m> over several paths from 0 to <m>1 + i</m>.
-        <ol marker="a">
+        we compute the integral of the function <m>f: \C \to \C</m>
+        given by <m>f(z) = \zbar^2</m> over several paths from 0 to
+        <m>1 + i</m>. 
+        <ol marker="a) ">
           <li>
             <p>
-              Let <m>\gg</m> be the line segment from <m>0</m> to <m>1 + i</m>.
-              A parametrization of this path is <m>\gg(t) = t + i t , \ 0 \leq t \leq 1</m>.
-              Here <m>\gg'(t) = 1+i</m> and <m>f(\gg(t)) = \left( t-it \right)^2</m>, and so
+              Let <m>\gg</m> be the line segment from <m>0</m> to <m>1
+              + i</m>.  A parametrization of this path is <m>\gg(t) =
+              t + i t , \ 0 \leq t \leq 1</m>. 
+              Here <m>\gg'(t) = 1+i</m> and <m>f(\gg(t)) = \left( t-it
+              \right)^2</m>, and so 
               <me>
-                \int_\gg f \= \int_0^1 \left( t-it \right)^2 \left( 1+i \right) \diff{t} \= 2(1-i) \int_0^1 t^2 \, \diff{t} \= \frac{ 2 }{ 3 } (1-i) \,
+                \int_\gg f \= \int_0^1 \left( t-it \right)^2 \left(
+                1+i \right) \diff{t} \= 2(1-i) \int_0^1 t^2 \,
+                \diff{t} \= \frac{ 2 }{ 3 } (1-i) \, 
               </me>.
             </p>
           </li>
           <li>
             <p>
-              Let <m>\gg</m> be the arc of the parabola <m>y=x^2</m> from <m>0</m> to <m>1 + i</m>.
-              A parametrization of this path is <m>\gg(t) = t + i t^2 , \ 0 \leq t \leq 1</m>.
+              Let <m>\gg</m> be the arc of the parabola <m>y=x^2</m>
+              from <m>0</m> to <m>1 + i</m>. 
+              A parametrization of this path is <m>\gg(t) = t + i t^2
+              , \ 0 \leq t \leq 1</m>. 
               Now we have <m>\gg'(t) = 1 + 2it</m> and
               <me>
-                f(\gg(t)) \= \left( t - it^2 \right)^2 = t^2 - t^4 - 2it^3 \,
+                f(\gg(t)) \= \left( t - it^2 \right)^2 = t^2 - t^4 -
+                2it^3 \, 
               </me>,
               whence
               <me>
-                \int_\gg f \= \int_0^1 ( t^2 - t^4 - 2it^3 ) \left( 1 + 2it \right) \, \diff{t} \= \int_0^1 ( t^2 + 3 t^4 - 2i t^5 ) \, \diff{t} \= \frac{ 14 }{ 15 } - \frac i 3 \,
+                \int_\gg f \= \int_0^1 ( t^2 - t^4 - 2it^3 ) \left( 1
+                + 2it \right) \, \diff{t} \= \int_0^1 ( t^2 + 3 t^4 -
+                2i t^5 ) \, \diff{t} \= \frac{ 14 }{ 15 } - \frac i 3
+                \, 
               </me>.
             </p>
           </li>
           <li>
             <p>
-              Let <m>\gg</m> be the union of the two line segments <m>\gg_1</m> from <m>0</m> to <m>1</m> and <m>\gg_2</m> from <m>1</m> to <m>1+i</m>.
+              Let <m>\gg</m> be the union of the two line segments
+              <m>\gg_1</m> from <m>0</m> to <m>1</m> and <m>\gg_2</m>
+              from <m>1</m> to <m>1+i</m>. 
               Parametrizations are <m>\gg_1(t) = t , \ 0 \leq t \leq 1</m>,
               and <m>\gg_2(t) = 1 + it , \ 0 \leq t \leq 1</m>.
               Hence
               <md>
-                <mrow>\int_\gg f \ \amp = \ \int_{\gg_1} f + \int_{\gg_2} f \= \int_0^1 t^2 \, \diff{t} + \int_0^1 (1-it)^2 \, i \, \diff{t} \= \frac 1 3 + i \int_0^1 (1 - 2it - t^2) \, \diff{t}</mrow>
-                <mrow>\amp = \ \frac 1 3 + i \left( 1 - 2i \frac 1 2 - \frac 1 3 \right) \= \frac 4 3 + \frac 2 3 i \, </mrow>
+                <mrow>
+                  \int_\gg f \ \amp = \ \int_{\gg_1} f +
+                  \int_{\gg_2} f
+                </mrow>
+                <mrow>
+                  \amp \= \int_0^1 t^2 \, \diff{t} + \int_0^1
+                  (1-it)^2 \, i \, \diff{t}
+                </mrow>
+                <mrow>
+                  \amp \= \frac 1 3 + i \int_0^1 (1
+                  - 2it - t^2) \, \diff{t}
+                </mrow> 
+                <mrow>
+                  \amp = \ \frac 1 3 + i \left( 1 - 2i \frac 1 2 -
+                  \frac 1 3 \right)
+                </mrow>
+                <mrow>
+                  \amp \= \frac 4 3 + \frac 2 3 i \,
+                </mrow> 
               </md>.
             </p>
           </li>
@@ -99,26 +148,36 @@
     </statement>
   </example>
   <p>
-    It is apparent but nevertheless noteworthy that these integrals evaluate to different results;
-    in particular<mdash/>unlike in calculus<mdash/>a complex integral does not simply depend on the endpoints of the path of integration.
+    It is apparent but nevertheless noteworthy that these integrals
+    evaluate to different results; 
+    in particular<mdash/>unlike in calculus<mdash/>a complex integral
+    does not simply depend on the endpoints of the path of
+    integration. 
   </p>
   <p>
     On the other hand, the complex integral has some standard properties,
     most of which follow from their real siblings in a straightforward way.
-    Our first observation is that the actual choice of parametrization of <m>\gamma</m> does not matter.
+    Our first observation is that the actual choice of parametrization
+    of <m>\gamma</m> does not matter. 
     More precisely, if <m>\gg (t) , \ a \leq t \leq b</m> and
-    <m>\sigma (t) , \ c \leq t \leq d</m> are parametrizations of a curve then we say that <m>\sigma</m> is a <em>reparametrization
-        <idx><h>reparametrization</h></idx>
-    </em> of <m>\gamma</m> if there is an increasing piecewise smooth map of <m>[c,d]</m> onto <m>[a,b]</m> that takes <m>\gg</m> to <m>\sigma</m>,
+    <m>\sigma (t) , \ c \leq t \leq d</m> are parametrizations of a
+    curve then we say that <m>\sigma</m> is a <em>reparametrization</em>
+    of <m>\gamma</m> if there is an increasing piecewise smooth map of
+    <m>[c,d]</m> onto <m>[a,b]</m> that takes <m>\gg</m> to
+    <m>\sigma</m>, 
     in the sense that <m>\sigma = \gg \circ \tau</m>.
+    <idx><h>reparametrization</h></idx>
   </p>
   <proposition xml:id="prop_integrationIsIndependentOfParametrization">
     <statement>
       <p>
-        If <m>\gg (t) , \ a \leq t \leq b</m> is a piecewise smooth parametrization of a curve and
-        <m>\sigma (t) , \ c \leq t \leq d</m> is a reparametrization of <m>\gg</m> then
+        If <m>\gg (t) , \ a \leq t \leq b</m> is a piecewise smooth
+        parametrization of a curve and 
+        <m>\sigma (t) , \ c \leq t \leq d</m> is a reparametrization
+        of <m>\gg</m> then 
         <me>
-          \int_c^d f(\sigma(t)) \, \sigma'(t) \, \diff{t} \= \int_a^b f(\gg(t)) \, \gg'(t) \, \diff{t} \,
+          \int_c^d f(\sigma(t)) \, \sigma'(t) \, \diff{t} \= \int_a^b
+          f(\gg(t)) \, \gg'(t) \, \diff{t} \, 
         </me>.
       </p>
     </statement>
@@ -129,24 +188,39 @@
         To appreciate this statement,
         consider the two parametrizations
         <me>
-          \gamma(t) = e^{ i t } , \ 0 \le t \le 2 \pi \, , \qquad \text{ and }  \qquad \sigma(t) = e^{ 2 \pi i \sin(t) } , \ 0 \le t \le \tfrac \pi 2 \,
+          \gamma(t) = e^{ i t } , \ 0 \le t \le 2 \pi \, , \qquad
+          \text{ and }  \qquad \sigma(t) = e^{ 2 \pi i \sin(t) } , \ 0
+          \le t \le \tfrac \pi 2 \, 
         </me>,
         of the unit circle.
-        Then we could write <m>\int_\gg f</m> in the two ways
+        Then we could write <m>\int_\gg f</m> in the two ways:
         <me>
-          \int_\gg f \= i \int_0^{ 2 \pi } f \left( e^{ i t } \right) e^{ i t } \, \diff{t} \qquad \text{ and }  \qquad \int_\gg f \= 2 \pi i \int_0^{ \frac \pi 2 } f \left( e^{ 2 \pi i \sin(t) } \right) e^{ 2 \pi i \sin(t) } \cos(t) \, \diff{t} \,
+          \int_\gg f \= i \int_0^{ 2 \pi } f \left( e^{ i t } \right)
+          e^{ i t } \, \diff{t} 
+        </me>
+        and 
+        <me>
+          \int_\gg f
+          \= 2 \pi i \int_0^{ \frac \pi 2 } f \left( e^{ 2 \pi i
+          \sin(t) } \right) e^{ 2 \pi i \sin(t) } \cos(t) \, \diff{t}
+          \, 
         </me>.
       </p>
       <p>
-        A quick substitution shows that the two integrals on the respective right-hand sides are indeed equal. \pushQED{}\popQED
+        A quick substitution shows that the two integrals on the
+        respective right-hand sides are indeed
+        equal. 
       </p>
     </statement>
   </example>
   <p>
-    <xref ref="prop_integrationIsIndependentOfParametrization">Proposition</xref>
-    says that a similar equality will hold for any integral and any parametrization.
-    Its proof is left as <xref ref="ex_IntegrationIsIndependentOfParametrization">Exercise</xref>,
-    which also shows that the following definition is unchanged under reparametrization.
+    <xref ref="prop_integrationIsIndependentOfParametrization"/>
+    says that a similar equality will hold for any integral and any
+    parametrization. 
+    Its proof is left as 
+    <xref ref="ex_IntegrationIsIndependentOfParametrization"/>,
+    which also shows that the following definition is unchanged under
+    reparametrization. 
   </p>
   <definition>
     <statement>
@@ -171,7 +245,8 @@
         <m>\gamma(t) = t + it</m> for <m>0 \le t \le 1</m>.
         Then <m>\gamma'(t) = 1+i</m> and so
         <me>
-          \length(\gamma) \= \int_0^1 | 1+i |\, \diff{t} \= \int_0^1 \sqrt 2 \, \diff{t} \= \sqrt 2 \,
+          \length(\gamma) \= \int_0^1 | 1+i |\, \diff{t} \= \int_0^1
+          \sqrt 2 \, \diff{t} \= \sqrt 2 \, 
         </me>.
       </p>
     </statement>
@@ -184,36 +259,42 @@
         <m>\gamma(t) = e ^{ it }</m> for <m>0 \le t \le 2 \pi</m>.
         Then <m>\gamma'(t) = i \, e^{ it }</m> and
         <me>
-          \length(\gamma) \= \int_0^{2 \pi} | i \, e^{ it } |\, \diff{t} \= \int_0^{2 \pi} \diff{t} \= 2 \pi \,
+          \length(\gamma) \= \int_0^{2 \pi} | i \, e^{ it } |\,
+          \diff{t} \= \int_0^{2 \pi} \diff{t} \= 2 \pi \, 
         </me>.
       </p>
     </statement>
   </example>
   <p>
-    Now we observe some basic facts about how the line integral behaves with respect to function addition,
+    Now we observe some basic facts about how the line integral
+    behaves with respect to function addition, 
     scalar multiplication, inverse parametrization,
-        <idx><h>inverse parametrization</h></idx>
     and path concatenation;
-        <idx><h>concatenation</h></idx>
     we also give an upper bound for the absolute value of an integral,
     which we will make use of time and again.
+    <idx><h>inverse parametrization</h></idx>
+    <idx><h>concatenation</h></idx>
   </p>
   <proposition xml:id="intprop">
     <statement>
       <p>
         Suppose <m>\gg</m> is a piecewise smooth path,
-        <m>f</m> and <m>g</m> are complex functions which are continuous on <m>\gg</m>,
+        <m>f</m> and <m>g</m> are complex functions which are
+        continuous on <m>\gg</m>, 
         and <m>c \in \C</m>.
-        <ol marker="a">
+        <ol marker="a) ">
           <li xml:id="int1">
             <p>
-              <m>\ds \int_\gg (f + c \, g) \= \int_\gg f \, + \, c \int_\gg g </m>.
+              <m>\ds \int_\gg (f + c \, g) \= \int_\gg f \, + \, c
+              \int_\gg g </m>. 
             </p>
           </li>
           <li xml:id="int2">
             <p>
-              If <m>\gg</m> is parametrized by <m>\gg (t) , \ a \leq t \leq b</m>,
-              we define the path <m>-\gg</m> by <m>-\gg(t) := \gg (a+b-t) , \ a \leq t \leq b</m>.
+              If <m>\gg</m> is parametrized by <m>\gg (t) , \ a \leq t
+              \leq b</m>, 
+              we define the path <m>-\gg</m> by <m>-\gg(t) := \gg
+              (a+b-t) , \ a \leq t \leq b</m>. 
               Then
               <me>
                 \int_{-\gg} f \= - \int_\gg f \,
@@ -222,8 +303,12 @@
           </li>
           <li xml:id="int3">
             <p>
-              If <m>\gg_1</m> and <m>\gg_2</m> are piecewise smooth paths so that <m>\gg_2</m> starts where <m>\gg_1</m> ends,
-              we define the path <m>\gg_1\gg_2</m>  by following <m>\gg_1</m> to its end and then continuing on <m>\gg_2</m> to its end.
+              If <m>\gg_1</m> and <m>\gg_2</m> are piecewise smooth
+              paths so that <m>\gg_2</m> starts where <m>\gg_1</m>
+              ends, 
+              we define the path <m>\gg_1\gg_2</m>  by following
+              <m>\gg_1</m> to its end and then continuing on
+              <m>\gg_2</m> to its end. 
               Then
               <me>
                 \int_{\gg_1\gg_2} f \= \int_{\gg_1}f+\int_{\gg_2}f \,
@@ -232,7 +317,8 @@
           </li>
           <li xml:id="int4">
             <p>
-              <m>\ds \left| \int_\gg f \right| \ \leq \ \max_{z \in \gg} \left| f(z) \right| \cdot \length (\gg) </m>.
+              <m>\ds \left| \int_\gg f \right| \ \leq \ \max_{z \in
+              \gg} \left| f(z) \right| \cdot \length (\gg) </m>. 
             </p>
           </li>
         </ol>
@@ -240,34 +326,62 @@
     </statement>
   </proposition>
   <p>
-    The path <m>-\gg</m> defined in <xref ref="int2"></xref>
-    is the path that we obtain by traveling through <m>\gg</m> in the opposite direction.
+    The path <m>-\gg</m> defined in <xref ref="int2"/>
+    is the path that we obtain by traveling through <m>\gg</m> in the
+    opposite direction. 
   </p>
   <proof>
     <p>
-      <xref ref="int1"></xref> follows directly from the definition of the integral and <xref ref="thm_realintegralproperties">Theorem</xref>,
+      <xref ref="int1"></xref> follows directly from the definition of
+      the integral and <xref
+      ref="thm_realintegralproperties">Theorem</xref>, 
       the analogous theorem from calculus.
     </p>
     <p>
-      <xref ref="int2"></xref> follows with the real change of variables <m>s = a+b-t</m>:
+      <xref ref="int2"/> follows with the real change of
+      variables <m>s = a+b-t</m>: 
       <md>
-        <mrow>\int_{-\gg} f \amp \= \int_a^b f \left( \gg (a+b-t) \right) \left( \gg (a+b-t) \right)' \, \diff{t} \= - \int_a^b f \left( \gg (a+b-t) \right) \gg' (a+b-t) \, \diff{t}</mrow>
-        <mrow>\amp \= \int_b^a f \left( \gg (s) \right) \gg' (s) \, \diff{s} \= - \int_a^b f \left( \gg (s) \right) \gg' (s) \, \diff{s} \= - \int_\gg f \, </mrow>
+        <mrow>
+          \int_{-\gg} f \amp \= \int_a^b f \left( \gg (a+b-t)
+          \right) \left( \gg (a+b-t) \right)' \, \diff{t}
+        </mrow>
+        <mrow>
+          \amp \= - \int_a^b f \left(
+          \gg (a+b-t) \right) \gg' (a+b-t) \, \diff{t}
+        </mrow>  
+        <mrow>
+          \amp \= \int_b^a f \left( \gg (s) \right) \gg' (s) \,
+          \diff{s}
+        </mrow>
+        <mrow>
+          \amp \= -
+          \int_a^b f \left( \gg (s) \right) \gg' (s) \, \diff{s}
+        </mrow>
+        <mrow>
+          \amp \= - \int_\gg f
+          \,
+        </mrow>
       </md>.
     </p>
     <p>
-      <xref ref="int3"></xref> We need a suitable parametrization <m>\gg(t)</m> for <m>\gamma_1\gamma_2</m>.
+      For <xref ref="int3"/>, we need a suitable parametrization
+      <m>\gg(t)</m> for <m>\gamma_1\gamma_2</m>. 
       If <m>\gamma_1</m> has domain <m>[a_1,b_1]</m> and
       <m>\gamma_2</m> has domain <m>[a_2,b_2]</m> then we can use
       <me>
-        \gg(t) := \begin{cases}\gg_1(t) \amp \text{ if }  a_1\le t\le b_1 \, , \\ \gg_2(t-b_1+a_2) \amp \text{ if }  b_1\le t\le b_1+b_2-a_2 \, , \end{cases}
+        \gg(t) := \begin{cases}\gg_1(t) \amp \text{ if }  a_1\le t\le
+        b_1 \, , \\ \gg_2(t-b_1+a_2) \amp \text{ if }  b_1\le t\le
+        b_1+b_2-a_2 \, , \end{cases} 
       </me>
       with domain <m>[a_1, b_1+b_2-a_2]</m>.
       Now we break the integral over
-      <m>\gg_1\gg_2</m> into two pieces and apply the change of variables <m>s=t-b_1+a_2</m>:
+      <m>\gg_1\gg_2</m> into two pieces and apply the change of
+      variables <m>s=t-b_1+a_2</m>: 
       <md>
-        <mrow>\int_{\gg_1\gg_2} f \ \amp = \int_{a_1}^{b_1+b_2-a_2} f(\gg(t))\gg'(t)\,\diff{t}</mrow>
-        <mrow>\amp = \int_{a_1}^{b_1} f(\gg(t))\gg'(t)\,\diff{t} \ + \ \int_{b_1}^{b_1+b_2-a_2} f(\gg(t))\gg'(t)\,\diff{t}</mrow>
+        <mrow>\int_{\gg_1\gg_2} f \ \amp = \int_{a_1}^{b_1+b_2-a_2}
+        f(\gg(t))\gg'(t)\,\diff{t}</mrow> 
+        <mrow>\amp = \int_{a_1}^{b_1} f(\gg(t))\gg'(t)\,\diff{t} \ + \
+        \int_{b_1}^{b_1+b_2-a_2} f(\gg(t))\gg'(t)\,\diff{t}</mrow> 
         <mrow>\amp = \int_{\gg_1}f+\int_{\gg_2}f \, </mrow>
       </md>.
     </p>
@@ -277,37 +391,54 @@
       <m>[b_1,b_1+b_2-a_2]</m> is a reparametrization of <m>\gg_2</m>.
     </p>
     <p>
-      <xref ref="int4"></xref> Let <m>\phi = \left( \Arg \int_\gg f \right)</m>.
-      Then <m>\int_\gg f = \left| \int_\gg f \right| e^{ i \phi }</m> and thus,
+      For <xref ref="int4"/>, let <m>\phi = \left( \Arg \int_\gg f
+      \right)</m>. 
+      Then <m>\int_\gg f = \left| \int_\gg f \right| e^{ i \phi }</m>
+      and thus, 
       since <m>\left| \int_\gg f \right| \in \R</m>,
       <md>
-        <mrow>\left| \int_\gg f \right| \ \amp = \ e^{ -i\phi } \int_\gg f \= \Re \left( e^{ -i \phi } \int_a^b f(\gg(t)) \gg'(t) \, \diff{t} \right) \= \int_a^b \Re \left( f ( \gg (t) ) e^{ -i \phi } \gg' (t) \right) \diff{t} \,</mrow>
-        <mrow>\amp \leq \ \int_a^b \left| f ( \gg (t) ) e^{ -i \phi } \gg' (t) \right| \diff{t} \, \= \int_a^b \left| f ( \gg (t) ) \right| \left| \gg' (t) \right| \diff{t}</mrow>
-        <mrow>\amp \leq \, \max_{ a \leq t \leq b } \left| f ( \gg (t) ) \right| \int_a^b \left| \gg' (t) \right| \diff{t} \, \= \, \max_{z \in \gg} \left| f(z) \right| \cdot \length (\gg) \, </mrow>
+        <mrow>\left| \int_\gg f \right| \ \amp = \ e^{ -i\phi }
+        \int_\gg f \= \Re \left( e^{ -i \phi } \int_a^b f(\gg(t))
+        \gg'(t) \, \diff{t} \right)
+        </mrow>
+        <mrow>\amp \= \int_a^b \Re \left( f ( \gg (t)
+        ) e^{ -i \phi } \gg' (t) \right) \diff{t} \,</mrow> 
+        <mrow>\amp \leq \ \int_a^b \left| f ( \gg (t) ) e^{ -i \phi }
+        \gg' (t) \right| \diff{t} \, \= \int_a^b \left| f ( \gg (t) )
+        \right| \left| \gg' (t) \right| \diff{t}</mrow> 
+        <mrow>\amp \leq \, \max_{ a \leq t \leq b } \left| f ( \gg (t)
+        ) \right| \int_a^b \left| \gg' (t) \right| \diff{t} \, \= \,
+        \max_{z \in \gg} \left| f(z) \right| \cdot \length (\gg) \,
+      </mrow> 
       </md>.
     </p>
     <p>
-      Here we have used <xref ref="thm_realintegralupperbound">Theorem</xref> for both inequalities.
+      Here we have used 
+      <xref ref="thm_realintegralupperbound"/> for both
+      inequalities. 
     </p>
   </proof>
   <example>
     <statement>
       <p>
-        In <xref ref="ex_circleint">Exercise</xref>, you are invited to show
+        In <xref ref="ex_circleint"/>, you are invited to show
         <me>
           \int_\gg \frac{\diff{z}}{z-w} \= 2 \pi i \,
         </me>,
         where <m>\gg</m> is any circle centered at <m>w \in \C</m>,
         oriented counter-clockwise.
-        Thus <xref ref="intprop">Proposition</xref> <xref ref="int2"></xref>
+        Thus <xref ref="intprop"/> <xref ref="int2"/>
         says that the analogous integral over a <em>clockwise</em>
         circle equals <m>- 2 \pi i</m>.
         Incidentally,
-        the same example shows that the inequality in <xref ref="intprop">Proposition</xref>
-        <xref ref="int4"></xref> is sharp:
+        the same example shows that the inequality in 
+        <xref ref="intprop"/>
+        <xref ref="int4"/> is sharp:
         if <m>\gg</m> has radius <m>r</m>, then
         <me>
-          2 \pi \= \left| \int_{ \gg } \frac{\diff{z}}{z-w} \right| \ \le \ \max_{ z \in \gg } \left| \frac{1}{z-w} \right| \length(\gg) \= \frac 1 r \cdot 2 \pi r \,
+          2 \pi \= \left| \int_{ \gg } \frac{\diff{z}}{z-w} \right| \
+          \le \ \max_{ z \in \gg } \left| \frac{1}{z-w} \right|
+          \length(\gg) \= \frac 1 r \cdot 2 \pi r \, 
         </me>.
       </p>
     </statement>

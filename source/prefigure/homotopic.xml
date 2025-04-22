@@ -1,0 +1,20 @@
+<diagram dimensions="(250,250)" margins="5"
+         xmlns="https://prefigure.org">
+  <definition>size=3.5</definition>
+  <coordinates bbox="(-size,-size,size,size)">
+    <axes decorations="no" stroke="gray"/>
+    <definition>f1(t)=(1,8*t)</definition>
+    <definition>f2(t)=(2-8*t,1)</definition>
+    <definition>f3(t)=(-1,4*(1-2*t))</definition>
+    <definition>f4(t)=(8*t-6,-1)</definition>
+    <definition>f5(t)=(1,8*(t-1))</definition>
+    <definition>cases(t)=chi_co(0,1/8,t)*f1(t)+chi_co(1/8,3/8,t)*f2(t)+chi_co(3/8,5/8,t)*f3(t)+chi_co(5/8,7/8,t)*f4(t)+chi_cc(7/8,2,t)*f5(t)</definition>
+    <definition>c(t)=(cos(2*pi*t), sin(2*pi*t))</definition>
+    <repeat parameter="s in [0,0.25,0.5,0.75,1]">
+      <definition>g(t)=(1-s)*c(t) + 3*s*cases(t)</definition>
+      <parametric-curve function="g" domain="(0,1)" N="500"
+                        stroke="blue"/>
+    </repeat>
+
+  </coordinates>
+</diagram>

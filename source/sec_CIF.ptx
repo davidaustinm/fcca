@@ -1,24 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <section xml:id="sec_CIF">
   <title>Cauchy's Integral Formula</title>
   <p>
     We recall our notations
     <md>
-      <mrow>C[a,r] \amp = \left\{ z \in \C : \abs{ z-a } = r \right\}</mrow>
-      <mrow>D[a,r] \amp = \left\{z \in \C: \abs{z-a}\lt r \right\}</mrow>
-      <mrow>\overline D[a,r] \amp = \left\{z \in \C: \abs{z-a} \le r \right\}</mrow>
+      <mrow>C[a,r] \amp = \left\{ z \in \C : \abs{ z-a } = r
+      \right\}</mrow>
+      <mrow>D[a,r] \amp = \left\{z \in \C: \abs{z-a}\lt r
+      \right\}</mrow>
+      <mrow>\overline D[a,r] \amp = \left\{z \in \C: \abs{z-a} \le r
+      \right\}</mrow>
     </md>
     for the circle, open disk, and closed disk, respectively,
     with center <m>a \in \C</m> and radius <m>r > 0</m>.
-    Unless stated otherwise, we orient <m>C[a,r]</m> counter-clockwise.
+    Unless stated otherwise, we orient <m>C[a,r]</m>
+    counter-clockwise. 
   </p>
   <theorem xml:id="cauchyformulacircle">
     <statement>
       <p>
         If <m>f</m> is holomorphic in an open set containing
-        <m>\overline D[w,R]</m> then <idx><h>Cauchy's integral formula</h></idx>
+        <m>\overline D[w,R]</m> then 
         <me>
-          f(w) \ = \ \frac 1 {2 \pi i} \int_{C[w,R]} \frac{ f(z) }{ z-w } \, \diff{z} \,
+          f(w) \ = \ \frac 1 {2 \pi i} \int_{C[w,R]} \frac{ f(z) }{
+          z-w } \, \diff{z} \, 
         </me>.
+        <idx><h>Cauchy's integral formula</h></idx>
       </p>
     </statement>
   </theorem>
@@ -27,52 +35,79 @@
     for the case that the integration path is a circle;
     we will prove the general statement at the end of this chapter.
     However, already this special case is worth meditating over:
-    the data on the right-hand side of <xref ref="cauchyformulacircle">Theorem</xref>
-    is entirely given by the values that <m>f(z)</m> takes on for <m>z</m> on the circle <m>C[w,R]</m>.
-    Thus Cauchy's Integral Formula says that this data determines <m>f(w)</m>.
+    the data on the right-hand side of
+    <xref ref="cauchyformulacircle"/>
+    is entirely given by the values that <m>f(z)</m> takes on for
+    <m>z</m> on the circle <m>C[w,R]</m>. 
+    Thus Cauchy's Integral Formula says that this data determines
+    <m>f(w)</m>. 
     This has the flavor of <em>mean-value theorems</em>,
     which the following corollary makes even more apparent.
-        <idx><h>mean-value theorem</h><h>for holomorphic functions</h></idx>
+    <idx><h>mean-value theorem</h><h>for holomorphic functions</h></idx>
   </p>
   <corollary xml:id="meanvalue">
     <statement>
       <p>
-        If <m>f=u+iv</m> is holomorphic in an open set containing <m>\overline D[w,R]</m> then
-        <me>
-          f(w) \= \frac 1 {2 \pi} \int_0^{2 \pi} f \left( w + R \, e^{it} \right) \diff{t} \,
-        </me>,
-        <me>
-          u(w) \= \frac{1}{2 \pi} \int_0^{2 \pi} u \left( w + R \, e^{it}\right) \diff{t} \qquad \text{ and }  \qquad v(w) \= \frac 1 {2 \pi} \int_0^{2 \pi} v \left( w + R \, e^{it} \right) \diff{t} \,
-        </me>.
+        If <m>f=u+iv</m> is holomorphic in an open set containing
+        <m>\overline D[w,R]</m>, then 
+        <md>
+          <mrow>
+            f(w) \amp \= \frac 1 {2 \pi} \int_0^{2 \pi} f \left( w + R \,
+            e^{it} \right) \diff{t} \, ,
+          </mrow>
+          <mrow>
+            u(w) \amp \= \frac{1}{2 \pi} \int_0^{2 \pi} u \left( w + R \,
+            e^{it}\right) \diff{t} \, ,
+          </mrow>
+          <mrow>
+            v(w) \amp \=
+            \frac 1 {2 \pi} \int_0^{2 \pi} v \left( w + R \, e^{it}
+            \right) \diff{t} \,
+          </mrow>
+        </md>.
       </p>
     </statement>
   </corollary>
   <proof>
     <p>
       By assumption,
-      <m>f</m> is holomorphic in an open set <m>G</m> that contains <m>\overline D[w,R]</m>,
-      and so <m>\frac{ f(z) }{ z-w }</m> is holomorphic in <m>H := G \setminus \{ w \}</m>.
+      <m>f</m> is holomorphic in an open set <m>G</m> that contains
+      <m>\overline D[w,R]</m>, 
+      and so <m>\frac{ f(z) }{ z-w }</m> is holomorphic in <m>H := G
+      \setminus \{ w \}</m>. 
       For any <m>0 \lt  r \lt  R</m>,
       <me>
         C[w,r] \sim_H C[w,R] \,
       </me>,
-      and so Cauchy's <xref ref="cauchythm">Theorem</xref>
-      and <xref ref="ex_circleint">Exercise</xref> give
+      and so Cauchy's <xref ref="cauchythm"/>
+      and <xref ref="ex_circleint"/> give
       <md>
-        <mrow>\left| \int_{C[w,R]} \frac{ f(z) }{ z-w } \, \diff{z} - 2 \pi i \, f(w) \right| \ \amp = \ \left| \int_{C[w,r]} \frac{ f(z) }{ z-w } \, \diff{z} - f(w) \int_{C[w,r]} \frac{ \diff{z} }{ z-w } \right| \nonumber</mrow>
-        <mrow>\amp = \ \left| \int_{C[w,r]} \frac{ f(z) - f(w) }{ z-w } \, \diff{z} \right| \nonumber</mrow>
-        <mrow xml:id="eq_cifestimate" number="yes">\amp \le \, \max_{ z \in C[w,r] } \left| \frac{ f(z) - f(w) }{ z-w } \right| \length \left( C[w,r] \right)</mrow>
-        <mrow>\amp = \, \max_{ z \in C[w,r] } \frac{ \left| f(z) - f(w) \right| }{ r } \ 2 \pi r \nonumber</mrow>
-        <mrow>\amp = \ 2 \pi \max_{ z \in C[w,r] } \left| f(z) - f(w) \right| . \nonumber</mrow>
+        <mrow>\left| \int_{C[w,R]} \frac{ f(z) }{ z-w } \, \diff{z} -
+        2 \pi i \, f(w) \right| \ \amp
+        </mrow>
+        <mrow> = \ \amp \left| \int_{C[w,r]} \frac{
+        f(z) }{ z-w } \, \diff{z} - f(w) \int_{C[w,r]} \frac{ \diff{z}
+        }{ z-w } \right| \nonumber</mrow> 
+        <mrow> = \ \amp \left| \int_{C[w,r]} \frac{ f(z) - f(w) }{ z-w
+        } \, \diff{z} \right| \nonumber</mrow> 
+        <mrow xml:id="eq_cifestimate" number="yes"> \le \ \amp \max_{
+        z \in C[w,r] } \left| \frac{ f(z) - f(w) }{ z-w } \right|
+        \length \left( C[w,r] \right)</mrow> 
+        <mrow> = \ \amp \max_{ z \in C[w,r] } \frac{ \left| f(z) -
+        f(w) \right| }{ r } \ 2 \pi r \nonumber</mrow> 
+        <mrow> = \ \amp 2 \pi \max_{ z \in C[w,r] } \left| f(z) - f(w)
+        \right| . \nonumber</mrow> 
       </md>
     </p>
     <p>
-      Here the inequality comes from <xref ref="intprop">Proposition</xref> <xref ref="int4"></xref>.
+      Here the inequality comes from
+      <xref ref="intprop"/> <xref ref="int4"/>.
     </p>
     <p>
       Now let <m>\epsilon > 0</m>.
       Because <m>f</m> is continuous at <m>w</m>,
-      there exists <m>\delta > 0</m> such that <m>|z-w| \lt  \delta</m> implies
+      there exists <m>\delta > 0</m> such that <m>|z-w| \lt
+      \delta</m> implies 
       <me>
         \left| f(z) - f(w) \right| \ \lt  \ \frac \epsilon {2 \pi} \,
       </me>.
@@ -83,23 +118,30 @@
       and so <xref ref="eq_cifestimate"/> implies,
       with <m>r = \frac \delta 2</m>,
       <me>
-        \left| \int_{C[w,R]} \frac{ f(z) }{ z-w } \, \diff{z} - 2 \pi i \, f(w) \right| \ \lt  \ \epsilon \,
+        \left| \int_{C[w,R]} \frac{ f(z) }{ z-w } \, \diff{z} - 2 \pi
+        i \, f(w) \right| \ \lt  \ \epsilon \, 
       </me>.
     </p>
     <p>
       Since we can choose <m>\epsilon</m> as small as we'd like,
       the left-hand side must be zero,
-      which proves <xref ref="cauchyformulacircle">Theorem</xref>.
+      which proves <xref ref="cauchyformulacircle"/>.
     </p>
     <p>
-      <xref ref="meanvalue">Corollary</xref>
+      <xref ref="meanvalue"/>
       now follows by definition of the complex integral:
       <me>
-        f(w) \ = \ \frac 1 {2 \pi i} \int_0^{2 \pi} \frac{ f \left( w + R \, e^{it} \right) }{ w + R \, e^{it} - w } \, i R \, e^{it} \, \diff{t} \ = \ \frac 1 {2 \pi} \int_0^{2 \pi} f \left( w + R \, e^{it} \right) \diff{t} \,
+        f(w) \ = \ \frac 1 {2 \pi i} \int_0^{2 \pi} \frac{ f \left( w
+        + R \, e^{it} \right) }{ w + R \, e^{it} - w } \, i R \,
+        e^{it} \, \diff{t} \ = \ \frac 1 {2 \pi} \int_0^{2 \pi} f
+        \left( w + R \, e^{it} \right) \diff{t} \, 
       </me>,
       which splits into real and imaginary parts as
       <me>
-        u(w) + i \, v(w) \ = \ \frac{1}{2 \pi} \int_0^{2 \pi} u \left( w + R \, e^{it}\right) \diff{t} \ + \ i \, \frac 1 {2 \pi} \int_0^{2 \pi} v \left( w + R \, e^{it} \right) \diff{t} \, . \qedhere
+        u(w) + i \, v(w) \ = \ \frac{1}{2 \pi} \int_0^{2 \pi} u \left(
+        w + R \, e^{it}\right) \diff{t} \ + \ i \, \frac 1 {2 \pi}
+        \int_0^{2 \pi} v \left( w + R \, e^{it} \right) \diff{t} \,
+        . 
       </me>
     </p>
   </proof>
@@ -116,34 +158,41 @@
         </me>.
       </p>
       <p>
-        The function <m>f(z) = \frac{ 1 }{ z+i }</m> is holomorphic in <m>\C \setminus \{ -i \}</m>,
+        The function <m>f(z) = \frac{ 1 }{ z+i }</m> is holomorphic in
+        <m>\C \setminus \{ -i \}</m>, 
         which contains <m>\overline D[i,1]</m>.
-        Thus we can apply <xref ref="cauchyformulacircle">Theorem</xref>:
+        Thus we can apply <xref ref="cauchyformulacircle"/>:
         <me>
-          \int_{ C[i,1] } \frac{ \diff{z} }{ z^2 + 1 } \= \int_{ C[i,1] } \frac{ \frac{ 1 }{ z+i } }{ z-i } \, \diff{z} \= 2 \pi i \, f(i) \= 2 \pi i \, \frac{ 1 }{ 2i } \= \pi \,
+          \int_{ C[i,1] } \frac{ \diff{z} }{ z^2 + 1 } \= \int_{
+          C[i,1] } \frac{ \frac{ 1 }{ z+i } }{ z-i } \, \diff{z} \= 2
+          \pi i \, f(i) \= 2 \pi i \, \frac{ 1 }{ 2i } \= \pi \, 
         </me>.
       </p>
     </statement>
   </example>
   <p>
-    Now we would like to extend <xref ref="cauchyformulacircle">Theorem</xref>
-    by replacing <m>C[w,R]</m> with any simple closed piecewise smooth path <m>\gg</m> around <m>w</m>.
+    Now we would like to extend <xref ref="cauchyformulacircle"/>
+    by replacing <m>C[w,R]</m> with any simple closed piecewise smooth
+    path <m>\gg</m> around <m>w</m>. 
     Intuitively, Cauchy's <xref ref="cauchythm">Theorem</xref>
     should supply such an extension:
-    assuming that <m>f</m> is holomorphic in a region <m>G</m> that includes <m>\gg</m> and its inside,
-    we can find a small <m>R</m> such that <m>\overline D[w,R] \subseteq G</m>,
+    assuming that <m>f</m> is holomorphic in a region <m>G</m> that
+    includes <m>\gg</m> and its inside, 
+    we can find a small <m>R</m> such that <m>\overline D[w,R]
+    \subseteq G</m>, 
     and since <m>\frac{ f(z) }{ z-w }</m> is holomorphic in
     <m>H := G \setminus \{ w \}</m> and <m>\gg \sim_H C[w,R]</m>,
-    <xref ref="cauchythm">Theorems</xref>
-    and <xref ref="cauchyformulacircle"></xref> yield
+    <xref ref="cauchythm"/>
+    and <xref ref="cauchyformulacircle"/> yield
     <me>
-      f(w) \= \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \, \diff{z} \,
+      f(w) \= \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \,
+      \diff{z} \, 
     </me>.
   </p>
   <p>
     This all smells like good coffee,
-        <idx><h>coffee</h></idx>
     except<nbsp/>... we might be just dreaming.
+    <idx><h>coffee</h></idx>
     The argument may be intuitively clear,
     but intuition doesn't prove anything.
     We'll look at it carefully,
@@ -151,46 +200,57 @@
   </p>
   <p>
     First, we need a notion of the <em>inside</em> of a simple closed path.
-    The fact that any such path <m>\gg</m> divides the complex plane into two connected open sets of <m>\gg</m> (the bounded one of which we call the <em>inside
-        <idx><h>inside</h></idx>
-    </em> or <em>interior</em> of <m>\gg</m>)
-        <idx><h>path</h><h>inside of</h></idx>
-        <idx><h>path</h><h>interior of</h></idx>
+    The fact that any such path <m>\gg</m> divides the complex plane
+    into two connected open sets of <m>\gg</m> (the bounded one of
+    which we call the <em>inside </em>
+    or <em>interior</em> of <m>\gg</m>)
     is one of the first substantial theorems ever proved in topology,
-        <idx><h>topology</h></idx>
     the <em>Jordan Curve Theorem</em>,
-        <idx><h>Jordan curve theorem</h></idx>
-    due to Camille Jordan (1838<ndash/>1922).<fn>
-    This is the Jordan of <em>Jordan normal form</em> fame,
-    but not the one of <em>Gau&#223;<ndash/>Jordan elimination</em>.
-    </fn> In this book we shall assume the validity of the Jordan Curve Theorem.
+    due to Camille Jordan (1838<ndash/>1922).
+    <idx><h>inside</h></idx>
+    <idx><h>path</h><h>inside of</h></idx>
+    <idx><h>path</h><h>interior of</h></idx>
+    <idx><h>topology</h></idx>
+    <idx><h>Jordan curve theorem</h></idx>
+    <fn>
+      This is the Jordan of <em>Jordan normal form</em> fame,
+      but not the one of <em>Gau&#223;<ndash/>Jordan elimination</em>.
+    </fn>
+    In this book we shall assume the validity of the Jordan
+    Curve Theorem. 
   </p>
   <p>
     Second, we need to specify the orientation of <m>\gg</m>,
-    since if the formula gives <m>f(w)</m> for one orientation then it will give <m>-f(w)</m> for the other orientation.
+    since if the formula gives <m>f(w)</m> for one orientation then it
+    will give <m>-f(w)</m> for the other orientation. 
   </p>
   <definition>
     <statement>
       <p>
         A piecewise smooth simple closed path <m>\gg</m> is
         <em>positively oriented</em>
-        if it is parametrized so that its inside is on the left as our parametrization traverses<nbsp/><m>\gamma</m>.
+        if it is parametrized so that its inside is on the left as our
+        parametrization traverses<nbsp/><m>\gamma</m>. 
         An example is a counter-clockwise oriented circle.
-            <idx><h>path</h><h>positively oriented</h></idx>
-            <idx><h>positive orientation</h></idx>
+        <idx><h>path</h><h>positively oriented</h></idx>
+        <idx><h>positive orientation</h></idx>
       </p>
     </statement>
   </definition>
   <p>
     Third, if <m>\gg</m> is positively oriented and
-    <m>\overline D[w,R]</m> is a closed disk inside <m>\gg</m> then we need a homotopy from <m>\gg</m> to the counterclockwise circle <m>C[w,R]</m> that stays inside <m>\gg</m> and away from <m>D[w,R]</m>.
+    <m>\overline D[w,R]</m> is a closed disk inside <m>\gg</m> then we
+    need a homotopy from <m>\gg</m> to the counterclockwise circle
+    <m>C[w,R]</m> that stays inside <m>\gg</m> and away from
+    <m>D[w,R]</m>. 
     This is provided directly by another substantial theorem of topology,
     the <em>Annulus Theorem</em>,
     although there are other methods.
     Again, in this book we shall assume the existence of this homotopy.
   </p>
   <p>
-    These results of topology seem intuitively obvious but are surprisingly difficult to prove.
+    These results of topology seem intuitively obvious but are
+    surprisingly difficult to prove. 
     If you'd like to see a proof,
     we recommend that you take a course in topology.
   </p>
@@ -199,7 +259,8 @@
     We assumed that <m>\gg</m> is in <m>G</m>,
     but we also need the <em>interior</em>
     of <m>\gg</m> to be contained in <m>G</m>,
-    since we need to apply Cauchy's Theorem to the homotopy between <m>\gg</m> and <m>C[w,R]</m>.
+    since we need to apply Cauchy's Theorem to the homotopy between
+    <m>\gg</m> and <m>C[w,R]</m>. 
     We could just add this as an assumption to our theorem,
     but the following formulation will be more convenient later.
   </p>
@@ -207,18 +268,21 @@
     <title>Cauchy's Integral Formula</title>
     <statement>
       <p>
-        Suppose <m>f</m> is holomorphic in the region <m>G</m> and <m>\gg</m> is a positively oriented,
+        Suppose <m>f</m> is holomorphic in the region <m>G</m> and
+        <m>\gg</m> is a positively oriented, 
         simple, closed, piecewise smooth path,
         such that <m>w</m> is inside <m>\gg</m> and <m>\gg \sim_G 0</m>.
         Then
         <me>
-          f(w) \= \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \, \diff{z} \,
+          f(w) \= \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \,
+          \diff{z} \, 
         </me>.
       </p>
     </statement>
   </theorem>
   <p>
-    So all that we need to finish the proof of <xref ref="cauchyformula">Theorem</xref>
+    So all that we need to finish the proof of
+    <xref ref="cauchyformula"/>
     is one more fact from topology.
     But we can prove this one:
   </p>
@@ -227,31 +291,38 @@
       <p>
         Suppose <m>\gg</m> is a simple,
         closed, piecewise smooth path in the region <m>G</m>.
-        Then <m>G</m> contains the interior of <m>\gg</m> if and only if <m>\gg\sim_G0</m>.
+        Then <m>G</m> contains the interior of <m>\gg</m> if and only
+        if <m>\gg\sim_G0</m>. 
       </p>
     </statement>
   </proposition>
   <proof>
     <p>
-      One direction is easy: If <m>G</m> contains the interior of <m>\gg</m> and
-      <m>\overline D[w,R]</m> is any closed disk in the interior of <m>\gg</m> then there is a <m>G</m>-homotopy from <m>\gg</m> to <m>C[w,R]</m>,
+      One direction is easy: If <m>G</m> contains the interior of
+      <m>\gg</m> and 
+      <m>\overline D[w,R]</m> is any closed disk in the interior of
+      <m>\gg</m> then there is a <m>G</m>-homotopy from <m>\gg</m> to
+      <m>C[w,R]</m>, 
       and <m>C[w,R] \sim_G 0</m>.
     </p>
     <p>
-      In the other direction we argue by contradiction: Assume
-      <m>\gg\sim_G0</m> but <m>G</m> does not contain the interior of <m>\gg</m>.
-      So we can find a point <m>w</m> in the interior of <m>\gg</m> which is not in <m>G</m>.
+      In the other direction, we argue by contradiction: Assume
+      <m>\gg\sim_G0</m> but <m>G</m> does not contain the interior of
+      <m>\gg</m>. 
+      So we can find a point <m>w</m> in the interior of <m>\gg</m>
+      which is not in <m>G</m>. 
     </p>
     <p>
       Define <m>g(z)=\frac1{z-w}</m> for <m>z\ne w</m>.
       Now <m>g</m> is holomorphic on <m>G</m> and <m>\gg\sim_G0</m>,
-      so <xref ref="cauchycor">Corollary</xref> applies,
+      so <xref ref="cauchycor"/> applies,
       and we have <m>\int_\gg g(z)\,\diff{z} = 0</m>.
       On the other hand, choose <m>R>0</m> so that
       <m>\overline D[w,R]</m> is inside <m>\gg</m>.
-      There is a homotopy in <m>\C\setminus \{\,w\,\}</m> from <m>\gg</m> to <m>C[w,R]</m>,
-      so Cauchy's <xref ref="cauchythm">Theorem</xref>,
-      plus <xref ref="ex_circleint">Exercise</xref>,
+      There is a homotopy in <m>\C\setminus \{\,w\,\}</m> from
+      <m>\gg</m> to <m>C[w,R]</m>, 
+      so Cauchy's <xref ref="cauchythm"/>,
+      plus <xref ref="ex_circleint"/>,
       shows that <m>\int_\gg g(z)\,\diff{z} = 2\pi i</m>.
     </p>
     <p>
@@ -260,20 +331,23 @@
   </proof>
   <p>
     Notice that,
-    instead of using topology to prove a theorem about holomorphic functions,
-    we just used holomorphic functions to prove a theorem about topology.
+    instead of using topology to prove a theorem about holomorphic
+    functions, 
+    we just used holomorphic functions to prove a theorem about
+    topology. 
   </p>
   <example xml:id="exam_cifz_2_1">
     <statement>
       <p>
-        Continuing <xref ref="exam_cif">Example</xref>,
-        <xref ref="cauchyformula">Theorem</xref> says that
+        Continuing <xref ref="exam_cif"/>,
+        <xref ref="cauchyformula"/> says that
         <me>
           \int_\gg \frac{ \diff{z} }{ z^2 + 1 } \= \pi
         </me>
         for any positively oriented, simple, closed,
-        piecewise smooth path <m>\gg</m> that contains <m>i</m> on its inside and that is
-        <m>( \C \setminus \{ -i \})</m>-contractible. \pushQED{}\popQED
+        piecewise smooth path <m>\gg</m> that contains <m>i</m> on its
+        inside and that is 
+        <m>( \C \setminus \{ -i \})</m>-contractible. 
       </p>
     </statement>
   </example>
@@ -284,9 +358,13 @@
         <me>
           \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z}
         </me>
-        we use the partial fractions expansion from <xref ref="exam_partialfr">Example</xref>:
+        we use the partial fractions expansion from
+        <xref ref="exam_partialfr"/>: 
         <me>
-          \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \= \frac 1 2 \int_{ C[0,3] } \frac{ \exp(z) }{ z - 2 } \, \diff{z} \ - \ \frac 1 2 \int_{ C[0,3] } \frac{ \exp(z) }{ z } \, \diff{z} \,
+          \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \=
+          \frac 1 2 \int_{ C[0,3] } \frac{ \exp(z) }{ z - 2 } \,
+          \diff{z} \ - \ \frac 1 2 \int_{ C[0,3] } \frac{ \exp(z) }{ z
+          } \, \diff{z} \, 
         </me>.
       </p>
       <p>
@@ -295,659 +373,11 @@
         with the function <m>f(z) = \exp(z)</m>, which is entire,
         and so (note that both 2 and 0 are inside <m>\gg</m>)
         <me>
-          \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \= \frac 1 2 \, 2 \pi i \cdot \exp(2) - \frac 1 2 \, 2 \pi i \cdot \exp(0) \= \pi i \left( e^2 - 1 \right)
+          \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \=
+          \frac 1 2 \, 2 \pi i \cdot \exp(2) - \frac 1 2 \, 2 \pi i
+          \cdot \exp(0) \= \pi i \left( e^2 - 1 \right) 
         </me>.
       </p>
     </statement>
   </example>
-  <p>
-    \begin{Exercises}
-  </p>
-  <exercise xml:id="ex_lenth">
-    <statement>
-      <p>
-        Find the length of the following paths:
-        <ol>
-          <li>
-            <p>
-              <m>\gamma(t) = 3t+i</m>, <m>-1 \leq t \leq 1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma(t) = i + e^{i \pi t}</m>, <m>0 \leq t \leq 1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma(t) = i\sin(t)</m>, <m>-\pi \leq t \leq \pi</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma(t) = t - i \, e^{ -it }</m>,
-              <m>0 \leq t \leq 2 \pi</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-      <p>
-        Draw pictures of each path and convince yourself that the lengths you computed are sensible.
-        (The last path is a <em>cycloid
-            <idx><h>cycloid</h></idx>
-        </em>, the trace of a fixed point on a wheel as it makes one rotation.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Compute the lengths of the paths from <xref ref="ex_parametrizations">Exercise</xref>:
-        <ol>
-          <li>
-            <p>
-              the circle <m>C[1+i, 1]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the line segment from <m>-1-i</m> to <m>2i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the top half of the circle <m>C[0, 34]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the rectangle with vertices <m>\pm 1 \pm 2i</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Integrate the function <m>f(z) = \overline z</m> over the three paths given in <xref ref="firstintexample">Example</xref>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_circleint">
-    <statement>
-      <p>
-        Compute <m>\int_\gg \frac{ \diff{z} }{ z }</m> where <m>\gg</m> is the unit circle,
-        oriented counterclockwise.
-        More generally,
-        show that for any <m>w \in \C</m> and <m>r > 0</m>,
-        <me>
-          \int_{ C[w,r] } \frac{\diff{z}}{z-w} \= 2 \pi i \,
-        </me>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_4_2">
-    <statement>
-      <p>
-        Integrate the following functions over the circle <m>C[0,2]</m>:
-        <ol>
-          <li>
-            <p>
-              <m>f(z) = z + \overline z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = z^2 - 2z + 3</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = \frac 1 { z^4 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = xy</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_varint">
-    <statement>
-      <p>
-        Evaluate the integrals <m>\int_\gamma x\,\diff{z}</m>,
-        <m>\int_\gamma y\,\diff{z}</m>,
-        <m>\int_\gamma z\,\diff{z}</m> and
-        <m>\int_\gamma \conj z\,\diff{z}</m> along each of the following paths.
-        (<em>Hint</em>: You can get the second two integrals after you calculate the first two by writing <m>z</m> and <m>\conj z</m> as <m>x\pm iy</m>.)
-        <ol>
-          <li>
-            <p>
-              <m>\gamma</m> is the line segment from <m>0</m> to <m>1-i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma = C[0,1]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma = C[a,r]</m> for some <m>a \in \C</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_expex">
-    <statement>
-      <p>
-        Evaluate <m>\int_\gamma \exp(3z)\,\diff{z}</m> for each of the following paths:
-        <ol>
-          <li>
-            <p>
-              <m>\gamma</m> is the line segment from <m>1</m> to <m>i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma = C[0,3]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma</m> is the arc of the parabola <m>y=x^2</m> from <m>x=0</m> to <m>x=1</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Compute <m>\int_\gg f</m> for the following functions <m>f</m> and paths<nbsp/><m>\gg</m>:
-        <ol>
-          <li>
-            <p>
-              <m>f(z) = z^2</m> and <m>\gamma(t)=t+it^2</m>, <m>0\le t\le1</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = z</m> and <m>\gamma</m> is the semicircle from <m>1</m> through <m>i</m> to <m>-1</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = \exp(z)</m> and <m>\gamma</m> is the line segment from <m>0</m> to a point <m>z_0</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = |z|^2</m> and <m>\gamma</m> is the line segment from <m>2</m> to <m>3+i</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = z + \frac 1 z</m> and <m>\gamma</m> is parametrized by <m>\gamma(t)</m>,
-              <m>0\leq t\leq 1</m>, and satisfies <m>\Im \gamma(t) > 0</m>,
-              <m>\gamma(0) = -4+i</m>, and <m>\gamma(1) = 6+2i</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = \sin(z)</m> and <m>\gamma</m> is some piecewise smooth path from <m>i</m> to<nbsp/><m>\pi</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_IntegrationIsIndependentOfParametrization">
-    <statement>
-      <p>
-        Prove <xref ref="prop_integrationIsIndependentOfParametrization">Proposition</xref>
-        and the fact that the length of <m>\gg</m> does not change under reparametrization.
-        (<em>Hint</em>: Assume <m>\gg</m>,
-        <m>\sigma</m>, and <m>\tau</m> are smooth.
-        Start with the definition of <m>\int_\sigma f</m>,
-        apply the chain rule to <m>\sigma=\gg\circ\tau</m>,
-        and then use the change of variables formula,
-        <xref ref="thm_calcsubstitution">Theorem</xref>.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove the following <em>integration by parts
-            <idx><h>integration by parts</h></idx>
-        </em> statement: Let <m>f</m> and <m>g</m> be holomorphic in <m>G</m>,
-        and suppose <m>\gg \subset G</m> is a piecewise smooth path from <m>\gg(a)</m> to <m>\gg(b)</m>.
-        Then
-        <me>
-          \int_\gg f g' \= f(\gg(b)) g(\gg(b)) - f(\gg(a)) g(\gg(a)) - \int_\gg f' g \,
-        </me>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>I(k) := \frac{1}{2\pi}\int_0^{2\pi} e^{ikt}\, \diff{t}</m>.
-        <ol>
-          <li>
-            <p>
-              Show that <m>I(0) = 1</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>I(k) = 0</m> if <m>k</m> is a nonzero integer.
-            </p>
-          </li>
-          <li>
-            <p>
-              What is <m>I(\frac 1 2)</m>?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_412">
-    <statement>
-      <p>
-        Compute <m>\int_{ C[0,2] } z^{\frac 1 2 } \,\diff{z} </m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_4_3">
-    <statement>
-      <p>
-        Show that <m>\int_\gg z^n \, \diff{z}=0</m> for any closed piecewise smooth <m>\gg</m> and any integer <m>n\ne-1</m>.
-        (If <m>n</m> is negative,
-        assume that <m>\gg</m> does not pass through the origin,
-        since otherwise the integral is not defined.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <xref ref="ex_4_3">Exercise</xref>
-        excluded <m>n=-1</m> for a good reason:
-        <xref ref="ex_circleint">Exercise</xref> gives a counterexample.
-        Generalizing these, if <m>m</m> is any integer,
-        find a closed path <m>\gg</m> so that <m>\int_\gg z^{-1}\,\diff{z}=2m\pi i</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_laurentoutlook">
-    <statement>
-      <p>
-        Taking the previous two exercises one step further,
-        fix <m>z_0 \in \C</m> and let <m>\gg</m> be a simple,
-        closed, positively oriented,
-        piecewise smooth path such that <m>z_0</m> is inside <m>\gg</m>.
-        Show that, for any integer <m>n</m>,
-        <me>
-          \int_\gg (z-z_0)^n \, \diff{z} \= \begin{cases}2 \pi i \amp  \text{ if }  n = -1 \, , \\ 0       \amp  \text{ otherwise. } \end{cases}
-        </me>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove that <m>\int_\gg z \exp(z^2) \, \diff{z} = 0</m> for any closed path <m>\gg</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Show that <m>F(z)=\frac i2\Log(z+i) -\frac i2\Log(z-i)</m> is an antiderivative of <m>\frac1{1+z^2}</m> for <m>\Re(z)>0</m>.
-        Is <m>F(z)</m> equal to <m>\arctan z</m>?
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_funearlyint">
-    <statement>
-      <p>
-        Compute the following integrals,
-        where <m>\gg</m> is the line segment from 4 to<nbsp/><m>4i</m>.
-        <ol>
-          <li>
-            <p>
-              <m>\ds \int_\gg \frac{ z+1 }{ z } \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_\gg \frac{ \diff{z} }{ z^2 + z }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_\gg z^{ - \frac 1 2 } \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_\gg \sin^2(z) \, \diff{z}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Compute the following integrals.
-        (<em>Hint</em>: One of these integrals is considerably easier than the other.)
-        <ol>
-          <li>
-            <p>
-              <m>\displaystyle \int_{\gg_1} z^i \, \diff{z}</m> where <m>\gg_1 (t) = e^{it} , \ - \frac{\pi}{2} \leq t \leq \frac{\pi }{2}</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \int_{\gg_2} z^i \, \diff{z}</m> where <m>\gg_2 (t) = e^{it} , \ \frac{\pi}{2} \leq t \leq \frac{3\pi} {2}</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_checkhomotopyexample">
-    <statement>
-      <p>
-        Show that <xref ref="eq_checkhomotopyexample"/> gives a homotopy between the unit circle and the square with vertices <m>\pm 3 \pm 3i</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Use <xref ref="ex_diamondpath">Exercise</xref>
-        give a homotopy that is an alternative to <xref ref="eq_checkhomotopyexample"/> and does not need a piecewise definition.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_circlehomotopy">
-    <statement>
-      <p>
-        Suppose <m>a \in \C</m> and <m>\gamma_0</m> and
-        <m>\gamma_1</m> are two counterclockwise circles so that <m>a</m> is inside both of them.
-        Give a homotopy that proves <m>\gg_0 \sim_{ \C \setminus \{ a \} } \gg_1</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_homotopyEquivalence">
-    <statement>
-      <p>
-        Prove that <m>\sim_G</m> is an equivalence relation.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_homotopyReparametrization">
-    <statement>
-      <p>
-        Suppose that <m>\gg</m> is a closed path in a region <m>G</m>,
-        parametrized by <m>\gg(t),\,t\in[0,1]</m>,
-        and <m>\tau</m> is a continuous increasing function from <m>[0,1]</m> onto <m>[0,1]</m>.
-        Show that <m>\gg</m> is <m>G</m>-homotopic to the reparametrized path
-        <m>\gg\circ\tau</m>. (<em>Hint</em>: Make use of
-        <m>\tau_s(t)=s\tau(t)+(1-s)t</m> for <m>0\le s\le1</m>.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="C-contractible">
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Prove that any closed path is <m>\C</m>-contractible.
-          </p>
-        </li>
-        <li>
-          <p>
-            Prove that any two closed paths are <m>\C</m>-homotopic.
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_cauchyfromgreen">
-    <statement>
-      <p>
-        This exercise gives an alternative proof of <xref ref="cauchycor">Corollary</xref>
-        via Green's <xref ref="thm_green">Theorem</xref>.
-            <idx><h>Green's theorem</h></idx>
-        Suppose <m>G \subseteq \C</m> is a region,
-        <m>f</m> is holomorphic in <m>G</m>, <m>f'</m> is continuous,
-        <m>\gg</m> is a simple piecewise smooth closed curve, and <m>\gg\sim_G0</m>.
-        Explain that we may write
-        <me>
-          \int_\gg f(z) \, \diff{z} \ = \ \int_\gg (u + i \, v) (\diff{x} + i \, \diff{y}) \ = \ \int_\gg u \, \diff{x} - v \, \diff{y} \ + \ i \int_\gg v \, \diff{x} + u \, \diff{y}
-        </me>
-        and show that these integrals vanish,
-        by using Green's <xref ref="thm_green">Theorem</xref>
-        together with <xref ref="simpleContractible">Proposition</xref>,
-        and then the Cauchy<ndash/>Riemann equations<nbsp/><xref ref="complexcr"/>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_circleint2">
-    <statement>
-      <p>
-        Fix <m>a \in \C</m>.
-        Compute
-        <me>
-          I(r) \ := \ \int_{ C[0,r] } \frac{ \diff{z} }{ z-a } \,
-        </me>.
-      </p>
-      <p>
-        You should get different answers for <m>r\lt \abs a</m> and <m>r>\abs a</m>.
-        (<em>Hint</em>: In one case
-        <m>\gamma_r</m> is contractible in <m>\C\setminus\listset a</m>.
-        In the other you can combine <xref ref="ex_circleint">Exercises</xref>
-        and <xref ref="ex_circlehomotopy"></xref>.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Suppose <m>p(z)</m> is a polynomial in <m>z</m> and <m>\gg</m> is a closed piecewise smooth path in <m>\C</m>.
-        Show that <m>\int_\gg p \= 0 \, </m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_pathtoinfty">
-    <statement>
-      <p>
-        Show that
-        <me>
-          \int_{ C[0,2] } \frac{ \diff{z} }{ z^3 + 1 } \= 0
-        </me>
-        by arguing that this integral does not change if we replace <m>C[0,2]</m> by <m>C[0,r]</m> for any <m>r > 1</m>,
-        then use <xref ref="intprop">Proposition</xref> <xref ref="int4"></xref>
-        to obtain an upper bound for
-        <m>|\int_{ C[0,r] } \frac{ \diff{z} }{ z^3 + 1 }|</m> that goes to 0 as <m>r \to \infty</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_4_5">
-    <statement>
-      <p>
-        Compute the <em>real</em> integral
-        <me>
-          \int_0^{2 \pi} \frac{\diff\phi}{2 + \sin \phi}
-        </me>
-        by writing the sine function in terms of the exponential function and making the substitution
-        <m>z = e^{i \phi}</m> to turn the real integral into a complex integral.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_poissonkernel">
-    <statement>
-      <p>
-        Prove that for <m>0 \lt  r \lt  1</m>,
-        <me>
-          \frac 1 {2 \pi} \int_0^{ 2 \pi } \frac{ 1-r^2 }{ 1 - 2r \cos(\phi) + r^2 } \, \diff\phi \= 1 \,
-        </me>.
-      </p>
-      <p>
-        (The function <m>P_r(\phi) := \frac{ 1-r^2 }{ 1 - 2r \cos(\phi) + r^2 }</m> is the <em>Poisson kernel
-            <idx><h>Poisson kernel</h></idx>
-        </em><fn>
-        Named after Sim&#xe9;on Denis Poisson (1781<ndash/>1840).
-        </fn> and plays an important role in the world of harmonic functions,
-        as we will see in <xref ref="ex_poissonkernelapp">Exercise</xref>.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Suppose <m>f</m> and <m>g</m> are holomorphic in the region <m>G</m> and <m>\gg</m> is a simple piecewise smooth <m>G</m>-contractible path.
-        Prove that if <m>f(z) = g(z)</m> for all <m>z \in \gg</m>,
-        then <m>f(z) = g(z)</m> for all <m>z</m> inside<nbsp/><m>\gg</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Show that <xref ref="cauchycor">Corollary</xref>, for simple paths,
-        is also a corollary of <xref ref="cauchyformula">Theorem</xref>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_4_4">
-    <statement>
-      <p>
-        Compute
-        <me>
-          I(r) \ := \ \int_{ C[-2i,r] } \frac{ \diff{z} }{ z^2 + 1 }
-        </me>
-        for <m>r \ne 1, \, 3</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_partfracint">
-    <statement>
-      <p>
-        Find
-        <me>
-          \int_{ C[0,r] }\frac{\diff{z}}{z^2-2z-8}
-        </me>
-        for <m>r=1</m>, <m>r=3</m> and <m>r=5</m>.
-        (<em>Hint</em>: Compute a partial-fractions expansion of the integrand.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Use the Cauchy Integral Formula
-        (<xref ref="cauchyformulacircle">Theorem</xref>)
-        to evaluate the integral in <xref ref="ex_partfracint">Exercise</xref> when <m>r=3</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_funints">
-    <statement>
-      <p>
-        Compute the following integrals.
-        <ol>
-          <li>
-            <p>
-              <m>\ds \int_{ C[-1,2] } \frac{z^2}{4-z^2} \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_{ C[0,1] }\frac{\sin z}{z} \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_{ C[0,2] } \frac{\exp(z)}{z(z-3)} \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_{ C[0,4] } \frac{\exp(z)}{z(z-3)} \, \diff{z}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>f(z) = \frac{ 1 }{ z^2 - 1 }</m> and define the two paths
-        <m>\gg = C[1,1]</m> oriented counter-clockwise and <m>\sigma = C[-1,1]</m> oriented clockwise.
-        Show that <m>\int_\gg f \= \int_\sigma f</m> even though
-        <m>\gg \not\sim_G \sigma</m> where <m>G = \C \setminus \{ \pm 1 \}</m>,
-        the region of holomorphicity of<nbsp/><m>f</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        This exercise gives an alternative proof of Cauchy's Integral Formula
-        (<xref ref="cauchyformula">Theorem</xref>)
-        that does not depend on Cauchy's Theorem
-        (<xref ref="cauchythm">Theorem</xref>).
-        Suppose the region <m>G</m> is <em>convex</em>;
-        this means that, whenever <m>z</m> and <m>w</m> are in <m>G</m>,
-        the line segment between them is also in <m>G</m>.
-        Suppose <m>f</m> is holomorphic in <m>G</m>, <m>f'</m> is continuous,
-        and <m>\gg</m> is a positively oriented,
-        simple, closed, piecewise smooth path,
-        such that <m>w</m> is inside <m>\gg</m> and <m>\gg \sim_G 0</m>.
-        <ol>
-          <li>
-            <p>
-              Consider the function <m>g: [0,1] \to \C</m> given by
-              <me>
-                g(t) \ := \ \int_\gg \frac{ f \left( w + t(z-w) \right) }{ z-w } \, \diff{z} \,
-              </me>.
-              Show that <m>g'=0</m>. (<em>Hint</em>: Use <xref ref="leibnizrule">Theorem</xref>
-              (Leibniz's rule) and then find an antiderivative for <m>\frac{ \partial f }{ \partial t } \left( w + t(z-w) \right)</m>.)
-            </p>
-          </li>
-          <li>
-            <p>
-              Prove <xref ref="cauchyformula">Theorem</xref>
-              by evaluating <m>g(0)</m> and <m>g(1)</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Why did we assume <m>G</m> is convex?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <p>
-    \end{Exercises}
-  </p>
 </section>

@@ -1,18 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="intchapter">
   <title>Integration</title>
   <introduction>
     <blockquote>
-      <em>If things are nice there is probably a good reason why they are
-      nice: and if you do not know at least one reason for this good
-      fortune, then you still have work to do.</em>
-      Richard Askey
+      <p>
+        <em>If things are nice there is probably a good reason why they are
+        nice: and if you do not know at least one reason for this good
+        fortune, then you still have work to do.</em>
+      </p>
+      <attribution>
+        Richard Askey
+      </attribution>
     </blockquote>
     <p>
-      We are now ready to start integrating complex functions<mdash/>and we will not stop doing so for the remainder of this book:
+      We are now ready to start integrating complex
+      functions<mdash/>and we will not stop doing so for the remainder of
+      this book: 
       it turns out that complex integration is much richer than real integration
       (in one variable).
-      The initial reason for this is that we have an extra dimension to play with:
-      the calculus integral <m>\int_a^b f(x) \, \diff{x}</m> has a fixed integration path,
+      The initial reason for this is that we have an extra dimension
+      to play with: 
+      the calculus integral <m>\int_a^b f(x) \, \diff{x}</m> has a
+      fixed integration path, 
       from <m>a</m> to <m>b</m> along the real line.
       For complex functions,
       there are many different ways to go from <m>a</m> to <m>b</m>...
@@ -22,4 +32,5 @@
   <xi:include  href="sec_antiderivatives.ptx"/>
   <xi:include  href="sec_cauchythm.ptx"/>
   <xi:include  href="sec_CIF.ptx"/>
+  <xi:include  href="exercises-chap4.ptx"/>
 </chapter>
