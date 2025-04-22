@@ -2215,6 +2215,780 @@ var ptx_lunr_docs = [
   "body": "  As in the previous problem, let . Let be the square with vertices at , , and . Draw and identify the types of image curves corresponding to the segments from to and from to . They are not parts of either straight lines or circles. ( Hint : You can write the vertical segment parametrically as . Eliminate the parameter in to get a equation for the image curve.) and are related to the cover picture of this book.   "
 },
 {
+  "id": "sec_intdef",
+  "level": "1",
+  "url": "sec_intdef.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Definition and Basic Properties",
+  "body": " Definition and Basic Properties  At first sight, complex integration is not really different from real integration. Let and let be continuous. Then we define .  This definition is analogous to that of integration of a parametric curve in . For a function that takes complex numbers as arguments, we typically integrate over a path (in place of a real interval). If you meditate about the substitution rule for real integrals ( ), the following definition, which is based on , should come as no surprise.    Suppose is a smooth path parametrized by , and is a complex function which is continuous on . Then we define the integral integral of on as .  This definition immediately extends to paths that are piecewise smooth : piecewise smooth  smooth piecewise Suppose is parametrized by , which is smooth on the intervals . Our footnote on about the subtlety of the definition of a smooth path applies also here, at the subdivision points . Note that we do not require that the left and right derivatives match at these points. Then, assuming again that is continuous on , we define .      To see this definition in action, we compute the integral of the function given by over several paths from 0 to .   Let be the line segment from to . A parametrization of this path is . Here and , and so .    Let be the arc of the parabola from to . A parametrization of this path is . Now we have and , whence .    Let be the union of the two line segments from to and from to . Parametrizations are , and . Hence .       It is apparent but nevertheless noteworthy that these integrals evaluate to different results; in particular unlike in calculus a complex integral does not simply depend on the endpoints of the path of integration.  On the other hand, the complex integral has some standard properties, most of which follow from their real siblings in a straightforward way. Our first observation is that the actual choice of parametrization of does not matter. More precisely, if and are parametrizations of a curve then we say that is a reparametrization of if there is an increasing piecewise smooth map of onto that takes to , in the sense that . reparametrization     If is a piecewise smooth parametrization of a curve and is a reparametrization of then .      To appreciate this statement, consider the two parametrizations , of the unit circle. Then we could write in the two ways: and .  A quick substitution shows that the two integrals on the respective right-hand sides are indeed equal.     says that a similar equality will hold for any integral and any parametrization. Its proof is left as , which also shows that the following definition is unchanged under reparametrization.    The length length  of a smooth path is for any parametrization , . Naturally, the length of a piecewise smooth path is the sum of the lengths of its smooth components.      Let be the line segment from to , which can be parametrized by for . Then and so .      Let be the unit circle, which can be parametrized by for . Then and .    Now we observe some basic facts about how the line integral behaves with respect to function addition, scalar multiplication, inverse parametrization, and path concatenation; we also give an upper bound for the absolute value of an integral, which we will make use of time and again. inverse parametrization  concatenation     Suppose is a piecewise smooth path, and are complex functions which are continuous on , and .    .    If is parametrized by , we define the path by . Then .    If and are piecewise smooth paths so that starts where ends, we define the path by following to its end and then continuing on to its end. Then .     .       The path defined in is the path that we obtain by traveling through in the opposite direction.    follows directly from the definition of the integral and Theorem , the analogous theorem from calculus.   follows with the real change of variables : .  For , we need a suitable parametrization for . If has domain and has domain then we can use with domain . Now we break the integral over into two pieces and apply the change of variables : .  The last step follows since restricted to is and restricted to is a reparametrization of .  For , let . Then and thus, since , .  Here we have used for both inequalities.     In , you are invited to show , where is any circle centered at , oriented counter-clockwise. Thus  says that the analogous integral over a clockwise circle equals . Incidentally, the same example shows that the inequality in  is sharp: if has radius , then .    "
+},
+{
+  "id": "sec_intdef-4",
+  "level": "2",
+  "url": "sec_intdef.html#sec_intdef-4",
+  "type": "Definition",
+  "number": "4.1.1",
+  "title": "",
+  "body": "  Suppose is a smooth path parametrized by , and is a complex function which is continuous on . Then we define the integral integral of on as .  This definition immediately extends to paths that are piecewise smooth : piecewise smooth  smooth piecewise Suppose is parametrized by , which is smooth on the intervals . Our footnote on about the subtlety of the definition of a smooth path applies also here, at the subdivision points . Note that we do not require that the left and right derivatives match at these points. Then, assuming again that is continuous on , we define .   "
+},
+{
+  "id": "firstintexample",
+  "level": "2",
+  "url": "sec_intdef.html#firstintexample",
+  "type": "Example",
+  "number": "4.1.2",
+  "title": "",
+  "body": "  To see this definition in action, we compute the integral of the function given by over several paths from 0 to .   Let be the line segment from to . A parametrization of this path is . Here and , and so .    Let be the arc of the parabola from to . A parametrization of this path is . Now we have and , whence .    Let be the union of the two line segments from to and from to . Parametrizations are , and . Hence .      "
+},
+{
+  "id": "prop_integrationIsIndependentOfParametrization",
+  "level": "2",
+  "url": "sec_intdef.html#prop_integrationIsIndependentOfParametrization",
+  "type": "Proposition",
+  "number": "4.1.3",
+  "title": "",
+  "body": "  If is a piecewise smooth parametrization of a curve and is a reparametrization of then .   "
+},
+{
+  "id": "sec_intdef-9",
+  "level": "2",
+  "url": "sec_intdef.html#sec_intdef-9",
+  "type": "Example",
+  "number": "4.1.4",
+  "title": "",
+  "body": "  To appreciate this statement, consider the two parametrizations , of the unit circle. Then we could write in the two ways: and .  A quick substitution shows that the two integrals on the respective right-hand sides are indeed equal.   "
+},
+{
+  "id": "sec_intdef-11",
+  "level": "2",
+  "url": "sec_intdef.html#sec_intdef-11",
+  "type": "Definition",
+  "number": "4.1.5",
+  "title": "",
+  "body": "  The length length  of a smooth path is for any parametrization , . Naturally, the length of a piecewise smooth path is the sum of the lengths of its smooth components.   "
+},
+{
+  "id": "sec_intdef-12",
+  "level": "2",
+  "url": "sec_intdef.html#sec_intdef-12",
+  "type": "Example",
+  "number": "4.1.6",
+  "title": "",
+  "body": "  Let be the line segment from to , which can be parametrized by for . Then and so .   "
+},
+{
+  "id": "example_circlelength",
+  "level": "2",
+  "url": "sec_intdef.html#example_circlelength",
+  "type": "Example",
+  "number": "4.1.7",
+  "title": "",
+  "body": "  Let be the unit circle, which can be parametrized by for . Then and .   "
+},
+{
+  "id": "intprop",
+  "level": "2",
+  "url": "sec_intdef.html#intprop",
+  "type": "Proposition",
+  "number": "4.1.8",
+  "title": "",
+  "body": "  Suppose is a piecewise smooth path, and are complex functions which are continuous on , and .    .    If is parametrized by , we define the path by . Then .    If and are piecewise smooth paths so that starts where ends, we define the path by following to its end and then continuing on to its end. Then .     .      "
+},
+{
+  "id": "sec_intdef-17",
+  "level": "2",
+  "url": "sec_intdef.html#sec_intdef-17",
+  "type": "Proof",
+  "number": "4.1.1",
+  "title": "",
+  "body": "  follows directly from the definition of the integral and Theorem , the analogous theorem from calculus.   follows with the real change of variables : .  For , we need a suitable parametrization for . If has domain and has domain then we can use with domain . Now we break the integral over into two pieces and apply the change of variables : .  The last step follows since restricted to is and restricted to is a reparametrization of .  For , let . Then and thus, since , .  Here we have used for both inequalities.  "
+},
+{
+  "id": "sec_intdef-18",
+  "level": "2",
+  "url": "sec_intdef.html#sec_intdef-18",
+  "type": "Example",
+  "number": "4.1.9",
+  "title": "",
+  "body": "  In , you are invited to show , where is any circle centered at , oriented counter-clockwise. Thus  says that the analogous integral over a clockwise circle equals . Incidentally, the same example shows that the inequality in  is sharp: if has radius , then .   "
+},
+{
+  "id": "sec_antiderivatives",
+  "level": "1",
+  "url": "sec_antiderivatives.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Antiderivatives",
+  "body": " Antiderivatives   fundamental theorem of calculus  antiderivative   The central result about integration of a real function is the Fundamental Theorem of Calculus ( Theorem ), and our next goal is to discuss complex versions of this theorem. The Fundamental Theorem of Calculus makes a number of important claims: that continuous functions are integrable, their antiderivatives are continuous and differentiable, and that antiderivatives provide easy ways to compute values of definite integrals. The difference between the real case and the complex case is that in the latter, we need to think about integrals over arbitrary paths in .    If is holomorphic in the region and for all , then is an antiderivative of on , also known as a primitive of on .  antiderivative  primitive       We have already seen that is entire and has derivative . Thus, is an antiderivative of on any region . The same goes for , where is any constant.      Since ,   is an antiderivative of on .      The function is an antiderivative of on . Note that is holomorphic in the larger region ; however, we will see in that  cannot have an antiderivative on that region.    Here is the complex analogue of Theorem      Suppose is a region and is a piecewise smooth path with parametrization , . If is continuous on and is any antiderivative of on then      This follows immediately from the definition of a complex integral and Theorem  , since :      Since is an antiderivative of in , for each of the three paths in .    There are several interesting consequences of . For starters, if is closed (that is, ) we effortlessly obtain the following.    Suppose is open, is a piecewise smooth closed path, and is continuous on and has an antiderivative on . Then .    This corollary is immediately useful as a test for existence of antiderivatives:    The function given by satisfies for the unit circle , by . Since this integral is nonzero, cannot have an antiderivative in .    We now turn to the complex analogue of Theorem  .    Suppose is a region and . Let be a continuous function such that for any closed piecewise smooth path . Then the function defined by , where is any piecewise smooth path in from to , is an antiderivative for on .    There are two statements that we have to prove: first, that our definition of is sound that is, the integral defining does not depend on which path we take from to and second, that for all .  Suppose is a region, , and is a continuous function such that for any closed piecewise smooth path . Then evaluates to the same number for any piecewise smooth path from to , because any two such paths and can be concatenated to a closed path first tracing through and then through backwards, which by assumption yields a zero integral: .  This means that is well defined. By the same argument, for any path from to . The constant function has the antiderivative on , and so , by Theorem . Thus .  If is sufficiently small then the line segment from to will be contained in , and so, by applying the assumptions of our theorem for the third time, .  We will show that the right-hand side goes to zero as , which will conclude the theorem. Given , we can choose such that because is continuous at . (We also choose small enough so that holds.) Thus if , we can estimate with Proposition   .    There are several variations of Theorem , as we can play with the assumptions about paths in the statement of the theorem. We give one such variation, namely, for polygonal paths , i.e., paths that are composed as unions of line segments. You should convince yourself that the proof of the following result is identical to that of Theorem . path polygonal  path polygonal     Suppose is a region and . Let be a continuous function such that for any closed polygonal path . Then the function defined by , where is any polygonal path in from to , is an antiderivative for on .    If you compare our proof of Theorem to its analogue in , you will see similarities, as well as some complications due to the fact that we now have to operate in the plane as opposed to the real line. Still, so far we have essentially been doing calculus when computing integrals. We will now take a radical departure from this philosophy by studying complex integrals that stay invariant under certain transformations of the paths we are integrating over.  "
+},
+{
+  "id": "sec_antiderivatives-4",
+  "level": "2",
+  "url": "sec_antiderivatives.html#sec_antiderivatives-4",
+  "type": "Definition",
+  "number": "4.2.1",
+  "title": "",
+  "body": "  If is holomorphic in the region and for all , then is an antiderivative of on , also known as a primitive of on .  antiderivative  primitive    "
+},
+{
+  "id": "sec_antiderivatives-5",
+  "level": "2",
+  "url": "sec_antiderivatives.html#sec_antiderivatives-5",
+  "type": "Example",
+  "number": "4.2.2",
+  "title": "",
+  "body": "  We have already seen that is entire and has derivative . Thus, is an antiderivative of on any region . The same goes for , where is any constant.   "
+},
+{
+  "id": "sec_antiderivatives-6",
+  "level": "2",
+  "url": "sec_antiderivatives.html#sec_antiderivatives-6",
+  "type": "Example",
+  "number": "4.2.3",
+  "title": "",
+  "body": "  Since ,   is an antiderivative of on .   "
+},
+{
+  "id": "sec_antiderivatives-7",
+  "level": "2",
+  "url": "sec_antiderivatives.html#sec_antiderivatives-7",
+  "type": "Example",
+  "number": "4.2.4",
+  "title": "",
+  "body": "  The function is an antiderivative of on . Note that is holomorphic in the larger region ; however, we will see in that  cannot have an antiderivative on that region.   "
+},
+{
+  "id": "antiderthm",
+  "level": "2",
+  "url": "sec_antiderivatives.html#antiderthm",
+  "type": "Theorem",
+  "number": "4.2.5",
+  "title": "",
+  "body": "  Suppose is a region and is a piecewise smooth path with parametrization , . If is continuous on and is any antiderivative of on then    "
+},
+{
+  "id": "sec_antiderivatives-10",
+  "level": "2",
+  "url": "sec_antiderivatives.html#sec_antiderivatives-10",
+  "type": "Proof",
+  "number": "4.2.1",
+  "title": "",
+  "body": " This follows immediately from the definition of a complex integral and Theorem  , since :   "
+},
+{
+  "id": "sec_antiderivatives-11",
+  "level": "2",
+  "url": "sec_antiderivatives.html#sec_antiderivatives-11",
+  "type": "Example",
+  "number": "4.2.6",
+  "title": "",
+  "body": "  Since is an antiderivative of in , for each of the three paths in .   "
+},
+{
+  "id": "antidercor",
+  "level": "2",
+  "url": "sec_antiderivatives.html#antidercor",
+  "type": "Corollary",
+  "number": "4.2.7",
+  "title": "",
+  "body": "  Suppose is open, is a piecewise smooth closed path, and is continuous on and has an antiderivative on . Then .   "
+},
+{
+  "id": "ex_antiderivnotexist",
+  "level": "2",
+  "url": "sec_antiderivatives.html#ex_antiderivnotexist",
+  "type": "Example",
+  "number": "4.2.8",
+  "title": "",
+  "body": "  The function given by satisfies for the unit circle , by . Since this integral is nonzero, cannot have an antiderivative in .   "
+},
+{
+  "id": "thm_FTC1",
+  "level": "2",
+  "url": "sec_antiderivatives.html#thm_FTC1",
+  "type": "Theorem",
+  "number": "4.2.9",
+  "title": "",
+  "body": "  Suppose is a region and . Let be a continuous function such that for any closed piecewise smooth path . Then the function defined by , where is any piecewise smooth path in from to , is an antiderivative for on .    There are two statements that we have to prove: first, that our definition of is sound that is, the integral defining does not depend on which path we take from to and second, that for all .  Suppose is a region, , and is a continuous function such that for any closed piecewise smooth path . Then evaluates to the same number for any piecewise smooth path from to , because any two such paths and can be concatenated to a closed path first tracing through and then through backwards, which by assumption yields a zero integral: .  This means that is well defined. By the same argument, for any path from to . The constant function has the antiderivative on , and so , by Theorem . Thus .  If is sufficiently small then the line segment from to will be contained in , and so, by applying the assumptions of our theorem for the third time, .  We will show that the right-hand side goes to zero as , which will conclude the theorem. Given , we can choose such that because is continuous at . (We also choose small enough so that holds.) Thus if , we can estimate with Proposition   .   "
+},
+{
+  "id": "thm_FTC1polygonal",
+  "level": "2",
+  "url": "sec_antiderivatives.html#thm_FTC1polygonal",
+  "type": "Corollary",
+  "number": "4.2.10",
+  "title": "",
+  "body": "  Suppose is a region and . Let be a continuous function such that for any closed polygonal path . Then the function defined by , where is any polygonal path in from to , is an antiderivative for on .   "
+},
+{
+  "id": "sec_cauchythm",
+  "level": "1",
+  "url": "sec_cauchythm.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Cauchy’s Theorem",
+  "body": " Cauchy's Theorem   The central theorem of complex analysis is based on the following concept.    Suppose and are closed paths in the region , parametrized by , and , respectively. Then is -homotopic to if there exists a continuous function such that, for all , . homotopic   We use the notation to mean is -homotopic to .    The function is called a homotopy . homotopy For each fixed , a homotopy is a path parametrized by , and as goes from to , these paths continuously transform from to . The last condition in simply says that each of these paths is also closed.     Figure attempts to illustrate that the unit circle is -homotopic to the square with vertices . Indeed, you should check ( ) that gives a homotopy. Note that for any (hence -homotopic ).  shows the paths for and .   This square and circle are -homotopic.     size=3.5    f1(t)=(1,8*t)  f2(t)=(2-8*t,1)  f3(t)=(-1,4*(1-2*t))  f4(t)=(8*t-6,-1)  f5(t)=(1,8*(t-1))  cases(t)=chi_co(0,1\/8,t)*f1(t)+chi_co(1\/8,3\/8,t)*f2(t)+chi_co(3\/8,5\/8,t)*f3(t)+chi_co(5\/8,7\/8,t)*f4(t)+chi_cc(7\/8,2,t)*f5(t)  c(t)=(cos(2*pi*t), sin(2*pi*t))   g(t)=(1-s)*c(t) + 3*s*cases(t)            shows that is an equivalence relation on the set of closed paths in . The definition of homotopy applies to parametrizations of curves; but , together with transitivity of , shows that homotopy is invariant under reparametrizations.   Cauchy's Theorem   Suppose is a region, is holomorphic in , and are piecewise smooth paths in , and . Then . Cauchy's theorem     As a historical aside, it is assumed that Johann Carl Friedrich Gauß (1777 1855) knew a version of this theorem in 1811 but published it only in 1831. Cauchy (of Cauchy Riemann equations fame) published his version in 1825, Karl Theodor Wilhelm Weierstraß (1815 1897) his in 1842. Theorem is often called the Cauchy Goursat Theorem , since Cauchy assumed that the derivative of was continuous, a condition that was first removed by Edouard Jean-Baptiste Goursat (1858 1936). Cauchy Goursat theorem   Before discussing the proof of Theorem , we give a basic, yet prototypical application of it:    We claim that where is the square in Figure , oriented counter-clockwise. We could, of course, compute this integral by hand, but it is easier to apply Cauchy's to the function , which is holomorphic in . We showed in that is -homotopic to the unit circle. says that integrating over the unit circle gives and so Cauchy's implies .     The full proof of Cauchy's Theorem is beyond the scope of this book. However, there are several proofs under more restrictive hypotheses than . We shall present a proof under the following extra assumptions:   The derivative is continuous in .    The homotopy from to has piecewise, continuous second derivatives.     Technically, this is the assumption on : where each has continuous second partials As we have seen with other piecewise definitions, the behavior of at the subdivision lines needs to be understood in terms of limits. . ( gives one instance.) Now we turn to the proof under these extra assumptions.  For , let be the path parametrized by . Consider the function given by , so that and . We will show that is constant; in particular, , which proves the theorem. By Leibniz's rule Leibniz's rule ( Theorem ), .  Note that we used Theorem to switch the order of the second partials in the penultimate step here is where we need our assumption that has continuous second partials. Also, we needed continuity of in order to apply Leibniz's rule. If is piecewise defined, we split up the integral accordingly.  Finally, by the Fundamental Theorem of Calculus ( Theorem ), applied separately to the real and imaginary parts of the above integrand, , where the last step follows from for all .     Let be a region. If the closed path is -homotopic to a point (that is, a constant path) then is -contractible , and we write . contractible (See Figure for an example.)     This ellipse is -contractible.       center=(2,2.5)  ellipse(t)=(3*cos(t),2*sin(t))   g(t)=s*ellipse(t) + center          The fact that an integral over a point is zero has the following immediate consequence.    Suppose is a region, is holomorphic in , is piecewise smooth, and . Then .    This corollary is worth meditating over. For example, you should compare it with : both results give a zero integral, yet they make truly opposite assumptions (one about the existence of an antiderivative, the other about the existence of a derivative).  Naturally, gives many evaluations of integrals, such as this:    Since is holomorphic in and the ellipse in is -contractible, gives .     (a) says that any closed path is -contractible, which yields the following special case of .    If is entire and is any piecewise smooth closed path, then .    The theorems and corollaries in this section are useful not just for showing that certain integrals are zero:    We'd like to compute where is the unit circle, oriented counter-clockwise. (Try computing it from first principles.) We use a partial fractions expansion to write .  The first integral on the right-hand side is zero by Corollary applied to the function (note that is holomorphic in and is -contractible). The second integral is by Exercise , and so .    Sometimes itself is known as Cauchy's Theorem. See for a related formulation of , with a proof based on Green's Theorem.  "
+},
+{
+  "id": "sec_cauchythm-3",
+  "level": "2",
+  "url": "sec_cauchythm.html#sec_cauchythm-3",
+  "type": "Definition",
+  "number": "4.3.1",
+  "title": "",
+  "body": "  Suppose and are closed paths in the region , parametrized by , and , respectively. Then is -homotopic to if there exists a continuous function such that, for all , . homotopic   We use the notation to mean is -homotopic to .   "
+},
+{
+  "id": "exam_homotopy",
+  "level": "2",
+  "url": "sec_cauchythm.html#exam_homotopy",
+  "type": "Example",
+  "number": "4.3.2",
+  "title": "",
+  "body": "   Figure attempts to illustrate that the unit circle is -homotopic to the square with vertices . Indeed, you should check ( ) that gives a homotopy. Note that for any (hence -homotopic ).  shows the paths for and .   This square and circle are -homotopic.     size=3.5    f1(t)=(1,8*t)  f2(t)=(2-8*t,1)  f3(t)=(-1,4*(1-2*t))  f4(t)=(8*t-6,-1)  f5(t)=(1,8*(t-1))  cases(t)=chi_co(0,1\/8,t)*f1(t)+chi_co(1\/8,3\/8,t)*f2(t)+chi_co(3\/8,5\/8,t)*f3(t)+chi_co(5\/8,7\/8,t)*f4(t)+chi_cc(7\/8,2,t)*f5(t)  c(t)=(cos(2*pi*t), sin(2*pi*t))   g(t)=(1-s)*c(t) + 3*s*cases(t)          "
+},
+{
+  "id": "cauchythm",
+  "level": "2",
+  "url": "sec_cauchythm.html#cauchythm",
+  "type": "Theorem",
+  "number": "4.3.4",
+  "title": "Cauchy’s Theorem.",
+  "body": " Cauchy's Theorem   Suppose is a region, is holomorphic in , and are piecewise smooth paths in , and . Then . Cauchy's theorem    "
+},
+{
+  "id": "sec_cauchythm-10",
+  "level": "2",
+  "url": "sec_cauchythm.html#sec_cauchythm-10",
+  "type": "Example",
+  "number": "4.3.5",
+  "title": "",
+  "body": "  We claim that where is the square in Figure , oriented counter-clockwise. We could, of course, compute this integral by hand, but it is easier to apply Cauchy's to the function , which is holomorphic in . We showed in that is -homotopic to the unit circle. says that integrating over the unit circle gives and so Cauchy's implies .   "
+},
+{
+  "id": "sec_cauchythm-11",
+  "level": "2",
+  "url": "sec_cauchythm.html#sec_cauchythm-11",
+  "type": "Proof",
+  "number": "4.3.1",
+  "title": "",
+  "body": " The full proof of Cauchy's Theorem is beyond the scope of this book. However, there are several proofs under more restrictive hypotheses than . We shall present a proof under the following extra assumptions:   The derivative is continuous in .    The homotopy from to has piecewise, continuous second derivatives.     Technically, this is the assumption on : where each has continuous second partials As we have seen with other piecewise definitions, the behavior of at the subdivision lines needs to be understood in terms of limits. . ( gives one instance.) Now we turn to the proof under these extra assumptions.  For , let be the path parametrized by . Consider the function given by , so that and . We will show that is constant; in particular, , which proves the theorem. By Leibniz's rule Leibniz's rule ( Theorem ), .  Note that we used Theorem to switch the order of the second partials in the penultimate step here is where we need our assumption that has continuous second partials. Also, we needed continuity of in order to apply Leibniz's rule. If is piecewise defined, we split up the integral accordingly.  Finally, by the Fundamental Theorem of Calculus ( Theorem ), applied separately to the real and imaginary parts of the above integrand, , where the last step follows from for all .  "
+},
+{
+  "id": "sec_cauchythm-12",
+  "level": "2",
+  "url": "sec_cauchythm.html#sec_cauchythm-12",
+  "type": "Definition",
+  "number": "4.3.6",
+  "title": "",
+  "body": "  Let be a region. If the closed path is -homotopic to a point (that is, a constant path) then is -contractible , and we write . contractible (See Figure for an example.)   "
+},
+{
+  "id": "contractiblefig",
+  "level": "2",
+  "url": "sec_cauchythm.html#contractiblefig",
+  "type": "Figure",
+  "number": "4.3.7",
+  "title": "",
+  "body": " This ellipse is -contractible.       center=(2,2.5)  ellipse(t)=(3*cos(t),2*sin(t))   g(t)=s*ellipse(t) + center         "
+},
+{
+  "id": "cauchycor",
+  "level": "2",
+  "url": "sec_cauchythm.html#cauchycor",
+  "type": "Corollary",
+  "number": "4.3.8",
+  "title": "",
+  "body": "  Suppose is a region, is holomorphic in , is piecewise smooth, and . Then .   "
+},
+{
+  "id": "sec_cauchythm-18",
+  "level": "2",
+  "url": "sec_cauchythm.html#sec_cauchythm-18",
+  "type": "Example",
+  "number": "4.3.9",
+  "title": "",
+  "body": "  Since is holomorphic in and the ellipse in is -contractible, gives .   "
+},
+{
+  "id": "sec_cauchythm-20",
+  "level": "2",
+  "url": "sec_cauchythm.html#sec_cauchythm-20",
+  "type": "Corollary",
+  "number": "4.3.10",
+  "title": "",
+  "body": "  If is entire and is any piecewise smooth closed path, then .   "
+},
+{
+  "id": "exam_partialfr",
+  "level": "2",
+  "url": "sec_cauchythm.html#exam_partialfr",
+  "type": "Example",
+  "number": "4.3.11",
+  "title": "",
+  "body": "  We'd like to compute where is the unit circle, oriented counter-clockwise. (Try computing it from first principles.) We use a partial fractions expansion to write .  The first integral on the right-hand side is zero by Corollary applied to the function (note that is holomorphic in and is -contractible). The second integral is by Exercise , and so .   "
+},
+{
+  "id": "sec_CIF",
+  "level": "1",
+  "url": "sec_CIF.html",
+  "type": "Section",
+  "number": "4.4",
+  "title": "Cauchy’s Integral Formula",
+  "body": " Cauchy's Integral Formula  We recall our notations for the circle, open disk, and closed disk, respectively, with center and radius . Unless stated otherwise, we orient counter-clockwise.    If is holomorphic in an open set containing then . Cauchy's integral formula     This is Cauchy's Integral Formula for the case that the integration path is a circle; we will prove the general statement at the end of this chapter. However, already this special case is worth meditating over: the data on the right-hand side of is entirely given by the values that takes on for on the circle . Thus Cauchy's Integral Formula says that this data determines . This has the flavor of mean-value theorems , which the following corollary makes even more apparent. mean-value theorem for holomorphic functions     If is holomorphic in an open set containing , then .     By assumption, is holomorphic in an open set that contains , and so is holomorphic in . For any , , and so Cauchy's and give   Here the inequality comes from  .  Now let . Because is continuous at , there exists such that implies .  In particular, this will hold for , and so implies, with , .  Since we can choose as small as we'd like, the left-hand side must be zero, which proves .   now follows by definition of the complex integral: , which splits into real and imaginary parts as     Theorem can be used to compute integrals of a certain nature.    We'd like to determine .  The function is holomorphic in , which contains . Thus we can apply : .    Now we would like to extend by replacing with any simple closed piecewise smooth path around . Intuitively, Cauchy's Theorem should supply such an extension: assuming that is holomorphic in a region that includes and its inside, we can find a small such that , and since is holomorphic in and , and yield .  This all smells like good coffee, except ... we might be just dreaming. coffee The argument may be intuitively clear, but intuition doesn't prove anything. We'll look at it carefully, fill in the gaps, and then we'll see what we have proved.  First, we need a notion of the inside of a simple closed path. The fact that any such path divides the complex plane into two connected open sets of (the bounded one of which we call the inside or interior of ) is one of the first substantial theorems ever proved in topology, the Jordan Curve Theorem , due to Camille Jordan (1838 1922). inside  path inside of  path interior of  topology  Jordan curve theorem  This is the Jordan of Jordan normal form fame, but not the one of Gauß Jordan elimination . In this book we shall assume the validity of the Jordan Curve Theorem.  Second, we need to specify the orientation of , since if the formula gives for one orientation then it will give for the other orientation.    A piecewise smooth simple closed path is positively oriented if it is parametrized so that its inside is on the left as our parametrization traverses . An example is a counter-clockwise oriented circle. path positively oriented  positive orientation     Third, if is positively oriented and is a closed disk inside then we need a homotopy from to the counterclockwise circle that stays inside and away from . This is provided directly by another substantial theorem of topology, the Annulus Theorem , although there are other methods. Again, in this book we shall assume the existence of this homotopy.  These results of topology seem intuitively obvious but are surprisingly difficult to prove. If you'd like to see a proof, we recommend that you take a course in topology.  There is still a subtle problem with our proof. We assumed that is in , but we also need the interior of to be contained in , since we need to apply Cauchy's Theorem to the homotopy between and . We could just add this as an assumption to our theorem, but the following formulation will be more convenient later.   Cauchy's Integral Formula   Suppose is holomorphic in the region and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and . Then .    So all that we need to finish the proof of is one more fact from topology. But we can prove this one:    Suppose is a simple, closed, piecewise smooth path in the region . Then contains the interior of if and only if .     One direction is easy: If contains the interior of and is any closed disk in the interior of then there is a -homotopy from to , and .  In the other direction, we argue by contradiction: Assume but does not contain the interior of . So we can find a point in the interior of which is not in .  Define for . Now is holomorphic on and , so applies, and we have . On the other hand, choose so that is inside . There is a homotopy in from to , so Cauchy's , plus , shows that .  This contradiction finishes the proof.   Notice that, instead of using topology to prove a theorem about holomorphic functions, we just used holomorphic functions to prove a theorem about topology.    Continuing , says that for any positively oriented, simple, closed, piecewise smooth path that contains on its inside and that is -contractible.      To compute we use the partial fractions expansion from : .  For the two integrals on the right-hand side, we can use Theorem with the function , which is entire, and so (note that both 2 and 0 are inside ) .    "
+},
+{
+  "id": "cauchyformulacircle",
+  "level": "2",
+  "url": "sec_CIF.html#cauchyformulacircle",
+  "type": "Theorem",
+  "number": "4.4.1",
+  "title": "",
+  "body": "  If is holomorphic in an open set containing then . Cauchy's integral formula    "
+},
+{
+  "id": "meanvalue",
+  "level": "2",
+  "url": "sec_CIF.html#meanvalue",
+  "type": "Corollary",
+  "number": "4.4.2",
+  "title": "",
+  "body": "  If is holomorphic in an open set containing , then .   "
+},
+{
+  "id": "sec_CIF-6",
+  "level": "2",
+  "url": "sec_CIF.html#sec_CIF-6",
+  "type": "Proof",
+  "number": "4.4.1",
+  "title": "",
+  "body": " By assumption, is holomorphic in an open set that contains , and so is holomorphic in . For any , , and so Cauchy's and give   Here the inequality comes from  .  Now let . Because is continuous at , there exists such that implies .  In particular, this will hold for , and so implies, with , .  Since we can choose as small as we'd like, the left-hand side must be zero, which proves .   now follows by definition of the complex integral: , which splits into real and imaginary parts as   "
+},
+{
+  "id": "exam_cif",
+  "level": "2",
+  "url": "sec_CIF.html#exam_cif",
+  "type": "Example",
+  "number": "4.4.3",
+  "title": "",
+  "body": "  We'd like to determine .  The function is holomorphic in , which contains . Thus we can apply : .   "
+},
+{
+  "id": "sec_CIF-13",
+  "level": "2",
+  "url": "sec_CIF.html#sec_CIF-13",
+  "type": "Definition",
+  "number": "4.4.4",
+  "title": "",
+  "body": "  A piecewise smooth simple closed path is positively oriented if it is parametrized so that its inside is on the left as our parametrization traverses . An example is a counter-clockwise oriented circle. path positively oriented  positive orientation    "
+},
+{
+  "id": "cauchyformula",
+  "level": "2",
+  "url": "sec_CIF.html#cauchyformula",
+  "type": "Theorem",
+  "number": "4.4.5",
+  "title": "Cauchy’s Integral Formula.",
+  "body": " Cauchy's Integral Formula   Suppose is holomorphic in the region and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and . Then .   "
+},
+{
+  "id": "simpleContractible",
+  "level": "2",
+  "url": "sec_CIF.html#simpleContractible",
+  "type": "Proposition",
+  "number": "4.4.6",
+  "title": "",
+  "body": "  Suppose is a simple, closed, piecewise smooth path in the region . Then contains the interior of if and only if .   "
+},
+{
+  "id": "sec_CIF-20",
+  "level": "2",
+  "url": "sec_CIF.html#sec_CIF-20",
+  "type": "Proof",
+  "number": "4.4.2",
+  "title": "",
+  "body": " One direction is easy: If contains the interior of and is any closed disk in the interior of then there is a -homotopy from to , and .  In the other direction, we argue by contradiction: Assume but does not contain the interior of . So we can find a point in the interior of which is not in .  Define for . Now is holomorphic on and , so applies, and we have . On the other hand, choose so that is inside . There is a homotopy in from to , so Cauchy's , plus , shows that .  This contradiction finishes the proof.  "
+},
+{
+  "id": "exam_cifz_2_1",
+  "level": "2",
+  "url": "sec_CIF.html#exam_cifz_2_1",
+  "type": "Example",
+  "number": "4.4.7",
+  "title": "",
+  "body": "  Continuing , says that for any positively oriented, simple, closed, piecewise smooth path that contains on its inside and that is -contractible.   "
+},
+{
+  "id": "sec_CIF-23",
+  "level": "2",
+  "url": "sec_CIF.html#sec_CIF-23",
+  "type": "Example",
+  "number": "4.4.8",
+  "title": "",
+  "body": "  To compute we use the partial fractions expansion from : .  For the two integrals on the right-hand side, we can use Theorem with the function , which is entire, and so (note that both 2 and 0 are inside ) .   "
+},
+{
+  "id": "intchapter-7",
+  "level": "1",
+  "url": "intchapter-7.html",
+  "type": "Exercises",
+  "number": "4.5",
+  "title": "Exercises",
+  "body": "   Find the length of the following paths:    ,      ,      ,      ,      Draw pictures of each path and convince yourself that the lengths you computed are sensible. (The last path is a cycloid , the trace of a fixed point on a wheel as it makes one rotation.) cycloid       Compute the lengths of the paths from Exercise :   the circle     the line segment from to     the top half of the circle     the rectangle with vertices          Integrate the function over the three paths given in .      Compute where is the unit circle, oriented counterclockwise. More generally, show that for any and , .      Integrate the following functions over the circle :                            Evaluate the integrals , , and along each of the following paths. ( Hint : You can get the second two integrals after you calculate the first two by writing and as .)    is the line segment from to           for some          Evaluate for each of the following paths:    is the line segment from to           is the arc of the parabola from to          Compute for the following functions and paths :    and , .     and is the semicircle from through to .     and is the line segment from to a point .     and is the line segment from to .     and is parametrized by , , and satisfies , , and .     and is some piecewise smooth path from to .         Prove and the fact that the length of does not change under reparametrization. ( Hint : Assume , , and are smooth. Start with the definition of , apply the chain rule to , and then use the change of variables formula, .)      Prove the following integration by parts statement: Let and be holomorphic in , and suppose is a piecewise smooth path from to . integration by parts Then .      Let .   Show that .    Show that if is a nonzero integer.    What is ?         Compute .      Show that for any closed piecewise smooth and any integer . (If is negative, assume that does not pass through the origin, since otherwise the integral is not defined.)       excluded for a good reason: gives a counterexample. Generalizing these, if is any integer, find a closed path so that .      Taking the previous two exercises one step further, fix and let be a simple, closed, positively oriented, piecewise smooth path such that is inside . Show that, for any integer ,       Prove that for any closed path .      Show that is an antiderivative of for . Is equal to ?      Compute the following integrals, where is the line segment from 4 to .                            Compute the following integrals. ( Hint : One of these integrals is considerably easier than the other.)    where .     where .         Show that gives a homotopy between the unit circle and the square with vertices .      Use give a homotopy that is an alternative to and does not need a piecewise definition.      Suppose and and are two counterclockwise circles so that is inside both of them. Give a homotopy that proves .      Prove that is an equivalence relation.      Suppose that is a closed path in a region , parametrized by , and is a continuous increasing function from onto . Show that is -homotopic to the reparametrized path . ( Hint : Make use of for .)        Prove that any closed path is -contractible.    Prove that any two closed paths are -homotopic.        This exercise gives an alternative proof of via Green's . Green's theorem Suppose is a region, is holomorphic in , is continuous, is a simple piecewise smooth closed curve, and . Explain that we may write and show that these integrals vanish, by using Green's together with , and then the Cauchy Riemann equations  .      Fix . Compute .  You should get different answers for and . ( Hint : In one case is contractible in . In the other you can combine and .)      Suppose is a polynomial in and is a closed piecewise smooth path in . Show that .      Show that by arguing that this integral does not change if we replace by for any , then use  to obtain an upper bound for that goes to 0 as .      Compute the real integral by writing the sine function in terms of the exponential function and making the substitution to turn the real integral into a complex integral.      Prove that for , .  (The function is the Poisson kernel  Named after Siméon Denis Poisson (1781 1840). and plays an important role in the world of harmonic functions, as we will see in .) Poisson kernel       Suppose and are holomorphic in the region and is a simple piecewise smooth -contractible path. Prove that if for all , then for all inside .      Show that , for simple paths, is also a corollary of .      Compute for .      Find for , and . ( Hint : Compute a partial-fractions expansion of the integrand.)      Use the Cauchy Integral Formula ( ) to evaluate the integral in when .      Compute the following integrals.                            Let and define the two paths oriented counter-clockwise and oriented clockwise. Show that even though where , the region of holomorphicity of .      This exercise gives an alternative proof of Cauchy's Integral Formula ( ) that does not depend on Cauchy's Theorem ( ). Suppose the region is convex ; this means that, whenever and are in , the line segment between them is also in . Suppose is holomorphic in , is continuous, and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and .   Consider the function given by . Show that . ( Hint : Use Theorem (Leibniz's rule) and then find an antiderivative for .)    Prove by evaluating and .    Why did we assume is convex?       "
+},
+{
+  "id": "ex_lenth",
+  "level": "2",
+  "url": "intchapter-7.html#ex_lenth",
+  "type": "Exercise",
+  "number": "4.5.1",
+  "title": "",
+  "body": "  Find the length of the following paths:    ,      ,      ,      ,      Draw pictures of each path and convince yourself that the lengths you computed are sensible. (The last path is a cycloid , the trace of a fixed point on a wheel as it makes one rotation.) cycloid    "
+},
+{
+  "id": "intchapter-7-2",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-2",
+  "type": "Exercise",
+  "number": "4.5.2",
+  "title": "",
+  "body": "  Compute the lengths of the paths from Exercise :   the circle     the line segment from to     the top half of the circle     the rectangle with vertices       "
+},
+{
+  "id": "intchapter-7-3",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-3",
+  "type": "Exercise",
+  "number": "4.5.3",
+  "title": "",
+  "body": "  Integrate the function over the three paths given in .   "
+},
+{
+  "id": "ex_circleint",
+  "level": "2",
+  "url": "intchapter-7.html#ex_circleint",
+  "type": "Exercise",
+  "number": "4.5.4",
+  "title": "",
+  "body": "  Compute where is the unit circle, oriented counterclockwise. More generally, show that for any and , .   "
+},
+{
+  "id": "ex_4_2",
+  "level": "2",
+  "url": "intchapter-7.html#ex_4_2",
+  "type": "Exercise",
+  "number": "4.5.5",
+  "title": "",
+  "body": "  Integrate the following functions over the circle :                         "
+},
+{
+  "id": "ex_varint",
+  "level": "2",
+  "url": "intchapter-7.html#ex_varint",
+  "type": "Exercise",
+  "number": "4.5.6",
+  "title": "",
+  "body": "  Evaluate the integrals , , and along each of the following paths. ( Hint : You can get the second two integrals after you calculate the first two by writing and as .)    is the line segment from to           for some       "
+},
+{
+  "id": "ex_expex",
+  "level": "2",
+  "url": "intchapter-7.html#ex_expex",
+  "type": "Exercise",
+  "number": "4.5.7",
+  "title": "",
+  "body": "  Evaluate for each of the following paths:    is the line segment from to           is the arc of the parabola from to       "
+},
+{
+  "id": "intchapter-7-8",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-8",
+  "type": "Exercise",
+  "number": "4.5.8",
+  "title": "",
+  "body": "  Compute for the following functions and paths :    and , .     and is the semicircle from through to .     and is the line segment from to a point .     and is the line segment from to .     and is parametrized by , , and satisfies , , and .     and is some piecewise smooth path from to .      "
+},
+{
+  "id": "ex_IntegrationIsIndependentOfParametrization",
+  "level": "2",
+  "url": "intchapter-7.html#ex_IntegrationIsIndependentOfParametrization",
+  "type": "Exercise",
+  "number": "4.5.9",
+  "title": "",
+  "body": "  Prove and the fact that the length of does not change under reparametrization. ( Hint : Assume , , and are smooth. Start with the definition of , apply the chain rule to , and then use the change of variables formula, .)   "
+},
+{
+  "id": "intchapter-7-10",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-10",
+  "type": "Exercise",
+  "number": "4.5.10",
+  "title": "",
+  "body": "  Prove the following integration by parts statement: Let and be holomorphic in , and suppose is a piecewise smooth path from to . integration by parts Then .   "
+},
+{
+  "id": "intchapter-7-11",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-11",
+  "type": "Exercise",
+  "number": "4.5.11",
+  "title": "",
+  "body": "  Let .   Show that .    Show that if is a nonzero integer.    What is ?      "
+},
+{
+  "id": "ex_412",
+  "level": "2",
+  "url": "intchapter-7.html#ex_412",
+  "type": "Exercise",
+  "number": "4.5.12",
+  "title": "",
+  "body": "  Compute .   "
+},
+{
+  "id": "ex_4_3",
+  "level": "2",
+  "url": "intchapter-7.html#ex_4_3",
+  "type": "Exercise",
+  "number": "4.5.13",
+  "title": "",
+  "body": "  Show that for any closed piecewise smooth and any integer . (If is negative, assume that does not pass through the origin, since otherwise the integral is not defined.)   "
+},
+{
+  "id": "intchapter-7-14",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-14",
+  "type": "Exercise",
+  "number": "4.5.14",
+  "title": "",
+  "body": "   excluded for a good reason: gives a counterexample. Generalizing these, if is any integer, find a closed path so that .   "
+},
+{
+  "id": "ex_laurentoutlook",
+  "level": "2",
+  "url": "intchapter-7.html#ex_laurentoutlook",
+  "type": "Exercise",
+  "number": "4.5.15",
+  "title": "",
+  "body": "  Taking the previous two exercises one step further, fix and let be a simple, closed, positively oriented, piecewise smooth path such that is inside . Show that, for any integer ,    "
+},
+{
+  "id": "intchapter-7-16",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-16",
+  "type": "Exercise",
+  "number": "4.5.16",
+  "title": "",
+  "body": "  Prove that for any closed path .   "
+},
+{
+  "id": "intchapter-7-17",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-17",
+  "type": "Exercise",
+  "number": "4.5.17",
+  "title": "",
+  "body": "  Show that is an antiderivative of for . Is equal to ?   "
+},
+{
+  "id": "ex_funearlyint",
+  "level": "2",
+  "url": "intchapter-7.html#ex_funearlyint",
+  "type": "Exercise",
+  "number": "4.5.18",
+  "title": "",
+  "body": "  Compute the following integrals, where is the line segment from 4 to .                         "
+},
+{
+  "id": "intchapter-7-19",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-19",
+  "type": "Exercise",
+  "number": "4.5.19",
+  "title": "",
+  "body": "  Compute the following integrals. ( Hint : One of these integrals is considerably easier than the other.)    where .     where .      "
+},
+{
+  "id": "ex_checkhomotopyexample",
+  "level": "2",
+  "url": "intchapter-7.html#ex_checkhomotopyexample",
+  "type": "Exercise",
+  "number": "4.5.20",
+  "title": "",
+  "body": "  Show that gives a homotopy between the unit circle and the square with vertices .   "
+},
+{
+  "id": "intchapter-7-21",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-21",
+  "type": "Exercise",
+  "number": "4.5.21",
+  "title": "",
+  "body": "  Use give a homotopy that is an alternative to and does not need a piecewise definition.   "
+},
+{
+  "id": "ex_circlehomotopy",
+  "level": "2",
+  "url": "intchapter-7.html#ex_circlehomotopy",
+  "type": "Exercise",
+  "number": "4.5.22",
+  "title": "",
+  "body": "  Suppose and and are two counterclockwise circles so that is inside both of them. Give a homotopy that proves .   "
+},
+{
+  "id": "ex_homotopyEquivalence",
+  "level": "2",
+  "url": "intchapter-7.html#ex_homotopyEquivalence",
+  "type": "Exercise",
+  "number": "4.5.23",
+  "title": "",
+  "body": "  Prove that is an equivalence relation.   "
+},
+{
+  "id": "ex_homotopyReparametrization",
+  "level": "2",
+  "url": "intchapter-7.html#ex_homotopyReparametrization",
+  "type": "Exercise",
+  "number": "4.5.24",
+  "title": "",
+  "body": "  Suppose that is a closed path in a region , parametrized by , and is a continuous increasing function from onto . Show that is -homotopic to the reparametrized path . ( Hint : Make use of for .)   "
+},
+{
+  "id": "C-contractible",
+  "level": "2",
+  "url": "intchapter-7.html#C-contractible",
+  "type": "Exercise",
+  "number": "4.5.25",
+  "title": "",
+  "body": "    Prove that any closed path is -contractible.    Prove that any two closed paths are -homotopic.     "
+},
+{
+  "id": "ex_cauchyfromgreen",
+  "level": "2",
+  "url": "intchapter-7.html#ex_cauchyfromgreen",
+  "type": "Exercise",
+  "number": "4.5.26",
+  "title": "",
+  "body": "  This exercise gives an alternative proof of via Green's . Green's theorem Suppose is a region, is holomorphic in , is continuous, is a simple piecewise smooth closed curve, and . Explain that we may write and show that these integrals vanish, by using Green's together with , and then the Cauchy Riemann equations  .   "
+},
+{
+  "id": "ex_circleint2",
+  "level": "2",
+  "url": "intchapter-7.html#ex_circleint2",
+  "type": "Exercise",
+  "number": "4.5.27",
+  "title": "",
+  "body": "  Fix . Compute .  You should get different answers for and . ( Hint : In one case is contractible in . In the other you can combine and .)   "
+},
+{
+  "id": "intchapter-7-28",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-28",
+  "type": "Exercise",
+  "number": "4.5.28",
+  "title": "",
+  "body": "  Suppose is a polynomial in and is a closed piecewise smooth path in . Show that .   "
+},
+{
+  "id": "ex_pathtoinfty",
+  "level": "2",
+  "url": "intchapter-7.html#ex_pathtoinfty",
+  "type": "Exercise",
+  "number": "4.5.29",
+  "title": "",
+  "body": "  Show that by arguing that this integral does not change if we replace by for any , then use  to obtain an upper bound for that goes to 0 as .   "
+},
+{
+  "id": "ex_4_5",
+  "level": "2",
+  "url": "intchapter-7.html#ex_4_5",
+  "type": "Exercise",
+  "number": "4.5.30",
+  "title": "",
+  "body": "  Compute the real integral by writing the sine function in terms of the exponential function and making the substitution to turn the real integral into a complex integral.   "
+},
+{
+  "id": "ex_poissonkernel",
+  "level": "2",
+  "url": "intchapter-7.html#ex_poissonkernel",
+  "type": "Exercise",
+  "number": "4.5.31",
+  "title": "",
+  "body": "  Prove that for , .  (The function is the Poisson kernel  Named after Siméon Denis Poisson (1781 1840). and plays an important role in the world of harmonic functions, as we will see in .) Poisson kernel    "
+},
+{
+  "id": "intchapter-7-32",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-32",
+  "type": "Exercise",
+  "number": "4.5.32",
+  "title": "",
+  "body": "  Suppose and are holomorphic in the region and is a simple piecewise smooth -contractible path. Prove that if for all , then for all inside .   "
+},
+{
+  "id": "intchapter-7-33",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-33",
+  "type": "Exercise",
+  "number": "4.5.33",
+  "title": "",
+  "body": "  Show that , for simple paths, is also a corollary of .   "
+},
+{
+  "id": "ex_4_4",
+  "level": "2",
+  "url": "intchapter-7.html#ex_4_4",
+  "type": "Exercise",
+  "number": "4.5.34",
+  "title": "",
+  "body": "  Compute for .   "
+},
+{
+  "id": "ex_partfracint",
+  "level": "2",
+  "url": "intchapter-7.html#ex_partfracint",
+  "type": "Exercise",
+  "number": "4.5.35",
+  "title": "",
+  "body": "  Find for , and . ( Hint : Compute a partial-fractions expansion of the integrand.)   "
+},
+{
+  "id": "intchapter-7-36",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-36",
+  "type": "Exercise",
+  "number": "4.5.36",
+  "title": "",
+  "body": "  Use the Cauchy Integral Formula ( ) to evaluate the integral in when .   "
+},
+{
+  "id": "ex_funints",
+  "level": "2",
+  "url": "intchapter-7.html#ex_funints",
+  "type": "Exercise",
+  "number": "4.5.37",
+  "title": "",
+  "body": "  Compute the following integrals.                         "
+},
+{
+  "id": "intchapter-7-38",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-38",
+  "type": "Exercise",
+  "number": "4.5.38",
+  "title": "",
+  "body": "  Let and define the two paths oriented counter-clockwise and oriented clockwise. Show that even though where , the region of holomorphicity of .   "
+},
+{
+  "id": "intchapter-7-39",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-39",
+  "type": "Exercise",
+  "number": "4.5.39",
+  "title": "",
+  "body": "  This exercise gives an alternative proof of Cauchy's Integral Formula ( ) that does not depend on Cauchy's Theorem ( ). Suppose the region is convex ; this means that, whenever and are in , the line segment between them is also in . Suppose is holomorphic in , is continuous, and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and .   Consider the function given by . Show that . ( Hint : Use Theorem (Leibniz's rule) and then find an antiderivative for .)    Prove by evaluating and .    Why did we assume is convex?      "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
