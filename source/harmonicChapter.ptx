@@ -1,22 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="harmonicChapter">
   <title>Harmonic Functions</title>
   <introduction>
     <blockquote>
-      <em>The shortest route between two truths in the real domain
-      passes through the complex domain.</em>
-      Jacques Hadamard (1865<ndash/>1963)
+      <p>
+        <em>The shortest route between two truths in the real domain
+        passes through the complex domain.</em>
+      </p>
+      <attribution>
+        Jacques Hadamard (1865<ndash/>1963)
+      </attribution>
     </blockquote>
     <p>
-      We will now spend a short while on certain functions defined on subsets of the complex plane that are <em>real</em> valued,
+      We will now spend a short while on certain functions defined on
+      subsets of the complex plane that are <em>real</em> valued, 
       namely those functions that are harmonic in some region.
-      The main motivation for studying harmonic functions is that the partial differential equation they satisfy is very common in the physical sciences.
-      Their definition briefly showed its face in <xref ref="functionchapter">Chapter</xref>,
+      The main motivation for studying harmonic functions is that the
+      partial differential equation they satisfy is very common in the
+      physical sciences. 
+      Their definition briefly showed its face in
+      <xref ref="functionchapter"/>,
       but we study them only now in more detail,
       since we have more machinery at our disposal.
       This machinery comes from <em>complex</em>-valued functions,
-      which are, nevertheless, intimately connected to harmonic functions.
+      which are, nevertheless, intimately connected to harmonic
+      functions. 
     </p>
   </introduction>
+  
   <xi:include  href="sec_defharmonic.ptx"/>
-  <xi:include  href="sec_harmonicmeanvalue.ptx"/>
+  <!--
+      <xi:include  href="sec_harmonicmeanvalue.ptx"/>
+  -->
 </chapter>
