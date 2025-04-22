@@ -3367,6 +3367,123 @@ var ptx_lunr_docs = [
   "body": "  This exercise outlines how to extend some of the results of this chapter to the Riemann sphere as defined in Section . Suppose is a region that contains 0, let be a continuous function on , and let be a piecewise smooth path in avoiding the origin, parametrized as , .   Show that where , .     Now suppose is finite. Let and define the function by   Thus is continuous on and (a) gives the identity .  In particular, we can transfer certain properties between these two integrals. For example, if is path independent, so is . Here is but one application:   Show that is path independent for any integer .    Conclude (once more) that for any integer .      "
 },
 {
+  "id": "sec_defharmonic",
+  "level": "1",
+  "url": "sec_defharmonic.html",
+  "type": "Section",
+  "number": "6.1",
+  "title": "Definition and Basic Properties",
+  "body": " Definition and Basic Properties  Recall from the definition of a harmonic function:    Let be a region. A function is harmonic in if it has continuous second partials in and satisfies the Laplace Named after Pierre-Simon Laplace (1749 1827). equation  . Laplace equation  harmonic       The function is harmonic in since .      The function is harmonic in because .    There are (at least) two reasons why harmonic functions are part of the study of complex analysis, and they can be found in the next two theorems.    Suppose is holomorphic in the region . Then and are harmonic in .    First, by Corollary , and have continuous second partials. By Theorem , and satisfy the Cauchy Riemann equations  in . Hence we can repeat our argumentation in , .  Note that in the last step we used the fact that has continuous second partials. The proof that satisfies the Laplace equation is practically identical.     gives us an effective way to show that certain functions are harmonic in by way of constructing an accompanying holomorphic function on .    Revisiting , we can see that is harmonic in also by noticing that is entire and .      A second reason that the function from is harmonic in is that is entire and .     practically shouts for a converse. There are, however, functions that are harmonic in a region but not the real part (say) of a holomorphic function in ( ). We do obtain a converse of if we restrict ourselves to simply-connected regions. region simply-connected     Suppose is harmonic on a simply-connected region . Then there exists a harmonic function in such that is holomorphic in .    The function is called a harmonic conjugate of . harmonic conjugate    We will explicitly construct a holomorphic function (and thus ). First, let .  The plan is to prove that is holomorphic, and then to construct an antiderivative of , which will be almost the function that we're after. To prove that is holomorphic, we use Theorem : first because is harmonic, and have continuous partials. Moreover, again because is harmonic, and satisfy the Cauchy Riemann equations : and .   implies that is holomorphic in , and so we can use to obtain an antiderivative of on (here is where we use the fact that is simply connected). Now we decompose into its real and imaginary parts as . Then, again using , .  (The second equation follows from the Cauchy Riemann equations .) But the real part of is , so we obtain and thus for some function that depends only on . On the other hand, comparing the imaginary parts of and yields and so where depends only on . Hence has to be constant, and . But then is a function holomorphic in whose real part is , as promised.   As a side remark, with hindsight it should not be surprising that the function that we first constructed in our proof is the derivative of the sought-after function . Namely, by such a function must satisfy .  (The second equation follows from the Cauchy Riemann equations .) It is also worth mentioning that our proof of shows that if is harmonic in , then is the real part of the function , which is holomorphic in  regardless of whether is simply connected or not .  As our proof of is constructive, we can use it to produce harmonic conjugates.    Revisiting for the second time, we can construct a harmonic conjugate of along the lines of our proof of : first let which has antiderivative whose real part is and whose imaginary part gives a harmonic conjugate for .    We can give a more practical machinery for computing harmonic conjugates, which only depends on computing certain (calculus) integrals; thus this can be easily applied, e.g., to polynomials. We state it for functions that are harmonic in the whole complex plane, but you can easily adjust it to functions that are harmonic on certain subsets of .  is due to Sheldon Axler and the basis for his Mathematica package Harmonic Function Theory.     Suppose is harmonic on . Then is a harmonic conjugate for .     We will prove that satisfies the Cauchy Riemann equations  . The first follows from , by the Fundamental Theorem of Calculus ( ).  Second, by Leibniz's Rule ( ), the Fundamental Theorem of Calculus ( ), and the fact that is harmonic, .   As you might imagine, and allow for a powerful interplay between harmonic and holomorphic functions. In that spirit, the following theorem appears not too surprising. You might appreciate its depth better when looking back at the simple definition of a harmonic function.    A harmonic function is infinitely differentiable.    Suppose is harmonic in and . We will show that exists for all positive integers . Let such that the disk is contained in . Since is simply connected, asserts the existence of a holomorphic function in such that on . By , is infinitely differentiable on , and hence so is its real part .    This proof is the first in a series of proofs that uses the fact that the property of being harmonic is local it is a property at each point of a certain region. Note that in our proof of we did not construct a function that is holomorphic in ; we only constructed such a function on the disk . This might very well differ from one disk to the next.  "
+},
+{
+  "id": "sec_defharmonic-3",
+  "level": "2",
+  "url": "sec_defharmonic.html#sec_defharmonic-3",
+  "type": "Definition",
+  "number": "6.1.1",
+  "title": "",
+  "body": "  Let be a region. A function is harmonic in if it has continuous second partials in and satisfies the Laplace Named after Pierre-Simon Laplace (1749 1827). equation  . Laplace equation  harmonic    "
+},
+{
+  "id": "exam_xyharmonic",
+  "level": "2",
+  "url": "sec_defharmonic.html#exam_xyharmonic",
+  "type": "Example",
+  "number": "6.1.2",
+  "title": "",
+  "body": "  The function is harmonic in since .   "
+},
+{
+  "id": "exam_excosyharmonic",
+  "level": "2",
+  "url": "sec_defharmonic.html#exam_excosyharmonic",
+  "type": "Example",
+  "number": "6.1.3",
+  "title": "",
+  "body": "  The function is harmonic in because .   "
+},
+{
+  "id": "reimharmonic",
+  "level": "2",
+  "url": "sec_defharmonic.html#reimharmonic",
+  "type": "Proposition",
+  "number": "6.1.4",
+  "title": "",
+  "body": "  Suppose is holomorphic in the region . Then and are harmonic in .    First, by Corollary , and have continuous second partials. By Theorem , and satisfy the Cauchy Riemann equations  in . Hence we can repeat our argumentation in , .  Note that in the last step we used the fact that has continuous second partials. The proof that satisfies the Laplace equation is practically identical.   "
+},
+{
+  "id": "sec_defharmonic-9",
+  "level": "2",
+  "url": "sec_defharmonic.html#sec_defharmonic-9",
+  "type": "Example",
+  "number": "6.1.5",
+  "title": "",
+  "body": "  Revisiting , we can see that is harmonic in also by noticing that is entire and .   "
+},
+{
+  "id": "sec_defharmonic-10",
+  "level": "2",
+  "url": "sec_defharmonic.html#sec_defharmonic-10",
+  "type": "Example",
+  "number": "6.1.6",
+  "title": "",
+  "body": "  A second reason that the function from is harmonic in is that is entire and .   "
+},
+{
+  "id": "harmonictoholomorphic",
+  "level": "2",
+  "url": "sec_defharmonic.html#harmonictoholomorphic",
+  "type": "Theorem",
+  "number": "6.1.7",
+  "title": "",
+  "body": "  Suppose is harmonic on a simply-connected region . Then there exists a harmonic function in such that is holomorphic in .   "
+},
+{
+  "id": "sec_defharmonic-14",
+  "level": "2",
+  "url": "sec_defharmonic.html#sec_defharmonic-14",
+  "type": "Proof",
+  "number": "6.1.1",
+  "title": "",
+  "body": " We will explicitly construct a holomorphic function (and thus ). First, let .  The plan is to prove that is holomorphic, and then to construct an antiderivative of , which will be almost the function that we're after. To prove that is holomorphic, we use Theorem : first because is harmonic, and have continuous partials. Moreover, again because is harmonic, and satisfy the Cauchy Riemann equations : and .   implies that is holomorphic in , and so we can use to obtain an antiderivative of on (here is where we use the fact that is simply connected). Now we decompose into its real and imaginary parts as . Then, again using , .  (The second equation follows from the Cauchy Riemann equations .) But the real part of is , so we obtain and thus for some function that depends only on . On the other hand, comparing the imaginary parts of and yields and so where depends only on . Hence has to be constant, and . But then is a function holomorphic in whose real part is , as promised.  "
+},
+{
+  "id": "sec_defharmonic-18",
+  "level": "2",
+  "url": "sec_defharmonic.html#sec_defharmonic-18",
+  "type": "Example",
+  "number": "6.1.8",
+  "title": "",
+  "body": "  Revisiting for the second time, we can construct a harmonic conjugate of along the lines of our proof of : first let which has antiderivative whose real part is and whose imaginary part gives a harmonic conjugate for .   "
+},
+{
+  "id": "thm_axler",
+  "level": "2",
+  "url": "sec_defharmonic.html#thm_axler",
+  "type": "Theorem",
+  "number": "6.1.9",
+  "title": "",
+  "body": "  Suppose is harmonic on . Then is a harmonic conjugate for .   "
+},
+{
+  "id": "sec_defharmonic-21",
+  "level": "2",
+  "url": "sec_defharmonic.html#sec_defharmonic-21",
+  "type": "Proof",
+  "number": "6.1.2",
+  "title": "",
+  "body": " We will prove that satisfies the Cauchy Riemann equations  . The first follows from , by the Fundamental Theorem of Calculus ( ).  Second, by Leibniz's Rule ( ), the Fundamental Theorem of Calculus ( ), and the fact that is harmonic, .  "
+},
+{
+  "id": "cor_harmonicinfdiff",
+  "level": "2",
+  "url": "sec_defharmonic.html#cor_harmonicinfdiff",
+  "type": "Corollary",
+  "number": "6.1.10",
+  "title": "",
+  "body": "  A harmonic function is infinitely differentiable.    Suppose is harmonic in and . We will show that exists for all positive integers . Let such that the disk is contained in . Since is simply connected, asserts the existence of a holomorphic function in such that on . By , is infinitely differentiable on , and hence so is its real part .   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
