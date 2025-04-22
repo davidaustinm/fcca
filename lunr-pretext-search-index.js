@@ -3052,6 +3052,321 @@ var ptx_lunr_docs = [
   "body": "  If is differentiable in a region then is infinitely differentiable in , and all partials of with respect to and exist and are continuous.   "
 },
 {
+  "id": "sec_antiderivagain",
+  "level": "1",
+  "url": "sec_antiderivagain.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Antiderivatives Again",
+  "body": " Antiderivatives Again  fundamental theorem of calculus  antiderivative   gave us an antiderivative for a function that has zero integrals over closed paths in a given region. Now that we have , meditating just a bit more over gives a converse of sorts to .   Morera's Named after Giancinto Morera (1856 1907). Theorem   Suppose is continuous in the region and for all piecewise smooth closed paths . Morera's theorem Then is holomorphic in .     yields an antiderivative for in . Because is holomorphic in , implies that is also holomorphic in .    Just like there are several variations of , we have variations of . For example, by , we can replace the condition for all piecewise smooth closed paths in the statement of by the condition for all closed polygonal paths (which, in fact, gives a stronger version of this result).  A special case of applies to regions in which every closed path is contractible.    A region is simply connected if for every closed path in . simply connected  region simply-connected     Loosely speaking, a region is simply connected if it has no holes.    Any disk is simply connected, as is . (You should draw a few closed paths in to convince yourself that they are all contractible.) The region is not simply connected as, e.g., the unit circle is not -contractible.    If is holomorphic in a simply-connected region then implies that satisfies the conditions of , whence we conclude:    Every holomorphic function on a simply-connected region has an antiderivative on .    Note that this corollary gives no indication of how to compute an antiderivative. For example, it says that the (entire) function given by has an antiderivative in ; it is an entirely different matter to derive a formula for .   also illustrates the role played by two of the regions in , in connection with the function . This function has no antiderivative on , as we proved in . Consequently (as one can see much more easily), is not simply connected. However, the function does have an antiderivative on the simply-connected region (namely, ), illustrating one instance implied by .  Finally, implies that, if we have two paths in a simply-connected region with the same endpoints, we can concatenate them changing direction on one to form a closed path, which proves:    If is holomorphic in a simply-connected region then is independent of the piecewise smooth path between and . path independent  integral path independent     When an integral depends only on the endpoints of the path, the integral is called path independent . shows that this situation is quite special; it also says that the function does not have an antiderivative in, for example, the region . (Actually, the function does not have an antiderivative in any nonempty region see .)  "
+},
+{
+  "id": "morera",
+  "level": "2",
+  "url": "sec_antiderivagain.html#morera",
+  "type": "Corollary",
+  "number": "5.2.1",
+  "title": "Morera’s<details class=\"ptx-footnote\" aria-live=\"polite\" id=\"morera-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 5.2.1\"><sup> 1 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"morera-1-1\">Named after Giancinto Morera (1856–1907).<\/div><\/details> Theorem.",
+  "body": " Morera's Named after Giancinto Morera (1856 1907). Theorem   Suppose is continuous in the region and for all piecewise smooth closed paths . Morera's theorem Then is holomorphic in .     yields an antiderivative for in . Because is holomorphic in , implies that is also holomorphic in .   "
+},
+{
+  "id": "sec_antiderivagain-8",
+  "level": "2",
+  "url": "sec_antiderivagain.html#sec_antiderivagain-8",
+  "type": "Definition",
+  "number": "5.2.2",
+  "title": "",
+  "body": "  A region is simply connected if for every closed path in . simply connected  region simply-connected    "
+},
+{
+  "id": "ex_simplyconn",
+  "level": "2",
+  "url": "sec_antiderivagain.html#ex_simplyconn",
+  "type": "Example",
+  "number": "5.2.3",
+  "title": "",
+  "body": "  Any disk is simply connected, as is . (You should draw a few closed paths in to convince yourself that they are all contractible.) The region is not simply connected as, e.g., the unit circle is not -contractible.   "
+},
+{
+  "id": "cor_simplyconnectedprimitive",
+  "level": "2",
+  "url": "sec_antiderivagain.html#cor_simplyconnectedprimitive",
+  "type": "Corollary",
+  "number": "5.2.4",
+  "title": "",
+  "body": "  Every holomorphic function on a simply-connected region has an antiderivative on .   "
+},
+{
+  "id": "antidercor2",
+  "level": "2",
+  "url": "sec_antiderivagain.html#antidercor2",
+  "type": "Corollary",
+  "number": "5.2.5",
+  "title": "",
+  "body": "  If is holomorphic in a simply-connected region then is independent of the piecewise smooth path between and . path independent  integral path independent    "
+},
+{
+  "id": "sec_cauchytothelimit",
+  "level": "1",
+  "url": "sec_cauchytothelimit.html",
+  "type": "Section",
+  "number": "5.3",
+  "title": "Taking Cauchy’s Formulas to the Limit",
+  "body": " Taking Cauchy's Formulas to the Limit  Many beautiful applications of Cauchy's Integral Formulas (such as and ) arise from considerations of the limiting behavior of the integral as the path gets arbitrarily large. The first and most famous application concerns the roots of polynomials. As a preparation we prove the following inequality, which is generally quite useful. It says that for large enough, a polynomial of degree looks almost like a constant times .    Suppose is a polynomial of degree with leading coefficient . Then there is a real number such that for all satisfying .    Since has degree , its leading coefficient is not zero, and we can factor out : .  Then the sum inside the last factor has limit as (by Exercise ), and so its modulus is between and as long as is large enough.     Fundamental Theorem of Algebra The Fundamental Theorem of Algebra was first proved by Gauß (in his doctoral dissertation in 1799, which had a flaw later, he provided three rigorous proofs), although its statement had been assumed to be correct long before Gauß's time. It is amusing that such an important algebraic result can be proved purely analytically. There are proofs of the Fundamental Theorem of Algebra that do not use complex analysis. On the other hand, all proofs use some analysis (such as the Intermediate Value Theorem). The Fundamental Theorem of Algebra refers to algebra in the sense that it existed in 1799, not to modern algebra. Thus one might say that the Fundamental Theorem of Algebra is neither fundamental to algebra nor even a theorem of algebra. The proof we give here is due to Anton R. Schep and appeared in the American Mathematical Monthly (January 2009).    Every nonconstant polynomial has a root in . polynomial  fundamental theorem of algebra     Suppose (by way of contradiction) that does not have any roots, that is, for all . Then is entire, and so Cauchy's Integral Formula ( ) gives , for any . Let be the degree of and its leading coefficient.  and allow us to estimate, for sufficiently large , .  The left-hand side is independent of , while the right-hand side can be made arbitrarily small (by choosing sufficiently large), and so we conclude that , which is impossible.     implies that any polynomial can be factored into linear terms of the form where is a root of , as we can apply the corollary, after getting a root , to (which is again a polynomial by the division algorithm), etc. (see also ).  A compact reformulation of the Fundamental Theorem of Algebra ( ) is to say that is algebraically closed . algebraically closed In contrast, is not algebraically closed.    The polynomial has no roots in . The Fundamental Theorem of Algebra ( ) states that must have a root (in fact, four roots) in :     Another powerful consequence of is the following result, which again has no counterpart in real analysis (consider, for example, the real sine function).   Liouville's This theorem is for historical reasons erroneously attributed to Joseph Liouville (1809 1882). It was published earlier by Cauchy; in fact, Gauß may well have known about it before Cauchy. Theorem   Any bounded entire function is constant. entire  Liouville's theorem     Suppose for all . Given any , we apply with the circle ; note that we can choose any because is entire. By  , .  The right-hand side can be made arbitrarily small, as we are allowed to choose as large as we want. This implies that , and hence, by , is constant.    As an example of the usefulness of Liouville's theorem ( Corollary ), we give another proof of the Fundamental Theorem of Algebra, close to Gauß's original proof.   Suppose (by way of contradiction) that does not have any roots, that is, for all . Thus the function is entire. But as , by ; consequently, by , is bounded. Now we apply Corollary to deduce that is constant. Hence is constant, which contradicts our assumptions.   As one more example of the theme of getting results from Cauchy's Integral Formulas by taking the limit as a path goes to infinity, we compute an improper integral. improper integral     We will compute the (real) integral .  Let be the counterclockwise semicircle formed by the segment of the real axis from to , followed by the circular arc of radius in the upper half plane from to , where ; see .   The integration paths in .     r=2          R    -R    \\gamma_R        We computed the integral over already in ; .  This holds for any , and so we can take the limit as . By Proposition  and the reverse triangle inequality (  ), which goes to as . Thus .  Of course this integral can be evaluated almost as easily using standard formulas from calculus. However, just slight modifications of this example lead to improper integrals that are beyond the scope of basic calculus; see and .    "
+},
+{
+  "id": "polynomialestimate",
+  "level": "2",
+  "url": "sec_cauchytothelimit.html#polynomialestimate",
+  "type": "Proposition",
+  "number": "5.3.1",
+  "title": "",
+  "body": "  Suppose is a polynomial of degree with leading coefficient . Then there is a real number such that for all satisfying .    Since has degree , its leading coefficient is not zero, and we can factor out : .  Then the sum inside the last factor has limit as (by Exercise ), and so its modulus is between and as long as is large enough.   "
+},
+{
+  "id": "fundthmalg",
+  "level": "2",
+  "url": "sec_cauchytothelimit.html#fundthmalg",
+  "type": "Theorem",
+  "number": "5.3.2",
+  "title": "Fundamental Theorem of Algebra <details class=\"ptx-footnote\" aria-live=\"polite\" id=\"fundthmalg-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 5.3.1\"><sup> 1 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"fundthmalg-1-1\">The Fundamental Theorem of Algebra was first proved by Gauß (in his doctoral dissertation in 1799, which had a flaw—later, he provided three rigorous proofs), although its statement had been assumed to be correct long before Gauß’s time. It is amusing that such an important algebraic result can be proved purely analytically.  There are proofs of the Fundamental Theorem of Algebra that do not use complex analysis.  On the other hand, all proofs use <em class=\"emphasis\">some<\/em> analysis (such as the Intermediate Value Theorem).  The Fundamental Theorem of Algebra refers to <em class=\"emphasis\">algebra<\/em> in the sense that it existed in 1799, not to modern algebra. Thus one might say that the Fundamental Theorem of Algebra is neither fundamental to algebra nor even a theorem of algebra. The proof we give here is due to Anton R. Schep and appeared in the <em class=\"emphasis\">American Mathematical Monthly<\/em> (January 2009).<\/div><\/details>.",
+  "body": " Fundamental Theorem of Algebra The Fundamental Theorem of Algebra was first proved by Gauß (in his doctoral dissertation in 1799, which had a flaw later, he provided three rigorous proofs), although its statement had been assumed to be correct long before Gauß's time. It is amusing that such an important algebraic result can be proved purely analytically. There are proofs of the Fundamental Theorem of Algebra that do not use complex analysis. On the other hand, all proofs use some analysis (such as the Intermediate Value Theorem). The Fundamental Theorem of Algebra refers to algebra in the sense that it existed in 1799, not to modern algebra. Thus one might say that the Fundamental Theorem of Algebra is neither fundamental to algebra nor even a theorem of algebra. The proof we give here is due to Anton R. Schep and appeared in the American Mathematical Monthly (January 2009).    Every nonconstant polynomial has a root in . polynomial  fundamental theorem of algebra     Suppose (by way of contradiction) that does not have any roots, that is, for all . Then is entire, and so Cauchy's Integral Formula ( ) gives , for any . Let be the degree of and its leading coefficient.  and allow us to estimate, for sufficiently large , .  The left-hand side is independent of , while the right-hand side can be made arbitrarily small (by choosing sufficiently large), and so we conclude that , which is impossible.   "
+},
+{
+  "id": "sec_cauchytothelimit-7",
+  "level": "2",
+  "url": "sec_cauchytothelimit.html#sec_cauchytothelimit-7",
+  "type": "Example",
+  "number": "5.3.3",
+  "title": "",
+  "body": "  The polynomial has no roots in . The Fundamental Theorem of Algebra ( ) states that must have a root (in fact, four roots) in :    "
+},
+{
+  "id": "liouville",
+  "level": "2",
+  "url": "sec_cauchytothelimit.html#liouville",
+  "type": "Corollary",
+  "number": "5.3.4",
+  "title": "Liouville’s <details class=\"ptx-footnote\" aria-live=\"polite\" id=\"liouville-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 5.3.2\"><sup> 2 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"liouville-1-1\">This theorem is for historical reasons erroneously attributed to Joseph Liouville (1809–1882). It was published earlier by Cauchy; in fact, Gauß may well have known about it before Cauchy.<\/div><\/details> Theorem.",
+  "body": " Liouville's This theorem is for historical reasons erroneously attributed to Joseph Liouville (1809 1882). It was published earlier by Cauchy; in fact, Gauß may well have known about it before Cauchy. Theorem   Any bounded entire function is constant. entire  Liouville's theorem     Suppose for all . Given any , we apply with the circle ; note that we can choose any because is entire. By  , .  The right-hand side can be made arbitrarily small, as we are allowed to choose as large as we want. This implies that , and hence, by , is constant.   "
+},
+{
+  "id": "sec_cauchytothelimit-11",
+  "level": "2",
+  "url": "sec_cauchytothelimit.html#sec_cauchytothelimit-11",
+  "type": "Proof",
+  "number": "5.3.1",
+  "title": "",
+  "body": " Suppose (by way of contradiction) that does not have any roots, that is, for all . Thus the function is entire. But as , by ; consequently, by , is bounded. Now we apply Corollary to deduce that is constant. Hence is constant, which contradicts our assumptions.  "
+},
+{
+  "id": "ex_eximpropint",
+  "level": "2",
+  "url": "sec_cauchytothelimit.html#ex_eximpropint",
+  "type": "Example",
+  "number": "5.3.5",
+  "title": "",
+  "body": "  We will compute the (real) integral .  Let be the counterclockwise semicircle formed by the segment of the real axis from to , followed by the circular arc of radius in the upper half plane from to , where ; see .   The integration paths in .     r=2          R    -R    \\gamma_R        We computed the integral over already in ; .  This holds for any , and so we can take the limit as . By Proposition  and the reverse triangle inequality (  ), which goes to as . Thus .  Of course this integral can be evaluated almost as easily using standard formulas from calculus. However, just slight modifications of this example lead to improper integrals that are beyond the scope of basic calculus; see and .   "
+},
+{
+  "id": "cachyconschapter-6",
+  "level": "1",
+  "url": "cachyconschapter-6.html",
+  "type": "Exercises",
+  "number": "5.4",
+  "title": "Exercises",
+  "body": "   Compute the following integrals, where is the boundary of the square with vertices at , positively oriented:                            Prove the formula for in Theorem .   Hint: Modify the proof of the integral formula for as follows:   Write a difference quotient for , and use the formula for in to convert this difference quotient into an integral of divided by some polynomial.    Subtract the desired integral formula for from your integral for the difference quotient, and simplify to get the analogue of .    Find a bound as in the proof of Theorem for the integrand, and conclude that the limit of the difference quotient is the desired integral formula.         Integrate the following functions over the circle :                                                     Compute where is any fixed complex number with .      Define through   (the integration path is from 0 to 1 along the real line). Prove that is holomorphic in the unit disk .      To appreciate Corollary , show that the function given by is differentiable in , yet is not even continuous (much less differentiable) at 0.      Prove that does not have an antiderivative in any nonempty region.      Show that has an antiderivative on . (What is it?)      Find a region on which has an antiderivative. (Your region should be as large as you can make it. How does this compare with the real function ?)      Suppose is continuous on and is finite. Show that is bounded. ( Hint : If , use the definition of the limit at infinity to show that there is so that if . Now argue that for . Use an argument from calculus to show that is bounded for .)      Let be a polynomial of degree . Prove that there exist complex numbers and positive integers such that , where .      Show that a polynomial of odd degree with real coefficients must have a real zero. ( Hint : Use .)      Suppose is entire and for all . Prove that is identically 0. ( Hint: Show first that is constant.)      Suppose is entire and there exists such that for all . Prove that is constant.      Suppose is entire with bounded real part, i.e., writing , there exists such that for all . Prove that is constant. ( Hint : Consider the function .)      Suppose is entire and there exist constants and such that for all . Prove that is a polynomial of degree at most 1. ( Hint : Use and .)      Suppose is holomorphic. Prove that for , .      Compute .      In this problem and . Modify our computations in as follows.   Show that where is again (as in ) the counterclockwise semicircle formed by the segment on the real axis, followed by the circular arc of radius in the upper half plane from to .    Show that for in the upper half plane, and conclude that for sufficiently large .    Show that and hence .    Conclude, by just considering the real part, that .         Compute .      This exercise outlines how to extend some of the results of this chapter to the Riemann sphere as defined in Section . Suppose is a region that contains 0, let be a continuous function on , and let be a piecewise smooth path in avoiding the origin, parametrized as , .   Show that where , .     Now suppose is finite. Let and define the function by   Thus is continuous on and (a) gives the identity .  In particular, we can transfer certain properties between these two integrals. For example, if is path independent, so is . Here is but one application:   Show that is path independent for any integer .    Conclude (once more) that for any integer .       "
+},
+{
+  "id": "ex_5_0",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_5_0",
+  "type": "Exercise",
+  "number": "5.4.1",
+  "title": "",
+  "body": "  Compute the following integrals, where is the boundary of the square with vertices at , positively oriented:                         "
+},
+{
+  "id": "cauchyformula2ex",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cauchyformula2ex",
+  "type": "Exercise",
+  "number": "5.4.2",
+  "title": "",
+  "body": "  Prove the formula for in Theorem .   Hint: Modify the proof of the integral formula for as follows:   Write a difference quotient for , and use the formula for in to convert this difference quotient into an integral of divided by some polynomial.    Subtract the desired integral formula for from your integral for the difference quotient, and simplify to get the analogue of .    Find a bound as in the proof of Theorem for the integrand, and conclude that the limit of the difference quotient is the desired integral formula.      "
+},
+{
+  "id": "ex_5_1",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_5_1",
+  "type": "Exercise",
+  "number": "5.4.3",
+  "title": "",
+  "body": "  Integrate the following functions over the circle :                                                  "
+},
+{
+  "id": "ex_54",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_54",
+  "type": "Exercise",
+  "number": "5.4.4",
+  "title": "",
+  "body": "  Compute where is any fixed complex number with .   "
+},
+{
+  "id": "ex_functiondefinedthroughmorera",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_functiondefinedthroughmorera",
+  "type": "Exercise",
+  "number": "5.4.5",
+  "title": "",
+  "body": "  Define through   (the integration path is from 0 to 1 along the real line). Prove that is holomorphic in the unit disk .   "
+},
+{
+  "id": "ex_diffbutnottwicediff",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_diffbutnottwicediff",
+  "type": "Exercise",
+  "number": "5.4.6",
+  "title": "",
+  "body": "  To appreciate Corollary , show that the function given by is differentiable in , yet is not even continuous (much less differentiable) at 0.   "
+},
+{
+  "id": "ex_zoverline2antider",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_zoverline2antider",
+  "type": "Exercise",
+  "number": "5.4.7",
+  "title": "",
+  "body": "  Prove that does not have an antiderivative in any nonempty region.   "
+},
+{
+  "id": "cachyconschapter-6-8",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cachyconschapter-6-8",
+  "type": "Exercise",
+  "number": "5.4.8",
+  "title": "",
+  "body": "  Show that has an antiderivative on . (What is it?)   "
+},
+{
+  "id": "ex_5_2",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_5_2",
+  "type": "Exercise",
+  "number": "5.4.9",
+  "title": "",
+  "body": "  Find a region on which has an antiderivative. (Your region should be as large as you can make it. How does this compare with the real function ?)   "
+},
+{
+  "id": "bounded",
+  "level": "2",
+  "url": "cachyconschapter-6.html#bounded",
+  "type": "Exercise",
+  "number": "5.4.10",
+  "title": "",
+  "body": "  Suppose is continuous on and is finite. Show that is bounded. ( Hint : If , use the definition of the limit at infinity to show that there is so that if . Now argue that for . Use an argument from calculus to show that is bounded for .)   "
+},
+{
+  "id": "fta",
+  "level": "2",
+  "url": "cachyconschapter-6.html#fta",
+  "type": "Exercise",
+  "number": "5.4.11",
+  "title": "",
+  "body": "  Let be a polynomial of degree . Prove that there exist complex numbers and positive integers such that , where .   "
+},
+{
+  "id": "cachyconschapter-6-12",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cachyconschapter-6-12",
+  "type": "Exercise",
+  "number": "5.4.12",
+  "title": "",
+  "body": "  Show that a polynomial of odd degree with real coefficients must have a real zero. ( Hint : Use .)   "
+},
+{
+  "id": "cachyconschapter-6-13",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cachyconschapter-6-13",
+  "type": "Exercise",
+  "number": "5.4.13",
+  "title": "",
+  "body": "  Suppose is entire and for all . Prove that is identically 0. ( Hint: Show first that is constant.)   "
+},
+{
+  "id": "cachyconschapter-6-14",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cachyconschapter-6-14",
+  "type": "Exercise",
+  "number": "5.4.14",
+  "title": "",
+  "body": "  Suppose is entire and there exists such that for all . Prove that is constant.   "
+},
+{
+  "id": "cachyconschapter-6-15",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cachyconschapter-6-15",
+  "type": "Exercise",
+  "number": "5.4.15",
+  "title": "",
+  "body": "  Suppose is entire with bounded real part, i.e., writing , there exists such that for all . Prove that is constant. ( Hint : Consider the function .)   "
+},
+{
+  "id": "cachyconschapter-6-16",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cachyconschapter-6-16",
+  "type": "Exercise",
+  "number": "5.4.16",
+  "title": "",
+  "body": "  Suppose is entire and there exist constants and such that for all . Prove that is a polynomial of degree at most 1. ( Hint : Use and .)   "
+},
+{
+  "id": "cachyconschapter-6-17",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cachyconschapter-6-17",
+  "type": "Exercise",
+  "number": "5.4.17",
+  "title": "",
+  "body": "  Suppose is holomorphic. Prove that for , .   "
+},
+{
+  "id": "ex_1__1_x_4_",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_1__1_x_4_",
+  "type": "Exercise",
+  "number": "5.4.18",
+  "title": "",
+  "body": "  Compute .   "
+},
+{
+  "id": "ex_cos_x___1_x_2_",
+  "level": "2",
+  "url": "cachyconschapter-6.html#ex_cos_x___1_x_2_",
+  "type": "Exercise",
+  "number": "5.4.19",
+  "title": "",
+  "body": "  In this problem and . Modify our computations in as follows.   Show that where is again (as in ) the counterclockwise semicircle formed by the segment on the real axis, followed by the circular arc of radius in the upper half plane from to .    Show that for in the upper half plane, and conclude that for sufficiently large .    Show that and hence .    Conclude, by just considering the real part, that .      "
+},
+{
+  "id": "x520",
+  "level": "2",
+  "url": "cachyconschapter-6.html#x520",
+  "type": "Exercise",
+  "number": "5.4.20",
+  "title": "",
+  "body": "  Compute .   "
+},
+{
+  "id": "cachyconschapter-6-21",
+  "level": "2",
+  "url": "cachyconschapter-6.html#cachyconschapter-6-21",
+  "type": "Exercise",
+  "number": "5.4.21",
+  "title": "",
+  "body": "  This exercise outlines how to extend some of the results of this chapter to the Riemann sphere as defined in Section . Suppose is a region that contains 0, let be a continuous function on , and let be a piecewise smooth path in avoiding the origin, parametrized as , .   Show that where , .     Now suppose is finite. Let and define the function by   Thus is continuous on and (a) gives the identity .  In particular, we can transfer certain properties between these two integrals. For example, if is path independent, so is . Here is but one application:   Show that is path independent for any integer .    Conclude (once more) that for any integer .      "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
