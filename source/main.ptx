@@ -15,8 +15,8 @@
     <xi:include href="./functionchapter.ptx"/>
     <xi:include href="./exampleschapter.ptx"/>
     <xi:include href="./intchapter.ptx"/>
-    <!--
     <xi:include href="./cachyconschapter.ptx"/>
+    <!--
     <xi:include href="./harmonicChapter.ptx"/>
     <xi:include href="./powerchapter.ptx"/>
     <xi:include href="./taylorchapter.ptx"/>
