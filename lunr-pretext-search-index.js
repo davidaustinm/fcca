@@ -2989,6 +2989,69 @@ var ptx_lunr_docs = [
   "body": "  This exercise gives an alternative proof of Cauchy's Integral Formula ( ) that does not depend on Cauchy's Theorem ( ). Suppose the region is convex ; this means that, whenever and are in , the line segment between them is also in . Suppose is holomorphic in , is continuous, and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and .   Consider the function given by . Show that . ( Hint : Use Theorem (Leibniz's rule) and then find an antiderivative for .)    Prove by evaluating and .    Why did we assume is convex?      "
 },
 {
+  "id": "sec_variationstheme",
+  "level": "1",
+  "url": "sec_variationstheme.html",
+  "type": "Section",
+  "number": "5.1",
+  "title": "Variations of a Theme",
+  "body": " Variations of a Theme  Cauchy's integral formula extensions of  We now derive formulas for and which resemble Cauchy's Integral Formula ( ).    Suppose is holomorphic in the region and is a positively oriented, simple, closed, piecewise smooth, -contractible path. If is inside then .  Moreover, exists, and .     The idea of our proof is very similar to that of Cauchy's Integral Formula ( and ). We will study the following difference quotient, which we rewrite using . .   Theorem will follow if we can show that the following expression gets arbitrarily small as : .  This can be made arbitrarily small if we can show that the integral on the right-hand side stays bounded as . In fact, by Proposition  , it suffices to show that the integrand stays bounded as (because and hence are fixed).  Let (whose existence is guaranteed by ). Choose such that ; that is, for all on . By the reverse triangle inequality (  ), for all , , which certainly stays bounded as . This proves and thus the Cauchy Integral Formula for .  The proof of the formula for is very similar and will be left to .    Theorem suggests that there are similar formulas for the higher derivatives of . This is in fact true, and theoretically we could obtain them one by one with the methods of the proof of Theorem . However, once we start studying power series for holomorphic functions, we will obtain such a result much more easily; so we save the derivation of integral formulas for higher derivatives of for later ( Corollary ).   has several important consequences. For starters, it can be used to compute certain integrals.    .     To compute the integral , we could employ a partial fractions expansion similar to the one in , or moving the integration path similar to the one in . To exhibit an alternative, we split up the integration path as illustrated in : we introduce an additional path that separates 0 and 1. If we integrate on these two new closed paths ( and ) counterclockwise, the two contributions along the new path will cancel each other.   The integration paths and .     size=2.5  a1=105  a2=-50  r=2  p1=r*(cos(radians(a1)),sin(radians(a1)))  p2=r*(cos(radians(a2)),sin(radians(a2)))  l(t)=(1-t)*p1 + t*p2          0  1   \\gamma_1    \\gamma_2        The effect is that we transformed an integral for which two singularities were inside the integration path into a sum of two integrals, each of which has only one singularity inside the integration path; these new integrals we know how to deal with, using and : .      .    Theorem has another powerful consequence: just from knowing that is holomorphic in , we know of the existence of , that is, is also holomorphic in . Repeating this argument for , then for , , etc., shows that all derivatives exist and are holomorphic. We can translate this into the language of partial derivatives, since the Cauchy Riemann equations ( ) show that any sequence of partial differentiations of results in a constant times .  So we have the following statement, which has no analogue whatsoever in the reals (see, e.g., ).    If is differentiable in a region then is infinitely differentiable in , and all partials of with respect to and exist and are continuous.    "
+},
+{
+  "id": "cauchyformula2",
+  "level": "2",
+  "url": "sec_variationstheme.html#cauchyformula2",
+  "type": "Theorem",
+  "number": "5.1.1",
+  "title": "",
+  "body": "  Suppose is holomorphic in the region and is a positively oriented, simple, closed, piecewise smooth, -contractible path. If is inside then .  Moreover, exists, and .   "
+},
+{
+  "id": "sec_variationstheme-5",
+  "level": "2",
+  "url": "sec_variationstheme.html#sec_variationstheme-5",
+  "type": "Proof",
+  "number": "5.1.1",
+  "title": "",
+  "body": " The idea of our proof is very similar to that of Cauchy's Integral Formula ( and ). We will study the following difference quotient, which we rewrite using . .   Theorem will follow if we can show that the following expression gets arbitrarily small as : .  This can be made arbitrarily small if we can show that the integral on the right-hand side stays bounded as . In fact, by Proposition  , it suffices to show that the integrand stays bounded as (because and hence are fixed).  Let (whose existence is guaranteed by ). Choose such that ; that is, for all on . By the reverse triangle inequality (  ), for all , , which certainly stays bounded as . This proves and thus the Cauchy Integral Formula for .  The proof of the formula for is very similar and will be left to .  "
+},
+{
+  "id": "sec_variationstheme-8",
+  "level": "2",
+  "url": "sec_variationstheme.html#sec_variationstheme-8",
+  "type": "Example",
+  "number": "5.1.2",
+  "title": "",
+  "body": "  .  "
+},
+{
+  "id": "ex52",
+  "level": "2",
+  "url": "sec_variationstheme.html#ex52",
+  "type": "Example",
+  "number": "5.1.3",
+  "title": "",
+  "body": "  To compute the integral , we could employ a partial fractions expansion similar to the one in , or moving the integration path similar to the one in . To exhibit an alternative, we split up the integration path as illustrated in : we introduce an additional path that separates 0 and 1. If we integrate on these two new closed paths ( and ) counterclockwise, the two contributions along the new path will cancel each other.   The integration paths and .     size=2.5  a1=105  a2=-50  r=2  p1=r*(cos(radians(a1)),sin(radians(a1)))  p2=r*(cos(radians(a2)),sin(radians(a2)))  l(t)=(1-t)*p1 + t*p2          0  1   \\gamma_1    \\gamma_2        The effect is that we transformed an integral for which two singularities were inside the integration path into a sum of two integrals, each of which has only one singularity inside the integration path; these new integrals we know how to deal with, using and : .   "
+},
+{
+  "id": "sec_variationstheme-10",
+  "level": "2",
+  "url": "sec_variationstheme.html#sec_variationstheme-10",
+  "type": "Example",
+  "number": "5.1.5",
+  "title": "",
+  "body": "  .  "
+},
+{
+  "id": "infdiff",
+  "level": "2",
+  "url": "sec_variationstheme.html#infdiff",
+  "type": "Corollary",
+  "number": "5.1.6",
+  "title": "",
+  "body": "  If is differentiable in a region then is infinitely differentiable in , and all partials of with respect to and exist and are continuous.   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
