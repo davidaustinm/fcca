@@ -1,0 +1,26 @@
+<diagram dimensions="(300,240)" margins="5"
+         xmlns="https://prefigure.org">
+  <definition>r=2</definition>
+  <coordinates bbox="(-2.5,-1,2.5,3)">
+    <axes decorations="no" stroke="gray"/>
+    <path start="(-r,0)" closed="yes" stroke="blue" thickness="2">
+      <arc center="(0,0)" radius="r" range="(0,180)"/>
+    </path>
+    <arc center="(0,0)" radius="r" range="(0, 50)"
+         arrows="1" arrow-width="5"
+         stroke="blue"/>
+    <line endpoints="((-r,0),(0.8,0))" stroke="blue" thickness="2"
+          arrows="1" arrow-width="5"/>
+    <point p="(r,0)" alignment="south"
+           fill="blue" stroke="none" size="3">
+      <m>R</m>
+    </point>
+    <point p="(-r,0)" alignment="south"
+           fill="blue" stroke="none" size="3">
+      <m>-R</m>
+    </point>
+    <label p="r*(cos(radians(50)),sin(radians(50)))" alignment="ne">
+      <m>\gamma_R</m>
+    </label>
+  </coordinates>
+</diagram>

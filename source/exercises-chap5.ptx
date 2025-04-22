@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<exercises>
+  <exercise xml:id="ex_5_0">
+    <statement>
+      <p>
+        Compute the following integrals,
+        where <m>\Box</m> is the boundary of the square with vertices at
+        <m>\pm4\pm4i</m>, positively oriented:
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\int_\Box\frac{\exp(z^2)}{z^3}<nbsp/>\diff{z}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\int_\Box\frac{\exp(3z)}{(z-\pi i)^2}<nbsp/>\diff{z}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\int_\Box\frac{\sin(2z)}{(z-\pi)^2}<nbsp/>\diff{z}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\int_\Box\frac{\exp(z)\cos(z)}{(z-\pi)^3}<nbsp/>\diff{z}</m> 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="cauchyformula2ex">
+    <statement>
+      <p>
+        Prove the formula for <m>f''</m> in <xref
+        ref="cauchyformula2">Theorem</xref>. 
+      </p>
+      <p>
+        <em>Hint:</em> Modify the proof of the integral formula for
+        <m>f'(w)</m> as follows: 
+        <ol marker="a) ">
+          <li>
+            <p>
+              Write a difference quotient for <m>f''(w)</m>,
+              and use the formula for <m>f'(w)</m> in
+              <xref ref="cauchyformula2"/>
+              to convert this difference quotient into an integral of
+              <m>f(z)</m> divided by some polynomial. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Subtract the desired integral formula for <m>f''(w)</m>
+              from your integral for the difference quotient, 
+              and simplify to get the analogue of
+              <xref ref="eq_needstostaybounded"/>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a bound as in the proof of <xref
+              ref="cauchyformula2">Theorem</xref> for the integrand, 
+              and conclude that the limit of the difference quotient
+              is the desired integral formula. 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_5_1">
+    <statement>
+      <p>
+        Integrate the following functions over the circle <m>C[0,3]</m>:
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\Log ( z - 4i )</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac{ 1 }{ z - \frac 1 2 }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac{ 1 }{ z^2 - 4 }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac{ \exp z }{ z^3 }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \left( \frac{ \cos z }{ z } \right)^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>i^{ z-3 }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac{ \sin z }{ (z^2 + \frac 1 2)^2 }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac{ 1 }{ (z+4) ( z^2 + 1 ) }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac{\exp(2z)}{(z-1)^2(z-2)}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_54">
+    <statement>
+      <p>
+        Compute <m>\ds \int_{ C[0,2] } \frac{ \exp z }{ (z-w)^2 } \,
+        \diff{z}</m> where <m>w</m> is any fixed complex number with
+        <m>|w| \ne 2</m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_functiondefinedthroughmorera">
+    <statement>
+      <p>
+        Define <m>f : D[0,1] \to \C</m> through
+        <me>
+          f(z) \ := \ \int_{ [0,1] } \frac{ \diff{w} }{ 1-wz }
+        </me>
+      </p>
+      <p>
+        (the integration path is from 0 to 1 along the real line).
+        Prove that <m>f</m> is holomorphic in the unit disk <m>D[0,1]</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_diffbutnottwicediff">
+    <statement>
+      <p>
+        To appreciate <xref ref="infdiff">Corollary</xref>,
+        show that the function <m>f: \R \to \R</m> given by
+        <me>
+          f(x) \ := \ \begin{cases}x^2 \sin(\frac 1 x) \amp  \text{ if
+          }  x \ne 0 \, , \\ 0                   \amp  \text{ if }  x
+          = 0 \end{cases} 
+        </me>
+        is differentiable in <m>\R</m>,
+        yet <m>f'</m> is not even continuous
+        (much less differentiable)
+        at<nbsp/>0.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_zoverline2antider">
+    <statement>
+      <p>
+        Prove that <m>f(z) = {\overline z}^2</m> does not have an
+        antiderivative in any nonempty region. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Show that <m>\exp ( \sin z )</m> has an antiderivative on
+        <m>\C</m>. (What is it?) 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_5_2">
+    <statement>
+      <p>
+        Find a region on which <m>f(z) = \exp( \frac 1 z)</m> has an
+        antiderivative. (Your region should be as large as you can
+        make it. 
+        How does this compare with the real function <m>f(x) =
+        e^{\frac 1 x}</m>?) 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="bounded">
+    <statement>
+      <p>
+        Suppose <m>f</m> is continuous on <m>\C</m> and <m>\lim_{z \to
+        \infty} f(z)</m> is finite. 
+        Show that <m>f</m> is bounded. (<em>Hint</em>: If <m>\lim_{z
+        \to \infty} f(z) = L</m>, 
+        use the definition of the limit at infinity to show that there
+        is <m>R>0</m> so that <m>\abs{f(z)-L} \lt 1</m> if <m>\abs z
+        >R</m>. 
+        Now argue that <m>|f(z)| \lt |L|+1</m> for <m>|z| > R</m>.
+        Use an argument from calculus to show that <m>|f(z)|</m> is
+        bounded for <m>\abs z\le R</m>.) 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="fta">
+    <statement>
+      <p>
+        Let <m>p</m> be a polynomial of degree <m>n>0</m>.
+        Prove that there exist complex numbers
+        <m>c, z_1, z_2, \dots,
+        z_k</m> and positive integers <m>j_1, \dots , j_k</m> such that
+        <me>
+          p(z) \= c \left( z - z_1 \right)^{j_1} \left( z - z_2
+          \right)^{j_2} \cdots \left( z - z_k \right)^{j_k} \, 
+        </me>,
+        where <m>j_1 + \dots + j_k = n</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Show that a polynomial of odd degree with real coefficients
+        must have a real zero. 
+        (<em>Hint</em>: Use <xref ref="realpolynomialb"/>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is entire and
+        <m>|f(z)| \le \sqrt{ |z| }</m> for all <m>z \in \C</m>.
+        Prove that <m>f</m> is identically 0. (<em>Hint:</em>
+        Show first that <m>f</m> is constant.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is entire and there exists <m>M > 0</m> such that
+        <m>|f(z)| \ge M</m> for all <m>z \in \C</m>.
+        Prove that <m>f</m> is constant.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is entire with bounded real part,
+        i.e., writing <m>f(z) = u(z) + i \, v(z)</m>,
+        there exists <m>M > 0</m> such that
+        <m>|u(z)| \le M</m> for all <m>z \in \C</m>.
+        Prove that <m>f</m> is constant. (<em>Hint</em>: Consider the
+        function <m>\exp(f(z))</m>.) 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is entire and there exist constants <m>a</m>
+        and <m>b</m> such that 
+        <m>|f(z)| \leq a|z| + b</m> for all <m>z \in \C</m>.
+        Prove that <m>f</m> is a polynomial of degree at
+        most<nbsp/>1. (<em>Hint</em>: Use
+        <xref ref="cauchyformula2"/>
+        and <xref ref="ex_2ndderivative0"/>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f: D[0,1] \to D[0,1]</m> is holomorphic.
+        Prove that for <m>|z| \lt  1</m>,
+        <me>
+          \left| f'(z) \right| \le \frac{ 1 }{ 1 - |z| } \,
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_1__1_x_4_">
+    <statement>
+      <p>
+        Compute <m>\ds \int_{ -\infty }^\infty \frac{ \diff{x} }{ x^4
+        + 1 } </m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_cos_x___1_x_2_">
+    <statement>
+      <p>
+        In this problem <m>f(z) = \frac{ \exp(iz) }{z^2+1}</m> and
+        <m>R>1</m>. 
+        Modify our computations in
+        <xref ref="ex_eximpropint"/> as follows.
+        <ol marker="a) ">
+          <li>
+            <p>
+              Show that <m>\int_{\sigma_R}f = \frac \pi e</m> where
+              <m>\sigma_R</m> is again 
+              (as in <xref ref="fig_eximpropint"/>)
+              the counterclockwise semicircle formed by the segment
+              <m>[-R,R]</m> on the real axis, 
+              followed by the circular arc <m>\gg_R</m> of radius
+              <m>R</m> in the upper half plane from <m>R</m> to
+              <m>-R</m>. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that <m>\abs{\exp(iz)}\le1</m> for <m>z</m> in the
+              upper half plane, 
+              and conclude that <m>\abs{f(z)}\le \frac 2
+              {\abs{z}^2}</m> for sufficiently
+              large<nbsp/><m>|z|</m>. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that <m>\lim_{R\to\infty}\int_{\gg_R} f = 0</m> and
+              hence <m>\lim_{R\to\infty}\int_{[-R,R]} f = \frac \pi
+              e</m>. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Conclude, by just considering the real part, that
+              <me>
+                \int_{-\infty}^\infty \frac{\cos(x)}{x^2+1}\,\diff{x}
+                \= \frac \pi e \, 
+              </me>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="x520">
+    <statement>
+      <p>
+        Compute <m>\ds \int_{-\infty}^\infty
+        \frac{\cos(x)}{x^4+1}\,\diff{x} </m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        This exercise outlines how to extend some of the results of
+        this chapter to the Riemann sphere as defined in <xref
+        ref="sec_riemannspere">Section</xref>. 
+        Suppose <m>G \subseteq \C</m> is a region that contains 0, let
+        <m>f</m> be a continuous function on <m>G</m>, 
+        and let <m>\gg \subset G \setminus \{0\}</m> be a piecewise
+        smooth path in <m>G</m> avoiding the origin, 
+        parametrized as <m>\gg(t)</m>, <m>a \le t \le b</m>.
+        <ol marker="a) ">
+          <li>
+            <p>
+              Show that
+              <me>
+                \int_\gg f(z) \,\diff{z} \= \int_\sigma
+                f\!\left(\frac{1}{z}\right) \frac{1}{z^2} \, \diff{z} 
+              </me>
+              where <m>\sigma(t) := \frac{ 1 }{ \gg(t) }</m>, <m>a \le
+              t \le b</m>. 
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        Now suppose <m>\lim_{ z \to 0 } f\!\left(\frac{1}{z}\right)
+        \frac{1}{z^2} = L</m> is finite. 
+        Let <m>H := \left\{ \frac 1 z : \, z \in G \setminus \{ 0 \}
+        \right\}</m> and define the function <m>g: H \cup \{ 0 \} \to
+        \C</m> by 
+        <me>
+          g(z) \ := \ \begin{cases}f\!\left(\frac{1}{z}\right)
+          \frac{1}{z^2} \amp  \text{ if }  z \in H, \\ L
+          \amp  \text{ if }  z=0. \end{cases} 
+        </me>
+      </p>
+      <p>
+        Thus <m>g</m> is continuous on
+        <m>H \cup \{ 0 \}</m> and (a) gives the identity
+        <me>
+          \int_\gg f \= \int_\sigma g \,
+        </me>.
+      </p>
+      <p>
+        In particular,
+        we can transfer certain properties between these two integrals.
+        For example, if <m>\int_\sigma g</m> is path independent,
+        so is <m>\int_\gg f</m>.
+        Here is but one application:
+        <ol marker="a) ">
+          <li>
+            <p>
+              Show that <m>\int_\gg z^n \, \diff{z}</m> is path
+              independent for any integer <m>n \ne -1</m>. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Conclude (once more) that <m>\int_\gg z^n \, \diff{z} =
+              0</m> for any integer <m>n \ne -1</m>. 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</exercises>

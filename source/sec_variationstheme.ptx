@@ -3,6 +3,7 @@
 <section xml:id="sec_variationstheme"
          xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Variations of a Theme</title>
+
   <idx><h>Cauchy's integral formula</h><h>extensions of</h></idx>
   <p>
     We now derive formulas for <m>f'</m> and <m>f''</m> which resemble
