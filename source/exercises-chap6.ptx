@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<exercises>
+  <exercise>
+    <statement>
+      <p>
+        Show that all partial derivatives of a harmonic function are harmonic.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="harmoniclinear">
+    <statement>
+      <p>
+        Suppose <m>u(x,y)</m> and <m>v(x,y)</m> are harmonic in <m>G</m>,
+        and <m>c \in \R</m>.
+        Prove that <m>u(x,y) + c \, v(x,y)</m> is also harmonic
+        in <m>G</m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Give an example that shows that the product of two harmonic
+        functions is not necessarily harmonic. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Let <m>u(x,y) = e^x \sin y</m>.
+        <ol marker="a) ">
+          <li>
+            <p>
+              Show that <m>u</m> is harmonic on <m>\C</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find an entire function <m>f</m> such that <m>\Re (f) =
+              u</m>. 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="logharmonic">
+    <statement>
+      <p>
+        Consider <m>u(x,y) = \ln \left( x^2 + y^2 \right)</m>.
+        <ol marker="a) ">
+          <li>
+            <p>
+              Show that <m>u</m> is harmonic on <m>\C \setminus \{ 0 \}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Prove that <m>u</m> is <em>not</em>
+              the real part of a function that is holomorphic in <m>\C
+              \setminus \{ 0 \}</m>. 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_ln_f_harmonic">
+    <statement>
+      <p>
+        Show that, if <m>f</m> is holomorphic and nonzero in <m>G</m>,
+        then <m>\ln|f(x,y)|</m> is harmonic in<nbsp/><m>G</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>u(x,y)</m> is a function
+        <m>\R^2 \to \R</m> that depends only on <m>x</m>.
+        When is <m>u</m> harmonic?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Is it possible to find a real function <m>v(x,y)</m> so that
+        <m>x^3+y^3 +i \, v(x,y)</m> is holomorphic? 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic in the region
+        <m>G \subseteq \C</m> with image <m>H := \left\{ f(z) : \, z
+        \in G \right\}</m>, 
+        and <m>u</m> is harmonic on <m>H</m>.
+        Show that <m>u(f(z))</m> is harmonic on <m>G</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>u(r, \phi)</m> is a function
+        <m>\R^2 \to \R</m> given in terms of polar coordinates.
+        <ol marker="a) ">
+          <li>
+            <p>
+              Show that the Laplace equation for <m>u(r, \phi)</m> is
+              <me>
+                \frac 1 r \, u_r + u_{ rr } + \frac 1 {r^2} u_{ \phi
+                \phi } \= 0 \, 
+              </me>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that <m>u(r, \phi) = r^2 \cos(2 \phi)</m> is
+              harmonic on <m>\C</m>. 
+              Generalize.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>u(r, \phi)</m> depends only on <m>r</m>,
+              when is <m>u</m> harmonic?
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>u(r, \phi)</m> depends only on <m>\phi</m>,
+              when is <m>u</m> harmonic?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove that, if <m>u</m> is harmonic and bounded on <m>\C</m>,
+        then <m>u</m> is constant. (<em>Hint</em>: Use <xref
+        ref="harmonictoholomorphic"/>
+        and Liouville's Theorem (<xref ref="liouville"/>).)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>u(x,y)</m> is a harmonic polynomial in <m>x</m> and <m>y</m>.
+        Prove that the harmonic conjugate of <m>u</m> is also a
+        polynomial in <m>x</m> and <m>y</m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_poissonkernelapp">
+    <statement>
+      <p>
+        Recall from <xref ref="ex_poissonkernel"/> the Poisson kernel
+        <me>
+          P_r(\phi) \= \frac{ 1-r^2 }{ 1 - 2r \cos(\phi) + r^2 } \,
+        </me>,
+        where <m>0 \lt  r \lt  1</m>.
+        In this exercise, we will prove the
+        <em>Poisson Integral Formula</em>:
+        if <m>u</m> is harmonic on an open set containing the closed
+        unit disk 
+        <m>\overline D[0,1]</m> then for any <m>r\lt 1</m>
+        <men xml:id="eq_poissonintform">
+          u \! \left( r \, e^{ i \phi } \right) \= \frac{ 1 }{ 2 \pi }
+          \int_0^{ 2 \pi } u \! \left( e^{ i t } \right) P_r(\phi - t)
+          \, \diff{t} \, 
+        </men>.
+        <idx><h>Poisson integral formula</h></idx>
+      </p>
+      <p>
+        Suppose <m>u</m> is harmonic on an open set containing
+        <m>\overline D[0,1]</m>. 
+        By <xref ref="ex_biggerdisk"/>
+        we can find <m>R_0>1</m> so that <m>u</m> is harmonic in
+        <m>D[0,R_0]</m>. 
+        <ol marker="a) ">
+          <li>
+            <p>
+              Recall the M&#xf6;bius function
+              <me>
+                f_a(z) \= \frac{ z-a }{ 1 - \conj{a} z } \,
+              </me>,
+              for some fixed <m>a \in \C</m> with <m>|a| \lt  1</m>,
+              from <xref ref="ex_mobiusunitcircletounitcircle"/>.
+              Show that <m>u(f_{ -a }(z))</m> is harmonic on an open disk
+              <m>D[0,R_1]</m> containing <m>\overline D[0,1]</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Apply <xref ref="harmonicmeanvalue"/>
+              to the function <m>u(f_{ -a }(z))</m> with <m>w=0</m> to deduce
+              <men xml:id="eq_poissoninterm">
+                u(a) \= \frac{ 1 }{ 2 \pi i } \int_{ C[0,1] } \frac{
+                u(f_{ -a }(z)) }{ z } \, \diff{z} \, 
+              </men>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Recalling, again from
+              <xref ref="ex_mobiusunitcircletounitcircle"/>,
+              that <m>f_a(z)</m> maps the unit circle to itself,
+              apply a change of variables to
+              <xref ref="eq_poissoninterm"/> to prove 
+              <me>
+                u(a) \= \frac{ 1 }{ 2 \pi } \int_0^{ 2 \pi } u \!
+                \left( e^{ i t } \right) \frac{ 1 - |a|^2 }{ \left|
+                e^{ i t } - a \right|^2 } \, \diff{t} \, 
+              </me>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Deduce <xref ref="eq_poissonintform"/> by setting <m>a =
+              r \, e^{ i \phi }</m>. 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_biggerdisk">
+    <statement>
+      <p>
+        Suppose <m>G</m> is open and <m>\overline D[a,r] \subset G</m>.
+        Show that there is <m>R>r</m> so that
+        <m>\overline D[a,r] \subset D[a,R] \subset
+        G</m>. (<em>Hint</em>: If <m>G=\C</m> just take <m>R=r+1</m>. 
+        Otherwise choose some <m>w\in \C\setminus G</m>,
+        let <m>M=|w-a|</m>, and let <m>K=\overline D[a,M] \setminus G</m>.
+        Show that <m>K</m> is nonempty, closed and bounded,
+        and apply <xref ref="realEVT"/>
+        to find a point <m>z_0\in K</m> that minimizes
+        <m>f(z)=|z-a|</m> on <m>K</m>. 
+        Show that <m>R=|z_0-a|</m> works.)
+      </p>
+    </statement>
+  </exercise>
+</exercises>

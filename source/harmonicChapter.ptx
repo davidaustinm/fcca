@@ -30,7 +30,7 @@
   </introduction>
   
   <xi:include  href="sec_defharmonic.ptx"/>
-  <!--
-      <xi:include  href="sec_harmonicmeanvalue.ptx"/>
-  -->
+  <xi:include  href="sec_harmonicmeanvalue.ptx"/>
+  <xi:include  href="exercises-chap6.ptx"/>
+
 </chapter>
