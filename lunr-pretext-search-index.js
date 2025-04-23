@@ -3484,6 +3484,204 @@ var ptx_lunr_docs = [
   "body": "  A harmonic function is infinitely differentiable.    Suppose is harmonic in and . We will show that exists for all positive integers . Let such that the disk is contained in . Since is simply connected, asserts the existence of a holomorphic function in such that on . By , is infinitely differentiable on , and hence so is its real part .   "
 },
 {
+  "id": "sec_harmonicmeanvalue",
+  "level": "1",
+  "url": "sec_harmonicmeanvalue.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "Mean-Value and Maximum\/Minimum Principle",
+  "body": " Mean-Value and Maximum\/Minimum Principle  We have established an intimate connection between harmonic and holomorphic functions, and so it should come as no surprise that some of the theorems we proved for holomorphic functions have analogues in the world of harmonic functions. Here is such a harmonic analogue of Cauchy's Integral Formula ( and ). mean-value theorem for harmonic functions     Suppose is harmonic in the region and . Then .     provides so that . The open disk is simply connected, so by Theorem there is a function holomorphic in such that on . Now we apply to : .   follows by taking the real part on both sides.     Corollary and Theorem say that holomorphic and harmonic functions have the mean-value property . Our next result is an important consequence of this property to extreme values of a function.    Let be a region. The function has a strong relative maximum at if there exists a disk such that for all and for some . maximum strong relative The definition of a strong relative minimum is analogous. minimum strong relative  max\/min property for harmonic functions       If is harmonic in the region , then it does not have a strong relative maximum or minimum in .    Assume, by way of contradiction, that is a strong relative maximum. Then there is a disk in centered at containing a point with . Let and apply : .  Intuitively, this cannot hold, because some of the function values we're integrating are smaller than , contradicting the mean-value property. To make this into a thorough argument, suppose that for . Because and is continuous, there is a whole interval of parameters such that for . Now we split up the mean-value integral:   All the integrands can be bounded by ; for the middle integral we get a strict inequality. Hence , a contradiction.  The same argument works if we assume that has a relative minimum. But in this case there's a shortcut argument: if has a strong relative minimum then the harmonic function has a strong relative maximum, which we just showed cannot exist.    So far, harmonic functions have benefited from our knowledge of holomorphic functions. Here is a result where the benefit goes in the opposite direction.    If is holomorphic and nonzero in the region , then does not have a strong relative maximum or minimum in .    By , the function is harmonic on and so, by , does not have a strong relative maximum or minimum in . But then neither does , because is monotonic.    We finish our excursion about harmonic functions with a preview and its consequences. We say a real valued function on a region has a weak relative maximum at if there exists a disk such that all satisfy . maximum weak relative We define weak relative minimum similarly. In we will strengthen and to and by replacing strong relative extremum in the hypotheses with weak relative extremum . In particular, we will show that one does not have to assume that is nonzero in a region to have a strong relative maximum in . A special but important case of the maximum\/minimum principle for harmonic functions, , concerns bounded regions. In we will establish that, if is harmonic in a bounded region and continuous on its closure, then where, as usual, denotes the boundary of . We'll exploit this in the next two corollaries. boundary     Suppose is harmonic in the bounded region and continuous on its closure. If is zero on then is zero in .    By , and , so must be zero in .      Suppose and are harmonic in the bounded region and continuous on its closure. If for all then for all .     is harmonic in ( Exercise ) and is continuous on the closure , and is zero on . Now apply Corollary .     says that if a function is harmonic in a bounded region and is continuous on the closure then the values of at points in are completely determined by the values of on the boundary of . We should remark, however, that this result is of a completely theoretical nature: it says nothing about how to extend a continuous function given on the boundary of a region to be harmonic in the full region. This problem is called the Dirichlet Named after Johann Peter Gustav Dirichlet (1805 1859). problem , and it has a solution for all bounded simply-connected regions. If the region is the unit disk and is a continuous function on the unit circle, define , where is the Poisson kernel which we introduced in . Poisson kernel Then is the desired extension: it is continuous on the closed unit disk, harmonic in the open unit disk, and agrees with on the unit circle. In simple cases this solution can be converted to solutions in other regions, using a conformal map to the unit disk. conformal All of this is beyond the scope of this book, though gives some indication why the above formula does the trick. At any rate, we remark that says that the solution to the Dirichlet problem is unique.  "
+},
+{
+  "id": "harmonicmeanvalue",
+  "level": "2",
+  "url": "sec_harmonicmeanvalue.html#harmonicmeanvalue",
+  "type": "Theorem",
+  "number": "6.2.1",
+  "title": "",
+  "body": "  Suppose is harmonic in the region and . Then .     provides so that . The open disk is simply connected, so by Theorem there is a function holomorphic in such that on . Now we apply to : .   follows by taking the real part on both sides.   "
+},
+{
+  "id": "sec_harmonicmeanvalue-5",
+  "level": "2",
+  "url": "sec_harmonicmeanvalue.html#sec_harmonicmeanvalue-5",
+  "type": "Definition",
+  "number": "6.2.2",
+  "title": "",
+  "body": "  Let be a region. The function has a strong relative maximum at if there exists a disk such that for all and for some . maximum strong relative The definition of a strong relative minimum is analogous. minimum strong relative  max\/min property for harmonic functions    "
+},
+{
+  "id": "harmonicmaxmin",
+  "level": "2",
+  "url": "sec_harmonicmeanvalue.html#harmonicmaxmin",
+  "type": "Theorem",
+  "number": "6.2.3",
+  "title": "",
+  "body": "  If is harmonic in the region , then it does not have a strong relative maximum or minimum in .    Assume, by way of contradiction, that is a strong relative maximum. Then there is a disk in centered at containing a point with . Let and apply : .  Intuitively, this cannot hold, because some of the function values we're integrating are smaller than , contradicting the mean-value property. To make this into a thorough argument, suppose that for . Because and is continuous, there is a whole interval of parameters such that for . Now we split up the mean-value integral:   All the integrands can be bounded by ; for the middle integral we get a strict inequality. Hence , a contradiction.  The same argument works if we assume that has a relative minimum. But in this case there's a shortcut argument: if has a strong relative minimum then the harmonic function has a strong relative maximum, which we just showed cannot exist.   "
+},
+{
+  "id": "cor_holomorphicweakmaxmin",
+  "level": "2",
+  "url": "sec_harmonicmeanvalue.html#cor_holomorphicweakmaxmin",
+  "type": "Corollary",
+  "number": "6.2.4",
+  "title": "",
+  "body": "  If is holomorphic and nonzero in the region , then does not have a strong relative maximum or minimum in .    By , the function is harmonic on and so, by , does not have a strong relative maximum or minimum in . But then neither does , because is monotonic.   "
+},
+{
+  "id": "harmoniczeroboundary",
+  "level": "2",
+  "url": "sec_harmonicmeanvalue.html#harmoniczeroboundary",
+  "type": "Corollary",
+  "number": "6.2.5",
+  "title": "",
+  "body": "  Suppose is harmonic in the bounded region and continuous on its closure. If is zero on then is zero in .    By , and , so must be zero in .   "
+},
+{
+  "id": "harmonicboundary",
+  "level": "2",
+  "url": "sec_harmonicmeanvalue.html#harmonicboundary",
+  "type": "Corollary",
+  "number": "6.2.6",
+  "title": "",
+  "body": "  Suppose and are harmonic in the bounded region and continuous on its closure. If for all then for all .     is harmonic in ( Exercise ) and is continuous on the closure , and is zero on . Now apply Corollary .   "
+},
+{
+  "id": "harmonicChapter-5",
+  "level": "1",
+  "url": "harmonicChapter-5.html",
+  "type": "Exercises",
+  "number": "6.3",
+  "title": "Exercises",
+  "body": "   Show that all partial derivatives of a harmonic function are harmonic.      Suppose and are harmonic in , and . Prove that is also harmonic in .      Give an example that shows that the product of two harmonic functions is not necessarily harmonic.      Let .   Show that is harmonic on .    Find an entire function such that .         Consider .   Show that is harmonic on .    Prove that is not the real part of a function that is holomorphic in .         Show that, if is holomorphic and nonzero in , then is harmonic in .      Suppose is a function that depends only on . When is harmonic?      Is it possible to find a real function so that is holomorphic?      Suppose is holomorphic in the region with image , and is harmonic on . Show that is harmonic on .      Suppose is a function given in terms of polar coordinates.   Show that the Laplace equation for is .    Show that is harmonic on . Generalize.    If depends only on , when is harmonic?    If depends only on , when is harmonic?         Prove that, if is harmonic and bounded on , then is constant. ( Hint : Use and Liouville's Theorem ( ).)      Suppose is a harmonic polynomial in and . Prove that the harmonic conjugate of is also a polynomial in and .      Recall from the Poisson kernel , where . In this exercise, we will prove the Poisson Integral Formula : if is harmonic on an open set containing the closed unit disk then for any  . Poisson integral formula   Suppose is harmonic on an open set containing . By we can find so that is harmonic in .   Recall the Möbius function , for some fixed with , from . Show that is harmonic on an open disk containing .    Apply to the function with to deduce .    Recalling, again from , that maps the unit circle to itself, apply a change of variables to to prove .    Deduce by setting .         Suppose is open and . Show that there is so that . ( Hint : If just take . Otherwise choose some , let , and let . Show that is nonempty, closed and bounded, and apply to find a point that minimizes on . Show that works.)    "
+},
+{
+  "id": "harmonicChapter-5-1",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-1",
+  "type": "Exercise",
+  "number": "6.3.1",
+  "title": "",
+  "body": "  Show that all partial derivatives of a harmonic function are harmonic.   "
+},
+{
+  "id": "harmoniclinear",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmoniclinear",
+  "type": "Exercise",
+  "number": "6.3.2",
+  "title": "",
+  "body": "  Suppose and are harmonic in , and . Prove that is also harmonic in .   "
+},
+{
+  "id": "harmonicChapter-5-3",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-3",
+  "type": "Exercise",
+  "number": "6.3.3",
+  "title": "",
+  "body": "  Give an example that shows that the product of two harmonic functions is not necessarily harmonic.   "
+},
+{
+  "id": "harmonicChapter-5-4",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-4",
+  "type": "Exercise",
+  "number": "6.3.4",
+  "title": "",
+  "body": "  Let .   Show that is harmonic on .    Find an entire function such that .      "
+},
+{
+  "id": "logharmonic",
+  "level": "2",
+  "url": "harmonicChapter-5.html#logharmonic",
+  "type": "Exercise",
+  "number": "6.3.5",
+  "title": "",
+  "body": "  Consider .   Show that is harmonic on .    Prove that is not the real part of a function that is holomorphic in .      "
+},
+{
+  "id": "ex_ln_f_harmonic",
+  "level": "2",
+  "url": "harmonicChapter-5.html#ex_ln_f_harmonic",
+  "type": "Exercise",
+  "number": "6.3.6",
+  "title": "",
+  "body": "  Show that, if is holomorphic and nonzero in , then is harmonic in .   "
+},
+{
+  "id": "harmonicChapter-5-7",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-7",
+  "type": "Exercise",
+  "number": "6.3.7",
+  "title": "",
+  "body": "  Suppose is a function that depends only on . When is harmonic?   "
+},
+{
+  "id": "harmonicChapter-5-8",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-8",
+  "type": "Exercise",
+  "number": "6.3.8",
+  "title": "",
+  "body": "  Is it possible to find a real function so that is holomorphic?   "
+},
+{
+  "id": "harmonicChapter-5-9",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-9",
+  "type": "Exercise",
+  "number": "6.3.9",
+  "title": "",
+  "body": "  Suppose is holomorphic in the region with image , and is harmonic on . Show that is harmonic on .   "
+},
+{
+  "id": "harmonicChapter-5-10",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-10",
+  "type": "Exercise",
+  "number": "6.3.10",
+  "title": "",
+  "body": "  Suppose is a function given in terms of polar coordinates.   Show that the Laplace equation for is .    Show that is harmonic on . Generalize.    If depends only on , when is harmonic?    If depends only on , when is harmonic?      "
+},
+{
+  "id": "harmonicChapter-5-11",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-11",
+  "type": "Exercise",
+  "number": "6.3.11",
+  "title": "",
+  "body": "  Prove that, if is harmonic and bounded on , then is constant. ( Hint : Use and Liouville's Theorem ( ).)   "
+},
+{
+  "id": "harmonicChapter-5-12",
+  "level": "2",
+  "url": "harmonicChapter-5.html#harmonicChapter-5-12",
+  "type": "Exercise",
+  "number": "6.3.12",
+  "title": "",
+  "body": "  Suppose is a harmonic polynomial in and . Prove that the harmonic conjugate of is also a polynomial in and .   "
+},
+{
+  "id": "ex_poissonkernelapp",
+  "level": "2",
+  "url": "harmonicChapter-5.html#ex_poissonkernelapp",
+  "type": "Exercise",
+  "number": "6.3.13",
+  "title": "",
+  "body": "  Recall from the Poisson kernel , where . In this exercise, we will prove the Poisson Integral Formula : if is harmonic on an open set containing the closed unit disk then for any  . Poisson integral formula   Suppose is harmonic on an open set containing . By we can find so that is harmonic in .   Recall the Möbius function , for some fixed with , from . Show that is harmonic on an open disk containing .    Apply to the function with to deduce .    Recalling, again from , that maps the unit circle to itself, apply a change of variables to to prove .    Deduce by setting .      "
+},
+{
+  "id": "ex_biggerdisk",
+  "level": "2",
+  "url": "harmonicChapter-5.html#ex_biggerdisk",
+  "type": "Exercise",
+  "number": "6.3.14",
+  "title": "",
+  "body": "  Suppose is open and . Show that there is so that . ( Hint : If just take . Otherwise choose some , let , and let . Show that is nonempty, closed and bounded, and apply to find a point that minimizes on . Show that works.)   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
