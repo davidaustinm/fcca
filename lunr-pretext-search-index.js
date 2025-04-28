@@ -3970,6 +3970,87 @@ var ptx_lunr_docs = [
   "body": "  The alternating harmonic series  converges:  alternating harmonic series   (There is a small technical detail to be checked here, since we are effectively ignoring half the partial sums of the original series; see .) Since ,   converges by and .  However, according to , does not converge absolutely.   "
 },
 {
+  "id": "sec_sequseriesfunctions",
+  "level": "1",
+  "url": "sec_sequseriesfunctions.html",
+  "type": "Section",
+  "number": "7.3",
+  "title": "Sequences and Series of Functions",
+  "body": " Sequences and Series of Functions  The fun starts when we study sequences of functions.    Let and for . We say that  converges pointwise to if for each , . convergence pointwise  pointwise convergence   We say that  converges uniformly to if for all there is an such that for all and for all  . convergence uniform  uniform convergence   Sometimes we want to express that either notion of convergence holds only on a subset of , in which case we say that converges pointwise\/uniformly on .    It should be clear that uniform convergence on a set implies pointwise convergence on that set; but the converse is not generally true.  Let's digest these two notions of convergence of a function sequence by describing them using quantifiers; as usual, denotes for all and means there exists . Pointwise convergence on says , whereas uniform convergence on translates into .  No big deal we only exchanged two of the quantifiers. In the first case, may well depend on , in the second case we need to find an that works for all . And this can make all the difference     Let be defined by . We claim that this sequence of functions converges pointwise to given by . This is immediate for the point . Now given any and , choose . Then for all , .  (You ought to check carefully that all of our inequalities work the way we claim they do.)      Let be defined by . We claim that this sequence of functions converges uniformly to given by . Given any and , choose . Then for all , .  (Again, you should carefully check our inequalities.)    The differences between and are subtle, and we suggest you meditate over them for a while with a good cup of coffee. You might already suspect that the function sequence in does not converge uniformly, as we will see in a moment. coffee   The first application illustrating the difference between pointwise and uniform convergence says, in essence, that if we have a sequence of functions that converges uniformly on then for all  .  We will need similar interchanges of limits frequently.    Suppose and is continuous, for each . If converges uniformly to then is continuous.    Let ; we will prove that is continuous at . By uniform convergence, given , there is an such that for all and all  .  Now we make use of the continuity of the 's. This means that given (the same) , there is a such that whenever , .  All that's left is putting those two inequalities together: by the triangle inequality ( c)), .  This proves that is continuous at .     can sometimes give a hint that a function sequence does not converge uniformly.    We modify and consider the real function sequence given by . It converges pointwise to given by   As this limiting function is not continuous, the above convergence cannot be uniform. This gives a strong indication that the convergence in is not uniform either, though this needs a separate proof, as the domain of the functions in is the unit disk ( b)).    Now that we have established about continuity, we can ask about integration of sequences or series of functions. The next theorem should come as no surprise; however, its consequences (which we will see shortly) are wide ranging.    Suppose is continuous, for , converges uniformly to , and is a piecewise smooth path. Then .    We may assume that is not just a point, in which case the proposition holds trivially. Given , there exists such that for all and all , .  With  we can thus estimate .    All of these notions for sequences of functions hold verbatim for series of functions. For example, if converges uniformly on and is a piecewise smooth path, then .  In some sense, the above identity is the reason we care about uniform convergence.  There are several criteria for uniform convergence; see, e.g., and , and the following result, sometimes called the Weierstraß -test . Weierstraß -test     Suppose for , and for all , where converges. Then and converge uniformly in . (We say the series  converges absolutely and uniformly .)    For each fixed , the series converges absolutely by . To show that the convergence is uniform, let . Then there exists such that for all , .  Thus for all and , , which proves uniform convergence. Replace with in this argument to see that also converges uniformly.      We revisit and consider the geometric series as a series of functions in . We know from that this function series converges pointwise for : .  To study uniform convergence, we apply with . We need a series of upper bounds that converges, so fix a real number and let . Then , and converges by . Thus, says that converges uniformly for .  We note the subtle distinction of domains for pointwise\/uniform convergence: converges (absolutely) for , but to force uniform convergence, we need to shrink the domain to for some (arbitrary but fixed) .    "
+},
+{
+  "id": "sec_sequseriesfunctions-3",
+  "level": "2",
+  "url": "sec_sequseriesfunctions.html#sec_sequseriesfunctions-3",
+  "type": "Definition",
+  "number": "7.3.1",
+  "title": "",
+  "body": "  Let and for . We say that  converges pointwise to if for each , . convergence pointwise  pointwise convergence   We say that  converges uniformly to if for all there is an such that for all and for all  . convergence uniform  uniform convergence   Sometimes we want to express that either notion of convergence holds only on a subset of , in which case we say that converges pointwise\/uniformly on .   "
+},
+{
+  "id": "ex_nonuniformconv",
+  "level": "2",
+  "url": "sec_sequseriesfunctions.html#ex_nonuniformconv",
+  "type": "Example",
+  "number": "7.3.2",
+  "title": "",
+  "body": "  Let be defined by . We claim that this sequence of functions converges pointwise to given by . This is immediate for the point . Now given any and , choose . Then for all , .  (You ought to check carefully that all of our inequalities work the way we claim they do.)   "
+},
+{
+  "id": "ex_uniformconv",
+  "level": "2",
+  "url": "sec_sequseriesfunctions.html#ex_uniformconv",
+  "type": "Example",
+  "number": "7.3.3",
+  "title": "",
+  "body": "  Let be defined by . We claim that this sequence of functions converges uniformly to given by . Given any and , choose . Then for all , .  (Again, you should carefully check our inequalities.)   "
+},
+{
+  "id": "sequencecontionuos",
+  "level": "2",
+  "url": "sec_sequseriesfunctions.html#sequencecontionuos",
+  "type": "Proposition",
+  "number": "7.3.4",
+  "title": "",
+  "body": "  Suppose and is continuous, for each . If converges uniformly to then is continuous.    Let ; we will prove that is continuous at . By uniform convergence, given , there is an such that for all and all  .  Now we make use of the continuity of the 's. This means that given (the same) , there is a such that whenever , .  All that's left is putting those two inequalities together: by the triangle inequality ( c)), .  This proves that is continuous at .   "
+},
+{
+  "id": "sec_sequseriesfunctions-14",
+  "level": "2",
+  "url": "sec_sequseriesfunctions.html#sec_sequseriesfunctions-14",
+  "type": "Example",
+  "number": "7.3.5",
+  "title": "",
+  "body": "  We modify and consider the real function sequence given by . It converges pointwise to given by   As this limiting function is not continuous, the above convergence cannot be uniform. This gives a strong indication that the convergence in is not uniform either, though this needs a separate proof, as the domain of the functions in is the unit disk ( b)).   "
+},
+{
+  "id": "seriesintegral",
+  "level": "2",
+  "url": "sec_sequseriesfunctions.html#seriesintegral",
+  "type": "Proposition",
+  "number": "7.3.6",
+  "title": "",
+  "body": "  Suppose is continuous, for , converges uniformly to , and is a piecewise smooth path. Then .    We may assume that is not just a point, in which case the proposition holds trivially. Given , there exists such that for all and all , .  With  we can thus estimate .   "
+},
+{
+  "id": "mtest",
+  "level": "2",
+  "url": "sec_sequseriesfunctions.html#mtest",
+  "type": "Proposition",
+  "number": "7.3.7",
+  "title": "",
+  "body": "  Suppose for , and for all , where converges. Then and converge uniformly in . (We say the series  converges absolutely and uniformly .)    For each fixed , the series converges absolutely by . To show that the convergence is uniform, let . Then there exists such that for all , .  Thus for all and , , which proves uniform convergence. Replace with in this argument to see that also converges uniformly.   "
+},
+{
+  "id": "ex_geomseriesasfunction",
+  "level": "2",
+  "url": "sec_sequseriesfunctions.html#ex_geomseriesasfunction",
+  "type": "Example",
+  "number": "7.3.8",
+  "title": "",
+  "body": "  We revisit and consider the geometric series as a series of functions in . We know from that this function series converges pointwise for : .  To study uniform convergence, we apply with . We need a series of upper bounds that converges, so fix a real number and let . Then , and converges by . Thus, says that converges uniformly for .  We note the subtle distinction of domains for pointwise\/uniform convergence: converges (absolutely) for , but to force uniform convergence, we need to shrink the domain to for some (arbitrary but fixed) .   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
