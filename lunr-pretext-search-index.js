@@ -3682,6 +3682,294 @@ var ptx_lunr_docs = [
   "body": "  Suppose is open and . Show that there is so that . ( Hint : If just take . Otherwise choose some , let , and let . Show that is nonempty, closed and bounded, and apply to find a point that minimizes on . Show that works.)   "
 },
 {
+  "id": "sec_sequencescomplete",
+  "level": "1",
+  "url": "sec_sequencescomplete.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Sequences and Completeness",
+  "body": " Sequences and Completeness  As in the real case, There will be no surprises in this chapter of the nature real versus complex . a (complex) sequence is a function from the positive (sometimes the nonnegative) integers to the complex numbers. sequence Its values are usually written as (as opposed to ) and we commonly denote the sequence by , , or simply . Considering such a sequence as a function of , the notion of convergence is merely a repeat of the definition we gave in Section , adjusted to the fact that is an integer. sequence  convergence     Suppose is a sequence and such that for all there is an integer such that for all , we have . Then the sequence is convergent and is its limit ; in symbols we write . limit of a sequence  convergent sequence  sequence convergent  sequence limit   If no such exists then the sequence is divergent . divergent  sequence divergent     As in our previous definitions of limit, the limit of a sequence is unique if it exists. See .    We claim that : Given , choose . Then for any , .    To prove that a sequence is divergent, we have to show the negation of the statement that defines convergence, that is: given any , there exists such that, given any integer , there exists an integer such that . (If you have not negated many mathematical statements, this is worth meditating about.)    The sequence diverges: Given , choose . We consider two cases: If , then for any , choose such that . (This is always possible since for any .) Then .  If , then for any , choose such that . (This is always possible since for any .) Then .  This proves that diverges.    The following limit laws are the cousins of the identities in and , with one little twist.    Let and be convergent sequences and . Then              provided .     .     Furthermore, if is continuous at and all , then .    Again, the proof of this proposition is essentially a repeat from arguments we have given in and , as you should convince yourself in .  We will assume, as an axiom, that is complete . complete To phrase this precisely, we need the following.    The sequence is monotone if it is either nondecreasing ( for all ) or nonincreasing ( for all ). sequence monotone  monotone     There are many equivalent ways of formulating the completeness property for the reals. Here is what we'll go by:   Monotone Sequence Property   Any bounded monotone sequence converges. monotone sequence property     This axiom (or one of its many equivalent statements) gives arguably the most important property of the real number system; namely, that we can, in many cases, determine that a given sequence converges without knowing the value of the limit . In this sense we can use the sequence to define a real number.    Consider the sequence defined by .  This sequence is increasing (by definition) and each by . By the Monotone Sequence Property, converges, which allows us to define one of the most famous numbers in all of mathematics, e@  .      Fix . We claim that : First, the sequence converges because it is decreasing and bounded below by . Let . By , .  Thus , and so (since ) we conclude that .    We remark that the Monotone Sequence Property implies the Least Upper Bound Property : every nonempty set of real numbers with an upper bound has a least upper bound. least upper bound The Least Upper Bound Property, in turn, implies the following theorem, which is often listed as a separate axiom. Both the Archimedean Property and the Least Upper Bound Property can be used in (different) axiomatic developments of .    Archimedean Archimedes of Syracuse (287 212 BCE) attributes this property to Eudoxus of Cnidus (408 355 BCE). Property   If is any real number then there is an integer that is greater than .    For a proof, see . essentially says that infinity is not part of the real numbers. Note that we already used in . The Archimedean Property underlies the construction of an infinite decimal expansion for any real number, while the Monotone Sequence Property shows that any such infinite decimal expansion actually converges to a real number.  We close this discussion of limits with a pair of standard limits. The first of these can be established by calculus methods (such as L'Hôpital's rule ( ), by treating as the variable); both of them can be proved by more elementary considerations. Either way, we leave the proof of the following to .       Exponentials beat polynomials: for any polynomial (with complex coefficients) and any with , .    Factorials beat exponentials: for any , .       "
+},
+{
+  "id": "sec_sequencescomplete-3",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#sec_sequencescomplete-3",
+  "type": "Definition",
+  "number": "7.1.1",
+  "title": "",
+  "body": "  Suppose is a sequence and such that for all there is an integer such that for all , we have . Then the sequence is convergent and is its limit ; in symbols we write . limit of a sequence  convergent sequence  sequence convergent  sequence limit   If no such exists then the sequence is divergent . divergent  sequence divergent    "
+},
+{
+  "id": "ex_1_n_converges",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#ex_1_n_converges",
+  "type": "Example",
+  "number": "7.1.2",
+  "title": "",
+  "body": "  We claim that : Given , choose . Then for any , .   "
+},
+{
+  "id": "sec_sequencescomplete-7",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#sec_sequencescomplete-7",
+  "type": "Example",
+  "number": "7.1.3",
+  "title": "",
+  "body": "  The sequence diverges: Given , choose . We consider two cases: If , then for any , choose such that . (This is always possible since for any .) Then .  If , then for any , choose such that . (This is always possible since for any .) Then .  This proves that diverges.   "
+},
+{
+  "id": "limitrules",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#limitrules",
+  "type": "Proposition",
+  "number": "7.1.4",
+  "title": "",
+  "body": "  Let and be convergent sequences and . Then              provided .     .     Furthermore, if is continuous at and all , then .   "
+},
+{
+  "id": "sec_sequencescomplete-12",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#sec_sequencescomplete-12",
+  "type": "Definition",
+  "number": "7.1.5",
+  "title": "",
+  "body": "  The sequence is monotone if it is either nondecreasing ( for all ) or nonincreasing ( for all ). sequence monotone  monotone    "
+},
+{
+  "id": "sec_sequencescomplete-14",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#sec_sequencescomplete-14",
+  "type": "Axiom",
+  "number": "7.1.6",
+  "title": "Monotone Sequence Property.",
+  "body": " Monotone Sequence Property   Any bounded monotone sequence converges. monotone sequence property    "
+},
+{
+  "id": "ex_e-1series",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#ex_e-1series",
+  "type": "Example",
+  "number": "7.1.7",
+  "title": "",
+  "body": "  Consider the sequence defined by .  This sequence is increasing (by definition) and each by . By the Monotone Sequence Property, converges, which allows us to define one of the most famous numbers in all of mathematics, e@  .   "
+},
+{
+  "id": "r_n-_0",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#r_n-_0",
+  "type": "Example",
+  "number": "7.1.8",
+  "title": "",
+  "body": "  Fix . We claim that : First, the sequence converges because it is decreasing and bounded below by . Let . By , .  Thus , and so (since ) we conclude that .   "
+},
+{
+  "id": "thm_archimedean",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#thm_archimedean",
+  "type": "Theorem",
+  "number": "7.1.9",
+  "title": "Archimedean<details class=\"ptx-footnote\" aria-live=\"polite\" id=\"thm_archimedean-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 7.1.3\"><sup> 3 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"thm_archimedean-1-1\">Archimedes of Syracuse (287–212 BCE) attributes this property to Eudoxus of Cnidus (408–355 BCE).<\/div><\/details> Property.",
+  "body": " Archimedean Archimedes of Syracuse (287 212 BCE) attributes this property to Eudoxus of Cnidus (408 355 BCE). Property   If is any real number then there is an integer that is greater than .   "
+},
+{
+  "id": "prop_pairoflimits",
+  "level": "2",
+  "url": "sec_sequencescomplete.html#prop_pairoflimits",
+  "type": "Proposition",
+  "number": "7.1.10",
+  "title": "",
+  "body": "     Exponentials beat polynomials: for any polynomial (with complex coefficients) and any with , .    Factorials beat exponentials: for any , .      "
+},
+{
+  "id": "sec_series",
+  "level": "1",
+  "url": "sec_series.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "Series",
+  "body": " Series    A series is a sequence whose members are of the form (or ); we call the sequence of terms of the series. series The (or ) are the partial sums of the series.    If we wanted to be lazy we would define convergence of a series simply by referring to convergence of the partial sums of the series after all, we just defined series through sequences. However, there are some convergence features that take on special appearances for series, so we mention them here explicitly. For starters, a series converges to the limit (or sum ) by definition if . convergent series  limit of a series   To prove that a series converges we use the definition of limit of a sequence: for any we have to find an such that for all , .  In the case of a convergent series, we usually write its limit as or .    Fix with . We claim that the geometric series  converges with limit . geometric series   In this case, we can compute the partial sums explicitly: , whose limit as exists by , because .      Another series whose limit we can compute by manipulating the partial sums is .  A series where most of the terms cancel like this is called telescoping .    Most of the time we can use the completeness property to check convergence of a series, and it is fortunate that the Monotone Sequence Property has a convenient translation into the language of series of real numbers. The partial sums of a series form a nondecreasing sequence if the terms of the series are nonnegative, and this observation immediately yields the following:    If then converges if and only if the partial sums are bounded.      With this new terminology, we can revisit : Let . In we showed that the partial sums are bounded, and .    Although is a mere direct consequence of the completeness property of , it is surprisingly useful. Here is one application, sometimes called the Comparison Test : comparison test     If for all and converges then so does .    By , the partial sums are bounded, and thus so are .  But this means, again by , that converges.      If converges then .    The contrapositive of this proposition is often used, sometimes called the Test for Divergence :    If or does not exist, then diverges.      Continuing , for the geometric series diverges since in this case either does not exist or is not 0.    Suppose converges. Then, using a) & (d), .    A common mistake is to try to use the converse of , but the converse is false:    The harmonic series  diverges (even though the terms go to ): If we assume the series converges to , then , a contradiction.     Integral Test   If is continuous and nonincreasing, then . integral test     The Integral Test literally comes with a proof by picture see : the integral of on the interval is bounded between and . Adding the pieces gives the inequalities above for the th partial sum versus the integrals from to and from to , and the inequality persists in the limit.   The integral test.      right=5.5  f(x)=1\/sqrt(x)    x  f(x)      f(${k})            right=5.5  f(x)=1\/sqrt(x)    x  f(x)      f(${k})             If is continuous and nonincreasing, then converges if and only if is finite.     Suppose . Then the first inequality in implies that the partial sums are unbounded, and so says that cannot converge.  Conversely, if is finite then the second inequality in says that the partial sums are bounded; thus, again with , we conclude that converges.     The series converges for and diverges for (and the case was the subject of ) because is finite if and only if .    By now you might be amused that we have collected several results on series whose terms are nonnegative real numbers. One reason is that such series are a bit easier to handle, another one is that there is a notion of convergence special to series that relates any series to one with only nonnegative terms:    The series  converges absolutely if converges. absolute convergence       If a series converges absolutely then it converges.    This seems like an obvious statement, but its proof is, nevertheless, nontrivial.   Suppose converges. We first consider the case that each is real. Let   Then and for all , and so by , both converge. But then so does .  For the general case , we write each term as . Since for all , implies that converges absolutely, and by an analogous argument, so does . But now we can use the first case to deduce that both and converge, and thus so does .     Continuing , converges for , because then (using ) converges. Viewed as a function in , the series is the Riemann zeta function , an indispensable tool in number theory and many other areas in mathematics and physics. Riemann zeta function  The Riemann zeta function is the subject of the arguably most famous open problem in mathematics, the \\ix{Riemann hypothesis} . It turns out that can be extended to a function that is holomorphic on , and the Riemann hypothesis asserts that the roots of this extended function in the strip are all on the critical line  .     Another common mistake is to try to use the converse of , which is also false:    The alternating harmonic series  converges:  alternating harmonic series   (There is a small technical detail to be checked here, since we are effectively ignoring half the partial sums of the original series; see .) Since ,   converges by and .  However, according to , does not converge absolutely.    "
+},
+{
+  "id": "sec_series-2",
+  "level": "2",
+  "url": "sec_series.html#sec_series-2",
+  "type": "Definition",
+  "number": "7.2.1",
+  "title": "",
+  "body": "  A series is a sequence whose members are of the form (or ); we call the sequence of terms of the series. series The (or ) are the partial sums of the series.   "
+},
+{
+  "id": "ex_geomseries",
+  "level": "2",
+  "url": "sec_series.html#ex_geomseries",
+  "type": "Example",
+  "number": "7.2.2",
+  "title": "",
+  "body": "  Fix with . We claim that the geometric series  converges with limit . geometric series   In this case, we can compute the partial sums explicitly: , whose limit as exists by , because .   "
+},
+{
+  "id": "ex_telescope",
+  "level": "2",
+  "url": "sec_series.html#ex_telescope",
+  "type": "Example",
+  "number": "7.2.3",
+  "title": "",
+  "body": "  Another series whose limit we can compute by manipulating the partial sums is .  A series where most of the terms cancel like this is called telescoping .   "
+},
+{
+  "id": "positiveseries",
+  "level": "2",
+  "url": "sec_series.html#positiveseries",
+  "type": "Corollary",
+  "number": "7.2.4",
+  "title": "",
+  "body": "  If then converges if and only if the partial sums are bounded.   "
+},
+{
+  "id": "sec_series-10",
+  "level": "2",
+  "url": "sec_series.html#sec_series-10",
+  "type": "Example",
+  "number": "7.2.5",
+  "title": "",
+  "body": "  With this new terminology, we can revisit : Let . In we showed that the partial sums are bounded, and .   "
+},
+{
+  "id": "cor_comparisonseries",
+  "level": "2",
+  "url": "sec_series.html#cor_comparisonseries",
+  "type": "Corollary",
+  "number": "7.2.6",
+  "title": "",
+  "body": "  If for all and converges then so does .    By , the partial sums are bounded, and thus so are .  But this means, again by , that converges.   "
+},
+{
+  "id": "generaltermto0",
+  "level": "2",
+  "url": "sec_series.html#generaltermto0",
+  "type": "Proposition",
+  "number": "7.2.7",
+  "title": "",
+  "body": "  If converges then .   "
+},
+{
+  "id": "cor_divtest",
+  "level": "2",
+  "url": "sec_series.html#cor_divtest",
+  "type": "Corollary",
+  "number": "7.2.8",
+  "title": "",
+  "body": "  If or does not exist, then diverges.   "
+},
+{
+  "id": "ex_geomseriesdiv",
+  "level": "2",
+  "url": "sec_series.html#ex_geomseriesdiv",
+  "type": "Example",
+  "number": "7.2.9",
+  "title": "",
+  "body": "  Continuing , for the geometric series diverges since in this case either does not exist or is not 0.    Suppose converges. Then, using a) & (d), .   "
+},
+{
+  "id": "ex_harmonic",
+  "level": "2",
+  "url": "sec_series.html#ex_harmonic",
+  "type": "Example",
+  "number": "7.2.10",
+  "title": "",
+  "body": "  The harmonic series  diverges (even though the terms go to ): If we assume the series converges to , then , a contradiction.   "
+},
+{
+  "id": "prop_integraltest",
+  "level": "2",
+  "url": "sec_series.html#prop_integraltest",
+  "type": "Proposition",
+  "number": "7.2.11",
+  "title": "Integral Test.",
+  "body": " Integral Test   If is continuous and nonincreasing, then . integral test    "
+},
+{
+  "id": "fig_integraltest",
+  "level": "2",
+  "url": "sec_series.html#fig_integraltest",
+  "type": "Figure",
+  "number": "7.2.12",
+  "title": "",
+  "body": " The integral test.      right=5.5  f(x)=1\/sqrt(x)    x  f(x)      f(${k})            right=5.5  f(x)=1\/sqrt(x)    x  f(x)      f(${k})          "
+},
+{
+  "id": "cor_integraltest",
+  "level": "2",
+  "url": "sec_series.html#cor_integraltest",
+  "type": "Corollary",
+  "number": "7.2.13",
+  "title": "",
+  "body": "  If is continuous and nonincreasing, then converges if and only if is finite.   "
+},
+{
+  "id": "sec_series-23",
+  "level": "2",
+  "url": "sec_series.html#sec_series-23",
+  "type": "Proof",
+  "number": "7.2.1",
+  "title": "",
+  "body": " Suppose . Then the first inequality in implies that the partial sums are unbounded, and so says that cannot converge.  Conversely, if is finite then the second inequality in says that the partial sums are bounded; thus, again with , we conclude that converges.  "
+},
+{
+  "id": "exam_riemannzetaprep",
+  "level": "2",
+  "url": "sec_series.html#exam_riemannzetaprep",
+  "type": "Example",
+  "number": "7.2.14",
+  "title": "",
+  "body": "  The series converges for and diverges for (and the case was the subject of ) because is finite if and only if .   "
+},
+{
+  "id": "sec_series-26",
+  "level": "2",
+  "url": "sec_series.html#sec_series-26",
+  "type": "Definition",
+  "number": "7.2.15",
+  "title": "",
+  "body": "  The series  converges absolutely if converges. absolute convergence    "
+},
+{
+  "id": "absconvthm",
+  "level": "2",
+  "url": "sec_series.html#absconvthm",
+  "type": "Theorem",
+  "number": "7.2.16",
+  "title": "",
+  "body": "  If a series converges absolutely then it converges.   "
+},
+{
+  "id": "sec_series-29",
+  "level": "2",
+  "url": "sec_series.html#sec_series-29",
+  "type": "Proof",
+  "number": "7.2.2",
+  "title": "",
+  "body": " Suppose converges. We first consider the case that each is real. Let   Then and for all , and so by , both converge. But then so does .  For the general case , we write each term as . Since for all , implies that converges absolutely, and by an analogous argument, so does . But now we can use the first case to deduce that both and converge, and thus so does .  "
+},
+{
+  "id": "exam_riemannzet",
+  "level": "2",
+  "url": "sec_series.html#exam_riemannzet",
+  "type": "Example",
+  "number": "7.2.17",
+  "title": "",
+  "body": "  Continuing , converges for , because then (using ) converges. Viewed as a function in , the series is the Riemann zeta function , an indispensable tool in number theory and many other areas in mathematics and physics. Riemann zeta function  The Riemann zeta function is the subject of the arguably most famous open problem in mathematics, the \\ix{Riemann hypothesis} . It turns out that can be extended to a function that is holomorphic on , and the Riemann hypothesis asserts that the roots of this extended function in the strip are all on the critical line  .    "
+},
+{
+  "id": "ex_altharmonic",
+  "level": "2",
+  "url": "sec_series.html#ex_altharmonic",
+  "type": "Example",
+  "number": "7.2.18",
+  "title": "",
+  "body": "  The alternating harmonic series  converges:  alternating harmonic series   (There is a small technical detail to be checked here, since we are effectively ignoring half the partial sums of the original series; see .) Since ,   converges by and .  However, according to , does not converge absolutely.   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
