@@ -69,8 +69,8 @@
   </introduction>
   <xi:include  href="sec_sequencescomplete.ptx"/>
   <xi:include  href="sec_series.ptx"/>
-  <!--
   <xi:include  href="sec_sequseriesfunctions.ptx"/>
+  <!--
   <xi:include  href="sec_regionsconvergence.ptx"/>
   -->
 </chapter>
