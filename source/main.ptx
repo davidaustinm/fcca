@@ -17,8 +17,8 @@
     <xi:include href="./intchapter.ptx"/>
     <xi:include href="./cachyconschapter.ptx"/>
     <xi:include href="./harmonicChapter.ptx"/>
-    <!--
     <xi:include href="./powerchapter.ptx"/>
+    <!--
     <xi:include href="./taylorchapter.ptx"/>
     <xi:include href="./residuechapter.ptx"/>
     <xi:include href="./ch_discreteresidues.ptx"/>

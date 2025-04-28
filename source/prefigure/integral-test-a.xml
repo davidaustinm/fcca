@@ -1,0 +1,20 @@
+<diagram dimensions="(250,250)" margins="(5,5,20,30)"
+         xmlns="https://prefigure.org">
+  <definition>right=5.5</definition>
+  <definition>f(x)=1/sqrt(x)</definition>
+  <coordinates bbox="(-0.5,-0.2,right,1.5)">
+    <axes decorations="no" stroke="gray">
+      <xlabel><m>x</m></xlabel>
+      <ylabel><m>f(x)</m></ylabel>
+    </axes>
+    <repeat parameter="k=1..5">
+      <rectangle lower-left="(k-1,0)" dimensions="(1,f(k))"
+                 stroke="black"/>
+      <label anchor="(k-0.5,0.5*f(k))" alignment="center">
+        <m>f(${k})</m>
+      </label>
+    </repeat>
+    <graph function="f" domain="(0.1,right)"/>
+
+  </coordinates>
+</diagram>

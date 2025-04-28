@@ -1,0 +1,35 @@
+<diagram dimensions="(300,300)" margins="5"
+         xmlns="https://prefigure.org">
+  <definition>a1=120</definition>
+  <definition>a2=-80</definition>
+  <definition>r=3</definition>
+  <definition>p1=(2,0)+r*(cos(radians(a1)),sin(radians(a1)))</definition>
+  <definition>p2=(2,0)+r*(cos(radians(a2)),sin(radians(a2)))</definition>
+  <definition>l(t)=(1-t)*p1 + t*p2</definition>
+  <coordinates bbox="(-2,-4,6,4)">
+    <axes decorations="no" stroke="gray"/>
+    <line endpoints="(p1,p2)" stroke="blue"/>
+    <circle center="(2,0)" radius="r" stroke="blue"/>
+
+    <arc center="(2,0)" radius="r" range="(a2, 80)"
+         arrows="1" arrow-width="5"
+         stroke="blue"/>
+
+    <arc center="(2,0)" radius="r" range="(a1, 250)"
+         arrows="1" arrow-width="5"
+         stroke="blue"/>
+
+    <line endpoints="(p1, l(0.4))" stroke="blue"
+          arrows="1" arrow-width="5"/>
+    <line endpoints="(p2, l(0.6))" stroke="blue"
+          arrows="1" arrow-width="5"/>
+
+    <definition>R=0.75</definition>
+    <circle center="(0,0)" radius="R" stroke="blue"/>
+    <circle center="(pi,0)" radius="R" stroke="blue"/>
+
+    <point p="(0,0)" alignment="se"><m>0</m></point>
+    <point p="(pi,0)" alignment="south"><m>\pi</m></point>
+
+  </coordinates>
+</diagram>

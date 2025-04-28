@@ -1,65 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <section xml:id="sec_sequencescomplete">
   <title>Sequences and Completeness</title>
   <p>
-    As in the real case,<fn>
-    There will be no surprises in this chapter of the nature
-    <em>real versus complex</em>.
-    </fn> a <em>(complex) sequence
-        <idx><h>sequence</h></idx>
-    </em> is a function from the positive
+    As in the real case,
+    <fn>
+      There will be no surprises in this chapter of the nature
+      <em>real versus complex</em>.
+    </fn> a <em>(complex) sequence</em>
+    is a function from the positive
     (sometimes the nonnegative)
     integers to the complex numbers.
-    Its values are usually written as <m>a_n</m> (as opposed to <m>a(n)</m>) and we commonly denote the sequence by <m>\left( a_n \right)_{n=1}^\infty</m>,
+    <idx><h>sequence</h></idx>
+    Its values are usually written as <m>a_n</m> (as opposed to
+    <m>a(n)</m>) and we commonly denote the sequence by <m>\left( a_n
+    \right)_{n=1}^\infty</m>, 
     <m>\left( a_n \right)_{n \geq 1}</m>, or simply <m>(a_n)</m>.
     Considering such a sequence
-        <idx><h>sequence</h></idx>
     as a function of <m>n</m>, the notion of convergence
-        <idx><h>convergence</h></idx>
-    is merely a repeat of the definition we gave in <xref ref="sec_riemannspere">Section</xref>,
+    is merely a repeat of the definition we gave in
+    <xref ref="sec_riemannspere">Section</xref>, 
     adjusted to the fact that <m>n</m> is an integer.
+    <idx><h>sequence</h></idx>
+    <idx><h>convergence</h></idx>
   </p>
   <definition>
     <statement>
       <p>
-        Suppose <m>\left( a_n \right)</m> is a sequence and <m>L \in \C</m> such that for all
-        <m>\epsilon>0</m> there is an integer <m>N</m> such that for all <m>n \geq N</m>,
+        Suppose <m>\left( a_n \right)</m> is a sequence and <m>L \in
+        \C</m> such that for all 
+        <m>\epsilon>0</m> there is an integer <m>N</m> such that for
+        all <m>n \geq N</m>, 
         we have <m>\left| a_n - L \right| \lt  \epsilon</m>.
         Then the sequence <m>\left( a_n \right)</m> is <em>convergent</em>
         and <m>L</m> is its <em>limit</em>;
-        in symbols we write <idx><h>limit</h><h>of a sequence</h></idx> <idx><h>convergent</h><h>sequence</h></idx> <idx><h>sequence</h><h>convergent</h></idx>
-            <idx><h>sequence</h><h>limit</h></idx>
+        in symbols we write
         <me>
           \lim_{n \to \infty} a_n \= L \,
         </me>.
+        <idx><h>limit</h><h>of a sequence</h></idx>
+        <idx><h>convergent</h><h>sequence</h></idx>
+        <idx><h>sequence</h><h>convergent</h></idx> 
+        <idx><h>sequence</h><h>limit</h></idx>
       </p>
       <p>
-        If no such <m>L</m> exists then the sequence <m>\left( a_n \right)</m> is <em>divergent
-            <idx><h>divergent</h></idx>
+        If no such <m>L</m> exists then the sequence <m>\left( a_n
+        \right)</m> is <em>divergent 
         </em>.
-            <idx><h>sequence</h><h>divergent</h></idx>
+        <idx><h>divergent</h></idx>
+        <idx><h>sequence</h><h>divergent</h></idx>
       </p>
     </statement>
   </definition>
   <p>
     As in our previous definitions of limit,
     the limit of a sequence is unique if it exists.
-    See <xref ref="ex_sequenceLimitUnique">Exercise</xref>.
+    See <xref ref="ex_sequenceLimitUnique"/>.
   </p>
   <example xml:id="ex_1_n_converges">
     <statement>
       <p>
-        We claim that <m>\ds \lim_{n \to \infty} \tfrac {i^n} n = 0</m>: Given <m>\epsilon > 0</m>,
+        We claim that <m>\ds \lim_{n \to \infty} \tfrac {i^n} n =
+        0</m>: Given <m>\epsilon > 0</m>, 
         choose <m>N > \frac 1 \epsilon</m>.
         Then for any <m>n \geq N</m>,
         <me>
-          \left| \frac{i^n} n - 0 \right| \= \left| \frac{i^n} n \right| \= \frac {|i|^n} n \= \frac 1 n \ \leq \ \frac 1 N \ \lt  \ \epsilon \,
+          \left| \frac{i^n} n - 0 \right| \= \left| \frac{i^n} n
+          \right| \= \frac {|i|^n} n \= \frac 1 n \ \leq \ \frac 1 N \
+          \lt  \ \epsilon \, 
         </me>.
       </p>
     </statement>
   </example>
   <p>
     To prove that a sequence <m>(a_n)</m> is divergent,
-    we have to show the negation of the statement that defines convergence, that is:
+    we have to show the negation of the statement that defines
+    convergence, that is: 
     given any <m>L \in \C</m>,
     there exists <m>\epsilon > 0</m> such that,
     given any integer <m>N</m>,
@@ -70,7 +86,8 @@
   <example>
     <statement>
       <p>
-        The sequence <m>\left( a_n = i^n \right)</m> diverges: Given <m>L \in \C</m>,
+        The sequence <m>\left( a_n = i^n \right)</m> diverges: Given
+        <m>L \in \C</m>, 
         choose <m>\epsilon = \frac 1 2</m>.
         We consider two cases: If <m>\Re(L) \geq 0</m>,
         then for any <m>N</m>, choose
@@ -79,7 +96,8 @@
         <m>a_{4k+2} = i^{4k+2} = -1</m> for any <m>k \geq 0</m>.)
         Then
         <me>
-          \left| a_n - L \right| \= \left| 1 + L \right| \ \geq \ 1 \ > \ \frac 1 2 \,
+          \left| a_n - L \right| \= \left| 1 + L \right| \ \geq \ 1 \
+          > \ \frac 1 2 \, 
         </me>.
       </p>
       <p>
@@ -90,17 +108,20 @@
         <m>a_{4k} = i^{4k} = 1</m> for any <m>k > 0</m>.)
         Then
         <me>
-          \left| a_n - L \right| \= \left| 1 - L \right| \ > \ 1 \ > \ \frac 1 2 \,
+          \left| a_n - L \right| \= \left| 1 - L \right| \ > \ 1 \ > \
+          \frac 1 2 \, 
         </me>.
       </p>
       <p>
-        This proves that <m>\left( a_n = i^n \right)</m> diverges. \pushQED{}\popQED
+        This proves that <m>\left( a_n = i^n \right)</m>
+        diverges. 
       </p>
     </statement>
   </example>
   <p>
-    The following limit laws are the cousins of the identities in <xref ref="limits">Propositions</xref>
-    and <xref ref="funoflimit"></xref>, with one little twist.
+    The following limit laws are the cousins of the identities in
+    <xref ref="limits"/>
+    and <xref ref="funoflimit"/>, with one little twist.
   </p>
   <proposition xml:id="limitrules">
     <statement>
@@ -108,33 +129,41 @@
         Let <m>\left( a_n \right)</m> and
         <m>\left( b_n \right)</m> be convergent sequences and <m>c \in \C</m>.
         Then
-        <ol marker="a">
+        <ol marker="a) ">
           <li>
             <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n + c \lim_{ n \to \infty } b_n \= \lim_{ n \to \infty } \left( a_n + c \, b_n \right)</m>
+              <m>\displaystyle \lim_{ n \to \infty } a_n + c \lim_{ n
+              \to \infty } b_n \= \lim_{ n \to \infty } \left( a_n + c
+              \, b_n \right)</m> 
             </p>
           </li>
           <li>
             <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n \cdot \lim_{ n \to \infty } b_n \= \lim_{ n \to \infty } \left( a_n \cdot b_n \right)</m>
+              <m>\displaystyle \lim_{ n \to \infty } a_n \cdot \lim_{
+              n \to \infty } b_n \= \lim_{ n \to \infty } \left( a_n
+              \cdot b_n \right)</m> 
             </p>
           </li>
           <li>
             <p>
-              <m>\displaystyle \frac{ \lim_{ n \to \infty } a_n }{ \lim_{ n \to \infty } b_n } \= \lim_{ n \to \infty } \left( \frac{ a_n }{ b_n } \right)</m>
+              <m>\displaystyle \frac{ \lim_{ n \to \infty } a_n }{
+              \lim_{ n \to \infty } b_n } \= \lim_{ n \to \infty }
+              \left( \frac{ a_n }{ b_n } \right)</m> provided 
+              <m>\lim_{ n \to \infty } b_n \neq 0</m>. 
             </p>
           </li>
           <li>
             <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n \= \lim_{ n \to \infty } a_{ n+1 }</m>
+              <m>\displaystyle \lim_{ n \to \infty } a_n \= \lim_{ n
+              \to \infty } a_{ n+1 }</m>.
             </p>
           </li>
         </ol>
       </p>
       <p>
-        where in { (c)} we also require that <m>\lim_{ n \to \infty } b_n \neq 0</m>.
         Furthermore, if <m>f: G \to \C</m> is continuous at
-        <m>L := \lim_{ n \to \infty } a_n</m> and all <m>a_n \in G</m>, then
+        <m>L := \lim_{ n \to \infty } a_n</m> and all <m>a_n \in
+        G</m>, then 
         <me>
           \lim_{n\to\infty} f(a_n) \= f(L) \,
         </me>.
@@ -142,29 +171,31 @@
     </statement>
   </proposition>
   <p>
-    Again, the proof of this proposition is essentially a repeat from arguments we have given in <xref ref="functionchapter">Chapters</xref>
-    and <xref ref="exampleschapter"></xref>,
-    as you should convince yourself in <xref ref="ex_limitrulesseq">Exercise</xref>.
+    Again, the proof of this proposition is essentially a repeat from
+    arguments we have given in <xref ref="functionchapter"/> 
+    and <xref ref="exampleschapter"/>,
+    as you should convince yourself in <xref ref="ex_limitrulesseq"/>.
   </p>
   <p>
-    We will assume, as an axiom, that <m>\R</m> is <em>complete
-        <idx><h>complete</h></idx>
-    </em>.
+    We will assume, as an axiom, that <m>\R</m> is <em>complete</em>.
+    <idx><h>complete</h></idx>
     To phrase this precisely, we need the following.
   </p>
   <definition>
     <statement>
       <p>
-        The sequence <m>(a_n)</m> is <em>monotone
-            <idx><h>monotone</h></idx>
-        </em> if it is either nondecreasing (<m>a_{n+1}\ge a_n</m> for all <m>n</m>) or nonincreasing
+        The sequence <m>(a_n)</m> is <em>monotone</em>
+        if it is either nondecreasing (<m>a_{n+1}\ge a_n</m> for all
+        <m>n</m>) or nonincreasing 
         (<m>a_{n+1}\le a_n</m> for all <m>n</m>).
-            <idx><h>sequence</h><h>monotone</h></idx>
+        <idx><h>sequence</h><h>monotone</h></idx>
+        <idx><h>monotone</h></idx>
       </p>
     </statement>
   </definition>
   <p>
-    There are many equivalent ways of formulating the completeness property for the reals.
+    There are many equivalent ways of formulating the completeness
+    property for the reals. 
     Here is what we'll go by:
   </p>
   <axiom>
@@ -172,12 +203,13 @@
     <statement>
       <p>
         Any bounded monotone sequence converges.
-            <idx><h>monotone sequence property</h></idx>
+        <idx><h>monotone sequence property</h></idx>
       </p>
     </statement>
   </axiom>
   <p>
-    This axiom (or one of its many equivalent statements) gives arguably the most important property of the real number system;
+    This axiom (or one of its many equivalent statements) gives
+    arguably the most important property of the real number system; 
     namely, that we can, in many cases,
     determine that a given sequence converges
     <em>without knowing the value of the limit</em>.
@@ -194,10 +226,11 @@
       <p>
         This sequence is increasing
         (by definition)
-        and each <m>a_n \le 3</m> by <xref ref="ex_edefdaslimit">Exercise</xref>.
+        and each <m>a_n \le 3</m> by <xref ref="ex_edefdaslimit"/>.
         By the Monotone Sequence Property, <m>(a_n)</m> converges,
-        which allows us to define one of the most famous numbers in all of mathematics,
-            <idx><h>e@<m>e</m></h></idx>
+        which allows us to define one of the most famous numbers in
+        all of mathematics, 
+        <idx><h>e@<m>e</m></h></idx>
         <me>
           e \ := \ 1 + \lim_{ n \to \infty } a_n \,
         </me>.
@@ -209,69 +242,86 @@
       <p>
         Fix <m>0\le r\lt 1</m>.
         We claim that <m>\lim_{n\to\infty}r^n=0</m>: First,
-        the sequence <m>(a_n = r^n)</m> converges because it is decreasing and bounded below by <m>0</m>.
+        the sequence <m>(a_n = r^n)</m> converges because it is
+        decreasing and bounded below by <m>0</m>. 
         Let <m>L := \lim_{n\to\infty}r^n</m>.
-        By <xref ref="limitrules">Proposition</xref>,
+        By <xref ref="limitrules"/>,
         <me>
-          L \= \lim_{n\to\infty}r^n \= \lim_{n\to\infty} r^{n+1} \= r \lim_{n\to\infty}r^n \= r \, L \,
+          L \= \lim_{n\to\infty}r^n \= \lim_{n\to\infty} r^{n+1} \= r
+          \lim_{n\to\infty}r^n \= r \, L \, 
         </me>.
       </p>
       <p>
         Thus <m>(1-r)L=0</m>, and so
         (since <m>1-r \ne 0</m>)
-        we conclude that <m>L=0</m>. \pushQED{}\popQED
+        we conclude that <m>L=0</m>.
       </p>
     </statement>
   </example>
   <p>
     We remark that the Monotone Sequence Property implies the
     <em>Least Upper Bound Property</em>:
-        <idx><h>least upper bound</h></idx>
     every nonempty set of real numbers with an upper bound has a
     <em>least</em> upper bound.
+    <idx><h>least upper bound</h></idx>
     The Least Upper Bound Property, in turn,
     implies the following theorem,
-    which is often listed as a separate axiom.<fn>
-    Both the Archimedean Property and the Least Upper Bound Property can be used in (different) axiomatic developments of<nbsp/><m>\R</m>.
+    which is often listed as a separate axiom.
+    <fn>
+      Both the Archimedean Property and the Least Upper Bound Property
+      can be used in (different) axiomatic developments
+      of <m>\R</m>. 
     </fn>
   </p>
   <theorem xml:id="thm_archimedean">
+    <title>
+      Archimedean<fn>
+      Archimedes of Syracuse (287<ndash/>212 BCE) attributes this
+      property to Eudoxus of Cnidus (408<ndash/>355 BCE). 
+      </fn> Property
+    </title>
     <statement>
-      <p>
-        [Archimedean<fn>
-        Archimedes of Syracuse (287<ndash/>212 BCE) attributes this property to Eudoxus of Cnidus (408<ndash/>355 BCE).
-        </fn> Property] If <m>x</m> is any real number then there is an integer <m>N</m> that is greater than<nbsp/><m>x</m>.
+      <p>If <m>x</m> is any real number then there is an integer
+      <m>N</m> that is greater than <m>x</m>. 
       </p>
     </statement>
   </theorem>
   <p>
-    For a proof see <xref ref="ex_archimedean">Exercise</xref>.
-    <xref ref="thm_archimedean">Theorem</xref>
+    For a proof, see <xref ref="ex_archimedean"/>.
+    <xref ref="thm_archimedean"/>
     essentially says that infinity is not part of the real numbers.
-    Note that we already used <xref ref="thm_archimedean">Theorem</xref>
-    in <xref ref="ex_1_n_converges">Example</xref>.
-    The Archimedean Property underlies the construction of an infinite decimal expansion for any real number,
-    while the Monotone Sequence Property shows that any such infinite decimal expansion actually converges to a real number.
+    Note that we already used <xref ref="thm_archimedean"/>
+    in <xref ref="ex_1_n_converges"/>.
+    The Archimedean Property underlies the construction of an infinite
+    decimal expansion for any real number, 
+    while the Monotone Sequence Property shows that any such infinite
+    decimal expansion actually converges to a real number. 
   </p>
   <p>
     We close this discussion of limits with a pair of standard limits.
-    The first of these can be established by calculus methods (such as L'H&#xf4;pital's rule
-    (<xref ref="lhospital">Theorem</xref>),
+    The first of these can be established by calculus methods (such as
+    L'H&#xf4;pital's rule 
+    (<xref ref="lhospital"/>),
     by treating <m>n</m> as the variable);
     both of them can be proved by more elementary considerations.
-    Either way, we leave the proof of the following to <xref ref="ex_pairoflimits">Exercise</xref>.
+    Either way, we leave the proof of the following to
+    <xref ref="ex_pairoflimits"/>.
   </p>
   <proposition xml:id="prop_pairoflimits">
     <statement>
       <p>
-        \hangindent\leftmargini \mbox{(a)} Exponentials beat polynomials:
-        for any polynomial <m>p(n)</m>
-        (with complex coefficients)
-        and any <m>c \in \C</m> with <m>\abs{c} > 1</m>,
-        <me>
-          \lim_{n\to\infty}\frac{p(n)}{c^n}\=0 \,
-        </me>.
-        <ol marker="a">
+        <ol marker="a) ">
+          <li>
+            <p>
+              Exponentials beat polynomials:
+              for any polynomial <m>p(n)</m>
+              (with complex coefficients)
+              and any <m>c \in \C</m> with <m>\abs{c} > 1</m>,
+              <me>
+                \lim_{n\to\infty}\frac{p(n)}{c^n}\=0 \,
+                </me>.
+            </p>
+          </li>
           <li>
             <p>
               Factorials beat exponentials:
