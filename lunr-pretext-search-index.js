@@ -4051,6 +4051,465 @@ var ptx_lunr_docs = [
   "body": "  We revisit and consider the geometric series as a series of functions in . We know from that this function series converges pointwise for : .  To study uniform convergence, we apply with . We need a series of upper bounds that converges, so fix a real number and let . Then , and converges by . Thus, says that converges uniformly for .  We note the subtle distinction of domains for pointwise\/uniform convergence: converges (absolutely) for , but to force uniform convergence, we need to shrink the domain to for some (arbitrary but fixed) .   "
 },
 {
+  "id": "sec_regionsconvergence",
+  "level": "1",
+  "url": "sec_regionsconvergence.html",
+  "type": "Section",
+  "number": "7.4",
+  "title": "Regions of Convergence",
+  "body": " Regions of Convergence  For the remainder of this chapter (indeed, this book) we concentrate on some very special series of functions.    A power series centered at is a series of the form where . power series       A slight modification of gives a fundamental power series, namely the geometric series  .  So here and for all . We note that, as in , this power series converges absolutely for and uniformly for , for any fixed . Finally, as in , the geometric series diverges for .    A general power series has a very similar convergence behavior which, in fact, comes from comparing it to a geometric series.    Given a power series , there exists a real number or , such that    converges absolutely for ;     converges absolutely and uniformly for , for any ;     diverges for .       We remark that this theorem says nothing about the convergence\/divergence of for .    The number in is called the radius of convergence of . The open disk in which the power series converges absolutely is the region of convergence . (If then this is .) region of convergence     In preparation for the proof of , we start with the following observation.    If converges, then converges absolutely whenever .    Let . If converges then and so this sequence of terms is bounded (by ), say .  Now if , then .  The sum on the right-hand side is a convergent geometric sequence, since , and so converges absolutely by .     Consider the set .  (This set is nonempty since .)  If is unbounded then converges absolutely and uniformly for , for any (and so this gives the case of ): choose with , then says that converges absolutely. Since , we can now use .  If is bounded, let be its least upper bound. least upper bound If then converges only for , which establishes in this case.  Now assume . If then (because is a least upper bound for ) there exists such that .  Thus converges for , and so converges absolutely by . This finishes a).  If for some , again we can find such that . Then converges by , and so converges absolutely and uniformly for by . This proves b).  Finally, if then there exists such that .  But diverges, so (by the contrapositive of ) diverges, and so (by the contrapositive of ) diverges, which finishes c).     If exists then the radius of convergence of equals     We treat the case that is finite and leave the case to .  Given as in the statement of the corollary, it suffices (by ) to show that converges for and diverges for .  Suppose . Since and , there exists such that for . For those we then have and so converges (absolutely) by , because and thus converges as a geometric series. Thus converges.  Now suppose . Again because and now , there exists such that for . For those , , and so the sequence cannot converge to 0. Subsequently (by ), diverges.    You might remember this corollary from calculus, where it goes by the name root test . root test Its twin sister, the ratio test , is the subject of .    For the power series we compute , and gives the radius of convergence 1. (Alternatively, we can argue by differentiating the geometric series.)      Consider the power series . Since , the ratio test ( ) implies that the radius of convergence of is , and so the power series converges absolutely in . In the next chapter, we will see that this power series represents the exponential function.     By way of , almost immediately implies the following.    Suppose the power series has radius of convergence . Then the series represents a function that is continuous on .     Given any point , we can find such that (e.g., if then will do the trick). says that converges uniformly in , and so implies that the power series is continuous in , and so particularly at .   Finally, mixing with gives:    Suppose the power series has radius of convergence and is a piecewise smooth path in . power series integration of Then .  In particular, if is closed then .     Let (whose existence is guaranteed by ). Then and . says that converges uniformly in , and so allows us to switch integral and summation.  The last statement follows now with .   These corollaries will become extremely useful in the next chapter.  "
+},
+{
+  "id": "sec_regionsconvergence-3",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#sec_regionsconvergence-3",
+  "type": "Definition",
+  "number": "7.4.1",
+  "title": "",
+  "body": "  A power series centered at is a series of the form where . power series    "
+},
+{
+  "id": "sec_regionsconvergence-4",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#sec_regionsconvergence-4",
+  "type": "Example",
+  "number": "7.4.2",
+  "title": "",
+  "body": "  A slight modification of gives a fundamental power series, namely the geometric series  .  So here and for all . We note that, as in , this power series converges absolutely for and uniformly for , for any fixed . Finally, as in , the geometric series diverges for .   "
+},
+{
+  "id": "convergenceradius",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#convergenceradius",
+  "type": "Theorem",
+  "number": "7.4.3",
+  "title": "",
+  "body": "  Given a power series , there exists a real number or , such that    converges absolutely for ;     converges absolutely and uniformly for , for any ;     diverges for .      "
+},
+{
+  "id": "sec_regionsconvergence-8",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#sec_regionsconvergence-8",
+  "type": "Definition",
+  "number": "7.4.4",
+  "title": "",
+  "body": "  The number in is called the radius of convergence of . The open disk in which the power series converges absolutely is the region of convergence . (If then this is .) region of convergence    "
+},
+{
+  "id": "prop_convergenceradius",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#prop_convergenceradius",
+  "type": "Proposition",
+  "number": "7.4.5",
+  "title": "",
+  "body": "  If converges, then converges absolutely whenever .    Let . If converges then and so this sequence of terms is bounded (by ), say .  Now if , then .  The sum on the right-hand side is a convergent geometric sequence, since , and so converges absolutely by .   "
+},
+{
+  "id": "sec_regionsconvergence-11",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#sec_regionsconvergence-11",
+  "type": "Proof",
+  "number": "7.4.1",
+  "title": "",
+  "body": " Consider the set .  (This set is nonempty since .)  If is unbounded then converges absolutely and uniformly for , for any (and so this gives the case of ): choose with , then says that converges absolutely. Since , we can now use .  If is bounded, let be its least upper bound. least upper bound If then converges only for , which establishes in this case.  Now assume . If then (because is a least upper bound for ) there exists such that .  Thus converges for , and so converges absolutely by . This finishes a).  If for some , again we can find such that . Then converges by , and so converges absolutely and uniformly for by . This proves b).  Finally, if then there exists such that .  But diverges, so (by the contrapositive of ) diverges, and so (by the contrapositive of ) diverges, which finishes c).  "
+},
+{
+  "id": "cor_roottest",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#cor_roottest",
+  "type": "Corollary",
+  "number": "7.4.6",
+  "title": "",
+  "body": "  If exists then the radius of convergence of equals     We treat the case that is finite and leave the case to .  Given as in the statement of the corollary, it suffices (by ) to show that converges for and diverges for .  Suppose . Since and , there exists such that for . For those we then have and so converges (absolutely) by , because and thus converges as a geometric series. Thus converges.  Now suppose . Again because and now , there exists such that for . For those , , and so the sequence cannot converge to 0. Subsequently (by ), diverges.   "
+},
+{
+  "id": "sec_regionsconvergence-14",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#sec_regionsconvergence-14",
+  "type": "Example",
+  "number": "7.4.7",
+  "title": "",
+  "body": "  For the power series we compute , and gives the radius of convergence 1. (Alternatively, we can argue by differentiating the geometric series.)   "
+},
+{
+  "id": "exponentialfunctionradius",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#exponentialfunctionradius",
+  "type": "Example",
+  "number": "7.4.8",
+  "title": "",
+  "body": "  Consider the power series . Since , the ratio test ( ) implies that the radius of convergence of is , and so the power series converges absolutely in . In the next chapter, we will see that this power series represents the exponential function.    "
+},
+{
+  "id": "powseriescontinuous",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#powseriescontinuous",
+  "type": "Corollary",
+  "number": "7.4.9",
+  "title": "",
+  "body": "  Suppose the power series has radius of convergence . Then the series represents a function that is continuous on .   "
+},
+{
+  "id": "sec_regionsconvergence-18",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#sec_regionsconvergence-18",
+  "type": "Proof",
+  "number": "7.4.2",
+  "title": "",
+  "body": " Given any point , we can find such that (e.g., if then will do the trick). says that converges uniformly in , and so implies that the power series is continuous in , and so particularly at .  "
+},
+{
+  "id": "powseriesintegral",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#powseriesintegral",
+  "type": "Corollary",
+  "number": "7.4.10",
+  "title": "",
+  "body": "  Suppose the power series has radius of convergence and is a piecewise smooth path in . power series integration of Then .  In particular, if is closed then .   "
+},
+{
+  "id": "sec_regionsconvergence-21",
+  "level": "2",
+  "url": "sec_regionsconvergence.html#sec_regionsconvergence-21",
+  "type": "Proof",
+  "number": "7.4.3",
+  "title": "",
+  "body": " Let (whose existence is guaranteed by ). Then and . says that converges uniformly in , and so allows us to switch integral and summation.  The last statement follows now with .  "
+},
+{
+  "id": "powerchapter-7",
+  "level": "1",
+  "url": "powerchapter-7.html",
+  "type": "Exercises",
+  "number": "7.5",
+  "title": "Exercises",
+  "body": "   For each of the sequences, prove convergence or divergence. If the sequence converges, find the limit.                                 Determine whether each of the following series converges or diverges.                            Compute .      Prove .      Prove the following:    .     .         Show that a convergent sequence is bounded, i.e.: if exists, then there is an such that for all .      Show that the limit of a convergent sequence is unique.      Let be a sequence. A point is an accumulation point of the sequence if for every and every there exists some such that . Prove that if a sequence has more than one accumulation point then the sequence diverges.        Show that for any positive integer .    Conclude with that for any positive integer , .        Derive the Archimedean Property from the Monotone Sequence Property.      Prove .      Prove that converges if and only if and converge.      Prove that is complete and that is not complete.      Prove that, if for all and , then . This is called the Squeeze Theorem , and is useful in testing a sequence for convergence.      Find the least upper bound of the set .        Suppose that the sequence converges to zero. Show that converges if and only if converges. Moreover, if the two series converge then they have the same limit.    Give an example where does not converge to and one of the series in (a) diverges while the other converges.        Prove that the series converges if and only if .        Show that diverges.    Show that converges.          Suppose and for . Suppose is a sequence in with and, for each , . Show that converges uniformly to the zero function in .    Re-prove the statement of using part a).          Suppose , for , and converges uniformly to the zero function in . Show that, if is any sequence in , then .    Apply a) to the function sequence given in , together with the sequence , to prove that the convergence given in is not uniform.        Consider given by , for . Prove that converges pointwise to given by yet this convergence is not uniform. (See Figure .)   The functions in .        f(x)=(sin(x))^n    f(x)=sin(x)              Where do the following sequences converge pointwise? Do they converge uniformly on this domain?              where          Let .   Show that for all . ( Hint : Treat as a special case; for you can use L'Hôpital's rule ( ) but remember that is the variable, not .)    Find . ( Hint : The answer is not  .)    Why doesn't your answer to part (b) violate ?         The product of two power series centered at is another power series centered at . Derive a formula for its coefficients in terms of the coefficients of the original two power series.      Find a power series (and determine its radius of convergence) for the following functions.                       Find a power series representation about the origin of each of the following functions.                              Suppose that the sequence is bounded. Show that the radius of convergence of is at least .    Suppose that the sequence does not converge to . Show that the radius of convergence of is at most .        Find the power series centered at 1 and compute its radius of convergence for each of the following functions:                  Use the Weierstraß -test to show that each of the following series converges uniformly on the given domain:    on      on      on where          Fix and . Prove that converges uniformly in the variable  for .      Complete our proof of by considering the case .      Prove that, if exists then the radius of convergence of equals       Find the radius of convergence for each of the following series.    where      where                                   Find a function representing each of the following series.                       Recall the function defined in through .  Find a power series for .      Define the functions via , for .   Show that the maximum of is .    Show that converges uniformly to the zero function on .    Show that does not converge to as .    Why doesn't this contradict ?       "
+},
+{
+  "id": "ex_7_1",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_7_1",
+  "type": "Exercise",
+  "number": "7.5.1",
+  "title": "",
+  "body": "  For each of the sequences, prove convergence or divergence. If the sequence converges, find the limit.                              "
+},
+{
+  "id": "powerchapter-7-2",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-2",
+  "type": "Exercise",
+  "number": "7.5.2",
+  "title": "",
+  "body": "  Determine whether each of the following series converges or diverges.                         "
+},
+{
+  "id": "x73",
+  "level": "2",
+  "url": "powerchapter-7.html#x73",
+  "type": "Exercise",
+  "number": "7.5.3",
+  "title": "",
+  "body": "  Compute .   "
+},
+{
+  "id": "ex_limitrulesseq",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_limitrulesseq",
+  "type": "Exercise",
+  "number": "7.5.4",
+  "title": "",
+  "body": "  Prove .   "
+},
+{
+  "id": "powerchapter-7-5",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-5",
+  "type": "Exercise",
+  "number": "7.5.5",
+  "title": "",
+  "body": "  Prove the following:    .     .      "
+},
+{
+  "id": "ex_convseqbounded",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_convseqbounded",
+  "type": "Exercise",
+  "number": "7.5.6",
+  "title": "",
+  "body": "  Show that a convergent sequence is bounded, i.e.: if exists, then there is an such that for all .   "
+},
+{
+  "id": "ex_sequenceLimitUnique",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_sequenceLimitUnique",
+  "type": "Exercise",
+  "number": "7.5.7",
+  "title": "",
+  "body": "  Show that the limit of a convergent sequence is unique.   "
+},
+{
+  "id": "powerchapter-7-8",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-8",
+  "type": "Exercise",
+  "number": "7.5.8",
+  "title": "",
+  "body": "  Let be a sequence. A point is an accumulation point of the sequence if for every and every there exists some such that . Prove that if a sequence has more than one accumulation point then the sequence diverges.   "
+},
+{
+  "id": "ex_edefdaslimit",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_edefdaslimit",
+  "type": "Exercise",
+  "number": "7.5.9",
+  "title": "",
+  "body": "    Show that for any positive integer .    Conclude with that for any positive integer , .     "
+},
+{
+  "id": "ex_archimedean",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_archimedean",
+  "type": "Exercise",
+  "number": "7.5.10",
+  "title": "",
+  "body": "  Derive the Archimedean Property from the Monotone Sequence Property.   "
+},
+{
+  "id": "ex_pairoflimits",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_pairoflimits",
+  "type": "Exercise",
+  "number": "7.5.11",
+  "title": "",
+  "body": "  Prove .   "
+},
+{
+  "id": "realimaginaryconverge",
+  "level": "2",
+  "url": "powerchapter-7.html#realimaginaryconverge",
+  "type": "Exercise",
+  "number": "7.5.12",
+  "title": "",
+  "body": "  Prove that converges if and only if and converge.   "
+},
+{
+  "id": "powerchapter-7-13",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-13",
+  "type": "Exercise",
+  "number": "7.5.13",
+  "title": "",
+  "body": "  Prove that is complete and that is not complete.   "
+},
+{
+  "id": "powerchapter-7-14",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-14",
+  "type": "Exercise",
+  "number": "7.5.14",
+  "title": "",
+  "body": "  Prove that, if for all and , then . This is called the Squeeze Theorem , and is useful in testing a sequence for convergence.   "
+},
+{
+  "id": "powerchapter-7-15",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-15",
+  "type": "Exercise",
+  "number": "7.5.15",
+  "title": "",
+  "body": "  Find the least upper bound of the set .   "
+},
+{
+  "id": "ex_groupingterms",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_groupingterms",
+  "type": "Exercise",
+  "number": "7.5.16",
+  "title": "",
+  "body": "    Suppose that the sequence converges to zero. Show that converges if and only if converges. Moreover, if the two series converge then they have the same limit.    Give an example where does not converge to and one of the series in (a) diverges while the other converges.     "
+},
+{
+  "id": "tailtozero",
+  "level": "2",
+  "url": "powerchapter-7.html#tailtozero",
+  "type": "Exercise",
+  "number": "7.5.17",
+  "title": "",
+  "body": "  Prove that the series converges if and only if .   "
+},
+{
+  "id": "powerchapter-7-18",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-18",
+  "type": "Exercise",
+  "number": "7.5.18",
+  "title": "",
+  "body": "    Show that diverges.    Show that converges.     "
+},
+{
+  "id": "sup-_0",
+  "level": "2",
+  "url": "powerchapter-7.html#sup-_0",
+  "type": "Exercise",
+  "number": "7.5.19",
+  "title": "",
+  "body": "    Suppose and for . Suppose is a sequence in with and, for each , . Show that converges uniformly to the zero function in .    Re-prove the statement of using part a).     "
+},
+{
+  "id": "fn_zn___0",
+  "level": "2",
+  "url": "powerchapter-7.html#fn_zn___0",
+  "type": "Exercise",
+  "number": "7.5.20",
+  "title": "",
+  "body": "    Suppose , for , and converges uniformly to the zero function in . Show that, if is any sequence in , then .    Apply a) to the function sequence given in , together with the sequence , to prove that the convergence given in is not uniform.     "
+},
+{
+  "id": "ex_sin_n_convergence",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_sin_n_convergence",
+  "type": "Exercise",
+  "number": "7.5.21",
+  "title": "",
+  "body": "  Consider given by , for . Prove that converges pointwise to given by yet this convergence is not uniform. (See Figure .)   The functions in .        f(x)=(sin(x))^n    f(x)=sin(x)           "
+},
+{
+  "id": "powerchapter-7-22",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-22",
+  "type": "Exercise",
+  "number": "7.5.22",
+  "title": "",
+  "body": "  Where do the following sequences converge pointwise? Do they converge uniformly on this domain?              where       "
+},
+{
+  "id": "powerchapter-7-23",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-23",
+  "type": "Exercise",
+  "number": "7.5.23",
+  "title": "",
+  "body": "  Let .   Show that for all . ( Hint : Treat as a special case; for you can use L'Hôpital's rule ( ) but remember that is the variable, not .)    Find . ( Hint : The answer is not  .)    Why doesn't your answer to part (b) violate ?      "
+},
+{
+  "id": "powerchapter-7-24",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-24",
+  "type": "Exercise",
+  "number": "7.5.24",
+  "title": "",
+  "body": "  The product of two power series centered at is another power series centered at . Derive a formula for its coefficients in terms of the coefficients of the original two power series.   "
+},
+{
+  "id": "ex_7_2",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_7_2",
+  "type": "Exercise",
+  "number": "7.5.25",
+  "title": "",
+  "body": "  Find a power series (and determine its radius of convergence) for the following functions.                    "
+},
+{
+  "id": "ex_powerex",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_powerex",
+  "type": "Exercise",
+  "number": "7.5.26",
+  "title": "",
+  "body": "  Find a power series representation about the origin of each of the following functions.                         "
+},
+{
+  "id": "powerchapter-7-27",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-27",
+  "type": "Exercise",
+  "number": "7.5.27",
+  "title": "",
+  "body": "    Suppose that the sequence is bounded. Show that the radius of convergence of is at least .    Suppose that the sequence does not converge to . Show that the radius of convergence of is at most .     "
+},
+{
+  "id": "ex_7_3",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_7_3",
+  "type": "Exercise",
+  "number": "7.5.28",
+  "title": "",
+  "body": "  Find the power series centered at 1 and compute its radius of convergence for each of the following functions:               "
+},
+{
+  "id": "powerchapter-7-29",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-29",
+  "type": "Exercise",
+  "number": "7.5.29",
+  "title": "",
+  "body": "  Use the Weierstraß -test to show that each of the following series converges uniformly on the given domain:    on      on      on where       "
+},
+{
+  "id": "prob_geomseriesfunky",
+  "level": "2",
+  "url": "powerchapter-7.html#prob_geomseriesfunky",
+  "type": "Exercise",
+  "number": "7.5.30",
+  "title": "",
+  "body": "  Fix and . Prove that converges uniformly in the variable  for .   "
+},
+{
+  "id": "ex_roottestRinfty",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_roottestRinfty",
+  "type": "Exercise",
+  "number": "7.5.31",
+  "title": "",
+  "body": "  Complete our proof of by considering the case .   "
+},
+{
+  "id": "ex_ratiotest",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_ratiotest",
+  "type": "Exercise",
+  "number": "7.5.32",
+  "title": "",
+  "body": "  Prove that, if exists then the radius of convergence of equals    "
+},
+{
+  "id": "ex_7_4",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_7_4",
+  "type": "Exercise",
+  "number": "7.5.33",
+  "title": "",
+  "body": "  Find the radius of convergence for each of the following series.    where      where                                "
+},
+{
+  "id": "ex_734",
+  "level": "2",
+  "url": "powerchapter-7.html#ex_734",
+  "type": "Exercise",
+  "number": "7.5.34",
+  "title": "",
+  "body": "  Find a function representing each of the following series.                    "
+},
+{
+  "id": "powerchapter-7-35",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-35",
+  "type": "Exercise",
+  "number": "7.5.35",
+  "title": "",
+  "body": "  Recall the function defined in through .  Find a power series for .   "
+},
+{
+  "id": "powerchapter-7-36",
+  "level": "2",
+  "url": "powerchapter-7.html#powerchapter-7-36",
+  "type": "Exercise",
+  "number": "7.5.36",
+  "title": "",
+  "body": "  Define the functions via , for .   Show that the maximum of is .    Show that converges uniformly to the zero function on .    Show that does not converge to as .    Why doesn't this contradict ?      "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
