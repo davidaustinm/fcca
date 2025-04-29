@@ -48,6 +48,7 @@
     \def\JPicScale{0.7}
     \renewcommand{\gg}{\gamma}
     \newcommand{\D}{\Delta}
+    \newcommand{\Dp}{\check{D}}
     \DeclareMathOperator{\length}{length}
     \DeclareMathOperator{\dist}{dist}
     \DeclareMathOperator{\fLog}{\mathcal{Log}}

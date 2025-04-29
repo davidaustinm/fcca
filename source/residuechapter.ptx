@@ -1,22 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="residuechapter">
   <title>Isolated Singularities and the Residue Theorem</title>
   <introduction>
     <blockquote>
-      <em><m>\frac 1 {r^2}</m> has a nasty \ix{singularity} at <m>r=0</m>, but it did not
-      bother Newton<mdash/>the moon is far enough.</em>
-      Edward Witten
+      <p>
+        <em><m>\frac 1 {r^2}</m> has a nasty singularity at
+        <m>r=0</m>, but it did not
+        bother Newton<mdash/>the moon is far enough.</em>
+      </p>
+      <attribution>
+        Edward Witten
+      </attribution>
     </blockquote>
     <p>
-      We return one last time to the starting point of <xref ref="powerchapter">Chapters</xref>
-      and <xref ref="taylorchapter"></xref>: the quest for
+      We return one last time to the starting point of
+      <xref ref="powerchapter"/>
+      and <xref ref="taylorchapter"/>: the quest for
       <me>
         \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \,
       </me>.
     </p>
     <p>
-      We computed this integral in <xref ref="ex_expoversin">Example</xref> crawling on hands and knees
+      We computed this integral in
+      <xref ref="ex_expoversin"/> crawling on hands and knees
       (but we finally computed it!),
-      by considering various Taylor and Laurent expansions of <m>\exp(z)</m> and <m>\frac 1 { \sin(z) }</m>.
+      by considering various Taylor and Laurent expansions of
+      <m>\exp(z)</m> and <m>\frac 1 { \sin(z) }</m>. 
       In this chapter,
       we develop a calculus for similar integral computations.
     </p>
@@ -24,4 +34,5 @@
   <xi:include  href="sec_classificationsingul.ptx"/>
   <xi:include  href="sec_residues.ptx"/>
   <xi:include  href="sec_argprinc.ptx"/>
+  <xi:include  href="exercises-chap9.ptx"/>
 </chapter>

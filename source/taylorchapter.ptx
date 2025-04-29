@@ -1,35 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="taylorchapter">
   <title>Taylor and Laurent Series</title>
   <introduction>
     <blockquote>
-      <em>We think in generalities, but we live in details.</em>
-      Alfred North Whitehead (1861<ndash/>1947)
+      <p>
+        <em>We think in generalities, but we live in details.</em>
+      </p>
+      <attribution>
+        Alfred North Whitehead (1861<ndash/>1947)
+      </attribution>
     </blockquote>
     <p>
       Now that we have developed some machinery for power series,
       we are ready to connect them to the earlier chapters.
-      Our first big goal in this chapter is to prove that every power series represents a holomorphic function in its disk of convergence and,
+      Our first big goal in this chapter is to prove that every power
+      series represents a holomorphic function in its disk of
+      convergence and, 
       vice versa,
-      that every holomorphic function can be locally represented by a power series.
+      that every holomorphic function can be locally represented by a
+      power series. 
     </p>
     <p>
-      Our second goal returns to our motivation to start <xref ref="powerchapter">Chapter</xref>:
+      Our second goal returns to our motivation to start
+      <xref ref="powerchapter"/>:
       we'd still like to compute<nbsp/><xref ref="eq_laurentmotivation"/>,
       <me>
         \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \,
       </me>.
     </p>
     <p>
-      Looking back at <xref ref="fig_laurentmotivation">Figure</xref>
+      Looking back at <xref ref="fig_laurentmotivation"/>
       suggests that we expand the function
-      <m>\frac{ \exp(z) }{ \sin(z) }</m> locally into something like power series centered at 0 and <m>\pi</m>,
-      and with any luck we can then use <xref ref="seriesintegral">Proposition</xref> to integrate.
-      Of course, <m>\frac{ \exp(z) }{ \sin(z) }</m> has singularities at 0 and <m>\pi</m>,
+      <m>\frac{ \exp(z) }{ \sin(z) }</m> locally into something like
+      power series centered at 0 and <m>\pi</m>, 
+      and with any luck we can then use <xref ref="seriesintegral"/>
+      to integrate. 
+      Of course, <m>\frac{ \exp(z) }{ \sin(z) }</m> has singularities
+      at 0 and <m>\pi</m>, 
       so there is no hope of computing power series at these points.
-      We will develop an analogue of a power series centered at a singularity.
+      We will develop an analogue of a power series centered at a
+      singularity. 
     </p>
   </introduction>
   <xi:include  href="sec_powerseriesholom.ptx"/>
   <xi:include  href="sec_classifzeros.ptx"/>
   <xi:include  href="sec_LaurentSeries.ptx"/>
+  <xi:include  href="exercises-chap8.ptx"/>
 </chapter>

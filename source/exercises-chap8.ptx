@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<exercises>
+  <exercise xml:id="ex_8_1">
+    <statement>
+      <p>
+        For each of the following series,
+        determine where the series converges absolutely and where it
+        converges uniformly: 
+        <ol marker="a) ">
+          <li xml:id="sine">
+            <p>
+              <m>\displaystyle \sum_{k \geq 0} \frac{1}{(2k+1)!} \,
+              z^{2k+1}</m> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 0} \left( \frac{1}{z-3}
+              \right)^k</m> 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_82">
+    <statement>
+      <p>
+        What functions are represented by the series in the previous
+        exercise? 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the power series centered at <m>\pi</m> for <m>\sin(z)</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Re-prove <xref ref="expproperties"/>
+        using the power series of <m>\exp(z)</m> centered at 0.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the terms through third order and the radius of
+        convergence of the power series for each of the following
+        functions, 
+        centered at <m>z_0</m>.
+        (Do not find the general form for the coefficients.)
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\ds f(z)=\frac1{1+z^2},\ z_0=1</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds f(z)=\frac1{\exp(z)+1},\ z_0=0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=(1+z)^{ \frac 1 2 } ,\ z_0=0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=\exp(z^2),\ z_0=i</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_powerseriesboundaryreal">
+    <statement>
+      <p>
+        Consider <m>f: \R \to \R</m> given by <m>f(x) := \frac 1 { x^2
+        + 1 }</m>, 
+        the real version of our function in
+        <xref ref="ex_powerseriesboundary"/>,
+        to show that <xref ref="cor_powerseriesboundary"/>
+        has no analogue in<nbsp/><m>\R</m>.
+        <fn>
+          Incidentally, the same example shows,
+          once more, that Liouville's theorem
+          (<xref ref="liouville"/>)
+          has no analogue in<nbsp/><m>\R</m>.
+        </fn>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove the following generalization of
+        <xref ref="thm_powerholomorphic"/>: Suppose
+        <m>(f_n)</m> is a sequence of functions that are holomorphic
+        in a region <m>G</m>, 
+        and <m>(f_n)</m> converges uniformly to <m>f</m> on <m>G</m>.
+        Then <m>f</m> is holomorphic in <m>G</m>.
+        (This result is called the <em>Weierstra&#223;
+        convergence theorem</em>.)
+        <idx><h>Weierstra&#223; convergence theorem</h></idx>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Use the previous exercise and
+        <xref ref="cauchyestimate"/>
+        to prove the following: Suppose <m>(f_n)</m> is a sequence of
+        functions that are holomorphic in a region <m>G</m> and that
+        <m>(f_n)</m> converges uniformly to <m>f</m> on <m>G</m>. 
+        Then for any <m>k \in \N</m>,
+        the sequence of <m>k</m>th derivatives
+        <m>\left(f_n^{(k)}\right)</m> converges (pointwise) to
+        <m>f^{(k)}</m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>\abs{c_k}\ge 2^k</m> for all <m>k</m>.
+        What can you say about the radius of convergence of
+        <m>\sum_{k\ge0}c_k \, z^k</m>? 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose the radius of convergence of <m>\sum_{k\ge0}c_k \,
+        z^k</m> is <m>R</m>. 
+        What is the radius of convergence of each of the following?
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\sum_{k\ge0}c_k <nbsp/> z^{2k}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\sum_{k\ge0}3^kc_k <nbsp/> z^k</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\sum_{k\ge0}c_k <nbsp/> z^{k+5}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\sum_{k\ge0}k^2c_k <nbsp/> z^k</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_uniquenessfunctionopensets">
+    <statement>
+      <p>
+        Suppose <m>G</m> is a region and <m>f: G \to \C</m> is holomorphic.
+        Prove that the sets
+        <md>
+          <mrow>X \amp \= \left\{ a \in G : \text{ there exists }  r
+          \text{ such that }  f(z) = 0 \text{ for all }  z \in D[a,r]
+          \right\}</mrow> 
+          <mrow>Y \amp \= \left\{ a \in G : \text{ there exists }  r
+          \text{ such that }  f(z) \ne 0 \text{ for all }  z \in
+          D[a,r] \setminus \{ a \} \right\} </mrow> 
+        </md>.
+        in our proof of <xref ref="uniquenessfunction"/> are open.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_minmodthm">
+    <statement>
+      <p>
+        Prove the Minimum-Modulus Theorem
+        (<xref ref="minmodthm"/>):
+        Suppose <m>f</m> is holomorphic and nonconstant in a region
+        <m>G</m>. 
+        Then <m>|f|</m> does not attain a weak relative minimum at a
+        point <m>a</m> in <m>G</m> unless <m>f(a)=0</m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_maxminharmcor">
+    <statement>
+      <p>
+        Prove <xref ref="maxminharmcor"/>: Assume that <m>u</m> is
+        harmonic in a region <m>G</m> and has a weak local maximum at
+        <m>a\in G</m>. 
+        <ol marker="a) ">
+          <li>
+            <p>
+              If <m>G</m> is simply connected then apply
+              <xref ref="maxmodthm"/> to <m>\exp(u(z)+iv(z)))</m>,
+              where <m>v</m> is a harmonic conjugate of <m>u</m>.
+              Conclude that <m>u</m> is constant on <m>G</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>G</m> is not simply connected,
+              then the above argument applies to <m>u</m> on <em>any</em>
+              disk <m>D[a,R] \subset G</m>.
+              Conclude that the partials <m>u_x</m> and <m>u_y</m> are zero on <m>G</m>,
+              and adapt the argument of <xref ref="derivative0">Theorem</xref>
+              to show that <m>u</m> is constant.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_3">
+    <statement>
+      <p>
+        Let <m>f: \C \to \C</m> be given by <m>f(z) = z^2 - 2</m>.
+        Find the maximum and minimum of
+        <m>| f(z) |</m> on the closed unit disk.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Give another proof of the Fundamental Theorem of Algebra
+        <idx><h>fundamental theorem</h><h>of algebra</h></idx> 
+        (<xref ref="fundthmalg"/>),
+        using the Minimum-Modulus Theorem
+        (<xref ref="minmodthm"/>).
+        (<em>Hint</em>: Use <xref ref="polynomialestimate"/>
+        to show that a polynomial does not achieve its minimum modulus
+        on a large circle; 
+        then use the Minimum-Modulus Theorem to deduce that the
+        polynomial has a zero.) 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Give another proof of (a variant of) the Maximum-Modulus
+        <xref ref="maxmodthm"/>
+        via <xref ref="cauchyformula3"/>,
+        as follows: Suppose <m>f</m> is holomorphic in a region
+        containing <m>\overline D[a,r]</m>, 
+        and <m>|f(z)| \le M</m> for <m>z \in C[a,r]</m>.
+        Given a point <m>z_0 \in D[a,r]</m>,
+        show (e.g., by <xref ref="cauchyformula3"/>) that there is a
+        constant <m>c \in \C</m> such that 
+        <me>
+          \left| f(z_0)^k \right| \ \le \ c \, M^k
+        </me>.
+      </p>
+      <p>
+        Conclude that <m>| f(z_0) | \le M</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_4">
+    <statement>
+      <p>
+        Find a Laurent series for
+        <me>
+          \frac{ 1 }{ (z-1)(z+1) }
+        </me>
+        centered at <m>z=1</m> and specify the region in which it converges.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_5">
+    <statement>
+      <p>
+        Find a Laurent series for
+        <me>
+          \frac{ 1 }{ z(z-2)^2 }
+        </me>
+        centered at <m>z=2</m> and specify the region in which it converges.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_7">
+    <statement>
+      <p>
+        Find a Laurent series for <m>\ds \frac{z-2 }{ z+1 }</m>
+        centered at <m>z=-1</m> and the region in which it converges. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the terms <m>c_nz^n</m> in the Laurent series for
+        <m>\ds \frac{ 1 }{ \sin^2(z) }</m> centered at <m>z=0</m>,
+        for <m>-4\le n\le 4</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the first four nonzero terms in the power series
+        expansion of <m>\tan(z)</m> centered at the origin. 
+        What is the radius of convergence?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Find the power series representation for
+            <m>\exp(az)</m> centered at <m>0</m>,
+            where <m>a \in \C</m> is any constant.
+          </p>
+        </li>
+        <li>
+          <p>
+            Show that
+            <me>
+              \exp(z)\cos(z) \=
+              \frac12\left(\exp((1+i)z)+\exp((1-i)z)\right) 
+            </me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the power series expansion for
+            <m>\exp(z)\cos(z)</m> centered at<nbsp/><m>0</m>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Show that
+        <me>
+          \frac{z-1}{z-2} \= \sum_{k\ge0}\frac1{(z-1)^k}
+        </me>
+        for <m>\abs{z-1}>1</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove: If <m>f</m> is entire and <m>\Im (f)</m> is constant on
+        the closed unit disk then <m>f</m> is constant. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_8_6">
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Find the Laurent series for
+            <m>\frac{ \cos z }{ z^2 }</m> centered at <m>z=0</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Prove that <m>f: \C \to \C</m> is entire, where
+            <me>
+              f(z) = \left\{ \begin{array}{cl} \tfrac{ \cos z - 1 }{
+              z^2 } \amp  \mbox{ if }  z \not= 0 \, , \\ -
+              \tfrac{1}{2} \amp  \mbox{ if }  z = 0 \end{array}
+              \right. 
+            </me>
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the Laurent series for <m>\sec(z)</m> centered at the origin.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose that <m>f</m> is holomorphic at <m>z_0</m>,
+        <m>f(z_0)=0</m>, and <m>f'(z_0)\ne0</m>.
+        Show that <m>f</m> has a zero of multiplicity <m>1</m> at
+        <m>z_0</m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the multiplicities of the zeros of each of the following
+        functions: 
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>f(z)=\exp(z)-1,\ z_0=2k\pi i</m>,
+              where <m>k</m> is any integer.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=\sin(z)-\tan(z),\ z_0=0</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=\cos(z)-1+\frac12\sin^2(z),\ z_0=0</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the zeros of the following functions and determine their
+        multiplicities: 
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>(1+z^2)^4</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\sin^2(z)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>1+\exp(z)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>z^3\cos(z)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_laurentconvergenceradius">
+    <statement>
+      <p>
+        Prove that the series of the negative-index terms of a Laurent series
+        <me>
+          \sum_{k \geq 1} c_{-k} \left( z - z_0 \right)^{-k}
+        </me>
+        converges for
+        <me>
+          \frac{ 1 }{ |z-z_0|} \ \lt  \ \frac 1 {R_1}
+        </me>
+        for some <m>R_1</m>,
+        and that the convergence is uniform in <m>\left\{ z \in \C :
+        \, | z-z_0 | \ge r_1 \right\}</m>, 
+        for any fixed <m>r_1 > R_1</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_lhospitalfor1oversin">
+    <statement>
+      <p>
+        Show that
+        <me>
+          \lim_{ z \to 0 } \left( \frac 1 { \sin(z) } - \frac 1 z
+          \right) \= 0 
+        </me>
+        and
+        <me>
+          \lim_{ z \to 0 } \frac{ \frac 1 { \sin(z) } - \frac 1 z }{ z
+          } \= \frac 1 6 \, 
+        </me>.
+      </p>
+      <p>
+        (These are the limits we referred to in
+        <xref ref="ex_1_sinlaurent"/>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the three Laurent series of
+        <me>
+          f(z) \= \frac{3}{(1-z)(z+2)}\,
+        </me>,
+        centered at <m>0</m>, defined on the three regions <m>|z| \lt  1</m>,
+        <m>1 \lt  |z| \lt  2</m>, and <m>2 \lt  |z|</m>, respectively.
+        (<em>Hint</em>: Use a partial fraction decomposition.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Suppose that <m>f(z)</m> has exactly one zero, at <m>a</m>,
+        inside the circle <m>\gamma</m>,
+        and that it has multiplicity<nbsp/><m>1</m>.
+        Show that
+        <me>
+          a\=\frac1{2\pi i}\int_\gamma\frac{z \, f'(z)}{f(z)}\,\diff{z}\,
+        </me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_evenoddfunctions">
+    <statement>
+      <p>
+        Recall that a function <m>f: G \to \C</m> is <em>even</em>
+        if <m>f(-z) = f(z)</m> for all <m>z \in G</m>, and <m>f</m> is
+        <em>odd</em>
+        if <m>f(-z) = -f(z)</m> for all <m>z \in G</m>.
+        <idx><h>even</h></idx>
+        <idx><h>odd</h></idx>
+        Prove that, if <m>f</m> is even (resp., odd),
+        then the Laurent series of <m>f</m> at 0 has only even (resp., odd) powers.
+        <idx><h>function</h><h>even</h></idx>
+        <idx><h>function</h><h>odd</h></idx>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_realmax0">
+    <statement>
+      <p>
+        Suppose <m>f</m> is holomorphic and not identically zero on an
+        open disk <m>D</m> centered at <m>a</m>, 
+        and suppose <m>f(a)=0</m>.
+        Use the following outline to show that
+        <m>\Re f(z)>0</m> for some <m>z</m> in <m>D</m>.
+        <ol marker="a) ">
+          <li>
+            <p>
+              Why can you write <m>f(z)=(z-a)^mg(z)</m> where <m>m>0</m>,
+              <m>g</m> is holomorphic, and <m>g(a)\ne0</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Write <m>g(a)</m> in polar coordinates as
+              <m>c \, e^{i\alpha}</m> and define <m>G(z)=e^{-i\alpha}g(z)</m>.
+              Why is <m>\Re G(a)>0</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Why is there a positive constant <m>\delta</m> so that
+              <m>\Re G(z)>0</m> for all <m>z \in D[a,\delta]</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Write <m>z=a+re^{i\theta}</m> for <m>0\lt r\lt \delta</m>.
+              Show that <m>f(z)=r^me^{im\theta}e^{i\alpha}G(z)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a value of <m>\theta</m> so that <m>f(z)</m> has positive real part.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_9_5">
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Find a Laurent series for
+            <me>
+              \frac{ 1 }{ (z^2 - 4)(z-2) }
+            </me>
+            centered at <m>z=2</m> and specify the region in which it
+            converges. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Compute <m>\ds \int_{ C[2,1] } \frac{ \diff{z} }{ (z^2 -
+            4)(z-2) }</m>. 
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_9_3">
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Find the power series of <m>\exp (z)</m> centered at <m>z=-1</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Compute <m>\ds \int_{ C[-2,2] } \frac{ \exp (z) }{
+            (z+1)^{34} } \, \diff{z} </m>. 
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Compute <m>\ds \int_\gg \frac{ \exp(z) }{ \sin(z) } \,
+        \diff{z}</m> where <m>\gg</m> is a closed curve not passing
+        through integer multiples of<nbsp/><m>\pi</m>. 
+      </p>
+    </statement>
+  </exercise>
+</exercises>
+
