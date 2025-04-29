@@ -157,6 +157,7 @@ eBookConfig.enable_chatcodes =  false;
 \def\JPicScale{0.7}
 \renewcommand{\gg}{\gamma}
 \newcommand{\D}{\Delta}
+\newcommand{\Dp}{\check{D}}
 \DeclareMathOperator{\length}{length}
 \DeclareMathOperator{\dist}{dist}
 \DeclareMathOperator{\fLog}{\mathcal{Log}}
@@ -287,6 +288,24 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="powerchapter-7.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="taylorchapter.html" class="internal"><span class="codenumber">8</span> <span class="title">Taylor and Laurent Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_powerseriesholom.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Power Series and Holomorphic Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_classifzeros.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Classification of Zeros and the Identity Principle</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_LaurentSeries.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Laurent Series</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="taylorchapter-6.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="residuechapter.html" class="internal"><span class="codenumber">9</span> <span class="title">Isolated Singularities and the Residue Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_classificationsingul.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Classification of Singularities</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_residues.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Residues</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_argprinc.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Argument Principle and Rouché’s Theorem</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="residuechapter-6.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural toc-item-list">
@@ -369,7 +388,7 @@ w) (z-w)} \, \diff{z} \, \text{.}
 </div>
 </div>
 <div class="para" id="sec_variationstheme-5-5">The proof of the formula for <span class="process-math">\(f''\)</span> is very similar and will be left to <a href="cachyconschapter-6.html#cauchyformula2ex" class="xref" data-knowl="./knowl/xref/cauchyformula2ex.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 5.4.2">Exercise 5.4.2</a>.</div></article><div class="para" id="sec_variationstheme-6">
-<a href="sec_variationstheme.html#cauchyformula2" class="xref" data-knowl="./knowl/xref/cauchyformula2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.1.1">Theorem 5.1.1</a> suggests that there are similar formulas for the higher derivatives of <span class="process-math">\(f\text{.}\)</span> This is in fact true, and theoretically we could obtain them one by one with the methods of the proof of <a href="sec_variationstheme.html#cauchyformula2" class="xref" data-knowl="./knowl/xref/cauchyformula2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.1.1">Theorem 5.1.1</a>. However, once we start studying power series for holomorphic functions, we will obtain such a result much more easily; so we save the derivation of integral formulas for higher derivatives of <span class="process-math">\(f\)</span> for later (<code class="code-inline tex2jax_ignore">[cross-reference to target(s) "cauchyformula3" missing or not unique]</code>).</div>
+<a href="sec_variationstheme.html#cauchyformula2" class="xref" data-knowl="./knowl/xref/cauchyformula2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.1.1">Theorem 5.1.1</a> suggests that there are similar formulas for the higher derivatives of <span class="process-math">\(f\text{.}\)</span> This is in fact true, and theoretically we could obtain them one by one with the methods of the proof of <a href="sec_variationstheme.html#cauchyformula2" class="xref" data-knowl="./knowl/xref/cauchyformula2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.1.1">Theorem 5.1.1</a>. However, once we start studying power series for holomorphic functions, we will obtain such a result much more easily; so we save the derivation of integral formulas for higher derivatives of <span class="process-math">\(f\)</span> for later (<a href="sec_powerseriesholom.html#cauchyformula3" class="xref" data-knowl="./knowl/xref/cauchyformula3.html" data-reveal-label="Reveal" data-close-label="Close" title="Corollary 8.1.12">Corollary 8.1.12</a>).</div>
 <div class="para" id="sec_variationstheme-7">
 <a href="sec_variationstheme.html#cauchyformula2" class="xref" data-knowl="./knowl/xref/cauchyformula2.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.1.1">Theorem 5.1.1</a> has several important consequences. For starters, it can be used to compute certain integrals.</div>
 <article class="example example-like" id="sec_variationstheme-8"><h3 class="heading">

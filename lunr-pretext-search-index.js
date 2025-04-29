@@ -4510,6 +4510,1185 @@ var ptx_lunr_docs = [
   "body": "  Define the functions via , for .   Show that the maximum of is .    Show that converges uniformly to the zero function on .    Show that does not converge to as .    Why doesn't this contradict ?      "
 },
 {
+  "id": "sec_powerseriesholom",
+  "level": "1",
+  "url": "sec_powerseriesholom.html",
+  "type": "Section",
+  "number": "8.1",
+  "title": "Power Series and Holomorphic Functions",
+  "body": " Power Series and Holomorphic Functions  Here is the first (and easier) half of the first goal we just announced.    Suppose has radius of convergence . Then is holomorphic in .     says that is continuous in . Given any closed piecewise smooth path , gives . Now apply Morera's theorem ( ).    A special case of this result concerns power series with infinite radius of convergence: those represent entire functions.  Now that we know that power series are differentiable in their regions of convergence, we can ask how to find their derivatives. The next result says that we can simply differentiate the series term by term.    Suppose has radius of convergence . Then , and the radius of convergence of this power series is also . power series differentiation of     If then , so we can choose so that . Then the circle lies in and is inside . Since is holomorphic in we can use Cauchy's Integral Formula for ( ), as well as : .  Note that we used  again in the penultimate step, but now applied to the function .  The last statement of the theorem is easy to show: the radius of convergence of is at least (since we have shown that the series for converges whenever ), and it cannot be larger than by comparison to the series for , since the coefficients for are larger than the corresponding ones for .      Let .  In , we showed that converges in . We claim that , in analogy with the real exponential function. First, by , .  Thus , and so, by , is constant. Evaluating at gives that this constant is 1, and so .      We can use the power series expansion for to find power series for the trigonometric functions. For instance, .  Note that we are allowed to rearrange the terms of the two added sums because the corresponding series have infinite radii of convergence.    Naturally, can be repeatedly applied to , then to , and so on. The various derivatives of a power series can also be seen as ingredients of the series itself this is the statement of the following Taylor series expansion . Taylor series expansion  Named after Brook Taylor (1685 1731).     Suppose has a positive radius of convergence. Then .     For starters, . Theorem gives . Applying the same theorem to gives and so . A quick induction game establishes , , etc.   Taylor's formula shows that the coefficients of any power series converging to on some open disk can be determined from the function restricted to . It follows immediately that the coefficients of a power series are unique:    If and are two power series that both converge to the same function on an open disk centered at , then for all .      We'd like to compute a power series expansion for centered at . Since ,   suggests that this power series is , which converges for all (essentially by ).    We now turn to the second cornerstone result of this section, that a holomorphic function can be locally represented by a power series.    Suppose is a function holomorphic in . Then can be represented as a power series centered at , with a radius of convergence : , where is any positively oriented, simple, closed, piecewise smooth path in for which is inside .    Let ; so is a function holomorphic in . Given , let . By Cauchy's Integral Formula ( ), .  The factor in this integral can be expanded into a geometric series (note that and so ): which converges uniformly in the variable by . Hence applies: .  Now, since , we apply a change of variables to obtain .  The only differences of this right-hand side to the statement of the theorem are the paths we're integrating over. However, by Cauchy's , .    We note a remarkable feature of our proof: namely, if we are given a holomorphic function and are interested in expanding into a power series centered at , then we may maximize the radius of convergence of this power series, in the sense that its region of convergence reaches to the boundary of . Let's make this precise.    For a region and a point , we define the distance of to , the boundary of , as the greatest lower bound of ; if this set is empty, we define the distance of to to be .    What we have proved above, on the side, is the following.    If is holomorphic and , then can be expanded into a power series centered at whose radius of convergence is at least the distance of to .      Consider given by and . says that the power series expansion of at 0 will have radius of convergence 1. (Actually, it says this radius is at least 1, but it cannot be larger since are singularities of .) In fact, we can use a geometric series to compute this power series: , with radius of convergence 1.     is yet another example of a result that is plainly false when translated into ; see .  Comparing the coefficients of the power series obtained in with those in , we arrive at the long-promised extension of and .    Suppose is holomorphic in the region and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and . Then Cauchy's integral formula extensions of  .     combined with our often-used  gives an inequality which is often called Cauchy's Estimate : Cauchy's estimate     Suppose is holomorphic in and for all . Then .     Let . By and  , .  The statement now follows since can be chosen arbitrarily close to .   A key aspect of this section is worth emphasizing: namely, we have developed an alternative characterization of what it means for a function to be holomorphic. In , we defined a function to be holomorphic in a region if it is differentiable at each point . We now define what it means for a function to be analytic in .    Let and . If there exist and such that the power series converges in and agrees with in , then is analytic at  . analytic We call  analytic in  if is analytic at each point in .    What we have proved in this section can be summed up as follows:    For any region , the class of all analytic functions in coincides with the class of all holomorphic functions in .    While the terms holomorphic and analytic do not always mean the same thing, in the study of complex analysis they do and are frequently used interchangeably.  "
+},
+{
+  "id": "thm_powerholomorphic",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#thm_powerholomorphic",
+  "type": "Theorem",
+  "number": "8.1.1",
+  "title": "",
+  "body": "  Suppose has radius of convergence . Then is holomorphic in .     says that is continuous in . Given any closed piecewise smooth path , gives . Now apply Morera's theorem ( ).   "
+},
+{
+  "id": "powerderivative",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#powerderivative",
+  "type": "Theorem",
+  "number": "8.1.2",
+  "title": "",
+  "body": "  Suppose has radius of convergence . Then , and the radius of convergence of this power series is also . power series differentiation of     If then , so we can choose so that . Then the circle lies in and is inside . Since is holomorphic in we can use Cauchy's Integral Formula for ( ), as well as : .  Note that we used  again in the penultimate step, but now applied to the function .  The last statement of the theorem is easy to show: the radius of convergence of is at least (since we have shown that the series for converges whenever ), and it cannot be larger than by comparison to the series for , since the coefficients for are larger than the corresponding ones for .   "
+},
+{
+  "id": "ex_exptaylor",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#ex_exptaylor",
+  "type": "Example",
+  "number": "8.1.3",
+  "title": "",
+  "body": "  Let .  In , we showed that converges in . We claim that , in analogy with the real exponential function. First, by , .  Thus , and so, by , is constant. Evaluating at gives that this constant is 1, and so .   "
+},
+{
+  "id": "ex_sinpowerser",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#ex_sinpowerser",
+  "type": "Example",
+  "number": "8.1.4",
+  "title": "",
+  "body": "  We can use the power series expansion for to find power series for the trigonometric functions. For instance, .  Note that we are allowed to rearrange the terms of the two added sums because the corresponding series have infinite radii of convergence.   "
+},
+{
+  "id": "taylor",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#taylor",
+  "type": "Corollary",
+  "number": "8.1.5",
+  "title": "",
+  "body": "  Suppose has a positive radius of convergence. Then .   "
+},
+{
+  "id": "sec_powerseriesholom-11",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#sec_powerseriesholom-11",
+  "type": "Proof",
+  "number": "8.1.1",
+  "title": "",
+  "body": " For starters, . Theorem gives . Applying the same theorem to gives and so . A quick induction game establishes , , etc.  "
+},
+{
+  "id": "uniqueness",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#uniqueness",
+  "type": "Corollary",
+  "number": "8.1.6",
+  "title": "",
+  "body": "  If and are two power series that both converge to the same function on an open disk centered at , then for all .   "
+},
+{
+  "id": "ex_expatpi",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#ex_expatpi",
+  "type": "Example",
+  "number": "8.1.7",
+  "title": "",
+  "body": "  We'd like to compute a power series expansion for centered at . Since ,   suggests that this power series is , which converges for all (essentially by ).   "
+},
+{
+  "id": "thm_holomorphicpower",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#thm_holomorphicpower",
+  "type": "Theorem",
+  "number": "8.1.8",
+  "title": "",
+  "body": "  Suppose is a function holomorphic in . Then can be represented as a power series centered at , with a radius of convergence : , where is any positively oriented, simple, closed, piecewise smooth path in for which is inside .    Let ; so is a function holomorphic in . Given , let . By Cauchy's Integral Formula ( ), .  The factor in this integral can be expanded into a geometric series (note that and so ): which converges uniformly in the variable by . Hence applies: .  Now, since , we apply a change of variables to obtain .  The only differences of this right-hand side to the statement of the theorem are the paths we're integrating over. However, by Cauchy's , .   "
+},
+{
+  "id": "sec_powerseriesholom-18",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#sec_powerseriesholom-18",
+  "type": "Definition",
+  "number": "8.1.9",
+  "title": "",
+  "body": "  For a region and a point , we define the distance of to , the boundary of , as the greatest lower bound of ; if this set is empty, we define the distance of to to be .   "
+},
+{
+  "id": "cor_powerseriesboundary",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#cor_powerseriesboundary",
+  "type": "Corollary",
+  "number": "8.1.10",
+  "title": "",
+  "body": "  If is holomorphic and , then can be expanded into a power series centered at whose radius of convergence is at least the distance of to .   "
+},
+{
+  "id": "ex_powerseriesboundary",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#ex_powerseriesboundary",
+  "type": "Example",
+  "number": "8.1.11",
+  "title": "",
+  "body": "  Consider given by and . says that the power series expansion of at 0 will have radius of convergence 1. (Actually, it says this radius is at least 1, but it cannot be larger since are singularities of .) In fact, we can use a geometric series to compute this power series: , with radius of convergence 1.   "
+},
+{
+  "id": "cauchyformula3",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#cauchyformula3",
+  "type": "Corollary",
+  "number": "8.1.12",
+  "title": "",
+  "body": "  Suppose is holomorphic in the region and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and . Then Cauchy's integral formula extensions of  .   "
+},
+{
+  "id": "cauchyestimate",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#cauchyestimate",
+  "type": "Corollary",
+  "number": "8.1.13",
+  "title": "",
+  "body": "  Suppose is holomorphic in and for all . Then .   "
+},
+{
+  "id": "sec_powerseriesholom-27",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#sec_powerseriesholom-27",
+  "type": "Proof",
+  "number": "8.1.2",
+  "title": "",
+  "body": " Let . By and  , .  The statement now follows since can be chosen arbitrarily close to .  "
+},
+{
+  "id": "sec_powerseriesholom-29",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#sec_powerseriesholom-29",
+  "type": "Definition",
+  "number": "8.1.14",
+  "title": "",
+  "body": "  Let and . If there exist and such that the power series converges in and agrees with in , then is analytic at  . analytic We call  analytic in  if is analytic at each point in .   "
+},
+{
+  "id": "sec_powerseriesholom-31",
+  "level": "2",
+  "url": "sec_powerseriesholom.html#sec_powerseriesholom-31",
+  "type": "Theorem",
+  "number": "8.1.15",
+  "title": "",
+  "body": "  For any region , the class of all analytic functions in coincides with the class of all holomorphic functions in .   "
+},
+{
+  "id": "sec_classifzeros",
+  "level": "1",
+  "url": "sec_classifzeros.html",
+  "type": "Section",
+  "number": "8.2",
+  "title": "Classification of Zeros and the Identity Principle",
+  "body": " Classification of Zeros and the Identity Principle  When we proved the Fundamental Theorem of Algebra ( ; see also ), we remarked that, if a polynomial of degree has a zero at (that is, ), then has as a factor. That is, we can write where is a polynomial of degree . We can then ask whether itself has a zero at and, if so, we can factor out another . Continuing in this way, we see that we can factor as where is a positive integer and is a polynomial that does not have a zero at . The integer is called the multiplicity of the zero of . Almost exactly the same thing happens for holomorphic functions.   Classification of Zeros   Suppose is holomorphic and has a zero at . Then either    is identically zero on some open disk centered at (that is, for all ); or    there exist a positive integer and a holomorphic function , such that and . In this case the zero is isolated: there is a disk which contains no other zero of .     The integer in the second case is uniquely determined by and and is called the multiplicity of the zero at .    By , there exists such that we can expand , and . There are now exactly two possibilities: either    for all ; or    there is some positive integer so that for all but .     The first case gives for all . So now consider the second case. We note that for , .  Thus we can define a function through   (According to our calculations above, the two definitions give the same value when .) The function is holomorphic in by the first definition, and is holomorphic in by the second definition. Note that and, by construction, .  Since there is, by continuity, so that for all , so contains no other zero of . The integer is unique, since it is defined in terms of the power series expansion of at , which is unique by .     gives rise to the following result, which is sometimes called the identity principle or the uniqueness theorem . uniqueness theorem  identity principle     Suppose is a region, is holomorphic, and where is a sequence of distinct numbers that converges in . Then is the zero function on .    Applying this theorem to the difference of two functions immediately gives the following variant.    Suppose and are holomorphic in a region and at a sequence that converges to with for all . Then for all in .    Consider the following two subsets of : .  If then, by continuity of , there exists a disk centered at in which is nonzero, and so .  If , then says that either or is an isolated zero of , so .  We have thus proved that is the disjoint union of and . proves that and are open, and so (because is a region) either or has to be empty. The conditions of say that is not in , and thus it has to be in . Thus and the statement of follows.    The identity principle yields the strengthenings of and promised in . We recall that that we say the function has a weak relative maximum  if there exists a disk such that all satisfy . maximum weak relative    Maximum-Modulus Theorem   Suppose is holomorphic and nonconstant in a region . Then does not attain a weak relative maximum in . maximum-modulus theorem  maximum weak relative     There are many reformulations of this theorem, such as:    Suppose is holomorphic in a bounded region and continuous on its closure. Then .    This is trivial if is constant, so we assume is non-constant. By the Extreme Value there is a point so that . Clearly , and this is easily seen to be an equality using continuity at , since there are points of arbitrarily close to . Finally, implies , so must be in .     has other important consequences; we give two here, whose proofs we leave for and .   Minimum-Modulus Theorem   Suppose is holomorphic and nonconstant in a region . Then does not attain a weak relative minimum at a point in unless . minimum-modulus theorem  minimum weak relative       If is harmonic and nonconstant in a region , then it does not have a weak relative maximum or minimum in . max\/min property for harmonic functions     Note that in follows from using essentially the same argument as in the proof of .   Suppose there exist and such that for all . We will show that then is constant.  If then for all , so is identically zero by .  Now assume , which allows us to define the holomorphic function via . This function satisfies ,  Also , so, by continuity of , we can find such that for . This allows us, in turn, to define the holomorphic function through , which satisfies and .   now implies that must be identically zero in . Hence must be equal to for all , and so must have the constant value for all . then implies that is constant in .   "
+},
+{
+  "id": "classificationzeros",
+  "level": "2",
+  "url": "sec_classifzeros.html#classificationzeros",
+  "type": "Theorem",
+  "number": "8.2.1",
+  "title": "Classification of Zeros.",
+  "body": " Classification of Zeros   Suppose is holomorphic and has a zero at . Then either    is identically zero on some open disk centered at (that is, for all ); or    there exist a positive integer and a holomorphic function , such that and . In this case the zero is isolated: there is a disk which contains no other zero of .     The integer in the second case is uniquely determined by and and is called the multiplicity of the zero at .    By , there exists such that we can expand , and . There are now exactly two possibilities: either    for all ; or    there is some positive integer so that for all but .     The first case gives for all . So now consider the second case. We note that for , .  Thus we can define a function through   (According to our calculations above, the two definitions give the same value when .) The function is holomorphic in by the first definition, and is holomorphic in by the second definition. Note that and, by construction, .  Since there is, by continuity, so that for all , so contains no other zero of . The integer is unique, since it is defined in terms of the power series expansion of at , which is unique by .   "
+},
+{
+  "id": "uniquenessfunction",
+  "level": "2",
+  "url": "sec_classifzeros.html#uniquenessfunction",
+  "type": "Theorem",
+  "number": "8.2.2",
+  "title": "",
+  "body": "  Suppose is a region, is holomorphic, and where is a sequence of distinct numbers that converges in . Then is the zero function on .   "
+},
+{
+  "id": "cor_uniquenessfunction",
+  "level": "2",
+  "url": "sec_classifzeros.html#cor_uniquenessfunction",
+  "type": "Corollary",
+  "number": "8.2.3",
+  "title": "",
+  "body": "  Suppose and are holomorphic in a region and at a sequence that converges to with for all . Then for all in .    Consider the following two subsets of : .  If then, by continuity of , there exists a disk centered at in which is nonzero, and so .  If , then says that either or is an isolated zero of , so .  We have thus proved that is the disjoint union of and . proves that and are open, and so (because is a region) either or has to be empty. The conditions of say that is not in , and thus it has to be in . Thus and the statement of follows.   "
+},
+{
+  "id": "maxmodthm",
+  "level": "2",
+  "url": "sec_classifzeros.html#maxmodthm",
+  "type": "Theorem",
+  "number": "8.2.4",
+  "title": "Maximum-Modulus Theorem.",
+  "body": " Maximum-Modulus Theorem   Suppose is holomorphic and nonconstant in a region . Then does not attain a weak relative maximum in . maximum-modulus theorem  maximum weak relative    "
+},
+{
+  "id": "maxOnBoundary",
+  "level": "2",
+  "url": "sec_classifzeros.html#maxOnBoundary",
+  "type": "Corollary",
+  "number": "8.2.5",
+  "title": "",
+  "body": "  Suppose is holomorphic in a bounded region and continuous on its closure. Then .    This is trivial if is constant, so we assume is non-constant. By the Extreme Value there is a point so that . Clearly , and this is easily seen to be an equality using continuity at , since there are points of arbitrarily close to . Finally, implies , so must be in .   "
+},
+{
+  "id": "minmodthm",
+  "level": "2",
+  "url": "sec_classifzeros.html#minmodthm",
+  "type": "Corollary",
+  "number": "8.2.6",
+  "title": "Minimum-Modulus Theorem.",
+  "body": " Minimum-Modulus Theorem   Suppose is holomorphic and nonconstant in a region . Then does not attain a weak relative minimum at a point in unless . minimum-modulus theorem  minimum weak relative    "
+},
+{
+  "id": "maxminharmcor",
+  "level": "2",
+  "url": "sec_classifzeros.html#maxminharmcor",
+  "type": "Corollary",
+  "number": "8.2.7",
+  "title": "",
+  "body": "  If is harmonic and nonconstant in a region , then it does not have a weak relative maximum or minimum in . max\/min property for harmonic functions    "
+},
+{
+  "id": "sec_classifzeros-16",
+  "level": "2",
+  "url": "sec_classifzeros.html#sec_classifzeros-16",
+  "type": "Proof",
+  "number": "8.2.1",
+  "title": "",
+  "body": " Suppose there exist and such that for all . We will show that then is constant.  If then for all , so is identically zero by .  Now assume , which allows us to define the holomorphic function via . This function satisfies ,  Also , so, by continuity of , we can find such that for . This allows us, in turn, to define the holomorphic function through , which satisfies and .   now implies that must be identically zero in . Hence must be equal to for all , and so must have the constant value for all . then implies that is constant in .  "
+},
+{
+  "id": "sec_LaurentSeries",
+  "level": "1",
+  "url": "sec_LaurentSeries.html",
+  "type": "Section",
+  "number": "8.3",
+  "title": "Laurent Series",
+  "body": " Laurent Series   Theorem gives a powerful way of describing holomorphic functions. It is, however, not as general as it could be. It is natural, for example, to think about representing as , a power series with negative exponents. To make sense of expressions like the above, we introduce the concept of a double series  . double series   Here are terms indexed by the integers. The double series above converges if and only if the two series on the right-hand side do. Absolute and uniform convergence are defined analogously. Equipped with this, we can now introduce the following central concept.    A Laurent After Pierre Alphonse Laurent (1813 1854). series centered at is a double series of the form . Laurent series       The series that started this section is the Laurent series of centered at .      Any power series is a Laurent series (with for ).    We should pause for a minute and ask for which a general Laurent series can possibly converge. By definition .  The first series on the right-hand side is a power series with some radius of convergence , that is, with , it converges in , and the convergence is uniform in , for any fixed . For the second series, we invite you (in ) to revise our proof of to show that this series converges for for some , and that the convergence is uniform in , for any fixed . Thus the Laurent series converges in the annulus   (assuming this set is not empty, i.e., ), and the convergence is uniform on any set of the form .    We'd like to compute the start of a Laurent series for centered at . We start by considering the function defined by   A quick application of L'Hôpital's Rule (lhospital) shows that is continuous (see ). Even better, another round of L'Hôpital's Rule proves that .  But this means that in particular, is holomorphic in . This is a (simple) example of analytic continuation : the function is holomorphic in and agrees with in , the domain in which the latter function is holomorphic. When we said, in the footnote in , that the Riemann zeta function can be extended to a function that is holomorphic on , we were also talking about analytic continuation. By , has a power series expansion at 0, which we may compute using . It starts with and it converges, by , for . But this gives our sought-after Laurent series which converges for .     implies that a Laurent series represents a function that is holomorphic in its annulus of convergence. The fact that we can conversely represent any function holomorphic in such an annulus by a Laurent series is the substance of the next result.    Suppose is a function that is holomorphic in . Then can be represented in as a Laurent series centered at , with , where .    By Cauchy's we can replace the circle in the formula for the Laurent coefficients by any path .   Let ; so is a function holomorphic in . Fix , and let be the path in , where and . By Cauchy's Integral Formula ( ), .   The path in our proof.     size=3.5  angle=120  r1=1.5  r2=3  p1=r1*(cos(radians(angle)),sin(radians(angle)))  p2=r2*(cos(radians(angle)),sin(radians(angle)))  n=0.3*rotate(normalize(p1-p2),pi\/2)  l(t)=(1-t)*p1 + t*p2                \\gamma_1    \\gamma_2        For the integral over we play exactly the same game as in our proof of . The factor in this integral can be expanded into a geometric series (note that and so ) , which converges uniformly in the variable by . Hence applies: .  The integral over is computed in a similar fashion; now we expand the factor into the following geometric series (note that and so ) , which converges uniformly in the variable . Again applies: .  Putting everything back into gives .  By Cauchy's , we can now change both and to , as long as , which finally gives .  The statement follows now with and a change of variables in the integral.   This theorem, naturally, has several corollaries that have analogues in the world of Taylor series. Here are two samples:    If and are two Laurent series that both converge, for , to the same function, then for all .      If is a region, , and is holomorphic in , then can be expanded into a Laurent series centered at that converges for where is at least the distance of to .    Finally, we come to the analogue of Corollary for Laurent series. We could revisit its proof, but the statement that would follow is actually the special case of , read from right to left:    Suppose is a function that is holomorphic in , with Laurent series .  If is any simple, closed, piecewise smooth path in , such that is inside , then .    This result is profound: it says that we can integrate (at least over closed curves) by computing Laurent series in fact, we only need to compute one coefficient of a Laurent series. We will have more to say about this in the next chapter; for now, we give just one application, which might have been bugging you since the beginning of .    We will (finally!) compute , the integral . Our plan is to split up the integration path as in , which gives, say, .  To compute the two integrals on the right-hand side, we can use Corollary , for which we need the Laurent expansions of centered at 0 and .  By and , and gives .  For the integral around , we use the fact that , and so we can compute the Laurent expansion of at also via Example :   Adding to the mix yields and now gives . Putting it all together yields the integral we've been after for two chapters: .    "
+},
+{
+  "id": "sec_LaurentSeries-4",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#sec_LaurentSeries-4",
+  "type": "Definition",
+  "number": "8.3.1",
+  "title": "",
+  "body": "  A Laurent After Pierre Alphonse Laurent (1813 1854). series centered at is a double series of the form . Laurent series    "
+},
+{
+  "id": "sec_LaurentSeries-5",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#sec_LaurentSeries-5",
+  "type": "Example",
+  "number": "8.3.2",
+  "title": "",
+  "body": "  The series that started this section is the Laurent series of centered at .   "
+},
+{
+  "id": "sec_LaurentSeries-6",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#sec_LaurentSeries-6",
+  "type": "Example",
+  "number": "8.3.3",
+  "title": "",
+  "body": "  Any power series is a Laurent series (with for ).   "
+},
+{
+  "id": "ex_1_sinlaurent",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#ex_1_sinlaurent",
+  "type": "Example",
+  "number": "8.3.4",
+  "title": "",
+  "body": "  We'd like to compute the start of a Laurent series for centered at . We start by considering the function defined by   A quick application of L'Hôpital's Rule (lhospital) shows that is continuous (see ). Even better, another round of L'Hôpital's Rule proves that .  But this means that in particular, is holomorphic in . This is a (simple) example of analytic continuation : the function is holomorphic in and agrees with in , the domain in which the latter function is holomorphic. When we said, in the footnote in , that the Riemann zeta function can be extended to a function that is holomorphic on , we were also talking about analytic continuation. By , has a power series expansion at 0, which we may compute using . It starts with and it converges, by , for . But this gives our sought-after Laurent series which converges for .   "
+},
+{
+  "id": "holomorphiclaurent",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#holomorphiclaurent",
+  "type": "Theorem",
+  "number": "8.3.5",
+  "title": "",
+  "body": "  Suppose is a function that is holomorphic in . Then can be represented in as a Laurent series centered at , with , where .   "
+},
+{
+  "id": "sec_LaurentSeries-14",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#sec_LaurentSeries-14",
+  "type": "Proof",
+  "number": "8.3.1",
+  "title": "",
+  "body": " Let ; so is a function holomorphic in . Fix , and let be the path in , where and . By Cauchy's Integral Formula ( ), .   The path in our proof.     size=3.5  angle=120  r1=1.5  r2=3  p1=r1*(cos(radians(angle)),sin(radians(angle)))  p2=r2*(cos(radians(angle)),sin(radians(angle)))  n=0.3*rotate(normalize(p1-p2),pi\/2)  l(t)=(1-t)*p1 + t*p2                \\gamma_1    \\gamma_2        For the integral over we play exactly the same game as in our proof of . The factor in this integral can be expanded into a geometric series (note that and so ) , which converges uniformly in the variable by . Hence applies: .  The integral over is computed in a similar fashion; now we expand the factor into the following geometric series (note that and so ) , which converges uniformly in the variable . Again applies: .  Putting everything back into gives .  By Cauchy's , we can now change both and to , as long as , which finally gives .  The statement follows now with and a change of variables in the integral.  "
+},
+{
+  "id": "laurentunique",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#laurentunique",
+  "type": "Corollary",
+  "number": "8.3.7",
+  "title": "",
+  "body": "  If and are two Laurent series that both converge, for , to the same function, then for all .   "
+},
+{
+  "id": "sec_LaurentSeries-17",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#sec_LaurentSeries-17",
+  "type": "Corollary",
+  "number": "8.3.8",
+  "title": "",
+  "body": "  If is a region, , and is holomorphic in , then can be expanded into a Laurent series centered at that converges for where is at least the distance of to .   "
+},
+{
+  "id": "cor_firstresidue",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#cor_firstresidue",
+  "type": "Corollary",
+  "number": "8.3.9",
+  "title": "",
+  "body": "  Suppose is a function that is holomorphic in , with Laurent series .  If is any simple, closed, piecewise smooth path in , such that is inside , then .   "
+},
+{
+  "id": "ex_expoversin",
+  "level": "2",
+  "url": "sec_LaurentSeries.html#ex_expoversin",
+  "type": "Example",
+  "number": "8.3.10",
+  "title": "",
+  "body": "  We will (finally!) compute , the integral . Our plan is to split up the integration path as in , which gives, say, .  To compute the two integrals on the right-hand side, we can use Corollary , for which we need the Laurent expansions of centered at 0 and .  By and , and gives .  For the integral around , we use the fact that , and so we can compute the Laurent expansion of at also via Example :   Adding to the mix yields and now gives . Putting it all together yields the integral we've been after for two chapters: .   "
+},
+{
+  "id": "taylorchapter-6",
+  "level": "1",
+  "url": "taylorchapter-6.html",
+  "type": "Exercises",
+  "number": "8.4",
+  "title": "Exercises",
+  "body": "   For each of the following series, determine where the series converges absolutely and where it converges uniformly:                  What functions are represented by the series in the previous exercise?      Find the power series centered at for .      Re-prove using the power series of centered at 0.      Find the terms through third order and the radius of convergence of the power series for each of the following functions, centered at . (Do not find the general form for the coefficients.)                            Consider given by , the real version of our function in , to show that has no analogue in . Incidentally, the same example shows, once more, that Liouville's theorem ( ) has no analogue in .       Prove the following generalization of : Suppose is a sequence of functions that are holomorphic in a region , and converges uniformly to on . Then is holomorphic in . (This result is called the Weierstraß convergence theorem .) Weierstraß convergence theorem       Use the previous exercise and to prove the following: Suppose is a sequence of functions that are holomorphic in a region and that converges uniformly to on . Then for any , the sequence of th derivatives converges (pointwise) to .      Suppose for all . What can you say about the radius of convergence of ?      Suppose the radius of convergence of is . What is the radius of convergence of each of the following?                            Suppose is a region and is holomorphic. Prove that the sets . in our proof of are open.      Prove the Minimum-Modulus Theorem ( ): Suppose is holomorphic and nonconstant in a region . Then does not attain a weak relative minimum at a point in unless .      Prove : Assume that is harmonic in a region and has a weak local maximum at .   If is simply connected then apply to , where is a harmonic conjugate of . Conclude that is constant on .    If is not simply connected, then the above argument applies to on any disk . Conclude that the partials and are zero on , and adapt the argument of Theorem to show that is constant.         Let be given by . Find the maximum and minimum of on the closed unit disk.      Give another proof of the Fundamental Theorem of Algebra fundamental theorem of algebra ( ), using the Minimum-Modulus Theorem ( ). ( Hint : Use to show that a polynomial does not achieve its minimum modulus on a large circle; then use the Minimum-Modulus Theorem to deduce that the polynomial has a zero.)      Give another proof of (a variant of) the Maximum-Modulus via , as follows: Suppose is holomorphic in a region containing , and for . Given a point , show (e.g., by ) that there is a constant such that .  Conclude that .      Find a Laurent series for centered at and specify the region in which it converges.      Find a Laurent series for centered at and specify the region in which it converges.      Find a Laurent series for centered at and the region in which it converges.      Find the terms in the Laurent series for centered at , for .      Find the first four nonzero terms in the power series expansion of centered at the origin. What is the radius of convergence?        Find the power series representation for centered at , where is any constant.    Show that .    Find the power series expansion for centered at .        Show that for .      Prove: If is entire and is constant on the closed unit disk then is constant.        Find the Laurent series for centered at .    Prove that is entire, where         Find the Laurent series for centered at the origin.      Suppose that is holomorphic at , , and . Show that has a zero of multiplicity at .      Find the multiplicities of the zeros of each of the following functions:    , where is any integer.     .     .         Find the zeros of the following functions and determine their multiplicities:                            Prove that the series of the negative-index terms of a Laurent series converges for for some , and that the convergence is uniform in , for any fixed .      Show that and .  (These are the limits we referred to in .)      Find the three Laurent series of , centered at , defined on the three regions , , and , respectively. ( Hint : Use a partial fraction decomposition.)      Suppose that has exactly one zero, at , inside the circle , and that it has multiplicity . Show that .      Recall that a function is even if for all , and is odd if for all . even  odd Prove that, if is even (resp., odd), then the Laurent series of at 0 has only even (resp., odd) powers. function even  function odd       Suppose is holomorphic and not identically zero on an open disk centered at , and suppose . Use the following outline to show that for some in .   Why can you write where , is holomorphic, and ?    Write in polar coordinates as and define . Why is ?    Why is there a positive constant so that for all ?    Write for . Show that .    Find a value of so that has positive real part.           Find a Laurent series for centered at and specify the region in which it converges.    Compute .          Find the power series of centered at .    Compute .        Compute where is a closed curve not passing through integer multiples of .    "
+},
+{
+  "id": "ex_8_1",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_8_1",
+  "type": "Exercise",
+  "number": "8.4.1",
+  "title": "",
+  "body": "  For each of the following series, determine where the series converges absolutely and where it converges uniformly:               "
+},
+{
+  "id": "ex_82",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_82",
+  "type": "Exercise",
+  "number": "8.4.2",
+  "title": "",
+  "body": "  What functions are represented by the series in the previous exercise?   "
+},
+{
+  "id": "taylorchapter-6-3",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-3",
+  "type": "Exercise",
+  "number": "8.4.3",
+  "title": "",
+  "body": "  Find the power series centered at for .   "
+},
+{
+  "id": "taylorchapter-6-4",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-4",
+  "type": "Exercise",
+  "number": "8.4.4",
+  "title": "",
+  "body": "  Re-prove using the power series of centered at 0.   "
+},
+{
+  "id": "taylorchapter-6-5",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-5",
+  "type": "Exercise",
+  "number": "8.4.5",
+  "title": "",
+  "body": "  Find the terms through third order and the radius of convergence of the power series for each of the following functions, centered at . (Do not find the general form for the coefficients.)                         "
+},
+{
+  "id": "prob_powerseriesboundaryreal",
+  "level": "2",
+  "url": "taylorchapter-6.html#prob_powerseriesboundaryreal",
+  "type": "Exercise",
+  "number": "8.4.6",
+  "title": "",
+  "body": "  Consider given by , the real version of our function in , to show that has no analogue in . Incidentally, the same example shows, once more, that Liouville's theorem ( ) has no analogue in .    "
+},
+{
+  "id": "taylorchapter-6-7",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-7",
+  "type": "Exercise",
+  "number": "8.4.7",
+  "title": "",
+  "body": "  Prove the following generalization of : Suppose is a sequence of functions that are holomorphic in a region , and converges uniformly to on . Then is holomorphic in . (This result is called the Weierstraß convergence theorem .) Weierstraß convergence theorem    "
+},
+{
+  "id": "taylorchapter-6-8",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-8",
+  "type": "Exercise",
+  "number": "8.4.8",
+  "title": "",
+  "body": "  Use the previous exercise and to prove the following: Suppose is a sequence of functions that are holomorphic in a region and that converges uniformly to on . Then for any , the sequence of th derivatives converges (pointwise) to .   "
+},
+{
+  "id": "taylorchapter-6-9",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-9",
+  "type": "Exercise",
+  "number": "8.4.9",
+  "title": "",
+  "body": "  Suppose for all . What can you say about the radius of convergence of ?   "
+},
+{
+  "id": "taylorchapter-6-10",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-10",
+  "type": "Exercise",
+  "number": "8.4.10",
+  "title": "",
+  "body": "  Suppose the radius of convergence of is . What is the radius of convergence of each of the following?                         "
+},
+{
+  "id": "prob_uniquenessfunctionopensets",
+  "level": "2",
+  "url": "taylorchapter-6.html#prob_uniquenessfunctionopensets",
+  "type": "Exercise",
+  "number": "8.4.11",
+  "title": "",
+  "body": "  Suppose is a region and is holomorphic. Prove that the sets . in our proof of are open.   "
+},
+{
+  "id": "prob_minmodthm",
+  "level": "2",
+  "url": "taylorchapter-6.html#prob_minmodthm",
+  "type": "Exercise",
+  "number": "8.4.12",
+  "title": "",
+  "body": "  Prove the Minimum-Modulus Theorem ( ): Suppose is holomorphic and nonconstant in a region . Then does not attain a weak relative minimum at a point in unless .   "
+},
+{
+  "id": "prob_maxminharmcor",
+  "level": "2",
+  "url": "taylorchapter-6.html#prob_maxminharmcor",
+  "type": "Exercise",
+  "number": "8.4.13",
+  "title": "",
+  "body": "  Prove : Assume that is harmonic in a region and has a weak local maximum at .   If is simply connected then apply to , where is a harmonic conjugate of . Conclude that is constant on .    If is not simply connected, then the above argument applies to on any disk . Conclude that the partials and are zero on , and adapt the argument of Theorem to show that is constant.      "
+},
+{
+  "id": "ex_8_3",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_8_3",
+  "type": "Exercise",
+  "number": "8.4.14",
+  "title": "",
+  "body": "  Let be given by . Find the maximum and minimum of on the closed unit disk.   "
+},
+{
+  "id": "taylorchapter-6-15",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-15",
+  "type": "Exercise",
+  "number": "8.4.15",
+  "title": "",
+  "body": "  Give another proof of the Fundamental Theorem of Algebra fundamental theorem of algebra ( ), using the Minimum-Modulus Theorem ( ). ( Hint : Use to show that a polynomial does not achieve its minimum modulus on a large circle; then use the Minimum-Modulus Theorem to deduce that the polynomial has a zero.)   "
+},
+{
+  "id": "taylorchapter-6-16",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-16",
+  "type": "Exercise",
+  "number": "8.4.16",
+  "title": "",
+  "body": "  Give another proof of (a variant of) the Maximum-Modulus via , as follows: Suppose is holomorphic in a region containing , and for . Given a point , show (e.g., by ) that there is a constant such that .  Conclude that .   "
+},
+{
+  "id": "ex_8_4",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_8_4",
+  "type": "Exercise",
+  "number": "8.4.17",
+  "title": "",
+  "body": "  Find a Laurent series for centered at and specify the region in which it converges.   "
+},
+{
+  "id": "ex_8_5",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_8_5",
+  "type": "Exercise",
+  "number": "8.4.18",
+  "title": "",
+  "body": "  Find a Laurent series for centered at and specify the region in which it converges.   "
+},
+{
+  "id": "ex_8_7",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_8_7",
+  "type": "Exercise",
+  "number": "8.4.19",
+  "title": "",
+  "body": "  Find a Laurent series for centered at and the region in which it converges.   "
+},
+{
+  "id": "taylorchapter-6-20",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-20",
+  "type": "Exercise",
+  "number": "8.4.20",
+  "title": "",
+  "body": "  Find the terms in the Laurent series for centered at , for .   "
+},
+{
+  "id": "taylorchapter-6-21",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-21",
+  "type": "Exercise",
+  "number": "8.4.21",
+  "title": "",
+  "body": "  Find the first four nonzero terms in the power series expansion of centered at the origin. What is the radius of convergence?   "
+},
+{
+  "id": "taylorchapter-6-22",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-22",
+  "type": "Exercise",
+  "number": "8.4.22",
+  "title": "",
+  "body": "    Find the power series representation for centered at , where is any constant.    Show that .    Find the power series expansion for centered at .     "
+},
+{
+  "id": "taylorchapter-6-23",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-23",
+  "type": "Exercise",
+  "number": "8.4.23",
+  "title": "",
+  "body": "  Show that for .   "
+},
+{
+  "id": "taylorchapter-6-24",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-24",
+  "type": "Exercise",
+  "number": "8.4.24",
+  "title": "",
+  "body": "  Prove: If is entire and is constant on the closed unit disk then is constant.   "
+},
+{
+  "id": "ex_8_6",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_8_6",
+  "type": "Exercise",
+  "number": "8.4.25",
+  "title": "",
+  "body": "    Find the Laurent series for centered at .    Prove that is entire, where      "
+},
+{
+  "id": "taylorchapter-6-26",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-26",
+  "type": "Exercise",
+  "number": "8.4.26",
+  "title": "",
+  "body": "  Find the Laurent series for centered at the origin.   "
+},
+{
+  "id": "taylorchapter-6-27",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-27",
+  "type": "Exercise",
+  "number": "8.4.27",
+  "title": "",
+  "body": "  Suppose that is holomorphic at , , and . Show that has a zero of multiplicity at .   "
+},
+{
+  "id": "taylorchapter-6-28",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-28",
+  "type": "Exercise",
+  "number": "8.4.28",
+  "title": "",
+  "body": "  Find the multiplicities of the zeros of each of the following functions:    , where is any integer.     .     .      "
+},
+{
+  "id": "taylorchapter-6-29",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-29",
+  "type": "Exercise",
+  "number": "8.4.29",
+  "title": "",
+  "body": "  Find the zeros of the following functions and determine their multiplicities:                         "
+},
+{
+  "id": "ex_laurentconvergenceradius",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_laurentconvergenceradius",
+  "type": "Exercise",
+  "number": "8.4.30",
+  "title": "",
+  "body": "  Prove that the series of the negative-index terms of a Laurent series converges for for some , and that the convergence is uniform in , for any fixed .   "
+},
+{
+  "id": "ex_lhospitalfor1oversin",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_lhospitalfor1oversin",
+  "type": "Exercise",
+  "number": "8.4.31",
+  "title": "",
+  "body": "  Show that and .  (These are the limits we referred to in .)   "
+},
+{
+  "id": "taylorchapter-6-32",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-32",
+  "type": "Exercise",
+  "number": "8.4.32",
+  "title": "",
+  "body": "  Find the three Laurent series of , centered at , defined on the three regions , , and , respectively. ( Hint : Use a partial fraction decomposition.)   "
+},
+{
+  "id": "taylorchapter-6-33",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-33",
+  "type": "Exercise",
+  "number": "8.4.33",
+  "title": "",
+  "body": "  Suppose that has exactly one zero, at , inside the circle , and that it has multiplicity . Show that .   "
+},
+{
+  "id": "ex_evenoddfunctions",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_evenoddfunctions",
+  "type": "Exercise",
+  "number": "8.4.34",
+  "title": "",
+  "body": "  Recall that a function is even if for all , and is odd if for all . even  odd Prove that, if is even (resp., odd), then the Laurent series of at 0 has only even (resp., odd) powers. function even  function odd    "
+},
+{
+  "id": "ex_realmax0",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_realmax0",
+  "type": "Exercise",
+  "number": "8.4.35",
+  "title": "",
+  "body": "  Suppose is holomorphic and not identically zero on an open disk centered at , and suppose . Use the following outline to show that for some in .   Why can you write where , is holomorphic, and ?    Write in polar coordinates as and define . Why is ?    Why is there a positive constant so that for all ?    Write for . Show that .    Find a value of so that has positive real part.      "
+},
+{
+  "id": "ex_9_5",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_9_5",
+  "type": "Exercise",
+  "number": "8.4.36",
+  "title": "",
+  "body": "    Find a Laurent series for centered at and specify the region in which it converges.    Compute .     "
+},
+{
+  "id": "ex_9_3",
+  "level": "2",
+  "url": "taylorchapter-6.html#ex_9_3",
+  "type": "Exercise",
+  "number": "8.4.37",
+  "title": "",
+  "body": "    Find the power series of centered at .    Compute .     "
+},
+{
+  "id": "taylorchapter-6-38",
+  "level": "2",
+  "url": "taylorchapter-6.html#taylorchapter-6-38",
+  "type": "Exercise",
+  "number": "8.4.38",
+  "title": "",
+  "body": "  Compute where is a closed curve not passing through integer multiples of .   "
+},
+{
+  "id": "sec_classificationsingul",
+  "level": "1",
+  "url": "sec_classificationsingul.html",
+  "type": "Section",
+  "number": "9.1",
+  "title": "Classification of Singularities",
+  "body": " Classification of Singularities  What are the differences among the functions , , and at ? None of them are defined at , but each singularity is of a different nature. We will frequently consider functions in this chapter that are holomorphic in a disk except at its center (usually because that's where a singularity lies), and it will be handy to define the punctured disk with center and radius , . punctured disk  disk punctured   We extend this definition naturally with . For complex functions there are three types of singularities, which are classified as follows.    If is holomorphic in the punctured disk for some but not at , then is an isolated singularity isolated singularity  of . The singularity is called    removable if there exists a function holomorphic in such that in , removable singularity     a pole pole  if ,     essential if is neither removable nor a pole. essential singularity          Let be given by . Since , the function defined by , which is entire (because this power series converges in ), agrees with in . Thus has a removable singularity at 0.      In , we showed that given by has a removable singularity at 0, because we proved that defined by is holomorphic in and agrees with on .      The function given by has a pole at , as .      The function given by has an essential singularity at : the two limits show that has neither a removable singularity nor a pole.    To get a feel for the different types of singularities, we start with the following criteria.    Suppose is an isolated singularity of . Then    is removable if and only if ;     is a pole if and only if it is not removable and for some positive integer .         Suppose that is a removable singularity of , so there exists a holomorphic function on such that for all . But then is continuous at , and so .  Conversely, suppose that and is holomorphic in . We define the function by   Then is holomorphic in and , so is holomorphic in . We can thus expand into a power series whose first two terms are zero: and . But then we can write and so .  But this power series is holomorphic in , so is a removable singularity.  Suppose that is a pole of . Since as we may assume that is small enough that for . Then is holomorphic in and , so part a) implies that has a removable singularity at . More precisely, the function defined by is holomorphic. By , there exist a positive integer and a holomorphic function on such that and . Actually, for all since for all . Thus .  Note that is holomorphic and non-zero on , , and .  Conversely, suppose is not a removable singularity and for some non-negative integer . We choose the smallest such . By part a), has a removable singularity at , so there is a holomorphic function on that agrees with on . Now if this just says that has a removable singularity at , which we have excluded. Hence . Since was chosen as small as possible and is a non-negative integer less than , we must have . Summarizing, is holomorphic on and non-zero at , , and .  But then is a pole of , since .       We underline one feature of the last part of our proof:    Suppose is holomorphic in . Then has a pole at if and only if there exist a positive integer and a holomorphic function , such that and .  If is a pole then is unique.     The only part not covered in the proof of is uniqueness of . Suppose and both work, with . Then , and plugging in yields , violating .     The integer in is the order of the pole . order of a pole     This definition, naturally coming out of , parallels that of the multiplicity of a zero, which naturally came out of . The two results also show that has a zero at of multiplicity if and only if has a pole of order . We will make use of the notions of zeros and poles quite extensively in this chapter.  You might have noticed that the did not include any result on essential singularities. Not only does the next theorem make up for this but it also nicely illustrates the strangeness of essential singularities. To appreciate the following result, we suggest meditating about its statement over a good cup of coffee. coffee    Casorati Felice Casorati (1835 1890). Weierstraß   If is an essential singularity of and is any positive real number, then every is arbitrarily close to a point in . That is, for any and any there exists such that . Casorati Weierstraß theorem     In the language of topology, says that the image of any punctured disk centered at an essential singularity is dense in . dense   There is a stronger theorem, beyond the scope of this book, which implies the Casorati Weierstraß It is due to Charles Emile Picard (1856 1941) and says that the image of any punctured disk centered at an essential singularity misses at most one point of . (It is worth coming up with examples of functions that do not miss any point in and functions that miss exactly one point. Picard's theorem Try it!)   Suppose (by way of contradiction) that there exist and such that for all  .  Then the function stays bounded as , and so .  ( a) tells us that has a removable singularity at .) Hence and so the function has a pole at . By b), there is a positive integer so that .  Invoking again, we conclude that the function has a pole or removable singularity at , which implies the same holds for , a contradiction.   The following classifies singularities according to their Laurent series, and is very often useful in calculations.    Suppose is an isolated singularity of with Laurent series , valid in some punctured disk centered at . Then    is removable if and only if there are no negative exponents (that is, the Laurent series is a power series);     is a pole if and only if there are finitely many negative exponents, and the order of the pole is the largest such that ;     is essential if and only if there are infinitely many negative exponents.         Suppose is removable. Then there exists a holomorphic function that agrees with on , for some . By , has a power series expansion centered at , which coincides with the Laurent series of at , by .  Conversely, if the Laurent series of at has only nonnegative powers, we can use it to define a function that is holomorphic at .  Suppose is a pole of order . Then, by , on some punctured disk , where is holomorphic on and . Thus in with , so , and this is the Laurent series of , by .  Conversely, suppose that . where . Define . Then is holomorphic at and so, by , has a pole of order at .  This part follows by definition: an essential singularity is neither removable nor a pole.         The order of the pole at of is 2 because (by ) and the smallest power of with nonzero coefficient in this series is .    "
+},
+{
+  "id": "sec_classificationsingul-4",
+  "level": "2",
+  "url": "sec_classificationsingul.html#sec_classificationsingul-4",
+  "type": "Definition",
+  "number": "9.1.1",
+  "title": "",
+  "body": "  If is holomorphic in the punctured disk for some but not at , then is an isolated singularity isolated singularity  of . The singularity is called    removable if there exists a function holomorphic in such that in , removable singularity     a pole pole  if ,     essential if is neither removable nor a pole. essential singularity       "
+},
+{
+  "id": "sec_classificationsingul-5",
+  "level": "2",
+  "url": "sec_classificationsingul.html#sec_classificationsingul-5",
+  "type": "Example",
+  "number": "9.1.2",
+  "title": "",
+  "body": "  Let be given by . Since , the function defined by , which is entire (because this power series converges in ), agrees with in . Thus has a removable singularity at 0.   "
+},
+{
+  "id": "sec_classificationsingul-6",
+  "level": "2",
+  "url": "sec_classificationsingul.html#sec_classificationsingul-6",
+  "type": "Example",
+  "number": "9.1.3",
+  "title": "",
+  "body": "  In , we showed that given by has a removable singularity at 0, because we proved that defined by is holomorphic in and agrees with on .   "
+},
+{
+  "id": "sec_classificationsingul-7",
+  "level": "2",
+  "url": "sec_classificationsingul.html#sec_classificationsingul-7",
+  "type": "Example",
+  "number": "9.1.4",
+  "title": "",
+  "body": "  The function given by has a pole at , as .   "
+},
+{
+  "id": "sec_classificationsingul-8",
+  "level": "2",
+  "url": "sec_classificationsingul.html#sec_classificationsingul-8",
+  "type": "Example",
+  "number": "9.1.5",
+  "title": "",
+  "body": "  The function given by has an essential singularity at : the two limits show that has neither a removable singularity nor a pole.   "
+},
+{
+  "id": "singbasics",
+  "level": "2",
+  "url": "sec_classificationsingul.html#singbasics",
+  "type": "Proposition",
+  "number": "9.1.6",
+  "title": "",
+  "body": "  Suppose is an isolated singularity of . Then    is removable if and only if ;     is a pole if and only if it is not removable and for some positive integer .         Suppose that is a removable singularity of , so there exists a holomorphic function on such that for all . But then is continuous at , and so .  Conversely, suppose that and is holomorphic in . We define the function by   Then is holomorphic in and , so is holomorphic in . We can thus expand into a power series whose first two terms are zero: and . But then we can write and so .  But this power series is holomorphic in , so is a removable singularity.  Suppose that is a pole of . Since as we may assume that is small enough that for . Then is holomorphic in and , so part a) implies that has a removable singularity at . More precisely, the function defined by is holomorphic. By , there exist a positive integer and a holomorphic function on such that and . Actually, for all since for all . Thus .  Note that is holomorphic and non-zero on , , and .  Conversely, suppose is not a removable singularity and for some non-negative integer . We choose the smallest such . By part a), has a removable singularity at , so there is a holomorphic function on that agrees with on . Now if this just says that has a removable singularity at , which we have excluded. Hence . Since was chosen as small as possible and is a non-negative integer less than , we must have . Summarizing, is holomorphic on and non-zero at , , and .  But then is a pole of , since .      "
+},
+{
+  "id": "cor_orderofpole",
+  "level": "2",
+  "url": "sec_classificationsingul.html#cor_orderofpole",
+  "type": "Corollary",
+  "number": "9.1.7",
+  "title": "",
+  "body": "  Suppose is holomorphic in . Then has a pole at if and only if there exist a positive integer and a holomorphic function , such that and .  If is a pole then is unique.   "
+},
+{
+  "id": "sec_classificationsingul-13",
+  "level": "2",
+  "url": "sec_classificationsingul.html#sec_classificationsingul-13",
+  "type": "Proof",
+  "number": "9.1.1",
+  "title": "",
+  "body": " The only part not covered in the proof of is uniqueness of . Suppose and both work, with . Then , and plugging in yields , violating .  "
+},
+{
+  "id": "sec_classificationsingul-14",
+  "level": "2",
+  "url": "sec_classificationsingul.html#sec_classificationsingul-14",
+  "type": "Definition",
+  "number": "9.1.8",
+  "title": "",
+  "body": "  The integer in is the order of the pole . order of a pole    "
+},
+{
+  "id": "casoratiweierstrass",
+  "level": "2",
+  "url": "sec_classificationsingul.html#casoratiweierstrass",
+  "type": "Theorem",
+  "number": "9.1.9",
+  "title": "Casorati<details class=\"ptx-footnote\" aria-live=\"polite\" id=\"casoratiweierstrass-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 9.1.1\"><sup> 1 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"casoratiweierstrass-1-1\">Felice Casorati (1835–1890).<\/div><\/details>–Weierstraß.",
+  "body": " Casorati Felice Casorati (1835 1890). Weierstraß   If is an essential singularity of and is any positive real number, then every is arbitrarily close to a point in . That is, for any and any there exists such that . Casorati Weierstraß theorem    "
+},
+{
+  "id": "sec_classificationsingul-20",
+  "level": "2",
+  "url": "sec_classificationsingul.html#sec_classificationsingul-20",
+  "type": "Proof",
+  "number": "9.1.2",
+  "title": "",
+  "body": " Suppose (by way of contradiction) that there exist and such that for all  .  Then the function stays bounded as , and so .  ( a) tells us that has a removable singularity at .) Hence and so the function has a pole at . By b), there is a positive integer so that .  Invoking again, we conclude that the function has a pole or removable singularity at , which implies the same holds for , a contradiction.  "
+},
+{
+  "id": "singlaurent",
+  "level": "2",
+  "url": "sec_classificationsingul.html#singlaurent",
+  "type": "Proposition",
+  "number": "9.1.10",
+  "title": "",
+  "body": "  Suppose is an isolated singularity of with Laurent series , valid in some punctured disk centered at . Then    is removable if and only if there are no negative exponents (that is, the Laurent series is a power series);     is a pole if and only if there are finitely many negative exponents, and the order of the pole is the largest such that ;     is essential if and only if there are infinitely many negative exponents.         Suppose is removable. Then there exists a holomorphic function that agrees with on , for some . By , has a power series expansion centered at , which coincides with the Laurent series of at , by .  Conversely, if the Laurent series of at has only nonnegative powers, we can use it to define a function that is holomorphic at .  Suppose is a pole of order . Then, by , on some punctured disk , where is holomorphic on and . Thus in with , so , and this is the Laurent series of , by .  Conversely, suppose that . where . Define . Then is holomorphic at and so, by , has a pole of order at .  This part follows by definition: an essential singularity is neither removable nor a pole.      "
+},
+{
+  "id": "ex_sinoverz3",
+  "level": "2",
+  "url": "sec_classificationsingul.html#ex_sinoverz3",
+  "type": "Example",
+  "number": "9.1.11",
+  "title": "",
+  "body": "  The order of the pole at of is 2 because (by ) and the smallest power of with nonzero coefficient in this series is .   "
+},
+{
+  "id": "sec_residues",
+  "level": "1",
+  "url": "sec_residues.html",
+  "type": "Section",
+  "number": "9.2",
+  "title": "Residues",
+  "body": " Residues  We now pick up the thread from and apply it to the Laurent series at an isolated singularity of . It says that if is any positively oriented, simple, closed, piecewise smooth path in the punctured disk of convergence of this Laurent series, and is inside , then .    Suppose is an isolated singularity of with Laurent series . Then is the residue of at , denoted by or . residue      suggests that we can compute integrals over closed curves by finding the residues at isolated singularities, and our next theorem makes this precise.   Residue Theorem    residue theorem Suppose is holomorphic in the region , except for isolated singularities, and is a positively oriented, simple, closed, piecewise smooth path that avoids the singularities of , and . Then there are only finitely many singularities inside , and where the sum is taken over all singularities inside .    First, let be the set of singularities inside . The set is closed (since the points in where is holomorphic form an open set) and bounded (since the inside of is bounded), and the points of are isolated in (by  ). An application of shows that is finite.  Now we follow the approach started in as with that integration path, we subdivide  so that we can replace it by closed curves around the singularities inside . These curves, in turn, can then be transformed to circles around the singularities, as suggested by . By Cauchy's , equals the sum of the integrals of over these circles. Now use .   Proof of Theorem .     radius=0.8      arrow_loc=p+radius*(1\/sqrt(2),1\/sqrt(2))          \\gamma          Computing integrals is as easy (or hard!) as computing residues. The following two propositions start the range of tricks you may use when computing residues.       If is a removable singularity of then .    If is a pole of of order then .           This follows from a).    We know by b) that the Laurent series at looks like .  But then is a power series, and we can use Taylor's formula ( ) to compute .      It is worth noting that we are really coming full circle here: compare this proposition to Cauchy's Integral Formulas ( , , and ).    The integrand in has poles of order 1 at 0 and . We thus compute and , confirming our computations in .      Revisiting Example , the function has a double pole at 0 with , after a few iterations of L'Hôpital's Rule. (In this case, it is simpler to read the residue off the Laurent series in .)      Suppose and are holomorphic at , which is a simple zero of (i.e., a zero of multiplicity 1). Then .     The functions and have power series centered at ; the one for has by assumption no constant term: .  Let and note that . Hence , and the function is holomorphic at . By and Taylor's formula ( , .     Revisiting once more , we note that and fit the bill. Thus and , confirming once more our computations in and .      We compute the residue of at , by applying with and . Thus .    An extension of of sorts is given in .  "
+},
+{
+  "id": "sec_residues-3",
+  "level": "2",
+  "url": "sec_residues.html#sec_residues-3",
+  "type": "Definition",
+  "number": "9.2.1",
+  "title": "",
+  "body": "  Suppose is an isolated singularity of with Laurent series . Then is the residue of at , denoted by or . residue    "
+},
+{
+  "id": "residuethm",
+  "level": "2",
+  "url": "sec_residues.html#residuethm",
+  "type": "Theorem",
+  "number": "9.2.2",
+  "title": "Residue Theorem.",
+  "body": " Residue Theorem    residue theorem Suppose is holomorphic in the region , except for isolated singularities, and is a positively oriented, simple, closed, piecewise smooth path that avoids the singularities of , and . Then there are only finitely many singularities inside , and where the sum is taken over all singularities inside .    First, let be the set of singularities inside . The set is closed (since the points in where is holomorphic form an open set) and bounded (since the inside of is bounded), and the points of are isolated in (by  ). An application of shows that is finite.  Now we follow the approach started in as with that integration path, we subdivide  so that we can replace it by closed curves around the singularities inside . These curves, in turn, can then be transformed to circles around the singularities, as suggested by . By Cauchy's , equals the sum of the integrals of over these circles. Now use .   Proof of Theorem .     radius=0.8      arrow_loc=p+radius*(1\/sqrt(2),1\/sqrt(2))          \\gamma         "
+},
+{
+  "id": "prop_residueAsLimit",
+  "level": "2",
+  "url": "sec_residues.html#prop_residueAsLimit",
+  "type": "Proposition",
+  "number": "9.2.4",
+  "title": "",
+  "body": "     If is a removable singularity of then .    If is a pole of of order then .      "
+},
+{
+  "id": "sec_residues-8",
+  "level": "2",
+  "url": "sec_residues.html#sec_residues-8",
+  "type": "Proof",
+  "number": "9.2.1",
+  "title": "",
+  "body": "    This follows from a).    We know by b) that the Laurent series at looks like .  But then is a power series, and we can use Taylor's formula ( ) to compute .     "
+},
+{
+  "id": "ex_expoversinrev",
+  "level": "2",
+  "url": "sec_residues.html#ex_expoversinrev",
+  "type": "Example",
+  "number": "9.2.5",
+  "title": "",
+  "body": "  The integrand in has poles of order 1 at 0 and . We thus compute and , confirming our computations in .   "
+},
+{
+  "id": "sec_residues-11",
+  "level": "2",
+  "url": "sec_residues.html#sec_residues-11",
+  "type": "Example",
+  "number": "9.2.6",
+  "title": "",
+  "body": "  Revisiting Example , the function has a double pole at 0 with , after a few iterations of L'Hôpital's Rule. (In this case, it is simpler to read the residue off the Laurent series in .)   "
+},
+{
+  "id": "lem_computing_residues2",
+  "level": "2",
+  "url": "sec_residues.html#lem_computing_residues2",
+  "type": "Proposition",
+  "number": "9.2.7",
+  "title": "",
+  "body": "  Suppose and are holomorphic at , which is a simple zero of (i.e., a zero of multiplicity 1). Then .   "
+},
+{
+  "id": "sec_residues-13",
+  "level": "2",
+  "url": "sec_residues.html#sec_residues-13",
+  "type": "Proof",
+  "number": "9.2.2",
+  "title": "",
+  "body": " The functions and have power series centered at ; the one for has by assumption no constant term: .  Let and note that . Hence , and the function is holomorphic at . By and Taylor's formula ( , .  "
+},
+{
+  "id": "sec_residues-14",
+  "level": "2",
+  "url": "sec_residues.html#sec_residues-14",
+  "type": "Example",
+  "number": "9.2.8",
+  "title": "",
+  "body": "  Revisiting once more , we note that and fit the bill. Thus and , confirming once more our computations in and .   "
+},
+{
+  "id": "sec_residues-15",
+  "level": "2",
+  "url": "sec_residues.html#sec_residues-15",
+  "type": "Example",
+  "number": "9.2.9",
+  "title": "",
+  "body": "  We compute the residue of at , by applying with and . Thus .   "
+},
+{
+  "id": "sec_argprinc",
+  "level": "1",
+  "url": "sec_argprinc.html",
+  "type": "Section",
+  "number": "9.3",
+  "title": "Argument Principle and Rouché’s Theorem",
+  "body": " Argument Principle and Rouché's Theorem  In the previous section we saw how to compute integrals via residues, but in many applications we actually do not have an explicit expression for a function that we need to integrate (or this expression is very complicated). However, it may still be possible to compute the value of a function at any given point. In this situation we cannot immediately apply the Residue Theorem because we don't know where the singularities are. Of course, we could use numerical integration to compute integrals over any path, but computationally this task could be very resource intensive. But if we do know the singularities, we can compute the residues numerically by computing a finite number of the integrals over small circles around these singularities. And after that we can apply the residue theorem to compute the integral over any closed path very effectively: we just sum up the residues inside this path. The argument principle that we study below, in particular, addresses this question. We start by introducing the logarithmic derivative.  Suppose we have a differentiable function . Differentiating (where is some branch of the logarithm) gives , which is one good reason to call this quotient the logarithmic derivative of . logarithmic derivative It has some remarkable properties, one of which we would like to discuss here.  Now let's say we have two functions and holomorphic in some region. Then the logarithmic derivative of their product behaves very nicely: .  We can apply this fact to the following situation: Suppose that is holomorphic in a region and has (finitely many) zeros of multiplicities , respectively. By , we can express as , where is also holomorphic in and never zero. Let's compute the logarithmic derivative of and play the same remarkable cancellation game as above: .  Something similar happens if has finitely many poles in . In Exercise , we invite you to prove that, if are all the poles of in with order , respectively, then the logarithmic derivative of can be expressed as , where is a function without poles in . Naturally, we can combine the expressions for zeros and poles, as we will do in a moment.    A function is meromorphic in the region if is holomorphic in except for poles. meromorphic      Argument Principle The name Argument Principle stems from interpreting the integral $ı \\frac{f'}{f}$ as the change in the argument of $f(z)$ as $z$ traverses $\\gg$, since $\\fLog(f(z))' = \\frac{ f'(z) }{ f(z) }$.    Suppose is meromorphic in a region and is a positively oriented, simple, closed, piecewise smooth path that does not pass through any zero or pole of , and . Denote by the number of zeros of inside counted according to multiplicity and by the number of poles of inside counted according to order. Then .    Suppose the zeros of inside are of multiplicities , respectively, and the poles inside are with order , respectively. (You may meditate about the fact why there can be only finitely many zeros and poles inside .) In fact, we may shrink , if necessary, so that these are the only zeros and poles in . By and , , where is a function that is holomorphic in (in particular, without poles) and never zero. Thanks to Cauchy's and Exercise , the integral is easy: .  Finally, is holomorphic in (because is never zero in ), so that Corollary gives .    As mentioned above, this beautiful theorem helps to locate poles and zeroes of a function . The idea is simple: we can first numerically integrate over a big circle that includes all possible paths over which we potentially will be integrating . Then the numerical value of will be close to an integer that, according to the Argument Principle, equals . Then we can integrate over a smaller closed path that encompasses half of the interior of and find . Continuing this process for smaller and smaller regions will (after certain verification) produce small regions where has exactly one zero or exactly one pole. Integrating over the boundaries of those small regions that contain poles and dividing by gives all residues of .  Another nice related application of the Argument Principle is a famous theorem due to Eugene Rouché (1832 1910). Rouché's theorem    Rouché's Theorem   Suppose and are holomorphic in a region and is a positively oriented, simple, closed, piecewise smooth path, such that and for all . Then .    This theorem is of surprising practicality. It allows us to locate the zeros of a function fairly precisely. Here is an illustration.    All the roots of the polynomial have modulus less than two. The Fundamental Theorem of Algebra ( Theorem ) asserts that has five roots in . fundamental theorem of algebra What's special about the statement of is that they all have modulus . Note also that there is no general formula for computing roots of a polynomial of degree 5. (Although for this it's not hard to find one root and therefore all of them.) To see this, let and . Then for  .  So and satisfy the condition of the . But has just one root, of multiplicity 5 at the origin, whence .     By and the Argument Principle ( ) .  We are assuming that on , which means that the function evaluated on stays away from . But then is a well-defined holomorphic function on . Its derivative is which implies by that .   "
+},
+{
+  "id": "sec_argprinc-7",
+  "level": "2",
+  "url": "sec_argprinc.html#sec_argprinc-7",
+  "type": "Definition",
+  "number": "9.3.1",
+  "title": "",
+  "body": "  A function is meromorphic in the region if is holomorphic in except for poles. meromorphic    "
+},
+{
+  "id": "argprinc",
+  "level": "2",
+  "url": "sec_argprinc.html#argprinc",
+  "type": "Theorem",
+  "number": "9.3.2",
+  "title": "Argument Principle <details class=\"ptx-footnote\" aria-live=\"polite\" id=\"argprinc-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 9.3.1\"><sup> 1 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"argprinc-1-1\">The name <em class=\"emphasis\">Argument Principle<\/em> stems from interpreting the integral $ı \\frac{f’}{f}$ as the change in the argument of $f(z)$ as $z$ traverses $\\gg$, since $\\fLog(f(z))’ = \\frac{ f’(z) }{ f(z) }$.<\/div><\/details>.",
+  "body": " Argument Principle The name Argument Principle stems from interpreting the integral $ı \\frac{f'}{f}$ as the change in the argument of $f(z)$ as $z$ traverses $\\gg$, since $\\fLog(f(z))' = \\frac{ f'(z) }{ f(z) }$.    Suppose is meromorphic in a region and is a positively oriented, simple, closed, piecewise smooth path that does not pass through any zero or pole of , and . Denote by the number of zeros of inside counted according to multiplicity and by the number of poles of inside counted according to order. Then .    Suppose the zeros of inside are of multiplicities , respectively, and the poles inside are with order , respectively. (You may meditate about the fact why there can be only finitely many zeros and poles inside .) In fact, we may shrink , if necessary, so that these are the only zeros and poles in . By and , , where is a function that is holomorphic in (in particular, without poles) and never zero. Thanks to Cauchy's and Exercise , the integral is easy: .  Finally, is holomorphic in (because is never zero in ), so that Corollary gives .   "
+},
+{
+  "id": "rouche",
+  "level": "2",
+  "url": "sec_argprinc.html#rouche",
+  "type": "Theorem",
+  "number": "9.3.3",
+  "title": "Rouché’s Theorem.",
+  "body": " Rouché's Theorem   Suppose and are holomorphic in a region and is a positively oriented, simple, closed, piecewise smooth path, such that and for all . Then .   "
+},
+{
+  "id": "roucheexample",
+  "level": "2",
+  "url": "sec_argprinc.html#roucheexample",
+  "type": "Example",
+  "number": "9.3.4",
+  "title": "",
+  "body": "  All the roots of the polynomial have modulus less than two. The Fundamental Theorem of Algebra ( Theorem ) asserts that has five roots in . fundamental theorem of algebra What's special about the statement of is that they all have modulus . Note also that there is no general formula for computing roots of a polynomial of degree 5. (Although for this it's not hard to find one root and therefore all of them.) To see this, let and . Then for  .  So and satisfy the condition of the . But has just one root, of multiplicity 5 at the origin, whence .   "
+},
+{
+  "id": "sec_argprinc-14",
+  "level": "2",
+  "url": "sec_argprinc.html#sec_argprinc-14",
+  "type": "Proof",
+  "number": "9.3.1",
+  "title": "",
+  "body": " By and the Argument Principle ( ) .  We are assuming that on , which means that the function evaluated on stays away from . But then is a well-defined holomorphic function on . Its derivative is which implies by that .  "
+},
+{
+  "id": "residuechapter-6",
+  "level": "1",
+  "url": "residuechapter-6.html",
+  "type": "Exercises",
+  "number": "9.4",
+  "title": "Exercises",
+  "body": "   Suppose that has a zero of multiplicity at . Explain why has a pole of order at .      Find the poles or removable singularities of the following functions and determine their orders:                                 Suppose is a nonconstant entire function. Prove that any complex number is arbitrarily close to a number in . ( Hint : If is not a polynomial, use for .)      Evaluate the following integrals for .                                      Suppose has a simple pole (i.e., a pole of order 1) at and is holomorphic at . Prove that .      Find the residue of each function at :                                 Use residues to evaluate the following integrals:                                      Use the Residue to re-prove Cauchy's Integral Formulas ( , and .      Revisiting show that if is even then .      Suppose has an isolated singularity at .   Show that also has an isolated singularity at .    Find .         Extend by proving, if and are holomorphic at , which is a double zero of , then .      Compute .      Generalize and as follows: Let and be polynomials such that for and the degree of is at least two larger than the degree of . Prove that equals times the sum of the residues of at all poles in the upper half plane. improper integral       Compute .      Generalize by deriving conditions under which we can compute for polynomials and , and give a formula for this integral along the lines of .      Compute .      Suppose is entire and with and . Evaluate and use this to give an alternate proof of Liouville's . ( Hint : Show that if is bounded then the above integral goes to zero as increases.)      Prove .      Suppose is meromorphic in the region , is holomorphic in , and is a positively oriented, simple, closed, piecewise smooth path that does not pass through any zero or pole of , and . Denote the zeros and poles of inside by and , respectively, counted according to multiplicity. Prove that .      Find the number of zeros of    in      in      in          Give another proof of the Fundamental Theorem of Algebra ( Theorem ), using Rouché's . fundamental theorem of algebra ( Hint : If , let and , and choose as a circle that is large enough to make the condition of Rouché's theorem work. You might want to first apply to .)      Suppose is closed and bounded and all points of are isolated points of . Show that is finite, as follows:   For each we can choose so that contains no points of except . Show that is continuous. ( Hint : This is really easy if you use the first definition of continuity in .)    Assume is non-empty. By the Extreme Value , has a minimum value, . Let . Since is bounded, it lies in a disk for some . Show that the small disks , for , are disjoint and lie in .    Find a bound on the number of such small disks. ( Hint : Compare the areas of and .)       "
+},
+{
+  "id": "residuechapter-6-1",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-1",
+  "type": "Exercise",
+  "number": "9.4.1",
+  "title": "",
+  "body": "  Suppose that has a zero of multiplicity at . Explain why has a pole of order at .   "
+},
+{
+  "id": "residuechapter-6-2",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-2",
+  "type": "Exercise",
+  "number": "9.4.2",
+  "title": "",
+  "body": "  Find the poles or removable singularities of the following functions and determine their orders:                              "
+},
+{
+  "id": "residuechapter-6-3",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-3",
+  "type": "Exercise",
+  "number": "9.4.3",
+  "title": "",
+  "body": "  Suppose is a nonconstant entire function. Prove that any complex number is arbitrarily close to a number in . ( Hint : If is not a polynomial, use for .)   "
+},
+{
+  "id": "ex_9_2",
+  "level": "2",
+  "url": "residuechapter-6.html#ex_9_2",
+  "type": "Exercise",
+  "number": "9.4.4",
+  "title": "",
+  "body": "  Evaluate the following integrals for .                                   "
+},
+{
+  "id": "residuechapter-6-5",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-5",
+  "type": "Exercise",
+  "number": "9.4.5",
+  "title": "",
+  "body": "  Suppose has a simple pole (i.e., a pole of order 1) at and is holomorphic at . Prove that .   "
+},
+{
+  "id": "residuechapter-6-6",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-6",
+  "type": "Exercise",
+  "number": "9.4.6",
+  "title": "",
+  "body": "  Find the residue of each function at :                              "
+},
+{
+  "id": "residuechapter-6-7",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-7",
+  "type": "Exercise",
+  "number": "9.4.7",
+  "title": "",
+  "body": "  Use residues to evaluate the following integrals:                                   "
+},
+{
+  "id": "residuechapter-6-8",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-8",
+  "type": "Exercise",
+  "number": "9.4.8",
+  "title": "",
+  "body": "  Use the Residue to re-prove Cauchy's Integral Formulas ( , and .   "
+},
+{
+  "id": "residuechapter-6-9",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-9",
+  "type": "Exercise",
+  "number": "9.4.9",
+  "title": "",
+  "body": "  Revisiting show that if is even then .   "
+},
+{
+  "id": "residuechapter-6-10",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-10",
+  "type": "Exercise",
+  "number": "9.4.10",
+  "title": "",
+  "body": "  Suppose has an isolated singularity at .   Show that also has an isolated singularity at .    Find .      "
+},
+{
+  "id": "ex_computing_residues2",
+  "level": "2",
+  "url": "residuechapter-6.html#ex_computing_residues2",
+  "type": "Exercise",
+  "number": "9.4.11",
+  "title": "",
+  "body": "  Extend by proving, if and are holomorphic at , which is a double zero of , then .   "
+},
+{
+  "id": "residuechapter-6-12",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-12",
+  "type": "Exercise",
+  "number": "9.4.12",
+  "title": "",
+  "body": "  Compute .   "
+},
+{
+  "id": "ex_improperintrationalfct",
+  "level": "2",
+  "url": "residuechapter-6.html#ex_improperintrationalfct",
+  "type": "Exercise",
+  "number": "9.4.13",
+  "title": "",
+  "body": "  Generalize and as follows: Let and be polynomials such that for and the degree of is at least two larger than the degree of . Prove that equals times the sum of the residues of at all poles in the upper half plane. improper integral    "
+},
+{
+  "id": "ex_9_4",
+  "level": "2",
+  "url": "residuechapter-6.html#ex_9_4",
+  "type": "Exercise",
+  "number": "9.4.14",
+  "title": "",
+  "body": "  Compute .   "
+},
+{
+  "id": "residuechapter-6-15",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-15",
+  "type": "Exercise",
+  "number": "9.4.15",
+  "title": "",
+  "body": "  Generalize by deriving conditions under which we can compute for polynomials and , and give a formula for this integral along the lines of .   "
+},
+{
+  "id": "residuechapter-6-16",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-16",
+  "type": "Exercise",
+  "number": "9.4.16",
+  "title": "",
+  "body": "  Compute .   "
+},
+{
+  "id": "residuechapter-6-17",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-17",
+  "type": "Exercise",
+  "number": "9.4.17",
+  "title": "",
+  "body": "  Suppose is entire and with and . Evaluate and use this to give an alternate proof of Liouville's . ( Hint : Show that if is bounded then the above integral goes to zero as increases.)   "
+},
+{
+  "id": "ex_logderpoles",
+  "level": "2",
+  "url": "residuechapter-6.html#ex_logderpoles",
+  "type": "Exercise",
+  "number": "9.4.18",
+  "title": "",
+  "body": "  Prove .   "
+},
+{
+  "id": "residuechapter-6-19",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-19",
+  "type": "Exercise",
+  "number": "9.4.19",
+  "title": "",
+  "body": "  Suppose is meromorphic in the region , is holomorphic in , and is a positively oriented, simple, closed, piecewise smooth path that does not pass through any zero or pole of , and . Denote the zeros and poles of inside by and , respectively, counted according to multiplicity. Prove that .   "
+},
+{
+  "id": "ex_9_1",
+  "level": "2",
+  "url": "residuechapter-6.html#ex_9_1",
+  "type": "Exercise",
+  "number": "9.4.20",
+  "title": "",
+  "body": "  Find the number of zeros of    in      in      in       "
+},
+{
+  "id": "residuechapter-6-21",
+  "level": "2",
+  "url": "residuechapter-6.html#residuechapter-6-21",
+  "type": "Exercise",
+  "number": "9.4.21",
+  "title": "",
+  "body": "  Give another proof of the Fundamental Theorem of Algebra ( Theorem ), using Rouché's . fundamental theorem of algebra ( Hint : If , let and , and choose as a circle that is large enough to make the condition of Rouché's theorem work. You might want to first apply to .)   "
+},
+{
+  "id": "ex_compactAndIsolated",
+  "level": "2",
+  "url": "residuechapter-6.html#ex_compactAndIsolated",
+  "type": "Exercise",
+  "number": "9.4.22",
+  "title": "",
+  "body": "  Suppose is closed and bounded and all points of are isolated points of . Show that is finite, as follows:   For each we can choose so that contains no points of except . Show that is continuous. ( Hint : This is really easy if you use the first definition of continuity in .)    Assume is non-empty. By the Extreme Value , has a minimum value, . Let . Since is bounded, it lies in a disk for some . Show that the small disks , for , are disjoint and lie in .    Find a bound on the number of such small disks. ( Hint : Compare the areas of and .)      "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
