@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude">
+  <exercise xml:id="ex_7_1">
+    <statement>
+      <p>
+        For each of the sequences, prove convergence or divergence.
+        If the sequence converges, find the limit.
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>a_n = e^{\frac{ \pi i n} 4}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>a_n =\frac{(-1)^n} n</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>a_n = \cos(n)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>a_n = 2 - \frac{ i \, n^2 }{ 2n^2 + 1 }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>a_n =\sin ( \frac 1 n )</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Determine whether each of the following series converges or diverges.
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\ds \sum_{n \geq 1} \left(\frac{1+i}{\sqrt{3}}\right)^n</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \sum_{n \geq 1} n\left(\frac{1}{i}\right)^n</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \sum_{n \geq 1} \left(\frac{1+2i}{\sqrt{5}}\right)^n</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \sum_{n \geq 1} \frac{1}{n^3+i^n}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="x73">
+    <statement>
+      <p>
+        Compute <m>\ds \sum_{n \geq 1} \frac 1 { n^2 + 2n } </m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_limitrulesseq">
+    <statement>
+      <p>
+        Prove <xref ref="limitrules"/>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove the following:
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\displaystyle \lim_{ n \to \infty } a_n = a
+              \Longrightarrow \lim_{ n \to \infty } |a_n| = |a|</m>. 
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \lim_{ n \to \infty } a_n = 0
+              \Longleftrightarrow \lim_{ n \to \infty } |a_n| =
+              0</m>. 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_convseqbounded">
+    <statement>
+      <p>
+        Show that a convergent sequence is bounded,
+        i.e.: if <m>\lim_{ n \to \infty } a_n</m> exists,
+        then there is an <m>M</m> such that
+        <m>|a_n| \le M</m> for all <m>n \ge 1</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_sequenceLimitUnique">
+    <statement>
+      <p>
+        Show that the limit of a convergent sequence is unique.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Let <m>(a_n)</m> be a sequence.
+        A point <m>a</m> is an <em>accumulation point</em>
+        of the sequence if for every <m>\epsilon > 0</m> and every
+        <m>N \in \Z_{ >0 }</m> there exists some <m>n > N</m> such
+        that <m>|a_n - a| \lt \epsilon</m>. 
+        Prove that if a sequence has more than one accumulation point
+        then the sequence diverges. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_edefdaslimit">
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Show that <m>\frac 1 {k!} \le \frac 3 {k(k+1)}</m> for any
+            positive integer <m>k</m>. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Conclude with <xref ref="ex_telescope"/>
+            that for any positive integer<nbsp/><m>n</m>,
+            <me>
+              1 + \frac 1 2 + \frac 1 6 + \dots + \frac 1 {n!} \ \le \ 3 \,
+            </me>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_archimedean">
+    <statement>
+      <p>
+        Derive the Archimedean Property from the Monotone Sequence Property.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_pairoflimits">
+    <statement>
+      <p>
+        Prove <xref ref="prop_pairoflimits"/>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="realimaginaryconverge">
+    <statement>
+      <p>
+        Prove that <m>\left( c_n \right)</m> converges if and only if
+        <m>\left( \Re c_n \right)</m> and <m>\left( \Im c_n
+        \right)</m> converge. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove that <m>\Z</m> is complete and that <m>\Q</m> is not
+        complete. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove that, if <m>a_n \leq b_n \leq c_n</m> for all <m>n</m>
+        and <m>\lim_{n \to \infty} a_n = \lim_{n \to \infty} c_n =
+        L</m>, 
+        then <m>\lim_{n \to \infty} b_n = L</m>.
+        This is called the <em>Squeeze Theorem</em>,
+        and is useful in testing a sequence for convergence.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the least upper bound of the set <m>\left\{ \Re \left(
+        e^{2 \pi i t} \right) : \, t \in \Q \setminus \Z
+        \right\}</m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_groupingterms">
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Suppose that the sequence <m>(c_n)</m> converges to zero.
+            Show that <m>\sum_{n \ge 0} c_n</m> converges if and only
+            if <m>\sum_{k \ge 0} (c_{2k}+c_{2k+1})</m> converges. 
+            Moreover, if the two series converge then they have the
+            same limit. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Give an example where <m>(c_n)</m> does not converge to
+            <m>0</m> and one of the series in (a) diverges while the
+            other converges. 
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="tailtozero">
+    <statement>
+      <p>
+        Prove that the series <m>\ds \sum_{k \geq 1} b_k</m> converges
+        if and only if <m>\ds \lim_{n \to \infty} \sum_{k \ge n} b_k =
+        0 \, </m>. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Show that <m>\ds \sum_{k \geq 1} \frac k {k^2+1}</m> diverges.
+          </p>
+        </li>
+        <li>
+          <p>
+            Show that <m>\ds \sum_{k \geq 1} \frac k {k^3+1}</m> converges.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="sup-_0">
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Suppose <m>G\subseteq\C</m> and <m>f_n : G \to \C</m> for
+            <m>n \ge 1</m>. 
+            Suppose <m>(a_n)</m> is a sequence in <m>\R</m> with
+            <m>\lim_{ n \to \infty } a_n = 0</m> and, for each <m>n \ge 1</m>,
+            <me>
+              |f_n(z)| \ \le \ a_n \qquad \text{ for all }  z \in G \,
+            </me>.
+            Show that <m>(f_n)</m> converges uniformly to the zero
+            function in<nbsp/><m>G</m>. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Re-prove the statement of <xref ref="ex_uniformconv"/>
+            using part a). 
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="fn_zn___0">
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Suppose <m>G\subseteq\C</m>, <m>f_n : G \to \C</m> for
+            <m>n \ge 1</m>, 
+            and <m>(f_n)</m> converges uniformly to the zero function
+            in<nbsp/><m>G</m>. 
+            Show that, if <m>(z_n)</m> is any sequence in <m>G</m>, then
+            <me>
+              \lim_{ n \to \infty } f_n(z_n) \ = \ 0 \,
+            </me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Apply a) to the function sequence given in
+            <xref ref="ex_nonuniformconv"/>,
+            together with the sequence <m>(z_n = e^{ - \frac 1 n })</m>,
+            to prove that the convergence given in
+            <xref ref="ex_nonuniformconv"/> is not uniform.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_sin_n_convergence">
+    <statement>
+      <p>
+        Consider <m>f_n : [0,\pi] \to \R</m> given by <m>f_n(x) =
+        \sin^n(x)</m>, 
+        for <m>n \ge 1</m>.
+        Prove that <m>(f_n)</m> converges pointwise to <m>f: [0,\pi]
+        \to \R</m> given by 
+        <me>
+          f(x) = \begin{cases}1 \amp  \text{ if }  x = \frac \pi 2 \,
+          , \\ 0 \amp  \text{ if }  x \ne \frac \pi 2 \, , \end{cases} 
+        </me>
+        yet this convergence is not uniform.
+        (See <xref ref="fig_sinn">Figure</xref>.)
+      </p>
+      <figure xml:id="fig_sinn">
+        <caption>The functions <m>f_n(x) := \sin^n(x)</m> in <xref
+        ref="ex_sin_n_convergence"/>.</caption> 
+        <image width="70%">
+          <prefigure xmlns="https://prefigure.org"
+                     label="sin_n_convergence">
+            <xi:include href="prefigure/sin_n_convergence.xml"/>
+          </prefigure>
+        </image>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Where do the following sequences converge pointwise?
+        Do they converge uniformly on this domain?
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\left( n \, z^n \right)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\left( \frac{ z^n }{n} \right)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\left( \frac 1 {1+nz} \right)</m> where <m>\Re(z) \geq 0</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Let <m>f_n(x)=n^2x \, e^{-nx}</m>.
+        <ol marker="a) ">
+          <li>
+            <p>
+              Show that <m>\lim_{n\to\infty}f_n(x)=0</m> for all
+              <m>x\ge0</m>. (<em>Hint</em>: Treat <m>x=0</m> as a
+              special case; 
+              for <m>x>0</m> you can use L'H&#xf4;pital's rule
+              (<xref ref="lhospital"/>)
+              <mdash/> but remember that <m>n</m> is the variable,
+              not<nbsp/><m>x</m>.) 
+            </p>
+          </li>
+          <li>
+            <p>
+              Find <m>\lim_{n\to\infty}\int_0^1 f_n(x)\,\diff{x}</m>.
+              (<em>Hint</em>: The answer is <em>not</em> <m>0</m>.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Why doesn't your answer to part (b) violate
+              <xref ref="seriesintegral"/>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The product of two power series centered at <m>z_0</m> is
+        another power series centered at <m>z_0</m>. 
+        Derive a formula for its coefficients in terms of the
+        coefficients of the original two power series. 
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_7_2">
+    <statement>
+      <p>
+        Find a power series
+        (and determine its radius of convergence)
+        for the following functions.
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\ds \frac{ 1 }{ 1 + 4 z }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac{ 1 }{ 3 - \frac z 2 }</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\ds \frac{z^2}{(4-z)^2}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_powerex">
+    <statement>
+      <p>
+        Find a power series representation about the origin of each of
+        the following functions. 
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\cos z</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\cos(z^2)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>z^2\sin z</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>(\sin z)^2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <ol marker="a) ">
+        <li>
+          <p>
+            Suppose that the sequence <m>(c_k)</m> is bounded.
+            Show that the radius of convergence of
+            <m>\sum_{k\ge0}c_k(z-z_0)^k</m> is at least <m>1</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose that the sequence <m>(c_k)</m> does not converge
+            to <m>0</m>. 
+            Show that the radius of convergence of
+            <m>\sum_{k\ge0}c_k(z-z_0)^k</m> is at most <m>1</m>. 
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_7_3">
+    <statement>
+      <p>
+        Find the power series centered at 1 and compute its radius of
+        convergence for each of the following functions: 
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>f(z)= \frac 1 z</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(z)=\Log (z)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Use the Weierstra&#223;<nbsp/><m>M</m>-test to show that each
+        of the following series converges uniformly on the given
+        domain: 
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k\ge1}\frac{z^k}{k^2}</m> on
+              <m>\overline D[0,1]</m> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k\ge0}\frac1{z^k}</m> on <m>\{ z \in \C
+              : \, \abs{z}\ge2 \}</m> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k\ge0}\frac{z^k}{z^k+1}</m> on
+              <m>\displaystyle \overline D[0,r]</m> where <m>0\le r\lt
+              1</m>  
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_geomseriesfunky">
+    <statement>
+      <p>
+        Fix <m>z \in \C</m> and <m>r > |z|</m>.
+        Prove that <m>\ds \s \left( \frac z w \right)^k</m> converges
+        uniformly 
+        <em>in the variable</em>
+        <m>w</m> for <m>|w| \ge r</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_roottestRinfty">
+    <statement>
+      <p>
+        Complete our proof of <xref ref="cor_roottest"/>
+        by considering the case <m>R = \infty</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_ratiotest">
+    <statement>
+      <p>
+        Prove that, if <m>\lim_{ k \to \infty } \left| \frac{ c_{ k+1
+        } }{ c_{ k } } \right|</m> exists then the radius of
+        convergence of <m>\s c_k ( z - z_0)^k</m> equals 
+        <me>
+          R = \begin{cases}\infty \amp  \text{ if }  \lim_{ k \to
+          \infty } \left| \frac{ c_{ k+1 } }{ c_{ k } } \right| = 0 \,
+          , \\ \lim_{ k \to \infty } \left| \frac{ c_{ k } }{ c_{ k+1
+          } } \right| \amp  \text{ otherwise. } \end{cases} 
+        </me>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_7_4">
+    <statement>
+      <p>
+        Find the radius of convergence for each of the following series.
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 0} a^{ k^2 } z^k</m> where
+              <m>a \in \C</m> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 0} k^n z^k</m> where <m>n
+              \in \Z</m> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 0} z^{k!}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 1} \frac{ (-1)^k }{ k } \,
+              z^{ k(k+1) }</m> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k\ge1}\frac{z^k}{k^k}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k\ge0}\cos(k) z^k</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k\ge0}4^k(z-2)^k</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_734">
+    <statement>
+      <p>
+        Find a function representing each of the following series.
+        <ol marker="a) ">
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 0} \frac{z^{2k}}{k!}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 1} k \, (z-1)^{k-1}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle \sum_{k \geq 2} k(k-1) \, z^k</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Recall the function <m>f : D[0,1] \to \C</m> defined in
+        <xref ref="ex_functiondefinedthroughmorera"/> through
+        <me>
+          f(z) := \int_{ [0,1] } \frac{ \diff{w} }{ 1-wz } \,
+        </me>.
+      </p>
+      <p>
+        Find a power series for <m>f</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Define the functions <m>f_n : \R_{ \ge 0 } \to \R</m> via
+        <m>f_n(t)= \frac 1 n \, e^{- \frac t n}</m>, 
+        for <m>n \ge 1</m>.
+        <ol marker="a) ">
+          <li>
+            <p>
+              Show that the maximum of <m>f_n(t)</m> is <m>\frac 1 n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that <m>f_n(t)</m> converges uniformly to the zero
+              function on <m>\R_{ \ge 0 }</m>. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that <m>\int_0^\infty f_n(t)\,\diff{t}</m> does not
+              converge to <m>0</m> as <m>n\to\infty</m>. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Why doesn't this contradict
+              <xref ref="seriesintegral"/>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</exercises>

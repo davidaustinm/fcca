@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <section xml:id="sec_regionsconvergence">
   <title>Regions of Convergence</title>
   <p>
@@ -8,19 +10,20 @@
     <statement>
       <p>
         A <em>power series
-            <idx><h>power series</h></idx>
         centered at <m>z_0</m></em> is a series of the form
         <me>
           \s c_k \left( z - z_0 \right)^k
         </me>
         where <m>c_0, c_1, c_2, \ldots \in \C</m>.
+        <idx><h>power series</h></idx>
       </p>
     </statement>
   </definition>
   <example>
     <statement>
       <p>
-        A slight modification of <xref ref="ex_geomseriesasfunction">Example</xref>
+        A slight modification of
+        <xref ref="ex_geomseriesasfunction"/>
         gives a fundamental power series,
         namely the <em>geometric series</em>
         <me>
@@ -30,12 +33,13 @@
       <p>
         So here <m>z_0 = 0</m> and <m>c_k = 1</m> for all <m>k \ge 0</m>.
         We note that,
-        as in <xref ref="ex_geomseriesasfunction">Example</xref>,
+        as in <xref ref="ex_geomseriesasfunction"/>,
         this power series converges absolutely for
         <m>|z| \lt 1</m> and uniformly for <m>|z| \le r</m>,
         for any fixed <m>r\lt 1</m>.
-        Finally, as in <xref ref="ex_geomseriesdiv">Example</xref>,
-        the geometric series <m>\sum_{ k \ge 0 } z^k</m> diverges for <m>|z| \ge 1</m>. \pushQED{}\popQED
+        Finally, as in <xref ref="ex_geomseriesdiv"/>,
+        the geometric series <m>\sum_{ k \ge 0 } z^k</m> diverges for
+        <m>|z| \ge 1</m>. 
       </p>
     </statement>
   </example>
@@ -49,15 +53,17 @@
         Given a power series <m>\s c_k ( z - z_0)^k</m>,
         there exists a real number <m>R \ge 0</m> or <m>R = \infty</m>,
         such that
-        <ol marker="a">
+        <ol marker="a) ">
           <li>
             <p>
-              <m>\s c_k ( z - z_0)^k</m> converges absolutely for <m>|z-z_0| \lt R</m>;
+              <m>\s c_k ( z - z_0)^k</m> converges absolutely for
+              <m>|z-z_0| \lt R</m>; 
             </p>
           </li>
           <li>
             <p>
-              <m>\s c_k ( z - z_0)^k</m> converges absolutely and uniformly for
+              <m>\s c_k ( z - z_0)^k</m> converges absolutely and
+              uniformly for 
               <m>|z-z_0| \le r</m>, for any <m>r \lt R</m>;
             </p>
           </li>
@@ -71,16 +77,18 @@
     </statement>
   </theorem>
   <p>
-    We remark that this theorem says nothing about the convergence/divergence of
+    We remark that this theorem says nothing about the
+    convergence/divergence of 
     <m>\s c_k ( z - z_0)^k</m> for <m>|z-z_0| = R</m>.
   </p>
   <definition>
     <statement>
       <p>
-        The number <m>R</m> in <xref ref="convergenceradius">Theorem</xref>
+        The number <m>R</m> in <xref ref="convergenceradius"/>
         is called the <em>radius of convergence</em>
         of <m>\s c_k ( z - z_0)^k</m>.
-        The open disk <m>D[z_0,R]</m> in which the power series converges absolutely is the
+        The open disk <m>D[z_0,R]</m> in which the power series
+        converges absolutely is the 
         <em>region of convergence</em>.
         (If <m>R=\infty</m> then this is <m>\C</m>.)
         <idx><h>region</h><h>of convergence</h></idx>
@@ -88,45 +96,52 @@
     </statement>
   </definition>
   <p>
-    In preparation for the proof of <xref ref="convergenceradius">Theorem</xref>,
+    In preparation for the proof of
+    <xref ref="convergenceradius"/>,
     we start with the following observation.
   </p>
   <proposition xml:id="prop_convergenceradius">
     <statement>
       <p>
-        If <m>\s c_k ( w - z_0)^k</m> converges then
-        <m>\s c_k ( z - z_0)^k</m> converges absolutely whenever <m>|z - z_0| \lt |w - z_0|</m>.
+        If <m>\s c_k ( w - z_0)^k</m> converges, then
+        <m>\s c_k ( z - z_0)^k</m> converges absolutely whenever <m>|z
+        - z_0| \lt |w - z_0|</m>. 
       </p>
     </statement>
-  </proposition>
-  <proof>
-    <p>
-      Let <m>r := |w - z_0|</m>.
-      If <m>\s c_k ( w - z_0)^k</m> converges then
-      <m>\lim_{ k \to \infty } c_k ( w - z_0)^k = 0</m> and so this sequence of terms is bounded
-      (by <xref ref="ex_convseqbounded">Exercise</xref>),
-      say
+    <proof>
+      <p>
+        Let <m>r := |w - z_0|</m>.
+        If <m>\s c_k ( w - z_0)^k</m> converges then
+        <m>\lim_{ k \to \infty } c_k ( w - z_0)^k = 0</m> and so this
+        sequence of terms is bounded 
+        (by <xref ref="ex_convseqbounded"/>),
+        say
+        <me>
+          \left| c_k ( w - z_0)^k \right| \= |c_k| \, r^k \ \le \ M \,
+        </me>.
+      </p>
+      <p>
+        Now if <m>|z - z_0| \lt  |w - z_0|</m>, then
       <me>
-        \left| c_k ( w - z_0)^k \right| \= |c_k| \, r^k \ \le \ M \,
-      </me>.
-    </p>
-    <p>
-      Now if <m>|z - z_0| \lt  |w - z_0|</m>, then
-      <me>
-        \s \left| c_k ( z - z_0)^k \right| \= \s |c_k| \, r^k \left( \frac{ |z-z_0| }{ r } \right)^k \ \le \ M \s \left( \frac{ |z-z_0| }{ r } \right)^k
+        \s \left| c_k ( z - z_0)^k \right| \= \s |c_k| \, r^k \left(
+        \frac{ |z-z_0| }{ r } \right)^k \ \le \ M \s \left( \frac{
+        |z-z_0| }{ r } \right)^k 
       </me>.
     </p>
     <p>
       The sum on the right-hand side is a convergent geometric sequence,
       since <m>|z-z_0| \lt r</m>,
-      and so <m>\s c_k ( z - z_0)^k</m> converges absolutely by <xref ref="cor_comparisonseries">Corollary</xref>.
+      and so <m>\s c_k ( z - z_0)^k</m> converges absolutely by
+      <xref ref="cor_comparisonseries"/>.
     </p>
-  </proof>
+    </proof>
+  </proposition>
   <proof>
     <p>
       Consider the set
       <me>
-        S \ := \ \left\{ x \in \R_{ \ge 0 } : \, \s c_k \, x^k \text{ converges }  \right\}
+        S \ := \ \left\{ x \in \R_{ \ge 0 } : \, \s c_k \, x^k \text{
+        converges }  \right\} 
       </me>.
     </p>
     <p>
@@ -134,20 +149,23 @@
     </p>
     <p>
       If <m>S</m> is unbounded then
-      <m>\s c_k ( z - z_0)^k</m> converges absolutely and uniformly for <m>|z-z_0| \le r</m>,
+      <m>\s c_k ( z - z_0)^k</m> converges absolutely and uniformly
+      for <m>|z-z_0| \le r</m>, 
       for any <m>r</m> (and so this gives the
-      <m>R = \infty</m> case of <xref ref="convergenceradius">Theorem</xref>):
+      <m>R = \infty</m> case of <xref ref="convergenceradius"/>):
       choose <m>x \in S</m> with <m>x > r</m>,
-      then <xref ref="prop_convergenceradius">Proposition</xref>
+      then <xref ref="prop_convergenceradius"/>
       says that <m>\s c_k \, r^k</m> converges absolutely.
       Since <m>\left| c_k ( z - z_0)^k \right| \le |c_k| r^k</m>,
-      we can now use <xref ref="mtest">Proposition</xref>.
+      we can now use <xref ref="mtest"/>.
     </p>
     <p>
       If <m>S</m> is bounded, let <m>R</m> be its least upper bound.
-          <idx><h>least upper bound</h></idx>
-      If <m>R = 0</m> then <m>\s c_k ( z - z_0)^k</m> converges only for <m>z = z_0</m>,
-      which establishes <xref ref="convergenceradius">Theorem</xref> in this case.
+      <idx><h>least upper bound</h></idx>
+      If <m>R = 0</m> then <m>\s c_k ( z - z_0)^k</m> converges only
+      for <m>z = z_0</m>, 
+      which establishes
+      <xref ref="convergenceradius"/> in this case.
     </p>
     <p>
       Now assume <m>R > 0</m>.
@@ -160,796 +178,215 @@
     </p>
     <p>
       Thus <m>\s c_k ( w - z_0)^k</m> converges for <m>w=z_0+r</m>,
-      and so <m>\s c_k ( z - z_0)^k</m> converges absolutely by <xref ref="prop_convergenceradius">Proposition</xref>.
-      This finishes<nbsp/>(a).
+      and so <m>\s c_k ( z - z_0)^k</m> converges absolutely by
+      <xref ref="prop_convergenceradius"/>.
+      This finishes a).
     </p>
     <p>
       If <m>|z-z_0| \le r</m> for some <m>r \lt R</m>,
       again we can find <m>x \in S</m> such that <m>r \lt x \le R</m>.
-      Then <m>\s |c_k| \, r^k</m> converges by <xref ref="prop_convergenceradius">Proposition</xref>,
-      and so <m>\s c_k ( z - z_0)^k</m> converges absolutely and uniformly for
-      <m>|z-z_0|\le r</m> by <xref ref="mtest">Proposition</xref>.
-      This proves<nbsp/>(b).
+      Then <m>\s |c_k| \, r^k</m> converges by
+      <xref ref="prop_convergenceradius"/>,
+      and so <m>\s c_k ( z - z_0)^k</m> converges absolutely and
+      uniformly for 
+      <m>|z-z_0|\le r</m> by <xref ref="mtest"/>.
+      This proves b).
     </p>
     <p>
-      Finally, if <m>|z-z_0| > R</m> then there exists <m>r \notin S</m> such that
+      Finally, if <m>|z-z_0| > R</m> then there exists <m>r \notin
+      S</m> such that 
       <me>
         R \le r \lt  |z-z_0| \,
       </me>.
     </p>
     <p>
       But <m>\s c_k \, r^k</m> diverges, so
-      (by the contrapositive of <xref ref="absconvthm">Theorem</xref>)
+      (by the contrapositive of <xref ref="absconvthm"/>)
       <m>\s |c_k| \, r^k</m> diverges, and so
-      (by the contrapositive of <xref ref="prop_convergenceradius">Proposition</xref>)
-      <m>\s c_k ( z - z_0)^k</m> diverges, which finishes<nbsp/>(c).
+      (by the contrapositive of <xref ref="prop_convergenceradius"/>)
+      <m>\s c_k ( z - z_0)^k</m> diverges, which finishes c).
     </p>
   </proof>
   <corollary xml:id="cor_roottest">
     <statement>
       <p>
-        If <m>\lim_{ k \to \infty } \sqrt[k]{ |c_k| }</m> exists then the radius of convergence of <m>\s c_k ( z - z_0)^k</m> equals
+        If <m>\lim_{ k \to \infty } \sqrt[k]{ |c_k| }</m> exists then
+        the radius of convergence of <m>\s c_k ( z - z_0)^k</m> equals 
         <me>
-          R = \begin{cases}\infty \amp  \text{ if }  \lim_{ k \to \infty } \sqrt[k]{ |c_k| } = 0 \, , \\ \frac{ 1 }{ \lim_{ k \to \infty } \sqrt[k]{ |c_k| } } \amp  \text{ otherwise. } \end{cases}
+          R = \begin{cases}\infty \amp  \text{ if }  \lim_{ k \to
+          \infty } \sqrt[k]{ |c_k| } = 0 \, , \\ \frac{ 1 }{ \lim_{ k
+          \to \infty } \sqrt[k]{ |c_k| } } \amp  \text{ otherwise. }
+          \end{cases} 
         </me>
       </p>
     </statement>
+    <proof>
+      <p>
+        We treat the case that <m>R</m> is finite and leave the case
+        <m>R = \infty</m> to <xref ref="ex_roottestRinfty"/>.
+      </p>
+      <p>
+        Given <m>R</m> as in the statement of the corollary, it suffices
+        (by <xref ref="convergenceradius"/>)
+        to show that <m>\s c_k ( z - z_0)^k</m> converges for
+        <m>|z-z_0| \lt R</m> and diverges for <m>|z-z_0| > R</m>.
+      </p>
+      <p>
+        Suppose <m>r := |z-z_0| \lt  R</m>.
+        Since <m>\lim_{ k \to \infty } \sqrt[k]{ |c_k| } = \frac 1
+        R</m> and <m>\frac{ 2 }{ R+r } > \frac 1 R</m>, 
+        there exists <m>N</m> such that <m>\sqrt[k]{ |c_k| } \lt  \frac{
+        2 }{ R+r }</m> for <m>k \ge N</m>. 
+        For those <m>k</m> we then have
+        <me>
+          \left| c_k (z-z_0)^k \right| \= |c_k| |z-z_0|^k \= \left(
+          \sqrt[k]{ |c_k| } \, r \right)^k \ \lt  \ \left( \frac{ 2r
+          }{ R+r } \right)^k 
+        </me>
+        and so <m>\sum_{ k=N }^\infty c_k (z-z_0)^k</m> converges
+        (absolutely) by <xref ref="mtest"/>,
+        because <m>\frac{ 2r }{ R+r } \lt 1</m> and thus
+        <m>\s \left( \frac{ 2r }{ R+r } \right)^k</m> converges as a
+        geometric series. 
+        Thus <m>\s c_k (z-z_0)^k</m> converges.
+      </p>
+      <p>
+        Now suppose <m>r = |z-z_0| > R</m>.
+        Again because <m>\lim_{ k \to \infty } \sqrt[k]{ |c_k| } =
+        \frac 1 R</m> and now <m>\frac{ 2 }{ R+r } \lt  \frac 1 R</m>, 
+        there exists <m>N</m> such that <m>\sqrt[k]{ |c_k| } > \frac{
+        2 }{ R+r }</m> for <m>k \ge N</m>. 
+        For those <m>k</m>,
+        <me>
+          \left| c_k (z-z_0)^k \right| \= \left( \sqrt[k]{ |c_k| } \,
+          r \right)^k \ > \ \left( \frac{ 2r }{ R+r } \right)^k \ > \
+          1 \, 
+        </me>,
+        and so the sequence <m>c_k (z-z_0)^k</m> cannot converge to 0.
+        Subsequently
+        (by <xref ref="cor_divtest"/>),
+        <m>\s c_k (z-z_0)^k</m> diverges.
+      </p>
+    </proof>
   </corollary>
-  <proof>
-    <p>
-      We treat the case that <m>R</m> is finite and leave the case
-      <m>R = \infty</m> to <xref ref="ex_roottestRinfty">Exercise</xref>.
-    </p>
-    <p>
-      Given <m>R</m> as in the statement of the corollary, it suffices
-      (by <xref ref="convergenceradius">Theorem</xref>)
-      to show that <m>\s c_k ( z - z_0)^k</m> converges for
-      <m>|z-z_0| \lt R</m> and diverges for <m>|z-z_0| > R</m>.
-    </p>
-    <p>
-      Suppose <m>r := |z-z_0| \lt  R</m>.
-      Since <m>\lim_{ k \to \infty } \sqrt[k]{ |c_k| } = \frac 1 R</m> and <m>\frac{ 2 }{ R+r } > \frac 1 R</m>,
-      there exists <m>N</m> such that <m>\sqrt[k]{ |c_k| } \lt  \frac{ 2 }{ R+r }</m> for <m>k \ge N</m>.
-      For those <m>k</m> we then have
-      <me>
-        \left| c_k (z-z_0)^k \right| \= |c_k| |z-z_0|^k \= \left( \sqrt[k]{ |c_k| } \, r \right)^k \ \lt  \ \left( \frac{ 2r }{ R+r } \right)^k
-      </me>
-      and so <m>\sum_{ k=N }^\infty c_k (z-z_0)^k</m> converges (absolutely) by <xref ref="mtest">Proposition</xref>,
-      because <m>\frac{ 2r }{ R+r } \lt 1</m> and thus
-      <m>\s \left( \frac{ 2r }{ R+r } \right)^k</m> converges as a geometric series.
-      Thus <m>\s c_k (z-z_0)^k</m> converges.
-    </p>
-    <p>
-      Now suppose <m>r = |z-z_0| > R</m>.
-      Again because <m>\lim_{ k \to \infty } \sqrt[k]{ |c_k| } = \frac 1 R</m> and now <m>\frac{ 2 }{ R+r } \lt  \frac 1 R</m>,
-      there exists <m>N</m> such that <m>\sqrt[k]{ |c_k| } > \frac{ 2 }{ R+r }</m> for <m>k \ge N</m>.
-      For those <m>k</m>,
-      <me>
-        \left| c_k (z-z_0)^k \right| \= \left( \sqrt[k]{ |c_k| } \, r \right)^k \ > \ \left( \frac{ 2r }{ R+r } \right)^k \ > \ 1 \,
-      </me>,
-      and so the sequence <m>c_k (z-z_0)^k</m> cannot converge to 0.
-      Subsequently
-      (by <xref ref="cor_divtest">Corollary</xref>),
-      <m>\s c_k (z-z_0)^k</m> diverges.
-    </p>
-  </proof>
   <p>
     You might remember this corollary from calculus,
-    where it goes by the name <em>root test
-        <idx><h>root test</h></idx>
-    </em>.
+    where it goes by the name <em>root test</em>.
+    <idx><h>root test</h></idx>
     Its twin sister, the <em>ratio test</em>,
-    is the subject of <xref ref="ex_ratiotest">Exercise</xref>.
+    is the subject of <xref ref="ex_ratiotest"/>.
   </p>
   <example>
     <statement>
       <p>
         For the power series <m>\ds \s k \, z^k</m> we compute
         <me>
-          \lim_{ k \to \infty } \sqrt[k]{ |c_k| } \= \lim_{ k \to \infty } \sqrt[k]{ k } \= \lim_{ k \to \infty } e^{ \frac 1 k \ln(k) } \= e^{ \lim_{ k \to \infty } \frac { \ln(k) } k } \= e^0 \= 1 \,
+          \lim_{ k \to \infty } \sqrt[k]{ |c_k| } \= \lim_{ k \to
+          \infty } \sqrt[k]{ k } \= \lim_{ k \to \infty } e^{ \frac 1
+          k \ln(k) } \= e^{ \lim_{ k \to \infty } \frac { \ln(k) } k }
+          \= e^0 \= 1 \, 
         </me>,
-        and <xref ref="cor_roottest">Corollary</xref>
-        gives the radius of convergence 1. (Alternatively,
-        we can argue by differentiating the geometric series.) \pushQED{}\popQED
+        and <xref ref="cor_roottest"/>
+        gives the radius of convergence 1. (Alternatively, 
+        we can argue by differentiating the geometric series.)
       </p>
     </statement>
   </example>
   <example xml:id="exponentialfunctionradius">
     <statement>
       <p>
-        Consider the power series <m>\ds \sum_{ k \ge 0 } \frac{ 1 }{ k! } \, z^k </m>.
+        Consider the power series <m>\ds \sum_{ k \ge 0 } \frac{ 1 }{
+        k! } \, z^k </m>. 
         Since
         <me>
-          \lim_{ k \to \infty } \left| \frac{ c_{ k+1 } }{ c_{ k } } \right| \= \lim_{ k \to \infty } \frac{ k! }{ (k+1)! } \= \lim_{ k \to \infty } \frac{ 1 }{ k+1 } \= 0 \,
+          \lim_{ k \to \infty } \left| \frac{ c_{ k+1 } }{ c_{ k } }
+          \right| \= \lim_{ k \to \infty } \frac{ k! }{ (k+1)! } \=
+          \lim_{ k \to \infty } \frac{ 1 }{ k+1 } \= 0 \, 
         </me>,
         the ratio test
-        (<xref ref="ex_ratiotest">Exercise</xref>)
-        implies that the radius of convergence of <m>\sum_{ k \ge 0 } \frac{ 1 }{ k! } \, z^k</m> is <m>\infty</m>,
-        and so the power series converges absolutely in<nbsp/><m>\C</m>.<fn>
-        In the next chapter,
-        we will see that this power series represents the exponential function.
-        </fn> \pushQED{}\popQED
+        (<xref ref="ex_ratiotest"/>)
+        implies that the radius of convergence of <m>\sum_{ k \ge 0 }
+        \frac{ 1 }{ k! } \, z^k</m> is <m>\infty</m>, 
+        and so the power series converges absolutely in <m>\C</m>.
+        <fn>
+          In the next chapter,
+          we will see that this power series represents the
+          exponential function. 
+        </fn>
       </p>
     </statement>
   </example>
   <p>
-    By way of <xref ref="sequencecontionuos">Proposition</xref>,
-    <xref ref="convergenceradius">Theorem</xref>
+    By way of <xref ref="sequencecontionuos"/>,
+    <xref ref="convergenceradius"/>
     almost immediately implies the following.
   </p>
   <corollary xml:id="powseriescontinuous">
     <statement>
       <p>
-        Suppose the power series <m>\s c_k ( z - z_0 )^k</m> has radius of convergence <m>R>0</m>.
-        Then the series represents a function that is continuous on <m>D[z_0, R]</m>.
+        Suppose the power series <m>\s c_k ( z - z_0 )^k</m> has
+        radius of convergence <m>R>0</m>. 
+        Then the series represents a function that is continuous on
+        <m>D[z_0, R]</m>. 
       </p>
     </statement>
   </corollary>
   <proof>
     <p>
       Given any point <m>w \in D[z_0, R]</m>,
-      we can find <m>r\lt R</m> such that <m>w \in D[z_0, r]</m> (e.g., if
-      <m>R\ne\infty</m> then <m>r = \frac{ |w-z_0| + R }{ 2 }</m> will do the trick).
-      <xref ref="convergenceradius">Theorem</xref>
-      says that <m>\s c_k ( z - z_0 )^k</m> converges uniformly in <m>D[z_0, r]</m>,
-      and so <xref ref="sequencecontionuos">Proposition</xref>
+      we can find <m>r\lt R</m> such that <m>w \in D[z_0, r]</m>
+      (e.g., if 
+      <m>R\ne\infty</m> then <m>r = \frac{ |w-z_0| + R }{ 2 }</m> will
+      do the trick). 
+      <xref ref="convergenceradius"/>
+      says that <m>\s c_k ( z - z_0 )^k</m> converges uniformly in
+      <m>D[z_0, r]</m>, 
+      and so <xref ref="sequencecontionuos"/>
       implies that the power series is continuous in <m>D[z_0, r]</m>,
-      and so particularly at<nbsp/><m>w</m>.
+      and so particularly at <m>w</m>.
     </p>
   </proof>
   <p>
-    Finally, mixing <xref ref="seriesintegral">Proposition</xref>
-    with <xref ref="convergenceradius">Theorem</xref> gives:
+    Finally, mixing <xref ref="seriesintegral"/>
+    with <xref ref="convergenceradius"/> gives:
   </p>
   <corollary xml:id="powseriesintegral">
     <statement>
       <p>
-            <idx><h>power series</h><h>integration of</h></idx>
-        Suppose the power series <m>\s c_k ( z - z_0 )^k</m> has radius of convergence <m>R>0</m> and <m>\gamma</m> is a piecewise smooth path in <m>D[z_0, R]</m>.
+        Suppose the power series <m>\s c_k ( z - z_0 )^k</m> has
+        radius of convergence <m>R>0</m> and <m>\gamma</m> is a
+        piecewise smooth path in <m>D[z_0, R]</m>. 
+        <idx><h>power series</h><h>integration of</h></idx>
         Then
         <me>
-          \int_\gamma \ \s c_k ( z - z_0 )^k \, \diff{z} \= \s c_k \int_\gamma ( z - z_0 )^k \, \diff{z} \,
+          \int_\gamma \ \s c_k ( z - z_0 )^k \, \diff{z} \= \s c_k
+          \int_\gamma ( z - z_0 )^k \, \diff{z} \, 
         </me>.
       </p>
       <p>
         In particular,
-        if <m>\gg</m> is closed then <m>\ds \int_\gg \ \s c_k ( z - z_0 )^k \, \diff{z} \= 0 </m>.
+        if <m>\gg</m> is closed then <m>\ds \int_\gg \ \s c_k ( z -
+        z_0 )^k \, \diff{z} \= 0 </m>. 
       </p>
     </statement>
   </corollary>
   <proof>
     <p>
       Let <m>r := \max_{ z \in \gg } \left| \gamma(z) -z_0 \right|</m>
-      (whose existence is guaranteed by <xref ref="realEVT">Theorem</xref>).
+      (whose existence is guaranteed by <xref ref="realEVT"/>).
       Then <m>\gg \subset \overline D[z_0, r]</m> and <m>r\lt R</m>.
-      <xref ref="convergenceradius">Theorem</xref>
-      says that <m>\s c_k \left( z - z_0 \right)^k</m> converges uniformly in <m>\overline D[z_0, r]</m>,
-      and so <xref ref="seriesintegral">Proposition</xref>
+      <xref ref="convergenceradius"/>
+      says that <m>\s c_k \left( z - z_0 \right)^k</m> converges
+      uniformly in <m>\overline D[z_0, r]</m>, 
+      and so <xref ref="seriesintegral"/>
       allows us to switch integral and summation.
     </p>
     <p>
-      The last statement follows now with <xref ref="ex_laurentoutlook">Exercise</xref>.
+      The last statement follows now with
+      <xref ref="ex_laurentoutlook"/>.
     </p>
   </proof>
   <p>
     These corollaries will become extremely useful in the next chapter.
-  </p>
-  <p>
-    \begin{Exercises}
-  </p>
-  <exercise xml:id="ex_7_1">
-    <statement>
-      <p>
-        For each of the sequences, prove convergence or divergence.
-        If the sequence converges, find the limit.
-        <ol>
-          <li>
-            <p>
-              <m>a_n = e^{\frac{ \pi i n} 4}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>a_n =\frac{(-1)^n} n</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>a_n = \cos(n)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>a_n = 2 - \frac{ i \, n^2 }{ 2n^2 + 1 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>a_n =\sin ( \frac 1 n )</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Determine whether each of the following series converges or diverges.
-        <ol>
-          <li>
-            <p>
-              <m>\ds \sum_{n \geq 1} \left(\frac{1+i}{\sqrt{3}}\right)^n</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \sum_{n \geq 1} n\left(\frac{1}{i}\right)^n</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \sum_{n \geq 1} \left(\frac{1+2i}{\sqrt{5}}\right)^n</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \sum_{n \geq 1} \frac{1}{n^3+i^n}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="x73">
-    <statement>
-      <p>
-        Compute <m>\ds \sum_{n \geq 1} \frac 1 { n^2 + 2n } </m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_limitrulesseq">
-    <statement>
-      <p>
-        Prove <xref ref="limitrules">Proposition</xref>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove the following:
-        <ol>
-          <li>
-            <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n = a \Longrightarrow \lim_{ n \to \infty } |a_n| = |a|</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n = 0 \Longleftrightarrow \lim_{ n \to \infty } |a_n| = 0</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_convseqbounded">
-    <statement>
-      <p>
-        Show that a convergent sequence is bounded,
-        i.e.: if <m>\lim_{ n \to \infty } a_n</m> exists,
-        then there is an <m>M</m> such that
-        <m>|a_n| \le M</m> for all <m>n \ge 1</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_sequenceLimitUnique">
-    <statement>
-      <p>
-        Show that the limit of a convergent sequence is unique.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>(a_n)</m> be a sequence.
-        A point <m>a</m> is an <em>accumulation point</em>
-        of the sequence if for every <m>\epsilon > 0</m> and every
-        <m>N \in \Z_{ >0 }</m> there exists some <m>n > N</m> such that <m>|a_n - a| \lt \epsilon</m>.
-        Prove that if a sequence has more than one accumulation point then the sequence diverges.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_edefdaslimit">
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Show that <m>\frac 1 {k!} \le \frac 3 {k(k+1)}</m> for any positive integer<nbsp/><m>k</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Conclude with <xref ref="ex_telescope">Example</xref>
-            that for any positive integer<nbsp/><m>n</m>,
-            <me>
-              1 + \frac 1 2 + \frac 1 6 + \dots + \frac 1 {n!} \ \le \ 3 \,
-            </me>.
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_archimedean">
-    <statement>
-      <p>
-        Derive the Archimedean Property from the Monotone Sequence Property.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_pairoflimits">
-    <statement>
-      <p>
-        Prove <xref ref="prop_pairoflimits">Proposition</xref>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="realimaginaryconverge">
-    <statement>
-      <p>
-        Prove that <m>\left( c_n \right)</m> converges if and only if
-        <m>\left( \Re c_n \right)</m> and <m>\left( \Im c_n \right)</m> converge.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove that <m>\Z</m> is complete and that <m>\Q</m> is not complete.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Prove that, if <m>a_n \leq b_n \leq c_n</m> for all <m>n</m> and <m>\lim_{n \to \infty} a_n = \lim_{n \to \infty} c_n = L</m>,
-        then <m>\lim_{n \to \infty} b_n = L</m>.
-        This is called the <em>Squeeze Theorem</em>,
-        and is useful in testing a sequence for convergence.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Find the least upper bound of the set <m>\left\{ \Re \left( e^{2 \pi i t} \right) : \, t \in \Q \setminus \Z \right\}</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_groupingterms">
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Suppose that the sequence <m>(c_n)</m> converges to zero.
-            Show that <m>\sum_{n \ge 0} c_n</m> converges if and only if <m>\sum_{k \ge 0} (c_{2k}+c_{2k+1})</m> converges.
-            Moreover, if the two series converge then they have the same limit.
-          </p>
-        </li>
-        <li>
-          <p>
-            Give an example where <m>(c_n)</m> does not converge to <m>0</m> and one of the series in (a) diverges while the other converges.
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise xml:id="tailtozero">
-    <statement>
-      <p>
-        Prove that the series <m>\ds \sum_{k \geq 1} b_k</m> converges if and only if <m>\ds \lim_{n \to \infty} \sum_{k \ge n} b_k = 0 \, </m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Show that <m>\ds \sum_{k \geq 1} \frac k {k^2+1}</m> diverges.
-          </p>
-        </li>
-        <li>
-          <p>
-            Show that <m>\ds \sum_{k \geq 1} \frac k {k^3+1}</m> converges.
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise xml:id="sup-_0">
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Suppose <m>G\subseteq\C</m> and <m>f_n : G \to \C</m> for <m>n \ge 1</m>.
-            Suppose <m>(a_n)</m> is a sequence in <m>\R</m> with
-            <m>\lim_{ n \to \infty } a_n = 0</m> and, for each <m>n \ge 1</m>,
-            <me>
-              |f_n(z)| \ \le \ a_n \qquad \text{ for all }  z \in G \,
-            </me>.
-            Show that <m>(f_n)</m> converges uniformly to the zero function in<nbsp/><m>G</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Re-prove the statement of <xref ref="ex_uniformconv">Example</xref> using part<nbsp/>(a).
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <figure xml:id="fig_sinn">
-    <caption>The functions <m>f_n(x) := \sin^n(x)</m> in <xref ref="ex_sin_n_convergence">Exercise</xref>.</caption>
-    <image width="93%" source="images/sinn.png"/>
-  </figure>
-  <exercise xml:id="fn_zn___0">
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Suppose <m>G\subseteq\C</m>, <m>f_n : G \to \C</m> for <m>n \ge 1</m>,
-            and <m>(f_n)</m> converges uniformly to the zero function in<nbsp/><m>G</m>.
-            Show that, if <m>(z_n)</m> is any sequence in <m>G</m>, then
-            <me>
-              \lim_{ n \to \infty } f_n(z_n) \ = \ 0 \,
-            </me>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Apply (a) to the function sequence given in <xref ref="ex_nonuniformconv">Example</xref>,
-            together with the sequence <m>(z_n = e^{ - \frac 1 n })</m>,
-            to prove that the convergence given in <xref ref="ex_nonuniformconv">Example</xref> is not uniform.
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_sin_n_convergence">
-    <statement>
-      <p>
-        Consider <m>f_n : [0,\pi] \to \R</m> given by <m>f_n(x) = \sin^n(x)</m>,
-        for <m>n \ge 1</m>.
-        Prove that <m>(f_n)</m> converges pointwise to <m>f: [0,\pi] \to \R</m> given by
-        <me>
-          f(x) = \begin{cases}1 \amp  \text{ if }  x = \frac \pi 2 \, , \\ 0 \amp  \text{ if }  x \ne \frac \pi 2 \, , \end{cases}
-        </me>
-        yet this convergence is not uniform.
-        (See <xref ref="fig_sinn">Figure</xref>.)
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Where do the following sequences converge pointwise?
-        Do they converge uniformly on this domain?
-        <ol>
-          <li>
-            <p>
-              <m>\left( n \, z^n \right)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left( \frac{ z^n }{n} \right)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left( \frac 1 {1+nz} \right)</m> where <m>\Re(z) \geq 0</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Let <m>f_n(x)=n^2x \, e^{-nx}</m>.
-        <ol>
-          <li>
-            <p>
-              Show that <m>\lim_{n\to\infty}f_n(x)=0</m> for all <m>x\ge0</m>. (<em>Hint</em>: Treat <m>x=0</m> as a special case;
-              for <m>x>0</m> you can use L'H&#xf4;pital's rule
-              (<xref ref="lhospital">Theorem</xref>)
-              <mdash/> but remember that <m>n</m> is the variable, not<nbsp/><m>x</m>.)
-            </p>
-          </li>
-          <li>
-            <p>
-              Find <m>\lim_{n\to\infty}\int_0^1 f_n(x)\,\diff{x}</m>.
-              (<em>Hint</em>: The answer is <em>not</em> <m>0</m>.)
-            </p>
-          </li>
-          <li>
-            <p>
-              Why doesn't your answer to part (b) violate <xref ref="seriesintegral">Proposition</xref>?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        The product of two power series centered at <m>z_0</m> is another power series centered at <m>z_0</m>.
-        Derive a formula for its coefficients in terms of the coefficients of the original two power series.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_7_2">
-    <statement>
-      <p>
-        Find a power series
-        (and determine its radius of convergence)
-        for the following functions.
-        <ol>
-          <li>
-            <p>
-              <m>\ds \frac{ 1 }{ 1 + 4 z }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{ 1 }{ 3 - \frac z 2 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{z^2}{(4-z)^2}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_powerex">
-    <statement>
-      <p>
-        Find a power series representation about the origin of each of the following functions.
-        <ol>
-          <li>
-            <p>
-              <m>\cos z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\cos(z^2)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^2\sin z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(\sin z)^2</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <ol>
-        <li>
-          <p>
-            Suppose that the sequence <m>(c_k)</m> is bounded.
-            Show that the radius of convergence of
-            <m>\sum_{k\ge0}c_k(z-z_0)^k</m> is at least <m>1</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Suppose that the sequence <m>(c_k)</m> does not converge to <m>0</m>.
-            Show that the radius of convergence of <m>\sum_{k\ge0}c_k(z-z_0)^k</m> is at most <m>1</m>.
-          </p>
-        </li>
-      </ol>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_7_3">
-    <statement>
-      <p>
-        Find the power series centered at 1 and compute its radius of convergence for each of the following functions:
-        <ol>
-          <li>
-            <p>
-              <m>f(z)= \frac 1 z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z)=\Log (z)</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Use the Weierstra&#223;<nbsp/><m>M</m>-test to show that each of the following series converges uniformly on the given domain:
-        <ol>
-          <li>
-            <p>
-              \disp{\sum_{k\ge1}\frac{z^k}{k^2}} on <m>\overline D[0,1]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              \disp{\sum_{k\ge0}\frac1{z^k}} on <m>\{ z \in \C : \, \abs{z}\ge2 \}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              \disp{\sum_{k\ge0}\frac{z^k}{z^k+1}} on \disp{\overline D[0,r]} where <m>0\le r\lt 1</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="prob_geomseriesfunky">
-    <statement>
-      <p>
-        Fix <m>z \in \C</m> and <m>r > |z|</m>.
-        Prove that <m>\ds \s \left( \frac z w \right)^k</m> converges uniformly
-        <em>in the variable</em>
-        <m>w</m> for <m>|w| \ge r</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_roottestRinfty">
-    <statement>
-      <p>
-        Complete our proof of <xref ref="cor_roottest">Corollary</xref>
-        by considering the case <m>R = \infty</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_ratiotest">
-    <statement>
-      <p>
-        Prove that, if <m>\lim_{ k \to \infty } \left| \frac{ c_{ k+1 } }{ c_{ k } } \right|</m> exists then the radius of convergence of <m>\s c_k ( z - z_0)^k</m> equals
-        <me>
-          R = \begin{cases}\infty \amp  \text{ if }  \lim_{ k \to \infty } \left| \frac{ c_{ k+1 } }{ c_{ k } } \right| = 0 \, , \\ \lim_{ k \to \infty } \left| \frac{ c_{ k } }{ c_{ k+1 } } \right| \amp  \text{ otherwise. } \end{cases}
-        </me>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_7_4">
-    <statement>
-      <p>
-        Find the radius of convergence for each of the following series.
-        <ol>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 0} a^{ k^2 } z^k</m> where <m>a \in \C</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 0} k^n z^k</m> where <m>n \in \Z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 0} z^{k!}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 1} \frac{ (-1)^k }{ k } \, z^{ k(k+1) }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              \disp{\sum_{k\ge1}\frac{z^k}{k^k}}
-            </p>
-          </li>
-          <li>
-            <p>
-              \disp{\sum_{k\ge0}\cos(k) <nbsp/> z^k}
-            </p>
-          </li>
-          <li>
-            <p>
-              \disp{\sum_{k\ge0}4^k(z-2)^k}
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_734">
-    <statement>
-      <p>
-        Find a function representing each of the following series.
-        <ol>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 0} \frac{z^{2k}}{k!}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 1} k \, (z-1)^{k-1}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 2} k(k-1) \, z^k</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Recall the function <m>f : D[0,1] \to \C</m> defined in <xref ref="ex_functiondefinedthroughmorera">Exercise</xref> through
-        <me>
-          f(z) := \int_{ [0,1] } \frac{ \diff{w} }{ 1-wz } \,
-        </me>.
-      </p>
-      <p>
-        Find a power series for<nbsp/><m>f</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        Define the functions <m>f_n : \R_{ \ge 0 } \to \R</m> via <m>f_n(t)= \frac 1 n \, e^{- \frac t n}</m>,
-        for <m>n \ge 1</m>.
-        <ol>
-          <li>
-            <p>
-              Show that the maximum of <m>f_n(t)</m> is <m>\frac 1 n</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>f_n(t)</m> converges uniformly to the zero function on <m>\R_{ \ge 0 }</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>\int_0^\infty f_n(t)\,\diff{t}</m> does not converge to <m>0</m> as <m>n\to\infty</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Why doesn't this contradict <xref ref="seriesintegral">Proposition</xref>?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
-  <p>
-    \end{Exercises}
   </p>
 </section>
