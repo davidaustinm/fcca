@@ -5689,6 +5689,60 @@ var ptx_lunr_docs = [
   "body": "  Suppose is closed and bounded and all points of are isolated points of . Show that is finite, as follows:   For each we can choose so that contains no points of except . Show that is continuous. ( Hint : This is really easy if you use the first definition of continuity in .)    Assume is non-empty. By the Extreme Value , has a minimum value, . Let . Since is bounded, it lies in a disk for some . Show that the small disks , for , are disjoint and lie in .    Find a bound on the number of such small disks. ( Hint : Compare the areas of and .)      "
 },
 {
+  "id": "sec_infsums",
+  "level": "1",
+  "url": "sec_infsums.html",
+  "type": "Section",
+  "number": "10.1",
+  "title": "Infinite Sums",
+  "body": " Infinite Sums  In this exercise, we evaluate the sums and . We hope the idea of how to compute such sums in general will become clear.    Consider the function . Compute the residues at all the singularities of .    Let be a positive integer and be the rectangular path from to to to back to .    Show that for . ( Hint : Use .)    Show that .      Use the Residue Theorem to arrive at an identity for .    Evaluate .    Repeat the exercise with the function to arrive at an evaluation of . ( Hint : To bound this function, you may use the fact that .)    Evaluate and .    We remark that, in the language of , you have computed the evaluations and of the Riemann zeta function. The function is called the alternating zeta function . alternating zeta function   "
+},
+{
+  "id": "sec_binomialcoeff",
+  "level": "1",
+  "url": "sec_binomialcoeff.html",
+  "type": "Section",
+  "number": "10.2",
+  "title": "Binomial Coefficients",
+  "body": " Binomial Coefficients  The binomial coefficient is a natural candidate for being explored analytically, as the binomial theorem   binomial coefficient   (for and ) tells us that is the coefficient of in . You will derive two sample identities in the course of the exercises below.   Convince yourself that where is any simple closed piecewise smooth path such that 0 is inside .    Derive a recurrence relation for binomial coefficients from the fact that . ( Hint : Multiply both sides by .)    Now suppose with . Find a simple closed path surrounding the origin such that converges uniformly on as a function of . Evaluate this sum.    Keeping and from , convince yourself that , Use to interchange summation and integral, and use the Residue to evaluate the integral, giving an identity for .     "
+},
+{
+  "id": "sec_fibonacci",
+  "level": "1",
+  "url": "sec_fibonacci.html",
+  "type": "Section",
+  "number": "10.3",
+  "title": "Fibonacci Numbers",
+  "body": " Fibonacci Numbers  The Fibonacci Named after Leonardo Pisano Fibonacci (1170 1250). numbers are a sequence of integers defined recursively through . Fibonacci numbers   Let .   Show that has a positive radius of convergence.    Show that the recurrence relation among the implies that . ( Hint : Write down the power series of and and rearrange both so that you can easily add.)    Verify that .    Use the Residue to derive an identity for . ( Hint : Integrate around and show that this integral vanishes as .)    Generalize to other sequences defined by recurrence relations, e.g., the Tribonacci numbers Tribonacci numbers        "
+},
+{
+  "id": "sec_coinexchange",
+  "level": "1",
+  "url": "sec_coinexchange.html",
+  "type": "Section",
+  "number": "10.4",
+  "title": "The Coin-Exchange Problem",
+  "body": " The Coin-Exchange Problem  In this exercise, we will solve and extend a classical problem of Ferdinand Georg Frobenius (1849 1917). Frobenius problem Suppose and are relatively prime This means that the integers do not have any common factor. positive integers, and suppose is a positive integer. Consider the function .    Compute the residues at all nonzero poles of .    Verify that , where .    Use the Residue Theorem, , to derive an identity for . ( Hint : Integrate around and show that this integral vanishes as .)    Use the following three steps to simplify this identity to . Here, denotes the fractional part The fractional part of a real number is, loosely speaking, the part after the decimal point. More thoroughly, the greatest integer function of , denoted by , is the greatest integer not exceeding . The fractional part is then . of , (mod ) This means that is an integer such that for some . , and (mod ).    Verify that for , .    Use this together with the identity found in to obtain .    Verify that .      Prove that , and for all .     Historical remark. Given relatively prime positive integers , let's call an integer  representable if there exist nonnegative integers such that .  (There are many scenarios in which you may ask whether or not is representable, given fixed ; for example, if the 's are coin denomination, this question asks whether you can give exact change for .) In the late 19th century, Frobenius raised the problem of finding the largest integer that is not representable. We call this largest integer the Frobenius number  . It is well known (probably at least since the 1880's, when James Joseph Sylvester (1814 1897) studied the Frobenius problem) that . You verified this result in . For , there is no nice closed formula for . The formula in is due to Tiberiu Popoviciu (1906 1975), though an equivalent version of it was already known to Peter Barlow (1776 1862).  "
+},
+{
+  "id": "popo-1",
+  "level": "2",
+  "url": "sec_coinexchange.html#popo-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "fractional part greatest integer function "
+},
+{
+  "id": "sec_dedekindsums",
+  "level": "1",
+  "url": "sec_dedekindsums.html",
+  "type": "Section",
+  "number": "10.5",
+  "title": "Dedekind Sums",
+  "body": " Dedekind Sums   Dedekind sum   This exercise outlines one more nontraditional application of the Residue . Given two positive, relatively prime integers and , let .    Choose an such that the rectangular path from to to to back to does not pass through any of the poles of .    Compute the residues for the poles of inside . Hint: Use the periodicity of the cotangent and the fact that . periodic  cotangent     Prove that and deduce that for any  .      Define . Use the Residue to show that .    Generalize and .     Historical remark. The sum in is called a Dedekind Named after Julius Wilhelm Richard Dedekind (1831 1916). sum . It first appeared in the study of the Dedekind -function  in the 1870's and has since intrigued mathematicians from such different areas as topology, number theory, and discrete geometry. The reciprocity law  is the most important and famous identity of the Dedekind sum. The proof that is outlined here is due to Hans Rademacher (1892 1969).  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
