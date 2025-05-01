@@ -1,22 +1,34 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="ch_discreteresidues">
+<?xml version="1.0" encoding="utf-8"?>
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:id="ch_discreteresidues">
   <title>Discrete Applications of the Residue Theorem</title>
   <introduction>
     <blockquote>
-      <em>All means (even continuous) sanctify the discrete end.</em>
-      Doron Zeilberger
+      <p>
+        <em>All means (even continuous) sanctify the discrete end.</em>
+      </p>
+      <attribution>
+        Doron Zeilberger
+      </attribution>
     </blockquote>
     <p>
       On the surface, this chapter is just a collection of exercises.
-      They are more involved than any of the ones we've given so far at the end of each chapter,
-      which is one reason why we will lead you through each of the following ones step by step.
+      They are more involved than any of the ones we've given so far
+      at the end of each chapter, 
+      which is one reason why we will lead you through each of the
+      following ones step by step. 
       On the other hand,
-      these sections should really be thought of as a continuation of the book,
+      these sections should really be thought of as a continuation of
+      the book, 
       just in a different format.
       All of the following problems are of a
       <em>discrete</em> mathematical nature,
       and we invite you to solve them using <em>continuous</em>
       methods<mdash/>namely, complex integration.
-      There are very few results in mathematics that so intimately combine discrete and continuous mathematics as does the Residue <xref ref="residuethm">Theorem</xref>.
+      There are very few results in mathematics that so intimately
+      combine discrete and continuous mathematics as does the Residue
+      <xref ref="residuethm"/>.
     </p>
   </introduction>
   <xi:include  href="sec_infsums.ptx"/>

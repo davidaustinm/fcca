@@ -20,8 +20,8 @@
     <xi:include href="./powerchapter.ptx"/>
     <xi:include href="./taylorchapter.ptx"/>
     <xi:include href="./residuechapter.ptx"/>
-    <!--
     <xi:include href="./ch_discreteresidues.ptx"/>
+    <!--
     <xi:include href="./ch_solutions.ptx"/>
     -->
     <!-- Include backmatter -->

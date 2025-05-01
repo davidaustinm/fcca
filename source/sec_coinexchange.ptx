@@ -1,19 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <section xml:id="sec_coinexchange">
   <title>The Coin-Exchange Problem</title>
   <p>
     In this exercise,
-    we will solve and extend a classical problem of Ferdinand Georg Frobenius (1849<ndash/>1917).
-        <idx><h>Frobenius problem</h></idx>
+    we will solve and extend a classical problem of Ferdinand Georg
+    Frobenius (1849<ndash/>1917).
+    <idx><h>Frobenius problem</h></idx>
     Suppose <m>a</m> and <m>b</m> are relatively prime<fn>
     This means that the integers do not have any common factor.
     </fn> positive integers,
     and suppose <m>t</m> is a positive integer.
     Consider the function
     <me>
-      f(z) \= \frac{ 1 }{ \left( 1 - z^{ a } \right) \left( 1 - z^{ b } \right) z^{t+1} }  \,
+      f(z) \= \frac{ 1 }{ \left( 1 - z^{ a } \right) \left( 1 - z^{ b
+      } \right) z^{t+1} }  \, 
     </me>.
   </p>
-  <ol marker="1">
+  <ol marker="1. ">
     <li>
       <p>
         Compute the residues at all nonzero poles of <m>f</m>.
@@ -23,28 +27,32 @@
       <p>
         Verify that <m>\Res_{z=0}( f ) = N(t)</m>, where
         <me>
-          N(t) \= \left| \left\{ (m,n) \in \Z : \, m,n \geq 0 , \, ma+nb = t \right\} \right|
+          N(t) \= \left| \left\{ (m,n) \in \Z : \, m,n \geq 0 , \,
+          ma+nb = t \right\} \right| 
         </me>.
       </p>
     </li>
     <li xml:id="id">
       <p>
         Use the Residue Theorem,
-        <xref ref="residuethm">Theorem</xref>,
+        <xref ref="residuethm"/>,
         to derive an identity for <m>N(t)</m>.
-        (<em>Hint</em>: Integrate <m>f</m> around <m>C[0,R]</m> and show that this integral vanishes as <m>R \to \infty</m>.)
+        (<em>Hint</em>: Integrate <m>f</m> around <m>C[0,R]</m> and
+        show that this integral vanishes as <m>R \to \infty</m>.) 
       </p>
     </li>
     <li xml:id="popo">
       <p>
         Use the following three steps to simplify this identity to
         <me>
-          N(t) \= \frac{ t }{ a b } - \left\{ \frac{ b^{-1} t }{ a } \right\} - \left\{ \frac{ a^{-1} t }{ b } \right\} + 1 \,
+          N(t) \= \frac{ t }{ a b } - \left\{ \frac{ b^{-1} t }{ a }
+          \right\} - \left\{ \frac{ a^{-1} t }{ b } \right\} + 1 \,
         </me>.
         Here, <m>\{ x \}</m> denotes the fractional part<fn>
-        The \Def{fractional part} of a real number <m>x</m> is,
+        The <term>fractional part</term> of a real number <m>x</m> is,
         loosely speaking, the part after the decimal point.
-        More thoroughly, the \Def{greatest integer function} of <m>x</m>,
+        More thoroughly, the <term>greatest integer function</term> of
+        <m>x</m>, 
         denoted by <m>\lfloor x \rfloor</m>,
         is the greatest integer not exceeding <m>x</m>.
         The fractional part is then <m>\{ x \} = x - \lfloor x \rfloor</m>.
@@ -61,16 +69,25 @@
           <p>
             Verify that for <m>b=1</m>,
             <md>
-              <mrow>N(t) \amp \= \left| \left\{ (m,n) \in \Z : \, m,n \geq 0 , \, ma+n = t \right\} \right| \= \left| \left\{ m \in \Z : \, m \geq 0 , \, ma \leq t \right\} \right|</mrow>
-              <mrow>\amp \= \left| \left[ 0 , \frac{t}{a} \right] \cap \Z \right| \= \frac{t}{a} - \left\{ \frac{ t }{ a } \right\} + 1 \, </mrow>
+              <mrow>N(t) \amp \= \left| \left\{ (m,n) \in \Z : \, m,n
+              \geq 0 , \, ma+n = t \right\} \right| </mrow>
+              <mrow> \amp \= \left| \left\{
+              m \in \Z : \, m \geq 0 , \, ma \leq t \right\}
+              \right|</mrow> 
+              <mrow>\amp \= \left| \left[ 0 , \frac{t}{a} \right] \cap
+              \Z \right| \= \frac{t}{a} - \left\{ \frac{ t }{ a }
+              \right\} + 1 \, </mrow> 
             </md>.
           </p>
         </li>
         <li>
           <p>
-            Use this together with the identity found in <xref ref="id"></xref> to obtain
+            Use this together with the identity found in
+            <xref ref="id"/> to obtain 
             <me>
-              \frac{1}{a} \sum_{ k=1 }^{a-1} \frac{ 1 }{ ( 1 - e^{ 2 \pi i k/a } ) \, e^{ 2 \pi i kt/a } } \= - \left\{ \frac{t}{a} \right\} + \frac{1}{2} - \frac{1}{2a} \,
+              \frac{1}{a} \sum_{ k=1 }^{a-1} \frac{ 1 }{ ( 1 - e^{ 2
+              \pi i k/a } ) \, e^{ 2 \pi i kt/a } } \= - \left\{
+              \frac{t}{a} \right\} + \frac{1}{2} - \frac{1}{2a} \, 
             </me>.
           </p>
         </li>
@@ -78,7 +95,10 @@
           <p>
             Verify that
             <me>
-              \sum_{ k=1 }^{a-1} \frac{ 1 }{ ( 1 - e^{ 2 \pi i kb/a } ) \, e^{ 2 \pi i kt/a } } \= \sum_{ k=1 }^{a-1} \frac{ 1 }{ ( 1 - e^{ 2 \pi i k/a } ) \, e^{ 2 \pi i k b^{-1} t/a } } \,
+              \sum_{ k=1 }^{a-1} \frac{ 1 }{ ( 1 - e^{ 2 \pi i kb/a }
+              ) \, e^{ 2 \pi i kt/a } } \= \sum_{ k=1 }^{a-1} \frac{ 1
+              }{ ( 1 - e^{ 2 \pi i k/a } ) \, e^{ 2 \pi i k b^{-1} t/a
+              } } \, 
             </me>.
           </p>
         </li>
@@ -92,27 +112,35 @@
     </li>
   </ol>
   <p>
-    <em>Historical remark.</em> Given relatively prime positive integers <m>a_{1} , a_2, \dots , a_{n}</m>,
+    <em>Historical remark.</em> Given relatively prime positive
+    integers <m>a_{1} , a_2, \dots , a_{n}</m>, 
     let's call an integer <m>t</m> <em>representable</em>
-    if there exist nonnegative integers <m>m_{ 1 } , m_2, \dots , m_{ n }</m> such that
+    if there exist nonnegative integers <m>m_{ 1 } , m_2, \dots , m_{
+    n }</m> such that 
     <me>
       t \= m_1 \, a_1 + m_2 \, a_2 + \dots + m_n \, a_n \,
     </me>.
   </p>
   <p>
-    (There are many scenarios in which you may ask whether or not <m>t</m> is representable,
+    (There are many scenarios in which you may ask whether or not
+    <m>t</m> is representable, 
     given fixed <m>a_{1} , a_2, \dots , a_{n}</m>;
     for example, if the <m>a_j</m>'s are coin denomination,
-    this question asks whether you can give exact change for <m>t</m>.) In the late 19th century, Frobenius raised the problem of finding the largest integer that is not representable.
+    this question asks whether you can give exact change for
+    <m>t</m>.) In the late 19th century, Frobenius raised the problem
+    of finding the largest integer that is not representable. 
     We call this largest integer the
     <em>Frobenius number</em>
     <m>g ( a_{1} , \dots , a_{n} )</m>.
-    It is well known (probably at least since the 1880's, when James Joseph Sylvester (1814<ndash/>1897) studied the Frobenius problem) that <m>g(a_{1},a_{2}) = a_{1} a_{2} - a_{1} - a_{2}</m>.
-    You verified this result in <xref ref="syl"></xref>.
+    It is well known (probably at least since the 1880's, when James
+    Joseph Sylvester (1814<ndash/>1897) studied the Frobenius problem)
+    that <m>g(a_{1},a_{2}) = a_{1} a_{2} - a_{1} - a_{2}</m>. 
+    You verified this result in <xref ref="syl"/>.
     For <m>n>2</m>,
     there is no nice closed formula for <m>g ( a_{1} , \dots , a_{n} )</m>.
-    The formula in <xref ref="popo"></xref>
+    The formula in <xref ref="popo"/>
     is due to Tiberiu Popoviciu (1906<ndash/>1975),
-    though an equivalent version of it was already known to Peter Barlow (1776<ndash/>1862).
+    though an equivalent version of it was already known to Peter
+    Barlow (1776<ndash/>1862). 
   </p>
 </section>
