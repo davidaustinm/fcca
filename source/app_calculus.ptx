@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<appendix xml:id="appendix-calculus">
+  <title>Theorems from Calculus</title>
+
+  <blockquote>
+    <p>
+      <em>
+        First, it is necessary to study the facts, to multiply the
+        number of observations, and 
+        then later to search for formulas that connect them so as thus to
+        discern the particular laws 
+        governing a certain class of phenomena. In general, it is not
+        until after these particular 
+        laws have been established that one can expect to discover and
+        articulate the more general 
+        laws that complete theories by bringing a multitude of
+        apparently very diverse phenomena 
+        together under a single governing principle.
+      </em>
+    </p>
+    <attribution>
+      Augustin Louis Cauchy (1789--1857)
+    </attribution>
+  </blockquote>
+
+  <p>
+    Here we collect a few theorems from real \ix{calculus} that we
+    make use of in the course of the text.
+  </p>
+
+  <theorem xml:id="realEVT">
+    <title>Extreme-Value Theorem</title>
+
+    <statement>
+      <p>Suppose <m>K \subset \R^n</m> is closed and bounded and
+      <m>f: K \to \R</m> is continuous. Then <m>f</m> has a minimum
+      and maximum value, 
+      i.e., 
+      <me>
+        \min_{ x \in K } f(x)
+        \qquad \text{ and } \qquad
+        \max_{ x \in K } f(x)
+      </me>
+      exist in<nbsp/>\R</p>.
+    </statement>
+  </theorem>
+
+  <theorem xml:id="realmeanvalue">
+    <title>Mean-Value Theorem</title>
+
+    <idx><h>mean-value theorem</h><h>for real functions</h></idx>
+
+    <statement>
+      <p>
+        Suppose <m>I \subseteq \R</m> is an interval, <m>f: I \to
+        \R</m> is differentiable, and <m>x, \, x + \D x \in
+        I</m>. Then there exists 
+        <m> 0\lt a \lt 1</m> such that  
+        <me>
+          \frac{f(x + \D x) - f(x)}{ \D x } = f'(x + a \, \D x) \, 
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    Many of the most important results of analysis concern
+    combinations of limit 
+    operations.  The most important of all calculus theorems combines 
+    differentiation and integration (in two ways):
+  </p>
+
+  <theorem xml:id="fundthmcalc">
+    <title>Fundamental Theorem of Calculus</title>
+
+    <idx><h>fundamental theorem</h><h>of calculus</h></idx>
+
+    <statement>
+      <p>
+        Suppose <m>f: [a,b] \to \R</m> is continuous.
+        <ol marker="a) ">
+          <li xml:id="fundthemcalc1">
+            <p> The function <m>F: [a,b] \to \R</m> defined by
+            <m>F(x)=\int_a^x f(t)\,\diff{t}</m> is differentiable and
+            <m>F'(x)=f(x)</m>.
+            </p>
+          </li>
+          <li xml:id="fundthmcalc2">
+            <p>
+              If <m>F</m> is any antiderivative of <m>f</m>, that is,
+              <m>F' = f</m>, then <m>\int_a^b f(x) \, \diff{x} = F(b) -
+              F(a)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </theorem>
+
+  <theorem xml:id="thm:realintegralproperties">
+    <statement>
+      <p>
+        If <m>f, g : [a,b] \to \R</m> are continuous functions and <m>c
+        \in \R</m> then
+        <me>
+          \int_a^b \bigl( f(x) + c \, g(x) \bigr) \, \diff{x} \=
+          \int_a^b f(x) \, \diff{x} + c \int_a^b g(x) \, \diff{x} \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+
+  <theorem xml:id="thm:realintegralupperbound">
+    <statement>
+      <p>
+        If <m>f, g : [a,b] \to \R</m> are continuous functions then
+        <me>
+          \left| \int_a^b f(x) \, g(x) \, \diff{x} \right|
+          \ \le \ \int_a^b \left| f(x) \, g(x) \right| \diff{x}
+          \ \le \ \left( \max_{ a \le x \le b } |f(x)| \right)
+          \int_a^b \left| g(x) \right| \diff{x} \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+
+  <theorem xml:id="thm:calcsubstitution">
+    <statement>
+      <p>
+        If <m>g: [a,b] \to \R</m> is differentiable, <m>g'</m> is
+        continuous, and <m>f : [g(a), 
+        g(b)] \to \R</m> is continuous then 
+        <me>
+          \int_a^b f(g(t)) \, g'(t) \, \diff{t} \= \int_{ g(a) }^{
+          g(b) } f(x) \, \diff{x} \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    For functions of several variables we can perform
+    differentiation/integration operations in any order, if we have
+    sufficient continuity:
+  </p>
+
+  <theorem xml:id="thm:mixedpartialscommute">
+    <statement>
+      <p>
+        If the mixed partials <m>\mderiv fxy</m> and <m>\mderiv fyx</m> are
+        defined on an open set <m>G \subseteq \R^2</m> and are continuous
+        at a point <m>(x_0,y_0) \in G</m>, then they are equal at
+        <m>(x_0,y_0)</m>.
+      </p>
+    </statement>
+  </theorem>
+
+  <theorem>
+    <statement>
+      <p>
+        If <m>f</m> is continuous on <m>[a,b] \times [c,d] \subset
+        \R^2</m> then 
+        <me>
+          \int_a^b\!\int_c^d f(x,y)\,\diff{y}\,\diff{x} \=
+          \int_c^d\!\int_a^b f(x,y)\,\diff{x}\,\diff{y} \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    We can apply differentiation and integration with respect to
+    different variables in either order:
+  </p>
+
+  <theorem xml:id="leibnizrule">
+    <title>Leibniz's Rule</title>
+
+    <idx><h>Leibniz's rule</h></idx>
+    <statement>
+      <p>
+        Suppose <m>f</m> is continuous on <m>[a,b] \times [c,d]
+        \subset \R^2</m> and the partial derivative <m>\fderiv fx</m>
+        exists and is continuous on <m>[a,b] \times [c,d]</m>.  Then 
+        <me>
+          \frac{ d }{ \diff{x} } \int_c^d f(x,y) \, \diff{y} \= \int_c^d
+          \fderiv fx(x,y) \, \diff{y} \,
+        </me>.
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    Leibniz's Rule follows from the Fundamental Theorem of Calculus
+    (<xref href="fundthmcalc"/>). You can try to prove it, e.g., as
+    follows: Define <m>F(x)=\int_c^d f(x,y)\,\diff{y}</m>,
+    get an expression
+    for <m>F(x)-F(a)</m>
+    as an iterated integral by writing <m>f(x,y)-f(a,y)</m>
+    as
+    the integral of <m>\fderiv fx</m>, interchange the order of
+    integrations, and then diafferentiate using
+    <xref href="fundthmcalc"/>.
+  </p>
+
+  <theorem xml:id="thm:green">
+    <title>Green's Theorem</title>
+    <statement>
+
+      <p>Let <m>C</m>
+      >be a positively oriented, piecewise smooth, simple, closed path
+      in <m>\R^2</m>
+      and let <m>D</m> be the set bounded by <m>C</m>. 
+      If <m>f(x,y)</m> and <m>g(x,y)</m> have continuous partial
+      derivatives on an open region containing <m>D</m> then 
+      <me>
+        \int_C f \, \diff{x} + g \, \diff{y} \= \int_D \frac{ \partial g }{
+        \partial x } - \frac{ \partial f }{ \partial y } \, \diff{x} \,
+        \diff{y} \,
+      </me>.
+      <idx><h>Green's theorem</h></idx>
+      </p>
+    </statement>
+  </theorem>
+
+  <theorem xml:id="lhospital">
+    <title>L'H&#xf4;spital's Rule</title>
+
+    <statement>
+      <p>Suppose <m>I\subset\R</m> is an open interval and either
+      <m>c</m> is in <m>I</m> or <m>c</m> 
+      is an endpoint of <m>I</m>.  Suppose <m>f</m> and <m>g</m> are
+      differentiable functions 
+      on <m>I\setminus\{\,c\}</m> with <m>g'(x)</m> never zero. Suppose
+      <me>
+        \lim_{x\to c} f(x) = 0,\quad \lim_{x\to c} g(x) = 0,\quad 
+        \lim_{x\to c} \frac{f'(x)}{g'(x)} = L\,
+      </me>.
+      Then 
+      <me>
+        \lim_{x\to c} \frac{f(x)}{g(x)} = L\,
+      </me>.
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    There are many extensions of L'H&#xf4;spital's rule.  In particular, the rule
+    remains true if any of the following changes are made:
+    <ul>
+      <li><p><m>L</m> is infinite..</p></li>
+      <li><p><m>I</m> is unbounded and <m>c</m> is an infinite
+      endpoint of <m>I</m>. </p></li>
+      <li><p><m>\lim_{x\to c}f(x)</m> and <m>\lim_{x\to c}g(x)</m> are
+      both infinite.
+      </p></li>
+    </ul>
+  </p>
+
+</appendix>
+
+

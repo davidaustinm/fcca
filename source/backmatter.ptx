@@ -7,6 +7,8 @@
 <!-- with all notation generated, and finally the index. -->
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
   <title>Backmatter</title>
+  <xi:include href="./app_calculus.ptx"/>
+  
   <xi:include href="./bibliography.ptx"/>
   <index>
     <title>Index</title>
