@@ -8,8 +8,9 @@
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
   <title>Backmatter</title>
   <xi:include href="./app_calculus.ptx"/>
-  
-  <xi:include href="./bibliography.ptx"/>
+  <!--
+      <xi:include href="./bibliography.ptx"/>
+  -->
   <index>
     <title>Index</title>
     <index-list/>
