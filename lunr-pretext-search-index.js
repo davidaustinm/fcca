@@ -5854,24 +5854,15 @@ var ptx_lunr_docs = [
   "id": "backmatter-3",
   "level": "1",
   "url": "backmatter-3.html",
-  "type": "References",
-  "number": "",
-  "title": "Bibliography",
-  "body": " Bibliography  "
-},
-{
-  "id": "backmatter-4",
-  "level": "1",
-  "url": "backmatter-4.html",
   "type": "Index",
   "number": "",
   "title": "Index",
   "body": " Index   "
 },
 {
-  "id": "backmatter-5",
+  "id": "backmatter-4",
   "level": "1",
-  "url": "backmatter-5.html",
+  "url": "backmatter-4.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
