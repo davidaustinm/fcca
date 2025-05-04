@@ -5743,27 +5743,135 @@ var ptx_lunr_docs = [
   "body": " Dedekind Sums   Dedekind sum   This exercise outlines one more nontraditional application of the Residue . Given two positive, relatively prime integers and , let .    Choose an such that the rectangular path from to to to back to does not pass through any of the poles of .    Compute the residues for the poles of inside . Hint: Use the periodicity of the cotangent and the fact that . periodic  cotangent     Prove that and deduce that for any  .      Define . Use the Residue to show that .    Generalize and .     Historical remark. The sum in is called a Dedekind Named after Julius Wilhelm Richard Dedekind (1831 1916). sum . It first appeared in the study of the Dedekind -function  in the 1870's and has since intrigued mathematicians from such different areas as topology, number theory, and discrete geometry. The reciprocity law  is the most important and famous identity of the Dedekind sum. The proof that is outlined here is due to Hans Rademacher (1892 1969).  "
 },
 {
-  "id": "backmatter-2",
+  "id": "appendix-calculus",
   "level": "1",
-  "url": "backmatter-2.html",
+  "url": "appendix-calculus.html",
+  "type": "Appendix",
+  "number": "A",
+  "title": "Theorems from Calculus",
+  "body": " Theorems from Calculus    First, it is necessary to study the facts, to multiply the number of observations, and then later to search for formulas that connect them so as thus to discern the particular laws governing a certain class of phenomena. In general, it is not until after these particular laws have been established that one can expect to discover and articulate the more general laws that complete theories by bringing a multitude of apparently very diverse phenomena together under a single governing principle.   Augustin Louis Cauchy (1789--1857)   Here we collect a few theorems from real \\ix{calculus} that we make use of in the course of the text.   Extreme-Value Theorem   Suppose is closed and bounded and is continuous. Then has a minimum and maximum value, i.e., exist in \\R .    Mean-Value Theorem  mean-value theorem for real functions   Suppose is an interval, is differentiable, and . Then there exists such that .    Many of the most important results of analysis concern combinations of limit operations. The most important of all calculus theorems combines differentiation and integration (in two ways):   Fundamental Theorem of Calculus  fundamental theorem of calculus   Suppose is continuous.   The function defined by is differentiable and .    If is any antiderivative of , that is, , then .         If are continuous functions and then .      If are continuous functions then .      If is differentiable, is continuous, and is continuous then .    For functions of several variables we can perform differentiation\/integration operations in any order, if we have sufficient continuity:    If the mixed partials and are defined on an open set and are continuous at a point , then they are equal at .      If is continuous on then .    We can apply differentiation and integration with respect to different variables in either order:   Leibniz's Rule  Leibniz's rule   Suppose is continuous on and the partial derivative exists and is continuous on . Then .    Leibniz's Rule follows from the Fundamental Theorem of Calculus ( ). You can try to prove it, e.g., as follows: Define , get an expression for as an iterated integral by writing as the integral of , interchange the order of integrations, and then diafferentiate using .   Green's Theorem   Let >be a positively oriented, piecewise smooth, simple, closed path in and let be the set bounded by . If and have continuous partial derivatives on an open region containing then . Green's theorem      L'Hôspital's Rule   Suppose is an open interval and either is in or is an endpoint of . Suppose and are differentiable functions on with never zero. Suppose . Then .    There are many extensions of L'Hôspital's rule. In particular, the rule remains true if any of the following changes are made:  is infinite..  is unbounded and is an infinite endpoint of .  and are both infinite.    "
+},
+{
+  "id": "realEVT",
+  "level": "2",
+  "url": "appendix-calculus.html#realEVT",
+  "type": "Theorem",
+  "number": "A.0.1",
+  "title": "Extreme-Value Theorem.",
+  "body": " Extreme-Value Theorem   Suppose is closed and bounded and is continuous. Then has a minimum and maximum value, i.e., exist in \\R .  "
+},
+{
+  "id": "realmeanvalue",
+  "level": "2",
+  "url": "appendix-calculus.html#realmeanvalue",
+  "type": "Theorem",
+  "number": "A.0.2",
+  "title": "Mean-Value Theorem.",
+  "body": " Mean-Value Theorem  mean-value theorem for real functions   Suppose is an interval, is differentiable, and . Then there exists such that .   "
+},
+{
+  "id": "fundthmcalc",
+  "level": "2",
+  "url": "appendix-calculus.html#fundthmcalc",
+  "type": "Theorem",
+  "number": "A.0.3",
+  "title": "Fundamental Theorem of Calculus.",
+  "body": " Fundamental Theorem of Calculus  fundamental theorem of calculus   Suppose is continuous.   The function defined by is differentiable and .    If is any antiderivative of , that is, , then .      "
+},
+{
+  "id": "thm:realintegralproperties",
+  "level": "2",
+  "url": "appendix-calculus.html#thm:realintegralproperties",
+  "type": "Theorem",
+  "number": "A.0.4",
+  "title": "",
+  "body": "  If are continuous functions and then .   "
+},
+{
+  "id": "thm:realintegralupperbound",
+  "level": "2",
+  "url": "appendix-calculus.html#thm:realintegralupperbound",
+  "type": "Theorem",
+  "number": "A.0.5",
+  "title": "",
+  "body": "  If are continuous functions then .   "
+},
+{
+  "id": "thm:calcsubstitution",
+  "level": "2",
+  "url": "appendix-calculus.html#thm:calcsubstitution",
+  "type": "Theorem",
+  "number": "A.0.6",
+  "title": "",
+  "body": "  If is differentiable, is continuous, and is continuous then .   "
+},
+{
+  "id": "thm:mixedpartialscommute",
+  "level": "2",
+  "url": "appendix-calculus.html#thm:mixedpartialscommute",
+  "type": "Theorem",
+  "number": "A.0.7",
+  "title": "",
+  "body": "  If the mixed partials and are defined on an open set and are continuous at a point , then they are equal at .   "
+},
+{
+  "id": "appendix-calculus-13",
+  "level": "2",
+  "url": "appendix-calculus.html#appendix-calculus-13",
+  "type": "Theorem",
+  "number": "A.0.8",
+  "title": "",
+  "body": "  If is continuous on then .   "
+},
+{
+  "id": "leibnizrule",
+  "level": "2",
+  "url": "appendix-calculus.html#leibnizrule",
+  "type": "Theorem",
+  "number": "A.0.9",
+  "title": "Leibniz’s Rule.",
+  "body": " Leibniz's Rule  Leibniz's rule   Suppose is continuous on and the partial derivative exists and is continuous on . Then .   "
+},
+{
+  "id": "thm:green",
+  "level": "2",
+  "url": "appendix-calculus.html#thm:green",
+  "type": "Theorem",
+  "number": "A.0.10",
+  "title": "Green’s Theorem.",
+  "body": " Green's Theorem   Let >be a positively oriented, piecewise smooth, simple, closed path in and let be the set bounded by . If and have continuous partial derivatives on an open region containing then . Green's theorem    "
+},
+{
+  "id": "lhospital",
+  "level": "2",
+  "url": "appendix-calculus.html#lhospital",
+  "type": "Theorem",
+  "number": "A.0.11",
+  "title": "L’Hôspital’s Rule.",
+  "body": " L'Hôspital's Rule   Suppose is an open interval and either is in or is an endpoint of . Suppose and are differentiable functions on with never zero. Suppose . Then .   "
+},
+{
+  "id": "backmatter-3",
+  "level": "1",
+  "url": "backmatter-3.html",
   "type": "References",
   "number": "",
   "title": "Bibliography",
   "body": " Bibliography  "
 },
 {
-  "id": "backmatter-3",
+  "id": "backmatter-4",
   "level": "1",
-  "url": "backmatter-3.html",
+  "url": "backmatter-4.html",
   "type": "Index",
   "number": "",
   "title": "Index",
   "body": " Index   "
 },
 {
-  "id": "backmatter-4",
+  "id": "backmatter-5",
   "level": "1",
-  "url": "backmatter-4.html",
+  "url": "backmatter-5.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",

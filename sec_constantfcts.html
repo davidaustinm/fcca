@@ -117,7 +117,7 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="fcca.html"><span class="title">A First Course in Complex Analysis</span></a></h1>
 <p class="byline">Matthias Beck, Gerald Marchesi, Dennis Pixton, Lucas Sabalka</p>
 </div></div></header><nav xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-3.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
 <div class="search-results-controls">
@@ -319,25 +319,26 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-references"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="title">Bibliography</span></a></div></li>
-<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Index</span></a></div></li>
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix-calculus.html" class="internal"><span class="codenumber">A</span> <span class="title">Theorems from Calculus</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Bibliography</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:xlink="http://www.w3.org/1999/xlink" class="section" id="sec_constantfcts"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.4</span><span class="space"> </span><span class="title">Constant Functions</span>
 </h2>
-<div class="para" id="sec_constantfcts-2">As a sample application of the definition of the derivative of a complex function, we consider functions that have a derivative of <span class="process-math">\(0\text{.}\)</span> In a typical calculus course, one of the first applications of the Mean-Value Theorem for real-valued functions (<code class="code-inline tex2jax_ignore">[cross-reference to target(s) "realmeanvalue" missing or not unique]</code>) is to show that if a function has zero derivative everywhere on an interval then it must be constant.</div>
+<div class="para" id="sec_constantfcts-2">As a sample application of the definition of the derivative of a complex function, we consider functions that have a derivative of <span class="process-math">\(0\text{.}\)</span> In a typical calculus course, one of the first applications of the Mean-Value Theorem for real-valued functions (<a href="appendix-calculus.html#realmeanvalue" class="xref" data-knowl="./knowl/xref/realmeanvalue.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem A.0.2: Mean-Value Theorem">Theorem A.0.2</a>) is to show that if a function has zero derivative everywhere on an interval then it must be constant.</div>
 <article class="proposition theorem-like" id="lem_constant"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span>
 </h3>
 <div class="para" id="lem_constant-1-1">If <span class="process-math">\(I\)</span> is an interval and <span class="process-math">\(f: I \to \R\)</span> is a real-valued function with <span class="process-math">\(f'(x)\)</span> defined and equal to <span class="process-math">\(0\)</span> for all <span class="process-math">\(x \in I\text{,}\)</span> then there is a constant <span class="process-math">\(c \in \R\)</span> such that <span class="process-math">\(f(x) = c\)</span> for all <span class="process-math">\(x \in I\text{.}\)</span>
 </div></article><article class="proof" id="sec_constantfcts-4"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
 <div class="para logical" id="sec_constantfcts-4-1">
-<div class="para">The Mean-Value <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "realmeanvalue" missing or not unique]</code> says that for any <span class="process-math">\(x, y \in I\text{,}\)</span>
+<div class="para">The Mean-Value <a href="appendix-calculus.html#realmeanvalue" class="xref" data-knowl="./knowl/xref/realmeanvalue.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem A.0.2: Mean-Value Theorem">Theorem A.0.2</a> says that for any <span class="process-math">\(x, y \in I\text{,}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/realmeanvalue.html">
 \begin{equation*}
 f(y)-f(x) \= f'\bigl(x + a(y-x) \bigr) (y-x)
 \end{equation*}
