@@ -15,9 +15,7 @@
     </repeat>
 
     <spline points="((8,6),(6.5,7),(5,7.5),(3,8),(1.5,8),(0.5,7),(0.75,5),(2,3),(5,1),(7,0.5),(9,1),(9.5,2),(9.5,3),(9,4.5),(8,6))"
-            stroke="blue" closed="yes"/>
-    <spline points="((8,6),(6.5,7),(5,7.5),(3,8),(1.5,8),(0.5,7),(0.75,5),(2,3),(5,1),(7,0.5),(9,1),(9.5,2),(9.5,3),(9,4.5),(8,6))"
-            arrows="1" domain="(0,2.5)" arrow-width="5"
+            arrows="1" arrow-location="2.5" arrow-width="5"
             stroke="blue" closed="yes"/>
 
     <label anchor="(4,8)" alignment="ne">
