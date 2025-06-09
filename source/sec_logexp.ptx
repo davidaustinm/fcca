@@ -249,7 +249,7 @@
     <fn>
       Named after Leonard Euler (1707<ndash/>1783).
       Continuing our footnote on p.
-      <xref ref="pg_eulerformula"/>
+      <xref ref="fn_eulerformula"/>
       we have now honestly established
       <em>\ix{Euler's formula}</em>
       <m>e^{ 2 \pi i } = 1</m>.

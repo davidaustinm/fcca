@@ -406,7 +406,7 @@
         an indispensable tool in number theory and many other
         areas in mathematics and physics.
         <idx><h>Riemann zeta function</h></idx>
-        <fn>
+        <fn xml:id="riemannzeta">
         The Riemann zeta function is the subject of the arguably most
         famous open problem in mathematics, 
         the <em>\ix{Riemann hypothesis}</em>.

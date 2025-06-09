@@ -80,7 +80,7 @@
       <p>
         Suppose <m>f: [a,b] \to \R</m> is continuous.
         <ol marker="a) ">
-          <li xml:id="fundthemcalc1">
+          <li xml:id="fundthmcalc1">
             <p> The function <m>F: [a,b] \to \R</m> defined by
             <m>F(x)=\int_a^x f(t)\,\diff{t}</m> is differentiable and
             <m>F'(x)=f(x)</m>.
@@ -98,7 +98,7 @@
     </statement>
   </theorem>
 
-  <theorem xml:id="thm:realintegralproperties">
+  <theorem xml:id="thm_realintegralproperties">
     <statement>
       <p>
         If <m>f, g : [a,b] \to \R</m> are continuous functions and <m>c
@@ -111,7 +111,7 @@
     </statement>
   </theorem>
 
-  <theorem xml:id="thm:realintegralupperbound">
+  <theorem xml:id="thm_realintegralupperbound">
     <statement>
       <p>
         If <m>f, g : [a,b] \to \R</m> are continuous functions then
@@ -125,7 +125,7 @@
     </statement>
   </theorem>
 
-  <theorem xml:id="thm:calcsubstitution">
+  <theorem xml:id="thm_calcsubstitution">
     <statement>
       <p>
         If <m>g: [a,b] \to \R</m> is differentiable, <m>g'</m> is
@@ -145,7 +145,7 @@
     sufficient continuity:
   </p>
 
-  <theorem xml:id="thm:mixedpartialscommute">
+  <theorem xml:id="thm_mixedpartialscommute">
     <statement>
       <p>
         If the mixed partials <m>\mderiv fxy</m> and <m>\mderiv fyx</m> are
@@ -193,7 +193,7 @@
 
   <p>
     Leibniz's Rule follows from the Fundamental Theorem of Calculus
-    (<xref href="fundthmcalc"/>). You can try to prove it, e.g., as
+    (<xref ref="fundthmcalc"/>). You can try to prove it, e.g., as
     follows: Define <m>F(x)=\int_c^d f(x,y)\,\diff{y}</m>,
     get an expression
     for <m>F(x)-F(a)</m>
@@ -201,10 +201,10 @@
     as
     the integral of <m>\fderiv fx</m>, interchange the order of
     integrations, and then diafferentiate using
-    <xref href="fundthmcalc"/>.
+    <xref ref="fundthmcalc"/>.
   </p>
 
-  <theorem xml:id="thm:green">
+  <theorem xml:id="thm_green">
     <title>Green's Theorem</title>
     <statement>
 

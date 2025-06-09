@@ -215,7 +215,8 @@
   <p>
     <xref ref="fig_rootsof1"/> shows three examples.
     At this point,
-    this exponential notation is indeed purely a notation.<fn>
+    this exponential notation is indeed purely a notation.
+    <fn xml:id="fn_eulerformula">
     In particular, while our notation
     <q>proves</q>
     <em>\ix{Euler's formula}</em> <m>e^{ 2 \pi i } = 1</m>,

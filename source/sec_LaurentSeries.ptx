@@ -145,7 +145,7 @@
           <m>\frac 1 { \sin(z) } - \frac 1 z</m> in <m>D[0,\pi]
           \setminus \{ 0 \}</m>, 
           the domain in which the latter function is holomorphic.
-          When we said, in the footnote in
+          When we said, in
           <xref ref="riemannzeta"/>,
           that the Riemann zeta function
           <m>\zeta(z) = \sum_{ k \ge 1 } \frac 1 {k^z}</m> can be
