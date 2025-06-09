@@ -100,9 +100,9 @@
     <title>Argument Principle
     <fn>
       The name <em>Argument Principle</em> stems from interpreting the
-      integral $&#305; \frac{f'}{f}$ as the change in the argument of
-      $f(z)$ as $z$ traverses $\gg$, since $\fLog(f(z))' = 
-      \frac{ f'(z) }{ f(z) }$.
+      integral <m>\int_\gamma \frac{f'}{f}</m> as the change in the argument of
+      <m>f(z)</m> as <m>z</m> traverses <m>\gg</m>, since <m>\fLog(f(z))' =
+      \frac{ f'(z) }{ f(z) }</m>.
     </fn>
     </title>
     <statement>
