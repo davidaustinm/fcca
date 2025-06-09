@@ -4,3 +4,5 @@ logs
 source/prefigure/output
 .error_schema.log
 *~
+
+.cache/
