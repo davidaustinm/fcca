@@ -430,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.5",
   "title": "Exercises",
-  "body": "   Let and . Compute the following:                                 Find the real and imaginary parts of each of the following:    for any                for any          Find the absolute value and conjugate of each of the following:                            Write in polar form:                                                Write in rectangular form:                            Write in both polar and rectangular form:                  Show that the quadratic formula works. That is, for with , prove that the roots of the equation are .  Here we define if the discriminant  is negative. discriminant       Use the quadratic formula to solve the following equations.                                 Find all solutions of the equation .      Fix and . Show that the equation has a solution if and only if . When solutions exist, show the solution set is a circle.      Find all solutions to the following equations:                            Show that if and only if .      Show that    is a real number if and only if ;     is either real or purely imaginary if and only if .         Prove Proposition .      Show that if then or .      Prove Proposition .      Fix a positive integer . Prove that the solutions to the equation are precisely where . ( Hint : To show that every solution of is of this form, first prove that it must be of the form for some , then write for some integer and some real number , and then argue that has to be zero.)      Show that and deduce from this closed formulas for and .      Fix a positive integer and a complex number . Find all solutions to . ( Hint : Write in terms of polar coordinates.)      Use Proposition to derive the triple angle formulas:                  Given , define the matrix . Show that .  (This means that the set , equipped with the usual addition and multiplication of matrices, behaves exactly like .)      Prove Proposition .      Sketch the following sets in the complex plane:                                                Suppose is a polynomial with real coefficients. polynomial Prove that    .     if and only if .         Prove the reverse triangle inequality ( of ) . reverse triangle inequality       Use the previous exercise to show that for every on the circle .      Sketch the sets defined by the following constraints and determine whether they are open, closed, or neither; bounded; connected.                                      What are the boundaries of the sets in the previous exercise?      Let be the set of points satisfying either is real and , or , or or .   Sketch the set , being careful to indicate exactly the points that are in .    Determine the interior points of .    Determine the boundary points of .    Determine the isolated points of .         The set in the previous exercise can be written in three different ways as the union of two disjoint nonempty separated subsets. Describe them, and in each case say briefly why the subsets are separated.      Show that the union of two regions with nonempty intersection is itself a region.      Show that if and is closed, then . Similarly, if and is open, show that is contained in the interior of .      Find a parametrization for each of the following paths:   the circle , oriented counter-clockwise    the line segment from to     the top half of the circle , oriented clockwise    the rectangle with vertices , oriented counter-clockwise    the ellipse , oriented counter-clockwise         Draw the path parametrized by .      Let be the annulus determined by the inequalities . This is a connected open set. Find the maximum number of horizontal and vertical segments in needed to connect two points of .    "
+  "body": "   Let and . Compute the following:                                                                  Find the real and imaginary parts of each of the following:      for any                                for any        Find the absolute value and conjugate of each of the following:           ,             ,             ,             ,        Write in polar form:                                                                                  Write in rectangular form:                                                      Write in both polar and rectangular form:                    Show that the quadratic formula works. That is, for with , prove that the roots of the equation are .  Here we define if the discriminant  is negative. discriminant       Use the quadratic formula to solve the following equations.                                         Find all solutions of the equation .           Fix and . Show that the equation has a solution if and only if . When solutions exist, show the solution set is a circle.      Find all solutions to the following equations:                                            Show that if and only if .      Show that      is a real number if and only if .       is either real or purely imaginary if and only if .       Prove Proposition .      Show that if then or .      Prove Proposition .      Fix a positive integer . Prove that the solutions to the equation are precisely where . ( Hint : To show that every solution of is of this form, first prove that it must be of the form for some , then write for some integer and some real number , and then argue that has to be zero.)      Show that and deduce from this closed formulas for and .     and       Fix a positive integer and a complex number . Find all solutions to . ( Hint : Write in terms of polar coordinates.)      Use Proposition to derive the triple angle formulas:                    Given , define the matrix . Show that and .  (This means that the set , equipped with the usual addition and multiplication of matrices, behaves exactly like .)      Prove Proposition .      Sketch the following sets in the complex plane:                                                              Suppose is a polynomial with real coefficients. polynomial      Prove that .      Prove that if and only if .       Prove the reverse triangle inequality ( of ) . reverse triangle inequality       Use to show that for every on the circle .      Sketch the sets defined by the following constraints and determine whether they are open, closed, or neither; bounded; connected.                                                What are the boundaries of the sets in ?      Let be the set of points satisfying either is real and , or , or or .     Sketch the set , being careful to indicate exactly the points that are in .      Determine the interior points of .      Determine the boundary points of .      Determine the isolated points of .       The set in can be written in three different ways as the union of two disjoint nonempty separated subsets. Describe them, and in each case say briefly why the subsets are separated.      Show that the union of two regions with nonempty intersection is itself a region.      Show that if and is closed, then . Similarly, if and is open, show that is contained in the interior of .      Find a parametrization for each of the following paths:     the circle , oriented counter-clockwise    For instance: , .      the line segment from to     For instance: , .      the top half of the circle , oriented clockwise    For instance: ,       the rectangle with vertices , oriented counter-clockwise      the ellipse , oriented counter-clockwise       Draw the path parametrized by .      Let be the annulus determined by the inequalities . This is a connected open set. Find the maximum number of horizontal and vertical segments in needed to connect two points of .    "
 },
 {
   "id": "ex_1_0",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.1",
   "title": "",
-  "body": "  Let and . Compute the following:                              "
+  "body": "  Let and . Compute the following:                                                               "
 },
 {
   "id": "ex_1_1",
@@ -448,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.2",
   "title": "",
-  "body": "  Find the real and imaginary parts of each of the following:    for any                for any       "
+  "body": "  Find the real and imaginary parts of each of the following:      for any                                for any     "
 },
 {
   "id": "ex_1_2",
@@ -457,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.3",
   "title": "",
-  "body": "  Find the absolute value and conjugate of each of the following:                         "
+  "body": "  Find the absolute value and conjugate of each of the following:           ,             ,             ,             ,     "
 },
 {
   "id": "ex_1_3",
@@ -466,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.4",
   "title": "",
-  "body": "  Write in polar form:                                             "
+  "body": "  Write in polar form:                                                                               "
 },
 {
   "id": "ex_1_4",
@@ -475,7 +475,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.5",
   "title": "",
-  "body": "  Write in rectangular form:                         "
+  "body": "  Write in rectangular form:                                                   "
 },
 {
   "id": "chapter1-exercises-6",
@@ -484,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.6",
   "title": "",
-  "body": "  Write in both polar and rectangular form:               "
+  "body": "  Write in both polar and rectangular form:                 "
 },
 {
   "id": "chapter1-exercises-7",
@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.8",
   "title": "",
-  "body": "  Use the quadratic formula to solve the following equations.                              "
+  "body": "  Use the quadratic formula to solve the following equations.                                      "
 },
 {
   "id": "ex_1_6",
@@ -511,7 +511,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.9",
   "title": "",
-  "body": "  Find all solutions of the equation .   "
+  "body": "  Find all solutions of the equation .        "
 },
 {
   "id": "chapter1-exercises-10",
@@ -529,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.11",
   "title": "",
-  "body": "  Find all solutions to the following equations:                         "
+  "body": "  Find all solutions to the following equations:                                         "
 },
 {
   "id": "chapter1-exercises-12",
@@ -547,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.13",
   "title": "",
-  "body": "  Show that    is a real number if and only if ;     is either real or purely imaginary if and only if .      "
+  "body": "  Show that      is a real number if and only if .       is either real or purely imaginary if and only if .    "
 },
 {
   "id": "ex_alg",
@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.18",
   "title": "",
-  "body": "  Show that and deduce from this closed formulas for and .   "
+  "body": "  Show that and deduce from this closed formulas for and .     and    "
 },
 {
   "id": "chapter1-exercises-19",
@@ -610,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.20",
   "title": "",
-  "body": "  Use Proposition to derive the triple angle formulas:               "
+  "body": "  Use Proposition to derive the triple angle formulas:                 "
 },
 {
   "id": "ex_Casmatrices",
@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.21",
   "title": "",
-  "body": "  Given , define the matrix . Show that .  (This means that the set , equipped with the usual addition and multiplication of matrices, behaves exactly like .)   "
+  "body": "  Given , define the matrix . Show that and .  (This means that the set , equipped with the usual addition and multiplication of matrices, behaves exactly like .)   "
 },
 {
   "id": "ex_conjugation",
@@ -637,7 +637,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.23",
   "title": "",
-  "body": "  Sketch the following sets in the complex plane:                                             "
+  "body": "  Sketch the following sets in the complex plane:                                                           "
 },
 {
   "id": "realpolynomialb",
@@ -646,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.24",
   "title": "",
-  "body": "  Suppose is a polynomial with real coefficients. polynomial Prove that    .     if and only if .      "
+  "body": "  Suppose is a polynomial with real coefficients. polynomial      Prove that .      Prove that if and only if .    "
 },
 {
   "id": "ex_reversetriangle",
@@ -664,16 +664,16 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.26",
   "title": "",
-  "body": "  Use the previous exercise to show that for every on the circle .   "
+  "body": "  Use to show that for every on the circle .   "
 },
 {
-  "id": "chapter1-exercises-27",
+  "id": "ex_complex_inequalities",
   "level": "2",
-  "url": "chapter1-exercises.html#chapter1-exercises-27",
+  "url": "chapter1-exercises.html#ex_complex_inequalities",
   "type": "Exercise",
   "number": "1.5.27",
   "title": "",
-  "body": "  Sketch the sets defined by the following constraints and determine whether they are open, closed, or neither; bounded; connected.                                   "
+  "body": "  Sketch the sets defined by the following constraints and determine whether they are open, closed, or neither; bounded; connected.                                             "
 },
 {
   "id": "chapter1-exercises-28",
@@ -682,16 +682,16 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.28",
   "title": "",
-  "body": "  What are the boundaries of the sets in the previous exercise?   "
+  "body": "  What are the boundaries of the sets in ?   "
 },
 {
-  "id": "chapter1-exercises-29",
+  "id": "ex_set_G",
   "level": "2",
-  "url": "chapter1-exercises.html#chapter1-exercises-29",
+  "url": "chapter1-exercises.html#ex_set_G",
   "type": "Exercise",
   "number": "1.5.29",
   "title": "",
-  "body": "  Let be the set of points satisfying either is real and , or , or or .   Sketch the set , being careful to indicate exactly the points that are in .    Determine the interior points of .    Determine the boundary points of .    Determine the isolated points of .      "
+  "body": "  Let be the set of points satisfying either is real and , or , or or .     Sketch the set , being careful to indicate exactly the points that are in .      Determine the interior points of .      Determine the boundary points of .      Determine the isolated points of .    "
 },
 {
   "id": "chapter1-exercises-30",
@@ -700,7 +700,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.30",
   "title": "",
-  "body": "  The set in the previous exercise can be written in three different ways as the union of two disjoint nonempty separated subsets. Describe them, and in each case say briefly why the subsets are separated.   "
+  "body": "  The set in can be written in three different ways as the union of two disjoint nonempty separated subsets. Describe them, and in each case say briefly why the subsets are separated.   "
 },
 {
   "id": "chapter1-exercises-31",
@@ -727,7 +727,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.5.33",
   "title": "",
-  "body": "  Find a parametrization for each of the following paths:   the circle , oriented counter-clockwise    the line segment from to     the top half of the circle , oriented clockwise    the rectangle with vertices , oriented counter-clockwise    the ellipse , oriented counter-clockwise      "
+  "body": "  Find a parametrization for each of the following paths:     the circle , oriented counter-clockwise    For instance: , .      the line segment from to     For instance: , .      the top half of the circle , oriented clockwise    For instance: ,       the rectangle with vertices , oriented counter-clockwise      the ellipse , oriented counter-clockwise    "
 },
 {
   "id": "ex_diamondpath",
