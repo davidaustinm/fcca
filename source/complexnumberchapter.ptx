@@ -95,4 +95,5 @@
   <xi:include  href="sec_topologyintro.ptx"/>
   <xi:include  href="exercises-chap1.ptx"/>
   <xi:include  href="sec_optionallab.ptx"/>
+  <xi:include  href="sec_optionallab-alt.ptx"/>
 </chapter>
