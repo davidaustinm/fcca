@@ -3,194 +3,331 @@
            xml:id="chapter1-exercises">
 
   <exercise xml:id="ex_1_0">
-    <statement>
+    <introduction>
       <p>
         Let <m>z = 1+2i</m> and <m>w = 2-i</m>.
         Compute the following:
-        <ol>
-          <li>
-            <p>
-              <m>z + 3w</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\overline{w} - z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^3</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\Re(w^2 + w)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^2 + \overline{z} + i</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+          <p>
+            <m>z + 3w</m>
+          </p>
+      </statement>
+      <answer>
+        <p>
+          <m>7 - i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\overline{w} - z</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>1 - i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-11 - 2i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\Re(w^2 + w)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>5</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^2 + \overline{z} + i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-2 + 3i</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise xml:id="ex_1_1">
-    <statement>
+    <introduction>
       <p>
         Find the real and imaginary parts of each of the following:
-        <ol>
-          <li>
-            <p>
-              <m>\frac{z - a}{z + a}</m> for any <m>a \in \R</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\frac{3 + 5i}{7i + 1}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left( \frac{-1 + i\sqrt{3}}{2} \right)^3</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>i^n</m> for any <m>n \in \Z</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\frac{z - a}{z + a}</m> for any <m>a \in \R</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\frac{3 + 5i}{7i + 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac {19} {25} - \frac {8} {25} i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left( \frac{-1 + i\sqrt{3}}{2} \right)^3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>i^n</m> for any <m>n \in \Z</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_1_2">
-    <statement>
+    <introduction>
       <p>
         Find the absolute value and conjugate of each of the following:
-        <ol>
-          <li>
-            <p>
-              <m>-2 + i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(2 + i)(4 + 3i)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\frac{3 - i}{\sqrt{2} + 3i}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(1 + i)^6</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>-2 + i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sqrt{5}</m>,  <m>-2-i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>(2 + i)(4 + 3i)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>5 \sqrt{5}</m>,  <m>5-10i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\frac{3 - i}{\sqrt{2} + 3i}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sqrt{\frac{10}{11}}</m>,  <m>\frac{3}{11}( \sqrt{2} - 1 ) + \frac{i}{11}( \sqrt{2} + 9 )</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>(1 + i)^6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>8</m>,  <m>8i</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise xml:id="ex_1_3">
-    <statement>
+    <introduction>
       <p>
         Write in polar form:
-        <ol>
-          <li>
-            <p>
-              <m>2i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>1+i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>-3 + \sqrt 3 \, i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>-i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(2 - i)^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>|3 - 4i|</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\sqrt{5} - i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left(\frac{1-i}{\sqrt{3}}\right)^4</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>2i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2 \, e^{i \frac \pi 2}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>1+i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sqrt 2 \, e^{i \frac \pi 4}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>-3 + \sqrt 3 \, i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2 \sqrt 3 i\, e^{i \frac {5 \pi} 6}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>-i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>e^{ i \frac{ 3 \pi }{ 2 } }</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>(2 - i)^2</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>|3 - 4i|</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sqrt{5} - i</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left(\frac{1-i}{\sqrt{3}}\right)^4</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_1_4">
-    <statement>
+    <introduction>
       <p>
         Write in rectangular form:
-        <ol>
-          <li>
-            <p>
-              <m>\sqrt 2 \, e^{ i \frac{ 3 \pi } 4 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>34 \, e^{i \frac \pi 2}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>- e^{i 250 \pi}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>2 \, e^{4\pi i}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\sqrt 2 \, e^{ i \frac{ 3 \pi } 4 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-1+i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>34 \, e^{i \frac \pi 2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>34 i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>- e^{i 250 \pi}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>2 \, e^{4\pi i}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Write in both polar and rectangular form:
-        <ol>
-          <li>
-            <p>
-              <m>e^{\ln(5)}i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\frac{d}{\diff\phi} \, e^{\phi + i\phi}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>e^{\ln(5)i}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\frac{d}{\diff\phi} \, e^{\phi + i\phi}</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -211,38 +348,46 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Use the quadratic formula to solve the following equations.
-        <ol>
-          <li>
-            <p>
-              <m>z^2 + 25 = 0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>2z^2 + 2z + 5 = 0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>5z^2 + 4z + 1 = 0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^2 - z = 1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^2 = 2z</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>z^2 + 25 = 0</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>2z^2 + 2z + 5 = 0</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>5z^2 + 4z + 1 = 0</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^2 - z = 1</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^2 = 2z</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_1_6">
     <statement>
@@ -250,6 +395,11 @@
         Find all solutions of the equation <m>z^2 + 2 z + (1 - i) = 0</m>.
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>\pm \, e^{i \frac \pi 4} - 1</m>
+      </p>
+    </answer>
   </exercise>
   <exercise>
     <statement>
@@ -261,33 +411,49 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_1_5">
-    <statement>
+    <introduction>
       <p>
         Find all solutions to the following equations:
-        <ol>
-          <li>
-            <p>
-              <m>z^6 = 1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^4 = -16</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^6=-9</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^6-z^3-2=0</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>z^6 = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z = e^{i \frac \pi 3 k} , \ k=0,1,\dots,5</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^4 = -16</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z = 2 \, e^{i \frac \pi 4 + \frac \pi 2 k} , \ k=0,1,2,3</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^6=-9</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^6-z^3-2=0</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -297,23 +463,25 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Show that
-        <ol>
-          <li>
-            <p>
-              <m>z</m> is a real number if and only if <m>z = \o z</m>;
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z</m> is either real or purely imaginary if and only if <m>(\o{z})^2 = z^2</m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>z</m> is a real number if and only if <m>z = \o z</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z</m> is either real or purely imaginary if and only if <m>(\o{z})^2 = z^2</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_alg">
     <statement>
@@ -361,6 +529,11 @@
         <m>\cos \frac{ \pi }{ 5 }</m> and <m>\cos \frac{ 2 \pi }{ 5 }</m>.
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>\cos \frac{ \pi }{ 5 } = \frac 1 4 (\sqrt 5 + 1)</m> and <m>\cos \frac{ 2 \pi }{ 5 } = \frac 1 4 (\sqrt 5 - 1)</m>
+      </p>
+    </answer>
   </exercise>
   <exercise>
     <statement>
@@ -372,24 +545,26 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Use <xref ref="easyexp">Proposition</xref>
         to derive the triple angle formulas:
-        <ol>
-          <li>
-            <p>
-              <m>\cos (3 \phi) = \cos^3 \phi - 3 \cos \phi \sin^2 \phi</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\sin (3 \phi) = 3 \cos^2 \phi \sin \phi - \sin^3 \phi</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\cos (3 \phi) = \cos^3 \phi - 3 \cos \phi \sin^2 \phi</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sin (3 \phi) = 3 \cos^2 \phi \sin \phi - \sin^3 \phi</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_Casmatrices">
     <statement>
@@ -398,7 +573,11 @@
         define the matrix <m>M(x,y) := \displaystyle\begin{bmatrix}x \amp  -y \\ y \amp  x \end{bmatrix}</m>.
         Show that
         <me>
-          M(x,y) + M(a,b) \ = \ M(x+a, \, y+b) \qquad \text{ and }  \qquad M(x,y) \, M(a,b) \ = \ M(xa-yb, \, xb+ya) \,
+          M(x,y) + M(a,b) \ = \ M(x+a, \, y+b)
+        </me>
+        and
+        <me>
+          M(x,y) \, M(a,b) \ = \ M(xa-yb, \, xb+ya)
         </me>.
       </p>
       <p>
@@ -416,75 +595,90 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Sketch the following sets in the complex plane:
-        <ol>
-          <li>
-            <p>
-              <m>\left\{ z \in \C : \, \left| z - 1 + i \right| = 2 \right\}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left\{ z \in \C : \, \left| z - 1 + i \right| \leq 2 \right\}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left\{ z \in \C : \, \Re (z+2-2i) = 3 \right\}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left\{ z \in \C : \, \left| z - i \right| + \left| z + i \right| = 3 \right\}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left\{ z \in \C : \, |z| = |z + 1| \right \}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left\{ z \in \C : \, |z-1| = 2 \, |z + 1| \right \}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left\{ z \in \C : \, \Re(z^2) = 1 \right \}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left\{ z \in \C : \, \Im(z^2) = 1 \right \}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\left\{ z \in \C : \, \left| z - 1 + i \right| = 2 \right\}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left\{ z \in \C : \, \left| z - 1 + i \right| \leq 2 \right\}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left\{ z \in \C : \, \Re (z+2-2i) = 3 \right\}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left\{ z \in \C : \, \left| z - i \right| + \left| z + i \right| = 3 \right\}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left\{ z \in \C : \, |z| = |z + 1| \right \}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left\{ z \in \C : \, |z-1| = 2 \, |z + 1| \right \}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left\{ z \in \C : \, \Re(z^2) = 1 \right \}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left\{ z \in \C : \, \Im(z^2) = 1 \right \}</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="realpolynomialb">
-    <statement>
+    <introduction>
       <p>
         Suppose <m>p</m> is a polynomial
         with real coefficients.
         <idx><h>polynomial</h></idx>
-        Prove that
-        <ol>
-          <li>
-            <p>
-              <m>\o{p(z)} = p \left( \o z \right)</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>p(z) = 0</m> if and only if <m>p \left( \o z \right) = 0</m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Prove that <m>\o{p(z)} = p \left( \o z \right)</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Prove that <m>p(z) = 0</m> if and only if <m>p \left( \o z \right) = 0</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_reversetriangle">
     <statement>
@@ -500,7 +694,7 @@
   <exercise>
     <statement>
       <p>
-        Use the previous exercise to show that
+        Use <xref ref="ex_reversetriangle"/> to show that
         <me>
           \left| \frac{1}{z^2 - 1} \right| \leq \frac{1}{3}
         </me>
@@ -508,89 +702,105 @@
       </p>
     </statement>
   </exercise>
-  <exercise>
-    <statement>
+  <exercise xml:id="ex_complex_inequalities">
+    <introduction>
       <p>
         Sketch the sets defined by the following constraints and determine whether they are open, closed,
         or neither; bounded; connected.
-        <ol>
-          <li>
-            <p>
-              <m>\abs{z+3}\lt 2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\abs{\Im(z)}\lt 1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>0\lt \abs{z-1}\lt 2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\abs{z-1}+\abs{z+1}=2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\abs{z-1}+\abs{z+1}\lt 3</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\abs{z} \ge \Re(z) + 1</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\abs{z+3}\lt 2</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\abs{\Im(z)}\lt 1</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>0\lt \abs{z-1}\lt 2</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\abs{z-1}+\abs{z+1}=2</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\abs{z-1}+\abs{z+1}\lt 3</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\abs{z} \ge \Re(z) + 1</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
       <p>
-        What are the boundaries of the sets in the previous exercise?
+        What are the boundaries of the sets in <xref ref="ex_complex_inequalities"/>?
       </p>
     </statement>
   </exercise>
-  <exercise>
-    <statement>
+  <exercise xml:id="ex_set_G">
+    <introduction>
       <p>
         Let <m>G</m> be the set of points
         <m>z \in \C</m> satisfying either <m>z</m> is real and <m>-2\lt z\lt -1</m>,
         or <m>|z|\lt 1</m>, or <m>z=1</m> or <m>z=2</m>.
-        <ol>
-          <li>
-            <p>
-              Sketch the set <m>G</m>,
-              being careful to indicate exactly the points that are in <m>G</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Determine the interior points of <m>G</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Determine the boundary points of <m>G</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Determine the isolated points of <m>G</m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Sketch the set <m>G</m>,
+          being careful to indicate exactly the points that are in <m>G</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Determine the interior points of <m>G</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Determine the boundary points of <m>G</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Determine the isolated points of <m>G</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
       <p>
-        The set <m>G</m> in the previous exercise can be written in three different ways as the union of two disjoint nonempty separated subsets.
+        The set <m>G</m> in <xref ref="ex_set_G"/> can be written in three different ways as the union of two disjoint nonempty separated subsets.
         Describe them,
         and in each case say briefly why the subsets are separated.
       </p>
@@ -614,40 +824,63 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_parametrizations">
-    <statement>
+    <introduction>
       <p>
         Find a parametrization for each of the following paths:
-        <ol>
-          <li>
-            <p>
-              the circle <m>C[1+i, 1]</m>, oriented counter-clockwise
-            </p>
-          </li>
-          <li>
-            <p>
-              the line segment from <m>-1-i</m> to <m>2i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the top half of the circle <m>C[0, 34]</m>, oriented clockwise
-            </p>
-          </li>
-          <li>
-            <p>
-              the rectangle with vertices <m>\pm 1 \pm 2i</m>,
-              oriented counter-clockwise
-            </p>
-          </li>
-          <li>
-            <p>
-              the ellipse <m>\{ z \in \C : \, |z-1| + |z+1| = 4 \}</m>,
-              oriented counter-clockwise
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          the circle <m>C[1+i, 1]</m>, oriented counter-clockwise
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For instance: <m>\gamma(t) = (1 + i) + e^{it}</m>, <m>0 \leq t \leq 2\pi</m>.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the line segment from <m>-1-i</m> to <m>2i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For instance: <m>\gamma(t) = (-1 - i)(1 - t) + (2i)t = -1 - i + (1 + 3i)t</m>, <m>0 \leq t \leq 1</m>.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the top half of the circle <m>C[0, 34]</m>, oriented clockwise
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For instance: <m>\gamma(t) = 34 e^{(\pi - t)i} = -34 e^{-it}</m>, <m>0 \leq t \leq \pi</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the rectangle with vertices <m>\pm 1 \pm 2i</m>,
+              oriented counter-clockwise
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the ellipse <m>\{ z \in \C : \, |z-1| + |z+1| = 4 \}</m>,
+              oriented counter-clockwise
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_diamondpath">
     <statement>
