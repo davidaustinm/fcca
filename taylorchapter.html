@@ -234,6 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_topologyintro.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Elementary Topology of the Plane</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chapter1-exercises.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_optionallab.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Optional Lab</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_optionallab-alt.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Optional Lab</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -335,10 +336,13 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Chapter</span><span class="space"> </span><span class="codenumber">8</span><span class="space"> </span><span class="title">Taylor and Laurent Series</span>
 </h2>
 <section class="introduction" id="taylorchapter-2"><blockquote class="blockquote" id="taylorchapter-2-1">
-<div class="para" id="taylorchapter-2-1-1"><em class="emphasis">We think in generalities, but we live in details.</em></div>
-<cite class="attribution">―Alfred North Whitehead (1861–1947)</cite>
+<div class="para" id="taylorchapter-2-1-1">
+<em class="emphasis">We think in generalities, but we live in details.</em><div class="autopermalink" data-description="Paragraph"><a href="#taylorchapter-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<cite class="attribution">―Alfred North Whitehead (1861–1947)</cite><div class="autopermalink" data-description="Quotation"><a href="#taylorchapter-2-1" title="Copy permalink for Quotation">🔗</a></div>
 </blockquote>
-<div class="para" id="taylorchapter-2-2">Now that we have developed some machinery for power series, we are ready to connect them to the earlier chapters. Our first big goal in this chapter is to prove that every power series represents a holomorphic function in its disk of convergence and, vice versa, that every holomorphic function can be locally represented by a power series.</div>
+<div class="para" id="taylorchapter-2-2">Now that we have developed some machinery for power series, we are ready to connect them to the earlier chapters. Our first big goal in this chapter is to prove that every power series represents a holomorphic function in its disk of convergence and, vice versa, that every holomorphic function can be locally represented by a power series.<div class="autopermalink" data-description="Paragraph"><a href="#taylorchapter-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="taylorchapter-2-3">
 <div class="para">Our second goal returns to our motivation to start <a href="powerchapter.html" class="internal" title="Chapter 7: Power Series">Chapter 7</a>: we’d still like to compute <a href="powerchapter.html#eq_laurentmotivation" class="xref" data-knowl="./knowl/xref/eq_laurentmotivation.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1">(7.1)</a>,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/powerchapter.html ./knowl/xref/eq_laurentmotivation.html">
@@ -346,8 +350,10 @@ eBookConfig.enable_chatcodes =  false;
 \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \,\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#taylorchapter-2-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="taylorchapter-2-4">Looking back at <a href="powerchapter.html#fig_laurentmotivation" class="xref" data-knowl="./knowl/xref/fig_laurentmotivation.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 7.0.1">Figure 7.0.1</a> suggests that we expand the function <span class="process-math">\(\frac{ \exp(z) }{ \sin(z) }\)</span> locally into something like power series centered at 0 and <span class="process-math">\(\pi\text{,}\)</span> and with any luck we can then use <a href="sec_sequseriesfunctions.html#seriesintegral" class="xref" data-knowl="./knowl/xref/seriesintegral.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 7.3.6">Proposition 7.3.6</a> to integrate. Of course, <span class="process-math">\(\frac{ \exp(z) }{ \sin(z) }\)</span> has singularities at 0 and <span class="process-math">\(\pi\text{,}\)</span> so there is no hope of computing power series at these points. We will develop an analogue of a power series centered at a singularity.</div></section><nav class="summary-links"><ul>
+<div class="para" id="taylorchapter-2-4">Looking back at <a href="powerchapter.html#fig_laurentmotivation" class="xref" data-knowl="./knowl/xref/fig_laurentmotivation.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 7.0.1">Figure 7.0.1</a> suggests that we expand the function <span class="process-math">\(\frac{ \exp(z) }{ \sin(z) }\)</span> locally into something like power series centered at 0 and <span class="process-math">\(\pi\text{,}\)</span> and with any luck we can then use <a href="sec_sequseriesfunctions.html#seriesintegral" class="xref" data-knowl="./knowl/xref/seriesintegral.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 7.3.6">Proposition 7.3.6</a> to integrate. Of course, <span class="process-math">\(\frac{ \exp(z) }{ \sin(z) }\)</span> has singularities at 0 and <span class="process-math">\(\pi\text{,}\)</span> so there is no hope of computing power series at these points. We will develop an analogue of a power series centered at a singularity.<div class="autopermalink" data-description="Paragraph"><a href="#taylorchapter-2-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div></section><nav class="summary-links"><ul>
 <li><a href="sec_powerseriesholom.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Power Series and Holomorphic Functions</span></a></li>
 <li><a href="sec_classifzeros.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Classification of Zeros and the Identity Principle</span></a></li>
 <li><a href="sec_LaurentSeries.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Laurent Series</span></a></li>

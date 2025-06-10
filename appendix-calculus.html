@@ -234,6 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_topologyintro.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Elementary Topology of the Plane</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chapter1-exercises.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_optionallab.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Optional Lab</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_optionallab-alt.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Optional Lab</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -335,10 +336,13 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Appendix</span><span class="space"> </span><span class="codenumber">A</span><span class="space"> </span><span class="title">Theorems from Calculus</span>
 </h2>
 <blockquote class="blockquote" id="appendix-calculus-2">
-<div class="para" id="appendix-calculus-2-1"><em class="emphasis">First, it is necessary to study the facts, to multiply the number of observations, and then later to search for formulas that connect them so as thus to discern the particular laws governing a certain class of phenomena. In general, it is not until after these particular laws have been established that one can expect to discover and articulate the more general laws that complete theories by bringing a multitude of apparently very diverse phenomena together under a single governing principle.</em></div>
-<cite class="attribution">―Augustin Louis Cauchy (1789--1857)</cite>
+<div class="para" id="appendix-calculus-2-1">
+<em class="emphasis">First, it is necessary to study the facts, to multiply the number of observations, and then later to search for formulas that connect them so as thus to discern the particular laws governing a certain class of phenomena. In general, it is not until after these particular laws have been established that one can expect to discover and articulate the more general laws that complete theories by bringing a multitude of apparently very diverse phenomena together under a single governing principle.</em><div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<cite class="attribution">―Augustin Louis Cauchy (1789--1857)</cite><div class="autopermalink" data-description="Quotation"><a href="#appendix-calculus-2" title="Copy permalink for Quotation">🔗</a></div>
 </blockquote>
-<div class="para" id="appendix-calculus-3">Here we collect a few theorems from real calculus that we make use of in the course of the text.</div>
+<div class="para" id="appendix-calculus-3">Here we collect a few theorems from real calculus that we make use of in the course of the text.<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="realEVT"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.1</span><span class="period">.</span><span class="space"> </span><span class="title">Extreme-Value Theorem.</span>
 </h2>
@@ -352,7 +356,8 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">exist in \R</div>
-</div>.</article><article class="theorem theorem-like" id="realmeanvalue"><h2 class="heading">
+<div class="autopermalink" data-description="Paragraph"><a href="#realEVT-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>.<div class="autopermalink" data-description="Theorem A.0.1: Extreme-Value Theorem"><a href="#realEVT" title="Copy permalink for Theorem A.0.1: Extreme-Value Theorem">🔗</a></div></article><article class="theorem theorem-like" id="realmeanvalue"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.2</span><span class="period">.</span><span class="space"> </span><span class="title">Mean-Value Theorem.</span>
 </h2>
 <div class="para logical" id="realmeanvalue-3-1">
@@ -364,20 +369,31 @@ I\text{.}\)</span> Then there exists <span class="process-math">\(0\lt a \lt 1\)
 \frac{f(x + \D x) - f(x)}{ \D x } = f'(x + a \, \D x) \, \text{.}
 \end{equation*}
 </div>
-</div></article><div class="para" id="appendix-calculus-6">Many of the most important results of analysis concern combinations of limit operations.  The most important of all calculus theorems combines differentiation and integration (in two ways):</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#realmeanvalue-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.2: Mean-Value Theorem"><a href="#realmeanvalue" title="Copy permalink for Theorem A.0.2: Mean-Value Theorem">🔗</a></div></article><div class="para" id="appendix-calculus-6">Many of the most important results of analysis concern combinations of limit operations.  The most important of all calculus theorems combines differentiation and integration (in two ways):<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="fundthmcalc"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.3</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Calculus.</span>
 </h2>
 <div class="para logical" id="fundthmcalc-3-1">
 <div class="para">Suppose <span class="process-math">\(f: [a,b] \to \R\)</span> is continuous.</div>
 <ol class="lower-alpha ol-marker-2" id="fundthmcalc-3-1-2">
-<li id="fundthmcalc1"><div class="para" id="fundthmcalc1-1">The function <span class="process-math">\(F: [a,b] \to \R\)</span> defined by <span class="process-math">\(F(x)=\int_a^x f(t)\,\diff{t}\)</span> is differentiable and <span class="process-math">\(F'(x)=f(x)\text{.}\)</span>
-</div></li>
-<li id="fundthmcalc2"><div class="para" id="fundthmcalc2-1">If <span class="process-math">\(F\)</span> is any antiderivative of <span class="process-math">\(f\text{,}\)</span> that is, <span class="process-math">\(F' = f\text{,}\)</span> then <span class="process-math">\(\int_a^b f(x) \, \diff{x} = F(b) -
-F(a)\text{.}\)</span>
-</div></li>
+<li id="fundthmcalc1">
+<div class="para" id="fundthmcalc1-1">The function <span class="process-math">\(F: [a,b] \to \R\)</span> defined by <span class="process-math">\(F(x)=\int_a^x f(t)\,\diff{t}\)</span> is differentiable and <span class="process-math">\(F'(x)=f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fundthmcalc1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#fundthmcalc1" title="Copy permalink for Item a">🔗</a></div>
+</li>
+<li id="fundthmcalc2">
+<div class="para" id="fundthmcalc2-1">If <span class="process-math">\(F\)</span> is any antiderivative of <span class="process-math">\(f\text{,}\)</span> that is, <span class="process-math">\(F' = f\text{,}\)</span> then <span class="process-math">\(\int_a^b f(x) \, \diff{x} = F(b) -
+F(a)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fundthmcalc2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#fundthmcalc2" title="Copy permalink for Item b">🔗</a></div>
+</li>
 </ol>
-</div></article><article class="theorem theorem-like" id="thm_realintegralproperties"><h2 class="heading">
+<div class="autopermalink" data-description="Paragraph"><a href="#fundthmcalc-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.3: Fundamental Theorem of Calculus"><a href="#fundthmcalc" title="Copy permalink for Theorem A.0.3: Fundamental Theorem of Calculus">🔗</a></div></article><article class="theorem theorem-like" id="thm_realintegralproperties"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.4</span><span class="period">.</span>
 </h2>
 <div class="para logical" id="thm_realintegralproperties-1-1">
@@ -389,7 +405,9 @@ F(a)\text{.}\)</span>
 \int_a^b f(x) \, \diff{x} + c \int_a^b g(x) \, \diff{x} \,\text{.}
 \end{equation*}
 </div>
-</div></article><article class="theorem theorem-like" id="thm_realintegralupperbound"><h2 class="heading">
+<div class="autopermalink" data-description="Paragraph"><a href="#thm_realintegralproperties-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.4"><a href="#thm_realintegralproperties" title="Copy permalink for Theorem A.0.4">🔗</a></div></article><article class="theorem theorem-like" id="thm_realintegralupperbound"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.5</span><span class="period">.</span>
 </h2>
 <div class="para logical" id="thm_realintegralupperbound-1-1">
@@ -402,7 +420,9 @@ F(a)\text{.}\)</span>
 \int_a^b \left| g(x) \right| \diff{x} \,\text{.}
 \end{equation*}
 </div>
-</div></article><article class="theorem theorem-like" id="thm_calcsubstitution"><h2 class="heading">
+<div class="autopermalink" data-description="Paragraph"><a href="#thm_realintegralupperbound-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.5"><a href="#thm_realintegralupperbound" title="Copy permalink for Theorem A.0.5">🔗</a></div></article><article class="theorem theorem-like" id="thm_calcsubstitution"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.6</span><span class="period">.</span>
 </h2>
 <div class="para logical" id="thm_calcsubstitution-1-1">
@@ -414,12 +434,16 @@ g(b)] \to \R\)</span> is continuous then</div>
 g(b) } f(x) \, \diff{x} \,\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para" id="appendix-calculus-11">For functions of several variables we can perform differentiation/integration operations in any order, if we have sufficient continuity:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm_calcsubstitution-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.6"><a href="#thm_calcsubstitution" title="Copy permalink for Theorem A.0.6">🔗</a></div></article><div class="para" id="appendix-calculus-11">For functions of several variables we can perform differentiation/integration operations in any order, if we have sufficient continuity:<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-11" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="thm_mixedpartialscommute"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.7</span><span class="period">.</span>
 </h2>
-<div class="para" id="thm_mixedpartialscommute-1-1">If the mixed partials <span class="process-math">\(\mderiv fxy\)</span> and <span class="process-math">\(\mderiv fyx\)</span> are defined on an open set <span class="process-math">\(G \subseteq \R^2\)</span> and are continuous at a point <span class="process-math">\((x_0,y_0) \in G\text{,}\)</span> then they are equal at <span class="process-math">\((x_0,y_0)\text{.}\)</span>
-</div></article><article class="theorem theorem-like" id="appendix-calculus-13"><h2 class="heading">
+<div class="para" id="thm_mixedpartialscommute-1-1">If the mixed partials <span class="process-math">\(\mderiv fxy\)</span> and <span class="process-math">\(\mderiv fyx\)</span> are defined on an open set <span class="process-math">\(G \subseteq \R^2\)</span> and are continuous at a point <span class="process-math">\((x_0,y_0) \in G\text{,}\)</span> then they are equal at <span class="process-math">\((x_0,y_0)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm_mixedpartialscommute-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.7"><a href="#thm_mixedpartialscommute" title="Copy permalink for Theorem A.0.7">🔗</a></div></article><article class="theorem theorem-like" id="appendix-calculus-13"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.8</span><span class="period">.</span>
 </h2>
 <div class="para logical" id="appendix-calculus-13-1-1">
@@ -431,7 +455,10 @@ g(b) } f(x) \, \diff{x} \,\text{.}
 \int_c^d\!\int_a^b f(x,y)\,\diff{x}\,\diff{y} \,\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para" id="appendix-calculus-14">We can apply differentiation and integration with respect to different variables in either order:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-13-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.8"><a href="#appendix-calculus-13" title="Copy permalink for Theorem A.0.8">🔗</a></div></article><div class="para" id="appendix-calculus-14">We can apply differentiation and integration with respect to different variables in either order:<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-14" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="leibnizrule"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.9</span><span class="period">.</span><span class="space"> </span><span class="title">Leibniz’s Rule.</span>
 </h2>
@@ -444,7 +471,10 @@ g(b) } f(x) \, \diff{x} \,\text{.}
 \fderiv fx(x,y) \, \diff{y} \,\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para" id="appendix-calculus-16">Leibniz’s Rule follows from the Fundamental Theorem of Calculus (<a href="appendix-calculus.html#fundthmcalc" class="xref" data-knowl="./knowl/xref/fundthmcalc.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem A.0.3: Fundamental Theorem of Calculus">Theorem A.0.3</a>). You can try to prove it, e.g., as follows: Define <span class="process-math">\(F(x)=\int_c^d f(x,y)\,\diff{y}\text{,}\)</span> get an expression for <span class="process-math">\(F(x)-F(a)\)</span> as an iterated integral by writing <span class="process-math">\(f(x,y)-f(a,y)\)</span> as the integral of <span class="process-math">\(\fderiv fx\text{,}\)</span> interchange the order of integrations, and then diafferentiate using <a href="appendix-calculus.html#fundthmcalc" class="xref" data-knowl="./knowl/xref/fundthmcalc.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem A.0.3: Fundamental Theorem of Calculus">Theorem A.0.3</a>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#leibnizrule-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.9: Leibniz’s Rule"><a href="#leibnizrule" title="Copy permalink for Theorem A.0.9: Leibniz’s Rule">🔗</a></div></article><div class="para" id="appendix-calculus-16">Leibniz’s Rule follows from the Fundamental Theorem of Calculus (<a href="appendix-calculus.html#fundthmcalc" class="xref" data-knowl="./knowl/xref/fundthmcalc.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem A.0.3: Fundamental Theorem of Calculus">Theorem A.0.3</a>). You can try to prove it, e.g., as follows: Define <span class="process-math">\(F(x)=\int_c^d f(x,y)\,\diff{y}\text{,}\)</span> get an expression for <span class="process-math">\(F(x)-F(a)\)</span> as an iterated integral by writing <span class="process-math">\(f(x,y)-f(a,y)\)</span> as the integral of <span class="process-math">\(\fderiv fx\text{,}\)</span> interchange the order of integrations, and then diafferentiate using <a href="appendix-calculus.html#fundthmcalc" class="xref" data-knowl="./knowl/xref/fundthmcalc.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem A.0.3: Fundamental Theorem of Calculus">Theorem A.0.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-16" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="thm_green"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.10</span><span class="period">.</span><span class="space"> </span><span class="title">Green’s Theorem.</span>
 </h2>
@@ -457,7 +487,9 @@ g(b) } f(x) \, \diff{x} \,\text{.}
 \diff{y} \,\text{.}
 \end{equation*}
 </div>
-</div></article><article class="theorem theorem-like" id="lhospital"><h2 class="heading">
+<div class="autopermalink" data-description="Paragraph"><a href="#thm_green-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.10: Green’s Theorem"><a href="#thm_green" title="Copy permalink for Theorem A.0.10: Green’s Theorem">🔗</a></div></article><article class="theorem theorem-like" id="lhospital"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.0.11</span><span class="period">.</span><span class="space"> </span><span class="title">L’Hôspital’s Rule.</span>
 </h2>
 <div class="para logical" id="lhospital-2-1">
@@ -474,18 +506,33 @@ g(b) } f(x) \, \diff{x} \,\text{.}
 \lim_{x\to c} \frac{f(x)}{g(x)} = L\,\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para logical" id="appendix-calculus-19">
+<div class="autopermalink" data-description="Paragraph"><a href="#lhospital-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem A.0.11: L’Hôspital’s Rule"><a href="#lhospital" title="Copy permalink for Theorem A.0.11: L’Hôspital’s Rule">🔗</a></div></article><div class="para logical" id="appendix-calculus-19">
 <div class="para">There are many extensions of L’Hôspital’s rule.  In particular, the rule remains true if any of the following changes are made:</div>
 <ul class="disc" id="appendix-calculus-19-1">
-<li id="appendix-calculus-19-1-1"><div class="para" id="appendix-calculus-19-1-1-1">
-<span class="process-math">\(L\)</span> is infinite..</div></li>
-<li id="appendix-calculus-19-1-2"><div class="para" id="appendix-calculus-19-1-2-1">
-<span class="process-math">\(I\)</span> is unbounded and <span class="process-math">\(c\)</span> is an infinite endpoint of <span class="process-math">\(I\text{.}\)</span>
-</div></li>
-<li id="appendix-calculus-19-1-3"><div class="para" id="appendix-calculus-19-1-3-1">
-<span class="process-math">\(\lim_{x\to c}f(x)\)</span> and <span class="process-math">\(\lim_{x\to c}g(x)\)</span> are both infinite.</div></li>
+<li id="appendix-calculus-19-1-1">
+<div class="para" id="appendix-calculus-19-1-1-1">
+<span class="process-math">\(L\)</span> is infinite..<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-19-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#appendix-calculus-19-1-1" title="Copy permalink for Item">🔗</a></div>
+</li>
+<li id="appendix-calculus-19-1-2">
+<div class="para" id="appendix-calculus-19-1-2-1">
+<span class="process-math">\(I\)</span> is unbounded and <span class="process-math">\(c\)</span> is an infinite endpoint of <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-19-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#appendix-calculus-19-1-2" title="Copy permalink for Item">🔗</a></div>
+</li>
+<li id="appendix-calculus-19-1-3">
+<div class="para" id="appendix-calculus-19-1-3-1">
+<span class="process-math">\(\lim_{x\to c}f(x)\)</span> and <span class="process-math">\(\lim_{x\to c}g(x)\)</span> are both infinite.<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-19-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#appendix-calculus-19-1-3" title="Copy permalink for Item">🔗</a></div>
+</li>
 </ul>
-</div></section></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#appendix-calculus-19" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Appendix A: Theorems from Calculus"><a href="#appendix-calculus" title="Copy permalink for Appendix A: Theorems from Calculus">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="backmatter.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

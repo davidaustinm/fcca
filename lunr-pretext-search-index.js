@@ -757,6 +757,51 @@ var ptx_lunr_docs = [
   "body": " Optional Lab  Open the open-source software platform Geogebra.  geogebra    Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the program.    Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with the program.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the tables below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.           rectangular                 polar                                                                                                                                                                                                                                    Play with other examples until you get a feel for these functions.     "
 },
 {
+  "id": "sec_optionallab-alt",
+  "level": "1",
+  "url": "sec_optionallab-alt.html",
+  "type": "Worksheet",
+  "number": "1.7",
+  "title": "Optional Lab",
+  "body": " Optional Lab     Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number. After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra     Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                    Play with other examples until you get a feel for these functions.    "
+},
+{
+  "id": "sec_optionallab-alt-3",
+  "level": "2",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-3",
+  "type": "Worksheet Exercise",
+  "number": "1.7.1",
+  "title": "",
+  "body": " Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number. After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra   "
+},
+{
+  "id": "sec_optionallab-alt-4",
+  "level": "2",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-4",
+  "type": "Worksheet Exercise",
+  "number": "1.7.2",
+  "title": "",
+  "body": " Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.  "
+},
+{
+  "id": "sec_optionallab-alt-5",
+  "level": "2",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-5",
+  "type": "Worksheet Exercise",
+  "number": "1.7.3",
+  "title": "",
+  "body": " Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                 "
+},
+{
+  "id": "sec_optionallab-alt-6",
+  "level": "2",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-6",
+  "type": "Worksheet Exercise",
+  "number": "1.7.4",
+  "title": "",
+  "body": "  Play with other examples until you get a feel for these functions.   "
+},
+{
   "id": "sec_limitsandcontinuity",
   "level": "1",
   "url": "sec_limitsandcontinuity.html",

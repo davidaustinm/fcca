@@ -234,6 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_topologyintro.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Elementary Topology of the Plane</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chapter1-exercises.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_optionallab.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Optional Lab</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_optionallab-alt.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Optional Lab</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -342,11 +343,13 @@ eBookConfig.enable_chatcodes =  false;
 (x+y)^n \= \sum_{k=0}^n \binom n k x^k \, y^{n-k}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_binomialcoeff-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec_binomialcoeff-3">
 <div class="para">(for <span class="process-math">\(x,y \in \C\)</span> and <span class="process-math">\(n \in \Z_{ \ge 0 }\)</span>) tells us that <span class="process-math">\(\binom n k\)</span> is the coefficient of <span class="process-math">\(z^k\)</span> in <span class="process-math">\((z+1)^n\text{.}\)</span> You will derive two sample identities in the course of the exercises below.</div>
 <ol class="decimal ol-marker-4" id="sec_binomialcoeff-3-6">
-<li id="sec_binomialcoeff-3-6-1"><div class="para logical" id="sec_binomialcoeff-3-6-1-1">
+<li id="sec_binomialcoeff-3-6-1">
+<div class="para logical" id="sec_binomialcoeff-3-6-1-1">
 <div class="para">Convince yourself that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -356,9 +359,17 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">where <span class="process-math">\(\gamma\)</span> is any simple closed piecewise smooth path such that 0 is inside <span class="process-math">\(\gamma\text{.}\)</span>
 </div>
-</div></li>
-<li id="sec_binomialcoeff-3-6-2"><div class="para" id="sec_binomialcoeff-3-6-2-1">Derive a recurrence relation for binomial coefficients from the fact that <span class="process-math">\(\frac 1 z + 1 = \frac{ z+1 }{ z }\text{.}\)</span> (<em class="emphasis">Hint</em>: Multiply both sides by <span class="process-math">\(\frac{ (z+1)^n }{ z^k }\text{.}\)</span>)</div></li>
-<li id="unifc"><div class="para logical" id="unifc-1">
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_binomialcoeff-3-6-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec_binomialcoeff-3-6-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_binomialcoeff-3-6-2">
+<div class="para" id="sec_binomialcoeff-3-6-2-1">Derive a recurrence relation for binomial coefficients from the fact that <span class="process-math">\(\frac 1 z + 1 = \frac{ z+1 }{ z }\text{.}\)</span> (<em class="emphasis">Hint</em>: Multiply both sides by <span class="process-math">\(\frac{ (z+1)^n }{ z^k }\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#sec_binomialcoeff-3-6-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec_binomialcoeff-3-6-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="unifc">
+<div class="para logical" id="unifc-1">
 <div class="para">Now suppose <span class="process-math">\(x \in \R\)</span> with <span class="process-math">\(|x|\lt 1/4\text{.}\)</span> Find a simple closed path <span class="process-math">\(\gamma\)</span> surrounding the origin such that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -366,8 +377,12 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">converges uniformly on <span class="process-math">\(\gamma\)</span> as a function of <span class="process-math">\(z\text{.}\)</span> Evaluate this sum.</div>
-</div></li>
-<li id="sec_binomialcoeff-3-6-4"><div class="para logical" id="sec_binomialcoeff-3-6-4-1">
+<div class="autopermalink" data-description="Paragraph"><a href="#unifc-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#unifc" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec_binomialcoeff-3-6-4">
+<div class="para logical" id="sec_binomialcoeff-3-6-4-1">
 <div class="para">Keeping <span class="process-math">\(x\)</span> and <span class="process-math">\(\gg\)</span> from <a href="sec_binomialcoeff.html#unifc" class="xref" data-knowl="./knowl/xref/unifc.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 3">Item 3</a>, convince yourself that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/unifc.html ./knowl/xref/unifc.html ./knowl/xref/residuethm.html">
 \begin{equation*}
@@ -377,9 +392,14 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">Use <a href="sec_binomialcoeff.html#unifc" class="xref" data-knowl="./knowl/xref/unifc.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 3">Item 3</a> to interchange summation and integral, and use the Residue <a href="sec_residues.html#residuethm" class="xref" data-knowl="./knowl/xref/residuethm.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.2: Residue Theorem">Theorem 9.2.2</a> to evaluate the integral, giving an identity for <span class="process-math">\(\s \binom{2k}{k} x^k\text{.}\)</span>
 </div>
-</div></li>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_binomialcoeff-3-6-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec_binomialcoeff-3-6-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
 </ol>
-</div></section></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_binomialcoeff-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 10.2: Binomial Coefficients"><a href="#sec_binomialcoeff" title="Copy permalink for Section 10.2: Binomial Coefficients">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec_infsums.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_fibonacci.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
