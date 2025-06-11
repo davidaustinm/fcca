@@ -6,29 +6,41 @@
     <statement>
       <p>
         Use the definition of limit to show for any
-        <m>z_o \in \C</m> that <m>\lim_{z \to z_0} (a z + b) = a z_0 + b</m>.
+        <m>z_o \in \C</m> that <m>\displaystyle \lim_{z \to z_0} (a z + b) = a z_0 + b</m>.
       </p>
     </statement>
   </exercise>
   <exercise xml:id="ex_2_1">
-    <statement>
+    <introduction>
       <p>
         Evaluate the following limits or explain why they don't exist.
-        <ol marker="(a) ">
-          <li>
-            <p>
-              <m>\displaystyle \lim_{z \to i} \frac{i z^3 - 1}{z + i}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \lim_{z \to 1 - i} \left(x + i(2x +
-              y)\right)</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m> \displaystyle \lim_{z \to i} \frac{i z^3 - 1}{z + i}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m> \displaystyle \lim_{z \to 1 - i} \left(x + i(2x +
+              y)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>1+i</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise xml:id="ex_limitunique">
     <statement>
@@ -111,29 +123,31 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Determine where each of the following functions <m>f: \C \to
         \C</m> is continuous: 
-        <ol marker="(a) ">
-          <li>
-            <p>
-              <m>f(z) = \begin{cases}0 \amp \text{ if } z=0 \text{ or
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = \begin{cases}0 \amp \text{ if } z=0 \text{ or
               \(|z|\) is irrational, } \\ \frac 1 q \amp \text{ if }
               |z| = \frac p q \in \Q \setminus \{ 0 \} \text{ 
               (written in lowest terms). } \end{cases}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = \begin{cases}0 \amp \text{ if } z=0 , \\ \sin
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = \begin{cases}0 \amp \text{ if } z=0 , \\ \sin
               \phi \amp \text{ if } z = r \, e^{ i \phi } \ne 0
               . \end{cases}</m> 
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_continuitydefs">
     <statement>
@@ -203,76 +217,159 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_2_2">
-    <statement>
+    <introduction>
       <p>
         Where are the following functions differentiable?
         Where are they holomorphic?
         Determine their derivatives at points where they are
-        differentiable. 
-        <ol marker="(a) ">
-          <li>
-            <p>
-              <m>f(z) = e^{-x}e^{-iy}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = 2 x + i x y^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = x^2 + i y^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = e^x e^{-i y}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = \cos x \cosh y - i \sin x \sinh y</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z)=\Im z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = |z|^2 = x^2 + y^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = z \Im z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z)= \frac{ ix+1 } y</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z)=4(\Re z)(\Im z)-i(\conj z)^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z)=2xy-i(x+y)^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z)=z^2-\conj z^2</m>
-            </p>
-          </li>
-        </ol>
+        differentiable.
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = e^{-x}e^{-iy}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable and holomorphic in <m>\C</m> with derivative <m>-e^{-x} e^{-iy}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = 2 x + i x y^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          nowhere differentiable or holomorphic
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = x^2 + i y^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable only on <m>\{ x+iy \in \C : \ x=y \}</m> with derivative <m>2x</m>, nowhere holomorphic
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = e^x e^{-i y}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          nowhere differentiable or holomorphic
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = \cos x \cosh y - i \sin x \sinh y</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable and holomorphic in <m>\C</m> with derivative <m>-\sin x \cosh y - i \cos x \sinh y</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z)=\Im z</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          nowhere differentiable or holomorphic
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = |z|^2 = x^2 + y^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable only at <m>0</m> with derivative <m>0</m>, nowhere holomorphic
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = z \Im z</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable only at <m>0</m> with derivative <m>0</m>, nowhere holomorphic
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z)= \frac{ ix+1 } y</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable only at <m>i</m> with derivative <m>i</m>, nowhere holomorphic
+        </p>
+      </answer>
+    </task>
+     <task>
+      <statement>
+        <p>
+          <m>f(z)=4(\Re z)(\Im z)-i(\conj z)^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable and holomorphic in <m>\C</m> with derivative <m>2y - 2xi
+        = -2iz</m>
+        </p>
+      </answer>
+     </task>
+     <task>
+      <statement>
+        <p>
+          <m>f(z)=2xy-i(x+y)^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable only at <m>0</m> with derivative <m>0</m>, nowhere holomorphic
+        </p>
+      </answer>
+     </task>
+     <task>
+      <statement>
+        <p>
+          <m>f(z)=z^2-\conj z^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable only at <m>0</m> with derivative <m>0</m>, nowhere holomorphic
+        </p>
+      </answer>
+     </task>
   </exercise>
   <exercise>
     <statement>
@@ -345,36 +442,52 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_harmconj">
-    <statement>
+    <introduction>
       <p>
         For each of the following functions <m>u</m>,
         find a function <m>v</m> such that <m>u+iv</m> is holomorphic
         in some region. 
         Maximize that region.
-        <ol marker="(a) ">
-          <li>
-            <p>
-              <m>u(x,y) = x^2 - y^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>u(x,y) = \cosh (y) \sin (x)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>u(x,y) = 2x^2 + x + 1 - 2y^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>u(x,y) = \frac{x}{x^2 + y^2}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+      </p> 
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>u(x,y) = x^2 - y^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2xy</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>u(x,y) = \cosh (y) \sin (x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(x) \sinh(y)</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>u(x,y) = 2x^2 + x + 1 - 2y^2</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>u(x,y) = \frac{x}{x^2 + y^2}</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_225">
     <statement>
@@ -383,31 +496,40 @@
         What about <m>u(x,y) = \frac{ x^2 }{ x^2+y^2 }</m>?
       </p>
     </statement>
+    <answer>
+      <p>
+        Neither is defined at the origin, nor continuously extendable to
+        the origin, so neither is harmonic on all of <m>\C</m>. Away from the
+        origin, the first is harmonic, while the second is not.
+      </p>
+    </answer>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Consider the general real homogeneous quadratic function
         <m>u(x,y) = ax^2+bxy+cy^2\,</m>, 
         where <m>a</m>, <m>b</m> and <m>c</m> are real constants.
-        <ol marker="(a) ">
-          <li>
-            <p>
-              Show that <m>u</m> is harmonic if and only if <m>a=-c</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>u</m> is harmonic then show that it is the real
+      </p> 
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>u</m> is harmonic if and only if <m>a=-c</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>u</m> is harmonic then show that it is the real
               part of a function of the form 
               <m>f(z) = Az^2</m> for some <m>A \in \C</m>.
               Give a formula for <m>A</m> in terms of <m>a</m>,
-              <m>b</m> and<nbsp/><m>c</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+              <m>b</m> and <m>c</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_diffrulesViaCR">
     <statement>

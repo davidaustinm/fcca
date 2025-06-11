@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xml:id="sec_optionallab-alt">
+<worksheet xml:id="sec_optionallab-alt" margin="1in" bottom="1.25cm">
   <title>Optional Lab</title>
-  <p>
-
-  </p>
 
   <exercise>
     <p>
@@ -13,6 +10,10 @@
     <md>
       <mrow>34 \amp = <fillin/>\amp  i \amp = <fillin/>\amp  -\pi \amp = <fillin/>\amp  2+2i \amp = <fillin/>\amp  - \frac 1 2 \left( \sqrt 3 + i \right) \amp =<fillin/></mrow>
     </md>
+    <!-- <me>
+      34 = <fillin/> \hspace{.2in}  i = <fillin characters="3"/>\hspace{.2in}  -\pi  = <fillin characters="3"/> \ \ \   2+2i  = <fillin characters="3"/> \ \ \   - \frac 1 2 \left( \sqrt 3 + i \right) =<fillin characters="3"/>
+    </me> -->
+    
       After you have finished computing these numbers,
       check your answers with the open-source software platform
       <url href="https://www.geogebra.org/calculator">
