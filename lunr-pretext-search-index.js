@@ -763,39 +763,39 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "1.7",
   "title": "Optional Lab",
-  "body": " Optional Lab     Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number. After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra     Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                    Play with other examples until you get a feel for these functions.    "
+  "body": " Optional Lab   Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra     Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                    Play with other examples until you get a feel for these functions.    "
+},
+{
+  "id": "sec_optionallab-alt-2",
+  "level": "2",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-2",
+  "type": "Worksheet Exercise",
+  "number": "1.7.1",
+  "title": "",
+  "body": " Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra   "
 },
 {
   "id": "sec_optionallab-alt-3",
   "level": "2",
   "url": "sec_optionallab-alt.html#sec_optionallab-alt-3",
   "type": "Worksheet Exercise",
-  "number": "1.7.1",
+  "number": "1.7.2",
   "title": "",
-  "body": " Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number. After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra   "
+  "body": " Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.  "
 },
 {
   "id": "sec_optionallab-alt-4",
   "level": "2",
   "url": "sec_optionallab-alt.html#sec_optionallab-alt-4",
   "type": "Worksheet Exercise",
-  "number": "1.7.2",
-  "title": "",
-  "body": " Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.  "
-},
-{
-  "id": "sec_optionallab-alt-5",
-  "level": "2",
-  "url": "sec_optionallab-alt.html#sec_optionallab-alt-5",
-  "type": "Worksheet Exercise",
   "number": "1.7.3",
   "title": "",
   "body": " Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                 "
 },
 {
-  "id": "sec_optionallab-alt-6",
+  "id": "sec_optionallab-alt-5",
   "level": "2",
-  "url": "sec_optionallab-alt.html#sec_optionallab-alt-6",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-5",
   "type": "Worksheet Exercise",
   "number": "1.7.4",
   "title": "",
@@ -1096,7 +1096,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "2.5",
   "title": "Exercises",
-  "body": "   Use the definition of limit to show for any that .      Evaluate the following limits or explain why they don't exist.                  Prove that, if a limit exists, then it is unique.      Prove .      Let and suppose is an accumulation point of . Show that if and only if .       is useful for showing that limits do not exist, but it is not at all useful for showing that a limit does exist. For example, define .  Show that the limits of at along all straight lines through the origin exist and are equal, but does not exist. ( Hint : Consider the limit along the parabola .)      Suppose that and . Prove that if and only if .      Show that the function given by is continuous on .      Show that the function given by is continuous on .      Determine where each of the following functions is continuous:                  Show that the two definitions of continuity in are equivalent. Consider separately the cases where is an accumulation point of and where is an isolated point of .      Consider the function given by . Apply the definition of the derivative to give a direct proof that .      Prove .      Prove .      Find the derivative of the function , where with . When is ?      Prove that if is given by a polynomial in then is entire. What can you say if is given by a polynomial polynomial in and ?      Prove or find a counterexample: If and are real valued and continuous, then is continuous; if and are (real) differentiable then is (complex) differentiable.      Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.                                                                    Define if , and if . Show that satisfies the Cauchy-Riemann equation at , yet is not differentiable at . Why doesn't this contradict (b)?      Prove: If is holomorphic in the region and always real valued, then is constant in . ( Hint : Use the Cauchy-Riemann equations to show that .)      Prove: If and are both holomorphic in the region then is constant in .      Suppose is entire and can be written as , that is, the real part of depends only on and the imaginary part of depends only on . Prove that for some and .      Suppose is entire, with real and imaginary parts and satisfying for all . Show that is constant.      Prove that the Cauchy-Riemann equations take on the following form in polar coordinates: .      For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                            Is harmonic on ? What about ?      Consider the general real homogeneous quadratic function , where , and are real constants.   Show that is harmonic if and only if .    If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .         Re-prove by using the formula for given in .      Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)    "
+  "body": "   Use the definition of limit to show for any that .      Evaluate the following limits or explain why they don't exist.                              Prove that, if a limit exists, then it is unique.      Prove .      Let and suppose is an accumulation point of . Show that if and only if .       is useful for showing that limits do not exist, but it is not at all useful for showing that a limit does exist. For example, define .  Show that the limits of at along all straight lines through the origin exist and are equal, but does not exist. ( Hint : Consider the limit along the parabola .)      Suppose that and . Prove that if and only if .      Show that the function given by is continuous on .      Show that the function given by is continuous on .      Determine where each of the following functions is continuous:                    Show that the two definitions of continuity in are equivalent. Consider separately the cases where is an accumulation point of and where is an isolated point of .      Consider the function given by . Apply the definition of the derivative to give a direct proof that .      Prove .      Prove .      Find the derivative of the function , where with . When is ?      Prove that if is given by a polynomial in then is entire. What can you say if is given by a polynomial polynomial in and ?      Prove or find a counterexample: If and are real valued and continuous, then is continuous; if and are (real) differentiable then is (complex) differentiable.      Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.          differentiable and holomorphic in with derivative            nowhere differentiable or holomorphic           differentiable only on with derivative , nowhere holomorphic           nowhere differentiable or holomorphic           differentiable and holomorphic in with derivative            nowhere differentiable or holomorphic           differentiable only at with derivative , nowhere holomorphic           differentiable only at with derivative , nowhere holomorphic           differentiable only at with derivative , nowhere holomorphic           differentiable and holomorphic in with derivative            differentiable only at with derivative , nowhere holomorphic           differentiable only at with derivative , nowhere holomorphic       Define if , and if . Show that satisfies the Cauchy-Riemann equation at , yet is not differentiable at . Why doesn't this contradict (b)?      Prove: If is holomorphic in the region and always real valued, then is constant in . ( Hint : Use the Cauchy-Riemann equations to show that .)      Prove: If and are both holomorphic in the region then is constant in .      Suppose is entire and can be written as , that is, the real part of depends only on and the imaginary part of depends only on . Prove that for some and .      Suppose is entire, with real and imaginary parts and satisfying for all . Show that is constant.      Prove that the Cauchy-Riemann equations take on the following form in polar coordinates: .      For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                                            Is harmonic on ? What about ?    Neither is defined at the origin, nor continuously extendable to the origin, so neither is harmonic on all of . Away from the origin, the first is harmonic, while the second is not.      Consider the general real homogeneous quadratic function , where , and are real constants.     Show that is harmonic if and only if .      If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .       Re-prove by using the formula for given in .      Prove that, If is a region and is a complex-valued function with defined and equal to for all , then for some . ( Hint : Use to show that , and then use again for the function .)    "
 },
 {
   "id": "chapter2-exercises-1",
@@ -1114,7 +1114,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.2",
   "title": "",
-  "body": "  Evaluate the following limits or explain why they don't exist.               "
+  "body": "  Evaluate the following limits or explain why they don't exist.                           "
 },
 {
   "id": "ex_limitunique",
@@ -1186,7 +1186,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.10",
   "title": "",
-  "body": "  Determine where each of the following functions is continuous:               "
+  "body": "  Determine where each of the following functions is continuous:                 "
 },
 {
   "id": "ex_continuitydefs",
@@ -1258,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.18",
   "title": "",
-  "body": "  Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.                                                                 "
+  "body": "  Where are the following functions differentiable? Where are they holomorphic? Determine their derivatives at points where they are differentiable.          differentiable and holomorphic in with derivative            nowhere differentiable or holomorphic           differentiable only on with derivative , nowhere holomorphic           nowhere differentiable or holomorphic           differentiable and holomorphic in with derivative            nowhere differentiable or holomorphic           differentiable only at with derivative , nowhere holomorphic           differentiable only at with derivative , nowhere holomorphic           differentiable only at with derivative , nowhere holomorphic           differentiable and holomorphic in with derivative            differentiable only at with derivative , nowhere holomorphic           differentiable only at with derivative , nowhere holomorphic    "
 },
 {
   "id": "chapter2-exercises-19",
@@ -1321,7 +1321,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.25",
   "title": "",
-  "body": "  For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                         "
+  "body": "  For each of the following functions , find a function such that is holomorphic in some region. Maximize that region.                                         "
 },
 {
   "id": "ex_225",
@@ -1330,7 +1330,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.26",
   "title": "",
-  "body": "  Is harmonic on ? What about ?   "
+  "body": "  Is harmonic on ? What about ?    Neither is defined at the origin, nor continuously extendable to the origin, so neither is harmonic on all of . Away from the origin, the first is harmonic, while the second is not.   "
 },
 {
   "id": "chapter2-exercises-27",
@@ -1339,7 +1339,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.27",
   "title": "",
-  "body": "  Consider the general real homogeneous quadratic function , where , and are real constants.   Show that is harmonic if and only if .    If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .      "
+  "body": "  Consider the general real homogeneous quadratic function , where , and are real constants.     Show that is harmonic if and only if .      If is harmonic then show that it is the real part of a function of the form for some . Give a formula for in terms of , and .    "
 },
 {
   "id": "ex_diffrulesViaCR",
