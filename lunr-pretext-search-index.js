@@ -754,7 +754,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "Optional Lab",
-  "body": " Optional Lab  Open the open-source software platform Geogebra.  geogebra    Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the program.    Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with the program.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the tables below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.           rectangular                 polar                                                                                                                                                                                                                                    Play with other examples until you get a feel for these functions.     "
+  "body": " Optional Lab  Open the open-source software platform Geogebra.  geogebra    Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the program.    Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with the program.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the tables below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.            rectangular                 polar                                                                                                                                                                                                                                   Play with other examples until you get a feel for these functions.     "
 },
 {
   "id": "sec_optionallab-alt",
@@ -1771,7 +1771,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "3.6",
   "title": "Exercises",
-  "body": "   Show that if is a Möbius transformation then .      Complete the picture painted by by considering Möbius transformations with . That is, show that given by is a bijection, with given by the formula in .      Show that is the equation for a circle or line if and only if . Conclude that is a solution to if and only if is a solution to .      Extend by showing that maps any circle passing through to a line.      Prove that any Möbius transformation different from the identity map can have at most two fixed points. (A fixed point of a function is a number such that .) fixed point       Prove .      Show that the Möbius transformation maps the unit circle (minus the point ) onto the imaginary axis.      Suppose that is holomorphic in the region and is a subset of the unit circle. Show that is constant.      Fix with and consider .   Show that is a Möbius transformation.    Show that .    Prove that maps the unit disk to itself in a bijective fashion.         Suppose is a matrix of complex numbers whose determinant is nonzero. Then we can define a corresponding Möbius transformation on by . Show that , where denotes composition and denotes matrix multiplication.      Show that our definition of honors the finite limit rules in Proposition , by proving the following, where :   If and then .    If and then .    If then .    If and then .    If and then .         Fix . Prove that .      Let . Draw two graphs, one showing the following six sets in the -plane and the other showing their images in the -plane. Label the sets. (You should only need to calculate the images of , , , and ; remember that Möbius transformations preserve angles.)   the -axis plus     the -axis plus     the line plus     the circle with radius centered at     the circle with radius centered at     the circle with radius centered at          Find Möbius transformations satisfying each of the following. Write your answers in standard form, as .                       Using the cross ratio, with different choices of , find two different Möbius transformations that transform onto the real axis plus . In each case, find the image of the center of the circle.      Let be the unit circle. Find a Möbius transformation that transforms onto and transforms to .      Describe the image of the region under the transformation:   The disk under .    The quadrant under .    The strip under .         Find a Möbius transformation that maps the unit disk to .      The Jacobian Jacobian  of a transformation , is the determinant of the matrix .  Show that if is holomorphic then the Jacobian equals .      Find the fixed points in of .      Find each Möbius transformation :    maps , , .     maps , , .     maps the -axis to , the -axis to , and the unit circle to itself.           Find a Möbius transformation that maps the unit circle to .    Find two Möbius transformations that map the unit disk respectively.        Given , show that the image of the line under inversion is the circle with center and radius .      Suppose , and are distinct points in . Show that is on the circle passing through , and if and only if is real or .      Prove that the stereographic projection of is a bijection by verifying that and are the identity map.      Find the image of the following points under the stereographic projection :   .      Consider the plane determined by . What is a unit normal vector to ? Compute the image of under the stereographic projection .      Prove that every circle in the extended complex plane is the image of some circle in under the stereographic projection .      Describe the effect of the basic Möbius transformations rotation, real dilation, and translation on the Riemann sphere. ( Hint : For the first two, consider all circles in centered on the axis, and all circles through both and . For translation, consider two families of circles through , orthogonal to and perpendicular to the translation.)      Prove that and .      Let and show that    .     .         Prove that the zeros of are all real valued. Conclude that they are precisely the integer multiples of .      Describe the images of the following sets under the exponential function :   the line segment defined by     the line segment defined by     the rectangle .         Prove .      Prove .      Let and show that             If then .    If then .         Show that .      Draw a picture of the images of vertical lines under the sine function. Do the same for the tangent function.      Determine the image of the strip under the sine function. ( Hint : makes it easy to convert parametric equations for horizontal or vertical lines to parametric equations for their images. Note that the equations and represent an ellipse and the equations and represent a hyperbola. Start by finding the images of the boundary lines of the strip, and then find the images of a few horizontal segments and vertical lines in the strip.)      Find the principal values of              .         Convert the following expressions to the form . (Reason carefully.)                                       .         Is true for the multiple-valued argument? What about for the principal branch?      For the multiple-valued logarithm, is there a difference between the set of all values of and the set of all values of ? ( Hint : Try some fixed numbers for .)      For each of the following functions, determine all complex numbers for which the function is holomorphic. If you run into a logarithm, use the principal value unless otherwise stated.              where with                .         Find all solutions to the following equations:                                       .         Find the image of the annulus under the principal value of the logarithm.      Use to give an alternative proof that is holomorphic in .      Let be a branch of the logarithm on , and let , the image of . Show that is a bijection whose inverse map is given by (i.e., is the exponential function restricted to ).      Show that if is a positive real constant.      Fix . Find the derivative of .      Prove that is single valued if and only if is an integer. (Note that this means that complex exponentials do not clash with monomials , no matter which branch of the logarithm is used.) What can you say if is rational?      Describe the image under of the line with equation . To do this you should find an equation (at least parametrically) for the image (you can start with the parametric form ), plot it reasonably carefully, and explain what happens in the limits as and .      For this problem, .   Show that the image under of a circle centered at the origin is a circle centered at the origin.    Show that the image under of a ray starting at the origin is a ray starting at the origin.    Let be the figure formed by the horizontal segment from to , the circular arc from to , and then the vertical segment from to . Draw and .    Is the right angle at the origin in part (c) preserved? Is something wrong here?     ( Hint : Use polar coordinates.)      As in the previous problem, let . Let be the square with vertices at , , and . Draw and identify the types of image curves corresponding to the segments from to and from to . They are not parts of either straight lines or circles. ( Hint : You can write the vertical segment parametrically as . Eliminate the parameter in to get a equation for the image curve.) and are related to the cover picture of this book.    "
+  "body": "   Show that if is a Möbius transformation then .      Complete the picture painted by by considering Möbius transformations with . That is, show that given by is a bijection, with given by the formula in .      Show that is the equation for a circle or line if and only if . Conclude that is a solution to if and only if is a solution to .      Extend by showing that maps any circle passing through to a line.      Prove that any Möbius transformation different from the identity map can have at most two fixed points. (A fixed point of a function is a number such that .) fixed point       Prove .      Show that the Möbius transformation maps the unit circle (minus the point ) onto the imaginary axis.      Suppose that is holomorphic in the region and is a subset of the unit circle. Show that is constant.      Fix with and consider .     Show that is a Möbius transformation.      Show that .      Prove that maps the unit disk to itself in a bijective fashion.       Suppose is a matrix of complex numbers whose determinant is nonzero. Then we can define a corresponding Möbius transformation on by . Show that , where denotes composition and denotes matrix multiplication.      Show that our definition of honors the finite limit rules in Proposition , by proving the following, where :     If and then .      If and then .      If then .      If and then .      If and then .       Fix . Prove that .      Let . Draw two graphs, one showing the following six sets in the -plane and the other showing their images in the -plane. Label the sets. (You should only need to calculate the images of , , , and ; remember that Möbius transformations preserve angles.)     the -axis plus       the -axis plus       the line plus       the circle with radius centered at       the circle with radius centered at       the circle with radius centered at        Find Möbius transformations satisfying each of the following. Write your answers in standard form, as .                                          Using the cross ratio, with different choices of , find two different Möbius transformations that transform onto the real axis plus . In each case, find the image of the center of the circle.      Let be the unit circle. Find a Möbius transformation that transforms onto and transforms to .      Describe the image of the region under the transformation:     The disk under .      The quadrant under .      The strip under .       Find a Möbius transformation that maps the unit disk to .      Jacobian The Jacobian of a transformation , is the determinant of the matrix .  Show that if is holomorphic then the Jacobian equals .      Find the fixed points in of .      Find each Möbius transformation :      maps , , .       maps , , .       maps the -axis to , the -axis to , and the unit circle to itself.        Find a Möbius transformation that maps the unit circle to .      Find two Möbius transformations that map the unit disk respectively.       Given , show that the image of the line under inversion is the circle with center and radius .      Suppose , and are distinct points in . Show that is on the circle passing through , and if and only if is real or .      Prove that the stereographic projection of is a bijection by verifying that and are the identity map.      Find the image of the following points under the stereographic projection :   .      Consider the plane determined by . What is a unit normal vector to ? Compute the image of under the stereographic projection .      Prove that every circle in the extended complex plane is the image of some circle in under the stereographic projection .      Describe the effect of the basic Möbius transformations rotation, real dilation, and translation on the Riemann sphere.    For the first two, consider all circles in centered on the axis, and all circles through both and . For translation, consider two families of circles through , orthogonal to and perpendicular to the translation.      Prove that and .      Let and show that      .       .       Prove that the zeros of are all real valued. Conclude that they are precisely the integer multiples of .      Describe the images of the following sets under the exponential function :     the line segment defined by       the line segment defined by       the rectangle .       Prove .      Prove .      Let and show that                   If then .      If then .       Show that .      Draw a picture of the images of vertical lines under the sine function. Do the same for the tangent function.      Determine the image of the strip under the sine function. ( Hint : makes it easy to convert parametric equations for horizontal or vertical lines to parametric equations for their images. Note that the equations and represent an ellipse and the equations and represent a hyperbola. Start by finding the images of the boundary lines of the strip, and then find the images of a few horizontal segments and vertical lines in the strip.)      Find the principal values of                              .            Convert the following expressions to the form . (Reason carefully.)                                                       .       Is true for the multiple-valued argument? What about for the principal branch?      For the multiple-valued logarithm, is there a difference between the set of all values of and the set of all values of ? ( Hint : Try some fixed numbers for .)      For each of the following functions, determine all complex numbers for which the function is holomorphic. If you run into a logarithm, use the principal value unless otherwise stated.          differentiable at 0, nowhere holomorphic           differentiable and holomorphic on        where with     differentiable and holomorphic on            nowhere differentiable or holomorphic           differentiable and holomorphic on        .    differentiable and holomorphic in (i.e. entire)       Find all solutions to the following equations:                      there is no solution                                                                   .            Find the image of the annulus under the principal value of the logarithm.      Use to give an alternative proof that is holomorphic in .      Let be a branch of the logarithm on , and let , the image of . Show that is a bijection whose inverse map is given by (i.e., is the exponential function restricted to ).      Show that if is a positive real constant.      Fix . Find the derivative of .           Prove that is single valued if and only if is an integer. (Note that this means that complex exponentials do not clash with monomials , no matter which branch of the logarithm is used.) What can you say if is rational?      Describe the image under of the line with equation . To do this you should find an equation (at least parametrically) for the image (you can start with the parametric form ), plot it reasonably carefully, and explain what happens in the limits as and .      For this problem, .     Show that the image under of a circle centered at the origin is a circle centered at the origin.    Use polar coordinates.      Show that the image under of a ray starting at the origin is a ray starting at the origin.      Let be the figure formed by the horizontal segment from to , the circular arc from to , and then the vertical segment from to . Draw and .      Is the right angle at the origin in preserved? Is something wrong here?       As in , let . Let be the square with vertices at , , and . Draw and identify the types of image curves corresponding to the segments from to and from to . They are not parts of either straight lines or circles.    You can write the vertical segment parametrically as . Eliminate the parameter in to get a equation for the image curve.) and are related to the cover picture of this book.    "
 },
 {
   "id": "prob_mobiusinverse",
@@ -1852,7 +1852,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.9",
   "title": "",
-  "body": "  Fix with and consider .   Show that is a Möbius transformation.    Show that .    Prove that maps the unit disk to itself in a bijective fashion.      "
+  "body": "  Fix with and consider .     Show that is a Möbius transformation.      Show that .      Prove that maps the unit disk to itself in a bijective fashion.    "
 },
 {
   "id": "ex_mobiusgroup",
@@ -1870,7 +1870,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.11",
   "title": "",
-  "body": "  Show that our definition of honors the finite limit rules in Proposition , by proving the following, where :   If and then .    If and then .    If then .    If and then .    If and then .      "
+  "body": "  Show that our definition of honors the finite limit rules in Proposition , by proving the following, where :     If and then .      If and then .      If then .      If and then .      If and then .    "
 },
 {
   "id": "ex_polynomiallimitaszgrows",
@@ -1888,7 +1888,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.13",
   "title": "",
-  "body": "  Let . Draw two graphs, one showing the following six sets in the -plane and the other showing their images in the -plane. Label the sets. (You should only need to calculate the images of , , , and ; remember that Möbius transformations preserve angles.)   the -axis plus     the -axis plus     the line plus     the circle with radius centered at     the circle with radius centered at     the circle with radius centered at       "
+  "body": "  Let . Draw two graphs, one showing the following six sets in the -plane and the other showing their images in the -plane. Label the sets. (You should only need to calculate the images of , , , and ; remember that Möbius transformations preserve angles.)     the -axis plus       the -axis plus       the line plus       the circle with radius centered at       the circle with radius centered at       the circle with radius centered at     "
 },
 {
   "id": "ex314",
@@ -1897,7 +1897,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.14",
   "title": "",
-  "body": "  Find Möbius transformations satisfying each of the following. Write your answers in standard form, as .                    "
+  "body": "  Find Möbius transformations satisfying each of the following. Write your answers in standard form, as .                                       "
 },
 {
   "id": "chapter3-exercises-15",
@@ -1924,7 +1924,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.17",
   "title": "",
-  "body": "  Describe the image of the region under the transformation:   The disk under .    The quadrant under .    The strip under .      "
+  "body": "  Describe the image of the region under the transformation:     The disk under .      The quadrant under .      The strip under .    "
 },
 {
   "id": "chapter3-exercises-18",
@@ -1942,7 +1942,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.19",
   "title": "",
-  "body": "  The Jacobian Jacobian  of a transformation , is the determinant of the matrix .  Show that if is holomorphic then the Jacobian equals .   "
+  "body": "  Jacobian The Jacobian of a transformation , is the determinant of the matrix .  Show that if is holomorphic then the Jacobian equals .   "
 },
 {
   "id": "chapter3-exercises-20",
@@ -1960,7 +1960,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.21",
   "title": "",
-  "body": "  Find each Möbius transformation :    maps , , .     maps , , .     maps the -axis to , the -axis to , and the unit circle to itself.      "
+  "body": "  Find each Möbius transformation :      maps , , .       maps , , .       maps the -axis to , the -axis to , and the unit circle to itself.    "
 },
 {
   "id": "chapter3-exercises-22",
@@ -1969,7 +1969,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.22",
   "title": "",
-  "body": "    Find a Möbius transformation that maps the unit circle to .    Find two Möbius transformations that map the unit disk respectively.     "
+  "body": "   Find a Möbius transformation that maps the unit circle to .      Find two Möbius transformations that map the unit disk respectively.    "
 },
 {
   "id": "chapter3-exercises-23",
@@ -2032,7 +2032,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.29",
   "title": "",
-  "body": "  Describe the effect of the basic Möbius transformations rotation, real dilation, and translation on the Riemann sphere. ( Hint : For the first two, consider all circles in centered on the axis, and all circles through both and . For translation, consider two families of circles through , orthogonal to and perpendicular to the translation.)   "
+  "body": "  Describe the effect of the basic Möbius transformations rotation, real dilation, and translation on the Riemann sphere.    For the first two, consider all circles in centered on the axis, and all circles through both and . For translation, consider two families of circles through , orthogonal to and perpendicular to the translation.   "
 },
 {
   "id": "chapter3-exercises-30",
@@ -2050,7 +2050,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.31",
   "title": "",
-  "body": "  Let and show that    .     .      "
+  "body": "  Let and show that      .       .    "
 },
 {
   "id": "chapter3-exercises-32",
@@ -2068,7 +2068,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.33",
   "title": "",
-  "body": "  Describe the images of the following sets under the exponential function :   the line segment defined by     the line segment defined by     the rectangle .      "
+  "body": "  Describe the images of the following sets under the exponential function :     the line segment defined by       the line segment defined by       the rectangle .    "
 },
 {
   "id": "ex_expproperties",
@@ -2095,7 +2095,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.36",
   "title": "",
-  "body": "  Let and show that             If then .    If then .      "
+  "body": "  Let and show that                   If then .      If then .    "
 },
 {
   "id": "chapter3-exercises-37",
@@ -2131,7 +2131,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.40",
   "title": "",
-  "body": "  Find the principal values of              .      "
+  "body": "  Find the principal values of                              .         "
 },
 {
   "id": "chapter3-exercises-41",
@@ -2140,7 +2140,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.41",
   "title": "",
-  "body": "  Convert the following expressions to the form . (Reason carefully.)                                       .      "
+  "body": "  Convert the following expressions to the form . (Reason carefully.)                                                       .    "
 },
 {
   "id": "chapter3-exercises-42",
@@ -2167,7 +2167,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.44",
   "title": "",
-  "body": "  For each of the following functions, determine all complex numbers for which the function is holomorphic. If you run into a logarithm, use the principal value unless otherwise stated.              where with                .      "
+  "body": "  For each of the following functions, determine all complex numbers for which the function is holomorphic. If you run into a logarithm, use the principal value unless otherwise stated.          differentiable at 0, nowhere holomorphic           differentiable and holomorphic on        where with     differentiable and holomorphic on            nowhere differentiable or holomorphic           differentiable and holomorphic on        .    differentiable and holomorphic in (i.e. entire)    "
 },
 {
   "id": "ex_3_2",
@@ -2176,7 +2176,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.45",
   "title": "",
-  "body": "  Find all solutions to the following equations:                                       .      "
+  "body": "  Find all solutions to the following equations:                      there is no solution                                                                   .         "
 },
 {
   "id": "chapter3-exercises-46",
@@ -2221,7 +2221,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.50",
   "title": "",
-  "body": "  Fix . Find the derivative of .   "
+  "body": "  Fix . Find the derivative of .        "
 },
 {
   "id": "singlevaluedexp",
@@ -2248,7 +2248,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.53",
   "title": "",
-  "body": "  For this problem, .   Show that the image under of a circle centered at the origin is a circle centered at the origin.    Show that the image under of a ray starting at the origin is a ray starting at the origin.    Let be the figure formed by the horizontal segment from to , the circular arc from to , and then the vertical segment from to . Draw and .    Is the right angle at the origin in part (c) preserved? Is something wrong here?     ( Hint : Use polar coordinates.)   "
+  "body": "  For this problem, .     Show that the image under of a circle centered at the origin is a circle centered at the origin.    Use polar coordinates.      Show that the image under of a ray starting at the origin is a ray starting at the origin.      Let be the figure formed by the horizontal segment from to , the circular arc from to , and then the vertical segment from to . Draw and .      Is the right angle at the origin in preserved? Is something wrong here?    "
 },
 {
   "id": "ex_squaredimage2",
@@ -2257,7 +2257,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.6.54",
   "title": "",
-  "body": "  As in the previous problem, let . Let be the square with vertices at , , and . Draw and identify the types of image curves corresponding to the segments from to and from to . They are not parts of either straight lines or circles. ( Hint : You can write the vertical segment parametrically as . Eliminate the parameter in to get a equation for the image curve.) and are related to the cover picture of this book.   "
+  "body": "  As in , let . Let be the square with vertices at , , and . Draw and identify the types of image curves corresponding to the segments from to and from to . They are not parts of either straight lines or circles.    You can write the vertical segment parametrically as . Eliminate the parameter in to get a equation for the image curve.) and are related to the cover picture of this book.   "
 },
 {
   "id": "sec_intdef",
