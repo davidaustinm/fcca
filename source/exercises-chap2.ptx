@@ -6,7 +6,7 @@
     <statement>
       <p>
         Use the definition of limit to show for any
-        <m>z_o \in \C</m> that <m>\displaystyle \lim_{z \to z_0} (a z + b) = a z_0 + b</m>.
+        <m>z_0 \in \C</m> that <m>\displaystyle \lim_{z \to z_0} (a z + b) = a z_0 + b</m>.
       </p>
     </statement>
   </exercise>
@@ -97,7 +97,7 @@
         if and only if
         <me>
           \lim_{ (x,y) \to (x_0, y_0) } u(x,y) = u_0 \qquad \text{ and
-          }  \qquad \lim_{ (x,y) \to (x_0, y_0) } u(x,y) = v_0 \, 
+          }  \qquad \lim_{ (x,y) \to (x_0, y_0) } v(x,y) = v_0 \, 
         </me>.
       </p>
     </statement>
@@ -106,7 +106,7 @@
     <statement>
       <p>
         Show that the function <m>f: \C \to \C</m> given by
-        <m>f(z) = z^2</m> is continuous on<nbsp/><m>\C</m>.
+        <m>f(z) = z^2</m> is continuous on <m>\C</m>.
       </p>
     </statement>
   </exercise>
