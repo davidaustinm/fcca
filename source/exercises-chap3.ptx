@@ -32,7 +32,7 @@
         \delta</m>.
         Conclude that <m>x + iy</m> is a solution to <xref
         ref="eq_circle"/> if and only if <m>u + iv</m> is a solution
-        to<nbsp/><xref ref="eq_circleimage"/>.  
+        to <xref ref="eq_circleimage"/>.  
       </p>
     </statement>
   </exercise>
@@ -83,32 +83,36 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_mobiusunitcircletounitcircle">
-    <statement>
+    <introduction>
       <p>
         Fix <m>a \in \C</m> with <m>|a| \lt  1</m> and consider
         <me>
           f_a(z) \ := \ \frac{ z-a }{ 1 - \conj{a} z } \,
         </me>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that <m>f_a(z)</m> is a M&#xf6;bius transformation.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>f_a^{ -1 } (z) = f_{ -a }(z)</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Prove that <m>f_a(z)</m> maps the unit disk
+      </p> 
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>f_a(z)</m> is a M&#xf6;bius transformation.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that <m>f_a^{ -1 } (z) = f_{ -a }(z)</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Prove that <m>f_a(z)</m> maps the unit disk
               <m>D[0,1]</m> to itself in a bijective fashion. 
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_mobiusgroup">
     <statement>
@@ -128,50 +132,58 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_limitrulesinfty">
-    <statement>
+    <introduction>
       <p>
         Show that our definition of <m>\Chat</m> honors the
         <q>finite</q>
         limit rules in <xref ref="limits">Proposition</xref>,
         by proving the following, where <m>a \in \C</m>:
-        <ol marker="a) ">
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=\infty</m> and
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          If <m>\lim_{z\to z_0}f(z)=\infty</m> and
               <m>\lim_{z\to z_0}g(z)=a</m> then <m>\lim_{z\to z_0}
-              (f(z) + g(z)) = \infty </m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=\infty</m> and
+              (f(z) + g(z)) = \infty </m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>\lim_{z\to z_0}f(z)=\infty</m> and
               <m>\lim_{z\to z_0}g(z)=a \neq 0</m> then <m>\lim_{z\to
               z_0} (f(z) \cdot g(z)) = \infty </m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=\lim_{z\to z_0}g(z)=\infty</m>
-              then <m>\lim_{z\to z_0} (f(z) \cdot g(z)) =\infty </m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=\infty</m> and
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>\lim_{z\to z_0}f(z)=\lim_{z\to z_0}g(z)=\infty</m>
+              then <m>\lim_{z\to z_0} (f(z) \cdot g(z)) =\infty </m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>\lim_{z\to z_0}f(z)=\infty</m> and
               <m>\lim_{z\to z_0}g(z)=a</m> then <m>\lim_{z\to z_0}
               \frac{ g(z) }{ f(z) } = 0 </m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\lim_{z\to z_0}f(z)=0</m> and
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>\lim_{z\to z_0}f(z)=0</m> and
               <m>\lim_{z\to z_0}g(z)=a \ne 0</m> then <m>\lim_{z\to
-              z_0} \frac{ g(z) }{ f(z) } = \infty </m>. 
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+              z_0} \frac{ g(z) }{ f(z) } = \infty </m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_polynomiallimitaszgrows">
     <statement>
@@ -186,7 +198,7 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Let <m>f(z)=\frac{2z}{z+2}</m>.
         Draw two graphs,
@@ -197,72 +209,101 @@
         <m>\pm2</m>,
         <m>\pm(1+i)</m>, and <m>\infty</m>;
         remember that M&#xf6;bius transformations preserve angles.)
-        <ol marker="a) ">
-          <li>
-            <p>
-              the <m>x</m>-axis plus <m>\infty</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the <m>y</m>-axis plus <m>\infty</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the line <m>x=y</m> plus <m>\infty</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the circle with radius <m>2</m> centered at <m>0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the circle with radius <m>1</m> centered at <m>1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the circle with radius <m>1</m> centered at <m>-1</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          the <m>x</m>-axis plus <m>\infty</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the <m>y</m>-axis plus <m>\infty</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the line <m>x=y</m> plus <m>\infty</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the circle with radius <m>2</m> centered at <m>0</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the circle with radius <m>1</m> centered at <m>1</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the circle with radius <m>1</m> centered at <m>-1</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex314">
-    <statement>
+    <introduction>
       <p>
         Find M&#xf6;bius transformations satisfying each of the following.
         Write your answers in standard form,
         as <m>\frac{az+b}{cz+d}</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>
-                1\to0,<nbsp/>2\to1,<nbsp/>3\to\infty
+      </p> 
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>
+                1\to0, 2\to1, 3\to\infty
+          </m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{-z + 1}{z - 3}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>
+                1\to0, 1+i\to1, 2\to\infty
               </m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>
-                1\to0,<nbsp/>1+i\to1,<nbsp/>2\to\infty
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{(i - 1)z + 1-i}{iz - 2i}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>
+                0\to i, 1\to1, \infty\to-i 
               </m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>
-                0\to i,<nbsp/>1\to1,<nbsp/>\infty\to-i 
-              </m>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{iz - 1}{-z + i}</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -283,28 +324,32 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Describe the image of the region under the transformation:
-        <ol marker="a) ">
-          <li>
-            <p>
-              The disk <m>\abs z \lt 1</m> under <m>w=\frac{iz-i}{z+1}</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              The quadrant <m>x>0,\,y>0</m> under <m>w=\frac{z-i}{z+i}</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              The strip <m>0\lt x\lt 1</m> under <m>w= \frac z {z-1}</m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          The disk <m>\abs z \lt 1</m> under <m>w=\frac{iz-i}{z+1}</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          The quadrant <m>x>0,\,y>0</m> under <m>w=\frac{z-i}{z+i}</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          The strip <m>0\lt x\lt 1</m> under <m>w= \frac z {z-1}</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -315,9 +360,8 @@
   </exercise>
   <exercise>
     <statement>
-      <p>
-        The <em>Jacobian
-            <idx><h>Jacobian</h></idx>
+      <p><idx><h>Jacobian</h></idx>
+        The <em>Jacobian   
         </em> of a transformation <m>u=u(x,y)</m>,
         <m>v=v(x,y)</m> is the determinant of the matrix
         <me>
@@ -337,43 +381,48 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Find each M&#xf6;bius transformation <m>f</m>:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>f</m> maps <m>0\to1</m>, <m>1\to\infty</m>, <m>\infty\to0</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f</m> maps <m>1\to1</m>, <m>-1\to i</m>, <m>-i\to -1</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f</m> maps the <m>x</m>-axis to <m>y=x</m>,
+      </p> 
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>f</m> maps <m>0\to1</m>, <m>1\to\infty</m>, <m>\infty\to0</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f</m> maps <m>1\to1</m>, <m>-1\to i</m>, <m>-i\to -1</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f</m> maps the <m>x</m>-axis to <m>y=x</m>,
               the <m>y</m>-axis to <m>y=-x</m>,
               and the unit circle to itself.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
-    <statement>
-      <ol marker="a) ">
-        <li>
-          <p>
-            Find a M&#xf6;bius transformation that maps the unit
-            circle to <m>\{ x+iy \in \C : \, x+y = 0 \}</m>. 
-          </p>
-        </li>
-        <li>
-          <p>
-            Find two M&#xf6;bius transformations that map the unit
+    <task>
+      <statement>
+        <p>
+          Find a M&#xf6;bius transformation that maps the unit
+            circle to <m>\{ x+iy \in \C : \, x+y = 0 \}</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find two M&#xf6;bius transformations that map the unit
             disk 
             <me>
               \{ z \in \C : \, |z| \lt  1 \} \qquad \text{ to }
@@ -382,10 +431,9 @@
               0 \} \, , \end{aligned} 
             </me>
             respectively.
-          </p>
-        </li>
-      </ol>
-    </statement>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -393,7 +441,7 @@
         Given <m>a \in \R \setminus \{ 0 \}</m>,
         show that the image of the line <m>y = a</m> under inversion
         is the circle with center 
-        <m>\frac{-i}{2a}</m> and radius<nbsp/><m>\frac{1}{2a}</m>.
+        <m>\frac{-i}{2a}</m> and radius <m>\frac{1}{2|a|}</m>.
       </p>
     </statement>
   </exercise>
@@ -425,7 +473,7 @@
         projection <m>\phi</m>: 
       </p>
       <p>
-        <m>(0,0,-1), (0,0,1), (1,0,0), (0,1,0), (1,1,0)</m>.
+        <m>(0,0,-1), (0,0,1), (1,0,0), (0,1,0)</m>.
       </p>
     </statement>
   </exercise>
@@ -435,7 +483,7 @@
         Consider the plane <m>H</m> determined by <m>x+y-z = 0</m>.
         What is a unit normal vector to <m>H</m>?
         Compute the image of <m>H \cap \mathbb{S}^2</m> under the
-        stereographic projection<nbsp/><m>\phi</m>. 
+        stereographic projection <m>\phi</m>. 
       </p>
     </statement>
   </exercise>
@@ -445,7 +493,7 @@
         Prove that every circle in the extended complex plane
         <m>\Chat</m> is the image of some circle in 
         <m>\mathbb{S}^2</m> under the stereographic
-        projection<nbsp/><m>\phi</m>. 
+        projection <m>\phi</m>. 
       </p>
     </statement>
   </exercise>
@@ -455,14 +503,18 @@
         Describe the effect of the basic M&#xf6;bius transformations
         rotation, 
         real dilation, and translation on the Riemann sphere.
-        (<em>Hint</em>: For the first two,
+      </p>
+    </statement>
+    <hint>
+      <p>
+        For the first two,
         consider all circles in <m>\mathbb{S}^2</m> centered on the
         <m>NS</m> axis, 
         and all circles through both <m>N</m> and <m>S</m>.
         For translation, consider two families of circles through <m>N</m>,
-        orthogonal to and perpendicular to the translation.)
+        orthogonal to and perpendicular to the translation.
       </p>
-    </statement>
+    </hint>
   </exercise>
   <exercise>
     <statement>
@@ -473,60 +525,66 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_sin_x_iy_">
-    <statement>
+    <introduction>
       <p>
         Let <m>z=x+iy</m> and show that
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\sin z = \sin x \cosh y + i \cos x \sinh y</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\cos z = \cos x \cosh y - i \sin x \sinh y</m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\sin z = \sin x \cosh y + i \cos x \sinh y</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\cos z = \cos x \cosh y - i \sin x \sinh y</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
       <p>
         Prove that the zeros of <m>\sin z</m> are all real valued.
         Conclude that they are precisely the integer multiples
-        of<nbsp/><m>\pi</m>. 
+        of <m>\pi</m>. 
       </p>
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Describe the images of the following sets under the
         exponential function <m>\exp(z)</m>: 
-        <ol marker="a) ">
-          <li>
-            <p>
-              the line segment defined by <m>z = iy , \ 0 \leq y \leq
-              2 \pi</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              the line segment defined by <m>z = 1 + iy , \ 0 \leq y
-              \leq 2 \pi</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              the rectangle <m>\{ z=x+iy \in \C : \, 0 \leq x \leq 1 ,
-              \, 0 \leq y \leq 2 \pi \} </m>. 
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          the line segment defined by <m>z = iy , \ 0 \leq y \leq
+              2 \pi</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the line segment defined by <m>z = 1 + iy , \ 0 \leq y
+              \leq 2 \pi</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the rectangle <m>\{ z=x+iy \in \C : \, 0 \leq x \leq 1 ,
+              \, 0 \leq y \leq 2 \pi \} </m>. 
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_expproperties">
     <statement>
@@ -543,41 +601,47 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_abs_cot_">
-    <statement>
+    <introduction>
       <p>
         Let <m>z=x+iy</m> and show that
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\abs{\sin z}^2 = \sin^2x+\sinh^2y = \cosh^2y-\cos^2x</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\abs{\cos z}^2 = \cos^2x+\sinh^2y = \cosh^2y-\sin^2x</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\cos x = 0</m> then
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\abs{\sin z}^2 = \sin^2x+\sinh^2y = \cosh^2y-\cos^2x</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\abs{\cos z}^2 = \cos^2x+\sinh^2y = \cosh^2y-\sin^2x</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>\cos x = 0</m> then
               <me>
                 \abs{\cot z}^2 \= \frac{\cosh^2y-1}{\cosh^2y} \ \le \ 1\,
               </me>.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>\abs{y}\ge1</m> then
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>\abs{y}\ge1</m> then
               <me>
                 \abs{\cot z}^2 \ \le \ \frac{\sinh^2y+1}{\sinh^2y} \=
                 1+\frac1{\sinh^2y} \ \le \ 1+\frac1{\sinh^21} \ \le \
                 2\, 
               </me>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -614,78 +678,111 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_princval">
-    <statement>
+    <introduction>
       <p>
         Find the principal values of
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\Log(2i)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(-1)^i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\Log(-1+i) </m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\Log(2i)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\ln(2) + \frac{ \pi i }{ 2 }</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>(-1)^i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>e^{ - \pi }</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\Log(-1+i) </m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac 1 2 \ln (2) + \frac{ 3 \pi i }{ 4 }</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Convert the following expressions to the form <m>x+iy</m>.
         (Reason carefully.)
-        <ol marker="a )">
-          <li>
-            <p>
-              <m>e^{i\pi}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>e^{\pi}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>i^i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>e^{\sin(i)}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\exp(\Log(3+4i))</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(1+i)^{\frac 1 2}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\sqrt{3} \, (1-i)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left( \frac{i+1}{\sqrt{2}} \right)^4</m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>e^{i\pi}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>e^{\pi}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>i^i</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>e^{\sin(i)}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\exp(\Log(3+4i))</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>(1+i)^{\frac 1 2}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sqrt{3} \, (1-i)</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left( \frac{i+1}{\sqrt{2}} \right)^4</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -709,98 +806,192 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_3_1">
-    <statement>
+    <introduction>
       <p>
         For each of the following functions,
         determine all complex numbers for which the function is
         holomorphic. 
         If you run into a logarithm, use the principal value unless
         otherwise stated. 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>{ \overline z }^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\frac{ \sin z }{ z^3 + 1 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\fLog ( z - 2i + 1 )</m> where
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>{ \overline z }^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable at 0, nowhere holomorphic
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\frac{ \sin z }{ z^3 + 1 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable and holomorphic on <m>\C \setminus \{ -1, \ e^{i \frac \pi 3}, \ e^{-i \frac \pi 3} \} </m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\fLog ( z - 2i + 1 )</m> where
               <m>\fLog (z) = \ln |z| + i \fArg (z)</m> with <m>0 \leq
               \fArg (z) \lt 2 \pi</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\exp(\o z)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(z-3)^i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>i^{z-3} </m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable and holomorphic on <m>\C \setminus \left\{ x+iy \in \C : \ x \geq -1 , \ y = 2 \right\} </m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\exp(\o z)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          nowhere differentiable or holomorphic
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>(z-3)^i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable and holomorphic on <m>\C \setminus \left\{ x+iy \in \C : \ x \leq 3 , \ y = 0 \right\} </m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>i^{z-3} </m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          differentiable and holomorphic in <m>\C</m> (i.e. entire)
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise xml:id="ex_3_2">
-    <statement>
+    <introduction>
       <p>
         Find all solutions to the following equations:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\Log (z) = \frac{ \pi i } 2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\Log (z) = \frac{ 3\pi i } 2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\exp(z) = \pi i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\sin(z) = \cosh(4)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\cos(z) = 0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\sinh(z) = 0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\overline{ \exp(iz) } = \exp( i \, \overline z )</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^{\frac 1 2} = 1 + i </m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\Log (z) = \frac{ \pi i } 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z= i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\Log (z) = \frac{ 3\pi i } 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          there is no solution
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\exp(z) = \pi i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z= \ln \pi + i ( \frac \pi 2 + 2 \pi k ) , \ k \in \Z</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sin(z) = \cosh(4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z= \frac \pi 2+ 2 \pi k \pm 4 i , \ k \in \Z</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\cos(z) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z= \frac \pi 2 + \pi k , \ k \in \Z</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\sinh(z) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z = \pi k i, \ k \in \Z</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\overline{ \exp(iz) } = \exp( i \, \overline z )</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z= \pi k , \ k \in \Z</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^{\frac 1 2} = 1 + i </m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>z= 2i</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -847,6 +1038,11 @@
         Find the derivative of <m>f(z) = z^c</m>.
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>f'(z) = c \, z^{c-1}</m>
+      </p>
+    </answer>
   </exercise>
   <exercise xml:id="singlevaluedexp">
     <statement>
@@ -876,55 +1072,68 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_squaredimage1">
-    <statement>
+    <introduction>
       <p>
         For this problem, <m>f(z)=z^2</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that the image under <m>f</m> of a circle centered
-              at the origin is a circle centered at the origin. 
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that the image under <m>f</m> of a ray starting at
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that the image under <m>f</m> of a circle centered
+              at the origin is a circle centered at the origin.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Use polar coordinates.
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that the image under <m>f</m> of a ray starting at
               the origin is a ray starting at the origin. 
-            </p>
-          </li>
-          <li>
-            <p>
-              Let <m>T</m> be the figure formed by the horizontal
+        </p>
+      </statement>
+    </task>
+    <task xml:id="ex_squaredimage1_partc">
+      <statement>
+        <p>
+          Let <m>T</m> be the figure formed by the horizontal
               segment from <m>0</m> to <m>2</m>, 
               the circular arc from <m>2</m> to <m>2i</m>,
               and then the vertical segment from <m>2i</m> to <m>0</m>.
               Draw <m>T</m> and <m>f(T)</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Is the right angle at the origin in part (c) preserved?
+        </p>
+      </statement>
+    </task>
+     <task>
+      <statement>
+        <p>
+          Is the right angle at the origin in <xref ref="ex_squaredimage1_partc" text="type-hybrid"/> preserved?
               Is something wrong here?
-            </p>
-          </li>
-        </ol>
-      </p>
-      <p>
-        (<em>Hint</em>: Use polar coordinates.)
-      </p>
-    </statement>
+        </p>
+      </statement>
+     </task>
   </exercise>
   <exercise xml:id="ex_squaredimage2">
     <statement>
       <p>
-        As in the previous problem, let <m>f(z)=z^2</m>.
+        As in <xref ref="ex_squaredimage1"/>, let <m>f(z)=z^2</m>.
         Let <m>Q</m> be the square with vertices at <m>0</m>,
         <m>2</m>, <m>2+2i</m> and <m>2i</m>.
         Draw <m>f(Q)</m> and identify the types of image curves
         corresponding to the segments from <m>2</m> to <m>2+2i</m> and
         from <m>2+2i</m> to <m>2i</m>. 
         They are not parts of either straight lines or
-        circles. (<em>Hint</em>: You can write the vertical segment
+        circles.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        You can write the vertical segment
         parametrically as <m>z(t)=2+it</m>. 
         Eliminate the parameter in
         <m>u+iv=f(z(t))</m> to get a <m>(u,v)</m> equation for the
@@ -932,6 +1141,6 @@
         and <xref ref="ex_squaredimage2"/>
         are related to the cover picture of this book.
       </p>
-    </statement>
+    </hint>
   </exercise>
 </exercises>
