@@ -2680,7 +2680,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "4.5",
   "title": "Exercises",
-  "body": "   Find the length of the following paths. Draw pictures of each path and convince yourself that the lengths you computed are sensible.      ,             ,             ,             ,           The last path is a cycloid , the trace of a fixed point on a wheel as it makes one rotation. cycloid       Compute the lengths of the paths from Exercise :     the circle       the line segment from to       the top half of the circle       the rectangle with vertices        Integrate the function over the three paths given in .      Compute where is the unit circle, oriented counterclockwise. More generally, show that for any and , .      Integrate the following functions over the circle :                                                      Evaluate the integrals , , and along each of the following paths.  ( Hint : You can get the second two integrals after you calculate the first two by writing and as .)      is the line segment from to      , , ,             , , 0,        for some      , , 0,        Compute for the following functions and paths :      and , .       and is the semicircle from through to .       and is the line segment from to a point .       and is the line segment from to .       and is parametrized by , , and satisfies , , and .       and is some piecewise smooth path from to .       Prove and the fact that the length of does not change under reparametrization. ( Hint : Assume , , and are smooth. Start with the definition of , apply the chain rule to , and then use the change of variables formula, .)      Prove the following integration by parts statement: Let and be holomorphic in , and suppose is a piecewise smooth path from to . integration by parts Then .      Let .     Show that .      Show that if is a nonzero integer.      What is ?       Compute .           Show that for any closed piecewise smooth and any integer . (If is negative, assume that does not pass through the origin, since otherwise the integral is not defined.)       excluded for a good reason: gives a counterexample. Generalizing these, if is any integer, find a closed path so that .      Taking the previous two exercises one step further, fix and let be a simple, closed, positively oriented, piecewise smooth path such that is inside . Show that, for any integer ,       Prove that for any closed path .      Show that is an antiderivative of for . Is equal to ?      Compute the following integrals, where is the line segment from 4 to .                                                      Compute the following integrals. ( Hint : One of these integrals is considerably easier than the other.)      where .       where .       Show that gives a homotopy between the unit circle and the square with vertices .      Use give a homotopy that is an alternative to and does not need a piecewise definition.      Suppose and and are two counterclockwise circles so that is inside both of them. Give a homotopy that proves .      Prove that is an equivalence relation.      Suppose that is a closed path in a region , parametrized by , and is a continuous increasing function from onto . Show that is -homotopic to the reparametrized path . ( Hint : Make use of for .)       Prove that any closed path is -contractible.      Prove that any two closed paths are -homotopic.       This exercise gives an alternative proof of via Green's . Green's theorem Suppose is a region, is holomorphic in , is continuous, is a simple piecewise smooth closed curve, and . Explain that we may write and show that these integrals vanish, by using Green's together with , and then the Cauchy Riemann equations  .      Fix . Compute .  You should get different answers for and .    In one case is contractible in . In the other you can combine and .)     for ; for       Suppose is a polynomial in and is a closed piecewise smooth path in . Show that .      Show that by arguing that this integral does not change if we replace by for any , then use  to obtain an upper bound for that goes to 0 as .      Compute the real integral by writing the sine function in terms of the exponential function and making the substitution to turn the real integral into a complex integral.           Prove that for , .  (The function is the Poisson kernel  Named after Siméon Denis Poisson (1781 1840). and plays an important role in the world of harmonic functions, as we will see in .) Poisson kernel       Suppose and are holomorphic in the region and is a simple piecewise smooth -contractible path. Prove that if for all , then for all inside .      Show that , for simple paths, is also a corollary of .      Compute for .           Find for , and .    Compute a partial-fractions expansion of the integrand.     for ; for ; for       Use the Cauchy Integral Formula ( ) to evaluate the integral in when .      Compute the following integrals.                                                      Let and define the two paths oriented counter-clockwise and oriented clockwise. Show that even though where , the region of holomorphicity of .      This exercise gives an alternative proof of Cauchy's Integral Formula ( ) that does not depend on Cauchy's Theorem ( ). Suppose the region is convex ; this means that, whenever and are in , the line segment between them is also in . Suppose is holomorphic in , is continuous, and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and .     Consider the function given by . Show that .    Use Theorem (Leibniz's rule) and then find an antiderivative for .      Prove by evaluating and .      Why did we assume is convex?     "
+  "body": "   Find the length of the following paths. Draw pictures of each path and convince yourself that the lengths you computed are sensible.      ,             ,             ,             ,           The last path is a cycloid , the trace of a fixed point on a wheel as it makes one rotation. cycloid       Compute the lengths of the paths from Exercise :     the circle       the line segment from to       the top half of the circle       the rectangle with vertices        Integrate the function over the three paths given in .      Compute where is the unit circle, oriented counterclockwise. More generally, show that for any and , .      Integrate the following functions over the circle :                                                      Evaluate the integrals , , and along each of the following paths.  ( Hint : You can get the second two integrals after you calculate the first two by writing and as .)      is the line segment from to      , , ,             , , 0,        for some      , , 0,        Evaluate for each of the following paths:      is the line segment from to                         is the arc of the parabola from to             Compute for the following functions and paths :      and , .       and is the semicircle from through to .       and is the line segment from to a point .       and is the line segment from to .       and is parametrized by , , and satisfies , , and .       and is some piecewise smooth path from to .       Prove and the fact that the length of does not change under reparametrization. ( Hint : Assume , , and are smooth. Start with the definition of , apply the chain rule to , and then use the change of variables formula, .)      Prove the following integration by parts statement: Let and be holomorphic in , and suppose is a piecewise smooth path from to . integration by parts Then .      Let .     Show that .      Show that if is a nonzero integer.      What is ?       Compute .           Show that for any closed piecewise smooth and any integer . (If is negative, assume that does not pass through the origin, since otherwise the integral is not defined.)       excluded for a good reason: gives a counterexample. Generalizing these, if is any integer, find a closed path so that .      Taking the previous two exercises one step further, fix and let be a simple, closed, positively oriented, piecewise smooth path such that is inside . Show that, for any integer ,       Prove that for any closed path .      Show that is an antiderivative of for . Is equal to ?      Compute the following integrals, where is the line segment from 4 to .                                                      Compute the following integrals. ( Hint : One of these integrals is considerably easier than the other.)      where .       where .       Show that gives a homotopy between the unit circle and the square with vertices .      Use give a homotopy that is an alternative to and does not need a piecewise definition.      Suppose and and are two counterclockwise circles so that is inside both of them. Give a homotopy that proves .      Prove that is an equivalence relation.      Suppose that is a closed path in a region , parametrized by , and is a continuous increasing function from onto . Show that is -homotopic to the reparametrized path . ( Hint : Make use of for .)       Prove that any closed path is -contractible.      Prove that any two closed paths are -homotopic.       This exercise gives an alternative proof of via Green's . Green's theorem Suppose is a region, is holomorphic in , is continuous, is a simple piecewise smooth closed curve, and . Explain that we may write and show that these integrals vanish, by using Green's together with , and then the Cauchy Riemann equations  .      Fix . Compute .  You should get different answers for and .    In one case is contractible in . In the other you can combine and .)     for ; for       Suppose is a polynomial in and is a closed piecewise smooth path in . Show that .      Show that by arguing that this integral does not change if we replace by for any , then use  to obtain an upper bound for that goes to 0 as .      Compute the real integral by writing the sine function in terms of the exponential function and making the substitution to turn the real integral into a complex integral.           Prove that for , .  (The function is the Poisson kernel  Named after Siméon Denis Poisson (1781 1840). and plays an important role in the world of harmonic functions, as we will see in .) Poisson kernel       Suppose and are holomorphic in the region and is a simple piecewise smooth -contractible path. Prove that if for all , then for all inside .      Show that , for simple paths, is also a corollary of .      Compute for .           Find for , and .    Compute a partial-fractions expansion of the integrand.     for ; for ; for       Use the Cauchy Integral Formula ( ) to evaluate the integral in when .      Compute the following integrals.                                                      Let and define the two paths oriented counter-clockwise and oriented clockwise. Show that even though where , the region of holomorphicity of .      This exercise gives an alternative proof of Cauchy's Integral Formula ( ) that does not depend on Cauchy's Theorem ( ). Suppose the region is convex ; this means that, whenever and are in , the line segment between them is also in . Suppose is holomorphic in , is continuous, and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and .     Consider the function given by . Show that .    Use Theorem (Leibniz's rule) and then find an antiderivative for .      Prove by evaluating and .      Why did we assume is convex?     "
 },
 {
   "id": "ex_lenth",
@@ -2743,6 +2743,15 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.5.7",
   "title": "",
+  "body": "  Evaluate for each of the following paths:      is the line segment from to                         is the arc of the parabola from to          "
+},
+{
+  "id": "intchapter-7-8",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-8",
+  "type": "Exercise",
+  "number": "4.5.8",
+  "title": "",
   "body": "  Compute for the following functions and paths :      and , .       and is the semicircle from through to .       and is the line segment from to a point .       and is the line segment from to .       and is parametrized by , , and satisfies , , and .       and is some piecewise smooth path from to .    "
 },
 {
@@ -2750,18 +2759,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_IntegrationIsIndependentOfParametrization",
   "type": "Exercise",
-  "number": "4.5.8",
-  "title": "",
-  "body": "  Prove and the fact that the length of does not change under reparametrization. ( Hint : Assume , , and are smooth. Start with the definition of , apply the chain rule to , and then use the change of variables formula, .)   "
-},
-{
-  "id": "intchapter-7-9",
-  "level": "2",
-  "url": "intchapter-7.html#intchapter-7-9",
-  "type": "Exercise",
   "number": "4.5.9",
   "title": "",
-  "body": "  Prove the following integration by parts statement: Let and be holomorphic in , and suppose is a piecewise smooth path from to . integration by parts Then .   "
+  "body": "  Prove and the fact that the length of does not change under reparametrization. ( Hint : Assume , , and are smooth. Start with the definition of , apply the chain rule to , and then use the change of variables formula, .)   "
 },
 {
   "id": "intchapter-7-10",
@@ -2770,6 +2770,15 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.5.10",
   "title": "",
+  "body": "  Prove the following integration by parts statement: Let and be holomorphic in , and suppose is a piecewise smooth path from to . integration by parts Then .   "
+},
+{
+  "id": "intchapter-7-11",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-11",
+  "type": "Exercise",
+  "number": "4.5.11",
+  "title": "",
   "body": "  Let .     Show that .      Show that if is a nonzero integer.      What is ?    "
 },
 {
@@ -2777,7 +2786,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_412",
   "type": "Exercise",
-  "number": "4.5.11",
+  "number": "4.5.12",
   "title": "",
   "body": "  Compute .        "
 },
@@ -2786,16 +2795,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_4_3",
   "type": "Exercise",
-  "number": "4.5.12",
+  "number": "4.5.13",
   "title": "",
   "body": "  Show that for any closed piecewise smooth and any integer . (If is negative, assume that does not pass through the origin, since otherwise the integral is not defined.)   "
 },
 {
-  "id": "intchapter-7-13",
+  "id": "intchapter-7-14",
   "level": "2",
-  "url": "intchapter-7.html#intchapter-7-13",
+  "url": "intchapter-7.html#intchapter-7-14",
   "type": "Exercise",
-  "number": "4.5.13",
+  "number": "4.5.14",
   "title": "",
   "body": "   excluded for a good reason: gives a counterexample. Generalizing these, if is any integer, find a closed path so that .   "
 },
@@ -2804,18 +2813,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_laurentoutlook",
   "type": "Exercise",
-  "number": "4.5.14",
-  "title": "",
-  "body": "  Taking the previous two exercises one step further, fix and let be a simple, closed, positively oriented, piecewise smooth path such that is inside . Show that, for any integer ,    "
-},
-{
-  "id": "intchapter-7-15",
-  "level": "2",
-  "url": "intchapter-7.html#intchapter-7-15",
-  "type": "Exercise",
   "number": "4.5.15",
   "title": "",
-  "body": "  Prove that for any closed path .   "
+  "body": "  Taking the previous two exercises one step further, fix and let be a simple, closed, positively oriented, piecewise smooth path such that is inside . Show that, for any integer ,    "
 },
 {
   "id": "intchapter-7-16",
@@ -2824,6 +2824,15 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.5.16",
   "title": "",
+  "body": "  Prove that for any closed path .   "
+},
+{
+  "id": "intchapter-7-17",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-17",
+  "type": "Exercise",
+  "number": "4.5.17",
+  "title": "",
   "body": "  Show that is an antiderivative of for . Is equal to ?   "
 },
 {
@@ -2831,16 +2840,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_funearlyint",
   "type": "Exercise",
-  "number": "4.5.17",
+  "number": "4.5.18",
   "title": "",
   "body": "  Compute the following integrals, where is the line segment from 4 to .                                                   "
 },
 {
-  "id": "intchapter-7-18",
+  "id": "intchapter-7-19",
   "level": "2",
-  "url": "intchapter-7.html#intchapter-7-18",
+  "url": "intchapter-7.html#intchapter-7-19",
   "type": "Exercise",
-  "number": "4.5.18",
+  "number": "4.5.19",
   "title": "",
   "body": "  Compute the following integrals. ( Hint : One of these integrals is considerably easier than the other.)      where .       where .    "
 },
@@ -2849,16 +2858,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_checkhomotopyexample",
   "type": "Exercise",
-  "number": "4.5.19",
+  "number": "4.5.20",
   "title": "",
   "body": "  Show that gives a homotopy between the unit circle and the square with vertices .   "
 },
 {
-  "id": "intchapter-7-20",
+  "id": "intchapter-7-21",
   "level": "2",
-  "url": "intchapter-7.html#intchapter-7-20",
+  "url": "intchapter-7.html#intchapter-7-21",
   "type": "Exercise",
-  "number": "4.5.20",
+  "number": "4.5.21",
   "title": "",
   "body": "  Use give a homotopy that is an alternative to and does not need a piecewise definition.   "
 },
@@ -2867,7 +2876,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_circlehomotopy",
   "type": "Exercise",
-  "number": "4.5.21",
+  "number": "4.5.22",
   "title": "",
   "body": "  Suppose and and are two counterclockwise circles so that is inside both of them. Give a homotopy that proves .   "
 },
@@ -2876,7 +2885,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_homotopyEquivalence",
   "type": "Exercise",
-  "number": "4.5.22",
+  "number": "4.5.23",
   "title": "",
   "body": "  Prove that is an equivalence relation.   "
 },
@@ -2885,7 +2894,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_homotopyReparametrization",
   "type": "Exercise",
-  "number": "4.5.23",
+  "number": "4.5.24",
   "title": "",
   "body": "  Suppose that is a closed path in a region , parametrized by , and is a continuous increasing function from onto . Show that is -homotopic to the reparametrized path . ( Hint : Make use of for .)   "
 },
@@ -2894,7 +2903,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#C-contractible",
   "type": "Exercise",
-  "number": "4.5.24",
+  "number": "4.5.25",
   "title": "",
   "body": "   Prove that any closed path is -contractible.      Prove that any two closed paths are -homotopic.    "
 },
@@ -2903,7 +2912,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_cauchyfromgreen",
   "type": "Exercise",
-  "number": "4.5.25",
+  "number": "4.5.26",
   "title": "",
   "body": "  This exercise gives an alternative proof of via Green's . Green's theorem Suppose is a region, is holomorphic in , is continuous, is a simple piecewise smooth closed curve, and . Explain that we may write and show that these integrals vanish, by using Green's together with , and then the Cauchy Riemann equations  .   "
 },
@@ -2912,16 +2921,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_circleint2",
   "type": "Exercise",
-  "number": "4.5.26",
+  "number": "4.5.27",
   "title": "",
   "body": "  Fix . Compute .  You should get different answers for and .    In one case is contractible in . In the other you can combine and .)     for ; for    "
 },
 {
-  "id": "intchapter-7-27",
+  "id": "intchapter-7-28",
   "level": "2",
-  "url": "intchapter-7.html#intchapter-7-27",
+  "url": "intchapter-7.html#intchapter-7-28",
   "type": "Exercise",
-  "number": "4.5.27",
+  "number": "4.5.28",
   "title": "",
   "body": "  Suppose is a polynomial in and is a closed piecewise smooth path in . Show that .   "
 },
@@ -2930,7 +2939,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_pathtoinfty",
   "type": "Exercise",
-  "number": "4.5.28",
+  "number": "4.5.29",
   "title": "",
   "body": "  Show that by arguing that this integral does not change if we replace by for any , then use  to obtain an upper bound for that goes to 0 as .   "
 },
@@ -2939,7 +2948,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_4_5",
   "type": "Exercise",
-  "number": "4.5.29",
+  "number": "4.5.30",
   "title": "",
   "body": "  Compute the real integral by writing the sine function in terms of the exponential function and making the substitution to turn the real integral into a complex integral.        "
 },
@@ -2948,18 +2957,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_poissonkernel",
   "type": "Exercise",
-  "number": "4.5.30",
-  "title": "",
-  "body": "  Prove that for , .  (The function is the Poisson kernel  Named after Siméon Denis Poisson (1781 1840). and plays an important role in the world of harmonic functions, as we will see in .) Poisson kernel    "
-},
-{
-  "id": "intchapter-7-31",
-  "level": "2",
-  "url": "intchapter-7.html#intchapter-7-31",
-  "type": "Exercise",
   "number": "4.5.31",
   "title": "",
-  "body": "  Suppose and are holomorphic in the region and is a simple piecewise smooth -contractible path. Prove that if for all , then for all inside .   "
+  "body": "  Prove that for , .  (The function is the Poisson kernel  Named after Siméon Denis Poisson (1781 1840). and plays an important role in the world of harmonic functions, as we will see in .) Poisson kernel    "
 },
 {
   "id": "intchapter-7-32",
@@ -2968,6 +2968,15 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.5.32",
   "title": "",
+  "body": "  Suppose and are holomorphic in the region and is a simple piecewise smooth -contractible path. Prove that if for all , then for all inside .   "
+},
+{
+  "id": "intchapter-7-33",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-33",
+  "type": "Exercise",
+  "number": "4.5.33",
+  "title": "",
   "body": "  Show that , for simple paths, is also a corollary of .   "
 },
 {
@@ -2975,7 +2984,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_4_4",
   "type": "Exercise",
-  "number": "4.5.33",
+  "number": "4.5.34",
   "title": "",
   "body": "  Compute for .        "
 },
@@ -2984,16 +2993,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_partfracint",
   "type": "Exercise",
-  "number": "4.5.34",
+  "number": "4.5.35",
   "title": "",
   "body": "  Find for , and .    Compute a partial-fractions expansion of the integrand.     for ; for ; for    "
 },
 {
-  "id": "intchapter-7-35",
+  "id": "intchapter-7-36",
   "level": "2",
-  "url": "intchapter-7.html#intchapter-7-35",
+  "url": "intchapter-7.html#intchapter-7-36",
   "type": "Exercise",
-  "number": "4.5.35",
+  "number": "4.5.36",
   "title": "",
   "body": "  Use the Cauchy Integral Formula ( ) to evaluate the integral in when .   "
 },
@@ -3002,18 +3011,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "intchapter-7.html#ex_funints",
   "type": "Exercise",
-  "number": "4.5.36",
-  "title": "",
-  "body": "  Compute the following integrals.                                                   "
-},
-{
-  "id": "intchapter-7-37",
-  "level": "2",
-  "url": "intchapter-7.html#intchapter-7-37",
-  "type": "Exercise",
   "number": "4.5.37",
   "title": "",
-  "body": "  Let and define the two paths oriented counter-clockwise and oriented clockwise. Show that even though where , the region of holomorphicity of .   "
+  "body": "  Compute the following integrals.                                                   "
 },
 {
   "id": "intchapter-7-38",
@@ -3021,6 +3021,15 @@ var ptx_lunr_docs = [
   "url": "intchapter-7.html#intchapter-7-38",
   "type": "Exercise",
   "number": "4.5.38",
+  "title": "",
+  "body": "  Let and define the two paths oriented counter-clockwise and oriented clockwise. Show that even though where , the region of holomorphicity of .   "
+},
+{
+  "id": "intchapter-7-39",
+  "level": "2",
+  "url": "intchapter-7.html#intchapter-7-39",
+  "type": "Exercise",
+  "number": "4.5.39",
   "title": "",
   "body": "  This exercise gives an alternative proof of Cauchy's Integral Formula ( ) that does not depend on Cauchy's Theorem ( ). Suppose the region is convex ; this means that, whenever and are in , the line segment between them is also in . Suppose is holomorphic in , is continuous, and is a positively oriented, simple, closed, piecewise smooth path, such that is inside and .     Consider the function given by . Show that .    Use Theorem (Leibniz's rule) and then find an antiderivative for .      Prove by evaluating and .      Why did we assume is convex?    "
 },
