@@ -2,72 +2,106 @@
 
 <exercises>
   <exercise xml:id="ex_lenth">
-    <statement>
+    <introduction>
       <p>
-        Find the length of the following paths:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\gamma(t) = 3t+i</m>, <m>-1 \leq t \leq 1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma(t) = i + e^{i \pi t}</m>, <m>0 \leq t \leq 1</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma(t) = i\sin(t)</m>, <m>-\pi \leq t \leq \pi</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma(t) = t - i \, e^{ -it }</m>,
-              <m>0 \leq t \leq 2 \pi</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-      <p>
+        Find the length of the following paths. 
         Draw pictures of each path and convince yourself that the
         lengths you computed are sensible. 
-        (The last path is a <em>cycloid</em>,
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\gamma(t) = 3t+i</m>, <m>-1 \leq t \leq 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\gamma(t) = i + e^{i \pi t}</m>, <m>0 \leq t \leq 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\pi</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\gamma(t) = i\sin(t)</m>, <m>-\pi \leq t \leq \pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\gamma(t) = t - i \, e^{ -it }</m>,
+              <m>0 \leq t \leq 2 \pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sqrt{17} + \frac 1 4 \sinh^{ -1 } (4)</m>
+        </p>
+      </answer>
+    </task>
+    <conclusion>
+      <p>
+        The last path is a <em>cycloid</em>,
         the trace of a fixed point on a wheel as it makes one
-        rotation.)
+        rotation.
         <idx><h>cycloid</h></idx>
       </p>
-    </statement>
+    </conclusion>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Compute the lengths of the paths from <xref
         ref="ex_parametrizations">Exercise</xref>: 
-        <ol marker="a) ">
-          <li>
-            <p>
-              the circle <m>C[1+i, 1]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the line segment from <m>-1-i</m> to <m>2i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the top half of the circle <m>C[0, 34]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              the rectangle with vertices <m>\pm 1 \pm 2i</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          the circle <m>C[1+i, 1]</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the line segment from <m>-1-i</m> to <m>2i</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the top half of the circle <m>C[0, 34]</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          the rectangle with vertices <m>\pm 1 \pm 2i</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -92,138 +126,169 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_4_2">
-    <statement>
+    <introduction>
       <p>
         Integrate the following functions over the circle <m>C[0,2]</m>:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>f(z) = z + \overline z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = z^2 - 2z + 3</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = \frac 1 { z^4 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = xy</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = z + \overline z</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>8 \pi i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = z^2 - 2z + 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = \frac 1 { z^4 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = xy</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise xml:id="ex_varint">
-    <statement>
+    <introduction>
       <p>
         Evaluate the integrals <m>\int_\gamma x\,\diff{z}</m>,
         <m>\int_\gamma y\,\diff{z}</m>,
         <m>\int_\gamma z\,\diff{z}</m> and
         <m>\int_\gamma \conj z\,\diff{z}</m> along each of the following paths.
-        (<em>Hint</em>: You can get the second two integrals after you
+      </p>
+      <p>
+         (<em>Hint</em>: You can get the second two integrals after you
         calculate the first two by writing <m>z</m> and <m>\conj z</m>
         as <m>x\pm iy</m>.) 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\gamma</m> is the line segment from <m>0</m> to <m>1-i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma = C[0,1]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma = C[a,r]</m> for some <m>a \in \C</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
-  </exercise>
-  <exercise xml:id="ex_expex">
-    <statement>
-      <p>
-        Evaluate <m>\int_\gamma \exp(3z)\,\diff{z}</m> for each of the
-        following paths: 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\gamma</m> is the line segment from <m>1</m> to <m>i</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma = C[0,3]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\gamma</m> is the arc of the parabola <m>y=x^2</m>
-              from <m>x=0</m> to <m>x=1</m> 
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\gamma</m> is the line segment from <m>0</m> to <m>1-i</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac 1 2 (1-i)</m>, <m>\frac 1 2 (i-1)</m>, <m>-i</m>, <m>1</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\gamma = C[0,1]</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\pi i</m>, <m>-\pi</m>, 0, <m>2 \pi i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\gamma = C[a,r]</m> for some <m>a \in \C</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\pi i r^2</m>, <m>-\pi r^2</m>, 0, <m>2 \pi i r^2</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Compute <m>\int_\gg f</m> for the following functions <m>f</m>
         and paths<nbsp/><m>\gg</m>: 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>f(z) = z^2</m> and <m>\gamma(t)=t+it^2</m>, <m>0\le
-              t\le1</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = z</m> and <m>\gamma</m> is the semicircle from
-              <m>1</m> through <m>i</m> to <m>-1</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = \exp(z)</m> and <m>\gamma</m> is the line
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = z^2</m> and <m>\gamma(t)=t+it^2</m>, <m>0\le
+              t\le1</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = z</m> and <m>\gamma</m> is the semicircle from
+              <m>1</m> through <m>i</m> to <m>-1</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = \exp(z)</m> and <m>\gamma</m> is the line
               segment from <m>0</m> to a point <m>z_0</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = |z|^2</m> and <m>\gamma</m> is the line
-              segment from <m>2</m> to <m>3+i</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = z + \frac 1 z</m> and <m>\gamma</m> is
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = |z|^2</m> and <m>\gamma</m> is the line
+              segment from <m>2</m> to <m>3+i</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = z + \frac 1 z</m> and <m>\gamma</m> is
               parametrized by <m>\gamma(t)</m>, 
               <m>0\leq t\leq 1</m>, and satisfies <m>\Im \gamma(t) > 0</m>,
               <m>\gamma(0) = -4+i</m>, and <m>\gamma(1) = 6+2i</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z) = \sin(z)</m> and <m>\gamma</m> is some
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z) = \sin(z)</m> and <m>\gamma</m> is some
               piecewise smooth path from <m>i</m>
-              to<nbsp/><m>\pi</m>. 
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+              to<nbsp/><m>\pi</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_IntegrationIsIndependentOfParametrization">
     <statement>
@@ -258,28 +323,32 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Let <m>I(k) := \frac{1}{2\pi}\int_0^{2\pi} e^{ikt}\, \diff{t}</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that <m>I(0) = 1</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>I(k) = 0</m> if <m>k</m> is a nonzero integer.
-            </p>
-          </li>
-          <li>
-            <p>
-              What is <m>I(\frac 1 2)</m>?
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>I(0) = 1</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that <m>I(k) = 0</m> if <m>k</m> is a nonzero integer.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What is <m>I(\frac 1 2)</m>?
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_412">
     <statement>
@@ -287,6 +356,11 @@
         Compute <m>\int_{ C[0,2] } z^{\frac 1 2 } \,\diff{z} </m>.
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>- \frac{ 8 \sqrt 2 }{ 3 } \, i</m>
+      </p>
+    </answer>
   </exercise>
   <exercise xml:id="ex_4_3">
     <statement>
@@ -346,59 +420,87 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_funearlyint">
-    <statement>
+    <introduction>
       <p>
         Compute the following integrals,
         where <m>\gg</m> is the line segment from 4 to<nbsp/><m>4i</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\ds \int_\gg \frac{ z+1 }{ z } \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_\gg \frac{ \diff{z} }{ z^2 + z }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_\gg z^{ - \frac 1 2 } \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_\gg \sin^2(z) \, \diff{z}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \int_\gg \frac{ z+1 }{ z } \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-4 + i (4 + \frac \pi 2)</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \int_\gg \frac{ \diff{z} }{ z^2 + z }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\ln(5) - \frac 1 2 \ln(17) + i ( \frac \pi 2 - Arg(4i+1) )</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \int_\gg z^{ - \frac 1 2 } \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2 \sqrt 2 - 1 + 2 \sqrt 2 \, i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \int_\gg \sin^2(z) \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac 1 4 \sin(8) - 2 + i \left( 2 - \frac 1 4 \sinh(8) \right)</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Compute the following integrals.
         (<em>Hint</em>: One of these integrals is considerably easier
         than the other.) 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\displaystyle \int_{\gg_1} z^i \, \diff{z}</m> where
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \int_{\gg_1} z^i \, \diff{z}</m> where
               <m>\gg_1 (t) = e^{it} , \ - \frac{\pi}{2} \leq t \leq
-              \frac{\pi }{2}</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \int_{\gg_2} z^i \, \diff{z}</m> where
+              \frac{\pi }{2}</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \int_{\gg_2} z^i \, \diff{z}</m> where
               <m>\gg_2 (t) = e^{it} , \ \frac{\pi}{2} \leq t \leq
               \frac{3\pi} {2}</m>. 
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_checkhomotopyexample">
     <statement>
@@ -452,20 +554,20 @@
     </statement>
   </exercise>
   <exercise xml:id="C-contractible">
-    <statement>
-      <ol marker="a) ">
-        <li>
-          <p>
-            Prove that any closed path is <m>\C</m>-contractible.
-          </p>
-        </li>
-        <li>
-          <p>
-            Prove that any two closed paths are <m>\C</m>-homotopic.
-          </p>
-        </li>
-      </ol>
-    </statement>
+    <task>
+      <statement>
+        <p>
+          Prove that any closed path is <m>\C</m>-contractible.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Prove that any two closed paths are <m>\C</m>-homotopic.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_cauchyfromgreen">
     <statement>
@@ -504,12 +606,21 @@
       <p>
         You should get different answers for <m>r\lt \abs a</m> and
         <m>r>\abs a</m>. 
-        (<em>Hint</em>: In one case
+      </p>
+    </statement>
+    <hint>
+      <p>
+        In one case
         <m>\gamma_r</m> is contractible in <m>\C\setminus\listset a</m>.
         In the other you can combine <xref ref="ex_circleint"/>
         and <xref ref="ex_circlehomotopy"/>.)
       </p>
-    </statement>
+    </hint>
+    <answer>
+      <p>
+        <m>0</m> for <m>r\lt \abs a</m>; <m>2\pi i</m> for <m>r \gt \abs a</m>
+      </p>
+    </answer>
   </exercise>
   <exercise>
     <statement>
@@ -548,6 +659,11 @@
         integral. 
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>\frac{2 \pi }{ \sqrt 3 }</m>
+      </p>
+    </answer>
   </exercise>
   <exercise xml:id="ex_poissonkernel">
     <statement>
@@ -600,6 +716,11 @@
         for <m>r \ne 1, \, 3</m>.
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
   </exercise>
   <exercise xml:id="ex_partfracint">
     <statement>
@@ -608,11 +729,20 @@
         <me>
           \int_{ C[0,r] }\frac{\diff{z}}{z^2-2z-8}
         </me>
-        for <m>r=1</m>, <m>r=3</m> and <m>r=5</m>.
-        (<em>Hint</em>: Compute a partial-fractions expansion of the
-        integrand.) 
+        for <m>r=1</m>, <m>r=3</m> and <m>r=5</m>. 
       </p>
     </statement>
+    <hint>
+      <p>
+        Compute a partial-fractions expansion of the
+        integrand.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        <m>0</m> for <m>r=1</m>; <m>- \frac{\pi i} 3</m> for <m>r = 3</m>; <m>0</m> for <m>r=5</m>
+      </p>
+    </answer>
   </exercise>
   <exercise>
     <statement>
@@ -625,33 +755,59 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_funints">
-    <statement>
+    <introduction>
       <p>
         Compute the following integrals.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\ds \int_{ C[-1,2] } \frac{z^2}{4-z^2} \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_{ C[0,1] }\frac{\sin z}{z} \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_{ C[0,2] } \frac{\exp(z)}{z(z-3)} \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \int_{ C[0,4] } \frac{\exp(z)}{z(z-3)} \, \diff{z}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \int_{ C[-1,2] } \frac{z^2}{4-z^2} \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2 \pi i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \int_{ C[0,1] }\frac{\sin z}{z} \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \int_{ C[0,2] } \frac{\exp(z)}{z(z-3)} \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>- \frac{ 2 \pi i }{ 3 }</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \int_{ C[0,4] } \frac{\exp(z)}{z(z-3)} \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{ 2 \pi i }{ 3 } ( e^3 - 1 )</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -662,12 +818,12 @@
         Show that <m>\int_\gg f \= \int_\sigma f</m> even though
         <m>\gg \not\sim_G \sigma</m> where <m>G = \C \setminus \{ \pm
         1 \}</m>, 
-        the region of holomorphicity of<nbsp/><m>f</m>.
+        the region of holomorphicity of <m>f</m>.
       </p>
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         This exercise gives an alternative proof of Cauchy's Integral Formula
         (<xref ref="cauchyformula"/>)
@@ -680,34 +836,43 @@
         and <m>\gg</m> is a positively oriented,
         simple, closed, piecewise smooth path,
         such that <m>w</m> is inside <m>\gg</m> and <m>\gg \sim_G 0</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Consider the function <m>g: [0,1] \to \C</m> given by
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Consider the function <m>g: [0,1] \to \C</m> given by
               <me>
                 g(t) \ := \ \int_\gg \frac{ f \left( w + t(z-w)
                 \right) }{ z-w } \, \diff{z} \, 
               </me>.
-              Show that <m>g'=0</m>. (<em>Hint</em>: Use
+              Show that <m>g'=0</m>. 
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Use
               <xref ref="leibnizrule">Theorem</xref> 
               (Leibniz's rule) and then find an antiderivative for
               <m>\frac{ \partial f }{ \partial t } \left( w + t(z-w)
-              \right)</m>.) 
-            </p>
-          </li>
-          <li>
-            <p>
-              Prove <xref ref="cauchyformula"/>
+              \right)</m>.
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Prove <xref ref="cauchyformula"/>
               by evaluating <m>g(0)</m> and <m>g(1)</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Why did we assume <m>G</m> is convex?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Why did we assume <m>G</m> is convex?
+        </p>
+      </statement>
+    </task>
   </exercise>
 </exercises>
