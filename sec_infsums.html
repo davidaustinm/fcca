@@ -106,14 +106,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.0';
+eBookConfig.runestone_version = '7.8.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.242116c5bc6b6581.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -335,46 +335,27 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">10.1</span><span class="space"> </span><span class="title">Infinite Sums</span>
 </h2>
 <div class="para" id="sec_infsums-2">In this exercise, we evaluate the sums <span class="process-math">\(\sum_{k \geq 1} \frac 1 {k^2}\)</span> and <span class="process-math">\(\sum_{k \geq 1} \frac{
-(-1)^k }{k^2}\text{.}\)</span> We hope the idea of how to compute such sums in general will become clear.<div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-2" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
+(-1)^k }{k^2}\text{.}\)</span> We hope the idea of how to compute such sums in general will become clear.</div>
 <ol class="decimal ol-marker-3" id="sec_infsums-3">
-<li id="sec_infsums-3-1">
-<div class="para" id="sec_infsums-3-1-1">Consider the function <span class="process-math">\(f(z) = \frac{ \pi \cot (\pi z) }{ z^2
-}\text{.}\)</span> Compute the residues at all the singularities of <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 1"><a href="#sec_infsums-3-1" title="Copy permalink for Item 1">🔗</a></div>
-</li>
+<li id="sec_infsums-3-1"><div class="para" id="sec_infsums-3-1-1">Consider the function <span class="process-math">\(f(z) = \frac{ \pi \cot (\pi z) }{ z^2
+}\text{.}\)</span> Compute the residues at all the singularities of <span class="process-math">\(f\text{.}\)</span>
+</div></li>
 <li id="sec_infsums-3-2">
 <div class="para" id="sec_infsums-3-2-1">Let <span class="process-math">\(N\)</span> be a positive integer and <span class="process-math">\(\gamma_N\)</span> be the rectangular path from <span class="process-math">\(N+\frac 1 2
--iN\)</span> to <span class="process-math">\(N+\frac 1 2 +iN\)</span> to <span class="process-math">\(-N-\frac 1 2 +iN\)</span> to <span class="process-math">\(-N-\frac 1 2 -iN\)</span> back to <span class="process-math">\(N+\frac 1 2 -iN\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+-iN\)</span> to <span class="process-math">\(N+\frac 1 2 +iN\)</span> to <span class="process-math">\(-N-\frac 1 2 +iN\)</span> to <span class="process-math">\(-N-\frac 1 2 -iN\)</span> back to <span class="process-math">\(N+\frac 1 2 -iN\text{.}\)</span>
 </div>
 <ol class="lower-alpha lower-alpha-level-1" id="sec_infsums-3-2-2">
-<li id="sec_infsums-3-2-2-1">
-<div class="para" id="sec_infsums-3-2-2-1-1">Show that <span class="process-math">\(| \cot (\pi z) | \lt 2\)</span> for <span class="process-math">\(z \in \gamma_N\text{.}\)</span> (<em class="emphasis">Hint</em>: Use <a href="chapter3-exercises.html#ex_abs_cot_" class="xref" data-knowl="./knowl/xref/ex_abs_cot_.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 3.6.36">Exercise 3.6.36</a>.)<div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-3-2-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 2.a"><a href="#sec_infsums-3-2-2-1" title="Copy permalink for Item 2.a">🔗</a></div>
-</li>
-<li id="sec_infsums-3-2-2-2">
-<div class="para" id="sec_infsums-3-2-2-2-1">Show that <span class="process-math">\(\lim_{N \to \infty} \int_{\gamma_N} f = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-3-2-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 2.b"><a href="#sec_infsums-3-2-2-2" title="Copy permalink for Item 2.b">🔗</a></div>
-</li>
+<li id="sec_infsums-3-2-2-1"><div class="para" id="sec_infsums-3-2-2-1-1">Show that <span class="process-math">\(| \cot (\pi z) | \lt 2\)</span> for <span class="process-math">\(z \in \gamma_N\text{.}\)</span> (<em class="emphasis">Hint</em>: Use <a href="chapter3-exercises.html#ex_abs_cot_" class="xref" data-knowl="./knowl/xref/ex_abs_cot_.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 3.6.36">Exercise 3.6.36</a>.)</div></li>
+<li id="sec_infsums-3-2-2-2"><div class="para" id="sec_infsums-3-2-2-2-1">Show that <span class="process-math">\(\lim_{N \to \infty} \int_{\gamma_N} f = 0\text{.}\)</span>
+</div></li>
 </ol>
-<div class="autopermalink" data-description="Item 2"><a href="#sec_infsums-3-2" title="Copy permalink for Item 2">🔗</a></div>
 </li>
-<li id="sec_infsums-3-3">
-<div class="para" id="sec_infsums-3-3-1">Use the Residue <a href="sec_residues.html#residuethm" class="xref" data-knowl="./knowl/xref/residuethm.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.2: Residue Theorem">Theorem 9.2.2</a> to arrive at an identity for <span class="process-math">\(\sum_{k \in \Z \setminus
-\{0\}} \frac 1 {k^2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-3-3-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 3"><a href="#sec_infsums-3-3" title="Copy permalink for Item 3">🔗</a></div>
-</li>
-<li id="sec_infsums-3-4">
-<div class="para" id="sec_infsums-3-4-1">Evaluate <span class="process-math">\(\sum_{k \geq 1} \frac 1 {k^2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-3-4-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 4"><a href="#sec_infsums-3-4" title="Copy permalink for Item 4">🔗</a></div>
-</li>
-<li id="sec_infsums-3-5">
-<div class="para logical" id="sec_infsums-3-5-1">
+<li id="sec_infsums-3-3"><div class="para" id="sec_infsums-3-3-1">Use the Residue <a href="sec_residues.html#residuethm" class="xref" data-knowl="./knowl/xref/residuethm.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.2: Residue Theorem">Theorem 9.2.2</a> to arrive at an identity for <span class="process-math">\(\sum_{k \in \Z \setminus
+\{0\}} \frac 1 {k^2}\text{.}\)</span>
+</div></li>
+<li id="sec_infsums-3-4"><div class="para" id="sec_infsums-3-4-1">Evaluate <span class="process-math">\(\sum_{k \geq 1} \frac 1 {k^2}\text{.}\)</span>
+</div></li>
+<li id="sec_infsums-3-5"><div class="para logical" id="sec_infsums-3-5-1">
 <div class="para">Repeat the exercise with the function <span class="process-math">\(f(z) = \frac{ \pi }{ z^2 \sin (\pi z) }\)</span> to arrive at an evaluation of</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -383,21 +364,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">(<em class="emphasis">Hint</em>: To bound this function, you may use the fact that <span class="process-math">\(\frac 1 {\sin^2(z)} = 1 +
 \cot^2(z)\text{.}\)</span>)</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-3-5-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 5"><a href="#sec_infsums-3-5" title="Copy permalink for Item 5">🔗</a></div>
-</li>
-<li id="sec_infsums-3-6">
-<div class="para" id="sec_infsums-3-6-1">Evaluate <span class="process-math">\(\sum_{k \geq 1} \frac 1 {k^4}\)</span> and <span class="process-math">\(\sum_{k
-\geq 1} \frac{ (-1)^k }{k^4}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-3-6-1" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 6"><a href="#sec_infsums-3-6" title="Copy permalink for Item 6">🔗</a></div>
-</li>
+</div></li>
+<li id="sec_infsums-3-6"><div class="para" id="sec_infsums-3-6-1">Evaluate <span class="process-math">\(\sum_{k \geq 1} \frac 1 {k^4}\)</span> and <span class="process-math">\(\sum_{k
+\geq 1} \frac{ (-1)^k }{k^4}\text{.}\)</span>
+</div></li>
 </ol>
 <div class="para" id="sec_infsums-4">We remark that, in the language of <a href="sec_series.html#exam_riemannzet" class="xref" data-knowl="./knowl/xref/exam_riemannzet.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.2.17">Example 7.2.17</a>, you have computed the evaluations <span class="process-math">\(\zeta(2)\)</span> and <span class="process-math">\(\zeta(4)\)</span> of the Riemann zeta function. The function <span class="process-math">\(\zeta^*(z) := \sum_{k \geq 1} \frac{ (-1)^k
-}{k^z}\)</span> is called the <em class="emphasis">alternating zeta function</em>. <div class="autopermalink" data-description="Paragraph"><a href="#sec_infsums-4" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Section 10.1: Infinite Sums"><a href="#sec_infsums" title="Copy permalink for Section 10.1: Infinite Sums">🔗</a></div></section></div>
+}{k^z}\)</span> is called the <em class="emphasis">alternating zeta function</em>. </div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch_discreteresidues.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_binomialcoeff.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
