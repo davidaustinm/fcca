@@ -2,35 +2,61 @@
 
 <exercises>
   <exercise xml:id="ex_5_0">
-    <statement>
+    <introduction>
       <p>
         Compute the following integrals,
         where <m>\Box</m> is the boundary of the square with vertices at
         <m>\pm4\pm4i</m>, positively oriented:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\int_\Box\frac{\exp(z^2)}{z^3}<nbsp/>\diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\int_\Box\frac{\exp(3z)}{(z-\pi i)^2}<nbsp/>\diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\int_\Box\frac{\sin(2z)}{(z-\pi)^2}<nbsp/>\diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\int_\Box\frac{\exp(z)\cos(z)}{(z-\pi)^3}<nbsp/>\diff{z}</m> 
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\int_\Box\frac{\exp(z^2)}{z^3}<nbsp/>\diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2 \pi i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\int_\Box\frac{\exp(3z)}{(z-\pi i)^2}<nbsp/>\diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-6 \pi i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\int_\Box\frac{\sin(2z)}{(z-\pi)^2}<nbsp/>\diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>4 \pi i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\int_\Box\frac{\exp(z)\cos(z)}{(z-\pi)^3}<nbsp/>\diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
   </exercise>
   <exercise xml:id="cauchyformula2ex">
     <statement>
@@ -38,8 +64,10 @@
         Prove the formula for <m>f''</m> in <xref
         ref="cauchyformula2">Theorem</xref>. 
       </p>
+    </statement>
+    <hint>
       <p>
-        <em>Hint:</em> Modify the proof of the integral formula for
+        Modify the proof of the integral formula for
         <m>f'(w)</m> as follows: 
         <ol marker="a) ">
           <li>
@@ -69,61 +97,107 @@
           </li>
         </ol>
       </p>
-    </statement>
+    </hint>
   </exercise>
   <exercise xml:id="ex_5_1">
-    <statement>
+    <introduction>
       <p>
         Integrate the following functions over the circle <m>C[0,3]</m>:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\Log ( z - 4i )</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{ 1 }{ z - \frac 1 2 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{ 1 }{ z^2 - 4 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{ \exp z }{ z^3 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \left( \frac{ \cos z }{ z } \right)^2</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>i^{ z-3 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{ \sin z }{ (z^2 + \frac 1 2)^2 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{ 1 }{ (z+4) ( z^2 + 1 ) }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{\exp(2z)}{(z-1)^2(z-2)}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\Log ( z - 4i )</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{ 1 }{ z - \frac 1 2 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2 \pi i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{ 1 }{ z^2 - 4 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{ \exp z }{ z^3 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\pi i</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \left( \frac{ \cos z }{ z } \right)^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>i^{ z-3 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{ \sin z }{ (z^2 + \frac 1 2)^2 }</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{ 1 }{ (z+4) ( z^2 + 1 ) }</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{\exp(2z)}{(z-1)^2(z-2)}</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_54">
     <statement>
@@ -133,6 +207,11 @@
         <m>|w| \ne 2</m>. 
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>2 \pi i \exp(w)</m>
+      </p>
+    </answer>
   </exercise>
   <exercise xml:id="ex_functiondefinedthroughmorera">
     <statement>
@@ -282,7 +361,7 @@
         Suppose <m>f: D[0,1] \to D[0,1]</m> is holomorphic.
         Prove that for <m>|z| \lt  1</m>,
         <me>
-          \left| f'(z) \right| \le \frac{ 1 }{ 1 - |z| } \,
+          \left| f'(z) \right| \le \frac{ 1 }{ (1 - |z|)^2 } \,
         </me>.
       </p>
     </statement>
@@ -294,18 +373,25 @@
         + 1 } </m>. 
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>\frac{ \pi }{ \sqrt 2 }</m>
+      </p>
+    </answer>
   </exercise>
   <exercise xml:id="ex_cos_x___1_x_2_">
-    <statement>
+    <introduction>
       <p>
         In this problem <m>f(z) = \frac{ \exp(iz) }{z^2+1}</m> and
         <m>R>1</m>. 
         Modify our computations in
         <xref ref="ex_eximpropint"/> as follows.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that <m>\int_{\sigma_R}f = \frac \pi e</m> where
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\int_{\sigma_R}f = \frac \pi e</m> where
               <m>\sigma_R</m> is again 
               (as in <xref ref="fig_eximpropint"/>)
               the counterclockwise semicircle formed by the segment
@@ -313,36 +399,40 @@
               followed by the circular arc <m>\gg_R</m> of radius
               <m>R</m> in the upper half plane from <m>R</m> to
               <m>-R</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>\abs{\exp(iz)}\le1</m> for <m>z</m> in the
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\abs{\exp(iz)}\le1</m> for <m>z</m> in the
               upper half plane, 
               and conclude that <m>\abs{f(z)}\le \frac 2
               {\abs{z}^2}</m> for sufficiently
-              large<nbsp/><m>|z|</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>\lim_{R\to\infty}\int_{\gg_R} f = 0</m> and
+              large<nbsp/><m>|z|</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\lim_{R\to\infty}\int_{\gg_R} f = 0</m> and
               hence <m>\lim_{R\to\infty}\int_{[-R,R]} f = \frac \pi
               e</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              Conclude, by just considering the real part, that
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Conclude, by just considering the real part, that
               <me>
                 \int_{-\infty}^\infty \frac{\cos(x)}{x^2+1}\,\diff{x}
                 \= \frac \pi e \, 
               </me>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="x520">
     <statement>
@@ -351,9 +441,15 @@
         \frac{\cos(x)}{x^4+1}\,\diff{x} </m>. 
       </p>
     </statement>
+    <answer>
+      <p>
+        <m>\displaystyle \frac{\pi}{e^{1/\sqrt{2}}} \sin\left(\frac{1}{\sqrt{2}} +
+\frac{\pi}{4}\right)</m>
+      </p>
+    </answer>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         This exercise outlines how to extend some of the results of
         this chapter to the Riemann sphere as defined in <xref
@@ -363,20 +459,20 @@
         and let <m>\gg \subset G \setminus \{0\}</m> be a piecewise
         smooth path in <m>G</m> avoiding the origin, 
         parametrized as <m>\gg(t)</m>, <m>a \le t \le b</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that
-              <me>
-                \int_\gg f(z) \,\diff{z} \= \int_\sigma
-                f\!\left(\frac{1}{z}\right) \frac{1}{z^2} \, \diff{z} 
-              </me>
-              where <m>\sigma(t) := \frac{ 1 }{ \gg(t) }</m>, <m>a \le
-              t \le b</m>. 
-            </p>
-          </li>
-        </ol>
       </p>
+    </introduction>
+    <task>
+      <p>
+        Show that
+        <men xml:id="ch5ex_eqn1"> 
+          \int_\gg f(z) \,\diff{z} \= \int_\sigma
+          f\!\left(\frac{1}{z}\right) \frac{1}{z^2} \, \diff{z} 
+        </men>
+        where <m>\sigma(t) := \frac{ 1 }{ \gg(t) }</m>, <m>a \le
+        t \le b</m>. 
+      </p>
+    </task>
+    <task>
       <p>
         Now suppose <m>\lim_{ z \to 0 } f\!\left(\frac{1}{z}\right)
         \frac{1}{z^2} = L</m> is finite. 
@@ -391,7 +487,7 @@
       </p>
       <p>
         Thus <m>g</m> is continuous on
-        <m>H \cup \{ 0 \}</m> and (a) gives the identity
+        <m>H \cup \{ 0 \}</m> and <xref ref="ch5ex_eqn1"/> gives the identity
         <me>
           \int_\gg f \= \int_\sigma g \,
         </me>.
@@ -402,7 +498,7 @@
         For example, if <m>\int_\sigma g</m> is path independent,
         so is <m>\int_\gg f</m>.
         Here is but one application:
-        <ol marker="a) ">
+        <ol marker="i) ">
           <li>
             <p>
               Show that <m>\int_\gg z^n \, \diff{z}</m> is path
@@ -417,6 +513,6 @@
           </li>
         </ol>
       </p>
-    </statement>
+    </task>
   </exercise>
 </exercises>
