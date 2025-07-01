@@ -3,7 +3,7 @@
 <worksheet xml:id="sec_optionallab-alt" margin="1in" bottom="1.25cm">
   <title>Optional Lab</title>
 <page>
-  <exercise>
+  <exercise workspace=".5in">
     <p>
       Convert the following complex numbers into their polar representation,
       i.e., give the absolute value and the argument of the number.
@@ -24,7 +24,7 @@
 
   </exercise>
 
-  <exercise>
+  <exercise workspace=".5in">
     <p>
       Convert the following complex numbers given in polar representation into their rectangular representation.
       <md>
@@ -34,7 +34,7 @@
       check your answers with Geogebra.
     </p>
   </exercise>
-  <exercise>
+  <exercise workspace="1in">
     <p>
       Pick your favorite five numbers <m>z_1</m>, <m>z_2</m>,
       <m>z_3</m>, <m>z_4</m>, and <m>z_5</m> from the ones that you've
@@ -202,7 +202,7 @@
     </tabular>
     </sidebyside>
   </exercise>
-  <exercise>
+  <exercise workspace="1in">
     <statement>
         <p>
             Play with other examples until you get a feel for these functions.
