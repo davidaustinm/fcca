@@ -12,7 +12,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_\Box\frac{\exp(z^2)}{z^3}<nbsp/>\diff{z}</m>
+          <m>\int_\Box\frac{\exp(z^2)}{z^3}\diff{z}</m>
         </p>
       </statement>
       <answer>
@@ -24,7 +24,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_\Box\frac{\exp(3z)}{(z-\pi i)^2}<nbsp/>\diff{z}</m>
+          <m>\int_\Box\frac{\exp(3z)}{(z-\pi i)^2}\diff{z}</m>
         </p>
       </statement>
       <answer>
@@ -36,7 +36,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_\Box\frac{\sin(2z)}{(z-\pi)^2}<nbsp/>\diff{z}</m>
+          <m>\int_\Box\frac{\sin(2z)}{(z-\pi)^2}\diff{z}</m>
         </p>
       </statement>
       <answer>
@@ -48,7 +48,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_\Box\frac{\exp(z)\cos(z)}{(z-\pi)^3}<nbsp/>\diff{z}</m>
+          <m>\int_\Box\frac{\exp(z)\cos(z)}{(z-\pi)^3}\diff{z}</m>
         </p>
       </statement>
       <answer>
@@ -240,7 +240,7 @@
         is differentiable in <m>\R</m>,
         yet <m>f'</m> is not even continuous
         (much less differentiable)
-        at<nbsp/>0.
+        at 0.
       </p>
     </statement>
   </exercise>
@@ -276,16 +276,22 @@
       <p>
         Suppose <m>f</m> is continuous on <m>\C</m> and <m>\lim_{z \to
         \infty} f(z)</m> is finite. 
-        Show that <m>f</m> is bounded. (<em>Hint</em>: If <m>\lim_{z
-        \to \infty} f(z) = L</m>, 
-        use the definition of the limit at infinity to show that there
-        is <m>R>0</m> so that <m>\abs{f(z)-L} \lt 1</m> if <m>\abs z
-        >R</m>. 
-        Now argue that <m>|f(z)| \lt |L|+1</m> for <m>|z| > R</m>.
-        Use an argument from calculus to show that <m>|f(z)|</m> is
-        bounded for <m>\abs z\le R</m>.) 
+        Show that <m>f</m> is bounded.  
       </p>
     </statement>
+    <hint>
+      <p>
+        If <m>\lim_{z\to \infty} f(z) = L</m>, 
+        use the definition of the limit at infinity to show that there
+        is <m>R>0</m> so that <m>\abs{f(z)-L} \lt 1</m> if <m>\abs z
+        >R</m>.
+      </p>
+      <p>
+        Now argue that <m>|f(z)| \lt |L|+1</m> for <m>|z| > R</m>.
+        Use an argument from calculus to show that <m>|f(z)|</m> is
+        bounded for <m>\abs z\le R</m>.
+      </p>
+    </hint>
   </exercise>
   <exercise xml:id="fta">
     <statement>
@@ -307,19 +313,27 @@
       <p>
         Show that a polynomial of odd degree with real coefficients
         must have a real zero. 
-        (<em>Hint</em>: Use <xref ref="realpolynomialb"/>.)
       </p>
     </statement>
+    <hint>
+      <p>
+        Use <xref ref="realpolynomialb"/>.
+      </p>
+    </hint>
   </exercise>
   <exercise>
     <statement>
       <p>
         Suppose <m>f</m> is entire and
         <m>|f(z)| \le \sqrt{ |z| }</m> for all <m>z \in \C</m>.
-        Prove that <m>f</m> is identically 0. (<em>Hint:</em>
-        Show first that <m>f</m> is constant.)
+        Prove that <m>f</m> is identically 0. 
       </p>
     </statement>
+    <hint>
+      <p>
+        Show first that <m>f</m> is constant.
+      </p>
+    </hint>
   </exercise>
   <exercise>
     <statement>
@@ -337,10 +351,14 @@
         i.e., writing <m>f(z) = u(z) + i \, v(z)</m>,
         there exists <m>M > 0</m> such that
         <m>|u(z)| \le M</m> for all <m>z \in \C</m>.
-        Prove that <m>f</m> is constant. (<em>Hint</em>: Consider the
-        function <m>\exp(f(z))</m>.) 
+        Prove that <m>f</m> is constant. 
       </p>
     </statement>
+    <hint>
+      <p>
+        Consider the function <m>\exp(f(z))</m>.
+      </p>
+    </hint>
   </exercise>
   <exercise>
     <statement>
@@ -349,11 +367,15 @@
         and <m>b</m> such that 
         <m>|f(z)| \leq a|z| + b</m> for all <m>z \in \C</m>.
         Prove that <m>f</m> is a polynomial of degree at
-        most<nbsp/>1. (<em>Hint</em>: Use
-        <xref ref="cauchyformula2"/>
-        and <xref ref="ex_2ndderivative0"/>.)
+        most 1. 
       </p>
     </statement>
+    <hint>
+      <p>
+        Use <xref ref="cauchyformula2"/>
+        and <xref ref="ex_2ndderivative0"/>.
+      </p>
+    </hint>
   </exercise>
   <exercise>
     <statement>
@@ -409,7 +431,7 @@
               upper half plane, 
               and conclude that <m>\abs{f(z)}\le \frac 2
               {\abs{z}^2}</m> for sufficiently
-              large<nbsp/><m>|z|</m>.
+              large <m>|z|</m>.
         </p>
       </statement>
     </task>

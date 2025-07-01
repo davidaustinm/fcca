@@ -14,7 +14,7 @@
     which is generally quite useful.
     It says that for <m>|z|</m> large enough,
     a polynomial <m>p(z)</m> of degree <m>d</m> looks almost like a
-    constant times<nbsp/><m>z^d</m>. 
+    constant times <m>z^d</m>. 
   </p>
   <proposition xml:id="polynomialestimate">
     <statement>
@@ -59,7 +59,7 @@
     <title>Fundamental Theorem of Algebra
     <fn>
       The Fundamental Theorem of Algebra was first proved by
-      Gau&#223;<nbsp/>(in his doctoral dissertation in 1799, which had a
+      Gau&#223; (in his doctoral dissertation in 1799, which had a
       flaw<mdash/>later, he provided three rigorous proofs), although
       its statement had been assumed to be correct long before
       Gau&#223;'s time. 
@@ -82,7 +82,7 @@
     <statement>
       <p>
         Every nonconstant polynomial
-        has a root in<nbsp/><m>\C</m>.
+        has a root in <m>\C</m>.
         <idx><h>polynomial</h></idx>
         <idx><h>fundamental theorem</h><h>of algebra</h></idx>
       </p>
@@ -129,7 +129,7 @@
     after getting a root <m>a</m>,
     to <m>\frac{ p(z) }{z-a}</m>
     (which is again a polynomial by the division algorithm),
-    etc.<nbsp/>(see also <xref ref="fta"/>).
+    etc. (see also <xref ref="fta"/>).
   </p>
   <p>
     A compact reformulation of the Fundamental Theorem of Algebra
@@ -147,7 +147,7 @@
         (<xref ref="fundthmalg"/>)
         states that <m>p</m> must have a root
         (in fact, four roots)
-        in<nbsp/><m>\C</m>:
+        in <m>\C</m>:
         <md>
           <mrow>
             p(x) \amp \= \left( x^2+1 \right) \left( 2x^2+3 \right)
@@ -174,7 +174,7 @@
       This
       theorem is for historical reasons erroneously attributed to
       Joseph Liouville (1809<ndash/>1882). It was published earlier 
-      by Cauchy; in fact, Gau&#223;<nbsp/>may well have known about it
+      by Cauchy; in fact, Gau&#223; may well have known about it
       before Cauchy.
     </fn>
     Theorem</title> 
