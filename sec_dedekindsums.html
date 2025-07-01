@@ -106,14 +106,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.1';
+eBookConfig.runestone_version = '7.8.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.242116c5bc6b6581.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -334,7 +334,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_dedekindsums"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">10.5</span><span class="space"> </span><span class="title">Dedekind Sums</span>
 </h2>
-<div class="para" id="sec_dedekindsums-2"></div>
+<div class="para" id="sec_dedekindsums-2"><div class="autopermalink" data-description="Paragraph"><a href="#sec_dedekindsums-2" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
 <div class="para logical" id="sec_dedekindsums-3">
 <div class="para">This exercise outlines one more nontraditional application of the Residue <a href="sec_residues.html#residuethm" class="xref" data-knowl="./knowl/xref/residuethm.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.2.2: Residue Theorem">Theorem 9.2.2</a>. Given two positive, relatively prime integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> let</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/residuethm.html">
@@ -342,21 +342,27 @@ eBookConfig.enable_chatcodes =  false;
 f(z) \ := \ \cot (\pi az) \cot (\pi bz) \cot (\pi z) \,\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_dedekindsums-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ol class="decimal ol-marker-3" id="sec_dedekindsums-4">
+<ol class="decimal ol-marker-4" id="sec_dedekindsums-4">
 <li id="sec_dedekindsums-4-1">
-<div class="para" id="sec_dedekindsums-4-1-1">Choose an <span class="process-math">\(\epsilon &gt; 0\)</span> such that the rectangular path <span class="process-math">\(\gamma_R\)</span> from <span class="process-math">\(1-\epsilon-iR\)</span> to <span class="process-math">\(1-\epsilon+iR\)</span> to <span class="process-math">\(-\epsilon+iR\)</span> to <span class="process-math">\(-\epsilon-iR\)</span> back to <span class="process-math">\(1-\epsilon-iR\)</span> does not pass through any of the poles of <span class="process-math">\(f\text{.}\)</span>
+<div class="para" id="sec_dedekindsums-4-1-1">Choose an <span class="process-math">\(\epsilon &gt; 0\)</span> such that the rectangular path <span class="process-math">\(\gamma_R\)</span> from <span class="process-math">\(1-\epsilon-iR\)</span> to <span class="process-math">\(1-\epsilon+iR\)</span> to <span class="process-math">\(-\epsilon+iR\)</span> to <span class="process-math">\(-\epsilon-iR\)</span> back to <span class="process-math">\(1-\epsilon-iR\)</span> does not pass through any of the poles of <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_dedekindsums-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ol class="lower-alpha lower-alpha-level-1" id="sec_dedekindsums-4-1-2">
-<li id="sec_dedekindsums-4-1-2-1"><div class="para logical" id="sec_dedekindsums-4-1-2-1-1">
+<li id="sec_dedekindsums-4-1-2-1">
+<div class="para logical" id="sec_dedekindsums-4-1-2-1-1">
 <div class="para">Compute the residues for the poles of <span class="process-math">\(f\)</span> inside <span class="process-math">\(\gamma_R\text{.}\)</span> <em class="emphasis">Hint:</em> Use the periodicity of the cotangent and the fact that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \cot z \= \frac 1 z - \frac 1 3 \, z + \text{ higher-order terms }\text{.}
 \end{equation*}
 </div>
-</div></li>
-<li id="sec_dedekindsums-4-1-2-2"><div class="para logical" id="sec_dedekindsums-4-1-2-2-1">
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_dedekindsums-4-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#sec_dedekindsums-4-1-2-1" title="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="sec_dedekindsums-4-1-2-2">
+<div class="para logical" id="sec_dedekindsums-4-1-2-2-1">
 <div class="para">Prove that <span class="process-math">\(\lim_{R \to \infty} \int_{\gamma_R} f =
 -2i\)</span> and deduce that for any <span class="process-math">\(R&gt;0\)</span>
 </div>
@@ -365,10 +371,15 @@ f(z) \ := \ \cot (\pi az) \cot (\pi bz) \cot (\pi z) \,\text{.}
 \int_{\gamma_R} f \= -2i \,\text{.}
 \end{equation*}
 </div>
-</div></li>
-</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_dedekindsums-4-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#sec_dedekindsums-4-1-2-2" title="Copy heading and permalink for Item 1.b">🔗</a></div>
 </li>
-<li id="sec_dedekindsums-4-2"><div class="para logical" id="sec_dedekindsums-4-2-1">
+</ol>
+<div class="autopermalink" data-description="Item 1"><a href="#sec_dedekindsums-4-1" title="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_dedekindsums-4-2">
+<div class="para logical" id="sec_dedekindsums-4-2-1">
 <div class="para">Define</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/residuethm.html" id="dedsum">
 \begin{equation}
@@ -384,8 +395,15 @@ s(a,b) + s(b,a) \= - \frac 1 4 + \frac 1 {12} \left( \frac a
 b + \frac 1 {ab} + \frac b a \right) \text{.}\tag{10.2}
 \end{equation}
 </div>
-</div></li>
-<li id="sec_dedekindsums-4-3"><div class="para" id="sec_dedekindsums-4-3-1">Generalize <a href="sec_dedekindsums.html#dedsum" class="xref" data-knowl="./knowl/xref/dedsum.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 10.1">(10.1)</a> and <a href="sec_dedekindsums.html#dedrec" class="xref" data-knowl="./knowl/xref/dedrec.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 10.2">(10.2)</a>.</div></li>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_dedekindsums-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec_dedekindsums-4-2" title="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_dedekindsums-4-3">
+<div class="para" id="sec_dedekindsums-4-3-1">Generalize <a href="sec_dedekindsums.html#dedsum" class="xref" data-knowl="./knowl/xref/dedsum.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 10.1">(10.1)</a> and <a href="sec_dedekindsums.html#dedrec" class="xref" data-knowl="./knowl/xref/dedrec.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 10.2">(10.2)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_dedekindsums-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec_dedekindsums-4-3" title="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
 </ol>
 <div class="para logical" id="sec_dedekindsums-5">
 <div class="para">
@@ -398,7 +416,9 @@ b + \frac 1 {ab} + \frac b a \right) \text{.}\tag{10.2}
 \end{equation*}
 </div>
 <div class="para">in the 1870’s and has since intrigued mathematicians from such different areas as topology, number theory, and discrete geometry. The <em class="emphasis">reciprocity law</em> <a href="sec_dedekindsums.html#dedrec" class="xref" data-knowl="./knowl/xref/dedrec.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 10.2">(10.2)</a> is the most important and famous identity of the Dedekind sum. The proof that is outlined here is due to Hans Rademacher (1892–1969).</div>
-</div></section></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec_dedekindsums-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 10.5: Dedekind Sums"><a href="#sec_dedekindsums" title="Copy heading and permalink for Section 10.5: Dedekind Sums">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec_coinexchange.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

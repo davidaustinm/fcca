@@ -763,39 +763,39 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "1.7",
   "title": "Optional Lab",
-  "body": " Optional Lab   Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra     Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                    Play with other examples until you get a feel for these functions.    "
+  "body": " Optional Lab    Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra     Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.    Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                    Play with other examples until you get a feel for these functions.     "
 },
 {
-  "id": "sec_optionallab-alt-2",
+  "id": "sec_optionallab-alt-2-1",
   "level": "2",
-  "url": "sec_optionallab-alt.html#sec_optionallab-alt-2",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-2-1",
   "type": "Worksheet Exercise",
   "number": "1.7.1",
   "title": "",
   "body": " Convert the following complex numbers into their polar representation, i.e., give the absolute value and the argument of the number.  After you have finished computing these numbers, check your answers with the open-source software platform Geogebra. You might search for geogebra complex function grapher . geogebra   "
 },
 {
-  "id": "sec_optionallab-alt-3",
+  "id": "sec_optionallab-alt-2-2",
   "level": "2",
-  "url": "sec_optionallab-alt.html#sec_optionallab-alt-3",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-2-2",
   "type": "Worksheet Exercise",
   "number": "1.7.2",
   "title": "",
   "body": " Convert the following complex numbers given in polar representation into their rectangular representation.  After you have finished computing these numbers, check your answers with Geogebra.  "
 },
 {
-  "id": "sec_optionallab-alt-4",
+  "id": "sec_optionallab-alt-2-3",
   "level": "2",
-  "url": "sec_optionallab-alt.html#sec_optionallab-alt-4",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-2-3",
   "type": "Worksheet Exercise",
   "number": "1.7.3",
   "title": "",
   "body": " Pick your favorite five numbers , , , , and from the ones that you've played around with and put them in the table below, in both rectangular and polar form. Apply the functions listed to your numbers. Think about which representation is more helpful in each instance.                   rectangular         polar                                                                                                                                 "
 },
 {
-  "id": "sec_optionallab-alt-5",
+  "id": "sec_optionallab-alt-2-4",
   "level": "2",
-  "url": "sec_optionallab-alt.html#sec_optionallab-alt-5",
+  "url": "sec_optionallab-alt.html#sec_optionallab-alt-2-4",
   "type": "Worksheet Exercise",
   "number": "1.7.4",
   "title": "",
@@ -3174,7 +3174,7 @@ var ptx_lunr_docs = [
   "url": "sec_cauchytothelimit.html#fundthmalg",
   "type": "Theorem",
   "number": "5.3.2",
-  "title": "Fundamental Theorem of Algebra <details class=\"ptx-footnote\" aria-live=\"polite\" id=\"fundthmalg-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 5.3.1\"><sup> 1 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"fundthmalg-1-1\">The Fundamental Theorem of Algebra was first proved by Gauß (in his doctoral dissertation in 1799, which had a flaw—later, he provided three rigorous proofs), although its statement had been assumed to be correct long before Gauß’s time. It is amusing that such an important algebraic result can be proved purely analytically.  There are proofs of the Fundamental Theorem of Algebra that do not use complex analysis.  On the other hand, all proofs use <em class=\"emphasis\">some<\/em> analysis (such as the Intermediate Value Theorem).  The Fundamental Theorem of Algebra refers to <em class=\"emphasis\">algebra<\/em> in the sense that it existed in 1799, not to modern algebra. Thus one might say that the Fundamental Theorem of Algebra is neither fundamental to algebra nor even a theorem of algebra. The proof we give here is due to Anton R. Schep and appeared in the <em class=\"emphasis\">American Mathematical Monthly<\/em> (January 2009).<\/div><\/details>.",
+  "title": "Fundamental Theorem of Algebra <details class=\"ptx-footnote\" aria-live=\"polite\" id=\"fundthmalg-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 5.3.1\"><sup> 1 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"fundthmalg-1-1\">The Fundamental Theorem of Algebra was first proved by Gauß (in his doctoral dissertation in 1799, which had a flaw—later, he provided three rigorous proofs), although its statement had been assumed to be correct long before Gauß’s time. It is amusing that such an important algebraic result can be proved purely analytically.  There are proofs of the Fundamental Theorem of Algebra that do not use complex analysis.  On the other hand, all proofs use <em class=\"emphasis\">some<\/em> analysis (such as the Intermediate Value Theorem).  The Fundamental Theorem of Algebra refers to <em class=\"emphasis\">algebra<\/em> in the sense that it existed in 1799, not to modern algebra. Thus one might say that the Fundamental Theorem of Algebra is neither fundamental to algebra nor even a theorem of algebra. The proof we give here is due to Anton R. Schep and appeared in the <em class=\"emphasis\">American Mathematical Monthly<\/em> (January 2009).<\/div><\/details>.",
   "body": " Fundamental Theorem of Algebra The Fundamental Theorem of Algebra was first proved by Gauß (in his doctoral dissertation in 1799, which had a flaw later, he provided three rigorous proofs), although its statement had been assumed to be correct long before Gauß's time. It is amusing that such an important algebraic result can be proved purely analytically. There are proofs of the Fundamental Theorem of Algebra that do not use complex analysis. On the other hand, all proofs use some analysis (such as the Intermediate Value Theorem). The Fundamental Theorem of Algebra refers to algebra in the sense that it existed in 1799, not to modern algebra. Thus one might say that the Fundamental Theorem of Algebra is neither fundamental to algebra nor even a theorem of algebra. The proof we give here is due to Anton R. Schep and appeared in the American Mathematical Monthly (January 2009).    Every nonconstant polynomial has a root in . polynomial  fundamental theorem of algebra     Suppose (by way of contradiction) that does not have any roots, that is, for all . Then is entire, and so Cauchy's Integral Formula ( ) gives , for any . Let be the degree of and its leading coefficient.  and allow us to estimate, for sufficiently large , .  The left-hand side is independent of , while the right-hand side can be made arbitrarily small (by choosing sufficiently large), and so we conclude that , which is impossible.   "
 },
 {
@@ -3192,7 +3192,7 @@ var ptx_lunr_docs = [
   "url": "sec_cauchytothelimit.html#liouville",
   "type": "Corollary",
   "number": "5.3.4",
-  "title": "Liouville’s <details class=\"ptx-footnote\" aria-live=\"polite\" id=\"liouville-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 5.3.2\"><sup> 2 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"liouville-1-1\">This theorem is for historical reasons erroneously attributed to Joseph Liouville (1809–1882). It was published earlier by Cauchy; in fact, Gauß may well have known about it before Cauchy.<\/div><\/details> Theorem.",
+  "title": "Liouville’s <details class=\"ptx-footnote\" aria-live=\"polite\" id=\"liouville-1-1\"><summary class=\"ptx-footnote__number\" title=\"Footnote 5.3.2\"><sup> 2 <\/sup><\/summary><div class=\"ptx-footnote__contents\" id=\"liouville-1-1\">This theorem is for historical reasons erroneously attributed to Joseph Liouville (1809–1882). It was published earlier by Cauchy; in fact, Gauß may well have known about it before Cauchy.<\/div><\/details> Theorem.",
   "body": " Liouville's This theorem is for historical reasons erroneously attributed to Joseph Liouville (1809 1882). It was published earlier by Cauchy; in fact, Gauß may well have known about it before Cauchy. Theorem   Any bounded entire function is constant. entire  Liouville's theorem     Suppose for all . Given any , we apply with the circle ; note that we can choose any because is entire. By  , .  The right-hand side can be made arbitrarily small, as we are allowed to choose as large as we want. This implies that , and hence, by , is constant.   "
 },
 {
@@ -3220,7 +3220,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "5.4",
   "title": "Exercises",
-  "body": "   Compute the following integrals, where is the boundary of the square with vertices at , positively oriented:                            Prove the formula for in Theorem .   Hint: Modify the proof of the integral formula for as follows:   Write a difference quotient for , and use the formula for in to convert this difference quotient into an integral of divided by some polynomial.    Subtract the desired integral formula for from your integral for the difference quotient, and simplify to get the analogue of .    Find a bound as in the proof of Theorem for the integrand, and conclude that the limit of the difference quotient is the desired integral formula.         Integrate the following functions over the circle :                                                     Compute where is any fixed complex number with .      Define through   (the integration path is from 0 to 1 along the real line). Prove that is holomorphic in the unit disk .      To appreciate Corollary , show that the function given by is differentiable in , yet is not even continuous (much less differentiable) at 0.      Prove that does not have an antiderivative in any nonempty region.      Show that has an antiderivative on . (What is it?)      Find a region on which has an antiderivative. (Your region should be as large as you can make it. How does this compare with the real function ?)      Suppose is continuous on and is finite. Show that is bounded. ( Hint : If , use the definition of the limit at infinity to show that there is so that if . Now argue that for . Use an argument from calculus to show that is bounded for .)      Let be a polynomial of degree . Prove that there exist complex numbers and positive integers such that , where .      Show that a polynomial of odd degree with real coefficients must have a real zero. ( Hint : Use .)      Suppose is entire and for all . Prove that is identically 0. ( Hint: Show first that is constant.)      Suppose is entire and there exists such that for all . Prove that is constant.      Suppose is entire with bounded real part, i.e., writing , there exists such that for all . Prove that is constant. ( Hint : Consider the function .)      Suppose is entire and there exist constants and such that for all . Prove that is a polynomial of degree at most 1. ( Hint : Use and .)      Suppose is holomorphic. Prove that for , .      Compute .      In this problem and . Modify our computations in as follows.   Show that where is again (as in ) the counterclockwise semicircle formed by the segment on the real axis, followed by the circular arc of radius in the upper half plane from to .    Show that for in the upper half plane, and conclude that for sufficiently large .    Show that and hence .    Conclude, by just considering the real part, that .         Compute .      This exercise outlines how to extend some of the results of this chapter to the Riemann sphere as defined in Section . Suppose is a region that contains 0, let be a continuous function on , and let be a piecewise smooth path in avoiding the origin, parametrized as , .   Show that where , .     Now suppose is finite. Let and define the function by   Thus is continuous on and (a) gives the identity .  In particular, we can transfer certain properties between these two integrals. For example, if is path independent, so is . Here is but one application:   Show that is path independent for any integer .    Conclude (once more) that for any integer .       "
+  "body": "   Compute the following integrals, where is the boundary of the square with vertices at , positively oriented:                                                      Prove the formula for in Theorem .    Modify the proof of the integral formula for as follows:   Write a difference quotient for , and use the formula for in to convert this difference quotient into an integral of divided by some polynomial.    Subtract the desired integral formula for from your integral for the difference quotient, and simplify to get the analogue of .    Find a bound as in the proof of Theorem for the integrand, and conclude that the limit of the difference quotient is the desired integral formula.         Integrate the following functions over the circle :                                                                                                   Compute where is any fixed complex number with .           Define through   (the integration path is from 0 to 1 along the real line). Prove that is holomorphic in the unit disk .      To appreciate Corollary , show that the function given by is differentiable in , yet is not even continuous (much less differentiable) at 0.      Prove that does not have an antiderivative in any nonempty region.      Show that has an antiderivative on . (What is it?)      Find a region on which has an antiderivative. (Your region should be as large as you can make it. How does this compare with the real function ?)      Suppose is continuous on and is finite. Show that is bounded.    If , use the definition of the limit at infinity to show that there is so that if .  Now argue that for . Use an argument from calculus to show that is bounded for .      Let be a polynomial of degree . Prove that there exist complex numbers and positive integers such that , where .      Show that a polynomial of odd degree with real coefficients must have a real zero.    Use .      Suppose is entire and for all . Prove that is identically 0.    Show first that is constant.      Suppose is entire and there exists such that for all . Prove that is constant.      Suppose is entire with bounded real part, i.e., writing , there exists such that for all . Prove that is constant.    Consider the function .      Suppose is entire and there exist constants and such that for all . Prove that is a polynomial of degree at most 1.    Use and .      Suppose is holomorphic. Prove that for , .      Compute .           In this problem and . Modify our computations in as follows.     Show that where is again (as in ) the counterclockwise semicircle formed by the segment on the real axis, followed by the circular arc of radius in the upper half plane from to .      Show that for in the upper half plane, and conclude that for sufficiently large .      Show that and hence .      Conclude, by just considering the real part, that .       Compute .           This exercise outlines how to extend some of the results of this chapter to the Riemann sphere as defined in Section . Suppose is a region that contains 0, let be a continuous function on , and let be a piecewise smooth path in avoiding the origin, parametrized as , .    Show that where , .    Now suppose is finite. Let and define the function by   Thus is continuous on and gives the identity .  In particular, we can transfer certain properties between these two integrals. For example, if is path independent, so is . Here is but one application:   Show that is path independent for any integer .    Conclude (once more) that for any integer .       "
 },
 {
   "id": "ex_5_0",
@@ -3229,7 +3229,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.1",
   "title": "",
-  "body": "  Compute the following integrals, where is the boundary of the square with vertices at , positively oriented:                         "
+  "body": "  Compute the following integrals, where is the boundary of the square with vertices at , positively oriented:                                                   "
 },
 {
   "id": "cauchyformula2ex",
@@ -3238,7 +3238,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.2",
   "title": "",
-  "body": "  Prove the formula for in Theorem .   Hint: Modify the proof of the integral formula for as follows:   Write a difference quotient for , and use the formula for in to convert this difference quotient into an integral of divided by some polynomial.    Subtract the desired integral formula for from your integral for the difference quotient, and simplify to get the analogue of .    Find a bound as in the proof of Theorem for the integrand, and conclude that the limit of the difference quotient is the desired integral formula.      "
+  "body": "  Prove the formula for in Theorem .    Modify the proof of the integral formula for as follows:   Write a difference quotient for , and use the formula for in to convert this difference quotient into an integral of divided by some polynomial.    Subtract the desired integral formula for from your integral for the difference quotient, and simplify to get the analogue of .    Find a bound as in the proof of Theorem for the integrand, and conclude that the limit of the difference quotient is the desired integral formula.      "
 },
 {
   "id": "ex_5_1",
@@ -3247,7 +3247,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.3",
   "title": "",
-  "body": "  Integrate the following functions over the circle :                                                  "
+  "body": "  Integrate the following functions over the circle :                                                                                                "
 },
 {
   "id": "ex_54",
@@ -3256,7 +3256,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.4",
   "title": "",
-  "body": "  Compute where is any fixed complex number with .   "
+  "body": "  Compute where is any fixed complex number with .        "
 },
 {
   "id": "ex_functiondefinedthroughmorera",
@@ -3310,7 +3310,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.10",
   "title": "",
-  "body": "  Suppose is continuous on and is finite. Show that is bounded. ( Hint : If , use the definition of the limit at infinity to show that there is so that if . Now argue that for . Use an argument from calculus to show that is bounded for .)   "
+  "body": "  Suppose is continuous on and is finite. Show that is bounded.    If , use the definition of the limit at infinity to show that there is so that if .  Now argue that for . Use an argument from calculus to show that is bounded for .   "
 },
 {
   "id": "fta",
@@ -3328,7 +3328,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.12",
   "title": "",
-  "body": "  Show that a polynomial of odd degree with real coefficients must have a real zero. ( Hint : Use .)   "
+  "body": "  Show that a polynomial of odd degree with real coefficients must have a real zero.    Use .   "
 },
 {
   "id": "cachyconschapter-6-13",
@@ -3337,7 +3337,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.13",
   "title": "",
-  "body": "  Suppose is entire and for all . Prove that is identically 0. ( Hint: Show first that is constant.)   "
+  "body": "  Suppose is entire and for all . Prove that is identically 0.    Show first that is constant.   "
 },
 {
   "id": "cachyconschapter-6-14",
@@ -3355,7 +3355,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.15",
   "title": "",
-  "body": "  Suppose is entire with bounded real part, i.e., writing , there exists such that for all . Prove that is constant. ( Hint : Consider the function .)   "
+  "body": "  Suppose is entire with bounded real part, i.e., writing , there exists such that for all . Prove that is constant.    Consider the function .   "
 },
 {
   "id": "cachyconschapter-6-16",
@@ -3364,7 +3364,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.16",
   "title": "",
-  "body": "  Suppose is entire and there exist constants and such that for all . Prove that is a polynomial of degree at most 1. ( Hint : Use and .)   "
+  "body": "  Suppose is entire and there exist constants and such that for all . Prove that is a polynomial of degree at most 1.    Use and .   "
 },
 {
   "id": "cachyconschapter-6-17",
@@ -3382,7 +3382,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.18",
   "title": "",
-  "body": "  Compute .   "
+  "body": "  Compute .        "
 },
 {
   "id": "ex_cos_x___1_x_2_",
@@ -3391,7 +3391,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.19",
   "title": "",
-  "body": "  In this problem and . Modify our computations in as follows.   Show that where is again (as in ) the counterclockwise semicircle formed by the segment on the real axis, followed by the circular arc of radius in the upper half plane from to .    Show that for in the upper half plane, and conclude that for sufficiently large .    Show that and hence .    Conclude, by just considering the real part, that .      "
+  "body": "  In this problem and . Modify our computations in as follows.     Show that where is again (as in ) the counterclockwise semicircle formed by the segment on the real axis, followed by the circular arc of radius in the upper half plane from to .      Show that for in the upper half plane, and conclude that for sufficiently large .      Show that and hence .      Conclude, by just considering the real part, that .    "
 },
 {
   "id": "x520",
@@ -3400,7 +3400,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.20",
   "title": "",
-  "body": "  Compute .   "
+  "body": "  Compute .        "
 },
 {
   "id": "cachyconschapter-6-21",
@@ -3409,7 +3409,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.4.21",
   "title": "",
-  "body": "  This exercise outlines how to extend some of the results of this chapter to the Riemann sphere as defined in Section . Suppose is a region that contains 0, let be a continuous function on , and let be a piecewise smooth path in avoiding the origin, parametrized as , .   Show that where , .     Now suppose is finite. Let and define the function by   Thus is continuous on and (a) gives the identity .  In particular, we can transfer certain properties between these two integrals. For example, if is path independent, so is . Here is but one application:   Show that is path independent for any integer .    Conclude (once more) that for any integer .      "
+  "body": "  This exercise outlines how to extend some of the results of this chapter to the Riemann sphere as defined in Section . Suppose is a region that contains 0, let be a continuous function on , and let be a piecewise smooth path in avoiding the origin, parametrized as , .    Show that where , .    Now suppose is finite. Let and define the function by   Thus is continuous on and gives the identity .  In particular, we can transfer certain properties between these two integrals. For example, if is path independent, so is . Here is but one application:   Show that is path independent for any integer .    Conclude (once more) that for any integer .      "
 },
 {
   "id": "sec_defharmonic",
