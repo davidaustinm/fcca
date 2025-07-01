@@ -2,7 +2,7 @@
 
 <worksheet xml:id="sec_optionallab-alt" margin="1in" bottom="1.25cm">
   <title>Optional Lab</title>
-
+<page>
   <exercise>
     <p>
       Convert the following complex numbers into their polar representation,
@@ -209,4 +209,5 @@
         </p>
     </statement>
   </exercise>
+</page>
 </worksheet>
