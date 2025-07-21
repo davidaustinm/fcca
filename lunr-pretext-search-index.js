@@ -3598,7 +3598,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "6.3",
   "title": "Exercises",
-  "body": "   Show that all partial derivatives of a harmonic function are harmonic.      Suppose and are harmonic in , and . Prove that is also harmonic in .      Give an example that shows that the product of two harmonic functions is not necessarily harmonic.      Let .   Show that is harmonic on .    Find an entire function such that .         Consider .   Show that is harmonic on .    Prove that is not the real part of a function that is holomorphic in .         Show that, if is holomorphic and nonzero in , then is harmonic in .      Suppose is a function that depends only on . When is harmonic?      Is it possible to find a real function so that is holomorphic?      Suppose is holomorphic in the region with image , and is harmonic on . Show that is harmonic on .      Suppose is a function given in terms of polar coordinates.   Show that the Laplace equation for is .    Show that is harmonic on . Generalize.    If depends only on , when is harmonic?    If depends only on , when is harmonic?         Prove that, if is harmonic and bounded on , then is constant. ( Hint : Use and Liouville's Theorem ( ).)      Suppose is a harmonic polynomial in and . Prove that the harmonic conjugate of is also a polynomial in and .      Recall from the Poisson kernel , where . In this exercise, we will prove the Poisson Integral Formula : if is harmonic on an open set containing the closed unit disk then for any  . Poisson integral formula   Suppose is harmonic on an open set containing . By we can find so that is harmonic in .   Recall the Möbius function , for some fixed with , from . Show that is harmonic on an open disk containing .    Apply to the function with to deduce .    Recalling, again from , that maps the unit circle to itself, apply a change of variables to to prove .    Deduce by setting .         Suppose is open and . Show that there is so that . ( Hint : If just take . Otherwise choose some , let , and let . Show that is nonempty, closed and bounded, and apply to find a point that minimizes on . Show that works.)    "
+  "body": "   Show that all partial derivatives of a harmonic function are harmonic.      Suppose and are harmonic in , and . Prove that is also harmonic in .      Give an example that shows that the product of two harmonic functions is not necessarily harmonic.      Let .     Show that is harmonic on .      Find an entire function such that .       Consider .     Show that is harmonic on .      Prove that is not the real part of a function that is holomorphic in .       Show that, if is holomorphic and nonzero in , then is harmonic in .      Suppose is a function that depends only on . When is harmonic?      Is it possible to find a real function so that is holomorphic?      Suppose is holomorphic in the region with image , and is harmonic on . Show that is harmonic on .      Suppose is a function given in terms of polar coordinates.     Show that the Laplace equation for is .      Show that is harmonic on . Generalize.      If depends only on , when is harmonic?      If depends only on , when is harmonic?       Prove that, if is harmonic and bounded on , then is constant. ( Hint : Use and Liouville's Theorem ( ).)      Suppose is a harmonic polynomial in and . Prove that the harmonic conjugate of is also a polynomial in and .      Recall from the Poisson kernel , where . In this exercise, we will prove the Poisson Integral Formula : if is harmonic on an open set containing the closed unit disk then for any  . Poisson integral formula   Suppose is harmonic on an open set containing . By we can find so that is harmonic in .     Recall the Möbius function , for some fixed with , from . Show that is harmonic on an open disk containing .      Apply to the function with to deduce .      Recalling, again from , that maps the unit circle to itself, apply a change of variables to to prove .      Deduce by setting .       Suppose is open and . Show that there is so that . ( Hint : If just take . Otherwise choose some , let , and let . Show that is nonempty, closed and bounded, and apply to find a point that minimizes on . Show that works.)    "
 },
 {
   "id": "harmonicChapter-5-1",
@@ -3634,7 +3634,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.3.4",
   "title": "",
-  "body": "  Let .   Show that is harmonic on .    Find an entire function such that .      "
+  "body": "  Let .     Show that is harmonic on .      Find an entire function such that .    "
 },
 {
   "id": "logharmonic",
@@ -3643,7 +3643,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.3.5",
   "title": "",
-  "body": "  Consider .   Show that is harmonic on .    Prove that is not the real part of a function that is holomorphic in .      "
+  "body": "  Consider .     Show that is harmonic on .      Prove that is not the real part of a function that is holomorphic in .    "
 },
 {
   "id": "ex_ln_f_harmonic",
@@ -3688,7 +3688,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.3.10",
   "title": "",
-  "body": "  Suppose is a function given in terms of polar coordinates.   Show that the Laplace equation for is .    Show that is harmonic on . Generalize.    If depends only on , when is harmonic?    If depends only on , when is harmonic?      "
+  "body": "  Suppose is a function given in terms of polar coordinates.     Show that the Laplace equation for is .      Show that is harmonic on . Generalize.      If depends only on , when is harmonic?      If depends only on , when is harmonic?    "
 },
 {
   "id": "harmonicChapter-5-11",
@@ -3715,7 +3715,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.3.13",
   "title": "",
-  "body": "  Recall from the Poisson kernel , where . In this exercise, we will prove the Poisson Integral Formula : if is harmonic on an open set containing the closed unit disk then for any  . Poisson integral formula   Suppose is harmonic on an open set containing . By we can find so that is harmonic in .   Recall the Möbius function , for some fixed with , from . Show that is harmonic on an open disk containing .    Apply to the function with to deduce .    Recalling, again from , that maps the unit circle to itself, apply a change of variables to to prove .    Deduce by setting .      "
+  "body": "  Recall from the Poisson kernel , where . In this exercise, we will prove the Poisson Integral Formula : if is harmonic on an open set containing the closed unit disk then for any  . Poisson integral formula   Suppose is harmonic on an open set containing . By we can find so that is harmonic in .     Recall the Möbius function , for some fixed with , from . Show that is harmonic on an open disk containing .      Apply to the function with to deduce .      Recalling, again from , that maps the unit circle to itself, apply a change of variables to to prove .      Deduce by setting .    "
 },
 {
   "id": "ex_biggerdisk",
