@@ -4228,7 +4228,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "7.5",
   "title": "Exercises",
-  "body": "   For each of the sequences, prove convergence or divergence. If the sequence converges, find the limit.                                 Determine whether each of the following series converges or diverges.                            Compute .      Prove .      Prove the following:    .     .         Show that a convergent sequence is bounded, i.e.: if exists, then there is an such that for all .      Show that the limit of a convergent sequence is unique.      Let be a sequence. A point is an accumulation point of the sequence if for every and every there exists some such that . Prove that if a sequence has more than one accumulation point then the sequence diverges.        Show that for any positive integer .    Conclude with that for any positive integer , .        Derive the Archimedean Property from the Monotone Sequence Property.      Prove .      Prove that converges if and only if and converge.      Prove that is complete and that is not complete.      Prove that, if for all and , then . This is called the Squeeze Theorem , and is useful in testing a sequence for convergence.      Find the least upper bound of the set .        Suppose that the sequence converges to zero. Show that converges if and only if converges. Moreover, if the two series converge then they have the same limit.    Give an example where does not converge to and one of the series in (a) diverges while the other converges.        Prove that the series converges if and only if .        Show that diverges.    Show that converges.          Suppose and for . Suppose is a sequence in with and, for each , . Show that converges uniformly to the zero function in .    Re-prove the statement of using part a).          Suppose , for , and converges uniformly to the zero function in . Show that, if is any sequence in , then .    Apply a) to the function sequence given in , together with the sequence , to prove that the convergence given in is not uniform.        Consider given by , for . Prove that converges pointwise to given by yet this convergence is not uniform. (See Figure .)   The functions in .        f(x)=(sin(x))^n    f(x)=sin(x)              Where do the following sequences converge pointwise? Do they converge uniformly on this domain?              where          Let .   Show that for all . ( Hint : Treat as a special case; for you can use L'Hôpital's rule ( ) but remember that is the variable, not .)    Find . ( Hint : The answer is not  .)    Why doesn't your answer to part (b) violate ?         The product of two power series centered at is another power series centered at . Derive a formula for its coefficients in terms of the coefficients of the original two power series.      Find a power series (and determine its radius of convergence) for the following functions.                       Find a power series representation about the origin of each of the following functions.                              Suppose that the sequence is bounded. Show that the radius of convergence of is at least .    Suppose that the sequence does not converge to . Show that the radius of convergence of is at most .        Find the power series centered at 1 and compute its radius of convergence for each of the following functions:                  Use the Weierstraß -test to show that each of the following series converges uniformly on the given domain:    on      on      on where          Fix and . Prove that converges uniformly in the variable  for .      Complete our proof of by considering the case .      Prove that, if exists then the radius of convergence of equals       Find the radius of convergence for each of the following series.    where      where                                   Find a function representing each of the following series.                       Recall the function defined in through .  Find a power series for .      Define the functions via , for .   Show that the maximum of is .    Show that converges uniformly to the zero function on .    Show that does not converge to as .    Why doesn't this contradict ?       "
+  "body": "   For each of the sequences, prove convergence or divergence. If the sequence converges, find the limit.          divergent           convergent (limit )           divergent           convergent (limit )           convergent (limit )       Determine whether each of the following series converges or diverges.                                  Compute .         Prove .      Prove the following:      .       .       Show that a convergent sequence is bounded, i.e.: if exists, then there is an such that for all .      Show that the limit of a convergent sequence is unique.      Let be a sequence. A point is an accumulation point of the sequence if for every and every there exists some such that . Prove that if a sequence has more than one accumulation point then the sequence diverges.       Show that for any positive integer .      Conclude with that for any positive integer , .       Derive the Archimedean Property from the Monotone Sequence Property.      Prove .      Prove that converges if and only if and converge.      Prove that is complete and that is not complete.      Prove that, if for all and , then . This is called the Squeeze Theorem , and is useful in testing a sequence for convergence.      Find the least upper bound of the set .       Suppose that the sequence converges to zero. Show that converges if and only if converges. Moreover, if the two series converge then they have the same limit.      Give an example where does not converge to and one of the series in (a) diverges while the other converges.       Prove that the series converges if and only if .       Show that diverges.      Show that converges.        Suppose and for . Suppose is a sequence in with and, for each , . Show that converges uniformly to the zero function in .      Re-prove the statement of using part a).        Suppose , for , and converges uniformly to the zero function in . Show that, if is any sequence in , then .      Apply a) to the function sequence given in , together with the sequence , to prove that the convergence given in is not uniform.       Consider given by , for . Prove that converges pointwise to given by yet this convergence is not uniform. (See Figure .)   The functions in .        f(x)=(sin(x))^n    f(x)=sin(x)              Where do the following sequences converge pointwise? Do they converge uniformly on this domain?                    where        Let .     Show that for all . ( Hint : Treat as a special case; for you can use L'Hôpital's rule ( ) but remember that is the variable, not .)      Find . ( Hint : The answer is not  .)      Why doesn't your answer to part (b) violate ?       The product of two power series centered at is another power series centered at . Derive a formula for its coefficients in terms of the coefficients of the original two power series.      Find a power series (and determine its radius of convergence) for the following functions.                                    Find a power series representation about the origin of each of the following functions.                                               Suppose that the sequence is bounded. Show that the radius of convergence of is at least .      Suppose that the sequence does not converge to . Show that the radius of convergence of is at most .       Find the power series centered at 1 and compute its radius of convergence for each of the following functions:                          Use the Weierstraß -test to show that each of the following series converges uniformly on the given domain:      on        on        on where        Fix and . Prove that converges uniformly in the variable  for .      Complete our proof of by considering the case .      Prove that, if exists then the radius of convergence of equals       Find the radius of convergence for each of the following series.      where           where                                                    Find a function representing each of the following series.                                    Recall the function defined in through .  Find a power series for .      Define the functions via , for .     Show that the maximum of is .      Show that converges uniformly to the zero function on .      Show that does not converge to as .      Why doesn't this contradict ?     "
 },
 {
   "id": "ex_7_1",
@@ -4237,7 +4237,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.1",
   "title": "",
-  "body": "  For each of the sequences, prove convergence or divergence. If the sequence converges, find the limit.                              "
+  "body": "  For each of the sequences, prove convergence or divergence. If the sequence converges, find the limit.          divergent           convergent (limit )           divergent           convergent (limit )           convergent (limit )    "
 },
 {
   "id": "powerchapter-7-2",
@@ -4246,7 +4246,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.2",
   "title": "",
-  "body": "  Determine whether each of the following series converges or diverges.                         "
+  "body": "  Determine whether each of the following series converges or diverges.                               "
 },
 {
   "id": "x73",
@@ -4255,7 +4255,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.3",
   "title": "",
-  "body": "  Compute .   "
+  "body": "  Compute .      "
 },
 {
   "id": "ex_limitrulesseq",
@@ -4273,7 +4273,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.5",
   "title": "",
-  "body": "  Prove the following:    .     .      "
+  "body": "  Prove the following:      .       .    "
 },
 {
   "id": "ex_convseqbounded",
@@ -4309,7 +4309,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.9",
   "title": "",
-  "body": "    Show that for any positive integer .    Conclude with that for any positive integer , .     "
+  "body": "   Show that for any positive integer .      Conclude with that for any positive integer , .    "
 },
 {
   "id": "ex_archimedean",
@@ -4372,7 +4372,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.16",
   "title": "",
-  "body": "    Suppose that the sequence converges to zero. Show that converges if and only if converges. Moreover, if the two series converge then they have the same limit.    Give an example where does not converge to and one of the series in (a) diverges while the other converges.     "
+  "body": "   Suppose that the sequence converges to zero. Show that converges if and only if converges. Moreover, if the two series converge then they have the same limit.      Give an example where does not converge to and one of the series in (a) diverges while the other converges.    "
 },
 {
   "id": "tailtozero",
@@ -4390,7 +4390,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.18",
   "title": "",
-  "body": "    Show that diverges.    Show that converges.     "
+  "body": "   Show that diverges.      Show that converges.    "
 },
 {
   "id": "sup-_0",
@@ -4399,7 +4399,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.19",
   "title": "",
-  "body": "    Suppose and for . Suppose is a sequence in with and, for each , . Show that converges uniformly to the zero function in .    Re-prove the statement of using part a).     "
+  "body": "   Suppose and for . Suppose is a sequence in with and, for each , . Show that converges uniformly to the zero function in .      Re-prove the statement of using part a).    "
 },
 {
   "id": "fn_zn___0",
@@ -4408,7 +4408,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.20",
   "title": "",
-  "body": "    Suppose , for , and converges uniformly to the zero function in . Show that, if is any sequence in , then .    Apply a) to the function sequence given in , together with the sequence , to prove that the convergence given in is not uniform.     "
+  "body": "   Suppose , for , and converges uniformly to the zero function in . Show that, if is any sequence in , then .      Apply a) to the function sequence given in , together with the sequence , to prove that the convergence given in is not uniform.    "
 },
 {
   "id": "ex_sin_n_convergence",
@@ -4426,7 +4426,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.22",
   "title": "",
-  "body": "  Where do the following sequences converge pointwise? Do they converge uniformly on this domain?              where       "
+  "body": "  Where do the following sequences converge pointwise? Do they converge uniformly on this domain?                    where     "
 },
 {
   "id": "powerchapter-7-23",
@@ -4435,7 +4435,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.23",
   "title": "",
-  "body": "  Let .   Show that for all . ( Hint : Treat as a special case; for you can use L'Hôpital's rule ( ) but remember that is the variable, not .)    Find . ( Hint : The answer is not  .)    Why doesn't your answer to part (b) violate ?      "
+  "body": "  Let .     Show that for all . ( Hint : Treat as a special case; for you can use L'Hôpital's rule ( ) but remember that is the variable, not .)      Find . ( Hint : The answer is not  .)      Why doesn't your answer to part (b) violate ?    "
 },
 {
   "id": "powerchapter-7-24",
@@ -4453,7 +4453,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.25",
   "title": "",
-  "body": "  Find a power series (and determine its radius of convergence) for the following functions.                    "
+  "body": "  Find a power series (and determine its radius of convergence) for the following functions.                                 "
 },
 {
   "id": "ex_powerex",
@@ -4462,7 +4462,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.26",
   "title": "",
-  "body": "  Find a power series representation about the origin of each of the following functions.                         "
+  "body": "  Find a power series representation about the origin of each of the following functions.                                           "
 },
 {
   "id": "powerchapter-7-27",
@@ -4471,7 +4471,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.27",
   "title": "",
-  "body": "    Suppose that the sequence is bounded. Show that the radius of convergence of is at least .    Suppose that the sequence does not converge to . Show that the radius of convergence of is at most .     "
+  "body": "   Suppose that the sequence is bounded. Show that the radius of convergence of is at least .      Suppose that the sequence does not converge to . Show that the radius of convergence of is at most .    "
 },
 {
   "id": "ex_7_3",
@@ -4480,7 +4480,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.28",
   "title": "",
-  "body": "  Find the power series centered at 1 and compute its radius of convergence for each of the following functions:               "
+  "body": "  Find the power series centered at 1 and compute its radius of convergence for each of the following functions:                       "
 },
 {
   "id": "powerchapter-7-29",
@@ -4489,7 +4489,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.29",
   "title": "",
-  "body": "  Use the Weierstraß -test to show that each of the following series converges uniformly on the given domain:    on      on      on where       "
+  "body": "  Use the Weierstraß -test to show that each of the following series converges uniformly on the given domain:      on        on        on where     "
 },
 {
   "id": "prob_geomseriesfunky",
@@ -4525,7 +4525,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.33",
   "title": "",
-  "body": "  Find the radius of convergence for each of the following series.    where      where                                "
+  "body": "  Find the radius of convergence for each of the following series.      where           where                                                 "
 },
 {
   "id": "ex_734",
@@ -4534,7 +4534,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.34",
   "title": "",
-  "body": "  Find a function representing each of the following series.                    "
+  "body": "  Find a function representing each of the following series.                                 "
 },
 {
   "id": "powerchapter-7-35",
@@ -4552,7 +4552,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.5.36",
   "title": "",
-  "body": "  Define the functions via , for .   Show that the maximum of is .    Show that converges uniformly to the zero function on .    Show that does not converge to as .    Why doesn't this contradict ?      "
+  "body": "  Define the functions via , for .     Show that the maximum of is .      Show that converges uniformly to the zero function on .      Show that does not converge to as .      Why doesn't this contradict ?    "
 },
 {
   "id": "sec_powerseriesholom",
@@ -4903,7 +4903,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "8.4",
   "title": "Exercises",
-  "body": "   For each of the following series, determine where the series converges absolutely and where it converges uniformly:                  What functions are represented by the series in the previous exercise?      Find the power series centered at for .      Re-prove using the power series of centered at 0.      Find the terms through third order and the radius of convergence of the power series for each of the following functions, centered at . (Do not find the general form for the coefficients.)                            Consider given by , the real version of our function in , to show that has no analogue in . Incidentally, the same example shows, once more, that Liouville's theorem ( ) has no analogue in .       Prove the following generalization of : Suppose is a sequence of functions that are holomorphic in a region , and converges uniformly to on . Then is holomorphic in . (This result is called the Weierstraß convergence theorem .) Weierstraß convergence theorem       Use the previous exercise and to prove the following: Suppose is a sequence of functions that are holomorphic in a region and that converges uniformly to on . Then for any , the sequence of th derivatives converges (pointwise) to .      Suppose for all . What can you say about the radius of convergence of ?      Suppose the radius of convergence of is . What is the radius of convergence of each of the following?                            Suppose is a region and is holomorphic. Prove that the sets . in our proof of are open.      Prove the Minimum-Modulus Theorem ( ): Suppose is holomorphic and nonconstant in a region . Then does not attain a weak relative minimum at a point in unless .      Prove : Assume that is harmonic in a region and has a weak local maximum at .   If is simply connected then apply to , where is a harmonic conjugate of . Conclude that is constant on .    If is not simply connected, then the above argument applies to on any disk . Conclude that the partials and are zero on , and adapt the argument of Theorem to show that is constant.         Let be given by . Find the maximum and minimum of on the closed unit disk.      Give another proof of the Fundamental Theorem of Algebra fundamental theorem of algebra ( ), using the Minimum-Modulus Theorem ( ). ( Hint : Use to show that a polynomial does not achieve its minimum modulus on a large circle; then use the Minimum-Modulus Theorem to deduce that the polynomial has a zero.)      Give another proof of (a variant of) the Maximum-Modulus via , as follows: Suppose is holomorphic in a region containing , and for . Given a point , show (e.g., by ) that there is a constant such that .  Conclude that .      Find a Laurent series for centered at and specify the region in which it converges.      Find a Laurent series for centered at and specify the region in which it converges.      Find a Laurent series for centered at and the region in which it converges.      Find the terms in the Laurent series for centered at , for .      Find the first four nonzero terms in the power series expansion of centered at the origin. What is the radius of convergence?        Find the power series representation for centered at , where is any constant.    Show that .    Find the power series expansion for centered at .        Show that for .      Prove: If is entire and is constant on the closed unit disk then is constant.        Find the Laurent series for centered at .    Prove that is entire, where         Find the Laurent series for centered at the origin.      Suppose that is holomorphic at , , and . Show that has a zero of multiplicity at .      Find the multiplicities of the zeros of each of the following functions:    , where is any integer.     .     .         Find the zeros of the following functions and determine their multiplicities:                            Prove that the series of the negative-index terms of a Laurent series converges for for some , and that the convergence is uniform in , for any fixed .      Show that and .  (These are the limits we referred to in .)      Find the three Laurent series of , centered at , defined on the three regions , , and , respectively. ( Hint : Use a partial fraction decomposition.)      Suppose that has exactly one zero, at , inside the circle , and that it has multiplicity . Show that .      Recall that a function is even if for all , and is odd if for all . even  odd Prove that, if is even (resp., odd), then the Laurent series of at 0 has only even (resp., odd) powers. function even  function odd       Suppose is holomorphic and not identically zero on an open disk centered at , and suppose . Use the following outline to show that for some in .   Why can you write where , is holomorphic, and ?    Write in polar coordinates as and define . Why is ?    Why is there a positive constant so that for all ?    Write for . Show that .    Find a value of so that has positive real part.           Find a Laurent series for centered at and specify the region in which it converges.    Compute .          Find the power series of centered at .    Compute .        Compute where is a closed curve not passing through integer multiples of .    "
+  "body": "   For each of the following series, determine where the series converges absolutely and where it converges uniformly:          , for any            , for any .       What functions are represented by the series in the previous exercise?    (a)  (b)      Find the power series centered at for .      Re-prove using the power series of centered at 0.      Find the terms through third order and the radius of convergence of the power series for each of the following functions, centered at . (Do not find the general form for the coefficients.)                                  Consider given by , the real version of our function in , to show that has no analogue in . Incidentally, the same example shows, once more, that Liouville's theorem ( ) has no analogue in .       Prove the following generalization of : Suppose is a sequence of functions that are holomorphic in a region , and converges uniformly to on . Then is holomorphic in . (This result is called the Weierstraß convergence theorem .) Weierstraß convergence theorem       Use the previous exercise and to prove the following: Suppose is a sequence of functions that are holomorphic in a region and that converges uniformly to on . Then for any , the sequence of th derivatives converges (pointwise) to .      Suppose for all . What can you say about the radius of convergence of ?      Suppose the radius of convergence of is . What is the radius of convergence of each of the following?                                  Suppose is a region and is holomorphic. Prove that the sets . in our proof of are open.      Prove the Minimum-Modulus Theorem ( ): Suppose is holomorphic and nonconstant in a region . Then does not attain a weak relative minimum at a point in unless .      Prove : Assume that is harmonic in a region and has a weak local maximum at .     If is simply connected then apply to , where is a harmonic conjugate of . Conclude that is constant on .      If is not simply connected, then the above argument applies to on any disk . Conclude that the partials and are zero on , and adapt the argument of Theorem to show that is constant.       Let be given by . Find the maximum and minimum of on the closed unit disk.    The maximum is 3 (attained at ), and the minimum is 1 (attained at ).      Give another proof of the Fundamental Theorem of Algebra fundamental theorem of algebra ( ), using the Minimum-Modulus Theorem ( ). ( Hint : Use to show that a polynomial does not achieve its minimum modulus on a large circle; then use the Minimum-Modulus Theorem to deduce that the polynomial has a zero.)      Give another proof of (a variant of) the Maximum-Modulus via , as follows: Suppose is holomorphic in a region containing , and for . Given a point , show (e.g., by ) that there is a constant such that .  Conclude that .      Find a Laurent series for centered at and specify the region in which it converges.    One Laurent series is , converging for .      Find a Laurent series for centered at and specify the region in which it converges.    One Laurent series is , converging for .      Find a Laurent series for centered at and the region in which it converges.    One Laurent series is , converging for .      Find the terms in the Laurent series for centered at , for .      Find the first four nonzero terms in the power series expansion of centered at the origin. What is the radius of convergence?       Find the power series representation for centered at , where is any constant.      Show that .      Find the power series expansion for centered at .       Show that for .      Prove: If is entire and is constant on the closed unit disk then is constant.       Find the Laurent series for centered at .         Prove that is entire, where        Find the Laurent series for centered at the origin.      Suppose that is holomorphic at , , and . Show that has a zero of multiplicity at .      Find the multiplicities of the zeros of each of the following functions:      , where is any integer.       .       .       Find the zeros of the following functions and determine their multiplicities:                                  Prove that the series of the negative-index terms of a Laurent series converges for for some , and that the convergence is uniform in , for any fixed .      Show that and .  (These are the limits we referred to in .)      Find the three Laurent series of , centered at , defined on the three regions , , and , respectively. ( Hint : Use a partial fraction decomposition.)      Suppose that has exactly one zero, at , inside the circle , and that it has multiplicity . Show that .      Recall that a function is even if for all , and is odd if for all . even  odd Prove that, if is even (resp., odd), then the Laurent series of at 0 has only even (resp., odd) powers. function even  function odd       Suppose is holomorphic and not identically zero on an open disk centered at , and suppose . Use the following outline to show that for some in .     Why can you write where , is holomorphic, and ?      Write in polar coordinates as and define . Why is ?      Why is there a positive constant so that for all ?      Write for . Show that .      Find a value of so that has positive real part.        Find a Laurent series for centered at and specify the region in which it converges.    One Laurent series is , converging for .      Compute .           Find the power series of centered at .         Compute .          Compute where is a closed curve not passing through integer multiples of .    "
 },
 {
   "id": "ex_8_1",
@@ -4912,7 +4912,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.1",
   "title": "",
-  "body": "  For each of the following series, determine where the series converges absolutely and where it converges uniformly:               "
+  "body": "  For each of the following series, determine where the series converges absolutely and where it converges uniformly:          , for any            , for any .    "
 },
 {
   "id": "ex_82",
@@ -4921,7 +4921,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.2",
   "title": "",
-  "body": "  What functions are represented by the series in the previous exercise?   "
+  "body": "  What functions are represented by the series in the previous exercise?    (a)  (b)   "
 },
 {
   "id": "taylorchapter-6-3",
@@ -4948,7 +4948,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.5",
   "title": "",
-  "body": "  Find the terms through third order and the radius of convergence of the power series for each of the following functions, centered at . (Do not find the general form for the coefficients.)                         "
+  "body": "  Find the terms through third order and the radius of convergence of the power series for each of the following functions, centered at . (Do not find the general form for the coefficients.)                               "
 },
 {
   "id": "prob_powerseriesboundaryreal",
@@ -4993,7 +4993,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.10",
   "title": "",
-  "body": "  Suppose the radius of convergence of is . What is the radius of convergence of each of the following?                         "
+  "body": "  Suppose the radius of convergence of is . What is the radius of convergence of each of the following?                               "
 },
 {
   "id": "prob_uniquenessfunctionopensets",
@@ -5020,7 +5020,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.13",
   "title": "",
-  "body": "  Prove : Assume that is harmonic in a region and has a weak local maximum at .   If is simply connected then apply to , where is a harmonic conjugate of . Conclude that is constant on .    If is not simply connected, then the above argument applies to on any disk . Conclude that the partials and are zero on , and adapt the argument of Theorem to show that is constant.      "
+  "body": "  Prove : Assume that is harmonic in a region and has a weak local maximum at .     If is simply connected then apply to , where is a harmonic conjugate of . Conclude that is constant on .      If is not simply connected, then the above argument applies to on any disk . Conclude that the partials and are zero on , and adapt the argument of Theorem to show that is constant.    "
 },
 {
   "id": "ex_8_3",
@@ -5029,7 +5029,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.14",
   "title": "",
-  "body": "  Let be given by . Find the maximum and minimum of on the closed unit disk.   "
+  "body": "  Let be given by . Find the maximum and minimum of on the closed unit disk.    The maximum is 3 (attained at ), and the minimum is 1 (attained at ).   "
 },
 {
   "id": "taylorchapter-6-15",
@@ -5056,7 +5056,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.17",
   "title": "",
-  "body": "  Find a Laurent series for centered at and specify the region in which it converges.   "
+  "body": "  Find a Laurent series for centered at and specify the region in which it converges.    One Laurent series is , converging for .   "
 },
 {
   "id": "ex_8_5",
@@ -5065,7 +5065,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.18",
   "title": "",
-  "body": "  Find a Laurent series for centered at and specify the region in which it converges.   "
+  "body": "  Find a Laurent series for centered at and specify the region in which it converges.    One Laurent series is , converging for .   "
 },
 {
   "id": "ex_8_7",
@@ -5074,7 +5074,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.19",
   "title": "",
-  "body": "  Find a Laurent series for centered at and the region in which it converges.   "
+  "body": "  Find a Laurent series for centered at and the region in which it converges.    One Laurent series is , converging for .   "
 },
 {
   "id": "taylorchapter-6-20",
@@ -5101,7 +5101,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.22",
   "title": "",
-  "body": "    Find the power series representation for centered at , where is any constant.    Show that .    Find the power series expansion for centered at .     "
+  "body": "   Find the power series representation for centered at , where is any constant.      Show that .      Find the power series expansion for centered at .    "
 },
 {
   "id": "taylorchapter-6-23",
@@ -5128,7 +5128,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.25",
   "title": "",
-  "body": "    Find the Laurent series for centered at .    Prove that is entire, where      "
+  "body": "   Find the Laurent series for centered at .         Prove that is entire, where     "
 },
 {
   "id": "taylorchapter-6-26",
@@ -5155,7 +5155,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.28",
   "title": "",
-  "body": "  Find the multiplicities of the zeros of each of the following functions:    , where is any integer.     .     .      "
+  "body": "  Find the multiplicities of the zeros of each of the following functions:      , where is any integer.       .       .    "
 },
 {
   "id": "taylorchapter-6-29",
@@ -5164,7 +5164,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.29",
   "title": "",
-  "body": "  Find the zeros of the following functions and determine their multiplicities:                         "
+  "body": "  Find the zeros of the following functions and determine their multiplicities:                               "
 },
 {
   "id": "ex_laurentconvergenceradius",
@@ -5218,7 +5218,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.35",
   "title": "",
-  "body": "  Suppose is holomorphic and not identically zero on an open disk centered at , and suppose . Use the following outline to show that for some in .   Why can you write where , is holomorphic, and ?    Write in polar coordinates as and define . Why is ?    Why is there a positive constant so that for all ?    Write for . Show that .    Find a value of so that has positive real part.      "
+  "body": "  Suppose is holomorphic and not identically zero on an open disk centered at , and suppose . Use the following outline to show that for some in .     Why can you write where , is holomorphic, and ?      Write in polar coordinates as and define . Why is ?      Why is there a positive constant so that for all ?      Write for . Show that .      Find a value of so that has positive real part.    "
 },
 {
   "id": "ex_9_5",
@@ -5227,7 +5227,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.36",
   "title": "",
-  "body": "    Find a Laurent series for centered at and specify the region in which it converges.    Compute .     "
+  "body": "   Find a Laurent series for centered at and specify the region in which it converges.    One Laurent series is , converging for .      Compute .       "
 },
 {
   "id": "ex_9_3",
@@ -5236,7 +5236,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.37",
   "title": "",
-  "body": "    Find the power series of centered at .    Compute .     "
+  "body": "   Find the power series of centered at .         Compute .       "
 },
 {
   "id": "taylorchapter-6-38",
@@ -5533,7 +5533,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "9.4",
   "title": "Exercises",
-  "body": "   Suppose that has a zero of multiplicity at . Explain why has a pole of order at .      Find the poles or removable singularities of the following functions and determine their orders:                                 Suppose is a nonconstant entire function. Prove that any complex number is arbitrarily close to a number in . ( Hint : If is not a polynomial, use for .)      Evaluate the following integrals for .                                      Suppose has a simple pole (i.e., a pole of order 1) at and is holomorphic at . Prove that .      Find the residue of each function at :                                 Use residues to evaluate the following integrals:                                      Use the Residue to re-prove Cauchy's Integral Formulas ( , and .      Revisiting show that if is even then .      Suppose has an isolated singularity at .   Show that also has an isolated singularity at .    Find .         Extend by proving, if and are holomorphic at , which is a double zero of , then .      Compute .      Generalize and as follows: Let and be polynomials such that for and the degree of is at least two larger than the degree of . Prove that equals times the sum of the residues of at all poles in the upper half plane. improper integral       Compute .      Generalize by deriving conditions under which we can compute for polynomials and , and give a formula for this integral along the lines of .      Compute .      Suppose is entire and with and . Evaluate and use this to give an alternate proof of Liouville's . ( Hint : Show that if is bounded then the above integral goes to zero as increases.)      Prove .      Suppose is meromorphic in the region , is holomorphic in , and is a positively oriented, simple, closed, piecewise smooth path that does not pass through any zero or pole of , and . Denote the zeros and poles of inside by and , respectively, counted according to multiplicity. Prove that .      Find the number of zeros of    in      in      in          Give another proof of the Fundamental Theorem of Algebra ( Theorem ), using Rouché's . fundamental theorem of algebra ( Hint : If , let and , and choose as a circle that is large enough to make the condition of Rouché's theorem work. You might want to first apply to .)      Suppose is closed and bounded and all points of are isolated points of . Show that is finite, as follows:   For each we can choose so that contains no points of except . Show that is continuous. ( Hint : This is really easy if you use the first definition of continuity in .)    Assume is non-empty. By the Extreme Value , has a minimum value, . Let . Since is bounded, it lies in a disk for some . Show that the small disks , for , are disjoint and lie in .    Find a bound on the number of such small disks. ( Hint : Compare the areas of and .)       "
+  "body": "   Suppose that has a zero of multiplicity at . Explain why has a pole of order at .      Find the poles or removable singularities of the following functions and determine their orders:                                         Suppose is a nonconstant entire function. Prove that any complex number is arbitrarily close to a number in .    If is not a polynomial, use for .      Evaluate the following integrals for .                                                                  Suppose has a simple pole (i.e., a pole of order 1) at and is holomorphic at . Prove that .      Find the residue of each function at :                                         Use residues to evaluate the following integrals:                                                Use the Residue to re-prove Cauchy's Integral Formulas ( , and .      Revisiting show that if is even then .      Suppose has an isolated singularity at .     Show that also has an isolated singularity at .      Find .       Extend by proving, if and are holomorphic at , which is a double zero of , then .      Compute .      Generalize and as follows: Let and be polynomials such that for and the degree of is at least two larger than the degree of . Prove that equals times the sum of the residues of at all poles in the upper half plane. improper integral       Compute .         Generalize by deriving conditions under which we can compute for polynomials and , and give a formula for this integral along the lines of .      Compute .      Suppose is entire and with and . Evaluate and use this to give an alternate proof of Liouville's .    Show that if is bounded then the above integral goes to zero as increases.      Prove .      Suppose is meromorphic in the region , is holomorphic in , and is a positively oriented, simple, closed, piecewise smooth path that does not pass through any zero or pole of , and . Denote the zeros and poles of inside by and , respectively, counted according to multiplicity. Prove that .      Find the number of zeros of      in           in           in           Give another proof of the Fundamental Theorem of Algebra ( Theorem ), using Rouché's . fundamental theorem of algebra     If , let and , and choose as a circle that is large enough to make the condition of Rouché's theorem work. You might want to first apply to .      Suppose is closed and bounded and all points of are isolated points of . Show that is finite, as follows:     For each we can choose so that contains no points of except . Show that is continuous.    This is really easy if you use the first definition of continuity in .      Assume is non-empty. By the Extreme Value , has a minimum value, . Let . Since is bounded, it lies in a disk for some . Show that the small disks , for , are disjoint and lie in .      Find a bound on the number of such small disks.    Compare the areas of and .     "
 },
 {
   "id": "residuechapter-6-1",
@@ -5551,7 +5551,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.2",
   "title": "",
-  "body": "  Find the poles or removable singularities of the following functions and determine their orders:                              "
+  "body": "  Find the poles or removable singularities of the following functions and determine their orders:                                      "
 },
 {
   "id": "residuechapter-6-3",
@@ -5560,7 +5560,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.3",
   "title": "",
-  "body": "  Suppose is a nonconstant entire function. Prove that any complex number is arbitrarily close to a number in . ( Hint : If is not a polynomial, use for .)   "
+  "body": "  Suppose is a nonconstant entire function. Prove that any complex number is arbitrarily close to a number in .    If is not a polynomial, use for .   "
 },
 {
   "id": "ex_9_2",
@@ -5569,7 +5569,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.4",
   "title": "",
-  "body": "  Evaluate the following integrals for .                                   "
+  "body": "  Evaluate the following integrals for .                                                               "
 },
 {
   "id": "residuechapter-6-5",
@@ -5587,7 +5587,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.6",
   "title": "",
-  "body": "  Find the residue of each function at :                              "
+  "body": "  Find the residue of each function at :                                      "
 },
 {
   "id": "residuechapter-6-7",
@@ -5596,7 +5596,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.7",
   "title": "",
-  "body": "  Use residues to evaluate the following integrals:                                   "
+  "body": "  Use residues to evaluate the following integrals:                                             "
 },
 {
   "id": "residuechapter-6-8",
@@ -5623,7 +5623,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.10",
   "title": "",
-  "body": "  Suppose has an isolated singularity at .   Show that also has an isolated singularity at .    Find .      "
+  "body": "  Suppose has an isolated singularity at .     Show that also has an isolated singularity at .      Find .    "
 },
 {
   "id": "ex_computing_residues2",
@@ -5659,7 +5659,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.14",
   "title": "",
-  "body": "  Compute .   "
+  "body": "  Compute .      "
 },
 {
   "id": "residuechapter-6-15",
@@ -5686,7 +5686,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.17",
   "title": "",
-  "body": "  Suppose is entire and with and . Evaluate and use this to give an alternate proof of Liouville's . ( Hint : Show that if is bounded then the above integral goes to zero as increases.)   "
+  "body": "  Suppose is entire and with and . Evaluate and use this to give an alternate proof of Liouville's .    Show that if is bounded then the above integral goes to zero as increases.   "
 },
 {
   "id": "ex_logderpoles",
@@ -5713,7 +5713,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.20",
   "title": "",
-  "body": "  Find the number of zeros of    in      in      in       "
+  "body": "  Find the number of zeros of      in           in           in        "
 },
 {
   "id": "residuechapter-6-21",
@@ -5722,7 +5722,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.21",
   "title": "",
-  "body": "  Give another proof of the Fundamental Theorem of Algebra ( Theorem ), using Rouché's . fundamental theorem of algebra ( Hint : If , let and , and choose as a circle that is large enough to make the condition of Rouché's theorem work. You might want to first apply to .)   "
+  "body": "  Give another proof of the Fundamental Theorem of Algebra ( Theorem ), using Rouché's . fundamental theorem of algebra     If , let and , and choose as a circle that is large enough to make the condition of Rouché's theorem work. You might want to first apply to .   "
 },
 {
   "id": "ex_compactAndIsolated",
@@ -5731,7 +5731,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.4.22",
   "title": "",
-  "body": "  Suppose is closed and bounded and all points of are isolated points of . Show that is finite, as follows:   For each we can choose so that contains no points of except . Show that is continuous. ( Hint : This is really easy if you use the first definition of continuity in .)    Assume is non-empty. By the Extreme Value , has a minimum value, . Let . Since is bounded, it lies in a disk for some . Show that the small disks , for , are disjoint and lie in .    Find a bound on the number of such small disks. ( Hint : Compare the areas of and .)      "
+  "body": "  Suppose is closed and bounded and all points of are isolated points of . Show that is finite, as follows:     For each we can choose so that contains no points of except . Show that is continuous.    This is really easy if you use the first definition of continuity in .      Assume is non-empty. By the Extreme Value , has a minimum value, . Let . Since is bounded, it lies in a disk for some . Show that the small disks , for , are disjoint and lie in .      Find a bound on the number of such small disks.    Compare the areas of and .    "
 },
 {
   "id": "sec_infsums",
