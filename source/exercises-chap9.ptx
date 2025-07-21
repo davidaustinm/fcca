@@ -12,89 +12,129 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Find the poles or removable singularities of the following
-        functions and determine their orders: 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>(z^2+1)^{-3}(z-1)^{-4}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z\cot(z)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^{-5}\sin(z)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac1{1-\exp(z)}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac z{1-\exp(z)}</m>
-            </p>
-          </li>
-        </ol>
+        functions and determine their orders:
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>(z^2+1)^{-3}(z-1)^{-4}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z\cot(z)</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^{-5}\sin(z)</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac1{1-\exp(z)}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac z{1-\exp(z)}</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
       <p>
         Suppose <m>f</m> is a nonconstant entire function.
         Prove that any complex number is arbitrarily close to a number
-        in <m>f(\C)</m>. (<em>Hint</em>: If <m>f</m> is not a
-        polynomial, 
-        use <xref ref="casoratiweierstrass"/> for <m>f (\frac 1 z)</m>.)
+        in <m>f(\C)</m>.
       </p>
     </statement>
+    <hint>
+      <p>If <m>f</m> is not a
+        polynomial, 
+        use <xref ref="casoratiweierstrass"/> for <m>f (\frac 1 z)</m>.
+      </p>
+    </hint>
   </exercise>
   <exercise xml:id="ex_9_2">
-    <statement>
+    <introduction>
       <p>
         Evaluate the following integrals for <m>\gg = C[0,3]</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\displaystyle \i \cot (z) \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \i z^3 \cos ( \tfrac 3 z )\, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \i \frac{ \diff{z} }{ (z+4) ( z^2 + 1 ) }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \i z^2 \exp ( \tfrac 1 z )\, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \i \frac{ \exp (z) }{ \sinh (z) } \, \diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \i \frac{ i^{z+4} }{ (z^2 + 16)^2 } \, \diff{z}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \i \cot (z) \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>2 \pi i</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \i z^3 \cos ( \tfrac 3 z )\, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\frac{27 \pi i} 4</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \i \frac{ \diff{z} }{ (z+4) ( z^2 + 1 ) }</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>- \frac{2 \pi i}{17}</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \i z^2 \exp ( \tfrac 1 z )\, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\frac{\pi i} 3</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \i \frac{ \exp (z) }{ \sinh (z) } \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>2\pi i</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \i \frac{ i^{z+4} }{ (z^2 + 16)^2 } \, \diff{z}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>0</m></p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -110,79 +150,97 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Find the residue of each function at <m>0</m>:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>z^{-3}\cos(z)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\csc(z)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\frac{z^2+4z+5}{z^2+z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\exp(1-\tfrac1z)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\frac{\exp(4z)-1}{\sin^2(z)}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>z^{-3}\cos(z)</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\csc(z)</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\frac{z^2+4z+5}{z^2+z}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\exp(1-\tfrac1z)</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\frac{\exp(4z)-1}{\sin^2(z)}</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Use residues to evaluate the following integrals:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\int_{ C[i-1,1] }\frac{\diff{z}}{z^4+4}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\int_{ C[i,2] }\frac{\diff{z}}{z(z^2+z-2)}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\int_{ C[0,2] }\frac{\exp(z)}{z^3+z}<nbsp/>\diff{z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\int_{ C[0,1] }\frac{\diff{z}}{z^2\sin z}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\int_{ C[0,3] }\frac{\exp(z)}{(z+2)^2 \sin z} <nbsp/>
-              \diff{z}</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) \cos(z) }
-              <nbsp/> \diff{z}</m> 
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\int_{ C[i-1,1] }\frac{\diff{z}}{z^4+4}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\int_{ C[i,2] }\frac{\diff{z}}{z(z^2+z-2)}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\int_{ C[0,2] }\frac{\exp(z)}{z^3+z}<nbsp/>\diff{z}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\int_{ C[0,1] }\frac{\diff{z}}{z^2\sin z}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\int_{ C[0,3] }\frac{\exp(z)}{(z+2)^2 \sin z} <nbsp/>
+          \diff{z}</m> 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) \cos(z) }
+          <nbsp/> \diff{z}</m> 
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -205,24 +263,26 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Suppose <m>f</m> has an isolated singularity at <m>z_0</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that <m>f'</m> also has an isolated singularity at
-              <m>z_0</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              Find <m>\Res_{z=z_0} (f')</m>.
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>f'</m> also has an isolated singularity at
+          <m>z_0</m>. 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find <m>\Res_{z=z_0} (f')</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_computing_residues2">
     <statement>
@@ -272,6 +332,9 @@
         (1+x^2)^2 } </m>. 
       </p>
     </statement>
+    <answer>
+      <p><m>\frac \pi 2</m></p>
+    </answer>
   </exercise>
   <exercise>
     <statement>
@@ -305,10 +368,12 @@
         </me>
         and use this to give an alternate proof of Liouville's
         <xref ref="liouville"/>.
-        (<em>Hint</em>: Show that if <m>f</m> is bounded then the
-        above integral goes to zero as <m>R</m> increases.) 
       </p>
     </statement>
+    <hint>
+      <p>Show that if <m>f</m> is bounded then the
+      above integral goes to zero as <m>R</m> increases.</p>
+    </hint>
   </exercise>
   <exercise xml:id="ex_logderpoles">
     <statement>
@@ -339,28 +404,41 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_9_1">
-    <statement>
+    <introduction>
       <p>
         Find the number of zeros of
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>3 \exp (z) - z</m> in <m>\overline D[0,1]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\frac 1 3 \exp (z) - z</m> in <m>\overline D[0,1]</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^4 - 5 z + 1</m> in <m>\{ z \in \C : \, 1 \leq |z| \leq 2 \}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>3 \exp (z) - z</m> in <m>\overline D[0,1]</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>0</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\frac 1 3 \exp (z) - z</m> in <m>\overline D[0,1]</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^4 - 5 z + 1</m> in <m>\{ z \in \C : \, 1 \leq |z| \leq 2 \}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>4</m></p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -369,57 +447,70 @@
         (<xref ref="fundthmalg">Theorem</xref>),
         using Rouch&#xe9;'s
         <xref ref="rouche"/>. 
-        <idx><h>fundamental theorem</h><h>of algebra</h></idx> 
-        (<em>Hint</em>: If <m>p(z) = a_n
+        <idx><h>fundamental theorem</h><h>of algebra</h></idx>
+      </p>
+    </statement>
+    <hint>
+        <p>If <m>p(z) = a_n
         z^n + a_{n-1} z^{n-1} + \dots + a_1 z + 1</m>, 
         let <m>f(z) = a_n z^n</m> and <m>g(z) = a_{n-1} z^{n-1} +
         a_{n-2} z^{n-2} + \dots + a_1 z + 1</m>, 
         and choose as <m>\gg</m> a circle that is large enough to make
         the condition of Rouch&#xe9;'s theorem work. 
         You might want to first apply
-        <xref ref="polynomialestimate"/> to<nbsp/><m>g(z)</m>.)
-      </p>
-    </statement>
+        <xref ref="polynomialestimate"/> to<nbsp/><m>g(z)</m>.
+        </p>
+    </hint>
   </exercise>
   <exercise xml:id="ex_compactAndIsolated">
-    <statement>
+    <introduction>
       <p>
         Suppose <m>S\subset\C</m> is closed and bounded and all points
         of <m>S</m> are isolated points of <m>S</m>. 
         Show that <m>S</m> is finite, as follows:
-        <ol marker="a) ">
-          <li>
-            <p>
-              For each <m>z\in S</m> we can choose <m>\phi(z)>0</m> so that
-              <m>D[z,\phi(z)]</m> contains no points of <m>S</m>
-              except <m>z</m>. 
-              Show that <m>\phi</m> is continuous.
-              (<em>Hint</em>: This is really easy if you use the <em>first</em>
-              definition of continuity in
-              <xref ref="sec_limitsandcontinuity"/>.)
-            </p>
-          </li>
-          <li>
-            <p>
-              Assume <m>S</m> is non-empty.
-              By the Extreme Value <xref ref="realEVT"/>,
-              <m>\phi</m> has a minimum value, <m>r_0>0</m>.
-              Let <m>r=r_0/2</m>.
-              Since <m>S</m> is bounded, it lies in a disk
-              <m>D[0,M]</m> for some <m>M</m>. 
-              Show that the small disks <m>D[z,r]</m>,
-              for <m>z\in S</m>, are disjoint and lie in <m>D[0,M+r]</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Find a bound on the number of such small disks.
-              (<em>Hint</em>: Compare the areas of <m>D[z,r]</m> and
-              <m>D[0,M+r]</m>.) 
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          For each <m>z\in S</m> we can choose <m>\phi(z)>0</m> so that
+          <m>D[z,\phi(z)]</m> contains no points of <m>S</m>
+          except <m>z</m>. 
+          Show that <m>\phi</m> is continuous.
+        </p>
+      </statement>
+      <hint>
+        <p>This is really easy if you use the <em>first</em>
+        definition of continuity in
+        <xref ref="sec_limitsandcontinuity"/>.
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Assume <m>S</m> is non-empty.
+          By the Extreme Value <xref ref="realEVT"/>,
+          <m>\phi</m> has a minimum value, <m>r_0>0</m>.
+          Let <m>r=r_0/2</m>.
+          Since <m>S</m> is bounded, it lies in a disk
+          <m>D[0,M]</m> for some <m>M</m>. 
+          Show that the small disks <m>D[z,r]</m>,
+          for <m>z\in S</m>, are disjoint and lie in <m>D[0,M+r]</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find a bound on the number of such small disks.
+        </p>
+      </statement>
+      <hint>
+        <p>Compare the areas of <m>D[z,r]</m> and
+        <m>D[0,M+r]</m>.
+        </p>
+      </hint>
+    </task>
   </exercise>
 </exercises>
