@@ -27,45 +27,49 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Let <m>u(x,y) = e^x \sin y</m>.
-        <ol marker="a) ">
-          <li>
+      </p>
+    </introduction>
+    <task>
+      <statement>
             <p>
               Show that <m>u</m> is harmonic on <m>\C</m>.
             </p>
-          </li>
-          <li>
-            <p>
-              Find an entire function <m>f</m> such that <m>\Re (f) =
-              u</m>. 
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find an entire function <m>f</m> such that <m>\Re (f) =
+          u</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="logharmonic">
-    <statement>
+    <introduction>
       <p>
         Consider <m>u(x,y) = \ln \left( x^2 + y^2 \right)</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that <m>u</m> is harmonic on <m>\C \setminus \{ 0 \}</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Prove that <m>u</m> is <em>not</em>
-              the real part of a function that is holomorphic in <m>\C
-              \setminus \{ 0 \}</m>. 
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>u</m> is harmonic on <m>\C \setminus \{ 0 \}</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Prove that <m>u</m> is <em>not</em>
+          the real part of a function that is holomorphic in <m>\C
+          \setminus \{ 0 \}</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_ln_f_harmonic">
     <statement>
@@ -104,42 +108,48 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Suppose <m>u(r, \phi)</m> is a function
         <m>\R^2 \to \R</m> given in terms of polar coordinates.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that the Laplace equation for <m>u(r, \phi)</m> is
-              <me>
-                \frac 1 r \, u_r + u_{ rr } + \frac 1 {r^2} u_{ \phi
-                \phi } \= 0 \, 
-              </me>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>u(r, \phi) = r^2 \cos(2 \phi)</m> is
-              harmonic on <m>\C</m>. 
-              Generalize.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>u(r, \phi)</m> depends only on <m>r</m>,
-              when is <m>u</m> harmonic?
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>u(r, \phi)</m> depends only on <m>\phi</m>,
-              when is <m>u</m> harmonic?
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that the Laplace equation for <m>u(r, \phi)</m> is
+          <me>
+            \frac 1 r \, u_r + u_{ rr } + \frac 1 {r^2} u_{ \phi
+            \phi } \= 0 \,
+          </me>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that <m>u(r, \phi) = r^2 \cos(2 \phi)</m> is
+          harmonic on <m>\C</m>.
+          Generalize.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>u(r, \phi)</m> depends only on <m>r</m>,
+          when is <m>u</m> harmonic?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If <m>u(r, \phi)</m> depends only on <m>\phi</m>,
+          when is <m>u</m> harmonic?
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -161,7 +171,7 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_poissonkernelapp">
-    <statement>
+    <introduction>
       <p>
         Recall from <xref ref="ex_poissonkernel"/> the Poisson kernel
         <me>
@@ -185,53 +195,59 @@
         <m>\overline D[0,1]</m>. 
         By <xref ref="ex_biggerdisk"/>
         we can find <m>R_0>1</m> so that <m>u</m> is harmonic in
-        <m>D[0,R_0]</m>. 
-        <ol marker="a) ">
-          <li>
-            <p>
-              Recall the M&#xf6;bius function
-              <me>
-                f_a(z) \= \frac{ z-a }{ 1 - \conj{a} z } \,
-              </me>,
-              for some fixed <m>a \in \C</m> with <m>|a| \lt  1</m>,
-              from <xref ref="ex_mobiusunitcircletounitcircle"/>.
-              Show that <m>u(f_{ -a }(z))</m> is harmonic on an open disk
-              <m>D[0,R_1]</m> containing <m>\overline D[0,1]</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Apply <xref ref="harmonicmeanvalue"/>
-              to the function <m>u(f_{ -a }(z))</m> with <m>w=0</m> to deduce
-              <men xml:id="eq_poissoninterm">
-                u(a) \= \frac{ 1 }{ 2 \pi i } \int_{ C[0,1] } \frac{
-                u(f_{ -a }(z)) }{ z } \, \diff{z} \, 
-              </men>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Recalling, again from
-              <xref ref="ex_mobiusunitcircletounitcircle"/>,
-              that <m>f_a(z)</m> maps the unit circle to itself,
-              apply a change of variables to
-              <xref ref="eq_poissoninterm"/> to prove 
-              <me>
-                u(a) \= \frac{ 1 }{ 2 \pi } \int_0^{ 2 \pi } u \!
-                \left( e^{ i t } \right) \frac{ 1 - |a|^2 }{ \left|
-                e^{ i t } - a \right|^2 } \, \diff{t} \, 
-              </me>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Deduce <xref ref="eq_poissonintform"/> by setting <m>a =
-              r \, e^{ i \phi }</m>. 
-            </p>
-          </li>
-        </ol>
+        <m>D[0,R_0]</m>.
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Recall the M&#xf6;bius function
+          <me>
+            f_a(z) \= \frac{ z-a }{ 1 - \conj{a} z } \,
+          </me>,
+          for some fixed <m>a \in \C</m> with <m>|a| \lt  1</m>,
+          from <xref ref="ex_mobiusunitcircletounitcircle"/>.
+          Show that <m>u(f_{ -a }(z))</m> is harmonic on an open disk
+          <m>D[0,R_1]</m> containing <m>\overline D[0,1]</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Apply <xref ref="harmonicmeanvalue"/>
+          to the function <m>u(f_{ -a }(z))</m> with <m>w=0</m> to deduce
+          <men xml:id="eq_poissoninterm">
+            u(a) \= \frac{ 1 }{ 2 \pi i } \int_{ C[0,1] } \frac{
+            u(f_{ -a }(z)) }{ z } \, \diff{z} \,
+          </men>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Recalling, again from
+          <xref ref="ex_mobiusunitcircletounitcircle"/>,
+          that <m>f_a(z)</m> maps the unit circle to itself,
+          apply a change of variables to
+          <xref ref="eq_poissoninterm"/> to prove
+          <me>
+            u(a) \= \frac{ 1 }{ 2 \pi } \int_0^{ 2 \pi } u \!
+            \left( e^{ i t } \right) \frac{ 1 - |a|^2 }{ \left|
+            e^{ i t } - a \right|^2 } \, \diff{t} \,
+          </me>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Deduce <xref ref="eq_poissonintform"/> by setting <m>a =
+          r \, e^{ i \phi }</m>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_biggerdisk">
     <statement>
