@@ -80,10 +80,14 @@
         Show that the limits of <m>f</m> at <m>0</m> along all
         straight lines through the origin exist and are equal, 
         but <m>\displaystyle\lim_{z\to0}f(z)</m> does not exist.
-        (<em>Hint</em>: Consider the limit along the parabola
-        <m>y=x^2</m>.) 
       </p>
     </statement>
+    <hint>
+      <p>
+        Consider the limit along the parabola
+        <m>y=x^2</m>.
+      </p>
+    </hint>
   </exercise>
   <exercise>
     <statement>
@@ -389,10 +393,14 @@
         Prove: If <m>f</m> is holomorphic in the region
         <m>G \subseteq \C</m> and always real valued,
         then <m>f</m> is constant in <m>G</m>.
-        (<em>Hint</em>: Use the Cauchy-Riemann equations <xref
-        ref="crequations"/> to show that <m>f'=0</m>.)
       </p>
     </statement>
+    <hint>
+      <p>
+        Use the Cauchy-Riemann equations <xref
+        ref="crequations"/> to show that <m>f'=0</m>.
+      </p>
+    </hint>
   </exercise>
   <exercise xml:id="ex_fandconjfimpliesconst">
     <statement>
@@ -549,12 +557,16 @@
         G</m>, 
         then <m>f(z) = a z + b</m> for some
         <m>a,
-        b \in \C</m>. (<em>Hint</em>: Use <xref
+        b \in \C</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>Use <xref
         ref="derivative0"/>
         to show that <m>f'(z) = a</m>,
         and then use <xref ref="derivative0"/>
-        again for the function <m>f(z) - a z</m>.)
+        again for the function <m>f(z) - a z</m>.
       </p>
-    </statement>
+    </hint>
   </exercise>
 </exercises>

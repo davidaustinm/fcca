@@ -403,22 +403,28 @@
       <statement>
         <p>
           Show that <m>\lim_{n\to\infty}f_n(x)=0</m> for all
-          <m>x\ge0</m>. (<em>Hint</em>: Treat <m>x=0</m> as a
+          <m>x\ge0</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>Treat <m>x=0</m> as a
           special case; 
           for <m>x>0</m> you can use L'H&#xf4;pital's rule
           (<xref ref="lhospital"/>)
           <mdash/> but remember that <m>n</m> is the variable,
-          not<nbsp/><m>x</m>.) 
+          not<nbsp/><m>x</m>.
         </p>
-      </statement>
+      </hint>
     </task>
     <task>
       <statement>
         <p>
           Find <m>\lim_{n\to\infty}\int_0^1 f_n(x)\,\diff{x}</m>.
-          (<em>Hint</em>: The answer is <em>not</em> <m>0</m>.)
         </p>
       </statement>
+      <hint>
+        <p>The answer is <em>not</em> <m>0</m>.</p>
+      </hint>
     </task>
     <task>
       <statement>

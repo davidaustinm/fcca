@@ -155,11 +155,13 @@
     <statement>
       <p>
         Prove that, if <m>u</m> is harmonic and bounded on <m>\C</m>,
-        then <m>u</m> is constant. (<em>Hint</em>: Use <xref
-        ref="harmonictoholomorphic"/>
-        and Liouville's Theorem (<xref ref="liouville"/>).)
+        then <m>u</m> is constant.
       </p>
     </statement>
+    <hint>
+      <p>Use <xref ref="harmonictoholomorphic"/>
+      and Liouville's Theorem (<xref ref="liouville"/>).</p>
+    </hint>
   </exercise>
   <exercise>
     <statement>
@@ -255,15 +257,19 @@
         Suppose <m>G</m> is open and <m>\overline D[a,r] \subset G</m>.
         Show that there is <m>R>r</m> so that
         <m>\overline D[a,r] \subset D[a,R] \subset
-        G</m>. (<em>Hint</em>: If <m>G=\C</m> just take <m>R=r+1</m>. 
+        G</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>If <m>G=\C</m> just take <m>R=r+1</m>. 
         Otherwise choose some <m>w\in \C\setminus G</m>,
         let <m>M=|w-a|</m>, and let <m>K=\overline D[a,M] \setminus G</m>.
         Show that <m>K</m> is nonempty, closed and bounded,
         and apply <xref ref="realEVT"/>
         to find a point <m>z_0\in K</m> that minimizes
         <m>f(z)=|z-a|</m> on <m>K</m>. 
-        Show that <m>R=|z_0-a|</m> works.)
+        Show that <m>R=|z_0-a|</m> works.
       </p>
-    </statement>
+    </hint>
   </exercise>
 </exercises>

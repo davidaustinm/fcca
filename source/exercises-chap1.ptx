@@ -510,13 +510,17 @@
         Fix a positive integer <m>n</m>.
         Prove that the solutions to the equation <m>z^n = 1</m> are precisely
         <m>z = e^{ 2 \pi i \frac m n }</m> where <m>m \in \Z</m>.
-        (<em>Hint</em>: To show that every solution of <m>z^n = 1</m> is of this form,
+      </p>
+    </statement>
+    <hint>
+      <p>
+        To show that every solution of <m>z^n = 1</m> is of this form,
         first prove that it must be of the form
         <m>z = e^{ 2 \pi i \frac a n }</m> for some <m>a \in \R</m>,
         then write <m>a = m + b</m> for some integer <m>m</m> and some real number <m>0 \le b \lt 1</m>,
-        and then argue that <m>b</m> has to be zero.)
+        and then argue that <m>b</m> has to be zero.
       </p>
-    </statement>
+    </hint>
   </exercise>
   <exercise xml:id="ex_5throotsof1">
     <statement>
@@ -540,9 +544,13 @@
       <p>
         Fix a positive integer <m>n</m> and a complex number <m>w</m>.
         Find all solutions to <m>z^n = w</m>.
-        (<em>Hint</em>: Write <m>w</m> in terms of polar coordinates.)
       </p>
     </statement>
+    <hint>
+      <p>
+        Write <m>w</m> in terms of polar coordinates.
+      </p>
+    </hint>
   </exercise>
   <exercise>
     <introduction>

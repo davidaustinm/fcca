@@ -663,8 +663,12 @@
       <p>
         Determine the image of the strip
         <m>\{z \in \C : - \frac \pi 2 \lt \Re z \lt \frac \pi 2\}</m>
-        under the sine function. 
-        (<em>Hint</em>: <xref ref="ex_sin_x_iy_"/>
+        under the sine function.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        <xref ref="ex_sin_x_iy_"/>
         makes it easy to convert parametric equations for horizontal
         or vertical lines to parametric equations for their images. 
         Note that the equations <m>x=A\sin t</m> and
@@ -673,9 +677,9 @@
         <m>y=B\sinh t</m> represent a hyperbola.
         Start by finding the images of the boundary lines of the strip,
         and then find the images of a few horizontal segments and
-        vertical lines in the strip.) 
+        vertical lines in the strip.
       </p>
-    </statement>
+    </hint>
   </exercise>
   <exercise xml:id="ex_princval">
     <introduction>
@@ -800,10 +804,14 @@
         For the multiple-valued logarithm,
         is there a difference between the set of all values of
         <m>\log( z^2)</m> and the set of all values of
-        <m>2 \log z</m>? (<em>Hint</em>: Try some fixed numbers for
-        <m>z</m>.) 
+        <m>2 \log z</m>?
       </p>
     </statement>
+    <hint>
+      <p>Try some fixed numbers for
+      <m>z</m>.
+      </p>
+    </hint>
   </exercise>
   <exercise xml:id="ex_3_1">
     <introduction>

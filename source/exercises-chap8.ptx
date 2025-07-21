@@ -277,13 +277,17 @@
         (<xref ref="fundthmalg"/>),
         using the Minimum-Modulus Theorem
         (<xref ref="minmodthm"/>).
-        (<em>Hint</em>: Use <xref ref="polynomialestimate"/>
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Use <xref ref="polynomialestimate"/>
         to show that a polynomial does not achieve its minimum modulus
         on a large circle; 
         then use the Minimum-Modulus Theorem to deduce that the
-        polynomial has a zero.) 
+        polynomial has a zero.
       </p>
-    </statement>
+    </hint>
   </exercise>
   <exercise>
     <statement>
@@ -572,9 +576,13 @@
         </me>,
         centered at <m>0</m>, defined on the three regions <m>|z| \lt  1</m>,
         <m>1 \lt  |z| \lt  2</m>, and <m>2 \lt  |z|</m>, respectively.
-        (<em>Hint</em>: Use a partial fraction decomposition.)
       </p>
     </statement>
+    <hint>
+      <p>
+        Use a partial fraction decomposition.
+      </p>
+    </hint>
   </exercise>
   <exercise>
     <statement>

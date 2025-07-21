@@ -188,12 +188,14 @@
         <m>\int_\gamma z\,\diff{z}</m> and
         <m>\int_\gamma \conj z\,\diff{z}</m> along each of the following paths.
       </p>
+    </introduction>
+    <hint>
       <p>
-         (<em>Hint</em>: You can get the second two integrals after you
+         You can get the second two integrals after you
         calculate the first two by writing <m>z</m> and <m>\conj z</m>
         as <m>x\pm iy</m>.) 
       </p>
-    </introduction>
+    </hint>
     <task>
       <statement>
         <p>
@@ -340,15 +342,19 @@
         Prove
         <xref ref="prop_integrationIsIndependentOfParametrization"/>
         and the fact that the length of <m>\gg</m> does not change
-        under reparametrization. 
-        (<em>Hint</em>: Assume <m>\gg</m>,
+        under reparametrization.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Assume <m>\gg</m>,
         <m>\sigma</m>, and <m>\tau</m> are smooth.
         Start with the definition of <m>\int_\sigma f</m>,
         apply the chain rule to <m>\sigma=\gg\circ\tau</m>,
         and then use the change of variables formula,
-        <xref ref="thm_calcsubstitution"/>.)
+        <xref ref="thm_calcsubstitution"/>.
       </p>
-    </statement>
+    </hint>
   </exercise>
   <exercise>
     <statement>
@@ -523,10 +529,13 @@
     <introduction>
       <p>
         Compute the following integrals.
-        (<em>Hint</em>: One of these integrals is considerably easier
-        than the other.) 
       </p>
     </introduction>
+    <hint>
+      <p>One of these integrals is considerably easier
+      than the other.
+      </p>
+    </hint>
     <task>
       <statement>
         <p>
@@ -592,10 +601,13 @@
         and <m>\tau</m> is a continuous increasing function from
         <m>[0,1]</m> onto <m>[0,1]</m>. 
         Show that <m>\gg</m> is <m>G</m>-homotopic to the reparametrized path
-        <m>\gg\circ\tau</m>. (<em>Hint</em>: Make use of
-        <m>\tau_s(t)=s\tau(t)+(1-s)t</m> for <m>0\le s\le1</m>.)
+        <m>\gg\circ\tau</m>.
       </p>
     </statement>
+    <hint>
+      <p>Make use of
+      <m>\tau_s(t)=s\tau(t)+(1-s)t</m> for <m>0\le s\le1</m>.</p>
+    </hint>
   </exercise>
   <exercise xml:id="C-contractible">
     <task>
