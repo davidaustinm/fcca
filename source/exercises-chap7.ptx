@@ -2,68 +2,97 @@
 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude">
   <exercise xml:id="ex_7_1">
-    <statement>
+    <introduction>
       <p>
         For each of the sequences, prove convergence or divergence.
         If the sequence converges, find the limit.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>a_n = e^{\frac{ \pi i n} 4}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>a_n =\frac{(-1)^n} n</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>a_n = \cos(n)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>a_n = 2 - \frac{ i \, n^2 }{ 2n^2 + 1 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>a_n =\sin ( \frac 1 n )</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>a_n = e^{\frac{ \pi i n} 4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>divergent</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>a_n =\frac{(-1)^n} n</m>
+        </p>
+      </statement>
+      <answer>
+        <p>convergent (limit <m>0</m>)</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>a_n = \cos(n)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>divergent</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>a_n = 2 - \frac{ i \, n^2 }{ 2n^2 + 1 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>convergent (limit <m>2-\frac i2</m>)</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>a_n =\sin ( \frac 1 n )</m>
+        </p>
+      </statement>
+      <answer>
+        <p>convergent (limit <m>0</m>)</p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Determine whether each of the following series converges or diverges.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\ds \sum_{n \geq 1} \left(\frac{1+i}{\sqrt{3}}\right)^n</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \sum_{n \geq 1} n\left(\frac{1}{i}\right)^n</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \sum_{n \geq 1} \left(\frac{1+2i}{\sqrt{5}}\right)^n</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \sum_{n \geq 1} \frac{1}{n^3+i^n}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \sum_{n \geq 1} \left(\frac{1+i}{\sqrt{3}}\right)^n</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \sum_{n \geq 1} n\left(\frac{1}{i}\right)^n</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \sum_{n \geq 1} \left(\frac{1+2i}{\sqrt{5}}\right)^n</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \sum_{n \geq 1} \frac{1}{n^3+i^n}</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="x73">
     <statement>
@@ -71,6 +100,9 @@
         Compute <m>\ds \sum_{n \geq 1} \frac 1 { n^2 + 2n } </m>.
       </p>
     </statement>
+    <answer>
+      <p><m>\frac23</m></p>
+    </answer>
   </exercise>
   <exercise xml:id="ex_limitrulesseq">
     <statement>
@@ -80,26 +112,28 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Prove the following:
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n = a
-              \Longrightarrow \lim_{ n \to \infty } |a_n| = |a|</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n = 0
-              \Longleftrightarrow \lim_{ n \to \infty } |a_n| =
-              0</m>. 
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \lim_{ n \to \infty } a_n = a
+          \Longrightarrow \lim_{ n \to \infty } |a_n| = |a|</m>. 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \lim_{ n \to \infty } a_n = 0
+          \Longleftrightarrow \lim_{ n \to \infty } |a_n| =
+          0</m>. 
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_convseqbounded">
     <statement>
@@ -132,25 +166,25 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_edefdaslimit">
-    <statement>
-      <ol marker="a) ">
-        <li>
-          <p>
-            Show that <m>\frac 1 {k!} \le \frac 3 {k(k+1)}</m> for any
-            positive integer <m>k</m>. 
-          </p>
-        </li>
-        <li>
-          <p>
-            Conclude with <xref ref="ex_telescope"/>
-            that for any positive integer<nbsp/><m>n</m>,
-            <me>
-              1 + \frac 1 2 + \frac 1 6 + \dots + \frac 1 {n!} \ \le \ 3 \,
-            </me>.
-          </p>
-        </li>
-      </ol>
-    </statement>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\frac 1 {k!} \le \frac 3 {k(k+1)}</m> for any
+          positive integer <m>k</m>. 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Conclude with <xref ref="ex_telescope"/>
+          that for any positive integer<nbsp/><m>n</m>,
+          <me>
+            1 + \frac 1 2 + \frac 1 6 + \dots + \frac 1 {n!} \ \le \ 3 \,
+          </me>.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_archimedean">
     <statement>
@@ -205,26 +239,26 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_groupingterms">
-    <statement>
-      <ol marker="a) ">
-        <li>
-          <p>
-            Suppose that the sequence <m>(c_n)</m> converges to zero.
-            Show that <m>\sum_{n \ge 0} c_n</m> converges if and only
-            if <m>\sum_{k \ge 0} (c_{2k}+c_{2k+1})</m> converges. 
-            Moreover, if the two series converge then they have the
-            same limit. 
-          </p>
-        </li>
-        <li>
-          <p>
-            Give an example where <m>(c_n)</m> does not converge to
-            <m>0</m> and one of the series in (a) diverges while the
-            other converges. 
-          </p>
-        </li>
-      </ol>
-    </statement>
+    <task>
+      <statement>
+        <p>
+          Suppose that the sequence <m>(c_n)</m> converges to zero.
+          Show that <m>\sum_{n \ge 0} c_n</m> converges if and only
+          if <m>\sum_{k \ge 0} (c_{2k}+c_{2k+1})</m> converges. 
+          Moreover, if the two series converge then they have the
+          same limit. 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Give an example where <m>(c_n)</m> does not converge to
+          <m>0</m> and one of the series in (a) diverges while the
+          other converges. 
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="tailtozero">
     <statement>
@@ -236,72 +270,72 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
-      <ol marker="a) ">
-        <li>
-          <p>
-            Show that <m>\ds \sum_{k \geq 1} \frac k {k^2+1}</m> diverges.
-          </p>
-        </li>
-        <li>
-          <p>
-            Show that <m>\ds \sum_{k \geq 1} \frac k {k^3+1}</m> converges.
-          </p>
-        </li>
-      </ol>
-    </statement>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\ds \sum_{k \geq 1} \frac k {k^2+1}</m> diverges.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\ds \sum_{k \geq 1} \frac k {k^3+1}</m> converges.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="sup-_0">
-    <statement>
-      <ol marker="a) ">
-        <li>
-          <p>
-            Suppose <m>G\subseteq\C</m> and <m>f_n : G \to \C</m> for
-            <m>n \ge 1</m>. 
-            Suppose <m>(a_n)</m> is a sequence in <m>\R</m> with
-            <m>\lim_{ n \to \infty } a_n = 0</m> and, for each <m>n \ge 1</m>,
-            <me>
-              |f_n(z)| \ \le \ a_n \qquad \text{ for all }  z \in G \,
-            </me>.
-            Show that <m>(f_n)</m> converges uniformly to the zero
-            function in<nbsp/><m>G</m>. 
-          </p>
-        </li>
-        <li>
-          <p>
-            Re-prove the statement of <xref ref="ex_uniformconv"/>
-            using part a). 
-          </p>
-        </li>
-      </ol>
-    </statement>
+    <task>
+      <statement>
+        <p>
+          Suppose <m>G\subseteq\C</m> and <m>f_n : G \to \C</m> for
+          <m>n \ge 1</m>. 
+          Suppose <m>(a_n)</m> is a sequence in <m>\R</m> with
+          <m>\lim_{ n \to \infty } a_n = 0</m> and, for each <m>n \ge 1</m>,
+          <me>
+            |f_n(z)| \ \le \ a_n \qquad \text{ for all }  z \in G \,
+          </me>.
+          Show that <m>(f_n)</m> converges uniformly to the zero
+          function in<nbsp/><m>G</m>. 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Re-prove the statement of <xref ref="ex_uniformconv"/>
+          using part a). 
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="fn_zn___0">
-    <statement>
-      <ol marker="a) ">
-        <li>
-          <p>
-            Suppose <m>G\subseteq\C</m>, <m>f_n : G \to \C</m> for
-            <m>n \ge 1</m>, 
-            and <m>(f_n)</m> converges uniformly to the zero function
-            in<nbsp/><m>G</m>. 
-            Show that, if <m>(z_n)</m> is any sequence in <m>G</m>, then
-            <me>
-              \lim_{ n \to \infty } f_n(z_n) \ = \ 0 \,
-            </me>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Apply a) to the function sequence given in
-            <xref ref="ex_nonuniformconv"/>,
-            together with the sequence <m>(z_n = e^{ - \frac 1 n })</m>,
-            to prove that the convergence given in
-            <xref ref="ex_nonuniformconv"/> is not uniform.
-          </p>
-        </li>
-      </ol>
-    </statement>
+    <task>
+      <statement>
+        <p>
+          Suppose <m>G\subseteq\C</m>, <m>f_n : G \to \C</m> for
+          <m>n \ge 1</m>, 
+          and <m>(f_n)</m> converges uniformly to the zero function
+          in<nbsp/><m>G</m>. 
+          Show that, if <m>(z_n)</m> is any sequence in <m>G</m>, then
+          <me>
+            \lim_{ n \to \infty } f_n(z_n) \ = \ 0 \,
+          </me>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Apply a) to the function sequence given in
+          <xref ref="ex_nonuniformconv"/>,
+          together with the sequence <m>(z_n = e^{ - \frac 1 n })</m>,
+          to prove that the convergence given in
+          <xref ref="ex_nonuniformconv"/> is not uniform.
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_sin_n_convergence">
     <statement>
@@ -331,61 +365,69 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Where do the following sequences converge pointwise?
         Do they converge uniformly on this domain?
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\left( n \, z^n \right)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left( \frac{ z^n }{n} \right)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\left( \frac 1 {1+nz} \right)</m> where <m>\Re(z) \geq 0</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\left( n \, z^n \right)</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left( \frac{ z^n }{n} \right)</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\left( \frac 1 {1+nz} \right)</m> where <m>\Re(z) \geq 0</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Let <m>f_n(x)=n^2x \, e^{-nx}</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that <m>\lim_{n\to\infty}f_n(x)=0</m> for all
-              <m>x\ge0</m>. (<em>Hint</em>: Treat <m>x=0</m> as a
-              special case; 
-              for <m>x>0</m> you can use L'H&#xf4;pital's rule
-              (<xref ref="lhospital"/>)
-              <mdash/> but remember that <m>n</m> is the variable,
-              not<nbsp/><m>x</m>.) 
-            </p>
-          </li>
-          <li>
-            <p>
-              Find <m>\lim_{n\to\infty}\int_0^1 f_n(x)\,\diff{x}</m>.
-              (<em>Hint</em>: The answer is <em>not</em> <m>0</m>.)
-            </p>
-          </li>
-          <li>
-            <p>
-              Why doesn't your answer to part (b) violate
-              <xref ref="seriesintegral"/>?
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\lim_{n\to\infty}f_n(x)=0</m> for all
+          <m>x\ge0</m>. (<em>Hint</em>: Treat <m>x=0</m> as a
+          special case; 
+          for <m>x>0</m> you can use L'H&#xf4;pital's rule
+          (<xref ref="lhospital"/>)
+          <mdash/> but remember that <m>n</m> is the variable,
+          not<nbsp/><m>x</m>.) 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find <m>\lim_{n\to\infty}\int_0^1 f_n(x)\,\diff{x}</m>.
+          (<em>Hint</em>: The answer is <em>not</em> <m>0</m>.)
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Why doesn't your answer to part (b) violate
+          <xref ref="seriesintegral"/>?
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -398,131 +440,175 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_7_2">
-    <statement>
+    <introduction>
       <p>
         Find a power series
         (and determine its radius of convergence)
         for the following functions.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\ds \frac{ 1 }{ 1 + 4 z }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{ 1 }{ 3 - \frac z 2 }</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\ds \frac{z^2}{(4-z)^2}</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{ 1 }{ 1 + 4 z }</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\sum_{k \geq 0} (-4)^k \, z^k</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{ 1 }{ 3 - \frac z 2 }</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\sum_{k \geq 0} \frac 1 { 3 \cdot 6^k } \, z^k</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\ds \frac{z^2}{(4-z)^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\s \frac{ k+1 }{ 2 \cdot 4^k } \, z^{ k+2 }</m></p>
+      </answer>
+    </task>
   </exercise>
   <exercise xml:id="ex_powerex">
-    <statement>
+    <introduction>
       <p>
         Find a power series representation about the origin of each of
-        the following functions. 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\cos z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\cos(z^2)</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>z^2\sin z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>(\sin z)^2</m>
-            </p>
-          </li>
-        </ol>
+        the following functions.
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\cos z</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\s \frac{ (-1)^k }{ (2k)! } \, z^{ 2k }</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\cos(z^2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\s \frac{ (-1)^k }{ (2k)! } \, z^{ 4k }</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>z^2\sin z</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\s \frac{ (-1)^k }{ (2k+1)! } \, z^{ 2k+3 }</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>(\sin z)^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\sum_{ k \ge 1 } \frac{ (-1)^{ k+1 } 2^{ 2k-1 } }{ (2k)!
+        } \, z^{ 2k }</m></p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
-    <statement>
-      <ol marker="a) ">
-        <li>
-          <p>
-            Suppose that the sequence <m>(c_k)</m> is bounded.
-            Show that the radius of convergence of
-            <m>\sum_{k\ge0}c_k(z-z_0)^k</m> is at least <m>1</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Suppose that the sequence <m>(c_k)</m> does not converge
-            to <m>0</m>. 
-            Show that the radius of convergence of
-            <m>\sum_{k\ge0}c_k(z-z_0)^k</m> is at most <m>1</m>. 
-          </p>
-        </li>
-      </ol>
-    </statement>
+    <task>
+      <statement>
+        <p>
+          Suppose that the sequence <m>(c_k)</m> is bounded.
+          Show that the radius of convergence of
+          <m>\sum_{k\ge0}c_k(z-z_0)^k</m> is at least <m>1</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Suppose that the sequence <m>(c_k)</m> does not converge
+          to <m>0</m>. 
+          Show that the radius of convergence of
+          <m>\sum_{k\ge0}c_k(z-z_0)^k</m> is at most <m>1</m>. 
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_7_3">
-    <statement>
+    <introduction>
       <p>
         Find the power series centered at 1 and compute its radius of
-        convergence for each of the following functions: 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>f(z)= \frac 1 z</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>f(z)=\Log (z)</m>
-            </p>
-          </li>
-        </ol>
+        convergence for each of the following functions:
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>f(z)= \frac 1 z</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\sum_{k \geq 0} (-1)^k \, (z-1)^k</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>f(z)=\Log (z)</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\sum_{k \geq 1} \frac {(-1)^{k-1}} k (z-1)^k</m></p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Use the Weierstra&#223;<nbsp/><m>M</m>-test to show that each
         of the following series converges uniformly on the given
-        domain: 
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k\ge1}\frac{z^k}{k^2}</m> on
-              <m>\overline D[0,1]</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k\ge0}\frac1{z^k}</m> on <m>\{ z \in \C
-              : \, \abs{z}\ge2 \}</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k\ge0}\frac{z^k}{z^k+1}</m> on
-              <m>\displaystyle \overline D[0,r]</m> where <m>0\le r\lt
-              1</m>  
-            </p>
-          </li>
-        </ol>
+        domain:
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k\ge1}\frac{z^k}{k^2}</m> on
+          <m>\overline D[0,1]</m> 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k\ge0}\frac1{z^k}</m> on <m>\{ z \in \C
+          : \, \abs{z}\ge2 \}</m> 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k\ge0}\frac{z^k}{z^k+1}</m> on
+          <m>\displaystyle \overline D[0,r]</m> where <m>0\le r\lt
+          1</m>  
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="prob_geomseriesfunky">
     <statement>
@@ -559,75 +645,113 @@
     </statement>
   </exercise>
   <exercise xml:id="ex_7_4">
-    <statement>
+    <introduction>
       <p>
-        Find the radius of convergence for each of the following series.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 0} a^{ k^2 } z^k</m> where
-              <m>a \in \C</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 0} k^n z^k</m> where <m>n
-              \in \Z</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 0} z^{k!}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 1} \frac{ (-1)^k }{ k } \,
-              z^{ k(k+1) }</m> 
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k\ge1}\frac{z^k}{k^k}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k\ge0}\cos(k) z^k</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k\ge0}4^k(z-2)^k</m>
-            </p>
-          </li>
-        </ol>
+        Find the radius of convergence for each of the following
+        series.
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k \geq 0} a^{ k^2 } z^k</m> where
+          <m>a \in \C</m> 
+        </p>
+      </statement>
+      <answer>
+        <p><m>\infty</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k \geq 0} k^n z^k</m> where <m>n
+          \in \Z</m> 
+        </p>
+      </statement>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k \geq 0} z^{k!}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k \geq 1} \frac{ (-1)^k }{ k } \,
+          z^{ k(k+1) }</m> 
+        </p>
+      </statement>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k\ge1}\frac{z^k}{k^k}</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k\ge0}\cos(k) z^k</m>
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k\ge0}4^k(z-2)^k</m>
+        </p>
+      </statement>
+    </task>
   </exercise>
   <exercise xml:id="ex_734">
-    <statement>
+    <introduction>
       <p>
         Find a function representing each of the following series.
-        <ol marker="a) ">
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 0} \frac{z^{2k}}{k!}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 1} k \, (z-1)^{k-1}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\displaystyle \sum_{k \geq 2} k(k-1) \, z^k</m>
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k \geq 0} \frac{z^{2k}}{k!}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\exp(z^2)</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k \geq 1} k \, (z-1)^{k-1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\frac1{(2-z)^2}</m></p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          <m>\displaystyle \sum_{k \geq 2} k(k-1) \, z^k</m>
+        </p>
+      </statement>
+      <answer>
+        <p><m>\frac{2z^2}{(2-z)^2}</m></p>
+      </answer>
+    </task>
   </exercise>
   <exercise>
     <statement>
@@ -644,37 +768,43 @@
     </statement>
   </exercise>
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Define the functions <m>f_n : \R_{ \ge 0 } \to \R</m> via
         <m>f_n(t)= \frac 1 n \, e^{- \frac t n}</m>, 
         for <m>n \ge 1</m>.
-        <ol marker="a) ">
-          <li>
-            <p>
-              Show that the maximum of <m>f_n(t)</m> is <m>\frac 1 n</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>f_n(t)</m> converges uniformly to the zero
-              function on <m>\R_{ \ge 0 }</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              Show that <m>\int_0^\infty f_n(t)\,\diff{t}</m> does not
-              converge to <m>0</m> as <m>n\to\infty</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              Why doesn't this contradict
-              <xref ref="seriesintegral"/>?
-            </p>
-          </li>
-        </ol>
       </p>
-    </statement>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Show that the maximum of <m>f_n(t)</m> is <m>\frac 1 n</m>.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that <m>f_n(t)</m> converges uniformly to the zero
+          function on <m>\R_{ \ge 0 }</m>. 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Show that <m>\int_0^\infty f_n(t)\,\diff{t}</m> does not
+          converge to <m>0</m> as <m>n\to\infty</m>. 
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Why doesn't this contradict
+          <xref ref="seriesintegral"/>?
+        </p>
+      </statement>
+    </task>
   </exercise>
 </exercises>
