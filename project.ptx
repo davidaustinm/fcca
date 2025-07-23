@@ -9,6 +9,8 @@
       <stringparams html.css.extra="external/custom-styles.css" /> 
     </target>
     <target name="print" format="pdf" />
+    <target name="latex" format="latex"/>
+
   </targets>
 </project>
 
@@ -59,10 +61,6 @@
             output-filename="mybook.pdf"
             latex-engine="pdflatex"
             deploy-dir="pdf"
-          />
-          <target
-            name="latex"
-            format="latex"
           />
           <target
             name="braille"

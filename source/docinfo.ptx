@@ -55,6 +55,8 @@
     \DeclareMathOperator{\fArg}{\mathcal{A}rg}
     \DeclareMathOperator{\Log}{Log}
     \DeclareMathOperator{\Arg}{Arg}
+    \let\Im\relax
+    \let\Re\relax
     \DeclareMathOperator{\Im}{Im}
     \DeclareMathOperator{\Re}{Re}
     \def\sz{\sum_{ k \in \Z }}
