@@ -172,7 +172,7 @@
     So if we give <m>(0,1)</m> a special name, say <m>i</m>,
     then the complex number that we used to call <m>(x,y)</m> can be
     written as <m>x \cdot 1 + y \cdot i</m> or 
-    <idx><h>i@<m>i</m></h></idx>
+    <idx><h><m>i</m></h></idx>
     <me>
       x+iy
     </me>.
