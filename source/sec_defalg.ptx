@@ -65,7 +65,7 @@
         specifically, this means that for all complex numbers <m>(x,y)</m>,
         <m>(a,b)</m>, and <m>(c,d)</m>, 
         <idx><h>field</h></idx>
-      </p>
+      
       
       <mdn>
         <mrow xml:id="eq-firstadd">
@@ -109,6 +109,7 @@
           (x,y)\in\C\setminus\{(0,0)\}
         </mrow>
       </mdn>
+    </p>
     </statement>
   </proposition>
 
