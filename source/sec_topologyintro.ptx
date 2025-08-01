@@ -36,15 +36,15 @@
     radius <m>r</m>, which we denote by
     <idx><h>circle</h></idx>
     <me>
-      C[a,r] \ := \ \left\{ z \in \C : \, \abs{ z-a } = r \right\} .
+      C[a,r] \ := \ \left\{ z \in \C : \, \abs{ z-a } = r \right\} \, .
     </me>
   </p>
   <p>
     The inside of this circle is called the <em>open disk</em>
     with center <m>a</m> and radius <m>r</m>; we use the notation
     <me>
-      D[a,r] \ := \ \left\{z \in \C: \, \abs{z-a}\lt r \right\} .
-    </me>
+      D[a,r] \ := \ \left\{z \in \C: \, \abs{z-a}\lt r \right\} \, 
+    </me>.
     <idx><h>open</h><h>disk</h></idx>
     <idx><h>disk</h><h>open</h></idx>
   </p>
