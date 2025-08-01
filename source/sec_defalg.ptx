@@ -63,7 +63,7 @@
         addition and  
         multiplication <m>(\C,+,\cdot)</m> is a field.  More
         specifically, this means that for all complex numbers <m>(x,y)</m>,
-        <m>(a,b)</m>, and <m>(c,d)</m>, we have
+        <m>(a,b)</m>, and <m>(c,d)</m>, 
         <idx><h>field</h></idx>
       </p>
       
@@ -132,7 +132,7 @@
     The proof of <xref ref="alg">Proposition</xref>
     is straightforward but nevertheless makes for good practice
     (see <xref ref="ex_alg"/>).
-    We give one sample:
+    We give one sample, for <xref ref="eq-lastadd"/>:
   </p>
   <proof>
     <p>

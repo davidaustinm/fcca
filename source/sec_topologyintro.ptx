@@ -36,15 +36,15 @@
     radius <m>r</m>, which we denote by
     <idx><h>circle</h></idx>
     <me>
-      C[a,r] \ := \ \left\{ z \in \C : \, \abs{ z-a } = r \right\}
-    </me>.
+      C[a,r] \ := \ \left\{ z \in \C : \, \abs{ z-a } = r \right\} .
+    </me>
   </p>
   <p>
     The inside of this circle is called the <em>open disk</em>
     with center <m>a</m> and radius <m>r</m>; we use the notation
     <me>
-      D[a,r] \ := \ \left\{z \in \C: \, \abs{z-a}\lt r \right\}
-    </me>.
+      D[a,r] \ := \ \left\{z \in \C: \, \abs{z-a}\lt r \right\} .
+    </me>
     <idx><h>open</h><h>disk</h></idx>
     <idx><h>disk</h><h>open</h></idx>
   </p>
@@ -288,7 +288,7 @@
         while the path shown on the right is
         <me>
           \gamma_2(t)=\begin{cases}
-          3+i(t-2) \amp \text{if}\, 0\leq t\leq 3 \\
+          3+i(t-2) \amp \text{if}\, 0\leq t\leq 3, \\
           6-5+\frac i2(t-1) \amp \text{if}\, 3\leq t\leq 5.
           \end{cases}
         </me>
@@ -307,14 +307,14 @@
     </statement>
   </example>
   <p>
-    We remark that each path comes with an <em>orientation</em>
+    We remark that each path comes with an <em>orientation</em>,
     i.e., a sense of direction.
     <idx><h>orientation</h></idx>
     For example,
     the path <m>\gg_1</m> in <xref ref="fig_curves"/> is
     different from 
     <me>
-      \gg_3(t) = -2 + 2 \, e^{ -it } ,  0 \le t \le \tfrac{ 3 \pi }{ 2 } \,
+      \gg_3(t) = -2 + 2 \, e^{ -it } , \ 0 \le t \le \tfrac{ 3 \pi }{ 2 } \,
     </me>,
     even though both <m>\gg_1</m> and <m>\gg_3</m> yield the same picture:
     <m>\gg_1</m> features a counter-clockwise orientation,

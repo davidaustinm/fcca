@@ -120,7 +120,7 @@
   <p>
     The proofs of these properties are straightforward (see <xref
     ref="ex_conjugation"/>);
-    once more we give a sample.
+    once more we give a sample (b).
   </p>
   <proof>
     <p>
@@ -174,7 +174,7 @@
   </p>
   <proof>
     <p>
-      We make extensive use of <xref ref="conjugation"/>
+      We make extensive use of <xref ref="conjugation"/>:
       <md>
         <mrow>
           \left| z_1 + z_2 \right|^2 \amp = \ \left( z_1 + z_2

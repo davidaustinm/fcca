@@ -50,8 +50,8 @@
         (also called the <term>modulus</term>)
         of <m>z = x+iy</m> is
         <me>
-          r \= \left| z \right| \ := \ \sqrt{ x^2 + y^2 } 
-        </me>,
+          r \= \left| z \right| \ := \ \sqrt{ x^2 + y^2 } \, ,
+        </me>
         and an <term>argument</term>
         of <m>z = x+iy</m> is a number <m>\phi \in \R</m> such that
         <me>
@@ -219,7 +219,7 @@
     <fn xml:id="fn_eulerformula">
     In particular, while our notation
     <q>proves</q>
-    <em>\ix{Euler's formula}</em> <m>e^{ 2 \pi i } = 1</m>,
+    <em>Euler's formula</em> <m>e^{ 2 \pi i } = 1</m>,
     this simply follows from the facts
     <m>\sin(2 \pi) = 0</m> and <m>\cos(2 \pi) = 1</m>.
     The connection between the numbers <m>\pi</m>,
@@ -275,7 +275,7 @@
   <p>
     You are encouraged to prove them (see <xref
     ref="ex_easyexp"/>);
-    again we give a sample.
+    again we give a sample (f).
   </p>
   <proof>
     <p>
