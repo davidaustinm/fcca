@@ -49,6 +49,10 @@
   
   </bibinfo>
 
+  <titlepage>
+    <titlepage-items/>
+  </titlepage>
+
   <preface>
     <title>About This Book</title>
     <blockquote>
@@ -167,10 +171,6 @@
     Open Textbook Initiative</url>.
     </p>
   </preface>
-
-  <titlepage>
-    <titlepage-items/>
-  </titlepage>
 
   <colophon xml:id="front-colophon">
     <colophon-items/>
