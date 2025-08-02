@@ -61,7 +61,7 @@
         then <m>w_0</m> is the <em>limit</em>
         of <m>f</m> as <m>z</m> approaches <m>z_0</m>; in short,
         <me>
-          \lim_{ z \to z_0 } f(z) \ = \ w_0 
+          \lim_{ z \to z_0 } f(z) \ = \ w_0 \, 
         </me>.
       </p>
     </statement>
@@ -90,7 +90,7 @@
         \epsilon</m>.  We rewrite
         <me>
           \left| z^2 + 1 \right| \ = \ \left| z-i \right| \left| z+i
-          \right| \ \lt  \ \gd \left| z+i \right| 
+          \right| \ \lt  \ \gd \left| z+i \right| \,
         </me>.
       </p>
       <p>
@@ -121,7 +121,7 @@
         <me>
           \left| z^2 - (-1) \right| \ = \ \left| z^2 + 1 \right| \ = \
           \left| z-i \right| \left| z+i \right| \ \lt  \ 3 \gd \ \lt
-          \ \epsilon
+          \ \epsilon \, 
         </me>.
       </p>
       <p>
@@ -214,7 +214,7 @@
             <p>
               <m>\displaystyle
               \lim_{ z \to z_0 } \left( f(z) + c g(z) \right)
-              = \lim_{ z \to z_0 } f(z) + c \lim_{ z \to z_0 } g(z)
+              = \lim_{ z \to z_0 } f(z) + c \lim_{ z \to z_0 } g(z) \,
               </m>.
             </p>
           </li>
@@ -222,7 +222,7 @@
             <p>
               <m>\displaystyle
               \lim_{ z \to z_0 } \left( f(z) \cdot g(z) \right) \ = \
-              \lim_{ z \to z_0 } f(z) \cdot \lim_{ z \to z_0 } g(z)
+              \lim_{ z \to z_0 } f(z) \cdot \lim_{ z \to z_0 } g(z) \,
               </m>.
             </p>
           </li>
@@ -230,7 +230,7 @@
             <p>
               <m>\displaystyle
               \lim_{ z \to z_0 } \frac{ f(z) }{ g(z) } \ = \ \frac{
-              \lim_{ z \to z_0 } f(z) }{ \lim_{ z \to z_0 } g(z) }
+              \lim_{ z \to z_0 } f(z) }{ \lim_{ z \to z_0 } g(z) } \,
               </m>.
             </p>
           </li>

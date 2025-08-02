@@ -79,7 +79,7 @@
             ( z - z_0 ) }{ z - z_0 }
           </mrow>
           <mrow>
-            \amp \ = \ 3 z_0^2
+            \amp \ = \ 3 z_0^2 \,
           </mrow>
         </md>.
       </p>
@@ -227,7 +227,7 @@
           </li>
           <li>
             <p>
-              <m>\bigl( h(g(z)) \bigr)' \ = \ h'(g(z)) \, g'(z) </m>.
+              <m>\bigl( h(g(z)) \bigr)' \ = \ h'(g(z)) \, g'(z) \, </m>.
             </p>
           </li>
         </ol>
@@ -397,7 +397,7 @@
             g'(w_0) = \lim_{w\to w_0} \frac {1}{\phi\left(g(w)\right)
             } = \frac {1} { \displaystyle\phi\left(\lim_{w\to
             w_0}g(w)\right) } = \frac {1} {f'(z_0)} = \frac {1}
-            {f'(g(w_0))}.
+            {f'(g(w_0))} \, .
           </me>
         </p>
       </proof>

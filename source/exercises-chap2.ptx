@@ -380,7 +380,7 @@
       <p>
         Define <m>f(z) = 0</m> if <m>\Re(z)\cdot\Im(z)=0</m>,
         and <m>f(z)=1</m> if <m>\Re(z)\cdot\Im(z)\ne0</m>.
-        Show that <m>f</m> satisfies the Cauchy-Riemann
+        Show that <m>f</m> satisfies the Cauchy<ndash/>Riemann
         equation <xref ref="complexcr"/> at <m>z = 0</m>, 
         yet <m>f</m> is not differentiable at <m>z = 0</m>.
         Why doesn't this contradict <xref ref="cre"/>(b)?
@@ -397,7 +397,7 @@
     </statement>
     <hint>
       <p>
-        Use the Cauchy-Riemann equations <xref
+        Use the Cauchy<ndash/>Riemann equations <xref
         ref="crequations"/> to show that <m>f'=0</m>.
       </p>
     </hint>
@@ -438,7 +438,7 @@
   <exercise xml:id="ex_crepolar">
     <statement>
       <p>
-        Prove that the Cauchy-Riemann equations take on the following
+        Prove that the Cauchy<ndash/>Riemann equations take on the following
         form in polar coordinates: 
         <me>
           \frac{ \partial u }{ \partial r } \ = \ \frac 1 r \, \frac{
