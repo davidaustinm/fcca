@@ -18,7 +18,7 @@
   <p>
     The square of the absolute value has the nice property
     <me>
-      \left| x+iy \right|^2 \= x^2 + y^2 \= (x+iy) (x-iy) \,
+      \left| x+iy \right|^2 \ = \ x^2 + y^2 \ = \ (x+iy) (x-iy) \,
     </me>.
   </p>
   <p>
@@ -127,17 +127,17 @@
       Let <m>z_1 = x_1 + i y_1</m> and <m>z_2 = x_2 + i y_2</m>.
       Then
       <md>
-        <mrow>\conj{z_1 \cdot z_2} \amp \= \conj{ (x_1 x_2 - y_1 y_2)
+        <mrow>\conj{z_1 \cdot z_2} \amp \ = \ \conj{ (x_1 x_2 - y_1 y_2)
         + i ( x_1 y_2 + x_2 y_1 ) }
         </mrow>
         <mrow>
-          \amp \= (x_1 x_2 - y_1 y_2) - i ( x_1 y_2 + x_2 y_1 )
+          \amp \ = \ (x_1 x_2 - y_1 y_2) - i ( x_1 y_2 + x_2 y_1 )
         </mrow>
         <mrow>
-          \amp \= (x_1 - i y_1) (x_2 - i y_2)
+          \amp \ = \ (x_1 - i y_1) (x_2 - i y_2)
         </mrow>
         <mrow>
-          \amp \= \conj{z_1}\cdot\conj{z_2} \, .
+          \amp \ = \ \conj{z_1}\cdot\conj{z_2} \, .
         </mrow>
       </md>
     </p>
@@ -148,7 +148,7 @@
     yields a neat formula for the inverse of a nonzero complex number,
     which is implicit already in <xref ref="eq-lastmult"/>:
     <me>
-      z^{-1} \= \frac1z \= \frac{\conj z}{\abs{z}^2} \,
+      z^{-1} \ = \ \frac1z \ = \ \frac{\conj z}{\abs{z}^2} \,
     </me>.
   </p>
   <p>
@@ -181,11 +181,11 @@
           \right) \o{ \left( z_1 + z_2 \right) }
         </mrow>
         <mrow>
-          \amp \= \left( z_1 + z_2
+          \amp \ = \ \left( z_1 + z_2
           \right) \left( \o{z_1} + \o{z_2} \right)
         </mrow>
         <mrow>
-          \amp \= z_1 \o{z_1} + z_1
+          \amp \ = \ z_1 \o{z_1} + z_1
           \o{z_2} + z_2 \o{z_1} + z_2 \o{z_2}
         </mrow> 
         <mrow>
@@ -193,7 +193,7 @@
           } + \left| z_2 \right|^2
         </mrow>
         <mrow>
-          \amp \= \left| z_1 \right|^2 + 2 \Re
+          \amp \ = \ \left| z_1 \right|^2 + 2 \Re
           \left( z_1 \o{z_2} \right) + \left| z_2 \right|^2
         </mrow>
         <mrow>
@@ -201,12 +201,12 @@
           \right| + \left| z_2 \right|^2
         </mrow>
         <mrow>
-          \amp \= \left| z_1 \right|^2 + 2
+          \amp \ = \ \left| z_1 \right|^2 + 2
           \left| z_1 \right| \left| \o{z_2} \right| + \left| z_2
           \right|^2
         </mrow>
         <mrow>
-          \amp \= \left| z_1 \right|^2 + 2 \left| z_1 \right|
+          \amp \ = \ \left| z_1 \right|^2 + 2 \left| z_1 \right|
           \left| z_2 \right| + \left| z_2 \right|^2
         </mrow>
         <mrow>

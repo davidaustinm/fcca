@@ -50,7 +50,7 @@
         (also called the <term>modulus</term>)
         of <m>z = x+iy</m> is
         <me>
-          r \= \left| z \right| \ := \ \sqrt{ x^2 + y^2 } \, ,
+          r \ = \ \left| z \right| \ := \ \sqrt{ x^2 + y^2 } \, ,
         </me>
         and an <term>argument</term>
         of <m>z = x+iy</m> is a number <m>\phi \in \R</m> such that
@@ -96,7 +96,7 @@
         (see <xref ref="distfig"/>).
         Then
         <me>
-          d(z_1,z_2) \= |z_1 - z_2| \= |z_2 - z_1|\,
+          d(z_1,z_2) \ = \ |z_1 - z_2| \ = \ |z_2 - z_1|\,
         </me>.
         <idx><h>distance of complex numbers</h></idx>
       </p>
@@ -108,7 +108,7 @@
       Let <m>z_1 = x_1 + iy_1</m> and <m>z_2 = x_2 + iy_2</m>.
       From geometry we know that
       <me>
-        d(z_1, z_2) \= \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}\, 
+        d(z_1, z_2) \ = \ \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}\, 
       </me>.
     </p>
     <p>
@@ -156,18 +156,18 @@
     we make use of some classic trigonometric identities: 
     <idx><h>trigonometric identities</h></idx> 
     <md>
-      <mrow>\amp ( x_1 + i y_1 ) ( x_2 + i y_2 ) \= \left( r_1 \cos
+      <mrow>\amp ( x_1 + i y_1 ) ( x_2 + i y_2 ) \ = \ \left( r_1 \cos
       \phi_1 + i \, r_1 \sin \phi_1 \right) \left( r_2 \cos \phi_2 + i
       \, r_2 \sin \phi_2 \right)</mrow> 
-      <mrow>\amp \qquad \= ( r_1 r_2 \cos \phi_1 \cos \phi_2 - r_1 r_2
+      <mrow>\amp \qquad \ = \ ( r_1 r_2 \cos \phi_1 \cos \phi_2 - r_1 r_2
       \sin \phi_1 \sin \phi_2 ) </mrow>
       <mrow> \amp \qquad\qquad + i ( r_1 r_2 \cos \phi_1 \sin \phi_2
       + r_1 r_2 \sin \phi_1 \cos \phi_2 )</mrow> 
-      <mrow>\amp \qquad \= r_1 r_2 \bigl( ( \cos \phi_1 \cos \phi_2 -
+      <mrow>\amp \qquad \ = \ r_1 r_2 \bigl( ( \cos \phi_1 \cos \phi_2 -
       \sin \phi_1 \sin \phi_2 )</mrow>
       <mrow> \amp \qquad \qquad + i ( \cos \phi_1 \sin \phi_2 + \sin
       \phi_1 \cos \phi_2 ) \bigr)</mrow> 
-      <mrow>\amp \qquad \= r_1 r_2 \bigl( \cos ( \phi_1 + \phi_2 ) + i
+      <mrow>\amp \qquad \ = \ r_1 r_2 \bigl( \cos ( \phi_1 + \phi_2 ) + i
       \sin ( \phi_1 + \phi_2 ) \bigr) \, </mrow> 
     </md>.
   </p>
@@ -282,17 +282,17 @@
       By definition of <m>e^{ i \phi }</m>,
       <md>
         <mrow>
-        \frac{ d }{ \diff{\phi} } \, e^{ i \phi } \amp \= \frac{ d }{
+        \frac{ d }{ \diff{\phi} } \, e^{ i \phi } \amp \ = \ \frac{ d }{
         \diff{\phi} } \left( \cos \phi + i \sin \phi \right)
         </mrow>
-        <mrow>\amp \= - \sin
+        <mrow>\amp \ = \ - \sin
         \phi + i \cos \phi
         </mrow>
         <mrow>
-          \amp\= i \left( \cos \phi + i \sin \phi \right)
+          \amp\ = \ i \left( \cos \phi + i \sin \phi \right)
         </mrow>
         <mrow>
-          \amp \= i \, e^{ i \phi } .
+          \amp \ = \ i \, e^{ i \phi } .
         </mrow>
       </md>
     </p>
@@ -343,7 +343,7 @@
     <q>the complex number <m>x+iy</m> has absolute value <m>r</m> and
     argument <m>\phi</m></q> now becomes the identity 
     <me>
-      x+iy \= r \, e^{ i \phi }
+      x+iy \ = \ r \, e^{ i \phi }
     </me>.
   </p>
   <p>

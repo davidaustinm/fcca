@@ -20,7 +20,7 @@
       <p>
         Suppose <m>f</m> is continuous in the region <m>G</m> and
         <me>
-          \int_\gg f \= 0
+          \int_\gg f \ = \ 0
         </me>
         for all piecewise smooth closed paths <m>\gg \subset G</m>.
         <idx><h>Morera's theorem</h></idx>

@@ -12,7 +12,7 @@
     is, 
     we're looking for a function <m>\fLog</m> such that
     <men xml:id="eq_expinv">
-      \exp ( \fLog(z) ) \= z \= \fLog ( \exp z ) \,
+      \exp ( \fLog(z) ) \ = \ z \ = \ \fLog ( \exp z ) \,
     </men>.
     <idx><h>function</h><h>logarithmic</h></idx> 
   </p>
@@ -48,7 +48,7 @@
     Then for the first equation in <xref ref="eq_expinv"/> to hold, we
     need 
     <me>
-      \exp ( \fLog z ) \= e^{u} e^{i v} \= r \, e^{i \phi} \= z \,
+      \exp ( \fLog z ) \ = \ e^{u} e^{i v} \ = \ r \, e^{i \phi} \ = \ z \,
     </me>,
     that is, <m>e^{u} = r</m> and <m>e^{i v} = e^{i \phi}</m>.
     The latter equation is equivalent to
@@ -88,12 +88,12 @@
       <p>
         Here are a few evaluations of <m>\Log</m> to illustrate this function:
         <md>
-          <mrow>\Log(2) \amp \= \ln(2) + i \Arg(2) \= \ln(2)</mrow>
-          <mrow>\Log(i) \amp \= \ln(1) + i \Arg(i) \= \frac{ \pi i }{
+          <mrow>\Log(2) \amp \ = \ \ln(2) + i \Arg(2) \ = \ \ln(2)</mrow>
+          <mrow>\Log(i) \amp \ = \ \ln(1) + i \Arg(i) \ = \ \frac{ \pi i }{
           2 }</mrow> 
-          <mrow>\Log(-3) \amp \= \ln(3) + i \Arg(-3) \= \ln(3) + \pi
+          <mrow>\Log(-3) \amp \ = \ \ln(3) + i \Arg(-3) \ = \ \ln(3) + \pi
           i</mrow> 
-          <mrow>\Log(1-i) \amp \= \ln( \sqrt 2 ) + i \Arg(1-i) \=
+          <mrow>\Log(1-i) \amp \ = \ \ln( \sqrt 2 ) + i \Arg(1-i) \ = \
           \frac 1 2 \ln(2) - \frac{ \pi i }{ 4 } \, </mrow> 
         </md>.
       </p>
@@ -122,14 +122,14 @@
     if <m>z=x+iy</m> then
     <md>
       <mrow>
-        \Log ( \exp z ) \amp \= \ln | e^x e^{iy} | + i \Arg ( e^x
+        \Log ( \exp z ) \amp \ = \ \ln | e^x e^{iy} | + i \Arg ( e^x
         e^{iy} )
       </mrow>
       <mrow>
-        \amp \= \ln e^x + i \Arg ( e^{iy} )
+        \amp \ = \ \ln e^x + i \Arg ( e^{iy} )
       </mrow>
       <mrow>
-        \amp \= x + i \Arg ( e^{iy} )
+        \amp \ = \ x + i \Arg ( e^{iy} )
       </mrow>
     </md>.
   </p>
@@ -147,12 +147,12 @@
     it has no analogue in <m>\C</m>.
     For example,
     <me>
-      \Log(i) + \Log(i-1) \= i \, \tfrac \pi 2 + \ln \sqrt 2 + \tfrac
-      {3 \pi i} 4 \= \tfrac 1 2 \ln 2 + \tfrac {5 \pi i} 4 
+      \Log(i) + \Log(i-1) \ = \ i \, \tfrac \pi 2 + \ln \sqrt 2 + \tfrac
+      {3 \pi i} 4 \ = \ \tfrac 1 2 \ln 2 + \tfrac {5 \pi i} 4 
     </me>
     but
     <me>
-      \Log(i(i-1)) \= \Log(-1-i) \= \tfrac 1 2 \ln 2 - \tfrac {3 \pi
+      \Log(i(i-1)) \ = \ \Log(-1-i) \ = \ \tfrac 1 2 \ln 2 - \tfrac {3 \pi
       i} 4 \, 
     </me>.
   </p>
@@ -191,7 +191,7 @@
         If <m>\fLog</m> is a branch of the logarithm on <m>G</m>, then
         <m>\fLog</m> is differentiable on <m>G</m> with 
         <me>
-          \frac{ d }{ \diff{z} } \fLog(z) \= \frac 1 z \,
+          \frac{ d }{ \diff{z} } \fLog(z) \ = \ \frac 1 z \,
         </me>.
       </p>
     </statement>
@@ -211,8 +211,8 @@
       checks that <m>f</m> and <m>g</m> are inverses of each other.
       Thus <xref ref="inversederivative"/> gives
       <me>
-        \fLog'(z) \= \frac 1 { \exp' ( \fLog z ) } \= \frac 1 { \exp (
-        \fLog z ) } \= \frac 1 z
+        \fLog'(z) \ = \ \frac 1 { \exp' ( \fLog z ) } \ = \ \frac 1 { \exp (
+        \fLog z ) } \ = \ \frac 1 z
       </me>.
     </p>
   </proof>
@@ -265,17 +265,17 @@
     Because <m>e</m> is a positive real number and hence <m>\Arg e = 0</m>,
     <md>
       <mrow>
-        e^z \amp \= \exp ( z \Log(e))
+        e^z \amp \ = \ \exp ( z \Log(e))
       </mrow>
       <mrow>
-        \amp \= \exp \left( z \left( \ln |e| + i
+        \amp \ = \ \exp \left( z \left( \ln |e| + i
         \Arg(e) \right) \right)
       </mrow>
       <mrow>
-        \amp \= \exp \left( z \ln(e) \right)
+        \amp \ = \ \exp \left( z \ln(e) \right)
       </mrow>
       <mrow>
-        \amp \= \exp
+        \amp \ = \ \exp
         \left( z \right)
       </mrow>
     </md>.

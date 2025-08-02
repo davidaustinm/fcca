@@ -527,7 +527,7 @@
       <p>
         Show that
         <me>
-          z^5 - 1 \= \left( z-1 \right) \left( z^2 + 2z \cos \tfrac{ \pi }{ 5 } + 1 \right) \left( z^2 - 2z \cos \tfrac{ 2 \pi }{ 5 } + 1 \right)
+          z^5 - 1 \ = \ \left( z-1 \right) \left( z^2 + 2z \cos \tfrac{ \pi }{ 5 } + 1 \right) \left( z^2 - 2z \cos \tfrac{ 2 \pi }{ 5 } + 1 \right)
         </me>
         and deduce from this closed formulas for
         <m>\cos \frac{ \pi }{ 5 }</m> and <m>\cos \frac{ 2 \pi }{ 5 }</m>.

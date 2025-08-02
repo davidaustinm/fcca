@@ -17,7 +17,7 @@
         A <em>linear fractional transformation</em>
         is a function of the form
         <me>
-          f(z) \= \frac{ az+b }{ cz+d }
+          f(z) \ = \ \frac{ az+b }{ cz+d }
         </me>
         where <m>a,b,c,d \in \C</m>.
         <idx><h>linear fractional transformation</h></idx> 
@@ -62,7 +62,7 @@
         inverse function <m>f^{-1}: \C \setminus \{ \frac a c \} \to
         \C \setminus \{ - \frac d c \}</m> given by
         <me>
-          f^{-1} (z) \= \frac{ dz-b }{ -cz+a } \,
+          f^{-1} (z) \ = \ \frac{ dz-b }{ -cz+a } \,
         </me>.
       </p>
     </statement>
@@ -83,8 +83,8 @@
         (check the condition!)  with domain <m>\C \setminus \{ -1
         \}</m> whose inverse can be computed via
         <me>
-          \frac{ z-1 }{ iz+i } \= w \qquad \Longleftrightarrow \qquad
-          z \= \frac{ iw + 1 }{ -iw + 1 } \, 
+          \frac{ z-1 }{ iz+i } \ = \ w \qquad \Longleftrightarrow \qquad
+          z \ = \ \frac{ iw + 1 }{ -iw + 1 } \, 
         </me>,
         so that <m>f^{-1} (z) = \frac{ iz + 1 }{ -iz + 1 }</m>,
         with domain <m>\C \setminus \{ -i \}</m>.
@@ -96,12 +96,12 @@
       We first prove that <m>f</m> is one-to-one.
       If <m>f(z_1) = f(z_2)</m>, that is,
       <me>
-        \frac{ az_1+b }{ cz_1+d } \= \frac{ az_2+b }{ cz_2+d } \,
+        \frac{ az_1+b }{ cz_1+d } \ = \ \frac{ az_2+b }{ cz_2+d } \,
       </me>,
       then <m>(az_1+b)(cz_2+d) = (az_2+b)(cz_1+d)</m>,
       which can be rearranged to
       <me>
-        (ad-bc)(z_1-z_2) \= 0 \,
+        (ad-bc)(z_1-z_2) \ = \ 0 \,
       </me>.
     </p>
     <p>
@@ -123,7 +123,7 @@
     application of <xref ref="dernonzeroconformal">Proposition</xref>, 
     as the derivative of <m>f(z) = \frac{ az+b }{ cz+d }</m> is
     <me>
-      f'(z) \= \frac{ a(cz+d) - c(az+b) }{ (cz+d)^2 } \= \frac{ ad -
+      f'(z) \ = \ \frac{ a(cz+d) - c(az+b) }{ (cz+d)^2 } \ = \ \frac{ ad -
       bc }{ (cz+d)^2 } 
     </me>
     and thus never zero.
@@ -155,11 +155,11 @@
         fractional transformation. 
         If <m>c=0</m> then
         <me>
-          f(z) \= \frac a d \, z + \frac b d \,
+          f(z) \ = \ \frac a d \, z + \frac b d \,
         </me>,
         and if <m>c \not= 0</m> then
         <me>
-          f(z) \= \frac{ bc-ad }{ c^2 } \frac 1 {z + \frac d c} +
+          f(z) \ = \ \frac{ bc-ad }{ c^2 } \frac 1 {z + \frac d c} +
           \frac a c \, 
         </me>.
       </p>
@@ -190,16 +190,16 @@
         For <m>\phi \in \R</m>,
         <md>
           <mrow>
-            f(e^{ i \phi }) \amp \= \frac{ e^{ i \phi } - 1 }{ i \,
-            e^{ i \phi } + i } \= \frac{ \left( e^{ i \phi } - 1 \right)
+            f(e^{ i \phi }) \amp \ = \ \frac{ e^{ i \phi } - 1 }{ i \,
+            e^{ i \phi } + i } \ = \ \frac{ \left( e^{ i \phi } - 1 \right)
             \left( e^{ -i \phi } + 1 \right) }{ i \left| e^{ i \phi } +
             1 \right|^2 }
           </mrow>
           <mrow>
-            \amp \= \frac{ e^{ i \phi } - e^{ -i \phi } }{ i
-            \left| e^{ i \phi } + 1 \right|^2 } \= \frac{ 2 \Im \left(
+            \amp \ = \ \frac{ e^{ i \phi } - e^{ -i \phi } }{ i
+            \left| e^{ i \phi } + 1 \right|^2 } \ = \ \frac{ 2 \Im \left(
             e^{ i \phi } \right) }{ \left| e^{ i \phi } + 1 \right|^2 }
-            \= \frac{ 2 \sin \phi }{ \left| e^{ i \phi } + 1 \right|^2 }
+            \ = \ \frac{ 2 \sin \phi }{ \left| e^{ i \phi } + 1 \right|^2 }
           </mrow>
         </md>,
         which is a real number.
@@ -222,7 +222,7 @@
       <m>x_0 + iy_0</m> with radius <m>r</m> is
       <m>(x-x_0)^2 + (y-y_0)^2 = r^2</m>, which we can transform to
       <men xml:id="eq_circle">
-        \alpha (x^2 + y^2) + \beta x + \gamma y + \delta \= 0
+        \alpha (x^2 + y^2) + \beta x + \gamma y + \delta \ = \ 0
       </men>
       for some real numbers <m>\alpha</m>,
       <m>\beta</m>, <m>\gamma</m>,
@@ -239,16 +239,16 @@
       similar equation. 
       Since
       <me>
-        u + iv \= \frac{ x - iy }{ x^2 + y^2 } \,
+        u + iv \ = \ \frac{ x - iy }{ x^2 + y^2 } \,
       </me>,
       we can rewrite <xref ref="eq_circle"/> as
       <md>
         <mrow>
-          0 \amp \= \alpha + \beta \frac{ x }{ x^2 + y^2 } +
+          0 \amp \ = \ \alpha + \beta \frac{ x }{ x^2 + y^2 } +
           \gamma \frac{ y }{ x^2 + y^2 } + \frac \delta { x^2 + y^2 }
         </mrow>
         <mrow xml:id="eq_circleimage" number="yes">
-          \amp \= \alpha + \beta u - \gamma v + \delta (u^2 + v^2) \,
+          \amp \ = \ \alpha + \beta u - \gamma v + \delta (u^2 + v^2) \,
         </mrow>
       </md>.
     </p>

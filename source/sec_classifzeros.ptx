@@ -46,7 +46,7 @@
               holomorphic function <m>g: G \to \C</m>, 
               such that <m>g(a)\ne0</m> and
               <me>
-                f(z) \= (z-a)^m \, g(z) \qquad \text{ for all }  z \in G \,
+                f(z) \ = \ (z-a)^m \, g(z) \qquad \text{ for all }  z \in G \,
               </me>.
               In this case the zero <m>a</m> is isolated:
               there is a disk <m>D[a,r]</m> which contains no other
@@ -67,7 +67,7 @@
         By <xref ref="thm_holomorphicpower"/>,
         there exists <m>R>0</m> such that we can expand
         <me>
-          f(z) \= \sum_{k\ge0}c_k (z-a)^k \qquad \text{ for }  z \in
+          f(z) \ = \ \sum_{k\ge0}c_k (z-a)^k \qquad \text{ for }  z \in
           D[a,R] \, 
         </me>,
         and <m>c_0 = f(a) = 0</m>.
@@ -91,9 +91,9 @@
         So now consider the second case.
         We note that for <m>z \in D[a,R]</m>,
         <md>
-          <mrow>f(z) \amp \= c_m(z-a)^m + c_{m+1}(z-a)^{m+1} + \cdots \=
+          <mrow>f(z) \amp \ = \ c_m(z-a)^m + c_{m+1}(z-a)^{m+1} + \cdots \ = \
           (z-a)^m\left( c_m+c_{m+1}(z-a) + \cdots\right)</mrow> 
-          <mrow>\amp \= (z-a)^m\sum_{k\ge0}c_{k+m} \, (z-a)^k</mrow>
+          <mrow>\amp \ = \ (z-a)^m\sum_{k\ge0}c_{k+m} \, (z-a)^k</mrow>
         </md>.
       </p>
       <p>
@@ -114,7 +114,7 @@
         <m>G \setminus \listset a</m> by the second definition.
         Note that <m>g(a)=c_m\ne0</m> and, by construction,
         <me>
-          f(z) \= (z-a)^m \, g(z) \qquad \text{ for all }  z \in G \,
+          f(z) \ = \ (z-a)^m \, g(z) \qquad \text{ for all }  z \in G \,
         </me>.
       </p>
       <p>
@@ -232,7 +232,7 @@
         and continuous on its closure. 
         Then
         <me>
-          \sup_{ z \in G } |f(z)| \= \max_{ z \in \partial G } |f(z)| \,
+          \sup_{ z \in G } |f(z)| \ = \ \max_{ z \in \partial G } |f(z)| \,
         </me>.
       </p>
     </statement>
@@ -317,12 +317,12 @@
       <m>h: D[a,r] \to \C</m> through <m>h(z) := \Log(g(z))</m>,
       which satisfies
       <me>
-        h(a) \= \Log(g(a)) \= \Log(1) \= 0
+        h(a) \ = \ \Log(g(a)) \ = \ \Log(1) \ = \ 0
       </me>
       and
       <me>
-        \Re(h(z)) \= \Re(\Log(g(z))) \= \ln(\abs{g(z)}) \ \le \ \ln(1)
-        \= 0 \, 
+        \Re(h(z)) \ = \ \Re(\Log(g(z))) \ = \ \ln(\abs{g(z)}) \ \le \ \ln(1)
+        \ = \ 0 \, 
       </me>.
     </p>
     <p>

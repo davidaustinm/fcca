@@ -71,15 +71,15 @@
         holomorphic in <m>\C</m>: For any <m>z_0 \in \C</m>,
         <md>
           <mrow>
-            \lim_{ z \to z_0 } \frac{ f(z) - f(z_0) }{ z - z_0 } \amp \=
+            \lim_{ z \to z_0 } \frac{ f(z) - f(z_0) }{ z - z_0 } \amp \ = \
             \lim_{ z \to z_0 } \frac{ z^3 - z_0^3 }{ z - z_0 }
           </mrow>
           <mrow>
-            \amp \= \lim_{ z \to z_0 } \frac{ ( z^2 + z z_0 + z_0^2 )
+            \amp \ = \ \lim_{ z \to z_0 } \frac{ ( z^2 + z z_0 + z_0^2 )
             ( z - z_0 ) }{ z - z_0 }
           </mrow>
           <mrow>
-            \amp \= 3 z_0^2
+            \amp \ = \ 3 z_0^2
           </mrow>
         </md>.
       </p>
@@ -90,7 +90,7 @@
     The difference quotient
     limit <xref ref="eq_f_def"/> can be rewritten as
     <me>
-      f'(z_0) \= \lim_{ h \to 0 } \frac{ f(z_0+h) - f(z_0) }{ h } \,
+      f'(z_0) \ = \ \lim_{ h \to 0 } \frac{ f(z_0+h) - f(z_0) }{ h } \,
     </me>.
     <idx><h>difference quotient</h></idx>
   </p>
@@ -116,24 +116,24 @@
         Then
         <md>
           <mrow>
-            \frac{ \conj{z}^2 - \conj{z_0}^2 }{ z - z_0 } \amp \=
+            \frac{ \conj{z}^2 - \conj{z_0}^2 }{ z - z_0 } \amp \ = \
             \frac{ \left( \conj{ z_0 + r \, e^{ i \phi } } \right)^2 -
             \conj{z_0}^2 }{ z_0 + r \, e^{ i \phi } - z_0 }
           </mrow>
-          <mrow>\amp \=
+          <mrow>\amp \ = \
             \frac{\left(\conj{ z_0 }+re^{-i\phi}\right)^2 -
             \conj{z_0}^2}{re^{i\phi}}
           </mrow>
           <mrow>
-            \amp \= \frac{ \conj{ z_0 }^2 + 2 \, \conj{z_0} \, r
+            \amp \ = \ \frac{ \conj{ z_0 }^2 + 2 \, \conj{z_0} \, r
             \, e^{- i \phi } + r^2 e^{- 2 i \phi } - \conj{z_0}^2 }{ r
             \, e^{ i \phi } }
           </mrow>
-          <mrow>\amp \= \frac{ 2 \, \conj{z_0} \, r \, e^{ -i
+          <mrow>\amp \ = \ \frac{ 2 \, \conj{z_0} \, r \, e^{ -i
             \phi } + r^2 e^{ - 2 i \phi } }{ r \, e^{ i \phi } }
           </mrow>
           <mrow>
-            \amp \= 2 \, \conj{z_0} \, e^{ -2i \phi } + r \, e^{
+            \amp \ = \ 2 \, \conj{z_0} \, e^{ -2i \phi } + r \, e^{
             -3i \phi }
           </mrow> 
         </md>.
@@ -154,14 +154,14 @@
         \, e^{ -3i \phi } = |z| \, e^{ -3i \phi }</m>. 
         Hence
         <me>
-          \lim_{ z \to 0 } \left| \frac{ \conj{z}^2 }{ z } \right| \=
-          \lim_{ z \to 0 } \left| |z| \, e^{ -3i \phi } \right| \=
-          \lim_{ z \to 0 } |z| \= 0 \, 
+          \lim_{ z \to 0 } \left| \frac{ \conj{z}^2 }{ z } \right| \ = \
+          \lim_{ z \to 0 } \left| |z| \, e^{ -3i \phi } \right| \ = \
+          \lim_{ z \to 0 } |z| \ = \ 0 \, 
         </me>,
         which implies, by <xref ref="ex_limiteq0"/>, that
         <me>
           \lim_{ z \to z_0 } \frac{ \conj{z}^2 - \conj{z_0}^2 }{ z -
-          z_0 } \= \lim_{ z \to 0 } \frac{ \conj{z}^2 }{ z } \= 0 \, 
+          z_0 } \ = \ \lim_{ z \to 0 } \frac{ \conj{z}^2 }{ z } \ = \ 0 \, 
         </me>.
       </p>
     </statement>
@@ -173,7 +173,7 @@
         The function <m>f: \C \to \C</m> given by
         <m>f(z) = \overline z</m> is nowhere differentiable:
         <me>
-          \lim_{ z \to z_0 } \frac{ \o z - \o{ z_0 } }{ z - z_0 } \= \lim_{ z \to z_0 } \frac{ \ \o { z - z_0 } \ }{ z - z_0 } \= \lim_{ z \to 0 } \frac{\, \overline z \, } z \,
+          \lim_{ z \to z_0 } \frac{ \o z - \o{ z_0 } }{ z - z_0 } \ = \ \lim_{ z \to z_0 } \frac{ \ \o { z - z_0 } \ }{ z - z_0 } \ = \ \lim_{ z \to 0 } \frac{\, \overline z \, } z \,
         </me>,
         which does not exist,
         as discussed in <xref ref="exam_limitdoesnotexist"/>.
@@ -197,26 +197,26 @@
         <ol marker="(a) ">
           <li>
             <p>
-              <m>\bigl( f(z) + c \, g(z) \bigr)' \= f'(z) + c \,
+              <m>\bigl( f(z) + c \, g(z) \bigr)' \ = \ f'(z) + c \,
               g'(z)</m> for any <m>c \in \C</m> 
             </p>
           </li>
           <li xml:id="diffproductrule">
             <p>
-              <m>\bigl( f(z) \, g(z) \bigr)' \= f'(z) \, g(z) + f(z)
+              <m>\bigl( f(z) \, g(z) \bigr)' \ = \ f'(z) \, g(z) + f(z)
               \, g'(z)</m> 
             </p>
           </li>
           <li>
             <p>
               <m>\displaystyle \left( \frac{ f(z) }{ g(z) } \right)'
-              \= \frac{ f'(z) \, g(z) - f(z) \, g'(z) }{ g(z)^2 }</m>
+              \ = \ \frac{ f'(z) \, g(z) - f(z) \, g'(z) }{ g(z)^2 }</m>
               provided that <m>g(z)^2 \ne 0</m> 
             </p>
           </li>
           <li>
             <p>
-              <m>\bigl( z^n \bigr)' \= n \, z^{n-1}</m> for any
+              <m>\bigl( z^n \bigr)' \ = \ n \, z^{n-1}</m> for any
               nonzero integer <m>n</m> 
             </p>
           </li>
@@ -227,7 +227,7 @@
           </li>
           <li>
             <p>
-              <m>\bigl( h(g(z)) \bigr)' \= h'(g(z)) \, g'(z) </m>.
+              <m>\bigl( h(g(z)) \bigr)' \ = \ h'(g(z)) \, g'(z) </m>.
             </p>
           </li>
         </ol>
@@ -237,19 +237,19 @@
       <md>
         <mrow>
           \bigl( f(z) g(z) \bigr)'
-          \amp \= \lim_{ h \to 0 } \frac{ f(z+h) \, g(z+h) - f(z) \,
+          \amp \ = \ \lim_{ h \to 0 } \frac{ f(z+h) \, g(z+h) - f(z) \,
           g(z) }{ h }
         </mrow> 
         <mrow>
-          \amp \= \lim_{ h \to 0 } \frac{ f(z+h) \left( g(z+h) - g(z)
+          \amp \ = \ \lim_{ h \to 0 } \frac{ f(z+h) \left( g(z+h) - g(z)
           \right) + \left( f(z+h) - f(z) \right) g(z) }{ h }
         </mrow>
         <mrow>
-          \amp \= \lim_{ h \to 0 } f(z+h) \frac{ g(z+h) - g(z) } h +
+          \amp \ = \ \lim_{ h \to 0 } f(z+h) \frac{ g(z+h) - g(z) } h +
           \lim_{ h \to 0 } \frac{ f(z+h) - f(z) } h g(z)
         </mrow>
         <mrow>
-          \amp \= f(z) \, g'(z) + f'(z) \, g(z) \,
+          \amp \ = \ f(z) \, g'(z) + f'(z) \, g(z) \,
         </mrow>
         </md>.
         <p>
@@ -303,7 +303,7 @@
       vector of <m>f(\gamma_1)</m> at the point <m>f(a)</m> is
       <me>
         \left. \frac{ d }{\diff{t} } f(\gamma_1(t)) \right|_{t = 0} =
-        \ f'(\gamma_1(0)) \, \gamma_1'(0) \= f'(a) \, \gamma_1'(0) \, 
+        \ f'(\gamma_1(0)) \, \gamma_1'(0) \ = \ f'(a) \, \gamma_1'(0) \, 
       </me>,
       and similarly, the tangent vector of
       <m>f(\gamma_2)</m> at the point <m>f(a)</m> is <m>f'(a) \,
@@ -359,7 +359,7 @@
         <m>f'(g(w_0)) \ne 0</m> and <m>g</m> is continuous at <m>w_0</m>,
         then <m>g</m> is differentiable at <m>w_0</m> with
         <me>
-          g'(w_0) \= \frac 1 { f' \left( g(w_0) \right) } \,
+          g'(w_0) \ = \ \frac 1 { f' \left( g(w_0) \right) } \,
         </me>.
       </p>
     </statement>
@@ -368,15 +368,15 @@
         Since <m>f(g(w)) = w</m> for all <m>w \in H</m>,
         <md>
           <mrow>
-            g'(w_0) \amp \= \lim_{w\to w_0}\frac{ g(w) - g(w_0) }{ w -
+            g'(w_0) \amp \ = \ \lim_{w\to w_0}\frac{ g(w) - g(w_0) }{ w -
             w_0 }
           </mrow>
           <mrow>
-            \amp \= \lim_{w\to w_0}\frac{ g(w) - g(w_0) }{ f(g(w)) -
+            \amp \ = \ \lim_{w\to w_0}\frac{ g(w) - g(w_0) }{ f(g(w)) -
             f(g(w_0)) }
           </mrow>
           <mrow>
-            \amp \= \lim_{w\to w_0}\frac 1 { \dfrac{ f(g(w)) -
+            \amp \ = \ \lim_{w\to w_0}\frac 1 { \dfrac{ f(g(w)) -
             f(g(w_0)) }{g(w) - g(w_0) } } \,
           </mrow>
         </md>.

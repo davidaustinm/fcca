@@ -42,7 +42,7 @@
     holomorphic in some region. 
     Then the logarithmic derivative of their product behaves very nicely:
     <me>
-      \frac{ (fg)' }{ fg } \= \frac{ f' g + f g' }{ fg } \= \frac{ f'
+      \frac{ (fg)' }{ fg } \ = \ \frac{ f' g + f g' }{ fg } \ = \ \frac{ f'
       }{ f } + \frac{ g' }{ g } \, 
     </me>.
   </p>
@@ -55,16 +55,16 @@
     By <xref ref="classificationzeros"/>,
     we can express <m>f</m> as
     <me>
-      f(z) \= ( z - z_1 )^{n_1} \cdots ( z - z_j )^{n_j} g(z) \,
+      f(z) \ = \ ( z - z_1 )^{n_1} \cdots ( z - z_j )^{n_j} g(z) \,
     </me>,
     where <m>g</m> is also holomorphic in <m>G</m> and never zero.
     Let's compute the logarithmic derivative of <m>f</m> and play the same remarkable cancellation game as above:
     <md>
-      <mrow>\frac{ f'(z) }{ f(z) } \amp \= \frac{n_1 (z - z_1)^{n_1-1}
+      <mrow>\frac{ f'(z) }{ f(z) } \amp \ = \ \frac{n_1 (z - z_1)^{n_1-1}
       (z - z_2)^{n_2} \cdots (z - z_j)^{n_j} g(z) + \dots + ( z - z_1
       )^{n_1} \cdots ( z - z_j )^{n_j} g'(z) }{ ( z - z_1 )^{n_1}
       \cdots ( z - z_j )^{n_j} g(z) } \nonumber</mrow> 
-      <mrow xml:id="logderzeros" number="yes">\amp \= \frac{ n_1 }{ z
+      <mrow xml:id="logderzeros" number="yes">\amp \ = \ \frac{ n_1 }{ z
       - z_1 } + \frac{ n_2 }{ z - z_2 } + \cdots + \frac{ n_j }{ z -
       z_j } + \frac{ g'(z) }{ g(z) } \, </mrow> 
     </md>.
@@ -119,7 +119,7 @@
         <m>\gg</m> counted according to order. 
         Then
         <me>
-          \frac{1}{2 \pi i} \i \frac{f'}{f} \= Z(f,\gg) - P(f,\gg) \,
+          \frac{1}{2 \pi i} \i \frac{f'}{f} \ = \ Z(f,\gg) - P(f,\gg) \,
         </me>.
       </p>
     </statement>
@@ -135,7 +135,7 @@
         so that these are the only zeros and poles in <m>G</m>.
         By <xref ref="logderzeros"/> and<nbsp/><xref ref="logderpoles"/>,
         <me>
-          \frac{ f'(z) }{ f(z) } \= \frac{ n_1 }{ z - z_1 } + \dots +
+          \frac{ f'(z) }{ f(z) } \ = \ \frac{ n_1 }{ z - z_1 } + \dots +
           \frac{ n_j }{ z - z_j } - \frac{ m_1 }{ z - p_1 } - \dots -
           \frac{ m_k }{ z - p_k } + \frac{ g'(z) }{ g(z) } \, 
         </me>,
@@ -145,12 +145,12 @@
         Thanks to Cauchy's <xref ref="cauchythm"/>
         and <xref ref="ex_circleint">Exercise</xref>, the integral is easy:
         <md>
-          <mrow>\i \frac{ f' }{ f } \amp \= n_1 \i \frac{ \diff{z}
+          <mrow>\i \frac{ f' }{ f } \amp \ = \ n_1 \i \frac{ \diff{z}
           }{ z - z_1 } \, + \, \cdots \, + \, n_j \i \frac{ \diff{z}
           }{ z - z_j } \, - \, m_1 \i \frac{ \diff{z} }{ z - p_1 }
           \, - \, \cdots \, - \, m_k \i \frac{ \diff{z} }{ z - p_k }
           + \i \frac{ g' }{ g }</mrow> 
-          <mrow>\amp \= 2 \pi i \left( n_1 + \dots + n_j - m_1 -
+          <mrow>\amp \ = \ 2 \pi i \left( n_1 + \dots + n_j - m_1 -
           \dots - m_k \right) + \i \frac{ g' }{ g } \, </mrow> 
         </md>.
       </p>
@@ -159,7 +159,7 @@
         (because <m>g</m> is never zero in <m>G</m>),
         so that <xref ref="cauchycor">Corollary</xref> gives
         <me>
-          \i \frac{g'} g \= 0 \,  
+          \i \frac{g'} g \ = \ 0 \,  
         </me>.
       </p>
     </proof>
@@ -204,7 +204,7 @@
         <m>|f(z)|>|g(z)|</m> for all <m>z \in \gg</m>.
         Then
         <me>
-          Z(f+g,\gg) \= Z(f,\gg) \,
+          Z(f+g,\gg) \ = \ Z(f,\gg) \,
         </me>.
       </p>
     </statement>
@@ -234,8 +234,8 @@
         let <m>f(z) = z^5</m> and <m>g(z) = z^4 + z^3 + z^2 + z + 1</m>.
         Then for <m>z \in C[0,2]</m>
         <me>
-          |g(z)| \ \le \ |z|^4 + |z|^3 + |z|^2 + |z| + 1 \= 16 + 8 + 4
-          + 2 + 1 \= 31 \ \lt  \ 32 \= |z|^5 \= |f(z)| \, 
+          |g(z)| \ \le \ |z|^4 + |z|^3 + |z|^2 + |z| + 1 \ = \ 16 + 8 + 4
+          + 2 + 1 \ = \ 31 \ \lt  \ 32 \ = \ |z|^5 \ = \ |f(z)| \, 
         </me>.
       </p>
       <p>
@@ -244,7 +244,7 @@
         But <m>f</m> has just one root,
         of multiplicity 5 at the origin, whence
         <me>
-          Z(p, \, C[0,2]) \= Z(f+g, \, C[0,2]) \= Z(f, \, C[0,2]) \= 5 \,
+          Z(p, \, C[0,2]) \ = \ Z(f+g, \, C[0,2]) \ = \ Z(f, \, C[0,2]) \ = \ 5 \,
         </me>.
       </p>
     </statement>
@@ -254,16 +254,16 @@
       By <xref ref="logderzeros"/> and the Argument Principle (<xref
       ref="argprinc"/>) 
       <md>
-        <mrow>Z(f+g,\gg) \amp \= \frac 1 {2 \pi i} \i \frac{ (f+g)' }{
+        <mrow>Z(f+g,\gg) \amp \ = \ \frac 1 {2 \pi i} \i \frac{ (f+g)' }{
         f+g }
         </mrow>
-        <mrow> \amp \= \frac 1 {2 \pi i} \i \frac{ \left( f \left( 1 + \frac
+        <mrow> \amp \ = \ \frac 1 {2 \pi i} \i \frac{ \left( f \left( 1 + \frac
         g f \right) \right)' }{ f \left( 1 + \frac g f \right) }
         </mrow>
-        <mrow> \amp \=
+        <mrow> \amp \ = \
         \frac 1 {2 \pi i} \i \left( \frac{ f' }{ f } + \frac{ \left( 1
         + \frac g f \right)'}{ 1 + \frac g f } \right)</mrow> 
-        <mrow>\amp \= Z(f,\gg) + \frac 1 {2 \pi i} \i \frac{\left( 1 +
+        <mrow>\amp \ = \ Z(f,\gg) + \frac 1 {2 \pi i} \i \frac{\left( 1 +
         \frac g f \right)' }{ 1 + \frac g f } \, </mrow> 
       </md>.
     </p>
@@ -281,7 +281,7 @@
       which implies by <xref ref="antidercor"/> that
       <me>
         \frac 1 {2 \pi i} \int_\gamma \frac{ \left( 1 + \frac g f
-        \right)' }{ 1 + \frac g f } \= 0 \, 
+        \right)' }{ 1 + \frac g f } \ = \ 0 \, 
       </me>.
     </p>
   </proof>

@@ -120,7 +120,7 @@
           Show that the Laplace equation for <m>u(r, \phi)</m> is
           <me>
             \frac 1 r \, u_r + u_{ rr } + \frac 1 {r^2} u_{ \phi
-            \phi } \= 0 \,
+            \phi } \ = \ 0 \,
           </me>.
         </p>
       </statement>
@@ -177,7 +177,7 @@
       <p>
         Recall from <xref ref="ex_poissonkernel"/> the Poisson kernel
         <me>
-          P_r(\phi) \= \frac{ 1-r^2 }{ 1 - 2r \cos(\phi) + r^2 } \,
+          P_r(\phi) \ = \ \frac{ 1-r^2 }{ 1 - 2r \cos(\phi) + r^2 } \,
         </me>,
         where <m>0 \lt  r \lt  1</m>.
         In this exercise, we will prove the
@@ -186,7 +186,7 @@
         unit disk 
         <m>\overline D[0,1]</m> then for any <m>r\lt 1</m>
         <men xml:id="eq_poissonintform">
-          u \! \left( r \, e^{ i \phi } \right) \= \frac{ 1 }{ 2 \pi }
+          u \! \left( r \, e^{ i \phi } \right) \ = \ \frac{ 1 }{ 2 \pi }
           \int_0^{ 2 \pi } u \! \left( e^{ i t } \right) P_r(\phi - t)
           \, \diff{t} \, 
         </men>.
@@ -205,7 +205,7 @@
         <p>
           Recall the M&#xf6;bius function
           <me>
-            f_a(z) \= \frac{ z-a }{ 1 - \conj{a} z } \,
+            f_a(z) \ = \ \frac{ z-a }{ 1 - \conj{a} z } \,
           </me>,
           for some fixed <m>a \in \C</m> with <m>|a| \lt  1</m>,
           from <xref ref="ex_mobiusunitcircletounitcircle"/>.
@@ -220,7 +220,7 @@
           Apply <xref ref="harmonicmeanvalue"/>
           to the function <m>u(f_{ -a }(z))</m> with <m>w=0</m> to deduce
           <men xml:id="eq_poissoninterm">
-            u(a) \= \frac{ 1 }{ 2 \pi i } \int_{ C[0,1] } \frac{
+            u(a) \ = \ \frac{ 1 }{ 2 \pi i } \int_{ C[0,1] } \frac{
             u(f_{ -a }(z)) }{ z } \, \diff{z} \,
           </men>.
         </p>
@@ -235,7 +235,7 @@
           apply a change of variables to
           <xref ref="eq_poissoninterm"/> to prove
           <me>
-            u(a) \= \frac{ 1 }{ 2 \pi } \int_0^{ 2 \pi } u \!
+            u(a) \ = \ \frac{ 1 }{ 2 \pi } \int_0^{ 2 \pi } u \!
             \left( e^{ i t } \right) \frac{ 1 - |a|^2 }{ \left|
             e^{ i t } - a \right|^2 } \, \diff{t} \,
           </me>.

@@ -143,7 +143,7 @@
         at <m>z_0</m> and <m>g</m> is holomorphic at <m>z_0</m>. 
         Prove that
         <me>
-          \Res_{z=z_0} \bigl( f(z) \, g(z) \bigr) \= g(z_0) \,
+          \Res_{z=z_0} \bigl( f(z) \, g(z) \bigr) \ = \ g(z_0) \,
           \Res_{z=z_0} \bigl( f(z) \bigr) \, 
         </me>.
       </p>
@@ -291,7 +291,7 @@
         if <m>f</m> and <m>g</m> are holomorphic at <m>z_0</m>,
         which is a double zero of <m>g</m>, then
         <me>
-          \Res_{z=z_0} \left( \frac{ f(z) }{ g(z) } \right) \= \frac{
+          \Res_{z=z_0} \left( \frac{ f(z) }{ g(z) } \right) \ = \ \frac{
           6 \, f'(z_0) \, g''(z_0) - 2 \, f(z_0) \, g'''(z_0) }{ 3 \,
           g''(z_0)^2 } \, 
         </me>.
@@ -397,7 +397,7 @@
         p_k</m>, respectively, counted according to multiplicity.
         Prove that
         <me>
-          \frac{1}{2 \pi i} \i g \, \frac{f'}{f} \= \sum_{m=1}^j
+          \frac{1}{2 \pi i} \i g \, \frac{f'}{f} \ = \ \sum_{m=1}^j
           g(z_m) - \sum_{n=1}^k g(p_n) \, 
         </me>.
       </p>

@@ -33,7 +33,7 @@
             of the cotangent
             and the fact that
             <me>
-              \cot z \= \frac 1 z - \frac 1 3 \, z + \text{ higher-order terms }
+              \cot z \ = \ \frac 1 z - \frac 1 3 \, z + \text{ higher-order terms }
             </me>.
             <idx><h>periodic</h></idx>
             <idx><h>cotangent</h></idx>
@@ -44,7 +44,7 @@
             Prove that <m>\lim_{R \to \infty} \int_{\gamma_R} f =
             -2i</m> and deduce that for any <m>R>0</m> 
             <me>
-              \int_{\gamma_R} f \= -2i \,
+              \int_{\gamma_R} f \ = \ -2i \,
             </me>.
           </p>
         </li>
@@ -60,7 +60,7 @@
         </men>.
         Use the Residue <xref ref="residuethm"/> to show that
         <men xml:id="dedrec">
-          s(a,b) + s(b,a) \= - \frac 1 4 + \frac 1 {12} \left( \frac a
+          s(a,b) + s(b,a) \ = \ - \frac 1 4 + \frac 1 {12} \left( \frac a
           b + \frac 1 {ab} + \frac b a \right) 
         </men>.
       </p>
@@ -79,7 +79,7 @@
     It first appeared in the study of the
     <em>Dedekind <m>\eta</m>-function</em>
     <me>
-      \eta (z) \= \exp \left( \tfrac{ \pi i z }{ 12 } \right) \prod_{k
+      \eta (z) \ = \ \exp \left( \tfrac{ \pi i z }{ 12 } \right) \prod_{k
       \geq 1} \left( 1 - \exp ( 2 \pi i k z ) \right) 
     </me>
     in the 1870's and has since intrigued mathematicians from such

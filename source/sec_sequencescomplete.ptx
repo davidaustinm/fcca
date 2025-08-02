@@ -36,7 +36,7 @@
         and <m>L</m> is its <em>limit</em>;
         in symbols we write
         <me>
-          \lim_{n \to \infty} a_n \= L \,
+          \lim_{n \to \infty} a_n \ = \ L \,
         </me>.
         <idx><h>limit</h><h>of a sequence</h></idx>
         <idx><h>convergent</h><h>sequence</h></idx>
@@ -65,8 +65,8 @@
         choose <m>N > \frac 1 \epsilon</m>.
         Then for any <m>n \geq N</m>,
         <me>
-          \left| \frac{i^n} n - 0 \right| \= \left| \frac{i^n} n
-          \right| \= \frac {|i|^n} n \= \frac 1 n \ \leq \ \frac 1 N \
+          \left| \frac{i^n} n - 0 \right| \ = \ \left| \frac{i^n} n
+          \right| \ = \ \frac {|i|^n} n \ = \ \frac 1 n \ \leq \ \frac 1 N \
           \lt  \ \epsilon \, 
         </me>.
       </p>
@@ -96,7 +96,7 @@
         <m>a_{4k+2} = i^{4k+2} = -1</m> for any <m>k \geq 0</m>.)
         Then
         <me>
-          \left| a_n - L \right| \= \left| 1 + L \right| \ \geq \ 1 \
+          \left| a_n - L \right| \ = \ \left| 1 + L \right| \ \geq \ 1 \
           > \ \frac 1 2 \, 
         </me>.
       </p>
@@ -108,7 +108,7 @@
         <m>a_{4k} = i^{4k} = 1</m> for any <m>k > 0</m>.)
         Then
         <me>
-          \left| a_n - L \right| \= \left| 1 - L \right| \ > \ 1 \ > \
+          \left| a_n - L \right| \ = \ \left| 1 - L \right| \ > \ 1 \ > \
           \frac 1 2 \, 
         </me>.
       </p>
@@ -133,28 +133,28 @@
           <li>
             <p>
               <m>\displaystyle \lim_{ n \to \infty } a_n + c \lim_{ n
-              \to \infty } b_n \= \lim_{ n \to \infty } \left( a_n + c
+              \to \infty } b_n \ = \ \lim_{ n \to \infty } \left( a_n + c
               \, b_n \right)</m> 
             </p>
           </li>
           <li>
             <p>
               <m>\displaystyle \lim_{ n \to \infty } a_n \cdot \lim_{
-              n \to \infty } b_n \= \lim_{ n \to \infty } \left( a_n
+              n \to \infty } b_n \ = \ \lim_{ n \to \infty } \left( a_n
               \cdot b_n \right)</m> 
             </p>
           </li>
           <li>
             <p>
               <m>\displaystyle \frac{ \lim_{ n \to \infty } a_n }{
-              \lim_{ n \to \infty } b_n } \= \lim_{ n \to \infty }
+              \lim_{ n \to \infty } b_n } \ = \ \lim_{ n \to \infty }
               \left( \frac{ a_n }{ b_n } \right)</m> provided 
               <m>\lim_{ n \to \infty } b_n \neq 0</m>. 
             </p>
           </li>
           <li>
             <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n \= \lim_{ n
+              <m>\displaystyle \lim_{ n \to \infty } a_n \ = \ \lim_{ n
               \to \infty } a_{ n+1 }</m>.
             </p>
           </li>
@@ -165,7 +165,7 @@
         <m>L := \lim_{ n \to \infty } a_n</m> and all <m>a_n \in
         G</m>, then 
         <me>
-          \lim_{n\to\infty} f(a_n) \= f(L) \,
+          \lim_{n\to\infty} f(a_n) \ = \ f(L) \,
         </me>.
       </p>
     </statement>
@@ -247,8 +247,8 @@
         Let <m>L := \lim_{n\to\infty}r^n</m>.
         By <xref ref="limitrules"/>,
         <me>
-          L \= \lim_{n\to\infty}r^n \= \lim_{n\to\infty} r^{n+1} \= r
-          \lim_{n\to\infty}r^n \= r \, L \, 
+          L \ = \ \lim_{n\to\infty}r^n \ = \ \lim_{n\to\infty} r^{n+1} \ = \ r
+          \lim_{n\to\infty}r^n \ = \ r \, L \, 
         </me>.
       </p>
       <p>
@@ -318,7 +318,7 @@
               (with complex coefficients)
               and any <m>c \in \C</m> with <m>\abs{c} > 1</m>,
               <me>
-                \lim_{n\to\infty}\frac{p(n)}{c^n}\=0 \,
+                \lim_{n\to\infty}\frac{p(n)}{c^n}\ = \ 0 \,
                 </me>.
             </p>
           </li>
@@ -327,7 +327,7 @@
               Factorials beat exponentials:
               for any <m>c \in \C</m>,
               <me>
-                \lim_{n\to\infty} \frac{c^n}{n!}\=0 \,
+                \lim_{n\to\infty} \frac{c^n}{n!}\ = \ 0 \,
               </me>.
             </p>
           </li>

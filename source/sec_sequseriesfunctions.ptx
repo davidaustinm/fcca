@@ -13,7 +13,7 @@
         We say that <m>(f_n)</m> <em>converges pointwise</em>
         to <m>f: G \to \C</m> if for each <m>z \in G</m>,
         <me>
-          \lim_{ n \to \infty } f_n(z) \= f(z) \,
+          \lim_{ n \to \infty } f_n(z) \ = \ f(z) \,
         </me>.
         <idx><h>convergence</h><h>pointwise</h></idx>
         <idx><h>pointwise convergence</h></idx>
@@ -79,7 +79,7 @@
         choose <m>N > \frac{ \ln(\epsilon) }{ \ln|z| }</m>.
         Then for all <m>n \ge N</m>,
         <me>
-          \left| f_n(z) - f(z) \right| \= \left| z^n - 0 \right| \=
+          \left| f_n(z) - f(z) \right| \ = \ \left| z^n - 0 \right| \ = \
           |z|^n \ \le \ |z|^N \ \lt  \ \epsilon \, 
         </me>.
       </p>
@@ -99,7 +99,7 @@
         choose <m>N > - \frac{ \ln(\epsilon) }{ \ln(2) }</m>.
         Then for all <m>n \ge N</m>,
         <me>
-          \left| f_n(z) - f(z) \right| \= |z|^n \ \le \ |z|^N \ \lt  \
+          \left| f_n(z) - f(z) \right| \ = \ |z|^n \ \le \ |z|^N \ \lt  \
           \left( \tfrac 1 2 \right)^N \ \lt  \ \epsilon \, 
         </me>.
       </p>
@@ -127,7 +127,7 @@
     <m>\left( f_n \right)</m> that converges uniformly on <m>G</m>
     then for all <m>z_0 \in G</m> 
     <me>
-      \lim_{n \to \infty} \ \lim_{z \to z_0} f_n(z) \= \lim_{z \to
+      \lim_{n \to \infty} \ \lim_{z \to z_0} f_n(z) \ = \ \lim_{z \to
       z_0} \ \lim_{n \to \infty} f_n(z) \, 
     </me>.
   </p>
@@ -227,7 +227,7 @@
         and <m>\gg \subseteq G</m> is a piecewise smooth path.
         Then
         <me>
-          \lim_{n \to \infty} \int_\gamma f_n \= \int_\gamma f \,
+          \lim_{n \to \infty} \int_\gamma f_n \ = \ \int_\gamma f \,
         </me>.
       </p>
     </statement>
@@ -247,7 +247,7 @@
         With <xref ref="intprop"/>
         <xref ref="int4"/> we can thus estimate
         <me>
-          \left| \int_\gamma f_n - \int_\gamma f \right| \= \left|
+          \left| \int_\gamma f_n - \int_\gamma f \right| \ = \ \left|
           \int_\gamma f_n - f \right| \ \leq \ \max_{z \in \gamma}
           \left| f_n(z) - f(z) \right| \cdot \length (\gamma) \ \lt  \
           \epsilon \, 
@@ -262,7 +262,7 @@
     if <m>\sum_{ k \ge 1 } f_k(z)</m> converges uniformly on <m>G</m> and
     <m>\gg \subseteq G</m> is a piecewise smooth path, then
     <me>
-      \int_\gg \sum_{ k \ge 1 } f_k(z) \, \diff{z} \= \sum_{ k \ge 1 }
+      \int_\gg \sum_{ k \ge 1 } f_k(z) \, \diff{z} \ = \ \sum_{ k \ge 1 }
       \int_\gg f_k(z) \, \diff{z} \, 
     </me>.
   </p>
@@ -299,14 +299,14 @@
         To show that the convergence is uniform, let <m>\epsilon > 0</m>.
         Then there exists <m>N</m> such that for all <m>n \ge N</m>,
         <me>
-          \sum_{k \ge 1} M_k - \sum_{k=1}^nM_k \= \sum_{k >n}M_k \ \lt
+          \sum_{k \ge 1} M_k - \sum_{k=1}^nM_k \ = \ \sum_{k >n}M_k \ \lt
           \ \epsilon \, 
           </me>.
       </p>
       <p>
         Thus for all <m>z \in G</m> and <m>n \ge N</m>,
         <me>
-          \abs{\sum_{k \geq 1} f_k(z)-\sum_{k=1}^nf_k(z)} \=
+          \abs{\sum_{k \geq 1} f_k(z)-\sum_{k=1}^nf_k(z)} \ = \
           \abs{\sum_{k >n}f_k(z)} \ \le \ \sum_{k >n}\abs{f_k(z)} \ \le
           \ \sum_{k >n}M_k \ \lt  \ \epsilon \, 
           </me>,
@@ -326,7 +326,7 @@
         We know from <xref ref="ex_geomseries"/>
         that this function series converges pointwise for <m>|z| \lt  1</m>:
         <me>
-          \sum_{ k \ge 1 } z^k \= \frac z {1-z} \,
+          \sum_{ k \ge 1 } z^k \ = \ \frac z {1-z} \,
         </me>.
       </p>
       <p>
@@ -336,7 +336,7 @@
         so fix a real number <m>0 \lt  r \lt  1</m> and let <m>M_k = r^k</m>.
         Then
         <me>
-          |f_k(z)| \= |z|^k \ \le \ r^k \qquad \text{ for }  \ |z| \le
+          |f_k(z)| \ = \ |z|^k \ \le \ r^k \qquad \text{ for }  \ |z| \le
           r \, 
         </me>,
         and <m>\sum_{ k \ge 1 } r^k</m> converges by

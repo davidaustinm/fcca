@@ -18,14 +18,14 @@
         closed, piecewise smooth, <m>G</m>-contractible path.
         If <m>w</m> is inside <m>\gg</m> then
         <me>
-          f'(w) \= \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ (z-w)^2 }
+          f'(w) \ = \ \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ (z-w)^2 }
           \, \diff{z}\, 
         </me>.
       </p>
       <p>
         Moreover, <m>f''(w)</m> exists, and
         <me>
-          f''(w) \= \frac 1 {\pi i} \int_\gg \frac{ f(z) }{ (z-w)^3 }
+          f''(w) \ = \ \frac 1 {\pi i} \int_\gg \frac{ f(z) }{ (z-w)^3 }
           \ \diff{z} \, 
         </me>.
       </p>
@@ -42,11 +42,11 @@
       <md>
         <mrow>\amp\frac{ f(w+\D w) - f(w) }{ \D w }
         </mrow>
-        <mrow>\amp \= \frac{1}{\D w}
+        <mrow>\amp \ = \ \frac{1}{\D w}
         \left( \frac{1}{2 \pi i} \int_\gg \frac{f(z)}{z - (w+\D w)} \,
         \diff{z} - \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \,
         \diff{z} \right)</mrow> 
-        <mrow>\amp \= \frac{1}{2 \pi i} \int_\gg \frac{f(z)}{(z-w-\D
+        <mrow>\amp \ = \ \frac{1}{2 \pi i} \int_\gg \frac{f(z)}{(z-w-\D
         w) (z-w)} \, \diff{z} \, </mrow> 
       </md>.
     </p>
@@ -58,10 +58,10 @@
         <mrow>\amp \frac{ f(w+\D w) - f(w) }{ \D w } - \frac 1 {2 \pi i}
         \int_\gg \frac{ f(z) }{ (z-w)^2 } \, \diff{z}
         </mrow>
-        <mrow>\amp \= \frac 1
+        <mrow>\amp \ = \ \frac 1
         {2 \pi i} \int_\gg \left( \frac{ f(z) }{ (z-w-\D w) (z-w) } -
         \frac{ f(z) }{ (z-w)^2 } \right) \diff{z} \nonumber</mrow> 
-        <mrow xml:id="eq_needstostaybounded" number="yes">\amp \=
+        <mrow xml:id="eq_needstostaybounded" number="yes">\amp \ = \
         \frac{ \D w }{2 \pi i} \int_\gg \frac{ f(z) }{ (z-w-\D w)
         (z-w)^2 } \, \diff{z} \, </mrow> 
       </md>.
@@ -127,9 +127,9 @@
     <statement>
       <me>
         \int_{C[0,1]} \frac{\sin(z)}{z^2} \, \diff{z}
-        \= 2 \pi i \left. \frac{d}{\diff{z}} \sin(z) \right|_{z=0}
-        \= 2 \pi i \cos(0)
-        \= 2 \pi i \,
+        \ = \ 2 \pi i \left. \frac{d}{\diff{z}} \sin(z) \right|_{z=0}
+        \ = \ 2 \pi i \cos(0)
+        \ = \ 2 \pi i \,
       </me>.
     </statement>
   </example>
@@ -172,20 +172,20 @@
         using <xref ref="cauchyformulacircle"/>
         and <xref ref="cauchyformula2"/>:
         <md>
-          <mrow>\int_{C[0,2]} \frac{\diff{z}}{z^2 (z-1)} \amp \=
+          <mrow>\int_{C[0,2]} \frac{\diff{z}}{z^2 (z-1)} \amp \ = \
           \int_{\gamma_1} \frac{\diff{z}}{z^2 (z-1)} + \int_{\gamma_2}
           \frac{\diff{z}}{z^2 (z-1)}
           </mrow>
-          <mrow>\amp \= \int_{\gamma_1}
+          <mrow>\amp \ = \ \int_{\gamma_1}
           \frac{\frac{1}{z-1}}{z^2} \, \diff{z} + \int_{\gamma_2}
           \frac{\frac{1}{z^2}}{z-1} \, \diff{z}</mrow> 
-          <mrow>\amp \= 2 \pi i \left. \frac{ d }{ \diff{z} } \frac{ 1
+          <mrow>\amp \ = \ 2 \pi i \left. \frac{ d }{ \diff{z} } \frac{ 1
           }{ z-1 } \right|_{ z=0 } + \ 2 \pi i \, \frac{ 1 }{ 1^2 }
           </mrow>
-          <mrow>\amp \=
+          <mrow>\amp \ = \
           2 \pi i \left( - \frac{ 1 }{ (-1)^2 }  \right) + 2 \pi
           i</mrow> 
-          <mrow>\amp \= 0 \, </mrow>
+          <mrow>\amp \ = \ 0 \, </mrow>
         </md>.
       </p>
     </statement>
@@ -194,9 +194,9 @@
     <statement>
       <me>
         \int_{C[0,1]} \frac{\cos(z)}{z^3} \, \diff{z}
-        \= \pi i \left. \frac{d^2}{\diff{z}^2} \cos(z) \right|_{z=0}
-        \= \pi i \left( - \cos(0) \right)
-        \= - \pi i \,
+        \ = \ \pi i \left. \frac{d^2}{\diff{z}^2} \cos(z) \right|_{z=0}
+        \ = \ \pi i \left( - \cos(0) \right)
+        \ = \ - \pi i \,
       </me>.
     </statement>
   </example>

@@ -441,9 +441,9 @@
         Prove that the Cauchy-Riemann equations take on the following
         form in polar coordinates: 
         <me>
-          \frac{ \partial u }{ \partial r } \= \frac 1 r \, \frac{
+          \frac{ \partial u }{ \partial r } \ = \ \frac 1 r \, \frac{
           \partial v }{ \partial \phi } \qquad \text{ and }  \qquad
-          \frac 1 r \, \frac{ \partial u }{ \partial \phi } \= -
+          \frac 1 r \, \frac{ \partial u }{ \partial \phi } \ = \ -
           \frac{ \partial v }{ \partial r } \, 
         </me>.
       </p>

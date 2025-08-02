@@ -104,7 +104,7 @@
         If <m>f, g : [a,b] \to \R</m> are continuous functions and <m>c
         \in \R</m> then
         <me>
-          \int_a^b \bigl( f(x) + c \, g(x) \bigr) \, \diff{x} \=
+          \int_a^b \bigl( f(x) + c \, g(x) \bigr) \, \diff{x} \ = \
           \int_a^b f(x) \, \diff{x} + c \int_a^b g(x) \, \diff{x} \,
         </me>.
       </p>
@@ -132,7 +132,7 @@
         continuous, and <m>f : [g(a), 
         g(b)] \to \R</m> is continuous then 
         <me>
-          \int_a^b f(g(t)) \, g'(t) \, \diff{t} \= \int_{ g(a) }^{
+          \int_a^b f(g(t)) \, g'(t) \, \diff{t} \ = \ \int_{ g(a) }^{
           g(b) } f(x) \, \diff{x} \,
         </me>.
       </p>
@@ -162,7 +162,7 @@
         If <m>f</m> is continuous on <m>[a,b] \times [c,d] \subset
         \R^2</m> then 
         <me>
-          \int_a^b\!\int_c^d f(x,y)\,\diff{y}\,\diff{x} \=
+          \int_a^b\!\int_c^d f(x,y)\,\diff{y}\,\diff{x} \ = \
           \int_c^d\!\int_a^b f(x,y)\,\diff{x}\,\diff{y} \,
         </me>.
       </p>
@@ -184,7 +184,7 @@
         \subset \R^2</m> and the partial derivative <m>\fderiv fx</m>
         exists and is continuous on <m>[a,b] \times [c,d]</m>.  Then 
         <me>
-          \frac{ d }{ \diff{x} } \int_c^d f(x,y) \, \diff{y} \= \int_c^d
+          \frac{ d }{ \diff{x} } \int_c^d f(x,y) \, \diff{y} \ = \ \int_c^d
           \fderiv fx(x,y) \, \diff{y} \,
         </me>.
       </p>
@@ -215,7 +215,7 @@
       If <m>f(x,y)</m> and <m>g(x,y)</m> have continuous partial
       derivatives on an open region containing <m>D</m> then 
       <me>
-        \int_C f \, \diff{x} + g \, \diff{y} \= \int_D \frac{ \partial g }{
+        \int_C f \, \diff{x} + g \, \diff{y} \ = \ \int_D \frac{ \partial g }{
         \partial x } - \frac{ \partial f }{ \partial y } \, \diff{x} \,
         \diff{y} \,
       </me>.

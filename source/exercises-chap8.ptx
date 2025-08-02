@@ -202,10 +202,10 @@
         Suppose <m>G</m> is a region and <m>f: G \to \C</m> is holomorphic.
         Prove that the sets
         <md>
-          <mrow>X \amp \= \left\{ a \in G : \text{ there exists }  r
+          <mrow>X \amp \ = \ \left\{ a \in G : \text{ there exists }  r
           \text{ such that }  f(z) = 0 \text{ for all }  z \in D[a,r]
           \right\}</mrow> 
-          <mrow>Y \amp \= \left\{ a \in G : \text{ there exists }  r
+          <mrow>Y \amp \ = \ \left\{ a \in G : \text{ there exists }  r
           \text{ such that }  f(z) \ne 0 \text{ for all }  z \in
           D[a,r] \setminus \{ a \} \right\} </mrow> 
         </md>.
@@ -385,7 +385,7 @@
         <p>
           Show that
           <me>
-            \exp(z)\cos(z) \=
+            \exp(z)\cos(z) \ = \
             \frac12\left(\exp((1+i)z)+\exp((1-i)z)\right) 
           </me>.
         </p>
@@ -405,7 +405,7 @@
       <p>
         Show that
         <me>
-          \frac{z-1}{z-2} \= \sum_{k\ge0}\frac1{(z-1)^k}
+          \frac{z-1}{z-2} \ = \ \sum_{k\ge0}\frac1{(z-1)^k}
         </me>
         for <m>\abs{z-1}>1</m>.
       </p>
@@ -553,12 +553,12 @@
         Show that
         <me>
           \lim_{ z \to 0 } \left( \frac 1 { \sin(z) } - \frac 1 z
-          \right) \= 0 
+          \right) \ = \ 0 
         </me>
         and
         <me>
           \lim_{ z \to 0 } \frac{ \frac 1 { \sin(z) } - \frac 1 z }{ z
-          } \= \frac 1 6 \, 
+          } \ = \ \frac 1 6 \, 
         </me>.
       </p>
       <p>
@@ -572,7 +572,7 @@
       <p>
         Find the three Laurent series of
         <me>
-          f(z) \= \frac{3}{(1-z)(z+2)}\,
+          f(z) \ = \ \frac{3}{(1-z)(z+2)}\,
         </me>,
         centered at <m>0</m>, defined on the three regions <m>|z| \lt  1</m>,
         <m>1 \lt  |z| \lt  2</m>, and <m>2 \lt  |z|</m>, respectively.
@@ -592,7 +592,7 @@
         and that it has multiplicity<nbsp/><m>1</m>.
         Show that
         <me>
-          a\=\frac1{2\pi i}\int_\gamma\frac{z \, f'(z)}{f(z)}\,\diff{z}\,
+          a\ = \\frac1{2\pi i}\int_\gamma\frac{z \, f'(z)}{f(z)}\,\diff{z}\,
         </me>.
       </p>
     </statement>

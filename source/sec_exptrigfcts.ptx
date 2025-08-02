@@ -35,7 +35,7 @@
         </em> is <m>\exp: \C \to \C</m>,
         defined for <m>z=x+iy</m> as
         <me>
-          \exp(z) \ := \ e^x \left( \cos y + i \sin y \right) \= e^x e^{iy}
+          \exp(z) \ := \ e^x \left( \cos y + i \sin y \right) \ = \ e^x e^{iy}
         </me>.
       </p>
     </statement>
@@ -120,8 +120,8 @@
     <p>
       The partial derivatives of <m>f(z) = \exp(z)</m> are
       <me>
-        \fderiv fx \= e^x \left( \cos y + i \sin y \right) \qquad
-        \text{ and }  \qquad \fderiv fy \= e^x \left( -\sin y + i \cos
+        \fderiv fx \ = \ e^x \left( \cos y + i \sin y \right) \qquad
+        \text{ and }  \qquad \fderiv fy \ = \ e^x \left( -\sin y + i \cos
         y \right) 
       </me>.
     </p>
@@ -129,13 +129,13 @@
       They are continuous in <m>\C</m> and satisfy the
       Cauchy<ndash/>Riemann equation<nbsp/><xref ref="complexcr"/>: 
       <me>
-        \fderiv fx(z) \= -i \, \fderiv fy(z)
+        \fderiv fx(z) \ = \ -i \, \fderiv fy(z)
       </me>
       for all <m>z \in \C</m>.
       Thus <xref ref="cre">Theorem</xref>
       says that <m>f(z) = \exp(z)</m> is entire with derivative
       <me>
-        f'(z) \= \fderiv fx(z) \= \exp(z)
+        f'(z) \ = \ \fderiv fx(z) \ = \ \exp(z)
       </me>. 
     </p>
   </proof>
@@ -144,7 +144,7 @@
     specializes to the real exponential function for real arguments: 
     indeed, if <m>z = x \in \R</m> then
     <me>
-      \exp(x) \= e^x \left( \cos 0 + i \sin 0 \right) \= e^x
+      \exp(x) \ = \ e^x \left( \cos 0 + i \sin 0 \right) \ = \ e^x
     </me>.
   </p>
   <figure xml:id="fig-complex-exponential">
@@ -205,11 +205,11 @@
         The <em>tangent</em> and <em>cotangent</em> are defined as
         <md>
           <mrow>
-            \tan z \amp \ := \ \frac{ \sin z }{ \cos z } \= -i \, \frac{
+            \tan z \amp \ := \ \frac{ \sin z }{ \cos z } \ = \ -i \, \frac{
             \exp (2iz) - 1 }{ \exp (2iz) + 1 }
           </mrow>
           <mrow>
-            \cot z \amp \ := \ \frac{ \cos z }{ \sin z } \= i \,
+            \cot z \amp \ := \ \frac{ \cos z }{ \sin z } \ = \ i \,
             \frac{ \exp (2iz) + 1 }{ \exp (2iz) - 1 }
           </mrow>
         </md>,
@@ -233,15 +233,15 @@
     if <m>z = x \in \R</m> then
     <md>
       <mrow>
-        \sin z \amp \= \tfrac{1}{2i} \left( \exp (ix) - \exp (-ix)
+        \sin z \amp \ = \ \tfrac{1}{2i} \left( \exp (ix) - \exp (-ix)
         \right)
       </mrow>
       <mrow>
-        \amp \= \tfrac{1}{2i} \left( \cos x + i \sin x - \cos(-x) - i
+        \amp \ = \ \tfrac{1}{2i} \left( \cos x + i \sin x - \cos(-x) - i
         \sin(-x) \right)
       </mrow>
       <mrow>
-        \amp \= \sin x
+        \amp \ = \ \sin x
       </mrow>
     </md>.
   </p>
@@ -324,18 +324,18 @@
     <statement>
       <md>
         <mrow>
-          \sinh z \amp \= \tfrac 1 {2} \left( \exp (z) - \exp (-z)
+          \sinh z \amp \ = \ \tfrac 1 {2} \left( \exp (z) - \exp (-z)
           \right)
         </mrow>
         <mrow>
-          \cosh z \amp \= \tfrac 1 2 \left( \exp (z) + \exp (-z) \right)
+          \cosh z \amp \ = \ \tfrac 1 2 \left( \exp (z) + \exp (-z) \right)
         </mrow>
         <mrow>
-          \tanh z \amp \= \frac{ \sinh z }{ \cosh z } \= \frac{ \exp
+          \tanh z \amp \ = \ \frac{ \sinh z }{ \cosh z } \ = \ \frac{ \exp
           (2z) - 1 }{ \exp (2z) + 1 }
         </mrow>
         <mrow>
-          \coth z \amp \= \frac{ \cosh z }{ \sinh z } \= \frac{
+          \coth z \amp \ = \ \frac{ \cosh z }{ \sinh z } \ = \ \frac{
         \exp (2z) + 1 }{ \exp (2z) - 1 }
       </mrow>
       </md>.
@@ -346,14 +346,14 @@
     function. 
     They still satisfy the identities you already know, e.g.,
     <me>
-      \frac{d}{\diff{z}} \sinh z \= \cosh z \qquad \text{ and }
-      \qquad \frac{d}{\diff{z}} \cosh z \= \sinh z \, 
+      \frac{d}{\diff{z}} \sinh z \ = \ \cosh z \qquad \text{ and }
+      \qquad \frac{d}{\diff{z}} \cosh z \ = \ \sinh z \, 
     </me>.
   </p>
   <p>
     Moreover, they are related to the trigonometric functions via
     <me>
-      \sinh (iz) \= i \sin z \qquad \text{ and }  \qquad \cosh (iz) \=
+      \sinh (iz) \ = \ i \sin z \qquad \text{ and }  \qquad \cosh (iz) \ = \
       \cos z \, 
     </me>.
   </p>

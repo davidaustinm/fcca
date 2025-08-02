@@ -33,7 +33,7 @@
         { (a)} Suppose <m>f</m> is differentiable at <m>z_0 = x_0 + i y_0</m>.
         Then the partial derivatives of <m>f</m> exist and satisfy
         <men xml:id="complexcr">
-          \fderiv fx(z_0) \= -i \, \fderiv fy(z_0) \,
+          \fderiv fx(z_0) \ = \ -i \, \fderiv fy(z_0) \,
         </men>.
       </p>
       <p>
@@ -44,7 +44,7 @@
       <p>
         In both cases { (a)} and { (b)}, <m>f'</m> is given by
         <me>
-          f'(z_0) \= \fderiv fx(z_0) \,
+          f'(z_0) \ = \ \fderiv fx(z_0) \,
         </me>.
       </p>
     </statement>
@@ -58,7 +58,7 @@
     Then, using the usual shorthand
     <m>f_x = \fderiv fx</m> and <m>f_y = \fderiv fy</m>,
     <me>
-      f_x \= u_x+i \, v_x \qquad \text{ and }  \qquad -if_y \= -i(u_y+i \, v_y) \= v_y-i \, u_y \,
+      f_x \ = \ u_x+i \, v_x \qquad \text{ and }  \qquad -if_y \ = \ -i(u_y+i \, v_y) \ = \ v_y-i \, u_y \,
     </me>.
   </p>
   <p>
@@ -81,11 +81,11 @@
   <p>
     If <m>u</m> and <m>v</m> satisfy <xref ref="crequations"/> and their second partials are also continuous, then
     <men xml:id="eq_firstharmonicinstance">
-      u_{xx}(x_0,y_0) \= v_{yx}(x_0,y_0) \= v_{xy}(x_0,y_0) \= - u_{yy}(x_0,y_0) \,
+      u_{xx}(x_0,y_0) \ = \ v_{yx}(x_0,y_0) \ = \ v_{xy}(x_0,y_0) \ = \ - u_{yy}(x_0,y_0) \,
     </men>,
     that is,
     <me>
-      u_{xx}(x_0,y_0) + u_{yy}(x_0,y_0) \= 0
+      u_{xx}(x_0,y_0) + u_{yy}(x_0,y_0) \ = \ 0
     </me>
   </p>
   <p>
@@ -106,13 +106,13 @@
         We revisit <xref ref="exam_zcubedentire">Example</xref>
         and again consider <m>f: \C \to \C</m> given by
         <me>
-          f(z) \= z^3 \= (x+iy)^3 \= \left( x^3 - 3xy^2 \right) + i \left( 3 x^2 y - y^3 \right)
+          f(z) \ = \ z^3 \ = \ (x+iy)^3 \ = \ \left( x^3 - 3xy^2 \right) + i \left( 3 x^2 y - y^3 \right)
         </me>.
       </p>
       <p>
         Thus
         <me>
-          f_x(z) \= 3x^2 - 3y^2 + 6i xy \qquad \text{ and }  \qquad f_y(z) \= -6 xy + 3i x^2 - 3i y^2
+          f_x(z) \ = \ 3x^2 - 3y^2 + 6i xy \qquad \text{ and }  \qquad f_y(z) \ = \ -6 xy + 3i x^2 - 3i y^2
         </me>
         are continuous on <m>\C</m> and satisfy <m>f_x = -i f_y</m>.
         Thus by <xref ref="cre">Theorem</xref>(b),
@@ -127,13 +127,13 @@
         (you saw that coming, didn't you?),
         we consider <m>f: \C \to \C</m> given by
         <me>
-          f(z) \= (\conj z)^2 \= (x-iy)^2 \= x^2 - y^2 - 2ixy \,
+          f(z) \ = \ (\conj z)^2 \ = \ (x-iy)^2 \ = \ x^2 - y^2 - 2ixy \,
         </me>.
       </p>
       <p>
         Now
         <me>
-          f_x(z) \= 2x - 2iy \qquad \text{ and }  \qquad f_y(z) \= -2y - 2ix \,
+          f_x(z) \ = \ 2x - 2iy \qquad \text{ and }  \qquad f_y(z) \ = \ -2y - 2ix \,
         </me>,
         which satisfy <m>f_x = -i f_y</m> only when <m>z=0</m>. (The contrapositive of) <xref ref="cre">Theorem</xref>(a) thus implies that
         <m>f(z) = (\conj z)^2</m> is not differentiable on <m>\C \setminus \{ 0 \}</m>. \pushQED{}\popQED
@@ -144,7 +144,7 @@
     <p>
       (a) If <m>f</m> is differentiable at <m>z_0 = (x_0, y_0)</m> then
       <me>
-        f'(z_0) \= \lim_{\D z \to 0}\frac{f(z_0+\D z) - f(z_0)}{\D z}
+        f'(z_0) \ = \ \lim_{\D z \to 0}\frac{f(z_0+\D z) - f(z_0)}{\D z}
       </me>.
     </p>
     <p>
@@ -152,13 +152,13 @@
       we must get the same result if we restrict <m>\D z</m> to be on the real axis and if we restrict it to be on the imaginary axis.
       In the first case, <m>\D z=\D x</m> and
       <me>
-        f'(z_0) \= \lim_{\D x \to 0}\frac{f(z_0+\D x) - f(z_0)}{\D x} \= \lim_{\D x \to 0}\frac{f(x_0+\D x,y_0)-f(x_0,y_0)}{\D x} \= \fderiv fx(x_0,y_0) \,
+        f'(z_0) \ = \ \lim_{\D x \to 0}\frac{f(z_0+\D x) - f(z_0)}{\D x} \ = \ \lim_{\D x \to 0}\frac{f(x_0+\D x,y_0)-f(x_0,y_0)}{\D x} \ = \ \fderiv fx(x_0,y_0) \,
       </me>.
     </p>
     <p>
       In the second case, <m>\D z = i \, \D y</m> and
       <me>
-        f'(z_0) \= \lim_{i \, \D y \to 0}\frac{f(z_0+i\D y) - f(z_0)}{i \, \D y} \= \lim_{\D y \to 0}\frac1i\frac{f(x_0,y_0+\D y)-f(x_0,y_0)}{\D y} \= -i \, \fderiv fy(x_0,y_0) \,
+        f'(z_0) \ = \ \lim_{i \, \D y \to 0}\frac{f(z_0+i\D y) - f(z_0)}{i \, \D y} \ = \ \lim_{\D y \to 0}\frac1i\frac{f(x_0,y_0+\D y)-f(x_0,y_0)}{\D y} \ = \ -i \, \fderiv fy(x_0,y_0) \,
       </me>.
     </p>
     <p>
@@ -169,21 +169,21 @@
       Our goal is to prove that <m>f'(z_0) = f_x(z_0)</m>.
       By <xref ref="complexcr"/>,
       <me>
-        f_x(z_0) \= \frac{\D x + i \, \D y}{\D z}\, f_x(z_0) \= \frac{\D x}{\D z}\, f_x(z_0) + \frac{\D y}{\D z}\, i \, f_x(z_0) \= \frac{\D x}{\D z}\, f_x(z_0) + \frac{\D y}{\D z}\, f_y(z_0) \,
+        f_x(z_0) \ = \ \frac{\D x + i \, \D y}{\D z}\, f_x(z_0) \ = \ \frac{\D x}{\D z}\, f_x(z_0) + \frac{\D y}{\D z}\, i \, f_x(z_0) \ = \ \frac{\D x}{\D z}\, f_x(z_0) + \frac{\D y}{\D z}\, f_y(z_0) \,
       </me>.
     </p>
     <p>
       On the other hand,
       we can rewrite the difference quotient for <m>f'(z_0)</m> as
       <md>
-        <mrow>\frac{f(z_0+\D z)-f(z_0)}{\D z} \amp \= \frac{f(z_0+\D z)-f(z_0+\D x) + f(z_0+\D x) - f(z_0)}{\D z}</mrow>
-        <mrow>\amp \= \frac{f(z_0+\D x+i\D y)-f(z_0+\D x)}{\D z} + \frac{f(z_0+\D x) - f(z_0)}{\D z} \, </mrow>
+        <mrow>\frac{f(z_0+\D z)-f(z_0)}{\D z} \amp \ = \ \frac{f(z_0+\D z)-f(z_0+\D x) + f(z_0+\D x) - f(z_0)}{\D z}</mrow>
+        <mrow>\amp \ = \ \frac{f(z_0+\D x+i\D y)-f(z_0+\D x)}{\D z} + \frac{f(z_0+\D x) - f(z_0)}{\D z} \, </mrow>
       </md>.
     </p>
     <p>
       Thus
       <md>
-        <mrow>\lim_{\D z\to0}\frac{f(z_0+\D z)-f(z_0)}{\D z} - f_x(z_0) \nonumber \amp \= \lim_{\D z\to0} \frac{\D y}{\D z}\left(\frac{f(z_0+\D x+i\D y)-f(z_0+\D x)}{\D y} - f_y(z_0)\right)</mrow>
+        <mrow>\lim_{\D z\to0}\frac{f(z_0+\D z)-f(z_0)}{\D z} - f_x(z_0) \nonumber \amp \ = \ \lim_{\D z\to0} \frac{\D y}{\D z}\left(\frac{f(z_0+\D x+i\D y)-f(z_0+\D x)}{\D y} - f_y(z_0)\right)</mrow>
         <mrow xml:id="cauchyriemlimit" number="yes">\amp \qquad + \lim_{\D z\to0} \frac{\D x}{\D z}\left(\frac{f(z_0+\D x) - f(z_0)}{\D x} - f_x(z_0)\right) </mrow>
       </md>.
     </p>
@@ -196,7 +196,7 @@
       The second term on the right-hand side of <xref ref="cauchyriemlimit"/> has a limit of <m>0</m> since,
       by definition,
       <me>
-        f_x(z_0) \= \lim_{\D x\to0}\frac{f(z_0+\D x) - f(z_0)}{\D x}
+        f_x(z_0) \ = \ \lim_{\D x\to0}\frac{f(z_0+\D x) - f(z_0)}{\D x}
       </me>
       and taking the limit here as
       <m>\D z\to0</m> is the same as taking the limit as <m>\D x\to0</m>.
@@ -213,22 +213,22 @@
       <xref ref="realmeanvalue">Theorem</xref>
       gives real numbers <m>0\lt a,b\lt 1</m> such that
       <md>
-        <mrow>\frac{u(x_0+\D x, \, y_0+\D y)-u(x_0+\D x, \, y_0)}{\D y} \amp \= u_y(x_0+\D x, \, y_0+a \, \D y)</mrow>
-        <mrow>\frac{v(x_0+\D x, \, y_0+\D y)-v(x_0+\D x, \, y_0)}{\D y} \amp \= v_y(x_0+\D x, \, y_0+b \, \D y) \, </mrow>
+        <mrow>\frac{u(x_0+\D x, \, y_0+\D y)-u(x_0+\D x, \, y_0)}{\D y} \amp \ = \ u_y(x_0+\D x, \, y_0+a \, \D y)</mrow>
+        <mrow>\frac{v(x_0+\D x, \, y_0+\D y)-v(x_0+\D x, \, y_0)}{\D y} \amp \ = \ v_y(x_0+\D x, \, y_0+b \, \D y) \, </mrow>
       </md>.
     </p>
     <p>
       Thus
       <md>
-        <mrow>\amp \frac{f(z_0+\D x+ i \, \D y)-f(z_0+\D x)}{\D y} - f_y(z_0) \= \left( \frac{ u(x_0 + \D x, \, y_0 + \D y) - u(x_0 + \D x, \, y_0) }{ \D y } - u_y(z_0) \right) \nonumber</mrow>
+        <mrow>\amp \frac{f(z_0+\D x+ i \, \D y)-f(z_0+\D x)}{\D y} - f_y(z_0) \ = \ \left( \frac{ u(x_0 + \D x, \, y_0 + \D y) - u(x_0 + \D x, \, y_0) }{ \D y } - u_y(z_0) \right) \nonumber</mrow>
         <mrow>\amp \qquad \qquad \qquad \qquad \qquad \qquad + i \left( \frac{ v(x_0 + \D x, \, y_0 + \D y) - v(x_0 + \D x, \, y_0) }{ \D y } - v_y(z_0) \right) \nonumber</mrow>
-        <mrow xml:id="eq_laststepcauchyr" number="yes">\amp \qquad\= \left(u_y(x_0+\D x, \, y_0+a \, \D y)-u_y(x_0, \, y_0)\right) + i\left(v_y(x_0+\D x, \, y_0+b \, \D y)-v_y(x_0, \, y_0)\right) </mrow>
+        <mrow xml:id="eq_laststepcauchyr" number="yes">\amp \qquad\ = \ \left(u_y(x_0+\D x, \, y_0+a \, \D y)-u_y(x_0, \, y_0)\right) + i\left(v_y(x_0+\D x, \, y_0+b \, \D y)-v_y(x_0, \, y_0)\right) </mrow>
       </md>.
     </p>
     <p>
       Because <m>u_y</m> and <m>v_y</m> are continuous at <m>(x_0,y_0)</m>,
       <me>
-        \lim_{ \D z \to 0 } u_y(x_0+\D x, \, y_0+a \, \D y) \= u_y(x_0, \, y_0) \text{ and } \lim_{ \D z \to 0 } v_y(x_0+\D x, \, y_0+b \, \D y) \= v_y(x_0, \, y_0) \,
+        \lim_{ \D z \to 0 } u_y(x_0+\D x, \, y_0+a \, \D y) \ = \ u_y(x_0, \, y_0) \text{ and } \lim_{ \D z \to 0 } v_y(x_0+\D x, \, y_0+b \, \D y) \ = \ v_y(x_0, \, y_0) \,
       </me>,
       and so <xref ref="eq_laststepcauchyr"/> goes to 0 as <m>\D z \to 0</m>,
       which we set out to prove.

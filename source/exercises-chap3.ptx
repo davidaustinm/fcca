@@ -192,7 +192,7 @@
         Prove that
         <me>
           \lim_{ z \to \infty } 1 + \frac{ c_{d-1} }{ z } + \frac{
-          c_{d-2} }{ z^2 } + \dots + \frac{ c_0 }{ z^d } \= 1 \, 
+          c_{d-2} }{ z^2 } + \dots + \frac{ c_0 }{ z^d } \ = \ 1 \, 
         </me>.
       </p>
     </statement>
@@ -625,7 +625,7 @@
         <p>
           If <m>\cos x = 0</m> then
               <me>
-                \abs{\cot z}^2 \= \frac{\cosh^2y-1}{\cosh^2y} \ \le \ 1\,
+                \abs{\cot z}^2 \ = \ \frac{\cosh^2y-1}{\cosh^2y} \ \le \ 1\,
               </me>.
         </p>
       </statement>
@@ -635,7 +635,7 @@
         <p>
           If <m>\abs{y}\ge1</m> then
               <me>
-                \abs{\cot z}^2 \ \le \ \frac{\sinh^2y+1}{\sinh^2y} \=
+                \abs{\cot z}^2 \ \le \ \frac{\sinh^2y+1}{\sinh^2y} \ = \
                 1+\frac1{\sinh^2y} \ \le \ 1+\frac1{\sinh^21} \ \le \
                 2\, 
               </me>.

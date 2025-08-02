@@ -20,7 +20,7 @@
         <m>\overline D[w,r] \subset G</m>. 
         Then
         <me>
-          u(w) \= \frac 1 {2 \pi} \int_0^{2 \pi} u \! \left( w + r \,
+          u(w) \ = \ \frac 1 {2 \pi} \int_0^{2 \pi} u \! \left( w + r \,
           e^{it} \right) \diff{t} \, 
         </me>.
       </p>
@@ -36,7 +36,7 @@
         that <m>u = \Re f</m> on <m>D[w,R]</m>. 
         Now we apply <xref ref="meanvalue"/> to <m>f</m>:
         <me>
-          f(w) \= \frac 1 {2 \pi} \int_0^{2 \pi} f \! \left( w + r \,
+          f(w) \ = \ \frac 1 {2 \pi} \int_0^{2 \pi} f \! \left( w + r \,
           e^{it} \right) \diff{t} \, 
           </me>.
       </p>
@@ -89,7 +89,7 @@
         Let <m>r := |z_0 - w|</m> and apply <xref
         ref="harmonicmeanvalue"/>:
         <me>
-          u(w) \= \frac 1 {2 \pi} \int_0^{2 \pi} u \! \left( w + r \,
+          u(w) \ = \ \frac 1 {2 \pi} \int_0^{2 \pi} u \! \left( w + r \,
           e^{it} \right) \diff{t} \, 
           </me>.
       </p>
@@ -107,9 +107,9 @@
         <m>u( w + r \, e^{it}) \lt  u(w)</m> for <m>t_0 \le t \le t_1</m>.
         Now we split up the mean-value integral:
         <md>
-          <mrow>u(w) \amp \= \frac{1}{2 \pi} \int_0^{2 \pi} u \! \left(
+          <mrow>u(w) \amp \ = \ \frac{1}{2 \pi} \int_0^{2 \pi} u \! \left(
           w + r \, e^{it} \right) \diff{t}</mrow> 
-          <mrow>\amp \= \frac 1 {2 \pi} \left( \int_0^{t_0} u \! \left(
+          <mrow>\amp \ = \ \frac 1 {2 \pi} \left( \int_0^{t_0} u \! \left(
           w + r \, e^{it} \right) \diff{t} + \int_{t_0}^{t_1} u \!
           \left( w + r \, e^{it} \right) \diff{t} + \int_{t_1}^{2 \pi} u
           \! \left( w + r \, e^{it} \right) \diff{t} \right)</mrow> 
@@ -123,7 +123,7 @@
         <me>
           u(w) \ \lt  \ \frac 1 {2 \pi} \left( \int_0^{t_0} u(w) \,
           \diff{t} + \int_{t_0}^{t_1} u(w)\, \diff{t} + \int_{t_1}^{2
-          \pi} u(w) \, \diff{t} \right) \= u(w) \, 
+          \pi} u(w) \, \diff{t} \right) \ = \ u(w) \, 
           </me>,
           a contradiction.
       </p>
@@ -192,8 +192,8 @@
     if <m>u</m> is harmonic in a bounded region <m>G</m> and
     continuous on its closure, then 
     <men xml:id="eq_minmaxhar">
-      \sup_{z \in G} u(z) \= \max_{z \in \partial G} u(z) \qquad
-      \text{ and }  \qquad \inf_{z \in G} u(z) \= \min_{z \in \partial
+      \sup_{z \in G} u(z) \ = \ \max_{z \in \partial G} u(z) \qquad
+      \text{ and }  \qquad \inf_{z \in G} u(z) \ = \ \min_{z \in \partial
       G} u(z) 
     </men>
     where, as usual, <m>\partial G</m> denotes the boundary
@@ -214,13 +214,13 @@
       <p>
         By <xref ref="eq_minmaxhar"/>,
         <me>
-          u(z) \ \leq \ \sup_{z \in G} u(z) \= \max_{z \in \partial G}
-          u(z) \= 0 
+          u(z) \ \leq \ \sup_{z \in G} u(z) \ = \ \max_{z \in \partial G}
+          u(z) \ = \ 0 
         </me>
         and
         <me>
-          u(z) \ \geq \ \inf_{z \in G} u(z) \= \min_{z \in \partial G}
-          u(z) \= 0 \, 
+          u(z) \ \geq \ \inf_{z \in G} u(z) \ = \ \min_{z \in \partial G}
+          u(z) \ = \ 0 \, 
         </me>,
         so <m>u</m> must be zero in <m>G</m>.
       </p>

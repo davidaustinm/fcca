@@ -130,7 +130,7 @@
       <p>
         We claim that
         <men xml:id="eq_cauchyexample">
-          \int_\gg \frac {\diff{z}} z \= 2 \pi i
+          \int_\gg \frac {\diff{z}} z \ = \ 2 \pi i
         </men>
         where <m>\gg</m> is the square in <xref
         ref="homotopicfig">Figure</xref>, 
@@ -292,7 +292,7 @@
         <m>\gg</m> is piecewise smooth, and <m>\gg \sim_G 0</m>.
         Then
         <me>
-          \int_{\gg} f \= 0 \,
+          \int_{\gg} f \ = \ 0 \,
         </me>.
       </p>
     </statement>
@@ -320,7 +320,7 @@
         <xref ref="cauchycor"/>
         gives
         <me>
-          \int_\gg \Log(z) \, \diff{z} \= 0 \,
+          \int_\gg \Log(z) \, \diff{z} \ = \ 0 \,
         </me>.
       </p>
     </statement>
@@ -337,7 +337,7 @@
         If <m>f</m> is entire and <m>\gg</m> is any piecewise smooth
         closed path, then 
         <me>
-          \int_{\gg} f \= 0 \,
+          \int_{\gg} f \ = \ 0 \,
         </me>.
       </p>
     </statement>
@@ -358,7 +358,7 @@
         (Try computing it from first principles.)
         We use a partial fractions expansion to write
         <me>
-          \int_\gg \frac{ \diff{z} }{ z^2 - 2z } \= \frac 1 2 \int_\gg
+          \int_\gg \frac{ \diff{z} }{ z^2 - 2z } \ = \ \frac 1 2 \int_\gg
           \frac{ \diff{z} }{ z-2 } \ - \ \frac 1 2 \int_\gg \frac{
           \diff{z} }{ z } \, 
         </me>.
@@ -373,7 +373,7 @@
         The second integral is <m>2 \pi i</m> by <xref
         ref="ex_circleint">Exercise</xref>, and so 
         <me>
-          \int_\gg \frac{ \diff{z} }{ z^2 - 2z } \= - \pi i \,
+          \int_\gg \frac{ \diff{z} }{ z^2 - 2z } \ = \ - \pi i \,
         </me>.
       </p>
     </statement>

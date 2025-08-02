@@ -18,7 +18,7 @@
         </fn>
         equation</em>
         <me>
-          u_{xx} + u_{yy} \= 0 \,
+          u_{xx} + u_{yy} \ = \ 0 \,
         </me>.
         <idx><h>Laplace equation</h></idx>
         <idx><h>harmonic</h></idx>
@@ -39,7 +39,7 @@
         The function <m>u(x,y) = e^x \cos(y)</m> is harmonic in
         <m>\C</m> because 
         <me>
-          u_{xx} + u_{yy} \= e^x \cos(y) - e^x \cos(y) \= 0 \,
+          u_{xx} + u_{yy} \ = \ e^x \cos(y) - e^x \cos(y) \ = \ 0 \,
         </me>.
       </p>
     </statement>
@@ -70,9 +70,9 @@
         Hence we can repeat our argumentation in
         <xref ref="eq_firstharmonicinstance"/>, 
         <me>
-          u_{xx} + u_{yy} \= \left( u_x \right)_x + \left( u_y
-          \right)_y \= \left( v_y \right)_x + \left( -v_x \right)_y \=
-          v_{yx} - v_{xy} \= 0 \, 
+          u_{xx} + u_{yy} \ = \ \left( u_x \right)_x + \left( u_y
+          \right)_y \ = \ \left( v_y \right)_x + \left( -v_x \right)_y \ = \
+          v_{yx} - v_{xy} \ = \ 0 \, 
           </me>.
       </p>
       <p>
@@ -96,7 +96,7 @@
         we can see that <m>u(x,y) = xy</m> is harmonic in <m>\C</m>
         also by noticing that 
         <me>
-          f(z) \= \tfrac 1 2 \, z^2 \= \tfrac 1 2 \left( x^2 - y^2
+          f(z) \ = \ \tfrac 1 2 \, z^2 \ = \ \tfrac 1 2 \left( x^2 - y^2
           \right) + i xy 
         </me>
         is entire and <m>\Im(f) = u</m>. 
@@ -111,7 +111,7 @@
         <xref ref="exam_excosyharmonic"/>
         is harmonic in <m>\C</m> is that
         <me>
-          f(z) \= \exp(z) \= e^x \cos(y) + i \, e^x \sin(y)
+          f(z) \ = \ \exp(z) \ = \ e^x \cos(y) + i \, e^x \sin(y)
         </me>
         is entire and <m>\Re(f) = u</m>. 
       </p>
@@ -165,12 +165,12 @@
       <m>\Re g</m> and <m>\Im g</m> satisfy the Cauchy<ndash/>Riemann
       equations<nbsp/><xref ref="crequations"/>: 
       <me>
-        \left( \Re g \right)_x \= u_{xx} \= - u_{yy} \= \left( \Im g
+        \left( \Re g \right)_x \ = \ u_{xx} \ = \ - u_{yy} \ = \ \left( \Im g
         \right)_y 
       </me>
       and
       <me>
-        \left( \Re g \right)_y \= u_{xy} \= u_{yx} \= - \left( \Im g
+        \left( \Re g \right)_y \ = \ u_{xy} \ = \ u_{yx} \ = \ - \left( \Im g
         \right)_x \, 
       </me>.
     </p>
@@ -183,7 +183,7 @@
       <m>h=a+ib</m>. 
       Then, again using <xref ref="cre"/>,
       <me>
-        g \= h' \= a_x + i \, b_x \= a_x - i \, a_y \,
+        g \ = \ h' \ = \ a_x + i \, b_x \ = \ a_x - i \, a_y \,
       </me>.
     </p>
     <p>
@@ -215,7 +215,7 @@
     Namely, by <xref ref="cre"/>
     such a function <m>f=u+iv</m> must satisfy
     <me>
-      f' \= u_x + i \, v_x \= u_x - i \, u_y \,
+      f' \ = \ u_x + i \, v_x \ = \ u_x - i \, u_y \,
     </me>.
   </p>
   <p>
@@ -241,11 +241,11 @@
         <xref ref="harmonictoholomorphic"/>:
         first let
         <me>
-          g \ := \ u_x - i \, u_y \=   y - i \, x \=  -i \, z
+          g \ := \ u_x - i \, u_y \ = \   y - i \, x \ = \  -i \, z
         </me>
         which has antiderivative
         <me>
-          h(z) \= - \tfrac i 2 \, z^2 \= xy - \tfrac i 2 \left( x^2 -
+          h(z) \ = \ - \tfrac i 2 \, z^2 \ = \ xy - \tfrac i 2 \left( x^2 -
           y^2 \right) 
         </me>
         whose real part is <m>u</m> and whose imaginary part

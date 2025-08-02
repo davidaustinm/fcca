@@ -10,8 +10,8 @@
     It is natural, for example,
     to think about representing <m>\exp ( \frac 1 z )</m> as
     <me>
-      \exp \left( \frac 1 z \right) \= \s \frac 1 {k!} \left( \frac 1
-      z \right)^k \= \s \frac 1 {k!} \, z^{-k} 
+      \exp \left( \frac 1 z \right) \ = \ \s \frac 1 {k!} \left( \frac 1
+      z \right)^k \ = \ \s \frac 1 {k!} \, z^{-k} 
     </me>,
     a
     <q>power series</q>
@@ -68,7 +68,7 @@
     Laurent series can possibly converge. 
     By definition
     <me>
-      \sz c_k \left( z - z_0 \right)^k \= \s c_k \left( z - z_0
+      \sz c_k \left( z - z_0 \right)^k \ = \ \s c_k \left( z - z_0
       \right)^k + \sum_{k \geq 1} c_{-k} \left( z - z_0 \right)^{-k} 
     </me>.
   </p>
@@ -127,7 +127,7 @@
         Even better, another round of L'H&#xf4;pital's Rule proves that
         <me>
           \lim_{ z \to 0 } \frac{ \frac 1 { \sin(z) } - \frac 1 z }{ z
-          } \= \frac 1 6 \, 
+          } \ = \ \frac 1 6 \, 
         </me>.
       </p>
       <p>
@@ -158,7 +158,7 @@
         compute using <xref ref="taylor"/>.
         It starts with
         <me>
-          g(z) \= \frac 1 6 \, z + \frac{ 7 }{ 360 } \, z^3 + \frac{
+          g(z) \ = \ \frac 1 6 \, z + \frac{ 7 }{ 360 } \, z^3 + \frac{
           31 }{ 15120 } \, z^5 + \cdots 
         </me>
         and it converges,
@@ -166,7 +166,7 @@
         for <m>|z| \lt  \pi</m>.
         But this gives our sought-after Laurent series
         <me>
-          \frac 1 { \sin(z) } \= z^{ -1 } + \frac 1 6 \, z + \frac{ 7
+          \frac 1 { \sin(z) } \ = \ z^{ -1 } + \frac 1 6 \, z + \frac{ 7
           }{ 360 } \, z^3 + \frac{ 31 }{ 15120 } \, z^5 + \cdots 
         </me>
         which converges for <m>0 \lt  |z| \lt  \pi</m>. 
@@ -189,11 +189,11 @@
         Then <m>f</m> can be represented in <m>A</m> as a Laurent
         series centered at <m>z_0</m>, 
         <me>
-          f(z) \= \sz c_k \left( z - z_0 \right)^k
+          f(z) \ = \ \sz c_k \left( z - z_0 \right)^k
         </me>
         with
         <me>
-          c_k \= \frac 1 {2 \pi i} \int_{ C[z_0,r] } \frac{
+          c_k \ = \ \frac 1 {2 \pi i} \int_{ C[z_0,r] } \frac{
           f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \, 
         </me>,
         where <m>R_1 \lt  r \lt  R_2</m>.
@@ -216,11 +216,11 @@
       By Cauchy's Integral Formula (<xref ref="cauchyformula"/>),
       <mdn>
         <mrow number="no">
-          g(z) \amp \= \frac 1 {2 \pi i} \int_\gg \frac{ g(w) }{ w-z } \,
+          g(z) \amp \ = \ \frac 1 {2 \pi i} \int_\gg \frac{ g(w) }{ w-z } \,
           \diff{w}
         </mrow>
         <mrow xml:id="laurentsum">
-          \amp \= \frac 1 {2 \pi i} \int_{ \gg_2 } \frac{ g(w) }{
+          \amp \ = \ \frac 1 {2 \pi i} \int_{ \gg_2 } \frac{ g(w) }{
           w-z } \, \diff{w} - \frac 1 {2 \pi i} \int_{ \gg_1 } \frac{
           g(w) }{ w-z } \, \diff{w} \,
         </mrow>
@@ -242,15 +242,15 @@
       into a geometric series (note that 
       <m>w \in \gg_2</m> and so <m>| \frac z w | \lt  1</m>)
       <me>
-        \frac 1 {w-z} \= \frac 1 w \, \frac 1 { 1 - \frac z w } \=
+        \frac 1 {w-z} \ = \ \frac 1 w \, \frac 1 { 1 - \frac z w } \ = \
         \frac 1 w \s \left( \frac z w \right)^k 
       </me>,
       which converges uniformly in the variable
       <m>w \in \gg_2</m> by <xref ref="prob_geomseriesfunky"/>.
       Hence <xref ref="seriesintegral"/> applies:
       <me>
-        \int_{\gg_2} \frac{ g(w) }{ w-z } \, \diff{w} \= \int_{\gg_2}
-        g(w) \, \frac 1 w \s \left( \frac z w \right)^k \diff{w} \= \s
+        \int_{\gg_2} \frac{ g(w) }{ w-z } \, \diff{w} \ = \ \int_{\gg_2}
+        g(w) \, \frac 1 w \s \left( \frac z w \right)^k \diff{w} \ = \ \s
         \left( \int_{\gg_2} \frac{ g(w) }{ w^{k+1} } \, \diff{w}
         \right) z^k 
       </me>.
@@ -261,26 +261,26 @@
       geometric series (note that 
       <m>w \in \gg_1</m> and so <m>| \frac w z | \lt  1</m>)
       <me>
-        \frac 1 {w-z} \= - \frac 1 z \, \frac 1 { 1 - \frac w z } \= -
+        \frac 1 {w-z} \ = \ - \frac 1 z \, \frac 1 { 1 - \frac w z } \ = \ -
         \frac 1 z \s \left( \frac w z \right)^k 
       </me>,
       which converges uniformly in the variable <m>w \in \gg_1</m>.
       Again <xref ref="seriesintegral"/> applies:
       <md>
-        <mrow>\int_{\gg_1} \frac{ g(w) }{ w-z } \, \diff{w} \amp \= -
+        <mrow>\int_{\gg_1} \frac{ g(w) }{ w-z } \, \diff{w} \amp \ = \ -
         \int_{\gg_1} g(w) \, \frac 1 z \s \left( \frac w z \right)^k
         \diff{w}
         </mrow>
-        <mrow>\amp \= - \s \left( \int_{\gg_1} g(w) w^k \, \diff{w}
+        <mrow>\amp \ = \ - \s \left( \int_{\gg_1} g(w) w^k \, \diff{w}
         \right) z^{-k-1}</mrow> 
-        <mrow>\amp \= - \sum_{k \leq -1} \left( \int_{\gg_1} \frac{
+        <mrow>\amp \ = \ - \sum_{k \leq -1} \left( \int_{\gg_1} \frac{
         g(w) }{ w^{k+1} } \, \diff{w} \right) z^k </mrow> 
       </md>.
     </p>
     <p>
       Putting everything back into <xref ref="laurentsum"/> gives
       <me>
-        g(z) \= \frac 1 {2 \pi i} \left( \s \left( \int_{\gg_2} \frac{
+        g(z) \ = \ \frac 1 {2 \pi i} \left( \s \left( \int_{\gg_2} \frac{
         g(w) }{ w^{k+1} } \, \diff{w} \right) z^k + \sum_{k \leq -1}
         \left( \int_{\gg_1} \frac{ g(w) }{ w^{k+1} } \, \diff{w}
         \right) z^k \right) 
@@ -291,7 +291,7 @@
       we can now change both <m>\gg_1</m> and <m>\gg_2</m> to <m>C[0,r]</m>,
       as long as <m>R_1 \lt  r \lt  R_2</m>, which finally gives
       <me>
-        g(z) \= \frac 1 {2 \pi i} \sz \left( \int_{C[0,r]} \frac{ g(w)
+        g(z) \ = \ \frac 1 {2 \pi i} \sz \left( \int_{C[0,r]} \frac{ g(w)
         }{ w^{k+1} } \, \diff{w} \right) z^k 
       </me>.
     </p>
@@ -344,7 +344,7 @@
         \left\{ z \in \C : \, R_1 \lt  |z-z_0| \lt  R_2 \right\}</m>, 
         with Laurent series
         <me>
-          f(z) \= \sz c_k \left( z - z_0 \right)^k
+          f(z) \ = \ \sz c_k \left( z - z_0 \right)^k
         </me>.
       </p>
       <p>
@@ -352,7 +352,7 @@
         piecewise smooth path in <m>A</m>,
         such that <m>z_0</m> is inside <m>\gg</m>, then
         <me>
-          \int_\gg f(z) \, \diff{z} \= 2 \pi i \, c_{ -1 } \,
+          \int_\gg f(z) \, \diff{z} \ = \ 2 \pi i \, c_{ -1 } \,
         </me>.
       </p>
     </statement>
@@ -379,7 +379,7 @@
         <xref ref="fig_laurentmotivation"/>,
         which gives, say,
         <me>
-          \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \=
+          \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \ = \
           \int_{ C[0,1] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} +
           \int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \, 
         </me>.
@@ -394,11 +394,11 @@
         By <xref ref="ex_exptaylor"/>
         and <xref ref="ex_1_sinlaurent"/>,
         <md>
-          <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \= \left( 1 + z +
+          <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \ = \ \left( 1 + z +
           \frac 1 2 \, z^2 + \frac 1 6 \, z^3 + \cdots \right) \left(
           z^{ -1 } + \frac 1 6 \, z + \frac{ 7 }{ 360 } \, z^3 +
           \frac{ 31 }{ 15120 } \, z^5 + \cdots \right)</mrow> 
-          <mrow>\amp \= z^{ -1 } + 1 + \frac 2 3 \, z + \cdots</mrow> 
+          <mrow>\amp \ = \ z^{ -1 } + 1 + \frac 2 3 \, z + \cdots</mrow> 
         </md>
         and <xref ref="cor_firstresidue"/>
         gives <m>\int_{ C[0,1] } \frac{ \exp(z) }{ \sin(z) } \,
@@ -411,7 +411,7 @@
         <m>\frac 1 { \sin(z) }</m> at <m>\pi</m> also via <xref
         ref="ex_1_sinlaurent">Example</xref>: 
         <me>
-          \frac 1 { \sin(z) } \= - \frac 1 { \sin(z-\pi) } \=
+          \frac 1 { \sin(z) } \ = \ - \frac 1 { \sin(z-\pi) } \ = \
           -(z-\pi)^{ -1 } - \frac 1 6 \, (z-\pi) - \frac{ 7 }{ 360 }
           \, (z-\pi)^3 - \cdots 
         </me>
@@ -419,11 +419,11 @@
       <p>
         Adding <xref ref="ex_expatpi"/> to the mix yields
         <md>
-          <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \= \left( e^\pi +
+          <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \ = \ \left( e^\pi +
           e^\pi (z-\pi) + \frac { e^\pi } 2 \, (z-\pi)^2 + \cdots
           \right) \left( -(z-\pi)^{ -1 } - \frac 1 6 \, (z-\pi) -
           \cdots \right)</mrow> 
-          <mrow>\amp \= {} -e^\pi (z-\pi)^{ -1 } - e^\pi - \frac 2 3
+          <mrow>\amp \ = \ {} -e^\pi (z-\pi)^{ -1 } - e^\pi - \frac 2 3
           \, e^\pi  (z-\pi) + \cdots</mrow> 
         </md>
         and now <xref ref="cor_firstresidue"/>
@@ -432,7 +432,7 @@
         Putting it all together yields the integral we've been after
         for two chapters: 
         <me>
-          \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \= 2
+          \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \ = \ 2
           \pi i \left( 1 - e^\pi \right) 
         </me>.
       </p>

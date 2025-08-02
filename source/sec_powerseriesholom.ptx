@@ -65,13 +65,13 @@
         (<xref ref="cauchyformula2"/>),
         as well as <xref ref="powseriesintegral"/>:
         <md>
-          <mrow>f'(z) \amp \= \frac{1}{2 \pi i} \int_\gg
-          \frac{f(w)}{(w-z)^2} \, \diff{w} \= \frac{1}{2 \pi i} \int_\gg
+          <mrow>f'(z) \amp \ = \ \frac{1}{2 \pi i} \int_\gg
+          \frac{f(w)}{(w-z)^2} \, \diff{w} \ = \ \frac{1}{2 \pi i} \int_\gg
           \frac{1}{(w-z)^2} \s c_k (w-z_0)^k \, \diff{w}</mrow> 
-          <mrow>\amp \= \s c_k \, \frac{1}{2 \pi i} \int_\gg
-          \frac{(w-z_0)^k}{(w-z)^2} \, \diff{w} \= \s c_k
+          <mrow>\amp \ = \ \s c_k \, \frac{1}{2 \pi i} \int_\gg
+          \frac{(w-z_0)^k}{(w-z)^2} \, \diff{w} \ = \ \s c_k
           \left.\frac{d}{\diff{w}} (w-z_0)^k\right|_{w=z}</mrow> 
-          <mrow>\amp \= \sum_{ k \ge 1 }  k \, c_k (z-z_0)^{k-1} </mrow>
+          <mrow>\amp \ = \ \sum_{ k \ge 1 }  k \, c_k (z-z_0)^{k-1} </mrow>
         </md>.
       </p>
       <p>
@@ -97,7 +97,7 @@
       <p>
         Let
         <me>
-          f(z) \= \s \frac{ z^k }{ k! } \,
+          f(z) \ = \ \s \frac{ z^k }{ k! } \,
         </me>.
       </p>
       <p>
@@ -107,17 +107,17 @@
         in analogy with the real exponential function.
         First, by <xref ref="powerderivative"/>,
         <me>
-          f'(z) \= \frac{d}{\diff{z}} \sum_{k \geq 0} \frac{z^k}{k!}
-          \= \sum_{k \geq 1} \frac{z^{k-1}}{(k-1)!} \= \sum_{k \geq 0}
-          \frac{z^k}{k!} \= f(z)\, 
+          f'(z) \ = \ \frac{d}{\diff{z}} \sum_{k \geq 0} \frac{z^k}{k!}
+          \ = \ \sum_{k \geq 1} \frac{z^{k-1}}{(k-1)!} \ = \ \sum_{k \geq 0}
+          \frac{z^k}{k!} \ = \ f(z)\, 
         </me>.
       </p>
       <p>
         Thus
         <me>
-          \frac{ d }{ \diff{z} } \frac{ f(z) }{ \exp(z) } \= \frac{ d
-          }{ \diff{z} } \left( f(z) \exp(-z) \right) \= f'(z) \exp(-z)
-          - f(z) \exp(-z) \= 0 \, 
+          \frac{ d }{ \diff{z} } \frac{ f(z) }{ \exp(z) } \ = \ \frac{ d
+          }{ \diff{z} } \left( f(z) \exp(-z) \right) \ = \ f'(z) \exp(-z)
+          - f(z) \exp(-z) \ = \ 0 \, 
         </me>,
         and so, by <xref ref="derivative0"/>,
         <m>\frac{ f(z) }{ \exp(z) }</m> is constant.
@@ -133,18 +133,18 @@
         find power series for the trigonometric functions. 
         For instance,
         <md>
-          <mrow>\sin z \amp \= \frac{1}{2i}\left( \exp(iz) - \exp(-iz)
-          \right) \= \frac{1}{2i}\left( \sum_{k\geq
+          <mrow>\sin z \amp \ = \ \frac{1}{2i}\left( \exp(iz) - \exp(-iz)
+          \right) \ = \ \frac{1}{2i}\left( \sum_{k\geq
           0}\frac{(iz)^k}{k!} - \sum_{k\geq 0}\frac{(-iz)^k}{k!}
           \right)</mrow> 
-          <mrow>\amp \= \frac{1}{2i} \sum_{k\geq 0}\frac{1}{k!}\left(
-          (iz)^k - (-1)^k(iz)^k \right) \= \frac{1}{2i} \sum_{k\geq 0
+          <mrow>\amp \ = \ \frac{1}{2i} \sum_{k\geq 0}\frac{1}{k!}\left(
+          (iz)^k - (-1)^k(iz)^k \right) \ = \ \frac{1}{2i} \sum_{k\geq 0
           \text{ odd } }\frac{2(iz)^k}{k!}</mrow> 
-          <mrow>\amp \= \frac{1}{i} \sum_{j\geq
-          0}\frac{(iz)^{2j+1}}{(2j+1)!} \= \sum_{j\geq 0}\frac{i^{2j}
-          \, z^{2j+1}}{(2j+1)!} \= \sum_{j\geq
+          <mrow>\amp \ = \ \frac{1}{i} \sum_{j\geq
+          0}\frac{(iz)^{2j+1}}{(2j+1)!} \ = \ \sum_{j\geq 0}\frac{i^{2j}
+          \, z^{2j+1}}{(2j+1)!} \ = \ \sum_{j\geq
           0}\frac{(-1)^j}{(2j+1)!} \, z^{2j+1}</mrow> 
-          <mrow>\amp \= z - \frac{z^3}{3!} + \frac{z^5}{5!} -
+          <mrow>\amp \ = \ z - \frac{z^3}{3!} + \frac{z^5}{5!} -
           \frac{z^7}{7!} + \cdots \,</mrow> 
         </md>.
       </p>
@@ -175,7 +175,7 @@
         radius of convergence. 
         Then
         <me>
-          c_k \= \frac{ f^{(k)} (z_0) }{ k! } \,
+          c_k \ = \ \frac{ f^{(k)} (z_0) }{ k! } \,
         </me>.
       </p>
     </statement>
@@ -186,7 +186,7 @@
       <xref ref="powerderivative">Theorem</xref> gives <m>f'(z_0)=c_1</m>.
       Applying the same theorem to <m>f'</m> gives
       <me>
-        f''(z) \= \sum_{ k \geq 2 } k (k-1) \, c_k \left( z - z_0
+        f''(z) \ = \ \sum_{ k \geq 2 } k (k-1) \, c_k \left( z - z_0
         \right)^{k-2} 
       </me>
       and so <m>f''(z_0) = 2 \, c_2</m>.
@@ -219,7 +219,7 @@
         <m>f(z) = \exp(z)</m> centered at <m>z_0 = \pi</m>.
         Since
         <me>
-          f^{ (k) } (z_0) \= \biggl. \exp(z) \biggr|_{ z=\pi } \= e^\pi
+          f^{ (k) } (z_0) \ = \ \biggl. \exp(z) \biggr|_{ z=\pi } \ = \ e^\pi
         </me>,
       </p>
       <p>
@@ -246,8 +246,8 @@
         <m>z_0</m>, 
         with a radius of convergence <m>\ge R</m>:
         <me>
-          f(z) \= \s c_k ( z - z_0 )^k \qquad \text{ with }  \qquad
-          c_k \= \frac 1 {2 \pi i} \int_\gg \frac{ f(w) }{
+          f(z) \ = \ \s c_k ( z - z_0 )^k \qquad \text{ with }  \qquad
+          c_k \ = \ \frac 1 {2 \pi i} \int_\gg \frac{ f(w) }{
           (w-z_0)^{k+1} } \, \diff{w} \, 
         </me>,
         where <m>\gg</m> is any positively oriented, simple, closed,
@@ -263,7 +263,7 @@
         By Cauchy's Integral Formula
         (<xref ref="cauchyformula"/>),
         <me>
-          g (z) \= \frac 1 {2 \pi i} \int_{C[0,r]} \frac{ g(w) }{ w-z }
+          g (z) \ = \ \frac 1 {2 \pi i} \int_{C[0,r]} \frac{ g(w) }{ w-z }
           \, \diff{w} \, 
         </me>.
       </p>
@@ -272,20 +272,20 @@
         into a geometric series (note that 
         <m>w \in C[0,r]</m> and so <m>| \frac z w | \lt  1</m>):
         <me>
-          \frac 1 {w-z} \= \frac 1 w \, \frac 1 { 1 - \frac z w } \=
+          \frac 1 {w-z} \ = \ \frac 1 w \, \frac 1 { 1 - \frac z w } \ = \
           \frac 1 w \s \left( \frac z w \right)^k 
         </me>
         which converges uniformly in the variable
         <m>w \in C[0,r]</m> by <xref ref="prob_geomseriesfunky"/>.
         Hence <xref ref="seriesintegral"/> applies:
         <md>
-          <mrow>g (z) \amp \= \frac{1}{2 \pi i} \int_{C[0,r]} \frac{
+          <mrow>g (z) \amp \ = \ \frac{1}{2 \pi i} \int_{C[0,r]} \frac{
           g(w) }{ w-z } \, \diff{w}
           </mrow>
-          <mrow> \amp \= \frac{1}{2 \pi i} \int_{C[0,r]}
+          <mrow> \amp \ = \ \frac{1}{2 \pi i} \int_{C[0,r]}
           g(w) \, \frac{1}{w} \s \left( \frac z w \right)^k \diff{w}
           </mrow>
-          <mrow> \amp \=
+          <mrow> \amp \ = \
           \s \left( \frac{1}{2 \pi i} \int_{C[0,r]} \frac{g(w)}{w^{k+1}}
           \, \diff{w} \right) z^k </mrow> 
         </md>.
@@ -294,7 +294,7 @@
         Now, since <m>f(z) = g(z-z_0)</m>,
         we apply a change of variables to obtain
         <me>
-          f(z) \= \s \left( \frac 1 {2 \pi i} \int_{C[z_0, r]} \frac{
+          f(z) \ = \ \s \left( \frac 1 {2 \pi i} \int_{C[z_0, r]} \frac{
           f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \right) (z-z_0)^k 
           </me>.
       </p>
@@ -303,7 +303,7 @@
         the theorem are the paths we're integrating over. 
         However, by Cauchy's <xref ref="cauchythm"/>,
         <me>
-          \int_{C[z_0, r]} \frac{ f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \=
+          \int_{C[z_0, r]} \frac{ f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \ = \
           \int_\gg \frac{ f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \,  
         </me>.
       </p>
@@ -359,7 +359,7 @@
         singularities of <m>f</m>.) In fact, 
         we can use a geometric series to compute this power series:
         <me>
-          f(z) \= \frac 1 { z^2 + 1 } \= \s \left( -z^2 \right)^k \=
+          f(z) \ = \ \frac 1 { z^2 + 1 } \ = \ \s \left( -z^2 \right)^k \ = \
           \s (-1)^k \, z^{ 2k } 
         </me>,
         with radius of convergence 1.
@@ -389,7 +389,7 @@
         such that <m>w</m> is inside <m>\gg</m> and <m>\gg \sim_G 0</m>.
         Then <idx><h>Cauchy's integral formula</h><h>extensions of</h></idx>
         <me>
-          f^{(k)} (w) \= \frac{k!}{2 \pi i} \int_\gg \frac{ f(z) }{
+          f^{(k)} (w) \ = \ \frac{k!}{2 \pi i} \int_\gg \frac{ f(z) }{
           (z-w)^{k+1} } \, \diff{z} \, 
         </me>.
       </p>
@@ -431,7 +431,7 @@
         <mrow>\amp \leq \ \frac{k!}{2 \pi} \, \frac{ M }{ r^{k+1} } \,
         2 \pi r
         </mrow>
-        <mrow>\amp \= \frac{ k! \, M }{ r^k } \, </mrow> 
+        <mrow>\amp \ = \ \frac{ k! \, M }{ r^k } \, </mrow> 
       </md>.
     </p>
     <p>

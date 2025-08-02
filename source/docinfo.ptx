@@ -63,7 +63,6 @@
     \def\s{\sum_{k \geq 0}}
     \DeclareMathOperator{\Res}{Res}
     \renewcommand{\emptyset}{\varnothing}
-    \renewcommand{\=}{ \ = \  }
     \newcommand{\Def}[1]{\textbf{#1}}
     \newcommand{\hint}[1]{(\emph{Hint}: #1)}
     \newcommand{\histremark}[1]{}

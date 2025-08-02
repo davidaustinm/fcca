@@ -120,7 +120,7 @@
         More generally,
         show that for any <m>w \in \C</m> and <m>r > 0</m>,
         <me>
-          \int_{ C[w,r] } \frac{\diff{z}}{z-w} \= 2 \pi i \,
+          \int_{ C[w,r] } \frac{\diff{z}}{z-w} \ = \ 2 \pi i \,
         </me>.
       </p>
     </statement>
@@ -366,7 +366,7 @@
             <idx><h>integration by parts</h></idx>
         Then
         <me>
-          \int_\gg f g' \= f(\gg(b)) g(\gg(b)) - f(\gg(a)) g(\gg(a)) -
+          \int_\gg f g' \ = \ f(\gg(b)) g(\gg(b)) - f(\gg(a)) g(\gg(a)) -
           \int_\gg f' g \, 
         </me>.
       </p>
@@ -444,7 +444,7 @@
         piecewise smooth path such that <m>z_0</m> is inside <m>\gg</m>.
         Show that, for any integer <m>n</m>,
         <me>
-          \int_\gg (z-z_0)^n \, \diff{z} \= \begin{cases}2 \pi i \amp
+          \int_\gg (z-z_0)^n \, \diff{z} \ = \ \begin{cases}2 \pi i \amp
           \text{ if }  n = -1 \, , \\ 0       \amp  \text{
           otherwise. } \end{cases} 
         </me>
@@ -682,7 +682,7 @@
     <statement>
       <p>
         Suppose <m>p(z)</m> is a polynomial in <m>z</m> and <m>\gg</m> is a closed piecewise smooth path in <m>\C</m>.
-        Show that <m>\int_\gg p \= 0 \, </m>.
+        Show that <m>\int_\gg p \ = \ 0 \, </m>.
       </p>
     </statement>
   </exercise>
@@ -691,7 +691,7 @@
       <p>
         Show that
         <me>
-          \int_{ C[0,2] } \frac{ \diff{z} }{ z^3 + 1 } \= 0
+          \int_{ C[0,2] } \frac{ \diff{z} }{ z^3 + 1 } \ = \ 0
         </me>
         by arguing that this integral does not change if we replace
         <m>C[0,2]</m> by <m>C[0,r]</m> for any <m>r > 1</m>, 
@@ -727,7 +727,7 @@
         Prove that for <m>0 \lt  r \lt  1</m>,
         <me>
           \frac 1 {2 \pi} \int_0^{ 2 \pi } \frac{ 1-r^2 }{ 1 - 2r
-          \cos(\phi) + r^2 } \, \diff\phi \= 1 \, 
+          \cos(\phi) + r^2 } \, \diff\phi \ = \ 1 \, 
         </me>.
       </p>
       <p>
@@ -871,7 +871,7 @@
         Let <m>f(z) = \frac{ 1 }{ z^2 - 1 }</m> and define the two paths
         <m>\gg = C[1,1]</m> oriented counter-clockwise and <m>\sigma =
         C[-1,1]</m> oriented clockwise. 
-        Show that <m>\int_\gg f \= \int_\sigma f</m> even though
+        Show that <m>\int_\gg f \ = \ \int_\sigma f</m> even though
         <m>\gg \not\sim_G \sigma</m> where <m>G = \C \setminus \{ \pm
         1 \}</m>, 
         the region of holomorphicity of <m>f</m>.

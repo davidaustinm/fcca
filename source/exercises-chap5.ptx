@@ -301,7 +301,7 @@
         <m>c, z_1, z_2, \dots,
         z_k</m> and positive integers <m>j_1, \dots , j_k</m> such that
         <me>
-          p(z) \= c \left( z - z_1 \right)^{j_1} \left( z - z_2
+          p(z) \ = \ c \left( z - z_1 \right)^{j_1} \left( z - z_2
           \right)^{j_2} \cdots \left( z - z_k \right)^{j_k} \, 
         </me>,
         where <m>j_1 + \dots + j_k = n</m>.
@@ -450,7 +450,7 @@
           Conclude, by just considering the real part, that
               <me>
                 \int_{-\infty}^\infty \frac{\cos(x)}{x^2+1}\,\diff{x}
-                \= \frac \pi e \, 
+                \ = \ \frac \pi e \, 
               </me>.
         </p>
       </statement>
@@ -487,7 +487,7 @@
       <p>
         Show that
         <men xml:id="ch5ex_eqn1"> 
-          \int_\gg f(z) \,\diff{z} \= \int_\sigma
+          \int_\gg f(z) \,\diff{z} \ = \ \int_\sigma
           f\!\left(\frac{1}{z}\right) \frac{1}{z^2} \, \diff{z} 
         </men>
         where <m>\sigma(t) := \frac{ 1 }{ \gg(t) }</m>, <m>a \le
@@ -511,7 +511,7 @@
         Thus <m>g</m> is continuous on
         <m>H \cup \{ 0 \}</m> and <xref ref="ch5ex_eqn1"/> gives the identity
         <me>
-          \int_\gg f \= \int_\sigma g \,
+          \int_\gg f \ = \ \int_\sigma g \,
         </me>.
       </p>
       <p>

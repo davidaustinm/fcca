@@ -76,7 +76,7 @@
       <p>
         It is bijective, with inverse map
         <me> 
-          \phi^{-1}(p,q,0) \= \left(\frac{2p}{p^2+q^2+1},\,
+          \phi^{-1}(p,q,0) \ = \ \left(\frac{2p}{p^2+q^2+1},\,
           \frac{2q}{p^2+q^2+1}, \, \frac{p^2+q^2-1}{p^2+q^2+1}\right)
         </me>
         and <m>\phi^{-1}(\infty) = (0,0,1)</m>.
@@ -89,13 +89,13 @@
       the straight line through <m>N</m> and <m>P</m> is parametrized by
       <md>
         <mrow>
-          r(t) \amp \= N + t(P-N)
+          r(t) \amp \ = \ N + t(P-N)
         </mrow>
         <mrow>
-          \amp \= (0,0,1) + t[(x,y,z) - (0,0,1)]
+          \amp \ = \ (0,0,1) + t[(x,y,z) - (0,0,1)]
         </mrow>
         <mrow>
-          \amp \= (tx,\,ty,\, 1+t(z-1))
+          \amp \ = \ (tx,\,ty,\, 1+t(z-1))
         </mrow>
       </md>
       where <m>t \in \R</m>.
@@ -115,8 +115,8 @@
       Thus, we solve three equations for three unknowns.
       The latter two equations yield
       <me>
-        p^2 + q^2 \= \frac{x^2+y^2}{(1-z)^2} \= \frac{1-z^2}{(1-z)^2}
-        \= \frac{1+z}{1-z}\, 
+        p^2 + q^2 \ = \ \frac{x^2+y^2}{(1-z)^2} \ = \ \frac{1-z^2}{(1-z)^2}
+        \ = \ \frac{1+z}{1-z}\, 
       </me>.
     </p>
     <p>
@@ -149,11 +149,11 @@
       then there is a unique real number <m>k</m> so that <m>H</m> is given by
       <md>
         <mrow>
-          H \amp \= \left\{(x,y,z) \in \R^3 : \, (x,y,z)\cdot
+          H \amp \ = \ \left\{(x,y,z) \in \R^3 : \, (x,y,z)\cdot
           (x_0,y_0,z_0) = k \right\}
         </mrow>
         <mrow>
-          \amp \= \left\{ (x,y,z) \in \R^3 : \, xx_0 + yy_0 + zz_0
+          \amp \ = \ \left\{ (x,y,z) \in \R^3 : \, xx_0 + yy_0 + zz_0
           = k \right\}
         </mrow>
       </md>.
@@ -173,7 +173,7 @@
       ref="prop_coordmaps">Proposition</xref> for
       <m>\phi^{-1}(p,q,0)</m>, we see that
       <me>
-        (z_0-k)p^2 + (2x_0)p + (z_0-k)q^2 + (2y_0)q \= z_0+k\,
+        (z_0-k)p^2 + (2x_0)p + (z_0-k)q^2 + (2y_0)q \ = \ z_0+k\,
       </me>.
     </p>
     <p>
@@ -247,14 +247,14 @@
     Thus
     <md>
       <mrow>
-        f\left( \frac{x}{1-z} + i\frac{y}{1-z}\right) \amp \= \frac{ 1-z }{
+        f\left( \frac{x}{1-z} + i\frac{y}{1-z}\right) \amp \ = \ \frac{ 1-z }{
         x+iy }
       </mrow>
       <mrow>
-        \amp \= \frac{ (1-z)(x-iy) }{ x^2 + y^2 }
+        \amp \ = \ \frac{ (1-z)(x-iy) }{ x^2 + y^2 }
       </mrow>
       <mrow>
-        \amp \= \frac{x}{1+z} - i\frac{y}{1+z}\,
+        \amp \ = \ \frac{x}{1+z} - i\frac{y}{1+z}\,
       </mrow>
     </md>.
   </p>

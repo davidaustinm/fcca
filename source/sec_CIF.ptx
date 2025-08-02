@@ -52,15 +52,15 @@
         <m>\overline D[w,R]</m>, then 
         <md>
           <mrow>
-            f(w) \amp \= \frac 1 {2 \pi} \int_0^{2 \pi} f \left( w + R \,
+            f(w) \amp \ = \ \frac 1 {2 \pi} \int_0^{2 \pi} f \left( w + R \,
             e^{it} \right) \diff{t} \, ,
           </mrow>
           <mrow>
-            u(w) \amp \= \frac{1}{2 \pi} \int_0^{2 \pi} u \left( w + R \,
+            u(w) \amp \ = \ \frac{1}{2 \pi} \int_0^{2 \pi} u \left( w + R \,
             e^{it}\right) \diff{t} \, ,
           </mrow>
           <mrow>
-            v(w) \amp \=
+            v(w) \amp \ = \
             \frac 1 {2 \pi} \int_0^{2 \pi} v \left( w + R \, e^{it}
             \right) \diff{t} \,
           </mrow>
@@ -163,9 +163,9 @@
         which contains <m>\overline D[i,1]</m>.
         Thus we can apply <xref ref="cauchyformulacircle"/>:
         <me>
-          \int_{ C[i,1] } \frac{ \diff{z} }{ z^2 + 1 } \= \int_{
-          C[i,1] } \frac{ \frac{ 1 }{ z+i } }{ z-i } \, \diff{z} \= 2
-          \pi i \, f(i) \= 2 \pi i \, \frac{ 1 }{ 2i } \= \pi \, 
+          \int_{ C[i,1] } \frac{ \diff{z} }{ z^2 + 1 } \ = \ \int_{
+          C[i,1] } \frac{ \frac{ 1 }{ z+i } }{ z-i } \, \diff{z} \ = \ 2
+          \pi i \, f(i) \ = \ 2 \pi i \, \frac{ 1 }{ 2i } \ = \ \pi \, 
         </me>.
       </p>
     </statement>
@@ -185,7 +185,7 @@
     <xref ref="cauchythm"/>
     and <xref ref="cauchyformulacircle"/> yield
     <me>
-      f(w) \= \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \,
+      f(w) \ = \ \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \,
       \diff{z} \, 
     </me>.
   </p>
@@ -274,7 +274,7 @@
         such that <m>w</m> is inside <m>\gg</m> and <m>\gg \sim_G 0</m>.
         Then
         <me>
-          f(w) \= \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \,
+          f(w) \ = \ \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \,
           \diff{z} \, 
         </me>.
       </p>
@@ -342,7 +342,7 @@
         Continuing <xref ref="exam_cif"/>,
         <xref ref="cauchyformula"/> says that
         <me>
-          \int_\gg \frac{ \diff{z} }{ z^2 + 1 } \= \pi
+          \int_\gg \frac{ \diff{z} }{ z^2 + 1 } \ = \ \pi
         </me>
         for any positively oriented, simple, closed,
         piecewise smooth path <m>\gg</m> that contains <m>i</m> on its
@@ -361,7 +361,7 @@
         we use the partial fractions expansion from
         <xref ref="exam_partialfr"/>: 
         <me>
-          \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \=
+          \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \ = \
           \frac 1 2 \int_{ C[0,3] } \frac{ \exp(z) }{ z - 2 } \,
           \diff{z} \ - \ \frac 1 2 \int_{ C[0,3] } \frac{ \exp(z) }{ z
           } \, \diff{z} \, 
@@ -373,9 +373,9 @@
         with the function <m>f(z) = \exp(z)</m>, which is entire,
         and so (note that both 2 and 0 are inside <m>\gg</m>)
         <me>
-          \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \=
+          \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \ = \
           \frac 1 2 \, 2 \pi i \cdot \exp(2) - \frac 1 2 \, 2 \pi i
-          \cdot \exp(0) \= \pi i \left( e^2 - 1 \right) 
+          \cdot \exp(0) \ = \ \pi i \left( e^2 - 1 \right) 
         </me>.
       </p>
     </statement>

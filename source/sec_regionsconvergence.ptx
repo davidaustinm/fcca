@@ -27,7 +27,7 @@
         gives a fundamental power series,
         namely the <em>geometric series</em>
         <me>
-          \sum_{ k \ge 0 } z^k \= \frac 1 {1-z} \,
+          \sum_{ k \ge 0 } z^k \ = \ \frac 1 {1-z} \,
         </me>.
       </p>
       <p>
@@ -117,13 +117,13 @@
         (by <xref ref="ex_convseqbounded"/>),
         say
         <me>
-          \left| c_k ( w - z_0)^k \right| \= |c_k| \, r^k \ \le \ M \,
+          \left| c_k ( w - z_0)^k \right| \ = \ |c_k| \, r^k \ \le \ M \,
         </me>.
       </p>
       <p>
         Now if <m>|z - z_0| \lt  |w - z_0|</m>, then
       <me>
-        \s \left| c_k ( z - z_0)^k \right| \= \s |c_k| \, r^k \left(
+        \s \left| c_k ( z - z_0)^k \right| \ = \ \s |c_k| \, r^k \left(
         \frac{ |z-z_0| }{ r } \right)^k \ \le \ M \s \left( \frac{
         |z-z_0| }{ r } \right)^k 
       </me>.
@@ -239,7 +239,7 @@
         2 }{ R+r }</m> for <m>k \ge N</m>. 
         For those <m>k</m> we then have
         <me>
-          \left| c_k (z-z_0)^k \right| \= |c_k| |z-z_0|^k \= \left(
+          \left| c_k (z-z_0)^k \right| \ = \ |c_k| |z-z_0|^k \ = \ \left(
           \sqrt[k]{ |c_k| } \, r \right)^k \ \lt  \ \left( \frac{ 2r
           }{ R+r } \right)^k 
         </me>
@@ -258,7 +258,7 @@
         2 }{ R+r }</m> for <m>k \ge N</m>. 
         For those <m>k</m>,
         <me>
-          \left| c_k (z-z_0)^k \right| \= \left( \sqrt[k]{ |c_k| } \,
+          \left| c_k (z-z_0)^k \right| \ = \ \left( \sqrt[k]{ |c_k| } \,
           r \right)^k \ > \ \left( \frac{ 2r }{ R+r } \right)^k \ > \
           1 \, 
         </me>,
@@ -281,10 +281,10 @@
       <p>
         For the power series <m>\ds \s k \, z^k</m> we compute
         <me>
-          \lim_{ k \to \infty } \sqrt[k]{ |c_k| } \= \lim_{ k \to
-          \infty } \sqrt[k]{ k } \= \lim_{ k \to \infty } e^{ \frac 1
-          k \ln(k) } \= e^{ \lim_{ k \to \infty } \frac { \ln(k) } k }
-          \= e^0 \= 1 \, 
+          \lim_{ k \to \infty } \sqrt[k]{ |c_k| } \ = \ \lim_{ k \to
+          \infty } \sqrt[k]{ k } \ = \ \lim_{ k \to \infty } e^{ \frac 1
+          k \ln(k) } \ = \ e^{ \lim_{ k \to \infty } \frac { \ln(k) } k }
+          \ = \ e^0 \ = \ 1 \, 
         </me>,
         and <xref ref="cor_roottest"/>
         gives the radius of convergence 1. (Alternatively, 
@@ -300,8 +300,8 @@
         Since
         <me>
           \lim_{ k \to \infty } \left| \frac{ c_{ k+1 } }{ c_{ k } }
-          \right| \= \lim_{ k \to \infty } \frac{ k! }{ (k+1)! } \=
-          \lim_{ k \to \infty } \frac{ 1 }{ k+1 } \= 0 \, 
+          \right| \ = \ \lim_{ k \to \infty } \frac{ k! }{ (k+1)! } \ = \
+          \lim_{ k \to \infty } \frac{ 1 }{ k+1 } \ = \ 0 \, 
         </me>,
         the ratio test
         (<xref ref="ex_ratiotest"/>)
@@ -359,14 +359,14 @@
         <idx><h>power series</h><h>integration of</h></idx>
         Then
         <me>
-          \int_\gamma \ \s c_k ( z - z_0 )^k \, \diff{z} \= \s c_k
+          \int_\gamma \ \s c_k ( z - z_0 )^k \, \diff{z} \ = \ \s c_k
           \int_\gamma ( z - z_0 )^k \, \diff{z} \, 
         </me>.
       </p>
       <p>
         In particular,
         if <m>\gg</m> is closed then <m>\ds \int_\gg \ \s c_k ( z -
-        z_0 )^k \, \diff{z} \= 0 </m>. 
+        z_0 )^k \, \diff{z} \ = \ 0 </m>. 
       </p>
     </statement>
   </corollary>

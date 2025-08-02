@@ -38,7 +38,7 @@
         <p>
           Verify that
           <me>
-            \Res_{z=0} \left( \frac{1}{z^n (1 - z - z^2)} \right) \= f_n\,
+            \Res_{z=0} \left( \frac{1}{z^n (1 - z - z^2)} \right) \ = \ f_n\,
           </me>.
         </p>
       </li>

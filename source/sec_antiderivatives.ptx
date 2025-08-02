@@ -53,7 +53,7 @@
         Since
         <me>
           \frac{ d }{ \diff{z} } \left( \frac 1 {2i} (\exp(iz) -
-          \exp(-iz)) \right) \= \frac 1 2 (\exp(iz) + \exp(-iz)) \, 
+          \exp(-iz)) \right) \ = \ \frac 1 2 (\exp(iz) + \exp(-iz)) \, 
         </me>,
       </p>
       <p>
@@ -89,7 +89,7 @@
         If <m>f</m> is continuous on <m>G</m> and <m>F</m> is any
         antiderivative of <m>f</m> on <m>G</m> then 
         <me>
-          \int_\gg f \= F \left( \gg(b) \right) - F \left( \gg(a)
+          \int_\gg f \ = \ F \left( \gg(b) \right) - F \left( \gg(a)
           \right) 
         </me>
       </p>
@@ -103,7 +103,7 @@
       since <m>\frac{ d }{ \diff{t} } F(\gg(t)) = f(\gg(t)) \,
       \gg'(t)</m>: 
       <me>
-        \int_\gg f \= \int_a^b f(\gg(t)) \, \gg'(t) \, \diff{t} \= F
+        \int_\gg f \ = \ \int_a^b f(\gg(t)) \, \gg'(t) \, \diff{t} \ = \ F
         \left( \gg(b) \right) - F \left( \gg(a) \right) .
       </me>
     </p>
@@ -114,7 +114,7 @@
         Since <m>F(z) = \frac 1 2 \, z^2</m> is an antiderivative of
         <m>f(z) = z</m> in <m>\C</m>, 
         <me>
-          \int_\gg f \= \frac 1 2 (1+i)^2 - \frac 1 2 \, 0^2 \= i
+          \int_\gg f \ = \ \frac 1 2 (1+i)^2 - \frac 1 2 \, 0^2 \ = \ i
         </me>
         for each of the three paths in <xref ref="firstintexample"/>.
       </p>
@@ -134,7 +134,7 @@
         antiderivative on <m>G</m>. 
         Then
         <me>
-          \int_\gg f \= 0 \,
+          \int_\gg f \ = \ 0 \,
         </me>.
       </p>
     </statement>
@@ -200,8 +200,8 @@
         <m>\sigma_1</m> and then through <m>\sigma_2</m> backwards,
         which by assumption yields a zero integral:
         <me>
-          \int_{ \sigma_1 } f \ - \ \int_{ \sigma_2 } f \= \int_{
-          \sigma_1 - \sigma_2 } f \= 0 \, 
+          \int_{ \sigma_1 } f \ - \ \int_{ \sigma_2 } f \ = \ \int_{
+          \sigma_1 - \sigma_2 } f \ = \ 0 \, 
           </me>.
       </p>
       <p>
@@ -212,7 +212,7 @@
         is well defined.
         By the same argument,
         <me>
-          F(z+h) - F(z) \= \int_{\gg_{z+h}} f \ - \ \int_{\gg_z} f \= \int_\gg f
+          F(z+h) - F(z) \ = \ \int_{\gg_{z+h}} f \ - \ \int_{\gg_z} f \ = \ \int_\gg f
         </me>
         for any path <m>\gg \subset G</m> from <m>z</m> to <m>z+h</m>.
         The constant function <m>1</m> has the antiderivative <m>z</m> on <m>\C</m>,
@@ -221,12 +221,12 @@
         Thus
         <md>
           <mrow>
-            \frac{ F(z+h) - F(z) }{ h } - f(z) \amp \= \frac 1 h
+            \frac{ F(z+h) - F(z) }{ h } - f(z) \amp \ = \ \frac 1 h
             \int_\gg f(w) \, \diff{w} \ - \ \frac{ f(z) }{ h } \int_\gg
             \diff{w}
           </mrow>
           <mrow>
-            \amp \= \frac 1 h \int_\gg (f(w)-f(z)) \, \diff{w}
+            \amp \ = \ \frac 1 h \int_\gg (f(w)-f(z)) \, \diff{w}
           </mrow>
         </md>.
       </p>
@@ -237,11 +237,11 @@
         by applying the assumptions of our theorem for the third time,
         <mdn>
           <mrow>
-            \frac{ F(z+h) - F(z) }{ h } - f(z) \amp \= \frac 1 h
+            \frac{ F(z+h) - F(z) }{ h } - f(z) \amp \ = \ \frac 1 h
             \int_\gg (f(w)-f(z)) \, \diff{w}
           </mrow>
           <mrow xml:id="eq_makepathstraight">
-            \amp \= \frac 1 h \int_\lambda
+            \amp \ = \ \frac 1 h \int_\lambda
             (f(w)-f(z)) \, \diff{w} \,
           </mrow>
         </mdn>.
@@ -270,7 +270,7 @@
             \length(\lambda)
           </mrow>
           <mrow>
-            \amp \= \max_{ w \in \lambda } |f(w) - f(z)|
+            \amp \ = \ \max_{ w \in \lambda } |f(w) - f(z)|
           </mrow>
           <mrow>
             \amp \lt \epsilon

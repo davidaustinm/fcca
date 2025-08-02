@@ -86,9 +86,9 @@
               Here <m>\gg'(t) = 1+i</m> and <m>f(\gg(t)) = \left( t-it
               \right)^2</m>, and so 
               <me>
-                \int_\gg f \= \int_0^1 \left( t-it \right)^2 \left(
-                1+i \right) \diff{t} \= 2(1-i) \int_0^1 t^2 \,
-                \diff{t} \= \frac{ 2 }{ 3 } (1-i) \, 
+                \int_\gg f \ = \ \int_0^1 \left( t-it \right)^2 \left(
+                1+i \right) \diff{t} \ = \ 2(1-i) \int_0^1 t^2 \,
+                \diff{t} \ = \ \frac{ 2 }{ 3 } (1-i) \, 
               </me>.
             </p>
           </li>
@@ -100,14 +100,14 @@
               , \ 0 \leq t \leq 1</m>. 
               Now we have <m>\gg'(t) = 1 + 2it</m> and
               <me>
-                f(\gg(t)) \= \left( t - it^2 \right)^2 = t^2 - t^4 -
+                f(\gg(t)) \ = \ \left( t - it^2 \right)^2 = t^2 - t^4 -
                 2it^3 \, 
               </me>,
               whence
               <me>
-                \int_\gg f \= \int_0^1 ( t^2 - t^4 - 2it^3 ) \left( 1
-                + 2it \right) \, \diff{t} \= \int_0^1 ( t^2 + 3 t^4 -
-                2i t^5 ) \, \diff{t} \= \frac{ 14 }{ 15 } - \frac i 3
+                \int_\gg f \ = \ \int_0^1 ( t^2 - t^4 - 2it^3 ) \left( 1
+                + 2it \right) \, \diff{t} \ = \ \int_0^1 ( t^2 + 3 t^4 -
+                2i t^5 ) \, \diff{t} \ = \ \frac{ 14 }{ 15 } - \frac i 3
                 \, 
               </me>.
             </p>
@@ -126,11 +126,11 @@
                   \int_{\gg_2} f
                 </mrow>
                 <mrow>
-                  \amp \= \int_0^1 t^2 \, \diff{t} + \int_0^1
+                  \amp \ = \ \int_0^1 t^2 \, \diff{t} + \int_0^1
                   (1-it)^2 \, i \, \diff{t}
                 </mrow>
                 <mrow>
-                  \amp \= \frac 1 3 + i \int_0^1 (1
+                  \amp \ = \ \frac 1 3 + i \int_0^1 (1
                   - 2it - t^2) \, \diff{t}
                 </mrow> 
                 <mrow>
@@ -138,7 +138,7 @@
                   \frac 1 3 \right)
                 </mrow>
                 <mrow>
-                  \amp \= \frac 4 3 + \frac 2 3 i \,
+                  \amp \ = \ \frac 4 3 + \frac 2 3 i \,
                 </mrow> 
               </md>.
             </p>
@@ -176,7 +176,7 @@
         <m>\sigma (t) , \ c \leq t \leq d</m> is a reparametrization
         of <m>\gg</m> then 
         <me>
-          \int_c^d f(\sigma(t)) \, \sigma'(t) \, \diff{t} \= \int_a^b
+          \int_c^d f(\sigma(t)) \, \sigma'(t) \, \diff{t} \ = \ \int_a^b
           f(\gg(t)) \, \gg'(t) \, \diff{t} \, 
         </me>.
       </p>
@@ -195,13 +195,13 @@
         of the unit circle.
         Then we could write <m>\int_\gg f</m> in the two ways:
         <me>
-          \int_\gg f \= i \int_0^{ 2 \pi } f \left( e^{ i t } \right)
+          \int_\gg f \ = \ i \int_0^{ 2 \pi } f \left( e^{ i t } \right)
           e^{ i t } \, \diff{t} 
         </me>
         and 
         <me>
           \int_\gg f
-          \= 2 \pi i \int_0^{ \frac \pi 2 } f \left( e^{ 2 \pi i
+          \ = \ 2 \pi i \int_0^{ \frac \pi 2 } f \left( e^{ 2 \pi i
           \sin(t) } \right) e^{ 2 \pi i \sin(t) } \cos(t) \, \diff{t}
           \, 
         </me>.
@@ -245,8 +245,8 @@
         <m>\gamma(t) = t + it</m> for <m>0 \le t \le 1</m>.
         Then <m>\gamma'(t) = 1+i</m> and so
         <me>
-          \length(\gamma) \= \int_0^1 | 1+i |\, \diff{t} \= \int_0^1
-          \sqrt 2 \, \diff{t} \= \sqrt 2 \, 
+          \length(\gamma) \ = \ \int_0^1 | 1+i |\, \diff{t} \ = \ \int_0^1
+          \sqrt 2 \, \diff{t} \ = \ \sqrt 2 \, 
         </me>.
       </p>
     </statement>
@@ -259,8 +259,8 @@
         <m>\gamma(t) = e ^{ it }</m> for <m>0 \le t \le 2 \pi</m>.
         Then <m>\gamma'(t) = i \, e^{ it }</m> and
         <me>
-          \length(\gamma) \= \int_0^{2 \pi} | i \, e^{ it } |\,
-          \diff{t} \= \int_0^{2 \pi} \diff{t} \= 2 \pi \, 
+          \length(\gamma) \ = \ \int_0^{2 \pi} | i \, e^{ it } |\,
+          \diff{t} \ = \ \int_0^{2 \pi} \diff{t} \ = \ 2 \pi \, 
         </me>.
       </p>
     </statement>
@@ -285,7 +285,7 @@
         <ol marker="a) ">
           <li xml:id="int1">
             <p>
-              <m>\ds \int_\gg (f + c \, g) \= \int_\gg f \, + \, c
+              <m>\ds \int_\gg (f + c \, g) \ = \ \int_\gg f \, + \, c
               \int_\gg g </m>. 
             </p>
           </li>
@@ -297,7 +297,7 @@
               (a+b-t) , \ a \leq t \leq b</m>. 
               Then
               <me>
-                \int_{-\gg} f \= - \int_\gg f \,
+                \int_{-\gg} f \ = \ - \int_\gg f \,
               </me>.
             </p>
           </li>
@@ -311,7 +311,7 @@
               <m>\gg_2</m> to its end. 
               Then
               <me>
-                \int_{\gg_1\gg_2} f \= \int_{\gg_1}f+\int_{\gg_2}f \,
+                \int_{\gg_1\gg_2} f \ = \ \int_{\gg_1}f+\int_{\gg_2}f \,
               </me>.
             </p>
           </li>
@@ -342,23 +342,23 @@
       variables <m>s = a+b-t</m>: 
       <md>
         <mrow>
-          \int_{-\gg} f \amp \= \int_a^b f \left( \gg (a+b-t)
+          \int_{-\gg} f \amp \ = \ \int_a^b f \left( \gg (a+b-t)
           \right) \left( \gg (a+b-t) \right)' \, \diff{t}
         </mrow>
         <mrow>
-          \amp \= - \int_a^b f \left(
+          \amp \ = \ - \int_a^b f \left(
           \gg (a+b-t) \right) \gg' (a+b-t) \, \diff{t}
         </mrow>  
         <mrow>
-          \amp \= \int_b^a f \left( \gg (s) \right) \gg' (s) \,
+          \amp \ = \ \int_b^a f \left( \gg (s) \right) \gg' (s) \,
           \diff{s}
         </mrow>
         <mrow>
-          \amp \= -
+          \amp \ = \ -
           \int_a^b f \left( \gg (s) \right) \gg' (s) \, \diff{s}
         </mrow>
         <mrow>
-          \amp \= - \int_\gg f
+          \amp \ = \ - \int_\gg f
           \,
         </mrow>
       </md>.
@@ -398,16 +398,16 @@
       since <m>\left| \int_\gg f \right| \in \R</m>,
       <md>
         <mrow>\left| \int_\gg f \right| \ \amp = \ e^{ -i\phi }
-        \int_\gg f \= \Re \left( e^{ -i \phi } \int_a^b f(\gg(t))
+        \int_\gg f \ = \ \Re \left( e^{ -i \phi } \int_a^b f(\gg(t))
         \gg'(t) \, \diff{t} \right)
         </mrow>
-        <mrow>\amp \= \int_a^b \Re \left( f ( \gg (t)
+        <mrow>\amp \ = \ \int_a^b \Re \left( f ( \gg (t)
         ) e^{ -i \phi } \gg' (t) \right) \diff{t} \,</mrow> 
         <mrow>\amp \leq \ \int_a^b \left| f ( \gg (t) ) e^{ -i \phi }
-        \gg' (t) \right| \diff{t} \, \= \int_a^b \left| f ( \gg (t) )
+        \gg' (t) \right| \diff{t} \, \ = \ \int_a^b \left| f ( \gg (t) )
         \right| \left| \gg' (t) \right| \diff{t}</mrow> 
         <mrow>\amp \leq \, \max_{ a \leq t \leq b } \left| f ( \gg (t)
-        ) \right| \int_a^b \left| \gg' (t) \right| \diff{t} \, \= \,
+        ) \right| \int_a^b \left| \gg' (t) \right| \diff{t} \, \ = \ \,
         \max_{z \in \gg} \left| f(z) \right| \cdot \length (\gg) \,
       </mrow> 
       </md>.
@@ -423,7 +423,7 @@
       <p>
         In <xref ref="ex_circleint"/>, you are invited to show
         <me>
-          \int_\gg \frac{\diff{z}}{z-w} \= 2 \pi i \,
+          \int_\gg \frac{\diff{z}}{z-w} \ = \ 2 \pi i \,
         </me>,
         where <m>\gg</m> is any circle centered at <m>w \in \C</m>,
         oriented counter-clockwise.
@@ -436,9 +436,9 @@
         <xref ref="int4"/> is sharp:
         if <m>\gg</m> has radius <m>r</m>, then
         <me>
-          2 \pi \= \left| \int_{ \gg } \frac{\diff{z}}{z-w} \right| \
+          2 \pi \ = \ \left| \int_{ \gg } \frac{\diff{z}}{z-w} \right| \
           \le \ \max_{ z \in \gg } \left| \frac{1}{z-w} \right|
-          \length(\gg) \= \frac 1 r \cdot 2 \pi r \, 
+          \length(\gg) \ = \ \frac 1 r \cdot 2 \pi r \, 
         </me>.
       </p>
     </statement>

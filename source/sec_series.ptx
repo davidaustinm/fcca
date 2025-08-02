@@ -32,8 +32,8 @@
     (or <em>sum</em>)
     <m>L</m> by definition if
     <me>
-      \lim_{n \to \infty} a_n \= \lim_{n \to \infty} \sum_{k=1}^n b_k
-      \= L \, 
+      \lim_{n \to \infty} a_n \ = \ \lim_{n \to \infty} \sum_{k=1}^n b_k
+      \ = \ L \, 
     </me>.
     <idx><h>convergent</h><h>series</h></idx>
     <idx><h>limit</h><h>of a series</h></idx>
@@ -60,14 +60,14 @@
         We claim that the <em>geometric series</em>
         <m>\sum_{ k \ge 1 } z^k</m> converges with limit
         <me>
-          \sum_{ k \ge 1 } z^k \= \frac z {1-z} \,
+          \sum_{ k \ge 1 } z^k \ = \ \frac z {1-z} \,
         </me>.
         <idx><h>geometric series</h></idx>
       </p>
       <p>
         In this case, we can compute the partial sums explicitly:
         <me>
-          \sum_{k=1}^n z^k \= z + z^2 + \dots + z^n \= \frac{ z -
+          \sum_{k=1}^n z^k \ = \ z + z^2 + \dots + z^n \ = \ \frac{ z -
           z^{n+1} }{ 1 - z } \, 
         </me>,
         whose limit as <m>n \to \infty</m> exists by
@@ -82,14 +82,14 @@
         Another series whose limit we can compute by manipulating the
         partial sums is 
         <md>
-          <mrow>\sum_{k\ge1} \frac1{k^2 + k} \amp \=
+          <mrow>\sum_{k\ge1} \frac1{k^2 + k} \amp \ = \
           \lim_{n\to\infty}\sum_{k=1}^n
           \left(\frac1k-\frac1{k+1}\right)
           </mrow>
-          <mrow>\amp \=
+          <mrow>\amp \ = \
           \lim_{n\to\infty}\left(1-\frac12+\frac12 -\frac13 +\frac13
           -\frac14 + \dots + \frac1n-\frac1{n+1}\right)</mrow> 
-          <mrow>\amp \= \lim_{n\to\infty}\left(1-\frac1{n+1}\right) \=
+          <mrow>\amp \ = \ \lim_{n\to\infty}\left(1-\frac1{n+1}\right) \ = \
           1 \, </mrow> 
         </md>.
       </p>
@@ -127,7 +127,7 @@
         In <xref ref="ex_e-1series"/>
         we showed that the partial sums
         <me>
-          \sum_{ k=1 }^{ n } b_k \= \sum_{ k=1 }^{ n } \frac 1 {k!}
+          \sum_{ k=1 }^{ n } b_k \ = \ \sum_{ k=1 }^{ n } \frac 1 {k!}
         </me>
         are bounded,
         and <m>\ds \sum_{ k \ge 1 } \frac 1 {k!} = e-1</m>.
@@ -201,10 +201,10 @@
         Suppose <m>\ds \sum_{k \geq 1} b_k</m> converges.
         Then, using <xref ref="limitrules"/> a) &amp; (d),
         <me>
-          0 \= \lim_{n \to \infty} \sum_{ k=1 }^n b_k - \lim_{n \to
-          \infty} \sum_{ k=1 }^{ n-1 } b_k \= \lim_{n \to \infty}
+          0 \ = \ \lim_{n \to \infty} \sum_{ k=1 }^n b_k - \lim_{n \to
+          \infty} \sum_{ k=1 }^{ n-1 } b_k \ = \ \lim_{n \to \infty}
           \left( \sum_{ k=1 }^n b_k - \sum_{ k=1 }^{ n-1 } b_k \right)
-          \= \lim_{n \to \infty} b_n \,
+          \ = \ \lim_{n \to \infty} b_n \,
         </me>.
       </p>
     </proof>
@@ -308,7 +308,7 @@
         (and the case <m>p=1</m> was the subject of <xref ref="ex_harmonic"/>)
         because
         <me>
-          \int_1^\infty \frac{ \diff{x} }{ x^p } \= \lim_{ a \to
+          \int_1^\infty \frac{ \diff{x} }{ x^p } \ = \ \lim_{ a \to
           \infty } \frac{ a^{ -p+1 } }{ -p+1 } + \frac 1 { p-1 } 
         </me>
         is finite if and only if <m>p > 1</m>. 
@@ -366,7 +366,7 @@
       converge.
       But then so does
       <me>
-        \sum_{ k \ge 1 } b_k \= \sum_{ k \ge 1 } b_k^+ + \sum_{ k \ge
+        \sum_{ k \ge 1 } b_k \ = \ \sum_{ k \ge 1 } b_k^+ + \sum_{ k \ge
         1 } b_k^- 
       </me>.
     </p>
@@ -382,7 +382,7 @@
       k \ge 1 } c_k</m> and 
       <m>\sum_{ k \ge 1 } d_k</m> converge, and thus so does
       <me>
-        \sum_{ k \ge 1 } b_k \= \sum_{ k \ge 1 } c_k + i \sum_{ k \ge
+        \sum_{ k \ge 1 } b_k \ = \ \sum_{ k \ge 1 } c_k + i \sum_{ k \ge
         1 } d_k \, 
       </me>.
     </p>
@@ -397,7 +397,7 @@
         converges for <m>\Re(z)>1</m>,
         because then (using <xref ref="ex_absolutepowers"/>)
         <me>
-          \sum_{k\ge1} \left| k^{ -z } \right| \= \sum_{k\ge1} k^{ - \Re(z) }
+          \sum_{k\ge1} \left| k^{ -z } \right| \ = \ \sum_{k\ge1} k^{ - \Re(z) }
         </me>
         converges.
         Viewed as a function in <m>z</m>,
@@ -432,9 +432,9 @@
         The <em>alternating harmonic series</em>
         <m>\sum_{k\ge1}\frac{(-1)^{k+1}}k</m> converges:
         <md>
-          <mrow>\sum_{k\ge1}\frac{(-1)^{k+1}}k \amp \= 1-\frac12 +
+          <mrow>\sum_{k\ge1}\frac{(-1)^{k+1}}k \amp \ = \ 1-\frac12 +
           \frac13 - \frac 14 + \frac15 - \frac16 +  \cdots</mrow> 
-          <mrow>\amp \= \left(1-\frac12\right) +
+          <mrow>\amp \ = \ \left(1-\frac12\right) +
           \left(\frac13-\frac14\right) + \left(\frac15-\frac16\right)
           + \cdots</mrow> 
         </md>
@@ -446,7 +446,7 @@
         original series; 
         see <xref ref="ex_groupingterms"/>.) Since
         <me>
-          \frac1{2k-1}-\frac1{2k} \= \frac1{2k(2k-1)} \ \le \ \frac 1
+          \frac1{2k-1}-\frac1{2k} \ = \ \frac1{2k(2k-1)} \ \le \ \frac 1
           { (2k-1)^2 } \ \le \ \frac 1 { k^2 } \, 
         </me>,
       </p>

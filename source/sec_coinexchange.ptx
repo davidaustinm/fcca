@@ -13,7 +13,7 @@
     and suppose <m>t</m> is a positive integer.
     Consider the function
     <me>
-      f(z) \= \frac{ 1 }{ \left( 1 - z^{ a } \right) \left( 1 - z^{ b
+      f(z) \ = \ \frac{ 1 }{ \left( 1 - z^{ a } \right) \left( 1 - z^{ b
       } \right) z^{t+1} }  \, 
     </me>.
   </p>
@@ -27,7 +27,7 @@
       <p>
         Verify that <m>\Res_{z=0}( f ) = N(t)</m>, where
         <me>
-          N(t) \= \left| \left\{ (m,n) \in \Z : \, m,n \geq 0 , \,
+          N(t) \ = \ \left| \left\{ (m,n) \in \Z : \, m,n \geq 0 , \,
           ma+nb = t \right\} \right| 
         </me>.
       </p>
@@ -45,7 +45,7 @@
       <p>
         Use the following three steps to simplify this identity to
         <me>
-          N(t) \= \frac{ t }{ a b } - \left\{ \frac{ b^{-1} t }{ a }
+          N(t) \ = \ \frac{ t }{ a b } - \left\{ \frac{ b^{-1} t }{ a }
           \right\} - \left\{ \frac{ a^{-1} t }{ b } \right\} + 1 \,
         </me>.
         Here, <m>\{ x \}</m> denotes the fractional part<fn>
@@ -69,13 +69,13 @@
           <p>
             Verify that for <m>b=1</m>,
             <md>
-              <mrow>N(t) \amp \= \left| \left\{ (m,n) \in \Z : \, m,n
+              <mrow>N(t) \amp \ = \ \left| \left\{ (m,n) \in \Z : \, m,n
               \geq 0 , \, ma+n = t \right\} \right| </mrow>
-              <mrow> \amp \= \left| \left\{
+              <mrow> \amp \ = \ \left| \left\{
               m \in \Z : \, m \geq 0 , \, ma \leq t \right\}
               \right|</mrow> 
-              <mrow>\amp \= \left| \left[ 0 , \frac{t}{a} \right] \cap
-              \Z \right| \= \frac{t}{a} - \left\{ \frac{ t }{ a }
+              <mrow>\amp \ = \ \left| \left[ 0 , \frac{t}{a} \right] \cap
+              \Z \right| \ = \ \frac{t}{a} - \left\{ \frac{ t }{ a }
               \right\} + 1 \, </mrow> 
             </md>.
           </p>
@@ -86,7 +86,7 @@
             <xref ref="id"/> to obtain 
             <me>
               \frac{1}{a} \sum_{ k=1 }^{a-1} \frac{ 1 }{ ( 1 - e^{ 2
-              \pi i k/a } ) \, e^{ 2 \pi i kt/a } } \= - \left\{
+              \pi i k/a } ) \, e^{ 2 \pi i kt/a } } \ = \ - \left\{
               \frac{t}{a} \right\} + \frac{1}{2} - \frac{1}{2a} \, 
             </me>.
           </p>
@@ -96,7 +96,7 @@
             Verify that
             <me>
               \sum_{ k=1 }^{a-1} \frac{ 1 }{ ( 1 - e^{ 2 \pi i kb/a }
-              ) \, e^{ 2 \pi i kt/a } } \= \sum_{ k=1 }^{a-1} \frac{ 1
+              ) \, e^{ 2 \pi i kt/a } } \ = \ \sum_{ k=1 }^{a-1} \frac{ 1
               }{ ( 1 - e^{ 2 \pi i k/a } ) \, e^{ 2 \pi i k b^{-1} t/a
               } } \, 
             </me>.
@@ -118,7 +118,7 @@
     if there exist nonnegative integers <m>m_{ 1 } , m_2, \dots , m_{
     n }</m> such that 
     <me>
-      t \= m_1 \, a_1 + m_2 \, a_2 + \dots + m_n \, a_n \,
+      t \ = \ m_1 \, a_1 + m_2 \, a_2 + \dots + m_n \, a_n \,
     </me>.
   </p>
   <p>

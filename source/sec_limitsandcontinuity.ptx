@@ -64,7 +64,7 @@
         then <m>w_0</m> is the <em>limit</em>
         of <m>f</m> as <m>z</m> approaches <m>z_0</m>; in short,
         <me>
-          \lim_{ z \to z_0 } f(z) \= w_0 
+          \lim_{ z \to z_0 } f(z) \ = \ w_0 
         </me>.
       </p>
     </statement>
@@ -92,7 +92,7 @@
         such that <m>0 \lt |z-i| \lt \gd</m> implies <m>|z^2 + 1| \lt
         \epsilon</m>.  We rewrite
         <me>
-          \left| z^2 + 1 \right| \= \left| z-i \right| \left| z+i
+          \left| z^2 + 1 \right| \ = \ \left| z-i \right| \left| z+i
           \right| \ \lt  \ \gd \left| z+i \right| 
         </me>.
       </p>
@@ -122,7 +122,7 @@
         </me>
         from which we conclude that
         <me>
-          \left| z^2 - (-1) \right| \ = \ \left| z^2 + 1 \right| \=
+          \left| z^2 - (-1) \right| \ = \ \left| z^2 + 1 \right| \ = \
           \left| z-i \right| \left| z+i \right| \ \lt  \ 3 \gd \ \lt
           \ \epsilon
         </me>.
@@ -171,18 +171,18 @@
         the real and on the imaginary axis.  In the first case, we can
         write <m>z = x \in \R</m>, and hence
         <me>
-          \lim_{ z \to 0 } \frac{ \, \overline z \, }{ z } \= \lim_{ x
-          \to 0 } \frac{ \, \overline x \, }{ x } \= \lim_{ x \to 0 }
-          \frac{ x }{ x } \= 1 \, 
+          \lim_{ z \to 0 } \frac{ \, \overline z \, }{ z } \ = \ \lim_{ x
+          \to 0 } \frac{ \, \overline x \, }{ x } \ = \ \lim_{ x \to 0 }
+          \frac{ x }{ x } \ = \ 1 \, 
         </me>.
       </p>
       <p>
         In the second case,
         we write <m>z = iy</m> where <m>y \in \R</m>, and then
         <me>
-          \lim_{ z \to 0 } \frac{ \, \overline z \, }{ z } \= \lim_{ y
-          \to 0 } \frac{ \, \overline{iy} \, }{ iy } \= \lim_{ y \to 0
-          } \frac{ -iy }{ iy } \= -1 \, 
+          \lim_{ z \to 0 } \frac{ \, \overline z \, }{ z } \ = \ \lim_{ y
+          \to 0 } \frac{ \, \overline{iy} \, }{ iy } \ = \ \lim_{ y \to 0
+          } \frac{ -iy }{ iy } \ = \ -1 \, 
         </me>.
       </p>
       <p>
@@ -224,7 +224,7 @@
           <li xml:id="limitsmultiply">
             <p>
               <m>\displaystyle
-              \lim_{ z \to z_0 } \left( f(z) \cdot g(z) \right) \=
+              \lim_{ z \to z_0 } \left( f(z) \cdot g(z) \right) \ = \
               \lim_{ z \to z_0 } f(z) \cdot \lim_{ z \to z_0 } g(z)
               </m>.
             </p>
@@ -232,7 +232,7 @@
           <li>
             <p>
               <m>\displaystyle
-              \lim_{ z \to z_0 } \frac{ f(z) }{ g(z) } \= \frac{
+              \lim_{ z \to z_0 } \frac{ f(z) }{ g(z) } \ = \ \frac{
               \lim_{ z \to z_0 } f(z) }{ \lim_{ z \to z_0 } g(z) }
               </m>.
             </p>
@@ -294,7 +294,7 @@
         If <m>z_0 \in G</m> and either <m>z_0</m> is an isolated point
         of <m>G</m> or 
         <me>
-          \lim_{ z \to z_0 } f(z) \= f(z_0)
+          \lim_{ z \to z_0 } f(z) \ = \ f(z_0)
         </me>
         then <m>f</m> is <em>continuous</em>
         at <m>z_0</m>.
@@ -399,7 +399,7 @@
         and <m>f</m> is continuous at <m>w_0</m>.
         Then <m>\lim_{z\to z_0}f(g(z))=f(w_0)</m>; in short,
         <me>
-          \lim_{z\to z_0} f(g(z)) \= f\left(\lim_{z\to z_0}g(z)\right)
+          \lim_{z\to z_0} f(g(z)) \ = \ f\left(\lim_{z\to z_0}g(z)\right)
         </me>.
       </p>
     </statement>

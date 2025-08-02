@@ -66,8 +66,8 @@
         let <m>\delta := \frac 1 { \sqrt M }</m>.
         Then <m>0 \lt  |z| \lt  \delta</m> implies
         <me>
-          |f(z)| \= \left| \frac 1 { z^2 } \right| \ > \ \frac 1 {
-          \delta^2 } \= M \, 
+          |f(z)| \ = \ \left| \frac 1 { z^2 } \right| \ > \ \frac 1 {
+          \delta^2 } \ = \ M \, 
         </me>.
       </p>
     </statement>
@@ -94,8 +94,8 @@
         </me>
         and so
         <me>
-          \left| f(z) - \frac a c \right| \= \left| \frac{ c(az+b) -
-          a(cz+d) }{ c(cz+d) } \right| \= \frac L { |c| \, |cz+d| } \
+          \left| f(z) - \frac a c \right| \ = \ \left| \frac{ c(az+b) -
+          a(cz+d) }{ c(cz+d) } \right| \ = \ \frac L { |c| \, |cz+d| } \
           \lt  \ \epsilon \, 
         </me>.
       </p>
@@ -343,16 +343,16 @@
         similarly, <m>h(1) = 1</m> and <m>h(\infty) = \infty</m>.
         If we write <m>h(z)=\frac{az+b}{cz+d}</m> then
         <md>
-          <mrow>0 \= h(0) \= \frac bd \amp  \implies  b=0</mrow>
-          <mrow>\infty \= h(\infty) \= \frac ac \amp  \implies
+          <mrow>0 \ = \ h(0) \ = \ \frac bd \amp  \implies  b=0</mrow>
+          <mrow>\infty \ = \ h(\infty) \ = \ \frac ac \amp  \implies
           c=0</mrow>
-          <mrow>1 \= h(1) \= \frac{a+b}{c+d} \= \frac {a+0}{0+d} \=
+          <mrow>1 \ = \ h(1) \ = \ \frac{a+b}{c+d} \ = \ \frac {a+0}{0+d} \ = \
           \frac ad \amp  \implies  a=d</mrow>
         </md>
         and so
         <me>
-          h(z)\=\frac{az+b}{cz+d} \= \frac{az+0}{0+d} \= \frac ad \, z
-          \= z \, 
+          h(z)\ = \\frac{az+b}{cz+d} \ = \ \frac{az+0}{0+d} \ = \ \frac ad \, z
+          \ = \ z \, 
         </me>,
         the identity function.
         But since <m>h = g\circ f^{-1}</m>,

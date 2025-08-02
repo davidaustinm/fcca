@@ -41,8 +41,8 @@
     in the sense that the complex numbers of the form <m>(x,0)</m>
     behave just like real numbers:  
     <me>
-      (x,0)+(y,0) \= (x+y,0) \qquad \text{ and }  \qquad (x,0) \cdot
-      (y,0) \= (xy,0) \, 
+      (x,0)+(y,0) \ = \ (x+y,0) \qquad \text{ and }  \qquad (x,0) \cdot
+      (y,0) \ = \ (xy,0) \, 
     </me>.
       <idx><h>binary operation</h></idx>
 
@@ -139,7 +139,7 @@
       By our definition for complex addition and properties of
       additive inverses in<nbsp/><m>\R</m>, 
       <me>
-        (x,y) + (-x, -y) \= (x+(-x), \, y+(-y)) \= (0,0) \, 
+        (x,y) + (-x, -y) \ = \ (x+(-x), \, y+(-y)) \ = \ (0,0) \, 
       </me>.
     </p>
   </proof>
@@ -147,18 +147,18 @@
     The definition of complex multiplication implies the innocent
     looking statement 
     <men xml:id="i_2_-1">
-      (0,1) \cdot (0,1) \= (-1,0) \,
+      (0,1) \cdot (0,1) \ = \ (-1,0) \,
     </men>.
   </p>
   <p>
     This identity together with the fact that
     <me>
-      (a,0) \cdot (x,y) \= (ax,ay)
+      (a,0) \cdot (x,y) \ = \ (ax,ay)
     </me>
     allows an alternative notation for complex numbers.
     The latter implies that we can write
     <me>
-      (x,y) \= (x,0) + (0,y) \= (x,0) \cdot (1,0) + (y,0) \cdot (0,1) \,
+      (x,y) \ = \ (x,0) + (0,y) \ = \ (x,0) \cdot (1,0) + (y,0) \cdot (0,1) \,
     </me>.
   </p>
   <p>

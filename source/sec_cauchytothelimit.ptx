@@ -36,11 +36,11 @@
         and we can factor out <m>a_d \, z^d</m>:
         <md>
           <mrow>
-            \abs{p(z)} \amp \= \abs{a_dz^d + a_{d-1}z^{d-1} +
+            \abs{p(z)} \amp \ = \ \abs{a_dz^d + a_{d-1}z^{d-1} +
             a_{d-2}z^{d-2} + \dots + a_1z+a_0}
           </mrow> 
           <mrow>
-            \amp \=
+            \amp \ = \
             \abs{a_d}\abs{z}^d\abs{1+\frac{a_{d-1}}{a_dz}+
             \frac{a_{d-2}}{a_dz^2}+\dots+
             \frac{a_1}{a_dz^{d-1}}+\frac{a_0}{a_dz^d}}
@@ -96,7 +96,7 @@
         (<xref ref="cauchyformulacircle"/>)
         gives
         <me>
-          \frac1{p(0)} \= \frac1{2\pi i}\int_{C[0,R]}\frac{\frac 1
+          \frac1{p(0)} \ = \ \frac1{2\pi i}\int_{C[0,R]}\frac{\frac 1
           {p(z)}}{z}\,\diff{z} \, 
         </me>,
         for any <m>R>0</m>.
@@ -106,7 +106,7 @@
         and <xref ref="polynomialestimate"/> allow us to estimate,
         for sufficiently large <m>R</m>,
         <me>
-          \left| \frac 1 {p(0)} \right| \= \frac 1 {2 \pi} \left|
+          \left| \frac 1 {p(0)} \right| \ = \ \frac 1 {2 \pi} \left|
           \int_{C[0,R]} \frac{ \diff{z} }{ z \, p(z) } \right| \ \le \
           \frac 1 {2 \pi}  \max_{ z \in C[0,R] } \left| \frac{ 1 }{ z
           \, p(z) } \right| 2 \pi R \ \le \ \frac{ 2 }{ |a_d| R^d } \, 
@@ -150,10 +150,10 @@
         in <m>\C</m>:
         <md>
           <mrow>
-            p(x) \amp \= \left( x^2+1 \right) \left( 2x^2+3 \right)
+            p(x) \amp \ = \ \left( x^2+1 \right) \left( 2x^2+3 \right)
           </mrow>
           <mrow>
-            \amp \= \left(
+            \amp \ = \ \left(
             x+i \right) \left( x-i \right) \left( \sqrt{2} \, x +
             \sqrt{3} \, i \right) \left( \sqrt{2} \, x - \sqrt{3} \, i
             \right)
@@ -203,7 +203,7 @@
           \left| \frac{ f(z) }{ (z-w)^2 } \right| 2\pi R
           </mrow>
           <mrow>
-            \ \amp \= \frac { \max_{ z \in C[w,R]} \left| f(z) \right| }{ R }
+            \ \amp \ = \ \frac { \max_{ z \in C[w,R]} \left| f(z) \right| }{ R }
           </mrow>
           <mrow>
             \ \amp \leq \ \frac{M}{R} \,
@@ -250,7 +250,7 @@
       <p>
         We will compute the (real) integral
         <me>
-          \int_{-\infty}^\infty\frac{\diff{x}}{x^2+1} \= \pi \, 
+          \int_{-\infty}^\infty\frac{\diff{x}}{x^2+1} \ = \ \pi \, 
         </me>.
       </p>
       <p>
@@ -276,7 +276,7 @@
         We computed the integral over
         <m>\sigma_R</m> already in <xref ref="exam_cifz_2_1"/>;
         <me>
-          \int_{\sigma_R} \frac{\diff{z}}{z^2+1} \= \pi \,
+          \int_{\sigma_R} \frac{\diff{z}}{z^2+1} \ = \ \pi \,
         </me>.
       </p>
       <p>
@@ -295,23 +295,23 @@
             \amp \le \ \max_{ z
             \in \gg_R } \left( \frac 1 {|z|^2-1} \right) \pi R
           </mrow>
-          <mrow>\amp \= \frac{\pi R }{R^2-1}
+          <mrow>\amp \ = \ \frac{\pi R }{R^2-1}
           </mrow>
         </md>
         which goes to <m>0</m> as <m>R\to\infty</m>.
         Thus
         <md>
           <mrow>
-            \pi \amp \= \lim_{ R \to \infty } \int_{\sigma_R}
+            \pi \amp \ = \ \lim_{ R \to \infty } \int_{\sigma_R}
             \frac{\diff{z}}{z^2+1}
           </mrow>
           <mrow>
-            \amp \= \lim_{ R \to \infty }
+            \amp \ = \ \lim_{ R \to \infty }
             \int_{[-R,R]} \frac{\diff{z}}{z^2+1} \ + \ \lim_{ R \to
             \infty } \int_{\gg_R} \frac{\diff{z}}{z^2+1}
           </mrow>
           <mrow>
-            \amp \=
+            \amp \ = \
             \int_{-\infty}^\infty\frac{\diff{x}}{x^2+1} \,
           </mrow>
         </md>.
