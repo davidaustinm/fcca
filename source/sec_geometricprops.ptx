@@ -253,7 +253,7 @@
             <p>
               The triangle inequality for sums:
               <me>
-                \abs{\sum_{k=1}^n z_k} \ \le \ \sum_{k=1}^n \abs{z_k} 
+                \abs{\sum_{k=1}^n z_k} \ \le \ \sum_{k=1}^n \abs{z_k} \, 
               </me>.
             </p>
           </li>

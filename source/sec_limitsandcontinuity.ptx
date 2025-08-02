@@ -27,10 +27,7 @@
     functions from <m>\R^m</m> to <m>\R^n</m>.
     In fact, we can construct many familiar looking functions from the
     standard calculus repertoire, 
-    such as <m>f(z)=z</m>
-    (the <em>identity map
-        <idx><h>identity map</h></idx>
-    </em>),
+    such as <m>f(z)=z</m> (the <em>identity map</em>), <idx><h>identity map</h></idx>
     <m>f(z)=2z+i</m>, <m>f(z)=z^3</m>,
     or <m>f(z) = \frac 1 z</m>.
     The former three could be defined on all of <m>\C</m>,

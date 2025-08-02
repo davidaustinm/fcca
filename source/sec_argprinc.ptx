@@ -147,7 +147,8 @@
         <md>
           <mrow>\i \frac{ f' }{ f } \amp \ = \ n_1 \i \frac{ \diff{z}
           }{ z - z_1 } \, + \, \cdots \, + \, n_j \i \frac{ \diff{z}
-          }{ z - z_j } \, - \, m_1 \i \frac{ \diff{z} }{ z - p_1 }
+          }{ z - z_j }</mrow> 
+          <mrow>\amp \qquad - \, m_1 \i \frac{ \diff{z} }{ z - p_1 }
           \, - \, \cdots \, - \, m_k \i \frac{ \diff{z} }{ z - p_k }
           + \i \frac{ g' }{ g }</mrow> 
           <mrow>\amp \ = \ 2 \pi i \left( n_1 + \dots + n_j - m_1 -

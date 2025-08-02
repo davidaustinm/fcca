@@ -283,13 +283,13 @@
         <xref ref="fig_curves"/> shows two examples of
         paths.  On the left, we see the path parametrized by
         <me>
-          \gamma_1(t)=-2 + 2e^{it}, \frac{\pi}2\leq t\leq 2\pi
+          \gamma_1(t)=-2 + 2e^{it}, \frac{\pi}2\leq t\leq 2\pi \, ,
         </me>
         while the path shown on the right is
         <me>
           \gamma_2(t)=\begin{cases}
-          3+i(t-2) \amp \text{if}\, 0\leq t\leq 3, \\
-          6-5+\frac i2(t-1) \amp \text{if}\, 3\leq t\leq 5.
+          3+i(t-2) \amp \text{if}\ 0\leq t\leq 3, \\
+          6-5+\frac i2(t-1) \amp \text{if}\ 3\leq t\leq 5.
           \end{cases}
         </me>
       </p>

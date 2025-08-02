@@ -26,7 +26,6 @@
     \def\JPicScale{0.7}
     \def\versionmonth{July \versionyear}
     \def\JPicScale{0.7}
-    \renewcommand{\thechapter}{A}
     \def\JPicScale{0.7}
     \newcommand{\ix}[1]{#1\index{#1}}
     \def\JPicScale{0.7}

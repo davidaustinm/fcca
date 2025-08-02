@@ -17,7 +17,7 @@
         The <term>complex numbers</term>
         are pairs of real numbers,
         <me>
-          \C \ := \ \left\{ (x,y) : \, x,y \in \R \right\}
+          \C \ := \ \left\{ (x,y) : \, x,y \in \R \right\} \, 
         </me>,
         equipped with the <em>addition
         </em>
@@ -106,7 +106,7 @@
           (x,y) \cdot \left(
           \tfrac{ x }{ x^2 + y^2 } , \tfrac{ -y }{ x^2 + y^2 } \right)
           = (1,0) \,\text{if}\,
-          (x,y)\in\C\setminus\{(0,0)\}
+          (x,y)\in\C\setminus\{(0,0)\} \, .
         </mrow>
       </mdn>
     </statement>
@@ -174,7 +174,7 @@
     written as <m>x \cdot 1 + y \cdot i</m> or 
     <idx><h><m>i</m></h></idx>
     <me>
-      x+iy
+      x+iy \, 
     </me>.
   </p>
   <p>
