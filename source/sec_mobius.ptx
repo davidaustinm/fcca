@@ -68,7 +68,10 @@
     </statement>
   </proposition>
   <p>
-    We remark that the same formula for <m>f^{-1} (z)</m> works when
+    If this reminds you of the inverse of a <m>2 \times 2</m> matrix, you should do <xref ref="ex_mobiusgroup"/>.
+  </p>
+  <p>
+    We remark that the formula for <m>f^{-1} (z)</m> in <xref ref="inversemobius"/> works also when
     <m>c = 0</m>, except that in this case both domain and image of
     <m>f</m> are <m>\C</m>; see <xref ref="ex_inversemobisc_0"/>.
     In either case, we note
@@ -199,7 +202,7 @@
             \amp \ = \ \frac{ e^{ i \phi } - e^{ -i \phi } }{ i
             \left| e^{ i \phi } + 1 \right|^2 } \ = \ \frac{ 2 \Im \left(
             e^{ i \phi } \right) }{ \left| e^{ i \phi } + 1 \right|^2 }
-            \ = \ \frac{ 2 \sin \phi }{ \left| e^{ i \phi } + 1 \right|^2 }
+            \ = \ \frac{ 2 \sin \phi }{ \left| e^{ i \phi } + 1 \right|^2 } \,
           </mrow>
         </md>,
         which is a real number.

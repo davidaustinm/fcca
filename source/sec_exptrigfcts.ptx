@@ -85,7 +85,7 @@
           <li xml:id="expder">
             <p>
               <m>\frac{ d }{ d z } \exp \left( z \right) = \exp \left(
-              z \right)</m>. 
+              z \right) \, </m>. 
             </p>
           </li>
         </ol>
@@ -135,7 +135,7 @@
       Thus <xref ref="cre">Theorem</xref>
       says that <m>f(z) = \exp(z)</m> is entire with derivative
       <me>
-        f'(z) \ = \ \fderiv fx(z) \ = \ \exp(z)
+        f'(z) \ = \ \fderiv fx(z) \ = \ \exp(z) \, 
       </me>. 
     </p>
   </proof>
@@ -170,8 +170,7 @@
     right. </caption>
   </figure>
   <p>
-    The trigonometric functions
-    <mdash/>sine,
+    The trigonometric functions<mdash/>sine,
     cosine,
     tangent,
     cotangent,
@@ -198,7 +197,7 @@
           </mrow>
           <mrow>
             \cos z \amp \ := \ \tfrac 1 2 \left( \exp (iz) + \exp (-iz)
-            \right)
+            \right) \,
           </mrow>
         </md>,
         respectively.
@@ -210,7 +209,7 @@
           </mrow>
           <mrow>
             \cot z \amp \ := \ \frac{ \cos z }{ \sin z } \ = \ i \,
-            \frac{ \exp (2iz) + 1 }{ \exp (2iz) - 1 }
+            \frac{ \exp (2iz) + 1 }{ \exp (2iz) - 1 } \,
           </mrow>
         </md>,
         respectively.
@@ -336,7 +335,7 @@
         </mrow>
         <mrow>
           \coth z \amp \ = \ \frac{ \cosh z }{ \sinh z } \ = \ \frac{
-        \exp (2z) + 1 }{ \exp (2z) - 1 }
+        \exp (2z) + 1 }{ \exp (2z) - 1 } \,
       </mrow>
       </md>.
     </statement>

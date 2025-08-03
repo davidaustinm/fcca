@@ -122,7 +122,7 @@
     <idx><h>Cauchy<ndash/>Goursat theorem</h></idx>
   </p>
   <p>
-    Before discussing the proof of <xref ref="cauchythm">Theorem</xref>,
+    Before discussing a proof of <xref ref="cauchythm">Theorem</xref>,
     we give a basic, yet prototypical application of it:
   </p>
   <example>
@@ -152,7 +152,7 @@
   <proof>
     <p>
       The full proof of Cauchy's Theorem is beyond the scope of this book.
-      However, there are several proofs under more restrictive
+      However, there are several easier proofs under more restrictive
       hypotheses than <xref ref="cauchythm"/>.
       We shall present a proof under the following extra assumptions:
       <ul>

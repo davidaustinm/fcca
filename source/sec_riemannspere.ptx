@@ -47,7 +47,7 @@
         In the first definition we require that <m>z_0</m> be an
         accumulation point of <m>G</m> while in the second and third
         we require that <m>\infty</m> be an 
-        <q>extended accumulation point</q>
+        <em>extended accumulation point</em>
         of <m>G</m>,
         in the sense that for every <m>B>0</m> there is some <m>z\in
         G</m> with <m>\abs z>B</m>. 
@@ -218,7 +218,7 @@
   <example xml:id="ex_mobiusinverse3">
     <statement>
       <p>
-        Continuing <xref ref="ex_mobiusinverse">Examples</xref> and
+        Continuing <xref ref="ex_mobiusinverse"></xref> and
         <xref ref="ex_mobiusinverse2"></xref>, consider once more the
         M&#xf6;bius transformation <m>f(z) = \frac{ z-1 }{ iz+i }</m>.
         With the definitions <m>f(-1) = \infty</m> and <m>f(\infty) =

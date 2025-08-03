@@ -82,21 +82,21 @@
       and so Cauchy's <xref ref="cauchythm"/>
       and <xref ref="ex_circleint"/> give
       <md>
-        <mrow>\left| \int_{C[w,R]} \frac{ f(z) }{ z-w } \, \diff{z} -
-        2 \pi i \, f(w) \right| \ \amp
+        <mrow>\amp \left| \int_{C[w,R]} \frac{ f(z) }{ z-w } \, \diff{z} -
+        2 \pi i \, f(w) \right| 
         </mrow>
-        <mrow> = \ \amp \left| \int_{C[w,r]} \frac{
+        <mrow> \amp \qquad = \ \left| \int_{C[w,r]} \frac{
         f(z) }{ z-w } \, \diff{z} - f(w) \int_{C[w,r]} \frac{ \diff{z}
         }{ z-w } \right| \nonumber</mrow> 
-        <mrow> = \ \amp \left| \int_{C[w,r]} \frac{ f(z) - f(w) }{ z-w
+        <mrow> \amp \qquad = \ \left| \int_{C[w,r]} \frac{ f(z) - f(w) }{ z-w
         } \, \diff{z} \right| \nonumber</mrow> 
-        <mrow xml:id="eq_cifestimate" number="yes"> \le \ \amp \max_{
+        <mrow xml:id="eq_cifestimate" number="yes"> \amp \qquad \le \ \max_{
         z \in C[w,r] } \left| \frac{ f(z) - f(w) }{ z-w } \right|
         \length \left( C[w,r] \right)</mrow> 
-        <mrow> = \ \amp \max_{ z \in C[w,r] } \frac{ \left| f(z) -
+        <mrow> \amp \qquad = \ \max_{ z \in C[w,r] } \frac{ \left| f(z) -
         f(w) \right| }{ r } \ 2 \pi r \nonumber</mrow> 
-        <mrow> = \ \amp 2 \pi \max_{ z \in C[w,r] } \left| f(z) - f(w)
-        \right| . \nonumber</mrow> 
+        <mrow> \amp \qquad = \ 2 \pi \max_{ z \in C[w,r] } \left| f(z) - f(w)
+        \right| \, . \nonumber</mrow> 
       </md>
     </p>
     <p>
@@ -255,7 +255,7 @@
     we recommend that you take a course in topology.
   </p>
   <p>
-    There is still a subtle problem with our proof.
+    There is yet another subtle problem.
     We assumed that <m>\gg</m> is in <m>G</m>,
     but we also need the <em>interior</em>
     of <m>\gg</m> to be contained in <m>G</m>,
@@ -375,7 +375,7 @@
         <me>
           \int_{ C[0,3] } \frac{ \exp(z) }{ z^2 - 2z } \, \diff{z} \ = \
           \frac 1 2 \, 2 \pi i \cdot \exp(2) - \frac 1 2 \, 2 \pi i
-          \cdot \exp(0) \ = \ \pi i \left( e^2 - 1 \right) 
+          \cdot \exp(0) \ = \ \pi i \left( e^2 - 1 \right) \,
         </me>.
       </p>
     </statement>

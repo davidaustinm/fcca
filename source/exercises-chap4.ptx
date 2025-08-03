@@ -669,7 +669,7 @@
         In one case
         <m>\gamma_r</m> is contractible in <m>\C\setminus\listset a</m>.
         In the other you can combine <xref ref="ex_circleint"/>
-        and <xref ref="ex_circlehomotopy"/>.)
+        and <xref ref="ex_circlehomotopy"/>.
       </p>
     </hint>
     <answer>

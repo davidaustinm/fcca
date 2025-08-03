@@ -90,8 +90,8 @@
         antiderivative of <m>f</m> on <m>G</m> then 
         <me>
           \int_\gg f \ = \ F \left( \gg(b) \right) - F \left( \gg(a)
-          \right) 
-        </me>
+          \right)  \, 
+        </me>.
       </p>
     </statement>
   </theorem>
@@ -104,7 +104,7 @@
       \gg'(t)</m>: 
       <me>
         \int_\gg f \ = \ \int_a^b f(\gg(t)) \, \gg'(t) \, \diff{t} \ = \ F
-        \left( \gg(b) \right) - F \left( \gg(a) \right) .
+        \left( \gg(b) \right) - F \left( \gg(a) \right) \, .
       </me>
     </p>
   </proof>
@@ -226,7 +226,7 @@
             \diff{w}
           </mrow>
           <mrow>
-            \amp \ = \ \frac 1 h \int_\gg (f(w)-f(z)) \, \diff{w}
+            \amp \ = \ \frac 1 h \int_\gg (f(w)-f(z)) \, \diff{w} \, 
           </mrow>
         </md>.
       </p>
@@ -235,16 +235,16 @@
         <m>\lambda</m> from <m>z</m> to <m>z+h</m> will be contained
         in <m>G</m>, and so, 
         by applying the assumptions of our theorem for the third time,
-        <mdn>
+        <md>
           <mrow>
             \frac{ F(z+h) - F(z) }{ h } - f(z) \amp \ = \ \frac 1 h
             \int_\gg (f(w)-f(z)) \, \diff{w}
-          </mrow>
-          <mrow xml:id="eq_makepathstraight">
+          \nonumber</mrow>
+          <mrow xml:id="eq_makepathstraight" number="yes"> 
             \amp \ = \ \frac 1 h \int_\lambda
             (f(w)-f(z)) \, \diff{w} \,
           </mrow>
-        </mdn>.
+        </md>.
       </p>
       <p>
         We will show that the right-hand side goes to zero as <m>h \to
@@ -273,7 +273,7 @@
             \amp \ = \ \max_{ w \in \lambda } |f(w) - f(z)|
           </mrow>
           <mrow>
-            \amp \lt \epsilon
+            \amp \lt \epsilon \,
           </mrow>
         </md>.
       </p>
@@ -301,7 +301,7 @@
         \subset G</m>. 
         Then the function <m>F: G \to \C</m> defined by
         <me>
-          F(z) \ := \ \int_{\gg_z} f
+          F(z) \ := \ \int_{\gg_z} f \,
         </me>,
         where <m>\gg_z</m> is any polygonal path in <m>G</m> from
         <m>z_0</m> to <m>z</m>, 

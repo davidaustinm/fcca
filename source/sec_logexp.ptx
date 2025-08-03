@@ -26,7 +26,7 @@
     (which would have to be unique).
     On the other hand,
     <m>\exp</m> becomes one-to-one if we restrict its domain,
-    so there is hope for a logarithm if we're careful about its
+    so there is hope for a logarithm if we are careful about its
     construction and about its domain.
   </p>
   <definition>
@@ -212,7 +212,7 @@
       Thus <xref ref="inversederivative"/> gives
       <me>
         \fLog'(z) \ = \ \frac 1 { \exp' ( \fLog z ) } \ = \ \frac 1 { \exp (
-        \fLog z ) } \ = \ \frac 1 z
+        \fLog z ) } \ = \ \frac 1 z \,
       </me>.
     </p>
   </proof>

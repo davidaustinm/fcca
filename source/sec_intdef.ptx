@@ -104,12 +104,17 @@
                 2it^3 \, 
               </me>,
               whence
-              <me>
-                \int_\gg f \ = \ \int_0^1 ( t^2 - t^4 - 2it^3 ) \left( 1
-                + 2it \right) \, \diff{t} \ = \ \int_0^1 ( t^2 + 3 t^4 -
+              <md>
+                <mrow>
+                \int_\gg f \ \amp = \ \int_0^1 ( t^2 - t^4 - 2it^3 ) \left( 1
+                + 2it \right) \, \diff{t}
+                </mrow>
+                <mrow>
+                  \amp = \ \int_0^1 ( t^2 + 3 t^4 -
                 2i t^5 ) \, \diff{t} \ = \ \frac{ 14 }{ 15 } - \frac i 3
                 \, 
-              </me>.
+                </mrow> 
+              </md>.
             </p>
           </li>
           <li>
@@ -126,11 +131,11 @@
                   \int_{\gg_2} f
                 </mrow>
                 <mrow>
-                  \amp \ = \ \int_0^1 t^2 \, \diff{t} + \int_0^1
+                  \amp  = \ \int_0^1 t^2 \, \diff{t} + \int_0^1
                   (1-it)^2 \, i \, \diff{t}
                 </mrow>
                 <mrow>
-                  \amp \ = \ \frac 1 3 + i \int_0^1 (1
+                  \amp  = \ \frac 1 3 + i \int_0^1 (1
                   - 2it - t^2) \, \diff{t}
                 </mrow> 
                 <mrow>
@@ -138,7 +143,7 @@
                   \frac 1 3 \right)
                 </mrow>
                 <mrow>
-                  \amp \ = \ \frac 4 3 + \frac 2 3 i \,
+                  \amp  = \ \frac 4 3 + \frac 2 3 i \,
                 </mrow> 
               </md>.
             </p>
@@ -232,7 +237,7 @@
           \length(\gg) \ := \ \int_a^b \left| \gg'(t) \right| \, \diff{t}
         </me>
         for any parametrization <m>\gg (t)</m>, <m>a \leq t \leq b</m>.
-        Naturally, the length of a <em>piecewise</em>
+        Naturally, the length of a piecewise
         smooth path is the sum of the lengths of its smooth components.
       </p>
     </statement>
@@ -286,7 +291,7 @@
           <li xml:id="int1">
             <p>
               <m>\ds \int_\gg (f + c \, g) \ = \ \int_\gg f \, + \, c
-              \int_\gg g </m>. 
+              \int_\gg g \, </m>. 
             </p>
           </li>
           <li xml:id="int2">
@@ -318,7 +323,7 @@
           <li xml:id="int4">
             <p>
               <m>\ds \left| \int_\gg f \right| \ \leq \ \max_{z \in
-              \gg} \left| f(z) \right| \cdot \length (\gg) </m>. 
+              \gg} \left| f(z) \right| \cdot \length (\gg) \, </m>. 
             </p>
           </li>
         </ol>

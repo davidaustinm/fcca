@@ -20,7 +20,7 @@
     actual complex numbers <m>x + iy</m> and more concerned with their
     coordinates.  Consider the <em>unit sphere</em>
     <me>
-      \mathbb{S}^2 \ := \ \left\{(x,y,z) \in \R^3 : \, x^2+y^2+z^2=1 \right\}
+      \mathbb{S}^2 \ := \ \left\{(x,y,z) \in \R^3 : \, x^2+y^2+z^2=1 \right\} \, 
     </me>.
     <idx><h>unit sphere</h></idx>
   </p>
@@ -38,7 +38,7 @@
       <p>
         The <em>stereographic projection</em>
         of <m>\mathbb{S}^2</m> to <m>\Chat</m>
-        from <m>N</m> is the map <m>\phi \colon \mathbb{S}^2 \to
+        from <m>N</m> is the map <m>\phi \colon \, \mathbb{S}^2 \to
         \Chat</m> defined as follows.
         <idx><h>stereographic projection</h></idx>
         For any point <m>P \in \mathbb{S}^2 \setminus \{N\}</m>, as
@@ -154,7 +154,7 @@
         </mrow>
         <mrow>
           \amp \ = \ \left\{ (x,y,z) \in \R^3 : \, xx_0 + yy_0 + zz_0
-          = k \right\}
+          = k \right\} \, 
         </mrow>
       </md>.
       By possibly changing <m>k</m>,
@@ -171,7 +171,7 @@
       <m>\phi^{-1}(p,q,0)</m> satisfies the defining equation for
       <m>H</m>.  Using the equations from <xref
       ref="prop_coordmaps">Proposition</xref> for
-      <m>\phi^{-1}(p,q,0)</m>, we see that
+      <m>\phi^{-1}(p,q,0)</m>, 
       <me>
         (z_0-k)p^2 + (2x_0)p + (z_0-k)q^2 + (2y_0)q \ = \ z_0+k\,
       </me>.
