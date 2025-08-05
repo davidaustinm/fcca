@@ -244,8 +244,7 @@
           </me>.
       </p>
       <p>
-        With <xref ref="intprop"/>
-        <xref ref="int4"/> we can thus estimate
+        With <xref ref="intprop"/>(<xref text="local" ref="int4"/>) we can thus estimate
         <me>
           \left| \int_\gamma f_n - \int_\gamma f \right| \ = \ \left|
           \int_\gamma f_n - f \right| \ \leq \ \max_{z \in \gamma}

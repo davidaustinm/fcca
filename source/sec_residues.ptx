@@ -64,8 +64,7 @@
         and bounded
         (since the inside of <m>\gg</m> is bounded),
         and the points of <m>S</m> are isolated in <m>S</m>
-        (by <xref ref="classificationzeros"/>
-        <xref ref="classificationzeros_isolated"/>).
+        (by <xref ref="classificationzeros"/>(<xref text="local" ref="classificationzeros_isolated"/>)).
         An application of <xref ref="ex_compactAndIsolated"/>
         shows that <m>S</m> is finite.
       </p>
@@ -105,7 +104,7 @@
   <proposition xml:id="prop_residueAsLimit">
     <statement>
       <p>
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               If <m>z_0</m> is a removable singularity of <m>f</m>
@@ -128,7 +127,7 @@
   </proposition>
   <proof>
     <p>
-      <ol marker="a) ">
+      <ol marker="(a) ">
         <li>
           <p>
             This follows from <xref ref="singlaurent"/> a).

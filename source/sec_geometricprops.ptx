@@ -262,10 +262,10 @@
     </statement>
   </corollary>
   <p>
-    <xref ref="trianineqcor"/>
+    The first item (<xref text="local" ref="trianineqcor"/>)
     is just a rewrite of the original triangle inequality,
     using the fact that <m>\abs{\pm z}=\abs{z}</m>,
-    and <xref ref="trianineqsum"/> follows by induction.
+    and (<xref text="local" ref="trianineqsum"/>) follows by induction.
     The proof of the reverse triangle inequality
     is left as <xref ref="ex_reversetriangle"/>.
   </p>

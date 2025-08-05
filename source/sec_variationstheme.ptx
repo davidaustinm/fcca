@@ -70,8 +70,7 @@
       This can be made arbitrarily small if we can show that the
       integral on the right-hand side stays bounded as <m>\D w \to
       0</m>. 
-      In fact, by <xref ref="intprop">Proposition</xref> <xref
-      ref="int4"></xref>, 
+      In fact, by <xref ref="intprop">Proposition</xref>(<xref text="local" ref="int4"></xref>), 
       it suffices to show that the <em>integrand</em>
       stays bounded as <m>\D w \to 0</m> (because <m>\gg</m> and hence
       <m>\length (\gg)</m> are fixed). 
@@ -83,8 +82,7 @@
       \emptyset</m>; 
       that is, <m>\abs{z-w}\ge \delta</m> for all <m>z</m> on <m>\gamma</m>.
       By the reverse triangle inequality
-      (<xref ref="cor_triangleineq"/>
-      <xref ref="revtrianineq"/>),
+      (<xref ref="cor_triangleineq"/>(<xref text="local" ref="revtrianineq"/>)),
       for all <m>z \in \gg</m>,
       <md>
         <mrow>

@@ -101,7 +101,7 @@
     </p>
     <p>
       Here the inequality comes from
-      <xref ref="intprop"/> <xref ref="int4"/>.
+      <xref ref="intprop"/>(<xref text="local" ref="int4"/>).
     </p>
     <p>
       Now let <m>\epsilon > 0</m>.

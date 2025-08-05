@@ -52,7 +52,7 @@
     <statement>
       <p>
         For all <m>z, z_1, z_2 \in \C</m>,
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               <m>\exp \left( z_1 \right) \exp \left( z_2 \right) =
@@ -93,7 +93,7 @@
     </statement>
   </proposition>
   <p>
-    <xref ref="expperiodic"/>
+    Item (<xref text="local" ref="expperiodic"/>)
     is very special and has no counterpart for the real exponential
     function. It says that the complex exponential function is
     <em>periodic </em>
@@ -104,11 +104,11 @@
     the complex exponential function is not one-to-one. 
   </p>
   <p>
-    <xref ref="expder"/> is not only remarkable,
+    Item (<xref text="local" ref="expder"/>) is not only remarkable,
     but we invite you to meditate on its proof below;
     it gives a strong indication that our definition of <m>\exp</m> is
     reasonable. 
-    We also note that <xref ref="expder"></xref>
+    We also note that (<xref text="local" ref="expder"></xref>)
     implies that <m>\exp</m> is entire.
   </p>
   <p>
@@ -118,7 +118,7 @@
   </p>
   <proof>
     <p>
-      The partial derivatives of <m>f(z) = \exp(z)</m> are
+      (<xref text="local" ref="expder"></xref>) The partial derivatives of <m>f(z) = \exp(z)</m> are
       <me>
         \fderiv fx \ = \ e^x \left( \cos y + i \sin y \right) \qquad
         \text{ and }  \qquad \fderiv fy \ = \ e^x \left( -\sin y + i \cos

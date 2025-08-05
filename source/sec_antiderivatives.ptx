@@ -76,8 +76,7 @@
     </statement>
   </example>
   <p>
-    Here is the complex analogue of <xref ref="fundthmcalc">Theorem</xref>
-    <xref ref="fundthmcalc2"/>
+    Here is the complex analogue of <xref ref="fundthmcalc">Theorem</xref>(<xref text="local" ref="fundthmcalc2"/>).
   </p>
   <theorem xml:id="antiderthm">
     <statement>
@@ -98,8 +97,7 @@
   <proof>
     <p>
       This follows immediately from the definition of a complex
-      integral and <xref ref="fundthmcalc">Theorem</xref> 
-      <xref ref="fundthmcalc2"></xref>,
+      integral and <xref ref="fundthmcalc">Theorem</xref>(<xref text="local" ref="fundthmcalc2"></xref>),
       since <m>\frac{ d }{ \diff{t} } F(\gg(t)) = f(\gg(t)) \,
       \gg'(t)</m>: 
       <me>
@@ -159,8 +157,7 @@
   </example>
   <p>
     We now turn to the complex analogue of <xref
-    ref="fundthmcalc">Theorem</xref> 
-    <xref ref="fundthmcalc1"></xref>.
+    ref="fundthmcalc">Theorem</xref>(<xref text="local" ref="fundthmcalc1"></xref>).
   </p>
   <theorem xml:id="thm_FTC1">
     <statement>
@@ -260,8 +257,7 @@
         (We also choose <m>\delta</m> small enough so that <xref
         ref="eq_makepathstraight"/> holds.) 
         Thus if <m>|h| \lt  \delta</m>,
-        we can estimate with <xref ref="intprop">Proposition</xref>
-        <xref ref="int4"/>
+        we can estimate with <xref ref="intprop">Proposition</xref>(<xref text="local" ref="int4"/>)
         <md>
           <mrow>
             \abs{ \frac 1 h \int_\lambda (f(w)-f(z)) \, \diff{w} }

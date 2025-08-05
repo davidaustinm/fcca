@@ -32,7 +32,7 @@
         Suppose <m>f: G \to \C</m> is holomorphic and <m>f</m> has a
         zero at <m>a \in G</m>. 
         Then either
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               <m>f</m> is identically zero on some open disk <m>D</m>
@@ -72,7 +72,7 @@
         </me>,
         and <m>c_0 = f(a) = 0</m>.
         There are now exactly two possibilities: either
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               <m>c_k=0</m> for all <m>k \ge 0</m>; or

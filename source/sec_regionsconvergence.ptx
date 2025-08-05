@@ -53,7 +53,7 @@
         Given a power series <m>\s c_k ( z - z_0)^k</m>,
         there exists a real number <m>R \ge 0</m> or <m>R = \infty</m>,
         such that
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               <m>\s c_k ( z - z_0)^k</m> converges absolutely for
@@ -180,7 +180,7 @@
       Thus <m>\s c_k ( w - z_0)^k</m> converges for <m>w=z_0+r</m>,
       and so <m>\s c_k ( z - z_0)^k</m> converges absolutely by
       <xref ref="prop_convergenceradius"/>.
-      This finishes a).
+      This finishes (a).
     </p>
     <p>
       If <m>|z-z_0| \le r</m> for some <m>r \lt R</m>,
@@ -190,7 +190,7 @@
       and so <m>\s c_k ( z - z_0)^k</m> converges absolutely and
       uniformly for 
       <m>|z-z_0|\le r</m> by <xref ref="mtest"/>.
-      This proves b).
+      This proves (b).
     </p>
     <p>
       Finally, if <m>|z-z_0| > R</m> then there exists <m>r \notin

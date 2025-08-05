@@ -86,7 +86,7 @@
         let <m>N := \frac L { |c|^2 \epsilon } + \left| \frac d c
         \right|</m>. 
         Then <m>|z| > N</m> implies, with the reverse triangle inequality
-        (<xref ref="cor_triangleineq"/><xref ref="revtrianineq"/>), 
+        (<xref ref="cor_triangleineq"/>(<xref text="local" ref="revtrianineq"/>)), 
         that
         <me>
           |cz+d| \ \ge \ \bigl| |c||z| - |d| \bigr| \ \ge \ |c||z| -

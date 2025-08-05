@@ -242,7 +242,7 @@
       </p>
     </statement>
     <proof>
-      <p>We will prove <xref ref="limitsadd"/> of the proposition.
+      <p>We will prove (<xref text="local" ref="limitsadd"/>).
       Assume that <m>c \ne 0</m>
       (otherwise there is nothing to prove),
       and let <m>L = \lim_{ z \to z_0 } f(z)</m> and <m>M = \lim_{ z

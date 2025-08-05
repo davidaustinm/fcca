@@ -398,7 +398,7 @@
   <p>
     <xref ref="cauchyformula3"/>
     combined with our often-used
-    <xref ref="intprop"/> <xref ref="int4"></xref>
+    <xref ref="intprop"/>(<xref text="local" ref="int4"></xref>)
     gives an inequality which is often called
     <em>Cauchy's Estimate</em>:
     <idx><h>Cauchy's estimate</h></idx>
@@ -419,7 +419,7 @@
     <p>
       Let <m>r\lt R</m>.
       By <xref ref="cauchyformula3"/>
-      and <xref ref="intprop"/> <xref ref="int4"></xref>,
+      and <xref ref="intprop"/>(<xref text="local" ref="int4"></xref>),
       <md>
         <mrow>\left| f^{(k)} (w) \right| \ \amp = \ \left| \frac{k!}{2
         \pi i} \int_{ C[w,r] } \frac{ f(z) }{ (z-w)^{k+1} } \,

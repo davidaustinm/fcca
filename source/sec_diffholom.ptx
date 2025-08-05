@@ -234,6 +234,8 @@
       </p>
     </statement>
     <proof>
+  <p>We give a sample proof (b):
+  </p>
       <md>
         <mrow>
           \bigl( f(z) g(z) \bigr)'
@@ -245,8 +247,10 @@
           \right) + \left( f(z+h) - f(z) \right) g(z) }{ h }
         </mrow>
         <mrow>
-          \amp \ = \ \lim_{ h \to 0 } f(z+h) \frac{ g(z+h) - g(z) } h +
-          \lim_{ h \to 0 } \frac{ f(z+h) - f(z) } h g(z)
+          \amp \ = \ \lim_{ h \to 0 } f(z+h) \frac{ g(z+h) - g(z) } h 
+        </mrow>
+        <mrow>
+          \amp \qquad + \lim_{ h \to 0 } \frac{ f(z+h) - f(z) } h g(z)
         </mrow>
         <mrow>
           \amp \ = \ f(z) \, g'(z) + f'(z) \, g(z) \,
@@ -255,9 +259,9 @@
         <p>
           Note that we have used the definition of the derivative and
           <xref ref="limits">Proposition</xref>
-          <xref ref="limitsadd"/>
+          (<xref text="local" ref="limitsadd"/>)
           &amp; 
-          <xref ref="limitsmultiply"/>
+          (<xref text="local" ref="limitsmultiply"/>)
           (the addition and multiplication rules for limits).
         </p>
     </proof>

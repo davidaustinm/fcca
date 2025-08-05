@@ -77,7 +77,7 @@
         we compute the integral of the function <m>f: \C \to \C</m>
         given by <m>f(z) = \zbar^2</m> over several paths from 0 to
         <m>1 + i</m>. 
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li>
             <p>
               Let <m>\gg</m> be the line segment from <m>0</m> to <m>1
@@ -287,7 +287,7 @@
         <m>f</m> and <m>g</m> are complex functions which are
         continuous on <m>\gg</m>, 
         and <m>c \in \C</m>.
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li xml:id="int1">
             <p>
               <m>\ds \int_\gg (f + c \, g) \ = \ \int_\gg f \, + \, c
@@ -331,19 +331,19 @@
     </statement>
   </proposition>
   <p>
-    The path <m>-\gg</m> defined in <xref ref="int2"/>
+    The path <m>-\gg</m> defined in (<xref text="local" ref="int2"/>)
     is the path that we obtain by traveling through <m>\gg</m> in the
     opposite direction. 
   </p>
   <proof>
     <p>
-      <xref ref="int1"></xref> follows directly from the definition of
+      (<xref text="local" ref="int1"></xref>) follows directly from the definition of
       the integral and <xref
       ref="thm_realintegralproperties">Theorem</xref>, 
       the analogous theorem from calculus.
     </p>
     <p>
-      <xref ref="int2"/> follows with the real change of
+      (<xref text="local" ref="int2"/>) follows with the real change of
       variables <m>s = a+b-t</m>: 
       <md>
         <mrow>
@@ -369,7 +369,7 @@
       </md>.
     </p>
     <p>
-      For <xref ref="int3"/>, we need a suitable parametrization
+      For (<xref text="local" ref="int3"/>), we need a suitable parametrization
       <m>\gg(t)</m> for <m>\gamma_1\gamma_2</m>. 
       If <m>\gamma_1</m> has domain <m>[a_1,b_1]</m> and
       <m>\gamma_2</m> has domain <m>[a_2,b_2]</m> then we can use
@@ -396,7 +396,7 @@
       <m>[b_1,b_1+b_2-a_2]</m> is a reparametrization of <m>\gg_2</m>.
     </p>
     <p>
-      For <xref ref="int4"/>, let <m>\phi = \left( \Arg \int_\gg f
+      For (<xref text="local" ref="int4"/>), let <m>\phi = \left( \Arg \int_\gg f
       \right)</m>. 
       Then <m>\int_\gg f = \left| \int_\gg f \right| e^{ i \phi }</m>
       and thus, 
@@ -432,13 +432,12 @@
         </me>,
         where <m>\gg</m> is any circle centered at <m>w \in \C</m>,
         oriented counter-clockwise.
-        Thus <xref ref="intprop"/> <xref ref="int2"/>
+        Thus <xref ref="intprop"/>(<xref text="local" ref="int2"/>)
         says that the analogous integral over a <em>clockwise</em>
         circle equals <m>- 2 \pi i</m>.
         Incidentally,
         the same example shows that the inequality in 
-        <xref ref="intprop"/>
-        <xref ref="int4"/> is sharp:
+        <xref ref="intprop"/>(<xref text="local" ref="int4"/>) is sharp:
         if <m>\gg</m> has radius <m>r</m>, then
         <me>
           2 \pi \ = \ \left| \int_{ \gg } \frac{\diff{z}}{z-w} \right| \

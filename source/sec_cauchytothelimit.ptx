@@ -102,7 +102,7 @@
         for any <m>R>0</m>.
         Let <m>d</m> be the degree of <m>p(z)</m> and <m>a_d</m> its
         leading coefficient. 
-        <xref ref="intprop"/> <xref ref="int4"/>
+        <xref ref="intprop"/>(<xref text="local" ref="int4"/>)
         and <xref ref="polynomialestimate"/> allow us to estimate,
         for sufficiently large <m>R</m>,
         <me>
@@ -193,7 +193,7 @@
         we apply <xref ref="cauchyformula2"/>
         with the circle <m>C[w,R]</m>;
         note that we can choose any <m>R>0</m> because <m>f</m> is entire.
-        By <xref ref="intprop"/> <xref ref="int4"/>,
+        By <xref ref="intprop"/>(<xref text="local" ref="int4"/>),
         <md>
           <mrow>
           \left| f'(w) \right| \ \amp = \ \left| \frac{1}{2 \pi i}
@@ -282,10 +282,9 @@
       <p>
         This holds for any <m>R>1</m>,
         and so we can take the limit as <m>R\to\infty</m>.
-        By <xref ref="intprop">Proposition</xref> <xref ref="int4"></xref>
+        By <xref ref="intprop">Proposition</xref>(<xref text="local" ref="int4"></xref>)
         and the reverse triangle inequality
-        (<xref ref="cor_triangleineq"/>
-        <xref ref="revtrianineq"/>),
+        (<xref ref="cor_triangleineq"/>(<xref text="local" ref="revtrianineq"/>)),
         <md>
           <mrow>
             \abs{\int_{ \gg_R } \frac{\diff{z}}{z^2+1}} \ \amp \le \
