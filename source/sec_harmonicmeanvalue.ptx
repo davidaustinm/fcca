@@ -108,11 +108,14 @@
         Now we split up the mean-value integral:
         <md>
           <mrow>u(w) \amp \ = \ \frac{1}{2 \pi} \int_0^{2 \pi} u \! \left(
-          w + r \, e^{it} \right) \diff{t}</mrow> 
+          w + r \, e^{it} \right) \diff{t}
+          </mrow> 
           <mrow>\amp \ = \ \frac 1 {2 \pi} \left( \int_0^{t_0} u \! \left(
           w + r \, e^{it} \right) \diff{t} + \int_{t_0}^{t_1} u \!
-          \left( w + r \, e^{it} \right) \diff{t} + \int_{t_1}^{2 \pi} u
-          \! \left( w + r \, e^{it} \right) \diff{t} \right)</mrow> 
+          \left( w + r \, e^{it} \right) \diff{t} \right.
+          </mrow> 
+          <mrow>\amp \qquad \qquad  + \left. \int_{t_1}^{2 \pi} u
+          \! \left( w + r \, e^{it} \right) \diff{t} \right) .</mrow> 
         </md>
       </p>
       <p>
@@ -198,7 +201,7 @@
     </men>
     where, as usual, <m>\partial G</m> denotes the boundary
     of <m>G</m>.
-    We'll exploit this in the next two corollaries.
+    We will exploit this in the next two corollaries.
     <idx><h>boundary</h></idx>
   </p>
   <corollary xml:id="harmoniczeroboundary">
@@ -265,13 +268,14 @@
     and it has a solution for all bounded simply-connected regions.
     If the region is the unit disk and <m>u</m> is a continuous
     function on the unit circle, define 
-    <me>
-      \hat u \! \left( e^{ i \phi } \right) \ := u \! \left( e^{ i
-      \phi } \right) \text{ and } \hat u \! \left( r \, e^{ i \phi }
-      \right) \ := \ \frac{ 1 }{ 2 \pi } \int_0^{ 2 \pi } u \! \left(
-      e^{ i t } \right) P_r(\phi - t) \, \diff{t} \text{ for } \  r\lt
-      1\, 
-    </me>,
+        <md>
+          <mrow>
+            \hat u \! \left( e^{ i \phi } \right) \ \amp := u \! \left( e^{ i \phi } \right) \quad \text{ and } 
+          </mrow> 
+          <mrow>
+            \hat u \! \left( r \, e^{ i \phi } \right) \ \amp := \ \frac{ 1 }{ 2 \pi } \int_0^{ 2 \pi } u \! \left( e^{ i t } \right) P_r(\phi - t) \, \diff{t} \quad \text{ for } \quad r\lt 1\, 
+          </mrow> 
+        </md>,
     where <m>P_r(\phi)</m> is the Poisson kernel
     which we introduced in <xref ref="ex_poissonkernel"/>.
     <idx><h>Poisson kernel</h></idx>
