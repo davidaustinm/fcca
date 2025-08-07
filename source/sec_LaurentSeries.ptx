@@ -395,9 +395,9 @@
         and <xref ref="ex_1_sinlaurent"/>,
         <md>
           <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \ = \ \left( 1 + z +
-          \frac 1 2 \, z^2 + \frac 1 6 \, z^3 + \cdots \right) \left(
+          \frac 1 2 \, z^2 + \cdots \right) \left(
           z^{ -1 } + \frac 1 6 \, z + \frac{ 7 }{ 360 } \, z^3 +
-          \frac{ 31 }{ 15120 } \, z^5 + \cdots \right)</mrow> 
+          \cdots \right)</mrow> 
           <mrow>\amp \ = \ z^{ -1 } + 1 + \frac 2 3 \, z + \cdots</mrow> 
         </md>
         and <xref ref="cor_firstresidue"/>
@@ -410,11 +410,15 @@
         and so we can compute the Laurent expansion of
         <m>\frac 1 { \sin(z) }</m> at <m>\pi</m> also via <xref
         ref="ex_1_sinlaurent">Example</xref>: 
-        <me>
-          \frac 1 { \sin(z) } \ = \ - \frac 1 { \sin(z-\pi) } \ = \
-          -(z-\pi)^{ -1 } - \frac 1 6 \, (z-\pi) - \frac{ 7 }{ 360 }
+        <md>
+          <mrow> 
+          \frac 1 { \sin(z) } \ \amp= \ - \frac 1 { \sin(z-\pi) } 
+          </mrow> 
+          <mrow> 
+          \amp = \ -(z-\pi)^{ -1 } - \frac 1 6 \, (z-\pi) - \frac{ 7 }{ 360 }
           \, (z-\pi)^3 - \cdots 
-        </me>
+          </mrow> 
+        </md>
       </p>
       <p>
         Adding <xref ref="ex_expatpi"/> to the mix yields

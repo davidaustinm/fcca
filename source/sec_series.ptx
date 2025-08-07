@@ -87,8 +87,8 @@
           \left(\frac1k-\frac1{k+1}\right)
           </mrow>
           <mrow>\amp \ = \
-          \lim_{n\to\infty}\left(1-\frac12+\frac12 -\frac13 +\frac13
-          -\frac14 + \dots + \frac1n-\frac1{n+1}\right)</mrow> 
+          \lim_{n\to\infty}\left(1-\frac12+\frac12 -\frac13 
+           + \dots + \frac1n-\frac1{n+1}\right)</mrow> 
           <mrow>\amp \ = \ \lim_{n\to\infty}\left(1-\frac1{n+1}\right) \ = \
           1 \, </mrow> 
         </md>.
@@ -409,7 +409,7 @@
         <fn xml:id="riemannzeta">
         The Riemann zeta function is the subject of the arguably most
         famous open problem in mathematics, 
-        the <em>\ix{Riemann hypothesis}</em>.
+        the <em>Riemann hypothesis</em>.
         It turns out that <m>\zeta(z)</m> can be extended to a
         function that is holomorphic on <m>\C \setminus \{ 1 \}</m>, 
         and the Riemann hypothesis asserts that the roots of this

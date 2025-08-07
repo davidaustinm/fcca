@@ -114,11 +114,16 @@
       </p>
       <p>
         Thus
-        <me>
-          \frac{ d }{ \diff{z} } \frac{ f(z) }{ \exp(z) } \ = \ \frac{ d
-          }{ \diff{z} } \left( f(z) \exp(-z) \right) \ = \ f'(z) \exp(-z)
-          - f(z) \exp(-z) \ = \ 0 \, 
-        </me>,
+        <md>
+          <mrow> 
+            \frac{ d }{ \diff{z} } \frac{ f(z) }{ \exp(z) }
+            \ \amp= \ \frac{ d }{ \diff{z} } \left( f(z) \exp(-z) \right)
+            \ = \ f'(z) \exp(-z) - f(z) \exp(-z)
+          </mrow> 
+          <mrow> 
+            \amp = \ 0 \, 
+          </mrow> 
+        </md>,
         and so, by <xref ref="derivative0"/>,
         <m>\frac{ f(z) }{ \exp(z) }</m> is constant.
         Evaluating at <m>z=0</m> gives that this constant is 1, and so

@@ -205,7 +205,7 @@
         though this needs a separate proof,
         as the domain of the functions in
         <xref ref="ex_nonuniformconv"/>
-        is the unit disk (<xref ref="fn_zn___0"/> b)).
+        is the unit disk (<xref ref="fn_zn___0"/>(b)).
       </p>
     </statement>
   </example>

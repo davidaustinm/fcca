@@ -108,6 +108,7 @@
         - z_0| \lt |w - z_0|</m>. 
       </p>
     </statement>
+  </proposition>
     <proof>
       <p>
         Let <m>r := |w - z_0|</m>.
@@ -135,7 +136,9 @@
       <xref ref="cor_comparisonseries"/>.
     </p>
     </proof>
-  </proposition>
+    <p>
+      With this preparation, we can now prove <xref ref="convergenceradius"/>.
+    </p>
   <proof>
     <p>
       Consider the set
@@ -204,7 +207,7 @@
       (by the contrapositive of <xref ref="absconvthm"/>)
       <m>\s |c_k| \, r^k</m> diverges, and so
       (by the contrapositive of <xref ref="prop_convergenceradius"/>)
-      <m>\s c_k ( z - z_0)^k</m> diverges, which finishes c).
+      <m>\s c_k ( z - z_0)^k</m> diverges, which finishes (c).
     </p>
   </proof>
   <corollary xml:id="cor_roottest">
