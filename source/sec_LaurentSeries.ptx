@@ -424,7 +424,7 @@
         Adding <xref ref="ex_expatpi"/> to the mix yields
         <md>
           <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \ = \ \left( e^\pi +
-          e^\pi (z-\pi) + \frac { e^\pi } 2 \, (z-\pi)^2 + \cdots
+          e^\pi (z-\pi) + \cdots
           \right) \left( -(z-\pi)^{ -1 } - \frac 1 6 \, (z-\pi) -
           \cdots \right)</mrow> 
           <mrow>\amp \ = \ {} -e^\pi (z-\pi)^{ -1 } - e^\pi - \frac 2 3
@@ -437,7 +437,7 @@
         for two chapters: 
         <me>
           \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \ = \ 2
-          \pi i \left( 1 - e^\pi \right) 
+          \pi i \left( 1 - e^\pi \right) \,
         </me>.
       </p>
     </statement>

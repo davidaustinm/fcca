@@ -92,7 +92,7 @@
         <me>
           g(z) = \begin{cases}\frac 1 { \sin(z) } - \frac 1 z \amp
           \text{ if }  z \ne 0 \, , \\ 0
-          \amp  \text{ if }  z=0 \, . \end{cases} 
+          \amp  \text{ if }  z=0 \end{cases} 
         </me>
         is holomorphic in <m>D[0,\pi]</m> and agrees with <m>f</m> on
         <m>\Dp[0,\pi]</m>.
@@ -211,8 +211,8 @@
             </me>
             and so
             <me>
-              f(z) \ = \ \sum_{k\ge0}c_{k+2} \, (z-z_0)^k \qquad \text{
-              for all }  z \in \Dp[z_0,R] \, 
+              f(z) \ = \ \sum_{k\ge0}c_{k+2} \, (z-z_0)^k \quad \text{
+              for all } \quad z \in \Dp[z_0,R] \, 
             </me>.
           </p>
           <p>
@@ -265,7 +265,7 @@
               <m>n>0</m>, and
               <me>
                 f(z) = \frac1{g(z)} = \frac1{(z-z_0)^n} \cdot \frac1{h(z)}
-                \text{ for all } \ z\in\Dp[z_0,R]\, 
+                \quad \text{ for all } \quad z\in\Dp[z_0,R]\, 
               </me>.
             </p>
             <p>
@@ -290,7 +290,7 @@
               Summarizing, <m>g</m> is holomorphic on
               <m>D[z_0,R]</m> and non-zero at <m>z_0</m>, <m>n>0</m>, and
               <me>
-                f(z) = \frac{g(z)}{(z-z_0)^n} \text{ for all } \
+                f(z) = \frac{g(z)}{(z-z_0)^n} \quad \text{ for all } \quad
                 z\in\Dp[z_0,R]\, 
               </me>.
             </p>
@@ -331,7 +331,7 @@
         <m>g: D[z_0,R] \to \C</m>, 
         such that <m>g(z_0) \ne 0</m> and
         <me>
-          f(z) \ = \ \frac{ g(z) }{ (z-z_0)^m } \qquad \text{ for all }
+          f(z) \ = \ \frac{ g(z) }{ (z-z_0)^m } \qquad \text{ for all } \quad
           z \in \Dp[z_0,R] \, 
         </me>.
       </p>
@@ -433,7 +433,7 @@
       </me>.
     </p>
     <p>
-      (<xref ref="singbasics"/> a) tells us that <m>g</m> has a
+      (<xref ref="singbasics"/>(a) tells us that <m>g</m> has a
       removable singularity at <m>z_0</m>.) Hence 
       <me>
         \lim_{z \to z_0} \left| \frac{ f(z) - w }{ z - z_0} \right| \ = \
@@ -441,7 +441,7 @@
       </me>
       and so the function <m>\frac{ f(z) - w }{ z - z_0}</m> has a
       pole at <m>z_0</m>. 
-      By <xref ref="singbasics"/> b),
+      By <xref ref="singbasics"/>(b),
       there is a positive integer <m>n</m> so that
       <me>
         \lim_{ z \to z_0 } (z-z_0)^{ n+1 } \frac{ f(z) - w }{ z - z_0}
@@ -568,8 +568,8 @@
         <m>f(z)=\frac{\sin(z)}{z^3}</m> is 2 because (by
         <xref ref="ex_sinpowerser"/>)
         <me>
-          f(z)\ = \\frac{\sin(z)}{z^3}\ = \\frac{z-\frac{z^3}{3!}+
-          \frac{z^5}{5!}-\cdots}{z^3}\ = \\frac{1}{z^2}-\frac{1}{3!}+
+          f(z)\ = \ \frac{\sin(z)}{z^3}\ = \ \frac{z-\frac{z^3}{3!}+
+          \frac{z^5}{5!}-\cdots}{z^3}\ = \ \frac{1}{z^2}-\frac{1}{3!}+
           \frac{z^2}{5!}-\cdots 
         </me>
         and the smallest power of <m>z</m> with nonzero coefficient in

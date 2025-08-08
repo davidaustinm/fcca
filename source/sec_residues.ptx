@@ -130,12 +130,12 @@
       <ol marker="(a) ">
         <li>
           <p>
-            This follows from <xref ref="singlaurent"/> a).
+            This follows from <xref ref="singlaurent"/>(a).
           </p>
         </li>
         <li>
           <p>
-            We know by <xref ref="singlaurent"/> b)
+            We know by <xref ref="singlaurent"/>(b)
             that the Laurent series at <m>z_0</m> looks like 
             <me>
               f(z) = \sum_{k \geq -n} c_k (z-z_0)^k

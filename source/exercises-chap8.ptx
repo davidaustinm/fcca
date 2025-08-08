@@ -208,7 +208,7 @@
           <mrow>Y \amp \ = \ \left\{ a \in G : \text{ there exists }  r
           \text{ such that }  f(z) \ne 0 \text{ for all }  z \in
           D[a,r] \setminus \{ a \} \right\} </mrow> 
-        </md>.
+        </md>
         in our proof of <xref ref="uniquenessfunction"/> are open.
       </p>
     </statement>
@@ -386,7 +386,7 @@
           Show that
           <me>
             \exp(z)\cos(z) \ = \
-            \frac12\left(\exp((1+i)z)+\exp((1-i)z)\right) 
+            \frac12\left(\exp((1+i)z)+\exp((1-i)z)\right) \,
           </me>.
         </p>
       </statement>
@@ -439,7 +439,7 @@
           <me>
             f(z) = \left\{ \begin{array}{cl} \tfrac{ \cos z - 1 }{
             z^2 } \amp  \mbox{ if }  z \not= 0 \, , \\ -
-            \tfrac{1}{2} \amp  \mbox{ if }  z = 0 \end{array}
+            \tfrac{1}{2} \amp  \mbox{ if }  z = 0 \, . \end{array}
             \right. 
           </me>
         </p>
@@ -592,7 +592,7 @@
         and that it has multiplicity<nbsp/><m>1</m>.
         Show that
         <me>
-          a\ = \\frac1{2\pi i}\int_\gamma\frac{z \, f'(z)}{f(z)}\,\diff{z}\,
+          a\ = \ \frac1{2\pi i}\int_\gamma\frac{z \, f'(z)}{f(z)}\,\diff{z}\,
         </me>.
       </p>
     </statement>

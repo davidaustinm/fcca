@@ -61,9 +61,8 @@
     Let's compute the logarithmic derivative of <m>f</m> and play the same remarkable cancellation game as above:
     <md>
       <mrow>\frac{ f'(z) }{ f(z) } \amp \ = \ \frac{n_1 (z - z_1)^{n_1-1}
-      (z - z_2)^{n_2} \cdots (z - z_j)^{n_j} g(z) + \dots + ( z - z_1
-      )^{n_1} \cdots ( z - z_j )^{n_j} g'(z) }{ ( z - z_1 )^{n_1}
-      \cdots ( z - z_j )^{n_j} g(z) } \nonumber</mrow> 
+       \cdots (z - z_j)^{n_j} \, g(z) + \cdots }{ ( z - z_1 )^{n_1}
+      \cdots ( z - z_j )^{n_j} \, g(z) } \nonumber</mrow> 
       <mrow xml:id="logderzeros" number="yes">\amp \ = \ \frac{ n_1 }{ z
       - z_1 } + \frac{ n_2 }{ z - z_2 } + \cdots + \frac{ n_j }{ z -
       z_j } + \frac{ g'(z) }{ g(z) } \, </mrow> 
@@ -234,10 +233,14 @@
         </fn> To see this,
         let <m>f(z) = z^5</m> and <m>g(z) = z^4 + z^3 + z^2 + z + 1</m>.
         Then for <m>z \in C[0,2]</m>
-        <me>
-          |g(z)| \ \le \ |z|^4 + |z|^3 + |z|^2 + |z| + 1 \ = \ 16 + 8 + 4
-          + 2 + 1 \ = \ 31 \ \lt  \ 32 \ = \ |z|^5 \ = \ |f(z)| \, 
-        </me>.
+        <md>
+          <mrow>
+          |g(z)| \ \amp \le \ |z|^4 + |z|^3 + |z|^2 + |z| + 1 \ = \ 16 + 8 + 4
+          + 2 + 1 \ = \ 31 
+          </mrow>
+          <mrow> \amp \lt  \ 32 \ = \ |z|^5 \ = \ |f(z)| \, 
+          </mrow>
+        </md>.
       </p>
       <p>
         So <m>g</m> and <m>f</m> satisfy the condition of the

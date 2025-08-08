@@ -28,6 +28,9 @@
       <institution>San Francisco State University</institution>
       -->
     </author>
+    <author>
+      <personname>Version 1.6</personname>
+    </author>
     <date>
       <today />
     </date>
@@ -159,6 +162,10 @@
     McCleary, Sharma Pallekonda, Joshua Palmatier, and Dmytro Savchuk
     for comments, suggestions, and additions after teaching from this
     book.
+    </p>
+
+    <p>
+    The <c>PreTeXt</c> conversion of our book was heavily supported by David Austin and Christina Safranski; we owe them much gratitude. David, in particular, provided the graphics (produced via <c>PreFigure</c>). 
     </p>
 
     <p>We thank Lon Mitchell for his initiative and support for the print
