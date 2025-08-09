@@ -180,7 +180,15 @@
       </p>
     </statement>
   </example>
-
+    <sage>
+      <input>
+        f(z)=z^2
+        diff(f)
+      </input>
+      <output>
+        z |--> 2*z
+      </output>
+    </sage>
   <p>
     The basic properties for derivatives are similar to those we know
     from real calculus.
@@ -321,6 +329,15 @@
     </p>
   </proof>
 
+  <p>
+    <c>SageMath</c> allows you to draw images behind complex functions.
+  </p>
+    <sage>
+      <input>
+        f(z) = 1/(1+z^2)
+        complex_plot(f, (-5,5), (-5, 5))
+      </input>
+    </sage>
   <p>
     We end this section with yet another differentiation rule,
     that for inverse functions.

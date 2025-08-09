@@ -34,6 +34,5 @@
   <xi:include  href="sec_infsums.ptx"/>
   <xi:include  href="sec_binomialcoeff.ptx"/>
   <xi:include  href="sec_fibonacci.ptx"/>
-  <xi:include  href="sec_coinexchange.ptx"/>
   <xi:include  href="sec_dedekindsums.ptx"/>
 </chapter>

@@ -14,7 +14,7 @@
       f(z) \ := \ \cot (\pi az) \cot (\pi bz) \cot (\pi z) \,
     </me>.
   </p>
-  <ol marker="1. ">
+  <ol marker="(1)">
     <li>
       <p>
         Choose an <m>\epsilon > 0</m> such that the rectangular path

@@ -129,7 +129,15 @@
       </p>
     </statement>
   </example>
-
+    <sage>
+      <input>
+        f(z) = sin(z)/z
+        f.limit(z=0)
+      </input>
+      <output>
+        z |--> 1
+      </output>
+    </sage>
   <p>
     Just as in the real case, the limit <m>w_0</m> is unique if it
     exists (see <xref ref="ex_limitunique"/>).  It is often

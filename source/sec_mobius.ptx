@@ -94,6 +94,12 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+        f(z) = (z-1)/(i*z+i)
+        complex_plot(f, (-5,5), (-5, 5))
+      </input>
+    </sage>
   <proof>
     <p>
       We first prove that <m>f</m> is one-to-one.

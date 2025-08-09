@@ -63,6 +63,14 @@
       </p>
     </statement>
   </definition>
+    <sage>
+      <input>
+        abs(3+2*i)
+      </input>
+      <output>
+        sqrt(13)
+      </output>
+    </sage>
   <p>
     A given complex number <m>z = x+iy</m> has infinitely many
     possible arguments. 
@@ -79,6 +87,25 @@
     the arguments of <m>z</m> all differ by a multiple of <m>2\pi</m>,
     just as we saw for the example <m>z = 1</m>.
   </p>
+  <p>
+    <c>SageMath</c> returns the argument in the range <m>(-\pi, \pi]</m>.
+  </p>
+    <sage>
+      <input>
+        arg(-1)
+      </input>
+      <output> 
+        pi
+      </output>
+    </sage>
+    <sage>
+      <input>
+        arg(-1-.00001*i)
+      </input>
+      <output> 
+        -3.14158265358979
+      </output>
+    </sage>
   <p>
     The absolute value of the difference of two vectors has a nice
     geometric interpretation: 
@@ -161,11 +188,11 @@
       \, r_2 \sin \phi_2 \right)</mrow> 
       <mrow>\amp \qquad \ = \ ( r_1 r_2 \cos \phi_1 \cos \phi_2 - r_1 r_2
       \sin \phi_1 \sin \phi_2 ) </mrow>
-      <mrow> \amp \qquad\qquad + i ( r_1 r_2 \cos \phi_1 \sin \phi_2
+      <mrow> \amp \qquad\qquad {} + i ( r_1 r_2 \cos \phi_1 \sin \phi_2
       + r_1 r_2 \sin \phi_1 \cos \phi_2 )</mrow> 
       <mrow>\amp \qquad \ = \ r_1 r_2 \bigl( ( \cos \phi_1 \cos \phi_2 -
       \sin \phi_1 \sin \phi_2 )</mrow>
-      <mrow> \amp \qquad \qquad + i ( \cos \phi_1 \sin \phi_2 + \sin
+      <mrow> \amp \qquad \qquad {} + i ( \cos \phi_1 \sin \phi_2 + \sin
       \phi_1 \cos \phi_2 ) \bigr)</mrow> 
       <mrow>\amp \qquad \ = \ r_1 r_2 \bigl( \cos ( \phi_1 + \phi_2 ) + i
       \sin ( \phi_1 + \phi_2 ) \bigr) \, </mrow> 
@@ -202,6 +229,7 @@
     <me>
       e^{ i \phi } \ := \ \cos \phi + i \sin \phi \,
     </me>.
+    <xref ref="fig_rootsof1"/> shows three examples.
   </p>
   <figure xml:id="fig_rootsof1">
     <caption>Three sample complex numbers of the form <m>e^{ i \phi }</m>.</caption>
@@ -212,8 +240,15 @@
       </prefigure>
     </image>
   </figure>
+    <sage>
+      <input>
+        e^(pi*i)
+      </input>
+      <output>
+        -1
+      </output>
+    </sage>
   <p>
-    <xref ref="fig_rootsof1"/> shows three examples.
     At this point,
     this exponential notation is indeed purely a notation.
     <fn xml:id="fn_eulerformula">
@@ -338,6 +373,15 @@
       </p>
     </statement>
   </example>
+  <p>
+    <c>SageMath</c> can picture roots of unity:
+  </p>
+    <sage>
+      <input>
+        pts = [e^(I*(theta)) for theta in srange(0, 2*pi, pi/8)]
+        list_plot([(real(p),imag(p)) for p in pts])
+      </input>
+    </sage>
   <p>
     With our new notation, the sentence
     <q>the complex number <m>x+iy</m> has absolute value <m>r</m> and

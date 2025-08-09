@@ -356,4 +356,12 @@
       \cos z \, 
     </me>.
   </p>
+    <sage>
+      <input>
+        sin(2*i)
+      </input>
+      <output>
+        I*sinh(2)
+      </output>
+    </sage>
 </section>

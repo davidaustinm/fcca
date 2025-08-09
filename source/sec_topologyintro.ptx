@@ -314,7 +314,7 @@
     the path <m>\gg_1</m> in <xref ref="fig_curves"/> is
     different from 
     <me>
-      \gg_3(t) = -2 + 2 \, e^{ -it } , \ 0 \le t \le \tfrac{ 3 \pi }{ 2 } \,
+      \gg_3(t) = -2 + 2 \, e^{ -it } , \qquad 0 \le t \le \tfrac{ 3 \pi }{ 2 } \,
     </me>,
     even though both <m>\gg_1</m> and <m>\gg_3</m> yield the same picture:
     <m>\gg_1</m> features a counter-clockwise orientation,

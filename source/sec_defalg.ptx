@@ -120,13 +120,11 @@
     that <m>(\C,+)</m> is an <em>Abelian group </em>
     with <em>identity</em>
     <m>(0,0)</m>;
-    equations <xref ref="eq-firstmult"/><ndash/><xref
-    ref="eq-lastmult"/> say that 
+    equations <xref ref="eq-firstmult"/><ndash/><xref ref="eq-lastmult"/> say that 
     <m>\left( \C \setminus \{(0,0)\},\cdot \right)</m> is an Abelian
     group with identity <m>(1,0)</m>.
     <idx><h>group</h></idx>
     <idx><h>identity</h></idx>
-
   </p>
   <p>
     The proof of <xref ref="alg">Proposition</xref>
@@ -183,6 +181,41 @@
     are coherent with the usual real arithmetic rules if we think of
     complex numbers as given in the form <m>x+iy</m>. 
   </p>
+  <p>
+    The open-source mathematics software
+      <url href="https://www.sagemath.org/">
+        SageMath
+      </url> 
+     can handle complex numbers and functions; we will provide sample code throughout this book to get you started.
+<idx><h>SageMath</h></idx>
+  </p>
+    <sage>
+      <input>
+        3+2*i + 1-i 
+      </input>
+      <output>
+        I + 4
+      </output>
+    </sage>
+    <sage>
+      <input>
+        (3+2*i) * (1-i) 
+      </input>
+      <output>
+        -I + 5
+      </output>
+    </sage>
+  <p>
+    The second complex number in <xref ref="eq-lastmult"/> is the (multiplicative) inverse of <m>x+iy</m>.
+  </p>
+    <sage>
+      <input>
+        1/(3+2*i)
+      </input>
+      <output>
+        -2/13*I + 3/13
+      </output>
+    </sage>
   <definition>
     <statement>
       <p>
@@ -198,8 +231,24 @@
       </p>
     </statement>
   </definition>
+    <sage>
+      <input>
+        real((3+2*i)^5)
+      </input>
+      <output>
+        -597
+      </output>
+    </sage>
+    <sage>
+      <input>
+        imaginary((3+2*i)^5)
+      </input>
+      <output>
+        122
+      </output>
+    </sage>
   <p>
-    The identity <xref ref="i_2_-1"/> then reads
+    The identity <xref ref="i_2_-1"/> now reads
     <me>
       i^2 = -1 \,
     </me>.

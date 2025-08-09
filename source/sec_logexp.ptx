@@ -100,6 +100,25 @@
     </statement>
   </example>
   <p>
+    <c>SageMath</c> computes <q>our</q> principal logarithm.
+  </p>
+    <sage>
+      <input>
+        real(log(1-i))
+      </input>
+      <output>
+        log(sqrt(2))
+      </output>
+    </sage>
+    <sage>
+      <input>
+        imaginary(log(1-i))
+      </input>
+      <output>
+        -1/4*pi
+      </output>
+    </sage>
+  <p>
     The principal logarithm is not continuous on the negative part of
     the real line, 
     and so <m>\Log</m> is a branch of the logarithm on <m>\C \setminus
@@ -287,4 +306,20 @@
     Using a different branch of logarithm in the definition of
     <m>a^b</m> can easily lead to <m>e^z \ne \exp(z)</m>. 
   </p>
+    <sage>
+      <input>
+        real(i^i)
+      </input>
+      <output>
+        e^(-1/2*pi)
+      </output>
+    </sage>
+    <sage>
+      <input>
+        imaginary(i^i)
+      </input>
+      <output>
+        0
+      </output>
+    </sage>
 </section>

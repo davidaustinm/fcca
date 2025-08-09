@@ -9,7 +9,7 @@
     (-1)^k }{k^2}</m>. 
     We hope the idea of how to compute such sums in general will become clear.
   </p>
-  <ol marker="1. ">
+  <ol marker="(1)">
     <li>
       <p>
         Consider the function <m>f(z) = \frac{ \pi \cot (\pi z) }{ z^2

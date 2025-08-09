@@ -38,6 +38,14 @@
       </p>
     </statement>
   </definition>
+    <sage>
+      <input>
+        conjugate(3+2*i)
+      </input>
+      <output>
+        -2*I + 3
+      </output>
+    </sage>
   <p>
     Geometrically,
     conjugating <m>z</m> means reflecting the vector corresponding to
@@ -177,15 +185,15 @@
       We make extensive use of <xref ref="conjugation"/>:
       <md>
         <mrow>
-          \left| z_1 + z_2 \right|^2 \amp = \ \left( z_1 + z_2
+          \left| z_1 + z_2 \right|^2 \ \amp = \ \left( z_1 + z_2
           \right) \o{ \left( z_1 + z_2 \right) }
         </mrow>
         <mrow>
-          \amp \ = \ \left( z_1 + z_2
+          \amp = \ \left( z_1 + z_2
           \right) \left( \o{z_1} + \o{z_2} \right)
         </mrow>
         <mrow>
-          \amp \ = \ z_1 \o{z_1} + z_1
+          \amp = \ z_1 \o{z_1} + z_1
           \o{z_2} + z_2 \o{z_1} + z_2 \o{z_2}
         </mrow> 
         <mrow>
@@ -193,7 +201,7 @@
           } + \left| z_2 \right|^2
         </mrow>
         <mrow>
-          \amp \ = \ \left| z_1 \right|^2 + 2 \Re
+          \amp = \ \left| z_1 \right|^2 + 2 \Re
           \left( z_1 \o{z_2} \right) + \left| z_2 \right|^2
         </mrow>
         <mrow>
@@ -201,12 +209,12 @@
           \right| + \left| z_2 \right|^2
         </mrow>
         <mrow>
-          \amp \ = \ \left| z_1 \right|^2 + 2
+          \amp = \ \left| z_1 \right|^2 + 2
           \left| z_1 \right| \left| \o{z_2} \right| + \left| z_2
           \right|^2
         </mrow>
         <mrow>
-          \amp \ = \ \left| z_1 \right|^2 + 2 \left| z_1 \right|
+          \amp = \ \left| z_1 \right|^2 + 2 \left| z_1 \right|
           \left| z_2 \right| + \left| z_2 \right|^2
         </mrow>
         <mrow>

@@ -17,7 +17,7 @@
     <m>\binom n k</m> is the coefficient of <m>z^k</m> in <m>(z+1)^n</m>.
     You will derive two sample identities in the course of the
     exercises below. 
-    <ol marker="1. ">
+    <ol marker="(1)">
       <li>
         <p>
           Convince yourself that
@@ -51,13 +51,13 @@
       </li>
       <li>
         <p>
-          Keeping <m>x</m> and <m>\gg</m> from <xref ref="unifc"/>,
+          Keeping <m>x</m> and <m>\gg</m> from <xref text="local" ref="unifc"/>,
           convince yourself that
           <me>
             \s \binom{2k}{k} x^k \ = \ \frac 1 {2 \pi i} \s \int_\gamma
             \frac{ (z+1)^{2k} }{ z^{k+1} } \, x^k \, \diff{z} \, 
           </me>,
-          Use <xref ref="unifc"/> to interchange summation and integral,
+          Use (<xref text="local" ref="unifc"/>) to interchange summation and integral,
           and use the Residue <xref ref="residuethm"/> to evaluate the
           integral, 
           giving an identity for <m>\s \binom{2k}{k} x^k</m>.

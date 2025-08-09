@@ -18,7 +18,7 @@
   </p>
   <p>
     Let <m>F(z) = \s f_k \, z^k</m>.
-    <ol marker="1. ">
+    <ol marker="(1)">
       <li>
         <p>
           Show that <m>F</m> has a positive radius of convergence.
