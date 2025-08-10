@@ -55,6 +55,37 @@
       </li>
       <li>
         <p>
+         Your identity should involve the <em>golden ratio</em> <m>\frac{ 1 + \sqrt 5 }{ 2 }</m>. Explain what is going on in the output of the following <c>SageMath</c> prompt:
+        </p>
+    <sage>
+      <input>
+        [n(golden_ratio^j/sqrt(5)) for j in range(1,20)]
+      </input>
+      <output>
+        [0.723606797749979,
+         1.17082039324994,
+         1.89442719099992,
+         3.06524758424985,
+         4.95967477524977,
+         8.02492235949962,
+         12.9845971347494,
+         21.0095194942490,
+         33.9941166289984,
+         55.0036361232474,
+         88.9977527522459,
+         144.001388875493,
+         232.999141627739,
+         377.000530503232,
+         609.999672130972,
+         987.000202634204,
+         1596.99987476518,
+         2584.00007739938,
+         4180.99995216456]
+      </output>
+    </sage>
+      </li>
+      <li>
+        <p>
           Generalize to other sequences defined by recurrence relations,
           e.g., the <em>Tribonacci numbers
             <idx><h>Tribonacci numbers</h></idx>
