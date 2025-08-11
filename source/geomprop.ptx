@@ -379,7 +379,7 @@
     <sage>
       <input>
         pts = [e^(I*(theta)) for theta in srange(0, 2*pi, pi/8)]
-        list_plot([(real(p),imag(p)) for p in pts])
+        list_plot([(real(p),imag(p)) for p in pts], aspect_ratio=1)
       </input>
     </sage>
   <p>

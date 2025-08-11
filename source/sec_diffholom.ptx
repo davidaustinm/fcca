@@ -330,7 +330,7 @@
   </proof>
 
   <p>
-    <c>SageMath</c> allows you to draw images behind complex functions.
+    <c>SageMath</c> allows you to draw images behind complex functions. Try to explain what's behind this picture:
   </p>
     <sage>
       <input>

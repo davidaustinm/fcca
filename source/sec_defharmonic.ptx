@@ -256,6 +256,28 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+        var('x')
+        var('y')
+        u = x*y
+        diff(u,x) - i*diff(u,y)
+      </input>
+      <output>
+        -I*x + y
+      </output>
+    </sage>
+    <sage>
+      <input>
+        var('z')
+        g = -i*z
+        h = integral(g,z)
+        imaginary(h)
+      </input>
+      <output>
+        1/2*imag_part(z)^2 - 1/2*real_part(z)^2
+      </output>
+    </sage>
   <p>
     We can give a more practical machinery for computing harmonic conjugates,
     which only depends on computing certain (calculus) integrals;
