@@ -152,6 +152,17 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+      var('t')
+      gamma = t + i*t
+      f(z) = conjugate(z)^2
+      integral(f.subs(z=gamma) * diff(gamma, t), t, 0, 1)
+      </input>
+      <output>
+        z |--> -2/3*I + 2/3
+      </output>
+    </sage>
   <p>
     It is apparent but nevertheless noteworthy that these integrals
     evaluate to different results; 
@@ -270,6 +281,16 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+      var('t')
+      gamma = e^(i*t)
+      integral(abs(diff(gamma,t)), t, 0, 2*pi)
+      </input>
+      <output>
+        2*pi
+      </output>
+    </sage>
   <p>
     Now we observe some basic facts about how the line integral
     behaves with respect to function addition, 

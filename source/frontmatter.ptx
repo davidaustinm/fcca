@@ -13,8 +13,6 @@
     </author>
     <author>
       <personname>Gerald Marchesi</personname>
-      <department>Department of Mathematical Sciences</department>
-      <institution>Binghamton University (SUNY)</institution>
     </author>
     <author>
       <personname>Dennis Pixton</personname>
@@ -93,6 +91,9 @@
   <preface>
     <title>About the Authors</title>
     
+    <p><em>David Austin</em> (illustrations) is a professor of Mathematics at Grand Valley State University. He is the author of the open-access textbook <em>Understanding Linear Algebra</em> and he initiated and maintains <c>PreFigure</c>, an authoring system for creating accessible mathematical diagrams for including in scholarly documents. 
+    </p>
+    
     <p><em>Matthias Beck</em> is a professor in the Mathematics
     Department at San Francisco State University. His research interests
     are in geometric combinatorics and analytic number theory. He is the
@@ -105,7 +106,7 @@
     Geometric Combinatorics</em> (with Raman Sanyal, AMS 2018).
     </p>
     
-    <p> <em>Gerald Marchesi</em> is a lecturer in the Department of
+    <p> <em>Gerald Marchesi</em> was a lecturer faculty in the Department of
     Mathematical Sciences at Binghamton University (SUNY).
     </p>
     
@@ -165,12 +166,12 @@
     </p>
 
     <p>
-    The <c>PreTeXt</c> conversion of our book was heavily supported by David Austin and Christina Safranski; we owe them much gratitude. David, in particular, provided the graphics (produced via <c>PreFigure</c>). 
+    The <url href="https://pretextbook.org/">PreTeXt</url> conversion of our book was heavily supported by David Austin and Christina Safranski; we owe them much gratitude. David, in particular, provided the graphics (produced via <url href="https://prefigure.org/">PreFigure</url>). 
     </p>
 
     <p>We thank Lon Mitchell for his initiative and support for the print
     version of our book with Orthogonal Publishing, and Bob Chaffer for
-    allowing us to feature his art on the book's cover (print version).
+    allowing us to feature his art on the book's cover.
     </p>
     
     <p>We are grateful to the American Institute of Mathematics for

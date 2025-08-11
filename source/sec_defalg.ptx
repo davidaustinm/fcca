@@ -187,6 +187,9 @@
         SageMath
       </url> 
      can handle complex numbers and functions; we will provide sample code throughout this book to get you started.
+     <fn>
+       In particular for readers of the print version of this book, you can execute sage commands, e.g., via the <url href="https://sagecell.sagemath.org/">SageMathCell</url>.
+     </fn>
 <idx><h>SageMath</h></idx>
   </p>
     <sage>

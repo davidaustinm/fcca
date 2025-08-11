@@ -162,6 +162,15 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+        p = 2*x^4 + 5*x^2 + 3
+        p.roots(multiplicities=False)
+      </input>
+      <output>
+        [-I, I, -1/2*I*sqrt(3)*sqrt(2), 1/2*I*sqrt(3)*sqrt(2)]
+      </output>
+    </sage>
   <p>
     Another powerful consequence of
     <xref ref="cauchyformula2"/> is the following result, 
