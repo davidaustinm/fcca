@@ -72,6 +72,15 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+        var('n')
+        limit(i^n/n, n=oo)
+      </input>
+      <output>
+        0
+      </output>
+    </sage>
   <p>
     To prove that a sequence <m>(a_n)</m> is divergent,
     we have to show the negation of the statement that defines
@@ -118,6 +127,15 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+        var('n')
+        limit(i^n, n=oo)
+      </input>
+      <output>
+        ind
+      </output>
+    </sage>
   <p>
     The following limit laws are the cousins of the identities in
     <xref ref="limits"/>

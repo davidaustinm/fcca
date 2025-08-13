@@ -131,6 +131,16 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+        var('k')
+        var('z')
+        sum(z^k/factorial(k),k,0, +oo)
+      </input>
+      <output>
+        e^z
+      </output>
+    </sage>
   <example xml:id="ex_sinpowerser">
     <statement>
       <p>
@@ -160,6 +170,15 @@
       </p>
     </statement>
   </example>
+    <sage>
+      <input>
+        var('z')
+        taylor(sin(z),z,0,10)
+      </input>
+      <output>
+        1/362880*z^9 - 1/5040*z^7 + 1/120*z^5 - 1/6*z^3 + z
+      </output>
+    </sage>
   <p>
     Naturally, <xref ref="powerderivative"/>
     can be repeatedly applied to <m>f'</m>,

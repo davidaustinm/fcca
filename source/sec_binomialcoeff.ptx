@@ -3,8 +3,8 @@
 <section xml:id="sec_binomialcoeff">
   <title>Binomial Coefficients</title>
   <p>
-    The binomial coefficient
-    <m>\binom n k</m> is a natural candidate for being explored
+    The <em>binomial coefficient</em>
+    <m>\binom n k = \frac{ 1 }{ k! } n(n-1)(n-2) \cdots (n-k+1)</m> is a natural candidate for being explored
     analytically, 
     as the <em>binomial theorem</em>
     <me>
@@ -26,7 +26,7 @@
             (z+1)^{n} }{ z^{k+1} } \, \diff{z} 
           </me>
           where <m>\gamma</m> is any simple closed piecewise smooth
-          path such that 0 is inside <m>\gamma</m>. 
+          path such that 0 is inside<nbsp/><m>\gamma</m>. 
         </p>
       </li>
       <li>

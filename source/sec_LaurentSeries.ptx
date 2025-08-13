@@ -174,6 +174,30 @@
     </statement>
   </example>
   <p>
+    <c>SageMath</c> has a hard time with Laurent series with infinitely many negative exponents:
+  </p>
+    <sage>
+      <input>
+        var('z')
+        taylor(exp(1/z),z,0,20)
+      </input>
+      <output>
+        e^(1/z)
+      </output>
+    </sage>
+  <p>
+    But it can handle finitely many negative exponents:
+  </p>
+    <sage>
+      <input>
+        var('z')
+        taylor(1/sin(z),z,0,10)
+      </input>
+      <output>
+        73/3421440*z^9 + 127/604800*z^7 + 31/15120*z^5 + 7/360*z^3 + 1/6*z + 1/z
+      </output>
+    </sage>
+  <p>
     <xref ref="thm_powerholomorphic"/>
     implies that a Laurent series represents a function that is
     holomorphic in its annulus of convergence. 

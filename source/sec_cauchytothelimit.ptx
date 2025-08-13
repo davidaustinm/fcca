@@ -164,6 +164,7 @@
   </example>
     <sage>
       <input>
+        var('x')
         p = 2*x^4 + 5*x^2 + 3
         p.roots(multiplicities=False)
       </input>
