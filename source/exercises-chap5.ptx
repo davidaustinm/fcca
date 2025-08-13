@@ -496,7 +496,7 @@
     </task>
     <task>
       <p>
-        Now suppose <m>\lim_{ z \to 0 } f\!\left(\frac{1}{z}\right)
+        Now suppose <m>\gg</m> is closed and <m>\lim_{ z \to 0 } f\!\left(\frac{1}{z}\right)
         \frac{1}{z^2} = L</m> is finite. 
         Let <m>H := \left\{ \frac 1 z : \, z \in G \setminus \{ 0 \}
         \right\}</m> and define the function <m>g: H \cup \{ 0 \} \to

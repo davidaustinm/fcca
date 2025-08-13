@@ -29,7 +29,7 @@
       </statement>
       <answer>
         <p>
-          <m>1 - i</m>
+          <m>1 - 3i</m>
         </p>
       </answer>
     </task>
@@ -65,7 +65,7 @@
       </statement>
       <answer>
         <p>
-          <m>-2 + 3i</m>
+          <m>-2 + 7i</m>
         </p>
       </answer>
     </task>
@@ -103,7 +103,7 @@
       </statement>
       <answer>
         <p>
-          <m>1</m>
+          <m>-1</m>
         </p>
       </answer>
     </task>
@@ -153,7 +153,7 @@
       </statement>
       <answer>
         <p>
-          <m>\sqrt{\frac{10}{11}}</m>,  <m>\frac{3}{11}( \sqrt{2} - 1 ) + \frac{i}{11}( \sqrt{2} + 9 )</m>
+          <m>\sqrt{\frac{10}{11}}</m>,  <m>\frac{3 + i}{\sqrt{2} - 3i}</m>
         </p>
       </answer>
     </task>
@@ -208,7 +208,7 @@
       </statement>
       <answer>
         <p>
-          <m>2 \sqrt 3 i\, e^{i \frac {5 \pi} 6}</m>
+          <m>2 \sqrt 3 \, e^{i \frac {5 \pi} 6}</m>
         </p>
       </answer>
     </task>

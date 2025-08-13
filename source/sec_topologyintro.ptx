@@ -296,7 +296,7 @@
       <figure xml:id="fig_curves">
         <caption>Two paths and their parametrizations; <m>\gg_1</m> is
         smooth and <m>\gg_2</m> is continuous and piecewise
-        smooth.</caption>
+        smooth (a term which we will define in <xref ref="sec_intdef"/>).</caption>
         <image width="70%">
           <prefigure xmlns="https://prefigure.org"
                      label="fig-paths">
