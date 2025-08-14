@@ -360,21 +360,6 @@
   </exercise>
   <exercise>
     <statement>
-      <p><idx><h>Jacobian</h></idx>
-        The <em>Jacobian   
-        </em> of a transformation <m>u=u(x,y)</m>,
-        <m>v=v(x,y)</m> is the determinant of the matrix
-        <me>
-          \displaystyle\begin{bmatrix}\fderiv ux\amp \fderiv uy\\ \fderiv vx \amp \fderiv vy \end{bmatrix} \,
-        </me>.
-      </p>
-      <p>
-        Show that if <m>f = u+iv</m> is holomorphic then the Jacobian equals <m>\abs{f'(z)}^2</m>.
-      </p>
-    </statement>
-  </exercise>
-  <exercise>
-    <statement>
       <p>
         Find the fixed points in <m>\Chat</m> of <m>f(z)=\frac{z^2-1}{2z+1}</m>.
       </p>

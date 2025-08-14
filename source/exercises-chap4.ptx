@@ -375,7 +375,7 @@
   <exercise>
     <introduction>
       <p>
-        Let <m>I(k) := \frac{1}{2\pi}\int_0^{2\pi} e^{ikt}\, \diff{t}</m>.
+        Let <m>\ds I(k) := \frac{1}{2\pi}\int_0^{2\pi} e^{ikt}\, \diff{t}</m>.
       </p>
     </introduction>
     <task>
@@ -403,7 +403,7 @@
   <exercise xml:id="ex_412">
     <statement>
       <p>
-        Compute <m>\int_{ C[0,2] } z^{\frac 1 2 } \,\diff{z} </m>.
+        Compute <m>\ds \int_{ C[0,2] } z^{\frac 1 2 } \,\diff{z} </m>.
       </p>
     </statement>
     <answer>

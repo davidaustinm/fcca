@@ -200,35 +200,35 @@
     <task>
       <statement>
         <p>
-          <m>\int_{ C[i-1,1] }\frac{\diff{z}}{z^4+4}</m>
+          <m>\ds \int_{ C[i-1,1] }\frac{\diff{z}}{z^4+4}</m>
         </p>
       </statement>
     </task>
     <task>
       <statement>
         <p>
-          <m>\int_{ C[i,2] }\frac{\diff{z}}{z(z^2+z-2)}</m>
+          <m>\ds \int_{ C[i,2] }\frac{\diff{z}}{z(z^2+z-2)}</m>
         </p>
       </statement>
     </task>
     <task>
       <statement>
         <p>
-          <m>\int_{ C[0,2] }\frac{\exp(z)}{z^3+z}<nbsp/>\diff{z}</m>
+          <m>\ds \int_{ C[0,2] }\frac{\exp(z)}{z^3+z}<nbsp/>\diff{z}</m>
         </p>
       </statement>
     </task>
     <task>
       <statement>
         <p>
-          <m>\int_{ C[0,1] }\frac{\diff{z}}{z^2\sin z}</m>
+          <m>\ds \int_{ C[0,1] }\frac{\diff{z}}{z^2\sin z}</m>
         </p>
       </statement>
     </task>
     <task>
       <statement>
         <p>
-          <m>\int_{ C[0,3] }\frac{\exp(z)}{(z+2)^2 \sin z} <nbsp/>
+          <m>\ds \int_{ C[0,3] }\frac{\exp(z)}{(z+2)^2 \sin z} <nbsp/>
           \diff{z}</m> 
         </p>
       </statement>
@@ -236,7 +236,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) \cos(z) }
+          <m>\ds \int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) \cos(z) }
           <nbsp/> \diff{z}</m> 
         </p>
       </statement>
@@ -351,7 +351,7 @@
   <exercise>
     <statement>
       <p>
-        Compute <m>\ds \int_{-\infty}^\infty \frac{ \cos(x) }{ 1+x^4 }
+        Compute <m>\ds \int_{-\infty}^\infty \frac{ \sin(x) }{ 1+x^4 }
         \, \diff{x} </m>. 
       </p>
     </statement>

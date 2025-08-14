@@ -12,7 +12,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_\Box\frac{\exp(z^2)}{z^3}\diff{z}</m>
+          <m>\ds \int_\Box\frac{\exp(z^2)}{z^3}\diff{z}</m>
         </p>
       </statement>
       <answer>
@@ -24,7 +24,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_\Box\frac{\exp(3z)}{(z-\pi i)^2}\diff{z}</m>
+          <m>\ds \int_\Box\frac{\exp(3z)}{(z-\pi i)^2}\diff{z}</m>
         </p>
       </statement>
       <answer>
@@ -36,7 +36,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_\Box\frac{\sin(2z)}{(z-\pi)^2}\diff{z}</m>
+          <m>\ds \int_\Box\frac{\sin(2z)}{(z-\pi)^2}\diff{z}</m>
         </p>
       </statement>
       <answer>
@@ -48,7 +48,7 @@
     <task>
       <statement>
         <p>
-          <m>\int_\Box\frac{\exp(z)\cos(z)}{(z-\pi)^3}\diff{z}</m>
+          <m>\ds \int_\Box\frac{\exp(z)\cos(z)}{(z-\pi)^3}\diff{z}</m>
         </p>
       </statement>
       <answer>

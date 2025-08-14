@@ -24,7 +24,7 @@
     </author>
 
     <edition>
-      Version 1.6 (August 2025)
+      1.6 (August 2025)
     </edition>
     <website>
       <url href="https://matthbeck.github.io/complex.html">
@@ -62,9 +62,9 @@
       <p><em>And what is the use of a book,'' thought Alice, ``without
       pictures or conversations? </em>
       </p>
-      <p>
-        Lewis Carroll in <em>Alice in Wonderland</em>
-      </p>
+      <attribution>
+        Lewis Carroll (<em>Alice in Wonderland</em>)
+      </attribution>
     </blockquote>
     
     
@@ -164,7 +164,7 @@
     
     <p>We thank our students who made many suggestions for and found
     errors in the text.  Special thanks go to Sheldon Axler, Collin
-    Bleak, Pierre-Alexandre Bliman, Matthew Brin, David Covert, Andrew Hwang, Manoj Keshari, John
+    Bleak, Pierre-Alexandre Bliman, Matthew Brin, David Covert, Andrew Hwang, Manoj Keshari, Jeff Knisley, John
     McCleary, Sharma Pallekonda, Joshua Palmatier, and Dmytro Savchuk
     for comments, suggestions, and additions after teaching from this
     book.

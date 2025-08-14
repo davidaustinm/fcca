@@ -343,7 +343,7 @@
   <exercise xml:id="ex_8_7">
     <statement>
       <p>
-        Find a Laurent series for <m>\ds \frac{z-2 }{ z+1 }</m>
+        Find a Laurent series for <m>\frac{z-2 }{ z+1 }</m>
         centered at <m>z=-1</m> and the region in which it converges. 
       </p>
     </statement>
@@ -356,7 +356,7 @@
     <statement>
       <p>
         Find the terms <m>c_nz^n</m> in the Laurent series for
-        <m>\ds \frac{ 1 }{ \sin^2(z) }</m> centered at <m>z=0</m>,
+        <m>\frac{ 1 }{ \sin^2(z) }</m> centered at <m>z=0</m>,
         for <m>-4\le n\le 4</m>.
       </p>
     </statement>
