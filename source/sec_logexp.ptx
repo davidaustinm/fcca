@@ -15,8 +15,6 @@
       \exp ( \fLog(z) ) \ = \ z \ = \ \fLog ( \exp z ) \,
     </men>.
     <idx><h>function</h><h>logarithmic</h></idx> 
-  </p>
-  <p>
     But because <m>\exp</m> is not one-to-one,
     this is too much to hope for.
     In fact, given a function <m>\fLog</m> that satisfies the first
@@ -151,8 +149,6 @@
         \amp \ = \ x + i \Arg ( e^{iy} )
       </mrow>
     </md>.
-  </p>
-  <p>
     The right-hand side is equal to <m>z=x+iy</m> if and only if <m>y
     \in (-\pi, \pi]</m>. 
     Something similar will happen with any other branch <m>\fLog</m>
@@ -189,8 +185,6 @@
     </me>.
     <idx><h>arg</h></idx>
     <idx><h>log</h></idx>
-  </p>
-  <p>
     Neither <m>\arg</m> nor <m>\log</m> is a function,
     yet <m>\exp ( \log z ) = z</m>.
     We invite you to check this thoroughly;
@@ -260,12 +254,27 @@
     explores what happens when we use the multi-valued <m>\log</m> in
     the definition of <m>a^b</m>. 
   </p>
+    <sage>
+      <input>
+        real(i^i)
+      </input>
+      <output>
+        e^(-1/2*pi)
+      </output>
+    </sage>
+    <sage>
+      <input>
+        imaginary(i^i)
+      </input>
+      <output>
+        0
+      </output>
+    </sage>
   <p>
     One last remark:
     it now makes sense to talk about the function <m>f(z) = e^z</m>,
     where <m>e</m>
-    is <em>Euler's
-    <fn>
+    is <em>Euler's<fn>
       Named after Leonard Euler (1707<ndash/>1783).
       Continuing our footnote on p.
       <xref ref="fn_eulerformula"/>
@@ -306,20 +315,4 @@
     Using a different branch of logarithm in the definition of
     <m>a^b</m> can easily lead to <m>e^z \ne \exp(z)</m>. 
   </p>
-    <sage>
-      <input>
-        real(i^i)
-      </input>
-      <output>
-        e^(-1/2*pi)
-      </output>
-    </sage>
-    <sage>
-      <input>
-        imaginary(i^i)
-      </input>
-      <output>
-        0
-      </output>
-    </sage>
 </section>

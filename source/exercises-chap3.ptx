@@ -455,7 +455,7 @@
     <statement>
       <p>
         Find the image of the following points under the stereographic
-        projection <m>\phi</m>: 
+        projection<nbsp/><m>\phi</m>: 
       </p>
       <p>
         <m>(0,0,-1), (0,0,1), (1,0,0), (0,1,0)</m>.
@@ -1105,7 +1105,7 @@
      <task>
       <statement>
         <p>
-          Is the right angle at the origin in <xref ref="ex_squaredimage1_partc" text="type-hybrid"/> preserved?
+          Is the right angle at the origin in (<xref ref="ex_squaredimage1_partc" text="local"/>) preserved?
               Is something wrong here?
         </p>
       </statement>

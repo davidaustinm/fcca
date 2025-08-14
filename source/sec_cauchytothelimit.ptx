@@ -4,7 +4,7 @@
          xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Taking Cauchy's Formulas to the Limit</title>
   <p>
-    Many beautiful applications of Cauchy's Integral Formulas
+    Several beautiful applications of Cauchy's Integral Formulas
     (such as <xref ref="cauchyformula"/>
     and <xref ref="cauchyformula2"/>)
     arise from considerations of the limiting behavior of the integral

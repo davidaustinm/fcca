@@ -73,7 +73,7 @@
         <em>does</em> exist. 
         For example, define
         <me>
-          f(z) = \frac{x^2y}{x^4+y^2}\text{ where }  z=x+iy\ne0\,
+          f(z) = \frac{x^2y}{x^4+y^2} \quad \text{ where } \quad z=x+iy\ne0\,
         </me>.
         Show that the limits of <m>f</m> at <m>0</m> along all
         straight lines through the origin exist and are equal, 

@@ -123,8 +123,6 @@
         \text{ and }  \qquad \fderiv fy \ = \ e^x \left( -\sin y + i \cos
         y \right) 
       </me>.
-    </p>
-    <p>
       They are continuous in <m>\C</m> and satisfy the
       Cauchy<ndash/>Riemann equation<nbsp/><xref ref="complexcr"/>: 
       <me>
@@ -347,8 +345,6 @@
       \frac{d}{\diff{z}} \sinh z \ = \ \cosh z \qquad \text{ and }
       \qquad \frac{d}{\diff{z}} \cosh z \ = \ \sinh z \, 
     </me>.
-  </p>
-  <p>
     Moreover, they are related to the trigonometric functions via
     <me>
       \sinh (iz) \ = \ i \sin z \qquad \text{ and }  \qquad \cosh (iz) \ = \
