@@ -242,7 +242,7 @@
     <task>
       <statement>
         <p>
-          <m>\gamma</m> is the line segment from <m>1</m> to <m>1</m>
+          <m>\gamma</m> is the line segment from <m>1</m> to <m>i</m>
         </p>
       </statement>
       <answer>
@@ -496,7 +496,7 @@
       </statement>
       <answer>
         <p>
-          <m>\ln(5) - \frac 1 2 \ln(17) + i ( \frac \pi 2 - Arg(4i+1) )</m>
+          <m>\ln(5) - \frac 1 2 \ln(17) + i ( \frac \pi 2 - \Arg(4i+1) )</m>
         </p>
       </answer>
     </task>
@@ -658,10 +658,8 @@
         <me>
           I(r) \ := \ \int_{ C[0,r] } \frac{ \diff{z} }{ z-a } \,
         </me>.
-      </p>
-      <p>
-        You should get different answers for <m>r\lt \abs a</m> and
-        <m>r>\abs a</m>. 
+        (You should get different answers for <m>r\lt \abs a</m> and
+        <m>r>\abs a</m>.) 
       </p>
     </statement>
     <hint>
@@ -729,8 +727,6 @@
           \frac 1 {2 \pi} \int_0^{ 2 \pi } \frac{ 1-r^2 }{ 1 - 2r
           \cos(\phi) + r^2 } \, \diff\phi \ = \ 1 \, 
         </me>.
-      </p>
-      <p>
         (The function <m>P_r(\phi) := \frac{ 1-r^2 }{ 1 - 2r
         \cos(\phi) + r^2 }</m> is the <em>Poisson kernel</em>
         <fn>
@@ -874,7 +870,7 @@
         Show that <m>\int_\gg f \ = \ \int_\sigma f</m> even though
         <m>\gg \not\sim_G \sigma</m> where <m>G = \C \setminus \{ \pm
         1 \}</m>, 
-        the region of holomorphicity of <m>f</m>.
+        the region of holomorphicity of<nbsp/><m>f</m>.
       </p>
     </statement>
   </exercise>

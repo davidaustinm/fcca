@@ -525,13 +525,13 @@
         What about <m>u(x,y) = \frac{ x^2 }{ x^2+y^2 }</m>?
       </p>
     </statement>
-    <answer>
-      <p>
-        Neither is defined at the origin, nor continuously extendable to
-        the origin, so neither is harmonic on all of <m>\C</m>. Away from the
-        origin, the first is harmonic, while the second is not.
-      </p>
-    </answer>
+<!--     <answer> -->
+<!--       <p> -->
+<!--         Neither is defined at the origin, nor continuously extendable to -->
+<!--         the origin, so neither is harmonic on all of <m>\C</m>. Away from the -->
+<!--         origin, the first is harmonic, while the second is not. -->
+<!--       </p> -->
+<!--     </answer> -->
   </exercise>
   <exercise>
     <introduction>

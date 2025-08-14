@@ -246,8 +246,7 @@
     </sage>
   <p>
     At this point,
-    this exponential notation is indeed purely a notation.
-    <fn xml:id="fn_eulerformula">
+    this exponential notation is indeed purely a notation.<fn xml:id="fn_eulerformula">
     In particular, while our notation
     <q>proves</q>
     <em>Euler's formula</em> <m>e^{ 2 \pi i } = 1</m>,
@@ -306,7 +305,7 @@
   <p>
     You are encouraged to prove them (see <xref
     ref="ex_easyexp"/>);
-    again we give a sample (f).
+    again we give a sample<nbsp/>(f).
   </p>
   <proof>
     <p>

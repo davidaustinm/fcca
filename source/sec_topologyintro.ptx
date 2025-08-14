@@ -54,12 +54,12 @@
     <xref ref="fig_circles"/> illustrates these definitions.
   </p>
   <p>
-    Next we need some terminology for talking about subsets of <m>\C</m>.
+    Next we need some terminology for talking about subsets of<nbsp/><m>\C</m>.
   </p>
   <definition>
     <statement>
       <p>
-        Suppose <m>G</m> is a subset of <m>\C</m>.
+        Suppose <m>G</m> is a subset of<nbsp/><m>\C</m>.
         <ol marker="(a) ">
           <li>
             <p>
@@ -249,10 +249,9 @@
         that is painted by the path and will often write this
         parametrization as <m>\gamma(t), \ a \le t \le b</m>.
         The path is <em>smooth</em>
-        if <m>\gg</m> is differentiable and the derivative <m>\gg'</m>
-        is continuous and nonzero.
         <idx><h>smooth</h></idx>
-        <fn>
+        if <m>\gg</m> is differentiable and the derivative <m>\gg'</m>
+        is continuous and nonzero.<fn>
         There is a subtlety here,
         because <m>\gg</m> is defined on a closed interval.
         For <m>\gg: [a,b] \to \C</m> to be smooth,

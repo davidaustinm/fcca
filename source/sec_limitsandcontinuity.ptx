@@ -123,8 +123,6 @@
           \left| z-i \right| \left| z+i \right| \ \lt  \ 3 \gd \ \lt
           \ \epsilon \, 
         </me>.
-      </p>
-      <p>
         This proves <m>\lim_{ z \to i } z^2 = -1</m>. 
       </p>
     </statement>

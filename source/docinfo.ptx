@@ -50,7 +50,7 @@
     \newcommand{\Dp}{\check{D}}
     \DeclareMathOperator{\length}{length}
     \DeclareMathOperator{\dist}{dist}
-    \DeclareMathOperator{\fLog}{\mathcal{Log}}
+    \DeclareMathOperator{\fLog}{\mathcal{L}\!og}
     \DeclareMathOperator{\fArg}{\mathcal{A}rg}
     \DeclareMathOperator{\Log}{Log}
     \DeclareMathOperator{\Arg}{Arg}

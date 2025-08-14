@@ -128,7 +128,7 @@
   <p>
     The proofs of these properties are straightforward (see <xref
     ref="ex_conjugation"/>);
-    once more we give a sample (b).
+    once more we give a sample<nbsp/>(b).
   </p>
   <proof>
     <p>
@@ -162,7 +162,7 @@
   <p>
     A famous geometric inequality
     (which holds, more generally,
-    for vectors in <m>\R^n</m>)
+    for vectors in<nbsp/><m>\R^n</m>)
     goes as follows.
   </p>
   <proposition xml:id="lem_triangleineq">
@@ -242,7 +242,7 @@
               The triangle inequality:
               <me>
                 \abs{\pm z_1\pm z_2} \le
-                \abs{z_1}+\abs{z_2}
+                \abs{z_1}+\abs{z_2} \,
               </me>.
             </p>
           </li>
@@ -251,7 +251,7 @@
               The reverse triangle inequality:
               <me>
                 \abs{\pm z_1\pm z_2} \ge \bigl|
-                \abs{z_1}-\abs{z_2} \bigr| <nbsp/>
+                \abs{z_1}-\abs{z_2} \bigr| \,
               </me>.
               <idx><h>reverse triangle inequality</h></idx>
               <idx><h>triangle inequality</h><h>reverse</h></idx> 
