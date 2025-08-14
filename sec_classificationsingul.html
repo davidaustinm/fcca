@@ -48,7 +48,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -106,23 +123,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.1';
+eBookConfig.runestone_version = '7.9.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.787a04695534ef1e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.014cb392a13bd045.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.b215b0da62d655bd.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="fcca" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://matthbeck.github.io/complex.html"><img src="external/images/cover.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="fcca.html"><span class="title">A First Course in Complex Analysis</span></a></h1>
 <p class="byline">Matthias Beck, Gerald Marchesi, Dennis Pixton, Lucas Sabalka</p>
-</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-3.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
@@ -141,7 +160,6 @@ eBookConfig.enable_chatcodes =  false;
 \def\JPicScale{0.7}
 \def\versionmonth{July \versionyear}
 \def\JPicScale{0.7}
-\renewcommand{\thechapter}{A}
 \def\JPicScale{0.7}
 \newcommand{\ix}[1]{#1\index{#1}}
 \def\JPicScale{0.7}
@@ -166,17 +184,18 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Dp}{\check{D}}
 \DeclareMathOperator{\length}{length}
 \DeclareMathOperator{\dist}{dist}
-\DeclareMathOperator{\fLog}{\mathcal{Log}}
+\DeclareMathOperator{\fLog}{\mathcal{L}\!og}
 \DeclareMathOperator{\fArg}{\mathcal{A}rg}
 \DeclareMathOperator{\Log}{Log}
 \DeclareMathOperator{\Arg}{Arg}
+\let\Im\relax
+\let\Re\relax
 \DeclareMathOperator{\Im}{Im}
 \DeclareMathOperator{\Re}{Re}
 \def\sz{\sum_{ k \in \Z }}
 \def\s{\sum_{k \geq 0}}
 \DeclareMathOperator{\Res}{Res}
 \renewcommand{\emptyset}{\varnothing}
-\renewcommand{\=}{ \ = \  }
 \newcommand{\Def}[1]{\textbf{#1}}
 \newcommand{\hint}[1]{(\emph{Hint}: #1)}
 \newcommand{\histremark}[1]{}
@@ -217,11 +236,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">About this book</span></a></div></li>
-<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">About the authors</span></a></div></li>
-<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">A Note to Instructors</span></a></div></li>
-<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">About This Book</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">About the Authors</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">A Note to Instructors</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-7.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -232,8 +251,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_geometricprops.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Geometric Properties</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_topologyintro.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Elementary Topology of the Plane</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chapter1-exercises.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_optionallab.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Optional Lab</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_optionallab-alt.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Optional Lab</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_optionallab-alt.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Optional Lab</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -318,8 +336,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_infsums.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Infinite Sums</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_binomialcoeff.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Binomial Coefficients</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_fibonacci.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Fibonacci Numbers</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_coinexchange.html" class="internal"><span class="codenumber">10.4</span> <span class="title">The Coin-Exchange Problem</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_dedekindsums.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Dedekind Sums</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_dedekindsums.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Dedekind Sums</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -332,7 +349,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_classificationsingul"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">9.1</span><span class="space"> </span><span class="title">Classification of Singularities</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Classification of Singularities</span>
 </h2>
 <div class="para logical" id="sec_classificationsingul-2">
 <div class="para">What are the differences among the functions <span class="process-math">\(\frac{ \exp(z) - 1
@@ -341,7 +358,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="displaymath process-math">
 \begin{equation*}
 \Dp[z_0, R] \ := \ \left\{ z \in \C : \, 0 \lt  |z-z_0| \lt  R
-\right\} \= D[z_0, R] \setminus \{ z_0 \} \, \text{.}
+\right\} \ = \ D[z_0, R] \setminus \{ z_0 \} \, \text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -350,11 +367,11 @@ eBookConfig.enable_chatcodes =  false;
 \setminus \{ z_0 \}\text{.}\)</span> For complex functions there are three types of singularities, which are classified as follows.<div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec_classificationsingul-4"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_classificationsingul-4-1-1">
 <div class="para">If <span class="process-math">\(f\)</span> is holomorphic in the punctured disk <span class="process-math">\(\Dp[z_0, R]\)</span> for some <span class="process-math">\(R&gt;0\)</span> but not at <span class="process-math">\(z=z_0\text{,}\)</span> then <span class="process-math">\(z_0\)</span> is an <em class="emphasis">isolated singularity </em> of <span class="process-math">\(f\text{.}\)</span> The singularity <span class="process-math">\(z_0\)</span> is called</div>
-<ol class="lower-alpha ol-marker-2" id="sec_classificationsingul-4-1-1-9">
+<ol class="lower-alpha ol-marker-1" id="sec_classificationsingul-4-1-1-9">
 <li id="sec_classificationsingul-4-1-1-9-1">
 <div class="para" id="sec_classificationsingul-4-1-1-9-1-1">
 <em class="emphasis">removable</em> if there exists a function <span class="process-math">\(g\)</span> holomorphic in <span class="process-math">\(D[z_0,R]\)</span> such that <span class="process-math">\(f=g\)</span> in <span class="process-math">\(\Dp[z_0, R]\text{,}\)</span> <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-4-1-1-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -376,14 +393,14 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 9.1.1"><a href="#sec_classificationsingul-4" title="Copy heading and permalink for Definition 9.1.1" aria-label="Copy heading and permalink for Definition 9.1.1">🔗</a></div></article><article class="example example-like" id="sec_classificationsingul-5"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.2</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_classificationsingul-5-1-1">
 <div class="para">Let <span class="process-math">\(f: \C \setminus \{ 0 \} \to \C\)</span> be given by <span class="process-math">\(f(z)
 = \frac{ \exp(z) - 1 }{ z }\text{.}\)</span> Since</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\exp(z) - 1 \= \sum_{ k \ge 1 } \frac 1 {k!} \, z^k\text{,}
+\exp(z) - 1 \ = \ \sum_{ k \ge 1 } \frac 1 {k!} \, z^k\text{,}
 \end{equation*}
 </div>
 <div class="para">the function <span class="process-math">\(g: \C \to \C\)</span> defined by</div>
@@ -396,7 +413,7 @@ g(z) \ := \ \sum_{ k \ge 0 } \frac 1 {(k+1)!} \, z^k\text{,}
 <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Example 9.1.2"><a href="#sec_classificationsingul-5" title="Copy heading and permalink for Example 9.1.2" aria-label="Copy heading and permalink for Example 9.1.2">🔗</a></div></article><article class="example example-like" id="sec_classificationsingul-6"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.3</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_classificationsingul-6-1-1">
 <div class="para">In <a href="sec_LaurentSeries.html#ex_1_sinlaurent" class="xref" data-knowl="./knowl/xref/ex_1_sinlaurent.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 8.3.4">Example 8.3.4</a>, we showed that <span class="process-math">\(f: \C \setminus \{ j \pi : \, j \in \Z \}
@@ -406,7 +423,7 @@ g(z) \ := \ \sum_{ k \ge 0 } \frac 1 {(k+1)!} \, z^k\text{,}
 \begin{equation*}
 g(z) = \begin{cases}\frac 1 { \sin(z) } - \frac 1 z \amp
 \text{ if }  z \ne 0 \, , \\ 0
-\amp  \text{ if }  z=0 \, . \end{cases} 
+\amp  \text{ if }  z=0 \end{cases} 
 \end{equation*}
 </div>
 <div class="para">is holomorphic in <span class="process-math">\(D[0,\pi]\)</span> and agrees with <span class="process-math">\(f\)</span> on <span class="process-math">\(\Dp[0,\pi]\text{.}\)</span>
@@ -414,27 +431,27 @@ g(z) = \begin{cases}\frac 1 { \sin(z) } - \frac 1 z \amp
 <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Example 9.1.3"><a href="#sec_classificationsingul-6" title="Copy heading and permalink for Example 9.1.3" aria-label="Copy heading and permalink for Example 9.1.3">🔗</a></div></article><article class="example example-like" id="sec_classificationsingul-7"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.4</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_classificationsingul-7-1-1">
 <div class="para">The function <span class="process-math">\(f: \C \setminus \{ 0 \} \to \C\)</span> given by <span class="process-math">\(f(z) = \frac{ 1 }{ z^4 }\)</span> has a pole at <span class="process-math">\(0\text{,}\)</span> as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\lim_{z \to 0} \left| \frac 1 {z^4} \right| \= \infty \,\text{.}
+\lim_{z \to 0} \left| \frac 1 {z^4} \right| \ = \ \infty \,\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Example 9.1.4"><a href="#sec_classificationsingul-7" title="Copy heading and permalink for Example 9.1.4" aria-label="Copy heading and permalink for Example 9.1.4">🔗</a></div></article><article class="example example-like" id="sec_classificationsingul-8"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.5</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_classificationsingul-8-1-1">
 <div class="para">The function <span class="process-math">\(f: \C \setminus \{ 0 \} \to \C\)</span> given by <span class="process-math">\(f(z) = \exp ( \frac 1 z )\)</span> has an essential singularity at <span class="process-math">\(0\text{:}\)</span> the two limits</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\lim_{ x \to 0^+ } \exp \left( \frac 1 x \right) \= \infty
+\lim_{ x \to 0^+ } \exp \left( \frac 1 x \right) \ = \ \infty
 \qquad \text{ and }  \qquad \lim_{ x \to 0^- } \exp \left(
-\frac 1 x \right) \= 0 
+\frac 1 x \right) \ = \ 0 
 \end{equation*}
 </div>
 <div class="para">show that <span class="process-math">\(f\)</span> has neither a removable singularity nor a pole.</div>
@@ -443,11 +460,11 @@ g(z) = \begin{cases}\frac 1 { \sin(z) } - \frac 1 z \amp
 <div class="autopermalink" data-description="Example 9.1.5"><a href="#sec_classificationsingul-8" title="Copy heading and permalink for Example 9.1.5" aria-label="Copy heading and permalink for Example 9.1.5">🔗</a></div></article><div class="para" id="sec_classificationsingul-9">To get a feel for the different types of singularities, we start with the following criteria.<div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="singbasics"><h3 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">9.1.6</span><span class="period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="singbasics-1-1">
 <div class="para">Suppose <span class="process-math">\(z_0\)</span> is an isolated singularity of <span class="process-math">\(f\text{.}\)</span> Then</div>
-<ol class="lower-alpha ol-marker-2" id="singbasics-1-1-3">
+<ol class="lower-alpha ol-marker-1" id="singbasics-1-1-3">
 <li id="singbasics-1-1-3-1">
 <div class="para" id="singbasics-1-1-3-1-1">
 <span class="process-math">\(z_0\)</span> is removable if and only if <span class="process-math">\(\lim_{z \to
@@ -465,17 +482,17 @@ z_0} \left( z - z_0 \right) f(z) = 0\text{;}\)</span><div class="autopermalink" 
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#singbasics-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proposition 9.1.6"><a href="#singbasics" title="Copy heading and permalink for Proposition 9.1.6" aria-label="Copy heading and permalink for Proposition 9.1.6">🔗</a></div></article><article class="proof" id="singbasics-2"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="autopermalink" data-description="Proposition 9.1.6"><a href="#singbasics" title="Copy heading and permalink for Proposition 9.1.6" aria-label="Copy heading and permalink for Proposition 9.1.6">🔗</a></div></article><article class="proof" id="singbasics-2"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para logical" id="singbasics-2-1">
-<ol class="lower-alpha ol-marker-2" id="singbasics-2-1-1">
+<ol class="lower-alpha ol-marker-1" id="singbasics-2-1-1">
 <li id="singbasics-2-1-1-1">
 <div class="para logical" id="singbasics-2-1-1-1-1">
 <div class="para">Suppose that <span class="process-math">\(z_0\)</span> is a removable singularity of <span class="process-math">\(f\text{,}\)</span> so there exists a holomorphic function <span class="process-math">\(h\)</span> on <span class="process-math">\(D[z_0,R]\)</span> such that <span class="process-math">\(f(z) = h(z)\)</span> for all <span class="process-math">\(z \in \Dp[z_0,R]\text{.}\)</span> But then <span class="process-math">\(h\)</span> is continuous at <span class="process-math">\(z_0\text{,}\)</span> and so</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\lim_{z \to z_0} \left( z - z_0 \right) f(z) \= \lim_{z
-\to z_0} \left( z - z_0 \right) h(z) \= h(z_0) \lim_{z
-\to z_0} \left( z - z_0 \right) \= 0 \, \text{.}
+\lim_{z \to z_0} \left( z - z_0 \right) f(z) \ = \ \lim_{z
+\to z_0} \left( z - z_0 \right) h(z) \ = \ h(z_0) \lim_{z
+\to z_0} \left( z - z_0 \right) \ = \ 0 \, \text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#singbasics-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -496,32 +513,32 @@ z_0 \, , \\ 0             \amp \text{ if } z=z_0 \,
 <div class="para">Then <span class="process-math">\(g\)</span> is holomorphic in <span class="process-math">\(\Dp[z_0,R]\)</span> and</div>
 <div class="displaymath process-math" id="singbasics-2-1-1-1-3-3">
 \begin{align*}
-g'(z_0) \amp \= \lim_{z\to
+g'(z_0) \amp \ = \ \lim_{z\to
 z_0}\frac{g(z)-g(z_0)}{z-z_0}\\
-\amp \=
+\amp \ = \
 \lim_{z\to z_0}\frac{(z-z_0)^2 \, f(z)}{z-z_0}\\
-\amp \=
+\amp \ = \
 \lim_{z \to z_0} (z - z_0) \, f(z)\\
-\amp \= 0\,\text{,}
+\amp \ = \ 0\,\text{,}
 \end{align*}
 </div>
 <div class="para">so <span class="process-math">\(g\)</span> is holomorphic in <span class="process-math">\(D[z_0,R]\text{.}\)</span> We can thus expand <span class="process-math">\(g\)</span> into a power series</div>
 <div class="displaymath process-math">
 \begin{equation*}
-g(z) \= \s c_k \, (z-z_0)^k
+g(z) \ = \ \s c_k \, (z-z_0)^k
 \end{equation*}
 </div>
 <div class="para">whose first two terms are zero: <span class="process-math">\(c_0 = g(z_0) = 0\)</span> and <span class="process-math">\(c_1 = g'(z_0) = 0\text{.}\)</span> But then we can write</div>
 <div class="displaymath process-math">
 \begin{equation*}
-g(z) \= (z-z_0)^2 \sum_{k\ge0}c_{k+2} \, (z-z_0)^k
+g(z) \ = \ (z-z_0)^2 \sum_{k\ge0}c_{k+2} \, (z-z_0)^k
 \end{equation*}
 </div>
 <div class="para">and so</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(z) \= \sum_{k\ge0}c_{k+2} \, (z-z_0)^k \qquad \text{
-for all }  z \in \Dp[z_0,R] \, \text{.}
+f(z) \ = \ \sum_{k\ge0}c_{k+2} \, (z-z_0)^k \quad \text{
+for all } \quad z \in \Dp[z_0,R] \, \text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#singbasics-2-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -535,7 +552,7 @@ for all }  z \in \Dp[z_0,R] \, \text{.}
 <div class="para">Suppose that <span class="process-math">\(z_0\)</span> is a pole of <span class="process-math">\(f\text{.}\)</span> Since <span class="process-math">\(f(z)\to\infty\)</span> as <span class="process-math">\(z\to z_0\)</span> we may assume that <span class="process-math">\(R\)</span> is small enough that <span class="process-math">\(f(z)\ne 0\)</span> for <span class="process-math">\(z\in \Dp[z_0,R]\text{.}\)</span> Then <span class="process-math">\(\frac1f\)</span> is holomorphic in <span class="process-math">\(\Dp[z_0,R]\)</span> and</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/classificationzeros.html">
 \begin{equation*}
-\lim_{z \to z_0} \frac 1 {f(z)} \= 0 \,\text{,}
+\lim_{z \to z_0} \frac 1 {f(z)} \ = \ 0 \,\text{,}
 \end{equation*}
 </div>
 <div class="para">so part a) implies that <span class="process-math">\(\frac 1 f\)</span> has a removable singularity at <span class="process-math">\(z_0\text{.}\)</span> More precisely, the function <span class="process-math">\(g: D[z_0,R] \to \C\)</span> defined by</div>
@@ -549,13 +566,13 @@ z=z_0 \, , \end{cases}
 <div class="para">is holomorphic. By <a href="sec_classifzeros.html#classificationzeros" class="xref" data-knowl="./knowl/xref/classificationzeros.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.2.1: Classification of Zeros">Theorem 8.2.1</a>, there exist a positive integer <span class="process-math">\(n\)</span> and a holomorphic function <span class="process-math">\(h\)</span> on <span class="process-math">\(D[z_0,R]\)</span> such that <span class="process-math">\(h(z_0) \ne 0\)</span> and <span class="process-math">\(g(z) = (z-z_0)^n \, h(z) \text{.}\)</span> Actually, <span class="process-math">\(h(z) \ne 0\)</span> for all <span class="process-math">\(z \in D[z_0,R]\)</span> since <span class="process-math">\(g(z) \ne 0\)</span> for all <span class="process-math">\(z \in \Dp[z_0,R]\text{.}\)</span> Thus</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/classificationzeros.html" id="singbasics-2-1-1-2-1-25">
 \begin{align*}
-\lim_{z \to z_0} (z-z_0)^{n+1} f(z) \amp \=
+\lim_{z \to z_0} (z-z_0)^{n+1} f(z) \amp \ = \
 \lim_{z \to z_0} \frac{ (z-z_0)^{n+1} }{ g(z) }\\
-\amp \= \lim_{z \to z_0} \frac{
+\amp \ = \ \lim_{z \to z_0} \frac{
 z-z_0 }{ h(z) }\\
-\amp \= \frac{ 1 }{ h(z_0) } \lim_{z \to
+\amp \ = \ \frac{ 1 }{ h(z_0) } \lim_{z \to
 z_0}(z-z_0)\\
-\amp \= 0 \,\text{.}
+\amp \ = \ 0 \,\text{.}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#singbasics-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -565,7 +582,7 @@ z_0}(z-z_0)\\
 <div class="displaymath process-math">
 \begin{equation*}
 f(z) = \frac1{g(z)} = \frac1{(z-z_0)^n} \cdot \frac1{h(z)}
-\text{ for all } \ z\in\Dp[z_0,R]\, \text{.}
+\quad \text{ for all } \quad z\in\Dp[z_0,R]\, \text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#singbasics-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -575,7 +592,7 @@ f(z) = \frac1{g(z)} = \frac1{(z-z_0)^n} \cdot \frac1{h(z)}
 \ne 0\text{.}\)</span> Summarizing, <span class="process-math">\(g\)</span> is holomorphic on <span class="process-math">\(D[z_0,R]\)</span> and non-zero at <span class="process-math">\(z_0\text{,}\)</span> <span class="process-math">\(n&gt;0\text{,}\)</span> and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(z) = \frac{g(z)}{(z-z_0)^n} \text{ for all } \
+f(z) = \frac{g(z)}{(z-z_0)^n} \quad \text{ for all } \quad
 z\in\Dp[z_0,R]\, \text{.}
 \end{equation*}
 </div>
@@ -585,13 +602,13 @@ z\in\Dp[z_0,R]\, \text{.}
 <div class="para">But then <span class="process-math">\(z_0\)</span> is a pole of <span class="process-math">\(f\text{,}\)</span> since</div>
 <div class="displaymath process-math" id="singbasics-2-1-1-2-4-3">
 \begin{align*}
-\lim_{ z \to z_0 } |f(z)| \amp \= \lim_{ z \to z_0 }
+\lim_{ z \to z_0 } |f(z)| \amp \ = \ \lim_{ z \to z_0 }
 \left| \frac{ h(z) }{ (z-z_0)^n } \right|\\
-\amp \= \lim_{ z \to z_0 } \left|
+\amp \ = \ \lim_{ z \to z_0 } \left|
 \frac{ g(z) }{ (z-z_0)^n } \right|\\
-\amp \= |g(z_0)| \lim_{ z \to
+\amp \ = \ |g(z_0)| \lim_{ z \to
 z_0 } \frac{ 1 }{ |z-z_0|^n }\\
-\amp \= \infty \,\text{.}
+\amp \ = \ \infty \,\text{.}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#singbasics-2-1-1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -604,24 +621,24 @@ z_0 } \frac{ 1 }{ |z-z_0|^n }\\
 <div class="autopermalink" data-description="Proof 9.1.6.1"><a href="#singbasics-2" title="Copy heading and permalink for Proof 9.1.6.1" aria-label="Copy heading and permalink for Proof 9.1.6.1">🔗</a></div></article><div class="para" id="sec_classificationsingul-11">We underline one feature of the last part of our proof:<div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="corollary theorem-like" id="cor_orderofpole"><h3 class="heading">
-<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">9.1.7</span><span class="period">.</span>
+<span class="type">Corollary</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="cor_orderofpole-1-1">
 <div class="para">Suppose <span class="process-math">\(f\)</span> is holomorphic in <span class="process-math">\(\Dp[z_0,R]\text{.}\)</span> Then <span class="process-math">\(f\)</span> has a pole at <span class="process-math">\(z_0\)</span> if and only if there exist a positive integer <span class="process-math">\(m\)</span> and a holomorphic function <span class="process-math">\(g: D[z_0,R] \to \C\text{,}\)</span> such that <span class="process-math">\(g(z_0) \ne 0\)</span> and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(z) \= \frac{ g(z) }{ (z-z_0)^m } \qquad \text{ for all }
+f(z) \ = \ \frac{ g(z) }{ (z-z_0)^m } \qquad \text{ for all } \quad
 z \in \Dp[z_0,R] \, \text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#cor_orderofpole-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="cor_orderofpole-1-2">If <span class="process-math">\(z_0\)</span> is a pole then <span class="process-math">\(m\)</span> is unique.<div class="autopermalink" data-description="Paragraph"><a href="#cor_orderofpole-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Corollary 9.1.7"><a href="#cor_orderofpole" title="Copy heading and permalink for Corollary 9.1.7" aria-label="Copy heading and permalink for Corollary 9.1.7">🔗</a></div></article><article class="proof" id="sec_classificationsingul-13"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="autopermalink" data-description="Corollary 9.1.7"><a href="#cor_orderofpole" title="Copy heading and permalink for Corollary 9.1.7" aria-label="Copy heading and permalink for Corollary 9.1.7">🔗</a></div></article><article class="proof" id="sec_classificationsingul-13"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="sec_classificationsingul-13-1">The only part not covered in the proof of <a href="sec_classificationsingul.html#singbasics" class="xref" data-knowl="./knowl/xref/singbasics.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 9.1.6">Proposition 9.1.6</a> is uniqueness of <span class="process-math">\(m\text{.}\)</span> Suppose <span class="process-math">\(f(z)=(z-z_0)^{-m_1}g_1(z)\)</span> and <span class="process-math">\(f(z)=(z-z_0)^{-m_2}g_2(z)\)</span> both work, with <span class="process-math">\(m_2&gt;m_1\text{.}\)</span> Then <span class="process-math">\(g_2(z)=(z-z_0)^{m_2-m_1}g_1(z)\text{,}\)</span> and plugging in <span class="process-math">\(z=z_0\)</span> yields <span class="process-math">\(g_2(z_0)=0\text{,}\)</span> violating <span class="process-math">\(g_2(z_0)\ne0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Proof 9.1.1"><a href="#sec_classificationsingul-13" title="Copy heading and permalink for Proof 9.1.1" aria-label="Copy heading and permalink for Proof 9.1.1">🔗</a></div></article><article class="definition definition-like" id="sec_classificationsingul-14"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.8</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="sec_classificationsingul-14-1-1">The integer <span class="process-math">\(m\)</span> in <a href="sec_classificationsingul.html#cor_orderofpole" class="xref" data-knowl="./knowl/xref/cor_orderofpole.html" data-reveal-label="Reveal" data-close-label="Close" title="Corollary 9.1.7">Corollary 9.1.7</a> is the <em class="emphasis">order</em> of the pole <span class="process-math">\(z_0\text{.}\)</span> <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -630,7 +647,7 @@ z \in \Dp[z_0,R] \, \text{.}
 <div class="para" id="sec_classificationsingul-16">You might have noticed that the <a href="sec_classificationsingul.html#singbasics" class="xref" data-knowl="./knowl/xref/singbasics.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 9.1.6">Proposition 9.1.6</a> did not include any result on essential singularities. Not only does the next theorem make up for this but it also nicely illustrates the strangeness of essential singularities. To appreciate the following result, we suggest meditating about its statement over a good cup of coffee. <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="casoratiweierstrass"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Casorati<details class="ptx-footnote" aria-live="polite" id="casoratiweierstrass-1-1"><summary class="ptx-footnote__number" title="Footnote 9.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="casoratiweierstrass-1-1">Felice Casorati (1835–1890).</div></details>–Weierstraß.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Casorati<details class="ptx-footnote" aria-live="polite" id="casoratiweierstrass-1-1"><summary class="ptx-footnote__number" title="Footnote 9.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="casoratiweierstrass-1-1">Felice Casorati (1835–1890).</div></details>–Weierstraß.</span>
 </h3>
 <div class="para" id="casoratiweierstrass-2-1">If <span class="process-math">\(z_0\)</span> is an essential singularity of <span class="process-math">\(f\)</span> and <span class="process-math">\(r\)</span> is any positive real number, then every <span class="process-math">\(w \in
 \C\)</span> is arbitrarily close to a point in <span class="process-math">\(f(\Dp[z_0,r])\text{.}\)</span> That is, for any <span class="process-math">\(w \in \C\)</span> and any <span class="process-math">\(\epsilon &gt; 0\)</span> there exists <span class="process-math">\(z \in \Dp[z_0,r]\)</span> such that <span class="process-math">\(|w-f(z)| \lt \epsilon\text{.}\)</span> <div class="autopermalink" data-description="Paragraph"><a href="#casoratiweierstrass-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -639,7 +656,7 @@ z \in \Dp[z_0,R] \, \text{.}
 </div>
 <div class="para" id="sec_classificationsingul-19">There is a stronger theorem, beyond the scope of this book, which implies the Casorati–Weierstraß <a href="sec_classificationsingul.html#casoratiweierstrass" class="xref" data-knowl="./knowl/xref/casoratiweierstrass.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.1.9: Casorati–Weierstraß">Theorem 9.1.9</a> It is due to Charles Emile Picard (1856–1941) and says that the image of any punctured disk centered at an essential singularity misses at most one point of <span class="process-math">\(\C\text{.}\)</span> (It is worth coming up with examples of functions that do not miss any point in <span class="process-math">\(\C\)</span> and functions that miss exactly one point.  Try it!)<div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="proof" id="sec_classificationsingul-20"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<article class="proof" id="sec_classificationsingul-20"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para logical" id="sec_classificationsingul-20-1">
 <div class="para">Suppose (by way of contradiction) that there exist <span class="process-math">\(w \in \C\)</span> and <span class="process-math">\(\epsilon &gt; 0\)</span> such that for all <span class="process-math">\(z \in \Dp[z_0,r]\)</span>
 </div>
@@ -654,25 +671,25 @@ z \in \Dp[z_0,R] \, \text{.}
 <div class="para">Then the function <span class="process-math">\(g(z) := \frac{ 1 }{ f(z) - w }\)</span> stays bounded as <span class="process-math">\(z \to z_0\text{,}\)</span> and so</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\lim_{z \to z_0} \frac{ z - z_0}{ f(z) - w } \= \lim_{z \to
-z_0} (z - z_0) \, g(z) \= 0 \, \text{.}
+\lim_{z \to z_0} \frac{ z - z_0}{ f(z) - w } \ = \ \lim_{z \to
+z_0} (z - z_0) \, g(z) \ = \ 0 \, \text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-20-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec_classificationsingul-20-3">
-<div class="para">(<a href="sec_classificationsingul.html#singbasics" class="xref" data-knowl="./knowl/xref/singbasics.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 9.1.6">Proposition 9.1.6</a> a) tells us that <span class="process-math">\(g\)</span> has a removable singularity at <span class="process-math">\(z_0\text{.}\)</span>) Hence</div>
+<div class="para">(<a href="sec_classificationsingul.html#singbasics" class="xref" data-knowl="./knowl/xref/singbasics.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 9.1.6">Proposition 9.1.6</a>(a) tells us that <span class="process-math">\(g\)</span> has a removable singularity at <span class="process-math">\(z_0\text{.}\)</span>) Hence</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/singbasics.html ./knowl/xref/singbasics.html">
 \begin{equation*}
-\lim_{z \to z_0} \left| \frac{ f(z) - w }{ z - z_0} \right| \=
+\lim_{z \to z_0} \left| \frac{ f(z) - w }{ z - z_0} \right| \ = \
 \infty 
 \end{equation*}
 </div>
-<div class="para">and so the function <span class="process-math">\(\frac{ f(z) - w }{ z - z_0}\)</span> has a pole at <span class="process-math">\(z_0\text{.}\)</span> By <a href="sec_classificationsingul.html#singbasics" class="xref" data-knowl="./knowl/xref/singbasics.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 9.1.6">Proposition 9.1.6</a> b), there is a positive integer <span class="process-math">\(n\)</span> so that</div>
+<div class="para">and so the function <span class="process-math">\(\frac{ f(z) - w }{ z - z_0}\)</span> has a pole at <span class="process-math">\(z_0\text{.}\)</span> By <a href="sec_classificationsingul.html#singbasics" class="xref" data-knowl="./knowl/xref/singbasics.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 9.1.6">Proposition 9.1.6</a>(b), there is a positive integer <span class="process-math">\(n\)</span> so that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/singbasics.html ./knowl/xref/singbasics.html">
 \begin{equation*}
 \lim_{ z \to z_0 } (z-z_0)^{ n+1 } \frac{ f(z) - w }{ z - z_0}
-\= \lim_{ z \to z_0 } (z-z_0)^{ n } \left( f(z) - w \right) \=
+\ = \ \lim_{ z \to z_0 } (z-z_0)^{ n } \left( f(z) - w \right) \ = \
 0 \, \text{.}
 \end{equation*}
 </div>
@@ -683,17 +700,17 @@ z_0} (z - z_0) \, g(z) \= 0 \, \text{.}
 <div class="autopermalink" data-description="Proof 9.1.2"><a href="#sec_classificationsingul-20" title="Copy heading and permalink for Proof 9.1.2" aria-label="Copy heading and permalink for Proof 9.1.2">🔗</a></div></article><div class="para" id="sec_classificationsingul-21">The following classifies singularities according to their Laurent series, and is very often useful in calculations.<div class="autopermalink" data-description="Paragraph"><a href="#sec_classificationsingul-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="proposition theorem-like" id="singlaurent"><h3 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">9.1.10</span><span class="period">.</span>
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="singlaurent-1-1">
 <div class="para">Suppose <span class="process-math">\(z_0\)</span> is an isolated singularity of <span class="process-math">\(f\)</span> with Laurent series</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(z) \= \sz c_k ( z - z_0 )^k\text{,}
+f(z) \ = \ \sz c_k ( z - z_0 )^k\text{,}
 \end{equation*}
 </div>
 <div class="para">valid in some punctured disk centered at <span class="process-math">\(z_0\text{.}\)</span> Then</div>
-<ol class="lower-alpha ol-marker-2" id="singlaurent-1-1-5">
+<ol class="lower-alpha ol-marker-1" id="singlaurent-1-1-5">
 <li id="singlaurent-1-1-5-1">
 <div class="para" id="singlaurent-1-1-5-1-1">
 <span class="process-math">\(z_0\)</span> is removable if and only if there are no negative exponents (that is, the Laurent series is a power series);<div class="autopermalink" data-description="Paragraph"><a href="#singlaurent-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -715,9 +732,9 @@ f(z) \= \sz c_k ( z - z_0 )^k\text{,}
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#singlaurent-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proposition 9.1.10"><a href="#singlaurent" title="Copy heading and permalink for Proposition 9.1.10" aria-label="Copy heading and permalink for Proposition 9.1.10">🔗</a></div></article><article class="proof" id="singlaurent-2"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
+<div class="autopermalink" data-description="Proposition 9.1.10"><a href="#singlaurent" title="Copy heading and permalink for Proposition 9.1.10" aria-label="Copy heading and permalink for Proposition 9.1.10">🔗</a></div></article><article class="proof" id="singlaurent-2"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para logical" id="singlaurent-2-1">
-<ol class="lower-alpha ol-marker-2" id="singlaurent-2-1-1">
+<ol class="lower-alpha ol-marker-1" id="singlaurent-2-1-1">
 <li id="singlaurent-2-1-1-1">
 <div class="para" id="singlaurent-2-1-1-1-1">Suppose <span class="process-math">\(z_0\)</span> is removable. Then there exists a holomorphic function <span class="process-math">\(g: D[z_0,R] \to \C\)</span> that agrees with <span class="process-math">\(f\)</span> on <span class="process-math">\(\Dp[z_0,R]\text{,}\)</span> for some <span class="process-math">\(R &gt; 0\text{.}\)</span> By <a href="sec_powerseriesholom.html#thm_holomorphicpower" class="xref" data-knowl="./knowl/xref/thm_holomorphicpower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 8.1.8">Theorem 8.1.8</a>, <span class="process-math">\(g\)</span> has a power series expansion centered at <span class="process-math">\(z_0\text{,}\)</span> which coincides with the Laurent series of <span class="process-math">\(f\)</span> at <span class="process-math">\(z_0\text{,}\)</span> by <a href="sec_LaurentSeries.html#laurentunique" class="xref" data-knowl="./knowl/xref/laurentunique.html" data-reveal-label="Reveal" data-close-label="Close" title="Corollary 8.3.7">Corollary 8.3.7</a>.<div class="autopermalink" data-description="Paragraph"><a href="#singlaurent-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -741,10 +758,10 @@ f(z)=(z-z_0)^{-n}\sum_{k\ge0}c_k(z-z_0)^k =
 <div class="para">Conversely, suppose that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/cor_orderofpole.html" id="singlaurent-2-1-1-2-2-1">
 \begin{align*}
-f(z) \amp \= \sum_{k \geq -n} c_k ( z - z_0 )^k\\
-\amp \= (z-z_0)^{-n} \sum_{k \geq -n} c_k ( z - z_0
+f(z) \amp \ = \ \sum_{k \geq -n} c_k ( z - z_0 )^k\\
+\amp \ = \ (z-z_0)^{-n} \sum_{k \geq -n} c_k ( z - z_0
 )^{k+n}\\
-\amp \=
+\amp \ = \
 (z-z_0)^{-n} \s c_{k-n} (z-z_0)^k\text{.}
 \end{align*}
 </div>
@@ -764,14 +781,14 @@ c_{-n}\ne0\)</span> so, by <a href="sec_classificationsingul.html#cor_orderofpol
 <div class="autopermalink" data-description="Paragraph"><a href="#singlaurent-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Proof 9.1.10.1"><a href="#singlaurent-2" title="Copy heading and permalink for Proof 9.1.10.1" aria-label="Copy heading and permalink for Proof 9.1.10.1">🔗</a></div></article><article class="example example-like" id="ex_sinoverz3"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.11</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="ex_sinoverz3-1-1">
 <div class="para">The order of the pole at <span class="process-math">\(0\)</span> of <span class="process-math">\(f(z)=\frac{\sin(z)}{z^3}\)</span> is 2 because (by <a href="sec_powerseriesholom.html#ex_sinpowerser" class="xref" data-knowl="./knowl/xref/ex_sinpowerser.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 8.1.4">Example 8.1.4</a>)</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex_sinpowerser.html">
 \begin{equation*}
-f(z)\=\frac{\sin(z)}{z^3}\=\frac{z-\frac{z^3}{3!}+
-\frac{z^5}{5!}-\cdots}{z^3}\=\frac{1}{z^2}-\frac{1}{3!}+
+f(z)\ = \ \frac{\sin(z)}{z^3}\ = \ \frac{z-\frac{z^3}{3!}+
+\frac{z^5}{5!}-\cdots}{z^3}\ = \ \frac{1}{z^2}-\frac{1}{3!}+
 \frac{z^2}{5!}-\cdots 
 \end{equation*}
 </div>
