@@ -248,7 +248,7 @@
         By the Monotone Sequence Property, <m>(a_n)</m> converges,
         which allows us to define one of the most famous numbers in
         all of mathematics, 
-        <idx><h>e@<m>e</m></h></idx>
+        <idx><h sortby="e"><m>e</m></h></idx>
         <me>
           e \ := \ 1 + \lim_{ n \to \infty } a_n \,
         </me>.

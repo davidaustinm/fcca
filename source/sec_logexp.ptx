@@ -275,7 +275,7 @@
     </fn>
     number</em> and can be defined, for example,
     as <m>e = \lim_{n \to \infty} \left( 1 + \frac 1 n \right)^n</m>.
-    <idx><h>e@<m>e</m></h></idx>
+    <idx><h sortby="e"><m>e</m></h></idx>
     In calculus we can prove the equivalence of the real exponential function
     (as given, for example, through a power series)
     and the function <m>f(x) = e^x</m>.

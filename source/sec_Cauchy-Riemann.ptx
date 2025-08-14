@@ -160,7 +160,7 @@
       <p>
         Thus
         <me>
-          f_x(z) \ = \ 3x^2 - 3y^2 + 6i xy \qquad \text{ and }  \qquad
+          f_x(z) \ = \ 3x^2 - 3y^2 + 6i xy \quad \text{ and } \quad
           f_y(z) \ = \ -6 xy + 3i x^2 - 3i y^2 
         </me>
         are continuous on <m>\C</m> and satisfy <m>f_x = -i f_y</m>.
