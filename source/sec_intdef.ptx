@@ -45,8 +45,7 @@
         Suppose <m>\gg</m> is parametrized by <m>\gg (t) , \ a \leq t
         \leq b</m>, 
         which is smooth on the intervals <m>[a,c_1], [c_1,c_2], \dots,
-        [c_{n-1},c_n], [c_n,b]</m>.
-        <fn>
+        [c_{n-1},c_n], [c_n,b]</m>.<fn>
           Our footnote on
           <xref ref="def_smooth"/> about the subtlety of the
           definition of a smooth path applies also here, 
@@ -221,8 +220,6 @@
           \sin(t) } \right) e^{ 2 \pi i \sin(t) } \cos(t) \, \diff{t}
           \, 
         </me>.
-      </p>
-      <p>
         A quick substitution shows that the two integrals on the
         respective right-hand sides are indeed
         equal. 

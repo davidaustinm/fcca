@@ -23,7 +23,7 @@
       fixed integration path, 
       from <m>a</m> to <m>b</m> along the real line.
       For complex functions,
-      there are many different ways to go from <m>a</m> to <m>b</m>...
+      there are many different ways to go from <m>a</m> to <m>b \dots </m>
     </p>
   </introduction>
   <xi:include  href="sec_intdef.ptx"/>

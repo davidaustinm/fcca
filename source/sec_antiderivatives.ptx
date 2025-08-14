@@ -55,8 +55,6 @@
           \frac{ d }{ \diff{z} } \left( \frac 1 {2i} (\exp(iz) -
           \exp(-iz)) \right) \ = \ \frac 1 2 (\exp(iz) + \exp(-iz)) \, 
         </me>,
-      </p>
-      <p>
         <m>F(z) = \sin z</m> is an antiderivative of
         <m>f(z) = \cos z</m> on<nbsp/><m>\C</m>.
       </p>
@@ -200,8 +198,6 @@
           \int_{ \sigma_1 } f \ - \ \int_{ \sigma_2 } f \ = \ \int_{
           \sigma_1 - \sigma_2 } f \ = \ 0 \, 
           </me>.
-      </p>
-      <p>
         This means that
         <me>
           F(z) \ := \ \int_{\gg_z} f
@@ -242,8 +238,6 @@
             (f(w)-f(z)) \, \diff{w} \,
           </mrow>
         </md>.
-      </p>
-      <p>
         We will show that the right-hand side goes to zero as <m>h \to
         0</m>, 
         which will conclude the theorem.
@@ -301,7 +295,7 @@
         </me>,
         where <m>\gg_z</m> is any polygonal path in <m>G</m> from
         <m>z_0</m> to <m>z</m>, 
-        is an antiderivative for <m>f</m> on <m>G</m>.
+        is an antiderivative for <m>f</m> on<nbsp/><m>G</m>.
       </p>
     </statement>
   </corollary>
