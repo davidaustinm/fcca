@@ -8,16 +8,12 @@
   
     <author>
       <personname>Matthias Beck</personname>
-      <department>Department of Mathematics</department>
-      <institution>San Francisco State University</institution>
     </author>
     <author>
       <personname>Gerald Marchesi</personname>
     </author>
     <author>
       <personname>Dennis Pixton</personname>
-      <department>Department of Mathematical Sciences</department>
-      <institution>Binghamton University (SUNY)</institution>
     </author>
     <author>
       <personname>Lucas Sabalka</personname>
@@ -59,8 +55,8 @@
   <preface>
     <title>About This Book</title>
     <blockquote>
-      <p><em>And what is the use of a book,'' thought Alice, ``without
-      pictures or conversations? </em>
+      <p><q>And what is the use of a book,</q> thought Alice, <q>without
+      pictures or conversations?</q>
       </p>
       <attribution>
         Lewis Carroll (<em>Alice in Wonderland</em>)
@@ -75,12 +71,13 @@
       adopted at numerous other institutions. For many of our students,
       Complex Analysis is their first rigorous analysis (if not
       mathematics) class they take, and this book reflects this very
-      much. We tried to rely on as few concepts from real analysis as
+      much. We tried to rely on as few concepts from Real Analysis as
       possible. In particular, series and sequences are treated from
       scratch, which has the consequence that power series are
       introduced late in the course. The goal our book works toward is
       the Residue Theorem, including some nontraditional applications
-      from both continuous and discrete mathematics.
+      from both continuous and discrete mathematics. More than 250 exercises 
+      and numerous <c>SageMath</c> prompts are spread throughout the text.
     </p>
     
     <p>A printed paperback version of this open textbook is available
@@ -93,6 +90,14 @@
   <preface>
     <title>About the Authors</title>
     
+    <blockquote>
+      <p>The hardest thing being with a mathematician is that they always have problems.
+      </p>
+      <attribution>
+        Tendai Chitewere
+      </attribution>
+    </blockquote>
+
     <p><em>David Austin</em> (illustrations) is a professor of Mathematics at Grand Valley State University...
     </p>
     
@@ -140,7 +145,15 @@
   <preface>
     <title>A Note to Instructors</title>
     
-    <p>
+    <blockquote>
+      <p>There are two versions of math in the lives of many Americans: the strange and boring subject that they encountered in classrooms and an interesting set of ideas that is the math of the world, and is curiously different and surprisingly engaging. Our task is to introduce this second version to today's students, get them excited about math, and prepare them for the future.
+      </p>
+      <attribution>
+        Jo Boaler
+      </attribution>
+    </blockquote>
+
+     <p>
       The material in this book should be more than enough for a
       typical semester-long undergraduate course in complex analysis; our
       experience taught us that there is more content in this book than
@@ -162,6 +175,14 @@
   <preface>
     <title>Acknowledgements</title>
     
+    <blockquote>
+      <p>Inspiration is constantly in the air. It's up to us to develop the sensitivity to pick up on it.
+      </p>
+      <attribution>
+        Herbie Hancock
+      </attribution>
+    </blockquote>
+
     <p>We thank our students who made many suggestions for and found
     errors in the text.  Special thanks go to Sheldon Axler, Collin
     Bleak, Pierre-Alexandre Bliman, Matthew Brin, David Covert, Andrew Hwang, Manoj Keshari, Jeff Knisley, John
