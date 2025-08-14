@@ -23,8 +23,6 @@
       \mathbb{S}^2 \ := \ \left\{(x,y,z) \in \R^3 : \, x^2+y^2+z^2=1 \right\} \, 
     </me>.
     <idx><h>unit sphere</h></idx>
-  </p>
-  <p>
     The sphere and the complex plane intersect in the set <m>\{(x,y,0)
     : \, x^2 + y^2 = 1\}</m>, which corresponds to the equator on the
     sphere and the unit circle on the complex plane.  Let
@@ -72,8 +70,6 @@
           \infty                                            \amp
           \text{ if }  z=1 \, . \end{cases} 
         </me>
-      </p>
-      <p>
         It is bijective, with inverse map
         <me> 
           \phi^{-1}(p,q,0) \ = \ \left(\frac{2p}{p^2+q^2+1},\,
@@ -191,8 +187,6 @@
         \left(q+\frac{y_0}{z_0-k} \right)^2 = \
         \frac{1-k^2}{(z_0-k)^2}\, 
       </me>.
-    </p>
-    <p>
       Depending on whether the right hand side of this equation is
       positive, 0, or negative, 
       this is the equation of a circle, point,
@@ -257,8 +251,6 @@
         \amp \ = \ \frac{x}{1+z} - i\frac{y}{1+z}\,
       </mrow>
     </md>.
-  </p>
-  <p>
     Rather than plug this result into the formulas for
     <m>\phi^{-1}</m>, we can just ask what triple of numbers will be
     mapped to this particular pair using the formulas

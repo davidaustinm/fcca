@@ -205,8 +205,6 @@
           \amp  \text{ if }  z = - \frac d c \, , \\ \frac a c \amp
           \text{ if }  z = \infty \, . \end{cases} 
         </me>
-      </p>
-      <p>
         Then <m>f</m> is a bijection.
       </p>
     </statement>
@@ -295,8 +293,6 @@
           [z,z_1,z_2,z_3] \ := \ \frac{(z-z_1)(z_2-z_3)}{(z-z_3)(z_2-z_1)} \,
         </me>.
         <idx><h>cross ratio</h></idx>
-      </p>
-      <p>
         This includes the implicit definitions <m>[z_3,z_1,z_2,z_3] =
         \infty</m> and, 
         if one of <m>z</m>, <m>z_1</m>, <m>z_2</m>,
@@ -323,8 +319,6 @@
         <me>
           f(z_1) = 0 \, ,\qquad f(z_2) = 1 \, ,\qquad f(z_3)= \infty \,
         </me>.
-      </p>
-      <p>
         Moreover, if <m>g</m> is any M&#xf6;bius transformation with
         <m>g(z_1) = 0</m>, <m>g(z_2) = 1</m>, and <m>g(z_3)=
         \infty</m>, then <m>f</m> and <m>g</m> are identical.

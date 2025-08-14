@@ -6,8 +6,7 @@
   <p>
     To define the complex exponential function,
     we once more borrow concepts from calculus,
-    namely the real exponential function
-    <fn>
+    namely the real exponential function<fn>
       How to define the real exponential function is a nontrivial question.
       Our preferred way to do this is through a power series:
       <m>e^x = \sum_{k \geq 0} \frac 1 {k!} x^k</m>.

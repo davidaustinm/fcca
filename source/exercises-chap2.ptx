@@ -75,8 +75,6 @@
         <me>
           f(z) = \frac{x^2y}{x^4+y^2}\text{ where }  z=x+iy\ne0\,
         </me>.
-      </p>
-      <p>
         Show that the limits of <m>f</m> at <m>0</m> along all
         straight lines through the origin exist and are equal, 
         but <m>\displaystyle\lim_{z\to0}f(z)</m> does not exist.
@@ -390,8 +388,6 @@
         <me>
           \displaystyle\begin{bmatrix}\fderiv ux\amp \fderiv uy\\ \fderiv vx \amp \fderiv vy \end{bmatrix} \,
         </me>.
-      </p>
-      <p>
         Show that if <m>f = u+iv</m> is holomorphic then the Jacobian equals <m>\abs{f'(z)}^2</m>.
       </p>
     </statement>

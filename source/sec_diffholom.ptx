@@ -38,8 +38,7 @@
       </p>
       <p>
         If <m>f</m> is differentiable for all points in an open disk
-        centered at <m>z_0</m> then <m>f</m> is called <em>holomorphic</em>
-        <fn>
+        centered at <m>z_0</m> then <m>f</m> is called <em>holomorphic</em><fn>
         Some sources use the term <em>analytic</em>
         instead of <em>holomorphic</em>.
         As we will see in Chapter 8, in our context,
@@ -93,8 +92,6 @@
       f'(z_0) \ = \ \lim_{ h \to 0 } \frac{ f(z_0+h) - f(z_0) }{ h } \,
     </me>.
     <idx><h>difference quotient</h></idx>
-  </p>
-  <p>
     This equivalent definition is sometimes easier to handle.
     Note that <m>h</m> need not be a real number but can rather
     approach zero from anywhere in the complex plane. 
@@ -409,8 +406,6 @@
             \amp \text{ if }  z\ne z_0\\ f'(z_0)
             \amp \text{ if }  z=z_0\,. \end{cases} 
           </me>
-        </p>
-        <p>
           This is continuous at <m>z_0</m> and
           <m>\lim_{w\to w_0}g(w) = z_0</m> by continuity of <m>g</m>,
           so we can apply <xref ref="funoflimit">Proposition</xref>:

@@ -30,7 +30,7 @@
       \fderiv fy(z_0) \amp := \lim_{ y \to y_0 } \frac{ f(x_0,y) -
       f(x_0,y_0) }{ y - y_0 } \, 
       </mrow>
-    </md>.
+    </md>
     <idx><h>partial derivative</h></idx>
     <idx><h>derivative</h><h>partial</h></idx>
     (so this definition is exactly as in the real-valued case).
@@ -70,7 +70,7 @@
             partial derivatives <m>\fderiv fx</m> and 
             <m>\fderiv fy</m> exist in an open disk centered at <m>z_0</m>
             and are continuous at <m>z_0</m>. 
-            If these partial derivatives satisfy {<xref ref="complexcr"/>}
+            If these partial derivatives satisfy <xref ref="complexcr"/>
             then <m>f</m> is differentiable at<nbsp/><m>z_0</m>.
             </p>
           </li>
@@ -86,7 +86,7 @@
     parts.  That is, we write <m>f(z) = f(x,y) = u(x,y) + i \,
     v(x,y)</m> where <m>u</m> is the real part of <m>f</m> and
     <m>v</m> is the imaginary part.  Then, using the usual shorthand
-    <m>f_x = \fderiv fx</m> and <m>f_y = \fderiv fy</m>, we have 
+    <m>f_x = \fderiv fx</m> and <m>f_y = \fderiv fy</m>,
     <md>
       <mrow>
         f_x \amp \ = \ u_x+i \, v_x
@@ -95,8 +95,6 @@
         -if_y \amp \ = \ -i(u_y+i \, v_y) \ = \ v_y-i \, u_y \,
       </mrow>
     </md>.
-  </p>
-  <p>
     With this terminology we can rewrite <xref ref="complexcr"/> as
     the pair of equations 
     <men xml:id="crequations">
@@ -131,8 +129,6 @@
     <me>
       u_{xx}(x_0,y_0) + u_{yy}(x_0,y_0) \ = \ 0
     </me>
-  </p>
-  <p>
     (and an analogous identity for <m>v</m>).
     Functions with continuous second partials satisfying this partial
     differential equation on a region <m>G \subset \C</m> 
@@ -156,9 +152,7 @@
           f(z) \ = \ z^3 \ = \ (x+iy)^3 \ = \ \left( x^3 - 3xy^2 \right) + i
           \left( 3 x^2 y - y^3 \right) \,
         </me>.
-      </p>
-      <p>
-        Thus
+        So 
         <me>
           f_x(z) \ = \ 3x^2 - 3y^2 + 6i xy \quad \text{ and } \quad
           f_y(z) \ = \ -6 xy + 3i x^2 - 3i y^2 
@@ -178,8 +172,6 @@
         <me>
           f(z) \ = \ (\conj z)^2 \ = \ (x-iy)^2 \ = \ x^2 - y^2 - 2ixy \,
         </me>.
-      </p>
-      <p>
         Now
         <me>
           f_x(z) \ = \ 2x - 2iy \qquad \text{ and }  \qquad f_y(z) \ = \ -2y - 2ix \,
@@ -198,8 +190,6 @@
       <me>
         f'(z_0) \ = \ \lim_{\D z \to 0}\frac{f(z_0+\D z) - f(z_0)}{\D z} \,
       </me>.
-    </p>
-    <p>
       As we know by now,
       we must get the same result if we restrict <m>\D z</m> to be on
       the real axis and if we restrict it to be on the imaginary
@@ -218,8 +208,6 @@
           \amp \ = \ \fderiv fx(x_0,y_0) \,
         </mrow>
       </md>.
-    </p>
-    <p>
       In the second case, <m>\D z = i \, \D y</m> and
       <md>
         <mrow>
@@ -235,8 +223,6 @@
           \fderiv fy(x_0,y_0) \,
         </mrow>
       </md>.
-    </p>
-    <p>
       Thus we have shown that <m>f'(z_0) = f_x(z_0) = -if_y(z_0)</m>.
     </p>
     <p>
@@ -259,8 +245,6 @@
           f_y(z_0) \,
         </mrow>
       </md>.
-    </p>
-    <p>
       On the other hand,
       we can rewrite the difference quotient for <m>f'(z_0)</m> as
       <md>
@@ -276,8 +260,6 @@
           + \frac{f(z_0+\D x) - f(z_0)}{\D z} \,
         </mrow>
       </md>.
-    </p>
-    <p>
       Thus
       <md>
         <mrow>
@@ -293,8 +275,6 @@
         z}\left(\frac{f(z_0+\D x) - f(z_0)}{\D x} - f_x(z_0)\right)
         </mrow>
       </md>.
-    </p>
-    <p>
       We claim that both limits on the right-hand side are <m>0</m>,
       so we have achieved our set goal.
       The fractions <m>\frac{ \D x}{ \D z }</m> and
@@ -334,8 +314,6 @@
         \ = \ v_y(x_0+\D x, \, y_0+b \, \D y) \,
         </mrow>
       </md>.
-    </p>
-    <p>
       Thus
       <md>
         <mrow>
@@ -360,8 +338,6 @@
           y_0)\right) 
         </mrow>
       </md>.
-    </p>
-    <p>
       Because <m>u_y</m> and <m>v_y</m> are continuous at <m>(x_0,y_0)</m>,
       <md>
         <mrow>

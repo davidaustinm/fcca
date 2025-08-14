@@ -356,8 +356,6 @@
           \text{ if }  z \ne 0 \, , \\ 1 \amp  \text{ if }  z = 0 \,
           . \end{cases} 
         </me>
-      </p>
-      <p>
         In <xref ref="exam_limitdoesnotexist"/>
         we proved that <m>g</m> is not continuous at <m>z = 0</m>.
         However, this is its only point of discontinuity
@@ -413,23 +411,17 @@
           |w-w_0| \lt  \eta \text{ implies } \left| f(w) - f(w_0)
           \right| \lt  \epsilon \, 
           </me>.
-      </p>
-      <p>
         For this <m>\eta</m>,
         we also know there is a <m>\delta > 0</m> such that
         <me>
           0 \lt  |z-z_0| \lt  \delta \text{ implies } \left| g(z) -
           w_0 \right| \lt  \eta \, 
           </me>.
-      </p>
-      <p>
         Stringing these two implications together gives that
         <me>
           0 \lt  |z-z_0| \lt  \delta \text{ implies } \left| f(g(z)) -
           f(w_0) \right| \lt  \epsilon \, 
           </me>.
-      </p>
-      <p>
         We have thus proved that <m>\lim_{z\to z_0}f(g(z))=f(w_0)</m>.
       </p>
     </proof>

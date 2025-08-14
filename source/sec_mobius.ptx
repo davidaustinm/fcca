@@ -112,8 +112,6 @@
       <me>
         (ad-bc)(z_1-z_2) \ = \ 0 \,
       </me>.
-    </p>
-    <p>
       Since <m>ad-bc \not= 0</m> this implies that <m>z_1 = z_2</m>.
       This shows that <m>f</m> is one-to-one.
     </p>
@@ -153,7 +151,7 @@
         <idx><h>translation</h></idx>
         <idx><h>dilation</h></idx>
         <idx><h>inversion</h></idx>
-    The next result says that if we understand those three special
+    The next result says that if we understand these three special
     M&#xf6;bius transformations, 
     we understand them all.
   </p>
@@ -260,8 +258,6 @@
           \amp \ = \ \alpha + \beta u - \gamma v + \delta (u^2 + v^2) \,
         </mrow>
       </md>.
-    </p>
-    <p>
       But this equation,
       in conjunction with <xref ref="ex_circlegenau"/>,
       says that <m>u+iv</m> lies on a circle or line.
