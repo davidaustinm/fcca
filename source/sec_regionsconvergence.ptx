@@ -29,8 +29,6 @@
         <me>
           \sum_{ k \ge 0 } z^k \ = \ \frac 1 {1-z} \,
         </me>.
-      </p>
-      <p>
         So here <m>z_0 = 0</m> and <m>c_k = 1</m> for all <m>k \ge 0</m>.
         We note that,
         as in <xref ref="ex_geomseriesasfunction"/>,
@@ -90,7 +88,7 @@
         The open disk <m>D[z_0,R]</m> in which the power series
         converges absolutely is the 
         <em>region of convergence</em>.
-        (If <m>R=\infty</m> then this is <m>\C</m>.)
+        (If <m>R=\infty</m> then this is<nbsp/><m>\C</m>.)
         <idx><h>region</h><h>of convergence</h></idx>
       </p>
     </statement>
@@ -120,16 +118,12 @@
         <me>
           \left| c_k ( w - z_0)^k \right| \ = \ |c_k| \, r^k \ \le \ M \,
         </me>.
-      </p>
-      <p>
         Now if <m>|z - z_0| \lt  |w - z_0|</m>, then
       <me>
         \s \left| c_k ( z - z_0)^k \right| \ = \ \s |c_k| \, r^k \left(
         \frac{ |z-z_0| }{ r } \right)^k \ \le \ M \s \left( \frac{
         |z-z_0| }{ r } \right)^k 
       </me>.
-    </p>
-    <p>
       The sum on the right-hand side is a convergent geometric sequence,
       since <m>|z-z_0| \lt r</m>,
       and so <m>\s c_k ( z - z_0)^k</m> converges absolutely by
@@ -147,8 +141,6 @@
         S \ := \ \left\{ x \in \R_{ \ge 0 } : \, \s c_k \, x^k \text{
         converges }  \right\} 
       </me>.
-    </p>
-    <p>
       (This set is nonempty since <m>0 \in S</m>.)
     </p>
     <p>
@@ -179,8 +171,6 @@
       <me>
         |z-z_0| \lt  r \le R \,
       </me>.
-    </p>
-    <p>
       Thus <m>\s c_k ( w - z_0)^k</m> converges for <m>w=z_0+r</m>,
       and so <m>\s c_k ( z - z_0)^k</m> converges absolutely by
       <xref ref="prop_convergenceradius"/>.
@@ -202,8 +192,6 @@
       <me>
         R \le r \lt  |z-z_0| \,
       </me>.
-    </p>
-    <p>
       But <m>\s c_k \, r^k</m> diverges, so
       (by the contrapositive of <xref ref="absconvthm"/>)
       <m>\s |c_k| \, r^k</m> diverges, and so
@@ -283,7 +271,7 @@
   <example>
     <statement>
       <p>
-        For the power series <m>\ds \s k \, z^k</m> we compute
+        For the power series <m>\s k \, z^k</m> we compute
         <me>
           \lim_{ k \to \infty } \sqrt[k]{ |c_k| } \ = \ \lim_{ k \to
           \infty } \sqrt[k]{ k } \ = \ \lim_{ k \to \infty } e^{ \frac 1
@@ -299,7 +287,7 @@
   <example xml:id="exponentialfunctionradius">
     <statement>
       <p>
-        Consider the power series <m>\ds \sum_{ k \ge 0 } \frac{ 1 }{
+        Consider the power series <m>\sum_{ k \ge 0 } \frac{ 1 }{
         k! } \, z^k </m>. 
         Since
         <me>
@@ -311,8 +299,7 @@
         (<xref ref="ex_ratiotest"/>)
         implies that the radius of convergence of <m>\sum_{ k \ge 0 }
         \frac{ 1 }{ k! } \, z^k</m> is <m>\infty</m>, 
-        and so the power series converges absolutely in <m>\C</m>.
-        <fn>
+        and so the power series converges absolutely in <m>\C</m>.<fn>
           In the next chapter,
           we will see that this power series represents the
           exponential function. 

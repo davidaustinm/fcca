@@ -279,8 +279,7 @@
     <idx><h>least upper bound</h></idx>
     The Least Upper Bound Property, in turn,
     implies the following theorem,
-    which is often listed as a separate axiom.
-    <fn>
+    which is often listed as a separate axiom.<fn>
       Both the Archimedean Property and the Least Upper Bound Property
       can be used in (different) axiomatic developments
       of <m>\R</m>. 

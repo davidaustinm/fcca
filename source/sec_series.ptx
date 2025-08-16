@@ -46,12 +46,9 @@
     <me>
       \left| \sum_{k=1}^n b_k - L \right| \ \lt  \ \epsilon \,
     </me>.
-  </p>
-  <p>
     In the case of a convergent series,
     we usually write its limit as
-    <m>\ds L = \sum_{k=1}^\infty b_k</m> or <m>\ds L = \sum_{k \geq 1}
-    b_k</m>. 
+    <m>L = \sum_{k=1}^\infty b_k</m> or <m>L = \sum_{k \geq 1} b_k</m>. 
   </p>
   <example xml:id="ex_geomseries">
     <statement>
@@ -78,8 +75,7 @@
   </example>
     <sage>
       <input>
-        var('k')
-        var('z')
+        var('k', 'z')
         assume(abs(z) &lt; 1)
         sum(z^k,k,1, +oo)
       </input>
@@ -103,8 +99,6 @@
           <mrow>\amp \ = \ \lim_{n\to\infty}\left(1-\frac1{n+1}\right) \ = \
           1 \, </mrow> 
         </md>.
-      </p>
-      <p>
         A series where most of the terms cancel like this is called
         <em>telescoping</em>.
       </p>
@@ -133,7 +127,7 @@
     <statement>
       <p>
         If <m>b_k \in \R_{ \ge 0 }</m> then
-        <m>\ds \sum_{k \ge 1} b_k</m> converges if and only if the
+        <m>\sum_{k \ge 1} b_k</m> converges if and only if the
         partial sums are bounded. 
       </p>
     </statement>
@@ -150,7 +144,7 @@
           \sum_{ k=1 }^{ n } b_k \ = \ \sum_{ k=1 }^{ n } \frac 1 {k!}
         </me>
         are bounded,
-        and <m>\ds \sum_{ k \ge 1 } \frac 1 {k!} = e-1</m>.
+        and <m>\sum_{ k \ge 1 } \frac 1 {k!} = e-1</m>.
       </p>
     </statement>
   </example>
@@ -166,7 +160,7 @@
     <statement>
       <p>
         If <m>b_k \ge c_k \ge 0</m> for all <m>k \ge 1</m> and
-        <m>\ds \sum_{k \ge 1} b_k</m> converges then so does <m>\ds
+        <m>\sum_{k \ge 1} b_k</m> converges then so does <m>
         \sum_{k \ge 1} c_k </m>. 
       </p>
     </statement>
@@ -188,8 +182,7 @@
   <proposition xml:id="generaltermto0">
     <statement>
       <p>
-        If <m>\ds \sum_{k \geq 1} b_k</m> converges then <m>\ds \lim_{
-        n \to \infty } b_n = 0 </m>.
+        If <m>\sum_{k \geq 1} b_k</m> converges then <m>\lim_{ n \to \infty } b_n = 0 </m>.
       </p>
     </statement>
   </proposition>
@@ -200,9 +193,9 @@
   <corollary xml:id="cor_divtest">
     <statement>
       <p>
-        If <m>\ds \lim_{n \to \infty} b_n \neq 0</m> or <m>\ds \lim_{n
+        If <m>\lim_{n \to \infty} b_n \neq 0</m> or <m>\lim_{n
         \to \infty} b_n</m> does not exist, 
-        then <m>\ds \sum_{k \geq 1} b_k</m> diverges.
+        then <m>\sum_{k \geq 1} b_k</m> diverges.
       </p>
     </statement>
   </corollary>
@@ -213,12 +206,12 @@
         for <m>|z| \ge 1</m> the geometric series
         <m>\sum_{ k \ge 1 } z^k</m> diverges since in this case
         <m>\lim_{ n \to \infty } z^n</m> either does not exist or is
-        not 0. 
+        not<nbsp/>0. 
       </p>
     </statement>
     <proof>
       <p>
-        Suppose <m>\ds \sum_{k \geq 1} b_k</m> converges.
+        Suppose <m>\sum_{k \geq 1} b_k</m> converges.
         Then, using <xref ref="limitrules"/> a) &amp; (d),
         <me>
           0 \ = \ \lim_{n \to \infty} \sum_{ k=1 }^n b_k - \lim_{n \to
@@ -345,9 +338,9 @@
   <definition>
     <statement>
       <p>
-        The series <m>\ds \sum_{k \geq 1} b_k</m>
+        The series <m>\sum_{k \geq 1} b_k</m>
         <em>converges absolutely</em>
-        if <m>\ds \sum_{k \geq 1} \left| b_k \right|</m> converges.
+        if <m>\sum_{k \geq 1} \left| b_k \right|</m> converges.
         <idx><h>absolute convergence</h></idx>
       </p>
     </statement>
@@ -374,8 +367,6 @@
         \qquad b_k^- := \begin{cases}b_k \amp  \text{ if }  b_k \lt
         0, \\ 0   \amp  \text{ otherwise. } \end{cases} 
       </me>
-    </p>
-    <p>
       Then <m>0 \le b_k^+ \le |b_k|</m> and
       <m>0 \le - b_k^- \le |b_k|</m> for all <m>k \ge 1</m>,
       and so by <xref ref="cor_comparisonseries"/>, both
@@ -425,8 +416,7 @@
         <em>Riemann zeta function</em>,
         an indispensable tool in number theory and many other
         areas in mathematics and physics.
-        <idx><h>Riemann zeta function</h></idx>
-        <fn xml:id="riemannzeta">
+        <idx><h>Riemann zeta function</h></idx><fn xml:id="riemannzeta">
         The Riemann zeta function is the subject of the arguably most
         famous open problem in mathematics, 
         the <em>Riemann hypothesis</em>.
@@ -459,8 +449,6 @@
           + \cdots</mrow> 
         </md>
         <idx><h>alternating harmonic series</h></idx> 
-      </p>
-      <p>
         (There is a small technical detail to be checked here,
         since we are effectively ignoring half the partial sums of the
         original series; 
@@ -469,8 +457,6 @@
           \frac1{2k-1}-\frac1{2k} \ = \ \frac1{2k(2k-1)} \ \le \ \frac 1
           { (2k-1)^2 } \ \le \ \frac 1 { k^2 } \, 
         </me>,
-      </p>
-      <p>
         <m>\sum_{k\ge1}\frac{(-1)^{k+1}}k</m> converges by
         <xref ref="cor_comparisonseries"/>
         and <xref ref="exam_riemannzetaprep"/>.

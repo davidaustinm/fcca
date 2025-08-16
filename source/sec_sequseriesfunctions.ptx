@@ -17,8 +17,6 @@
         </me>.
         <idx><h>convergence</h><h>pointwise</h></idx>
         <idx><h>pointwise convergence</h></idx>
-      </p>
-      <p>
         We say that <m>(f_n)</m> <em>converges uniformly</em>
         to <m>f: G \to \C</m> if for all
         <m>\epsilon>0</m> there is an <m>N</m> such that for all <m>z
@@ -29,8 +27,6 @@
         </me>.
         <idx><h>convergence</h><h>uniform</h></idx>
         <idx><h>uniform convergence</h></idx>
-      </p>
-      <p>
         Sometimes we want to express that either notion of convergence
         holds only on a subset <m>H</m> of <m>G</m>, 
         in which case we say that <m>(f_n)</m> converges
@@ -60,8 +56,6 @@
       \ \ \forall \, n \geq N \ \ \left| f_n(z) - f(z) \right| \ \lt
       \ \epsilon \, 
     </me>.
-  </p>
-  <p>
     No big deal <mdash/> we only exchanged two of the quantifiers.
     In the first case, <m>N</m> may well depend on <m>z</m>,
     in the second case we need to find an <m>N</m> that works for all
@@ -82,8 +76,6 @@
           \left| f_n(z) - f(z) \right| \ = \ \left| z^n - 0 \right| \ = \
           |z|^n \ \le \ |z|^N \ \lt  \ \epsilon \, 
         </me>.
-      </p>
-      <p>
         (You ought to check carefully that all of our inequalities work the way we claim they do.) 
       </p>
     </statement>
@@ -102,8 +94,6 @@
           \left| f_n(z) - f(z) \right| \ = \ |z|^n \ \le \ |z|^N \ \lt  \
           \left( \tfrac 1 2 \right)^N \ \lt  \ \epsilon \, 
         </me>.
-      </p>
-      <p>
         (Again, you should carefully check our inequalities.)
       </p>
     </statement>
@@ -130,8 +120,6 @@
       \lim_{n \to \infty} \ \lim_{z \to z_0} f_n(z) \ = \ \lim_{z \to
       z_0} \ \lim_{n \to \infty} f_n(z) \, 
     </me>.
-  </p>
-  <p>
     We will need similar interchanges of limits frequently.
   </p>
   <proposition xml:id="sequencecontionuos">
@@ -196,8 +184,6 @@
           f(x) = \begin{cases}0 \amp  \text{ if }  0 \le x \lt  1 \, ,
           \\ 1 \amp  \text{ if }  x = 1 \, . \end{cases} 
         </me>
-      </p>
-      <p>
         As this limiting function is not continuous,
         the above convergence cannot be uniform.
         This gives a strong indication that the convergence in
@@ -242,8 +228,6 @@
           \left| f_n(z) - f(z) \right| \ \lt  \ \frac{ \epsilon }{
           \length(\gg) } \, 
           </me>.
-      </p>
-      <p>
         With <xref ref="intprop"/>(<xref text="local" ref="int4"/>) we can thus estimate
         <me>
           \left| \int_\gamma f_n - \int_\gamma f \right| \ = \ \left|
@@ -264,8 +248,6 @@
       \int_\gg \sum_{ k \ge 1 } f_k(z) \, \diff{z} \ = \ \sum_{ k \ge 1 }
       \int_\gg f_k(z) \, \diff{z} \, 
     </me>.
-  </p>
-  <p>
     In some sense, the above identity is <em>the</em>
     reason we care about uniform convergence.
   </p>
@@ -301,8 +283,6 @@
           \sum_{k \ge 1} M_k - \sum_{k=1}^nM_k \ = \ \sum_{k >n}M_k \ \lt
           \ \epsilon \, 
           </me>.
-      </p>
-      <p>
         Thus for all <m>z \in G</m> and <m>n \ge N</m>,
         <me>
           \abs{\sum_{k \geq 1} f_k(z)-\sum_{k=1}^nf_k(z)} \ = \
