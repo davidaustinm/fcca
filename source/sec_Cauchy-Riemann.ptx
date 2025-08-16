@@ -299,7 +299,7 @@
       real functions,<fn>  
       We collect several theorems from calculus,
       such as the Mean-Value Theorem for real-valued functions,
-      in the Appendix.
+      in <xref ref="appendix-calculus"/>.
       </fn> to the real and imaginary parts <m>u(z)</m> and
       <m>v(z)</m> of <m>f(z)</m>. 
       <xref ref="realmeanvalue"/>

@@ -237,8 +237,6 @@
         <me>
           a_n \ := \ 1 + \frac 1 2 + \frac 1 6 + \dots + \frac 1 {n!} \,
         </me>.
-      </p>
-      <p>
         This sequence is increasing
         (by definition)
         and each <m>a_n \le 3</m> by <xref ref="ex_edefdaslimit"/>.
