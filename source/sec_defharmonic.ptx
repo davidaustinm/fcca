@@ -254,8 +254,7 @@
   </example>
     <sage>
       <input>
-        var('x')
-        var('y')
+        var('x', 'y')
         u = x*y
         diff(u,x) - i*diff(u,y)
       </input>
@@ -338,8 +337,7 @@
   </proof>
     <sage>
       <input>
-        var('x')
-        var('y')
+        var('t', 'x', 'y')
         u = x*y
         integral( diff(u.subs(y=t),x), t, 0, y) - integral( diff(u.subs(x=t),y).subs(y=0), t,0 , x)
       </input>

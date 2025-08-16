@@ -140,6 +140,7 @@
       With this preparation, we can now prove <xref ref="convergenceradius"/>.
     </p>
   <proof>
+    <title>Proof of <xref ref="convergenceradius"/></title>
     <p>
       Consider the set
       <me>

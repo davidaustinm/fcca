@@ -229,6 +229,7 @@
     close to Gau&#223;'s original proof.
   </p>
   <proof>
+    <title>Second proof of <xref ref="fundthmalg"/></title>
     <p>
       Suppose (by way of contradiction) that <m>p</m> does not have any roots,
       that is, <m>p(z) \not= 0</m> for all <m>z \in \C</m>.

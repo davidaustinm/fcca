@@ -133,8 +133,7 @@
   </example>
     <sage>
       <input>
-        var('k')
-        var('z')
+        var('k', 'z')
         sum(z^k/factorial(k),k,0, +oo)
       </input>
       <output>

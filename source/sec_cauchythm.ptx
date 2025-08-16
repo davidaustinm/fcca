@@ -147,6 +147,7 @@
     </statement>
   </example>
   <proof>
+    <title>Proof of <xref ref="cauchythm">Theorem</xref></title>
     <p>
       The full proof of Cauchy's Theorem is beyond the scope of this book.
       However, there are several easier proofs under more restrictive

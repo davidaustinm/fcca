@@ -189,33 +189,6 @@
       </p>
     </statement>
   </theorem>
-  <example xml:id="ex_mobiusinverse2">
-    <statement>
-      <p>
-        Continuing <xref ref="ex_mobiusinverse">Example</xref>,
-        consider again <m>f(z) = \frac{ z-1 }{ iz+i }</m>.
-        For <m>\phi \in \R</m>,
-        <md>
-          <mrow>
-            f(e^{ i \phi }) \amp \ = \ \frac{ e^{ i \phi } - 1 }{ i \,
-            e^{ i \phi } + i } \ = \ \frac{ \left( e^{ i \phi } - 1 \right)
-            \left( e^{ -i \phi } + 1 \right) }{ i \left| e^{ i \phi } +
-            1 \right|^2 }
-          </mrow>
-          <mrow>
-            \amp \ = \ \frac{ e^{ i \phi } - e^{ -i \phi } }{ i
-            \left| e^{ i \phi } + 1 \right|^2 } \ = \ \frac{ 2 \Im \left(
-            e^{ i \phi } \right) }{ \left| e^{ i \phi } + 1 \right|^2 }
-            \ = \ \frac{ 2 \sin \phi }{ \left| e^{ i \phi } + 1 \right|^2 } \,
-          </mrow>
-        </md>,
-        which is a real number.
-        Thus <xref ref="circlestocircles">Theorem</xref>
-        implies that <m>f</m> maps the unit circle to the real
-        line.
-      </p>
-    </statement>
-  </example>
   <proof>
     <p>
       Translations and dilations certainly map circles and lines into
@@ -263,6 +236,33 @@
       says that <m>u+iv</m> lies on a circle or line.
     </p>
   </proof>
+  <example xml:id="ex_mobiusinverse2">
+    <statement>
+      <p>
+        Continuing <xref ref="ex_mobiusinverse">Example</xref>,
+        consider again <m>f(z) = \frac{ z-1 }{ iz+i }</m>.
+        For <m>\phi \in \R</m>,
+        <md>
+          <mrow>
+            f(e^{ i \phi }) \amp \ = \ \frac{ e^{ i \phi } - 1 }{ i \,
+            e^{ i \phi } + i } \ = \ \frac{ \left( e^{ i \phi } - 1 \right)
+            \left( e^{ -i \phi } + 1 \right) }{ i \left| e^{ i \phi } +
+            1 \right|^2 }
+          </mrow>
+          <mrow>
+            \amp \ = \ \frac{ e^{ i \phi } - e^{ -i \phi } }{ i
+            \left| e^{ i \phi } + 1 \right|^2 } \ = \ \frac{ 2 \Im \left(
+            e^{ i \phi } \right) }{ \left| e^{ i \phi } + 1 \right|^2 }
+            \ = \ \frac{ 2 \sin \phi }{ \left| e^{ i \phi } + 1 \right|^2 } \,
+          </mrow>
+        </md>,
+        which is a real number.
+        Thus <xref ref="circlestocircles">Theorem</xref>
+        implies that <m>f</m> maps the unit circle to the real
+        line.
+      </p>
+    </statement>
+  </example>
 
   <p>
     <xref ref="fig-inversion"/> demonstrates the effect that the
