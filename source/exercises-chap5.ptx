@@ -220,8 +220,6 @@
         <me>
           f(z) \ := \ \int_{ [0,1] } \frac{ \diff{w} }{ 1-wz }
         </me>
-      </p>
-      <p>
         (the integration path is from 0 to 1 along the real line).
         Prove that <m>f</m> is holomorphic in the unit disk <m>D[0,1]</m>.
       </p>

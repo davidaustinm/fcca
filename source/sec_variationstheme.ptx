@@ -21,8 +21,6 @@
           f'(w) \ = \ \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ (z-w)^2 }
           \, \diff{z}\, 
         </me>.
-      </p>
-      <p>
         Moreover, <m>f''(w)</m> exists, and
         <me>
           f''(w) \ = \ \frac 1 {\pi i} \int_\gg \frac{ f(z) }{ (z-w)^3 }
@@ -65,8 +63,6 @@
         \frac{ \D w }{2 \pi i} \int_\gg \frac{ f(z) }{ (z-w-\D w)
         (z-w)^2 } \, \diff{z} \, </mrow> 
       </md>.
-    </p>
-    <p>
       This can be made arbitrarily small if we can show that the
       integral on the right-hand side stays bounded as <m>\D w \to
       0</m>. 

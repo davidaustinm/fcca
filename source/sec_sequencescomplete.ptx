@@ -3,8 +3,7 @@
 <section xml:id="sec_sequencescomplete">
   <title>Sequences and Completeness</title>
   <p>
-    As in the real case,
-    <fn>
+    As in the real case,<fn>
       There will be no surprises in this chapter of the nature
       <em>real versus complex</em>.
     </fn> a <em>(complex) sequence</em>
@@ -42,8 +41,6 @@
         <idx><h>convergent</h><h>sequence</h></idx>
         <idx><h>sequence</h><h>convergent</h></idx> 
         <idx><h>sequence</h><h>limit</h></idx>
-      </p>
-      <p>
         If no such <m>L</m> exists then the sequence <m>\left( a_n
         \right)</m> is <em>divergent 
         </em>.
@@ -151,28 +148,28 @@
           <li>
             <p>
               <m>\displaystyle \lim_{ n \to \infty } a_n + c \lim_{ n
-              \to \infty } b_n \ = \ \lim_{ n \to \infty } \left( a_n + c
+              \to \infty } b_n \, = \, \lim_{ n \to \infty } \left( a_n + c
               \, b_n \right)</m> 
             </p>
           </li>
           <li>
             <p>
               <m>\displaystyle \lim_{ n \to \infty } a_n \cdot \lim_{
-              n \to \infty } b_n \ = \ \lim_{ n \to \infty } \left( a_n
+              n \to \infty } b_n \, = \, \lim_{ n \to \infty } \left( a_n
               \cdot b_n \right)</m> 
             </p>
           </li>
           <li>
             <p>
               <m>\displaystyle \frac{ \lim_{ n \to \infty } a_n }{
-              \lim_{ n \to \infty } b_n } \ = \ \lim_{ n \to \infty }
-              \left( \frac{ a_n }{ b_n } \right)</m> provided 
-              <m>\lim_{ n \to \infty } b_n \neq 0</m>. 
+              \lim_{ n \to \infty } b_n } \, = \, \lim_{ n \to \infty }
+              \left( \frac{ a_n }{ b_n } \right)\ </m> provided 
+              <m>\lim_{ n \to \infty } b_n \neq 0</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\displaystyle \lim_{ n \to \infty } a_n \ = \ \lim_{ n
+              <m>\displaystyle \lim_{ n \to \infty } a_n \, = \, \lim_{ n
               \to \infty } a_{ n+1 }</m>.
             </p>
           </li>

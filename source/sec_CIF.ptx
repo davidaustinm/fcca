@@ -98,8 +98,6 @@
         <mrow> \amp \qquad = \ 2 \pi \max_{ z \in C[w,r] } \left| f(z) - f(w)
         \right| \, . \nonumber</mrow> 
       </md>
-    </p>
-    <p>
       Here the inequality comes from
       <xref ref="intprop"/>(<xref text="local" ref="int4"/>).
     </p>
@@ -111,8 +109,6 @@
       <me>
         \left| f(z) - f(w) \right| \ \lt  \ \frac \epsilon {2 \pi} \,
       </me>.
-    </p>
-    <p>
       In particular,
       this will hold for <m>z \in C[w, \frac \delta 2]</m>,
       and so <xref ref="eq_cifestimate"/> implies,
@@ -121,8 +117,6 @@
         \left| \int_{C[w,R]} \frac{ f(z) }{ z-w } \, \diff{z} - 2 \pi
         i \, f(w) \right| \ \lt  \ \epsilon \, 
       </me>.
-    </p>
-    <p>
       Since we can choose <m>\epsilon</m> as small as we'd like,
       the left-hand side must be zero,
       which proves <xref ref="cauchyformulacircle"/>.
@@ -191,10 +185,9 @@
   </p>
   <p>
     This all smells like good coffee,
-    except<nbsp/>... we might be just dreaming.
+    except<nbsp/>... 
     <idx><h>coffee</h></idx>
-    The argument may be intuitively clear,
-    but intuition doesn't prove anything.
+    intuition doesn't prove anything.
     We'll look at it carefully,
     fill in the gaps, and then we'll see what we have proved.
   </p>
@@ -206,13 +199,12 @@
     or <em>interior</em> of <m>\gg</m>)
     is one of the first substantial theorems ever proved in topology,
     the <em>Jordan Curve Theorem</em>,
-    due to Camille Jordan (1838<ndash/>1922).
     <idx><h>inside</h></idx>
     <idx><h>path</h><h>inside of</h></idx>
     <idx><h>path</h><h>interior of</h></idx>
     <idx><h>topology</h></idx>
     <idx><h>Jordan curve theorem</h></idx>
-    <fn>
+    due to Camille Jordan (1838<ndash/>1922).<fn>
       This is the Jordan of <em>Jordan normal form</em> fame,
       but not the one of <em>Gau&#223;<ndash/>Jordan elimination</em>.
     </fn>
@@ -366,8 +358,6 @@
           \diff{z} \ - \ \frac 1 2 \int_{ C[0,3] } \frac{ \exp(z) }{ z
           } \, \diff{z} \, 
         </me>.
-      </p>
-      <p>
         For the two integrals on the right-hand side,
         we can use <xref ref="cauchyformulacircle">Theorem</xref>
         with the function <m>f(z) = \exp(z)</m>, which is entire,

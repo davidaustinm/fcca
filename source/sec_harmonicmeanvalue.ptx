@@ -39,8 +39,6 @@
           f(w) \ = \ \frac 1 {2 \pi} \int_0^{2 \pi} f \! \left( w + r \,
           e^{it} \right) \diff{t} \, 
           </me>.
-      </p>
-      <p>
         <xref ref="harmonicmeanvalue"/>
         follows by taking the real part on both sides.
       </p>
@@ -117,8 +115,6 @@
           <mrow>\amp \qquad \qquad  + \left. \int_{t_1}^{2 \pi} u
           \! \left( w + r \, e^{it} \right) \diff{t} \right) .</mrow> 
         </md>
-      </p>
-      <p>
         All the integrands can be bounded by <m>u(w)</m>;
         for the middle integral we get a
         <em>strict</em> inequality.
@@ -180,8 +176,7 @@
     to <xref ref="maxmodthm"/>
     and <xref ref="maxminharmcor"/>
     by replacing <em>strong relative extremum</em>
-    in the hypotheses with <em>weak relative extremum</em>.
-    <fn>
+    in the hypotheses with <em>weak relative extremum</em>.<fn>
       In particular,
       we will show that one does not have to assume that <m>f</m> is
       nonzero in a region <m>G</m> to have a strong relative maximum
@@ -260,8 +255,7 @@
     it says nothing about how to extend a continuous function <m>u</m>
     given on the boundary of a region to be harmonic in the full
     region. 
-    This problem is called the <em>Dirichlet
-    <fn>
+    This problem is called the <em>Dirichlet<fn>
       Named after Johann Peter Gustav Dirichlet (1805<ndash/>1859).
     </fn>
     problem</em>,
@@ -270,7 +264,7 @@
     function on the unit circle, define 
         <md>
           <mrow>
-            \hat u \! \left( e^{ i \phi } \right) \ \amp := u \! \left( e^{ i \phi } \right) \quad \text{ and } 
+            \hat u \! \left( e^{ i \phi } \right) \ \amp := \ u \! \left( e^{ i \phi } \right) \quad \text{ and } 
           </mrow> 
           <mrow>
             \hat u \! \left( r \, e^{ i \phi } \right) \ \amp := \ \frac{ 1 }{ 2 \pi } \int_0^{ 2 \pi } u \! \left( e^{ i t } \right) P_r(\phi - t) \, \diff{t} \quad \text{ for } \quad r\lt 1\, 

@@ -56,8 +56,7 @@
     </proof>
   </proposition>
   <theorem xml:id="fundthmalg">
-    <title>Fundamental Theorem of Algebra
-    <fn>
+    <title>Fundamental Theorem of Algebra<fn>
       The Fundamental Theorem of Algebra was first proved by
       Gau&#223; (in his doctoral dissertation in 1799, which had a
       flaw<mdash/>later, he provided three rigorous proofs), although
@@ -111,8 +110,6 @@
           \frac 1 {2 \pi}  \max_{ z \in C[0,R] } \left| \frac{ 1 }{ z
           \, p(z) } \right| 2 \pi R \ \le \ \frac{ 2 }{ |a_d| R^d } \, 
         </me>.
-      </p>
-      <p>
         The left-hand side is independent of <m>R</m>,
         while the right-hand side can be made arbitrarily small
         (by choosing <m>R</m> sufficiently large),
@@ -179,8 +176,7 @@
     (consider, for example, the real sine function).
   </p>
   <corollary xml:id="liouville">
-    <title>Liouville's
-    <fn>
+    <title>Liouville's<fn>
       This
       theorem is for historical reasons erroneously attributed to
       Joseph Liouville (1809<ndash/>1882). It was published earlier 
@@ -219,8 +215,6 @@
             \ \amp \leq \ \frac{M}{R} \,
           </mrow>
         </md>.
-      </p>
-      <p>
         The right-hand side can be made arbitrarily small,
         as we are allowed to choose <m>R</m> as large as we want.
         This implies that <m>f'=0</m>, and hence,
@@ -288,8 +282,6 @@
         <me>
           \int_{\sigma_R} \frac{\diff{z}}{z^2+1} \ = \ \pi \,
         </me>.
-      </p>
-      <p>
         This holds for any <m>R>1</m>,
         and so we can take the limit as <m>R\to\infty</m>.
         By <xref ref="intprop">Proposition</xref>(<xref text="local" ref="int4"></xref>)

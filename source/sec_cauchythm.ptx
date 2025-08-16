@@ -25,8 +25,6 @@
           <mrow>h(0,s) \amp = h(1,s) \,</mrow>
         </md>.
         <idx><h>homotopic</h></idx>
-      </p>
-      <p>
         We use the notation <m>\gg_1\sim_G\gg_2</m> to mean
         <m>\gg_1</m> is <m>G</m>-homotopic to <m>\gg_2</m>. 
       </p>
@@ -63,10 +61,11 @@
         gives a homotopy.
         Note that <m>h(t,s) \ne 0</m> for any <m>0 \le t, s \le 1</m> (hence
         <q><m>(\C \setminus \{ 0 \})</m>-homotopic</q>).
-      </p>
-      <p><xref ref="homotopicfig"/> shows the paths <m>h(t,s)</m> for
+      <xref ref="homotopicfig"/> shows the paths <m>h(t,s)</m> for
       <m>s=0,0.25, 0.5,0.75</m> and <m>1</m>.
       </p>
+    </statement>
+  </example>
       <figure xml:id="homotopicfig">
         <caption>This square and circle are <m>(\C \setminus \{ 0
         \})</m>-homotopic.</caption> 
@@ -77,8 +76,6 @@
           </prefigure>
         </image>
       </figure>
-    </statement>
-  </example>
   <p>
     <xref ref="ex_homotopyEquivalence"/>
     shows that <m>\sim_G</m> is an equivalence relation on the set of
@@ -178,13 +175,13 @@
         \\ \vdots \\ h_n(t,s) \amp  \text{ if }  t_{ n-1 } \le t \le 1
         \, , \end{cases} 
       </me>
-      where each <m>h_j(t,s)</m> has continuous second partials<fn>
+      where each <m>h_j(t,s)</m> has continuous second partials.<fn>
       As we have seen with other
       <q>piecewise</q>
       definitions,
       the behavior of <m>h</m> at the subdivision lines <m>t=t_i</m>
       needs to be understood in terms of limits. 
-      </fn>.
+      </fn>
       (<xref ref="exam_homotopy"/> gives one instance.)
       Now we turn to the proof under these extra assumptions.
     </p>
@@ -221,8 +218,6 @@
         \frac{\partial}{\partial t} \left( f \left( h(t,s) \right)
         \frac{\partial h}{\partial s} \right) \diff{t} \, </mrow> 
       </md>.
-    </p>
-    <p>
       Note that we used <xref
       ref="thm_mixedpartialscommute">Theorem</xref> 
       to switch the order of the second partials in the penultimate

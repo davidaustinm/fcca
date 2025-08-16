@@ -74,8 +74,6 @@
           \right)_y \ = \ \left( v_y \right)_x + \left( -v_x \right)_y \ = \
           v_{yx} - v_{xy} \ = \ 0 \, 
           </me>.
-      </p>
-      <p>
         Note that in the last step we used the fact that <m>v</m> has
         continuous second partials. 
         The proof that <m>v</m> satisfies the Laplace equation is
@@ -185,8 +183,6 @@
       <me>
         g \ = \ h' \ = \ a_x + i \, b_x \ = \ a_x - i \, a_y \,
       </me>.
-    </p>
-    <p>
       (The second equation follows from the Cauchy<ndash/>Riemann
       equations <xref ref="crequations"/>.) But the real part of
       <m>g</m> is <m>u_x</m>, 
@@ -284,8 +280,7 @@
     thus this can be easily applied, e.g., to polynomials.
     We state it for functions that are harmonic in the whole complex plane,
     but you can easily adjust it to functions that are harmonic on
-    certain subsets of <m>\C</m>.
-    <fn> 
+    certain subsets of <m>\C</m>.<fn> 
       <xref ref="thm_axler"/>
       is due to Sheldon Axler and the basis for his <c>Mathematica</c>
       package Harmonic Function Theory. 
@@ -341,6 +336,17 @@
       </md>.
     </p>
   </proof>
+    <sage>
+      <input>
+        var('x')
+        var('y')
+        u = x*y
+        integral( diff(u.subs(y=t),x), t, 0, y) - integral( diff(u.subs(x=t),y).subs(y=0), t,0 , x)
+      </input>
+      <output>
+        -1/2*x^2 + 1/2*y^2
+      </output>
+    </sage>
   <p>
     As you might imagine, <xref ref="reimharmonic"/>
     and <xref ref="harmonictoholomorphic"/>

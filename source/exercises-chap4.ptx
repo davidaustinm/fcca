@@ -728,8 +728,7 @@
           \cos(\phi) + r^2 } \, \diff\phi \ = \ 1 \, 
         </me>.
         (The function <m>P_r(\phi) := \frac{ 1-r^2 }{ 1 - 2r
-        \cos(\phi) + r^2 }</m> is the <em>Poisson kernel</em>
-        <fn>
+        \cos(\phi) + r^2 }</m> is the <em>Poisson kernel</em><fn>
           Named after Sim&#xe9;on Denis Poisson (1781<ndash/>1840).
         </fn>
         and plays an important role in the world of harmonic functions,
