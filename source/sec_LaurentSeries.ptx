@@ -22,8 +22,6 @@
       \sz a_k \ := \ \s a_k + \sum_{k \geq 1} a_{-k} \,
     </me>.
     <idx><h>double series</h></idx>
-  </p>
-  <p>
     Here <m>a_k \in \C</m> are terms indexed by the integers.
     The double series above <em>converges</em>
     if and only if the two series on the right-hand side do.
@@ -34,8 +32,7 @@
   <definition>
     <statement>
       <p>
-        A <em>Laurent
-        <fn>
+        A <em>Laurent<fn>
           After Pierre Alphonse Laurent (1813<ndash/>1854).
         </fn>
         series centered at <m>z_0</m></em>
@@ -71,11 +68,9 @@
       \sz c_k \left( z - z_0 \right)^k \ = \ \s c_k \left( z - z_0
       \right)^k + \sum_{k \geq 1} c_{-k} \left( z - z_0 \right)^{-k} 
     </me>.
-  </p>
-  <p>
     The first series on the right-hand side is a power series with
     some radius of convergence <m>R_2</m>, 
-    that is, with <xref ref="convergenceradius"/>,
+    thus with <xref ref="convergenceradius"/>,
     it converges in <m>\left\{ z \in \C : \, | z-z_0 | \lt  R_2
     \right\}</m>, 
     and the convergence is uniform in <m>\left\{ z \in \C : \, | z-z_0
@@ -97,8 +92,6 @@
       A \ := \ \left\{ z \in \C : \, R_1 \lt  | z-z_0 | \lt  R_2
       \right\} 
     </me>
-  </p>
-  <p>
     (assuming this set is not empty,
     i.e., <m>R_1 \lt  R_2</m>),
     and the convergence is uniform on any set of the form
@@ -119,9 +112,7 @@
           \text{ if }  z \ne 0 \, , \\ 0
           \amp  \text{ if }  z=0 \, . \end{cases} 
         </me>
-      </p>
-      <p>
-        A quick application of L'H&#xf4;pital's Rule (lhospital) shows
+        A quick application of L'H&#xf4;pital's Rule (<xref ref="lhospital"/>) shows
         that <m>g</m> is continuous 
         (see <xref ref="ex_lhospitalfor1oversin"/>).
         Even better, another round of L'H&#xf4;pital's Rule proves that
@@ -129,16 +120,13 @@
           \lim_{ z \to 0 } \frac{ \frac 1 { \sin(z) } - \frac 1 z }{ z
           } \ = \ \frac 1 6 \, 
         </me>.
-      </p>
-      <p>
         But this means that
         <me>
           g'(z) = \begin{cases}- \frac{ \cos(z) }{ \sin^2(z) } + \frac
           1 {z^2} \amp  \text{ if }  z \ne 0 \, , \\ \frac 1 6
           \amp  \text{ if }  z=0 \, , \end{cases} 
         </me>
-        in particular, <m>g</m> is holomorphic in <m>D[0,\pi]</m>.
-        <fn>
+        in particular, <m>g</m> is holomorphic in <m>D[0,\pi]</m>.<fn>
           This is a (simple) example of <em>analytic
           continuation</em>: the function <m>g</m> is holomorphic in
           <m>D[0,\pi]</m> and agrees with 
@@ -309,8 +297,6 @@
         \left( \int_{\gg_1} \frac{ g(w) }{ w^{k+1} } \, \diff{w}
         \right) z^k \right) 
       </me>.
-    </p>
-    <p>
       By Cauchy's <xref ref="cauchythm"/>,
       we can now change both <m>\gg_1</m> and <m>\gg_2</m> to <m>C[0,r]</m>,
       as long as <m>R_1 \lt  r \lt  R_2</m>, which finally gives
@@ -370,8 +356,6 @@
         <me>
           f(z) \ = \ \sz c_k \left( z - z_0 \right)^k
         </me>.
-      </p>
-      <p>
         If <m>\gg</m> is any simple, closed,
         piecewise smooth path in <m>A</m>,
         such that <m>z_0</m> is inside <m>\gg</m>, then
@@ -407,12 +391,10 @@
           \int_{ C[0,1] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} +
           \int_{ C[\pi,1] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \, 
         </me>.
-      </p>
-      <p>
         To compute the two integrals on the right-hand side,
         we can use <xref ref="cor_firstresidue">Corollary</xref>,
         for which we need the Laurent expansions of
-        <m>\frac{ \exp(z) }{ \sin(z) }</m> centered at 0 and <m>\pi</m>.
+        <m>\frac{ \exp(z) }{ \sin(z) }</m> centered at 0 and<nbsp/><m>\pi</m>.
       </p>
       <p>
         By <xref ref="ex_exptaylor"/>
@@ -424,7 +406,7 @@
           \cdots \right)</mrow> 
           <mrow>\amp \ = \ z^{ -1 } + 1 + \frac 2 3 \, z + \cdots</mrow> 
         </md>
-        and <xref ref="cor_firstresidue"/>
+        and so <xref ref="cor_firstresidue"/>
         gives <m>\int_{ C[0,1] } \frac{ \exp(z) }{ \sin(z) } \,
         \diff{z} = 2 \pi i</m>. 
       </p>
@@ -443,8 +425,6 @@
           \, (z-\pi)^3 - \cdots 
           </mrow> 
         </md>
-      </p>
-      <p>
         Adding <xref ref="ex_expatpi"/> to the mix yields
         <md>
           <mrow>\frac{ \exp(z) }{ \sin(z) } \amp \ = \ \left( e^\pi +

@@ -28,8 +28,6 @@
       <me>
         \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \,
       </me>.
-    </p>
-    <p>
       Looking back at <xref ref="fig_laurentmotivation"/>
       suggests that we expand the function
       <m>\frac{ \exp(z) }{ \sin(z) }</m> locally into something like

@@ -54,8 +54,6 @@
             </p>
           </li>
         </ol>
-      </p>
-      <p>
         The integer <m>m</m> in the second case is uniquely determined
         by <m>f</m> and <m>a</m> and is called the
         <em>multiplicity</em> 
@@ -85,8 +83,6 @@
             </p>
           </li>
         </ol>
-      </p>
-      <p>
         The first case gives <m>f(z) =0</m> for all <m>z \in D[a,R]</m>.
         So now consider the second case.
         We note that for <m>z \in D[a,R]</m>,
@@ -95,16 +91,12 @@
           (z-a)^m\left( c_m+c_{m+1}(z-a) + \cdots\right)</mrow> 
           <mrow>\amp \ = \ (z-a)^m\sum_{k\ge0}c_{k+m} \, (z-a)^k</mrow>
         </md>.
-      </p>
-      <p>
         Thus we can define a function <m>g: G \to \C</m> through
         <me>
         g(z) := \begin{cases}\ds \sum_{k\ge0}c_{k+m}(z-a)^k \amp
         \text{ if }  z \in D[a,R] \, , \\ \dfrac{f(z)}{(z-a)^m} \amp
         \text{ if } z\in G\setminus \listset a . \end{cases} 
         </me>
-      </p>
-      <p>
         (According to our calculations above,
         the two definitions give the same value when
         <m>z \in D[a,R] \setminus \listset a</m>.) The function
@@ -307,8 +299,6 @@
         \abs{g(z)} \ \le  \ \abs{g(a)} \ = \ 1 \qquad \text{ for all }
         z \in D[a,R] \, 
       </me>,
-    </p>
-    <p>
       Also <m>g(a)=1</m>, so, by continuity of <m>g</m>,
       we can find <m>r \le R</m> such that
       <m>\Re(g(z)) > 0</m> for <m>z \in D[a,r]</m>.
@@ -324,8 +314,6 @@
         \Re(h(z)) \ = \ \Re(\Log(g(z))) \ = \ \ln(\abs{g(z)}) \ \le \ \ln(1)
         \ = \ 0 \, 
       </me>.
-    </p>
-    <p>
       <xref ref="ex_realmax0"/>
       now implies that <m>h</m> must be identically zero in
       <m>D[a,r]</m>. 

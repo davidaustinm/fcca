@@ -110,8 +110,7 @@
         the real version of our function in
         <xref ref="ex_powerseriesboundary"/>,
         to show that <xref ref="cor_powerseriesboundary"/>
-        has no analogue in<nbsp/><m>\R</m>.
-        <fn>
+        has no analogue in<nbsp/><m>\R</m>.<fn>
           Incidentally, the same example shows,
           once more, that Liouville's theorem
           (<xref ref="liouville"/>)
@@ -304,8 +303,6 @@
         <me>
           \left| f(z_0)^k \right| \ \le \ c \, M^k
         </me>.
-      </p>
-      <p>
         Conclude that <m>| f(z_0) | \le M</m>.
       </p>
     </statement>
@@ -560,8 +557,6 @@
           \lim_{ z \to 0 } \frac{ \frac 1 { \sin(z) } - \frac 1 z }{ z
           } \ = \ \frac 1 6 \, 
         </me>.
-      </p>
-      <p>
         (These are the limits we referred to in
         <xref ref="ex_1_sinlaurent"/>.)
       </p>

@@ -73,8 +73,6 @@
           \left.\frac{d}{\diff{w}} (w-z_0)^k\right|_{w=z}</mrow> 
           <mrow>\amp \ = \ \sum_{ k \ge 1 }  k \, c_k (z-z_0)^{k-1} </mrow>
         </md>.
-      </p>
-      <p>
         Note that we used <xref ref="cauchyformula2"/>
         <em>again</em> in the penultimate step,
         but now applied to the function <m>(z-z_0)^k</m>.
@@ -99,8 +97,6 @@
         <me>
           f(z) \ = \ \s \frac{ z^k }{ k! } \,
         </me>.
-      </p>
-      <p>
         In <xref ref="exponentialfunctionradius"/>,
         we showed that <m>f</m> converges in <m>\C</m>.
         We claim that <m>f(z) = \exp(z)</m>,
@@ -111,8 +107,6 @@
           \ = \ \sum_{k \geq 1} \frac{z^{k-1}}{(k-1)!} \ = \ \sum_{k \geq 0}
           \frac{z^k}{k!} \ = \ f(z)\, 
         </me>.
-      </p>
-      <p>
         Thus
         <md>
           <mrow> 
@@ -161,8 +155,6 @@
           <mrow>\amp \ = \ z - \frac{z^3}{3!} + \frac{z^5}{5!} -
           \frac{z^7}{7!} + \cdots \,</mrow> 
         </md>.
-      </p>
-      <p>
         Note that we are allowed to rearrange the terms of the two
         added sums because the corresponding series have infinite
         radii of convergence. 
@@ -185,11 +177,10 @@
     The various derivatives of a power series can also be seen as
     ingredients of the series itself<mdash/>this is the statement of
     the following 
-    <em>Taylor series expansion</em>.
-    <idx><h>Taylor series expansion</h></idx>
-    <fn>
+    <em>Taylor series expansion</em>.<fn>
       Named after Brook Taylor (1685<ndash/>1731).
     </fn>
+    <idx><h>Taylor series expansion</h></idx>
   </p>
   <corollary xml:id="taylor">
     <statement>
@@ -213,8 +204,7 @@
         \right)^{k-2} 
       </me>
       and so <m>f''(z_0) = 2 \, c_2</m>.
-      A quick induction game establishes <m>f'''(z_0) = 6 \, c_3</m>,
-      <m>f''''(z_0) = 24 \, c_4</m>, etc.
+      A quick induction game establishes <m>f^{(k)} (z_0) = k! \, c_k</m>.
     </p>
   </proof>
   <p>
@@ -244,8 +234,6 @@
         <me>
           f^{ (k) } (z_0) \ = \ \biggl. \exp(z) \biggr|_{ z=\pi } \ = \ e^\pi
         </me>,
-      </p>
-      <p>
         <xref ref="taylor"/>
         suggests that this power series is
         <me>
@@ -289,8 +277,6 @@
           g (z) \ = \ \frac 1 {2 \pi i} \int_{C[0,r]} \frac{ g(w) }{ w-z }
           \, \diff{w} \, 
         </me>.
-      </p>
-      <p>
         The factor <m>\frac 1 {w-z}</m> in this integral can be expanded
         into a geometric series (note that 
         <m>w \in C[0,r]</m> and so <m>| \frac z w | \lt  1</m>):
@@ -320,8 +306,6 @@
           f(z) \ = \ \s \left( \frac 1 {2 \pi i} \int_{C[z_0, r]} \frac{
           f(w) }{ (w-z_0)^{k+1} } \, \diff{w} \right) (z-z_0)^k 
           </me>.
-      </p>
-      <p>
         The only differences of this right-hand side to the statement of
         the theorem are the paths we're integrating over. 
         However, by Cauchy's <xref ref="cauchythm"/>,
@@ -456,8 +440,6 @@
         </mrow>
         <mrow>\amp \ = \ \frac{ k! \, M }{ r^k } \, </mrow> 
       </md>.
-    </p>
-    <p>
       The statement now follows since <m>r</m> can be chosen
       arbitrarily close to <m>R</m>. 
     </p>

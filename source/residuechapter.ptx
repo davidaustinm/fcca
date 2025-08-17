@@ -20,8 +20,6 @@
       <me>
         \int_{ C[2,3] } \frac{ \exp(z) }{ \sin(z) } \, \diff{z} \,
       </me>.
-    </p>
-    <p>
       We computed this integral in
       <xref ref="ex_expoversin"/> crawling on hands and knees
       (but we finally computed it!),
