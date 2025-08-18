@@ -136,6 +136,24 @@
     
 <!--     <p><em>Christina Safranski</em> (PreTeXt edition) is a professor in the Department of Mathematics at Franciscan University of Steubenville... -->
 <!--     </p> -->
+
+    <p><em>David Austin</em> (<pretext/> edition) is a professor in
+    the Department of Mathematics at Grand Valley State University.
+    He is the author of the open textbook
+    <url href="https://understandinglinearalgebra.org/home.html">
+      Understanding Linear Algebra,
+    </url>
+    serves as the Director of the
+    <url href="https://textbooks.aimath.org/">
+      Open Textbook Initiative,
+    </url>
+    sponsored by the American Institute of Mathematics, and is the
+    lead developer of
+    <url href="https://prefigure.org">
+      <prefigure/>,
+    </url>
+    open-source software for creating accessible mathematical diagrams.
+    </p>
   </preface>
   
   <preface>
