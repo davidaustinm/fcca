@@ -69,7 +69,7 @@
     <statement>
       <p>
         Suppose <m>f: [a,b] \to \R</m> is continuous.
-        <ol marker="a) ">
+        <ol marker="(a) ">
           <li xml:id="fundthmcalc1">
             <p> The function <m>F: [a,b] \to \R</m> defined by
             <m>F(x)=\int_a^x f(t)\,\diff{t}</m> is differentiable and
