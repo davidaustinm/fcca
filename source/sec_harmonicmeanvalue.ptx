@@ -90,8 +90,6 @@
           u(w) \ = \ \frac 1 {2 \pi} \int_0^{2 \pi} u \! \left( w + r \,
           e^{it} \right) \diff{t} \, 
           </me>.
-      </p>
-      <p>
         Intuitively, this cannot hold,
         because some of the function values we're integrating are
         smaller than <m>u(w)</m>, 

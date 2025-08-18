@@ -170,9 +170,7 @@
         the partial sums <m>\sum_{k=1}^n b_k</m> are bounded, and thus so are
         <me>
           \sum_{k=1}^n c_k \ \le \ \sum_{k=1}^n b_k \,
-          </me>.
-      </p>
-      <p>
+        </me>.
         But this means,
         again by <xref ref="positiveseries"/>,
         that <m>\sum_{k \ge 1} c_k</m> converges.
@@ -415,8 +413,8 @@
         the series <m>\zeta(z)</m> is the
         <em>Riemann zeta function</em>,
         an indispensable tool in number theory and many other
-        areas in mathematics and physics.
-        <idx><h>Riemann zeta function</h></idx><fn xml:id="riemannzeta">
+        <idx><h>Riemann zeta function</h></idx>
+        areas in mathematics and physics.<fn xml:id="riemannzeta">
         The Riemann zeta function is the subject of the arguably most
         famous open problem in mathematics, 
         the <em>Riemann hypothesis</em>.

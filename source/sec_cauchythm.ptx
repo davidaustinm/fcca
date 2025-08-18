@@ -358,8 +358,6 @@
           \frac{ \diff{z} }{ z-2 } \ - \ \frac 1 2 \int_\gg \frac{
           \diff{z} }{ z } \, 
         </me>.
-      </p>
-      <p>
         The first integral on the right-hand side is zero by <xref
         ref="cauchycor">Corollary</xref> 
         applied to the function <m>f(z) = \frac{ 1 }{ z-2 }</m> (note

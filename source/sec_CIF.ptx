@@ -182,8 +182,6 @@
       f(w) \ = \ \frac 1 {2 \pi i} \int_\gg \frac{ f(z) }{ z-w } \,
       \diff{z} \, 
     </me>.
-  </p>
-  <p>
     This all smells like good coffee,
     except<nbsp/>... 
     <idx><h>coffee</h></idx>

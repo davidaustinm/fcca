@@ -174,8 +174,6 @@
             </p>
           </li>
         </ol>
-      </p>
-      <p>
         Furthermore, if <m>f: G \to \C</m> is continuous at
         <m>L := \lim_{ n \to \infty } a_n</m> and all <m>a_n \in
         G</m>, then 
@@ -263,8 +261,6 @@
           L \ = \ \lim_{n\to\infty}r^n \ = \ \lim_{n\to\infty} r^{n+1} \ = \ r
           \lim_{n\to\infty}r^n \ = \ r \, L \, 
         </me>.
-      </p>
-      <p>
         Thus <m>(1-r)L=0</m>, and so
         (since <m>1-r \ne 0</m>)
         we conclude that <m>L=0</m>.

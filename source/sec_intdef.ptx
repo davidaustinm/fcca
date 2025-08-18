@@ -417,7 +417,7 @@
       For (<xref text="local" ref="int4"/>), let <m>\phi = \left( \Arg \int_\gg f
       \right)</m>. 
       Then <m>\int_\gg f = \left| \int_\gg f \right| e^{ i \phi }</m>
-      and thus, 
+      and so, 
       since <m>\left| \int_\gg f \right| \in \R</m>,
       <md>
         <mrow>\left| \int_\gg f \right| \ \amp = \ e^{ -i\phi }

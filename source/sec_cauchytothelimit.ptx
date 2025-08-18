@@ -46,8 +46,6 @@
             \frac{a_1}{a_dz^{d-1}}+\frac{a_0}{a_dz^d}}
           </mrow> 
           </md>.
-      </p>
-      <p>
         Then the sum inside the last factor has limit <m>1</m> as <m>z\to\infty</m> 
         (by <xref ref="ex_polynomiallimitaszgrows">Exercise</xref>),
         and so its modulus is between

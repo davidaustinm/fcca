@@ -212,8 +212,6 @@
     <me>
       f' \ = \ u_x + i \, v_x \ = \ u_x - i \, u_y \,
     </me>.
-  </p>
-  <p>
     (The second equation follows from the Cauchy<ndash/>Riemann
     equations
     <xref ref="crequations"/>.) It is also worth mentioning that our
