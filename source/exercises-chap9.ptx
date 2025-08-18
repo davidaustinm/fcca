@@ -249,14 +249,14 @@
         to re-prove Cauchy's Integral Formulas
         (<xref ref="cauchyformula"/>,
         <xref ref="cauchyformula2"/>
-        and <xref ref="cauchyformula3"/>.
+        and <xref ref="cauchyformula3"/>).
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Revisiting <xref ref="ex_evenoddfunctions"/>
+        Revisiting <xref ref="ex_evenoddfunctions"/>,
         show that if <m>f</m> is even then <m>\Res_{ z=0 } (f(z)) =
         0</m>. 
       </p>
@@ -480,7 +480,7 @@
         </p>
       </statement>
       <hint>
-        <p>This is really easy if you use the <em>first</em>
+        <p>This is easy if you use the <em>first</em>
         definition of continuity in
         <xref ref="sec_limitsandcontinuity"/>.
         </p>

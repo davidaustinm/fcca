@@ -83,6 +83,8 @@
         over these circles. 
         Now use <xref ref="cor_firstresidue"/>.
       </p>
+    </proof>
+  </theorem>
       <figure xml:id="residuethmpic">
         <caption>Proof of <xref ref="residuethm">Theorem</xref>.</caption>
         <image width="60%">
@@ -92,8 +94,6 @@
           </prefigure>
         </image>
       </figure>
-    </proof>
-  </theorem>
   <p>
     Computing integrals is as easy
     (or hard!)
@@ -273,6 +273,10 @@
       </md>.
     </p>
   </proof>
+  <p>
+    An extension of <xref ref="lem_computing_residues2"/>
+    of sorts is given in <xref ref="ex_computing_residues2"/>.
+  </p>
   <example>
     <statement>
       <p>
@@ -313,8 +317,13 @@
       </p>
     </statement>
   </example>
-  <p>
-    An extension of <xref ref="lem_computing_residues2"/>
-    of sorts is given in <xref ref="ex_computing_residues2"/>.
-  </p>
+    <sage>
+      <input>
+        var('z')
+        taylor((z^2+2)/( (exp(z)-1)*cos(z) ), z, 2*pi*i, -1)
+      </input>
+      <output>
+        -2*(2*pi^2 - 1)/((-2*I*pi + z)*cosh(2*pi))
+      </output>
+    </sage>
 </section>

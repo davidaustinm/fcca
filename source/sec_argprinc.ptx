@@ -45,9 +45,7 @@
       \frac{ (fg)' }{ fg } \ = \ \frac{ f' g + f g' }{ fg } \ = \ \frac{ f'
       }{ f } + \frac{ g' }{ g } \, 
     </me>.
-  </p>
-  <p>
-    We can apply this fact to the following situation: Suppose that
+    We can apply this philosophy to the following situation: Suppose that
     <m>f</m> is holomorphic in a region <m>G</m> and <m>f</m> has 
     (finitely many)
     zeros <m>z_1, \dots,
@@ -96,8 +94,7 @@
     </statement>
   </definition>
   <theorem xml:id="argprinc">
-    <title>Argument Principle
-    <fn>
+    <title>Argument Principle<fn>
       The name <em>Argument Principle</em> stems from interpreting the
       integral <m>\int_\gamma \frac{f'}{f}</m> as the change in the argument of
       <m>f(z)</m> as <m>z</m> traverses <m>\gg</m>, since <m>\fLog(f(z))' =
@@ -153,8 +150,6 @@
           <mrow>\amp \ = \ 2 \pi i \left( n_1 + \dots + n_j - m_1 -
           \dots - m_k \right) + \i \frac{ g' }{ g } \, </mrow> 
         </md>.
-      </p>
-      <p>
         Finally, <m>\frac{g'}{g}</m> is holomorphic in <m>G</m>
         (because <m>g</m> is never zero in <m>G</m>),
         so that <xref ref="cauchycor">Corollary</xref> gives
@@ -229,7 +224,7 @@
         is that they all have modulus <m>\lt 2</m>.
         Note also that there is no general formula for computing roots
         of a polynomial of degree 5. (Although for this <m>p</m> it's
-        not hard to find one root<mdash/>and therefore all of them.) 
+        not hard to find all of its roots.) 
         </fn> To see this,
         let <m>f(z) = z^5</m> and <m>g(z) = z^4 + z^3 + z^2 + z + 1</m>.
         Then for <m>z \in C[0,2]</m>
@@ -241,8 +236,6 @@
           <mrow> \amp \lt  \ 32 \ = \ |z|^5 \ = \ |f(z)| \, 
           </mrow>
         </md>.
-      </p>
-      <p>
         So <m>g</m> and <m>f</m> satisfy the condition of the
         <xref ref="rouche"/>.
         But <m>f</m> has just one root,

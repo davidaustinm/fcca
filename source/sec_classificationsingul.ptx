@@ -19,8 +19,6 @@
     </me>.
     <idx><h>punctured disk</h></idx>
     <idx><h>disk</h><h>punctured</h></idx>
-  </p>
-  <p>
     We extend this definition naturally with <m>\Dp[z_0, \infty] := \C
     \setminus \{ z_0 \}</m>. 
     For complex functions there are three types of singularities,
@@ -228,7 +226,7 @@
             <me>
               \lim_{z \to z_0} \frac 1 {f(z)} \ = \ 0 \,
               </me>,
-              so part a) implies that <m>\frac 1 f</m> has a removable
+              so part (a) implies that <m>\frac 1 f</m> has a removable
               singularity at <m>z_0</m>. 
               More precisely, the function <m>g: D[z_0,R] \to \C</m> defined by
               <me>
@@ -334,8 +332,6 @@
           f(z) \ = \ \frac{ g(z) }{ (z-z_0)^m } \qquad \text{ for all } \quad
           z \in \Dp[z_0,R] \, 
         </me>.
-      </p>
-      <p>
         If <m>z_0</m> is a pole then <m>m</m> is unique.
       </p>
     </statement>
@@ -423,16 +419,12 @@
       <me>
         |w-f(z)| \ \ge \ \epsilon \,
       </me>.
-    </p>
-    <p>
       Then the function <m>g(z) := \frac{ 1 }{ f(z) - w }</m> stays
       bounded as <m>z \to z_0</m>, and so 
       <me>
         \lim_{z \to z_0} \frac{ z - z_0}{ f(z) - w } \ = \ \lim_{z \to
         z_0} (z - z_0) \, g(z) \ = \ 0 \, 
       </me>.
-    </p>
-    <p>
       (<xref ref="singbasics"/>(a) tells us that <m>g</m> has a
       removable singularity at <m>z_0</m>.) Hence 
       <me>
@@ -448,8 +440,6 @@
         \ = \ \lim_{ z \to z_0 } (z-z_0)^{ n } \left( f(z) - w \right) \ = \
         0 \, 
       </me>.
-    </p>
-    <p>
       Invoking <xref ref="singbasics"/> again,
       we conclude that the function
       <m>f(z) - w</m> has a pole or removable singularity at <m>z_0</m>,
@@ -544,7 +534,7 @@
                 \amp \ = \
                 (z-z_0)^{-n} \s c_{k-n} (z-z_0)^k
               </mrow>
-            </md>.
+            </md>
             where <m>c_{-n} \not= 0</m>.
             Define <m>g(z) \ := \ \s c_{k-n} (z-z_0)^k</m>.
             Then <m>g</m> is holomorphic at <m>z_0</m> and <m>g(z_0) =

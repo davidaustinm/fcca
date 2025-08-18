@@ -12,8 +12,7 @@
         Let <m>G \subseteq \C</m> be a region.
         A function <m>u: G \to \R</m> is <em>harmonic</em>
         in <m>G</m> if it has continuous second partials in <m>G</m>
-        and satisfies the <em>Laplace
-        <fn> 
+        and satisfies the <em>Laplace<fn> 
           Named after Pierre-Simon Laplace (1749<ndash/>1827).
         </fn>
         equation</em>

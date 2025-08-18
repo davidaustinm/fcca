@@ -3,8 +3,7 @@
 <section xml:id="sec_fibonacci">
   <title>Fibonacci Numbers</title>
   <p>
-    The <em>Fibonacci
-    <fn>
+    The <em>Fibonacci<fn>
       Named after Leonardo Pisano Fibonacci (1170<ndash/>1250).
     </fn>
     numbers</em> are a sequence of integers defined recursively through
@@ -15,8 +14,6 @@
       2\) }</mrow>
     </md>.
         <idx><h>Fibonacci numbers</h></idx>
-  </p>
-  <p>
     Let <m>F(z) = \s f_k \, z^k</m>.
     <ol marker="(1)">
       <li>
@@ -57,6 +54,7 @@
         <p>
          Your identity should involve the <em>golden ratio</em> <m>\frac{ 1 + \sqrt 5 }{ 2 }</m>. Explain what is going on in the output of the following <c>SageMath</c> prompt:
         </p>
+            <idx><h>golden ratio</h></idx>
     <sage>
       <input>
         [n(golden_ratio^j/sqrt(5)) for j in range(1,20)]
@@ -95,8 +93,8 @@
             <mrow>t_1 \amp = 0</mrow>
             <mrow>t_2 \amp = 1</mrow>
             <mrow>t_n \amp = t_{n-1} + t_{n-2} + t_{n-3} \qquad \text{
-            for \(n \geq 3\). }</mrow> 
-          </md>
+            for } \ n \geq 3 \, </mrow>}}
+          </md>.
         </p>
       </li>
     </ol>

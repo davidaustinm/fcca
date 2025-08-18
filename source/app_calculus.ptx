@@ -32,7 +32,7 @@
         \qquad \text{ and } \qquad
         \max_{ x \in K } f(x)
       </me>
-      exist in<nbsp/>\R</p>.
+      exist in<nbsp/><m>\R</m>.</p>
     </statement>
   </theorem>
 
@@ -48,7 +48,7 @@
         I</m>. Then there exists 
         <m> 0\lt a \lt 1</m> such that  
         <me>
-          \frac{f(x + \D x) - f(x)}{ \D x } = f'(x + a \, \D x) \, 
+          \frac{f(x + \D x) - f(x)}{ \D x } \ = \ f'(x + a \, \D x) \, 
         </me>.
       </p>
     </statement>
@@ -105,12 +105,16 @@
     <statement>
       <p>
         If <m>f, g : [a,b] \to \R</m> are continuous functions then
-        <me>
+        <md>
+          <mrow> 
           \left| \int_a^b f(x) \, g(x) \, \diff{x} \right|
-          \ \le \ \int_a^b \left| f(x) \, g(x) \right| \diff{x}
-          \ \le \ \left( \max_{ a \le x \le b } |f(x)| \right)
+          \ \amp\le \ \int_a^b \left| f(x) \, g(x) \right| \diff{x}
+          </mrow> 
+          <mrow> 
+          \amp\le \ \left( \max_{ a \le x \le b } |f(x)| \right)
           \int_a^b \left| g(x) \right| \diff{x} \,
-        </me>.
+          </mrow> 
+        </md>.
       </p>
     </statement>
   </theorem>
@@ -130,7 +134,7 @@
   </theorem>
 
   <p>
-    For functions of several variables we can perform
+    For functions of several variables, we can perform
     differentiation/integration operations in any order, if we have
     sufficient continuity:
   </p>
@@ -190,7 +194,7 @@
     as an iterated integral by writing <m>f(x,y)-f(a,y)</m>
     as
     the integral of <m>\fderiv fx</m>, interchange the order of
-    integrations, and then diafferentiate using
+    integration, and then differentiate using
     <xref ref="fundthmcalc"/>.
   </p>
 

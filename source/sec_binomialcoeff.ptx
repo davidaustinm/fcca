@@ -11,8 +11,6 @@
       (x+y)^n \ = \ \sum_{k=0}^n \binom n k x^k \, y^{n-k}
     </me>
     <idx><h>binomial coefficient</h></idx>
-  </p>
-  <p>
     (for <m>x,y \in \C</m> and <m>n \in \Z_{ \ge 0 }</m>) tells us that
     <m>\binom n k</m> is the coefficient of <m>z^k</m> in <m>(z+1)^n</m>.
     You will derive two sample identities in the course of the
@@ -25,7 +23,7 @@
             \binom{n}{k} \ = \ \frac 1 {2 \pi i} \int_\gamma \frac{
             (z+1)^{n} }{ z^{k+1} } \, \diff{z} 
           </me>
-          where <m>\gamma</m> is any simple closed piecewise smooth
+          where <m>\gamma</m> is any simple, closed, positively oriented, piecewise smooth
           path such that 0 is inside<nbsp/><m>\gamma</m>. 
         </p>
       </li>
@@ -51,7 +49,7 @@
       </li>
       <li>
         <p>
-          Keeping <m>x</m> and <m>\gg</m> from <xref text="local" ref="unifc"/>,
+          Keeping <m>x</m> and <m>\gg</m> from (<xref text="local" ref="unifc"/>),
           convince yourself that
           <me>
             \s \binom{2k}{k} x^k \ = \ \frac 1 {2 \pi i} \s \int_\gamma
