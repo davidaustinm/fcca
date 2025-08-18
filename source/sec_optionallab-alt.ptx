@@ -15,11 +15,7 @@
     </me> -->
     
       After you have finished computing these numbers,
-      check your answers with the open-source software platform
-      <url href="https://www.geogebra.org/calculator">
-        Geogebra.
-      </url> You might search for <em>geogebra complex function grapher</em>.
-      <idx><h>geogebra</h></idx>
+      check your answers with <c>SageMath</c>.
     </p>
 
   </exercise>
@@ -31,7 +27,7 @@
         <mrow>2 \, e^{ i 0 } \amp = <fillin/> \amp   3 \, e^{ \frac{ \pi i} 2 } \amp =<fillin/> \amp  \tfrac{1}{2} \, e^{ i \pi } \amp = <fillin/>\amp  e^{ - \frac{ 3 \pi i }{ 2 } } \amp =<fillin/> \amp   2 \, e^{ \frac{ 3 \pi i }{ 2 } } \amp =<fillin/></mrow>
       </md>
       <em>After</em> you have finished computing these numbers,
-      check your answers with Geogebra.
+      check your answers with <c>SageMath</c>.
     </p>
   </exercise>
   <exercise workspace="1in">
