@@ -87,8 +87,8 @@
         So now consider the second case.
         We note that for <m>z \in D[a,R]</m>,
         <md>
-          <mrow>f(z) \amp \ = \ c_m(z-a)^m + c_{m+1}(z-a)^{m+1} + \cdots \ = \
-          (z-a)^m\left( c_m+c_{m+1}(z-a) + \cdots\right)</mrow> 
+          <mrow>f(z) \amp \ = \ c_m(z-a)^m + c_{m+1}(z-a)^{m+1} + \cdots </mrow> 
+          <mrow>\amp \ = \ (z-a)^m\left( c_m+c_{m+1}(z-a) + \cdots\right)</mrow> 
           <mrow>\amp \ = \ (z-a)^m\sum_{k\ge0}c_{k+m} \, (z-a)^k</mrow>
         </md>.
         Thus we can define a function <m>g: G \to \C</m> through

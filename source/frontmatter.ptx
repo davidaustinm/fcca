@@ -98,9 +98,24 @@
       </attribution>
     </blockquote>
 
-<!--     <p><em>David Austin</em> (illustrations) is a professor of Mathematics at Grand Valley State University... -->
-<!--     </p> -->
-    
+    <p><em>David Austin</em> (<pretext/> edition) is a professor in
+    the Department of Mathematics at Grand Valley State University.
+    He is the author of the open textbook
+    <url href="https://understandinglinearalgebra.org/home.html">
+      Understanding Linear Algebra,
+    </url>
+    serves as the Director of the
+    <url href="https://textbooks.aimath.org/">
+      Open Textbook Initiative,
+    </url>
+    sponsored by the American Institute of Mathematics, and is the
+    lead developer of
+    <url href="https://prefigure.org">
+      <prefigure/>,
+    </url>
+    open-source software for creating accessible mathematical diagrams.
+    </p>
+   
     <p><em>Matthias Beck</em> is a professor in the Mathematics
     Department at San Francisco State University. His research interests
     are in geometric combinatorics and analytic number theory. He is the
@@ -113,8 +128,8 @@
     Geometric Combinatorics</em> (with Raman Sanyal, AMS 2018).
     </p>
     
-<!--     <p><em>Robert Chaffer</em> (cover art) is a professor emeritus at Central Michigan University. His academic interests are in abstract algebra, combinatorics, geometry, and computer applications. Since retirement from teaching, he has devoted much of his time to applying those interests to creation of art images. -->
-<!--     </p> -->
+    <p><em>Robert Chaffer</em> (cover art) is a professor emeritus at Central Michigan University. His academic interests are in abstract algebra, combinatorics, geometry, and computer applications. Since retirement from teaching, he has devoted much of his time to applying those interests to creation of art images. 
+    </p>
     
     <p> <em>Gerald Marchesi</em> was a lecturer faculty in the Department of
     Mathematical Sciences at Binghamton University (SUNY).
@@ -134,26 +149,14 @@
     topology, and computational algebra.
     </p>
     
-<!--     <p><em>Christina Safranski</em> (PreTeXt edition) is a professor in the Department of Mathematics at Franciscan University of Steubenville... -->
-<!--     </p> -->
-
-    <p><em>David Austin</em> (<pretext/> edition) is a professor in
-    the Department of Mathematics at Grand Valley State University.
-    He is the author of the open textbook
-    <url href="https://understandinglinearalgebra.org/home.html">
-      Understanding Linear Algebra,
-    </url>
-    serves as the Director of the
+    <p><em>Chrissy Safranski</em> (<pretext/> edition) is a Professor of Mathematics at the Franciscan University of Steubenville.  She is on the editorial board of the 
     <url href="https://textbooks.aimath.org/">
       Open Textbook Initiative,
     </url>
-    sponsored by the American Institute of Mathematics, and is the
-    lead developer of
-    <url href="https://prefigure.org">
-      <prefigure/>,
-    </url>
-    open-source software for creating accessible mathematical diagrams.
-    </p>
+    sponsored by the American Institute of Mathematics. She has taught with and contributed to several open-source PreTeXt-authored textbooks.
+    </p> 
+ (pretext edition) 
+
   </preface>
   
   <preface>
